@@ -125,9 +125,21 @@ PRs are welcome! Please:
 2. Align with existing code style (Prettier defaults).
 3. Describe **what** & **why** – screenshots/gifs appreciated.
 
-Bug reports / feature requests → [Issues](https://github.com/JeremGamingYT/BetterCrunchyrollroll/issues).
+Bug reports / feature requests → [Issues](https://github.com/JeremGamingYT/BetterCrunchyroll/issues).
 
 ---
 
 ## 📝 License
-MIT © YourName – This project is unaffiliated with Crunchyroll LLC. 
+MIT © YourName – This project is unaffiliated with Crunchyroll LLC.
+
+---
+
+## ⚖️ Legal Notice
+This project is **UI-only** – it does **not**:
+* host, stream, download or redistribute any Crunchyroll content.
+* bypass or weaken DRM / encryption technologies (17 U.S.C. §1201, Canadian Copyright Act s.41).
+* collect personal data beyond what Chrome Storage sync requires for settings.
+
+BetterCrunchyroll injects client-side CSS/JS to restyle pages already delivered to the user's browser, which is generally considered *fair use / permissible customization* under U.S. and Canadian law so long as no technical protection measures are circumvented and the original service is not impaired.
+
+Crunchyroll® is a registered trademark of Crunchyroll LLC. This extension is an independent, fan-made project and is not affiliated, endorsed, or sponsored by Crunchyroll LLC, Sony Pictures, or any subsidiaries. 
