@@ -1,9 +1,9 @@
-# 🚀 BetterCrunchy Chrome Extension
+# 🚀 BetterCrunchyroll Chrome Extension
 
-[![GitHub Stars](https://img.shields.io/github/stars/YourUser/BetterCrunchy?style=social)](https://github.com/YourUser/BetterCrunchy)
-[![Issues](https://img.shields.io/github/issues/YourUser/BetterCrunchy)](https://github.com/YourUser/BetterCrunchy/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/YourUser/BetterCrunchy)](https://github.com/YourUser/BetterCrunchy/pulls)
-[![MIT License](https://img.shields.io/github/license/YourUser/BetterCrunchy)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/JeremGamingYT/BetterCrunchyrollroll?style=social)](https://github.com/JeremGamingYT/BetterCrunchyroll)
+[![Issues](https://img.shields.io/github/issues/JeremGamingYT/BetterCrunchyroll)](https://github.com/JeremGamingYT/BetterCrunchyroll/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/JeremGamingYT/BetterCrunchyroll)](https://github.com/JeremGamingYT/BetterCrunchyroll/pulls)
+[![MIT License](https://img.shields.io/github/license/JeremGamingYT/BetterCrunchyroll)](LICENSE)
 
 > ✨ A fresh, glass-morphism makeover for Crunchyroll – plus productivity boosters for the ultimate binge-watcher.
 
@@ -23,10 +23,10 @@
 ---
 
 ## 🎬 Overview
-**BetterCrunchy** transforms the vanilla Crunchyroll UI into a sleek, dark, glass-styled experience, complete with silky animations, handy shortcuts and QoL tweaks – no server-side hacks, just pure CSS/JS injected on-the-fly.
+**BetterCrunchyroll** transforms the vanilla Crunchyroll UI into a sleek, dark, glass-styled experience, complete with silky animations, handy shortcuts and QoL tweaks – no server-side hacks, just pure CSS/JS injected on-the-fly.
 
 <p align="center">
-  <img src="./assets/screenshot.png" alt="BetterCrunchy preview" width="800" />
+  <img src="./assets/screenshot.png" alt="BetterCrunchyroll preview" width="800" />
 </p>
 
 ---
@@ -79,8 +79,8 @@ Changes propagate instantly thanks to CSS variables (or after refresh).
 ## ⚡ Installation
 ```bash
 # Clone the repo
-git clone https://github.com/YourUser/BetterCrunchy.git
-cd BetterCrunchy
+git clone https://github.com/JeremGamingYT/BetterCrunchyroll.git
+cd BetterCrunchyroll
 
 # Load into Chrome / Edge
 chrome://extensions → Enable *Developer mode* → *Load unpacked* → select project folder.
@@ -98,7 +98,7 @@ Navigate to Crunchyroll – enjoy your upgraded interface! 🚀
 
 ### Project Tree
 ```text
-BetterCrunchy/
+BetterCrunchyroll/
 ├─ background.js          # service worker
 ├─ content.js             # main logic
 ├─ content.css            # global CR overrides
@@ -125,7 +125,7 @@ PRs are welcome! Please:
 2. Align with existing code style (Prettier defaults).
 3. Describe **what** & **why** – screenshots/gifs appreciated.
 
-Bug reports / feature requests → [Issues](https://github.com/YourUser/BetterCrunchy/issues).
+Bug reports / feature requests → [Issues](https://github.com/JeremGamingYT/BetterCrunchyrollroll/issues).
 
 ---
 
