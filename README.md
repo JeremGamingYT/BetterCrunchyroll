@@ -26,7 +26,9 @@
 **BetterCrunchyroll** transforms the vanilla Crunchyroll UI into a sleek, dark, glass-styled experience, complete with silky animations, handy shortcuts and QoL tweaks – no server-side hacks, just pure CSS/JS injected on-the-fly.
 
 <p align="center">
-  <img src="./assets/screenshot.png" alt="BetterCrunchyroll preview" width="800" />
+  <img src="./assets/example_1.png" alt="BetterCrunchyroll calendar view" width="380" />
+  &nbsp;
+  <img src="./assets/example_2.png" alt="BetterCrunchyroll video player" width="380" />
 </p>
 
 ---
@@ -142,4 +144,4 @@ This project is **UI-only** – it does **not**:
 
 BetterCrunchyroll injects client-side CSS/JS to restyle pages already delivered to the user's browser, which is generally considered *fair use / permissible customization* under U.S. and Canadian law so long as no technical protection measures are circumvented and the original service is not impaired.
 
-Crunchyroll® is a registered trademark of Crunchyroll LLC. This extension is an independent, fan-made project and is not affiliated, endorsed, or sponsored by Crunchyroll LLC, Sony Pictures, or any subsidiaries. 
+Crunchyroll® is a registered trademark of Crunchyroll LLC. This extension is an independent, fan-made project and is not affiliated, endorsed, or sponsored by Crunchyroll LLC, Sony Pictures, or any subsidiaries.

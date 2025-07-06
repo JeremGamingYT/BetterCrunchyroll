@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener((msg, sender, reply) => {
     if (msg.type !== 'FETCH_BLOB') return;
     fetch(msg.url, { mode: 'cors' })
       .then(r => r.blob())
-      .then(b => reply({ ok: true, blobURL: URL.createObjectURL(b) }))
+      .then(b => reply({ ok: true, blob: b }))
       .catch(() => reply({ ok: false }));
     return true;           // async
 });  

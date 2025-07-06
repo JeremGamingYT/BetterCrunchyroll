@@ -86,15 +86,16 @@ function runColorTitles(){
     chrome.runtime.sendMessage({ type:'FETCH_BLOB', url: img.src }, res => {
       if (!res?.ok) return;
       const tmp = new Image();
+      const blobURL = URL.createObjectURL(res.blob);
       tmp.onload = () => {
         const c = document.createElement('canvas');
         c.width = c.height = SAMPLE;
         c.getContext('2d').drawImage(tmp,0,0,SAMPLE,SAMPLE);
         title.style.color = enhance(avgRgb(c));
         done.add(title);
-        URL.revokeObjectURL(res.blobURL);
+        URL.revokeObjectURL(blobURL);
       };
-      tmp.src = res.blobURL;
+      tmp.src = blobURL;
     });
   };
 
