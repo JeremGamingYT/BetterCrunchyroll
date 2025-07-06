@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+/********🏻  Simulcast Calendar – BetterCrunchy Styles ********/
+:root{
+  --cr-radius:16px;
+  --cr-shadow:0 6px 18px rgba(0,0,0,.18);
+  --cr-shadow-hov:0 8px 22px rgba(0,0,0,.24);
+  --cr-glass:rgba(255,255,255,.08);
+  --cr-glass-blur:8px;
+  --cr-trans-fast:.15s cubic-bezier(.4,0,.2,1);
+  --cr-accent:#ff8833;
+}
+
+/* Header */
+.simulcast-calendar-header{
+  background:var(--cr-glass)!important;
+  backdrop-filter:blur(var(--cr-glass-blur));
+  box-shadow:var(--cr-shadow);
+  border-radius:var(--cr-radius)!important;
+  padding:.75rem 1rem!important;
+  margin-bottom:1.5rem!important;
+}
+
+/* Mode buttons */
+.mode-button{
+  background:none!important;
+  border:0!important;
+  color:var(--cr-accent)!important;
+  transition:filter var(--cr-trans-fast);
+}
+.mode-button:hover{filter:brightness(1.25);} 
+.mode-button.active{color:#000!important;background:var(--cr-accent)!important;border-radius:var(--cr-radius);} 
+
+/* Calendar day cards */
+.calendar-day{
+  background:var(--cr-glass)!important;
+  border-radius:var(--cr-radius)!important;
+  padding:1rem!important;
+  transition:transform var(--cr-trans-fast),box-shadow var(--cr-trans-fast),filter var(--cr-trans-fast);
+}
+.calendar-day:hover{
+  transform:translateY(-3px) scale(1.02);
+  filter:brightness(1.05);
+  box-shadow:var(--cr-shadow-hov);
+}
+.calendar-day--is-today{outline:2px solid var(--cr-accent)!important;} 
+
+/* Affiches et miniatures arrondies */
+.poster-image,
+.js-poster-image,
+.thumbnail,
+.js-poster-image-link img,
+.season-key-art,
+.thumbnail-container{
+  border-radius:var(--cr-radius)!important;
+  overflow:hidden!important;
+} 
+
+/********🏻  Dark Theme Background ********/
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:linear-gradient(135deg,#1e1f29 0%, #141519 50%, #0e0f13 100%);
+  z-index:-1;
+}
+main,section,article{
+  background:transparent!important;
+}
+
+/********🏻  Transparent Rounded Navbar ********/
+header,
+.erc-header,
+.simulcast-calendar-header,
+.page-header,
+.app-header{
+  background:var(--cr-glass)!important;
+  backdrop-filter:blur(var(--cr-glass-blur));
+  box-shadow:var(--cr-shadow);
+  border-radius:var(--cr-radius)!important;
+} 
+
+/********🏻  Global typography and color ********/
+body{color:#e6e6e6!important;}
+
+/********🏻  Layout spacing ********/
+.calendar{display:flex;gap:1.25rem!important;}
+.calendar-day{margin:0!important;flex:1 1 160px;}
+
+/* Ensure text inside cards est lisible */
+.calendar-day, .calendar-day *{color:#ddd!important;}
+
+/* Title bar inside calendar-day (hour / series name) spacing */
+.calendar-day .time, .calendar-day h3, .calendar-day h4{margin-bottom:.3rem!important;} 
