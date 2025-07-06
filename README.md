@@ -1,138 +1,133 @@
-# BetterCrunchy – Extension Chrome
+# 🚀 BetterCrunchy Chrome Extension
 
-> Une refonte moderne, élégante et ultra-pratique de l’expérience Crunchyroll.
+[![GitHub Stars](https://img.shields.io/github/stars/YourUser/BetterCrunchy?style=social)](https://github.com/YourUser/BetterCrunchy)
+[![Issues](https://img.shields.io/github/issues/YourUser/BetterCrunchy)](https://github.com/YourUser/BetterCrunchy/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/YourUser/BetterCrunchy)](https://github.com/YourUser/BetterCrunchy/pulls)
+[![MIT License](https://img.shields.io/github/license/YourUser/BetterCrunchy)](LICENSE)
+
+> ✨ A fresh, glass-morphism makeover for Crunchyroll – plus productivity boosters for the ultimate binge-watcher.
 
 ---
 
-## Sommaire
-1. [Présentation](#présentation)
-2. [Fonctionnalités clés](#fonctionnalités-clés)
-3. [Détail des améliorations](#détail-des-améliorations)
-4. [Personnalisation](#personnalisation)
+## 📜 Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Full Changelog](#full-changelog)
+4. [Customization](#customization)
 5. [Installation](#installation)
-6. [Développement](#développement)
+6. [Dev Guide](#dev-guide)
 7. [Roadmap](#roadmap)
-8. [Crédits & licence](#crédits--licence)
+8. [Contributing](#contributing)
+9. [License](#license)
 
 ---
 
-## Présentation
-**BetterCrunchy** transforme l’interface web de Crunchyroll en lui apportant un design plus actuel basé sur le *glass-morphism*, des animations fluides et une série d’outils pratiques pensés pour les binge-watchers.
+## 🎬 Overview
+**BetterCrunchy** transforms the vanilla Crunchyroll UI into a sleek, dark, glass-styled experience, complete with silky animations, handy shortcuts and QoL tweaks – no server-side hacks, just pure CSS/JS injected on-the-fly.
 
-![BetterCrunchy screenshot](./assets/screenshot.png)
-
----
-
-## Fonctionnalités clés
-| Catégorie | Fonction | Description |
-|-----------|----------|-------------|
-| **Interface** | Design *glass* & thème sombre | Arrière-plan dégradé, cartes translucides, coins arrondis & ombres douces. |
-| | Accent dynamique | Couleur d’accent modifiable dans les options → cascade sur tous les éléments clés (boutons, barres de progression, spinner, etc.). |
-| | Animation de survol | Cartes, bannières, liens footer : légère élévation + éclaircissement. |
-| | Header auto-hide | Masque automatiquement la barre de navigation au scroll pour maximiser l’espace. |
-| | Scrollbar custom | Barre fine 10 px + poignée colorée à l’accent. |
-| **Cartes** | Suppression du shine | Retrait de l’effet « shine » original des *browse cards*. |
-| | Cartes élargies | *Playable / browse cards* élargies (190 px) pour une meilleure visibilité. |
-| | Hover simplifié | Masque titres & boutons superflus, recentre le rating & meta. |
-| | Bouton « Plus d’options » masqué | Déclencheur supprimé pour un look épuré. |
-| **Watchlist & actions** | Boutons colorés | `continue-watching`, `up-next`, `watchlist-cta`, `add/remove-watchlist`, `custom-list`, `share`, `hero-more` → tous recolorés. |
-| **Vidéo** | PiP intégré | Bouton ⧉ natif dans la barre de contrôle + raccourci `Ctrl + P`. |
-| | Auto-Skip | Saut automatique d’intro/outro & bouton *Skip* auto-click (option). |
-| | Auto-Next | Lecture automatique de l’épisode suivant avec compte à rebours (option). |
-| | Barre de progression | Couleurs accent (progress, buffer, knob). |
-| | Spinner de chargement | Cercle animé recoloré à l’accent. |
-| | Coins arrondis | Lecteur HTML5 & contrôles vidéo. |
-| **Simulcast Calendar** | Thème dédié | Header translucide, fond sombre, cartes jour en glass-morphisme, boutons mode recolorés. |
-| | Affiches arrondies | `.poster-image`, miniatures & popover. |
-| **Navigation** | Footer animé | Hover accentué sur tous les liens. |
-| | Menu utilisateur | Fond #121317, coins arrondis & verre dépoli. |
-| **Performance** | Injection sélective | Extension désactivée sur `store.crunchyroll.com` & `help.crunchyroll.com`. |
+<p align="center">
+  <img src="./assets/screenshot.png" alt="BetterCrunchy preview" width="800" />
+</p>
 
 ---
 
-## Détail des améliorations
-### Style global
-* Variables CSS `--cr-*` pour rayon, ombres, accent, etc.  
-* Arrière-plan sombre dégradé en pseudo-élément `body::before` (z-index -1).  
-* Typeface *Inter* chargée depuis Google Fonts.
-
-### Cartes & listes
-* Coins arrondis (`var(--cr-radius)`), ombre légère & hover *lift*.  
-* Retrait de la brillance (*shine*) et du zoom trop marqué.  
-* Boutons Play/Add masqués pour un aperçu plus clean.
-
-### Vidéo / Player Vilos
-* **PiP** : insertion dynamique du bouton dans la barre de contrôle ou flottant.  
-* **Auto-Skip** introductions/outros + toast de confirmation.  
-* **Auto-Next** configurable avec overlay d’annulation.  
-* Barre de progression & segments recolorés.  
-* Spinner Lottie recoloré via CSS & JS.  
-* Coins du player et des contrôles arrondis.
-
-### Simulcast Calendar
-* Thème sombre dédié isolé dans `calendar.css`.  
-* Header & boutons mode *glass* + accent.  
-* Colonnes espacées (`gap`), affiches arrondies, hover lift.
-
-### Footer & liens
-* Hover animé (lift + accent).  
-* Texte hérité, couleur accent au survol.
-
-### Menu utilisateur
-* Fond sombre (#121317) + glass blur & ombre.  
-* Coins arrondis pour s’aligner sur la navbar.
+## 🧰 Features
+| Category | Feature | Description |
+|----------|---------|-------------|
+| **UI** | Dark / glass theme | Gradient backdrop, translucent cards, rounded corners & soft shadows. |
+| | Dynamic accent color | Every orange element now inherits `--cr-accent` (customizable). |
+| | Hover lift ✈️ | Cards, banners & footer links float slightly on hover. |
+| | Auto-hide navbar | Header glides away when scrolling down. |
+| | Custom scrollbar | 10 px track with accent thumb. |
+| **Cards** | Shine removed | Goodbye distracting glare. |
+| | Wider playable cards | 160 → 190 px for better poster visibility. |
+| | Minimal hover | Stripped titles/buttons, centered meta. |
+| | "More options" hidden | Cleaner look. |
+| **Actions** | Accent buttons | Continue, Up-next, Watchlist, Share, etc. now respect theme. |
+| **Player** | Picture-in-Picture ⧉ | Native PiP button + `Ctrl/⌘+P` shortcut. |
+| | Auto-Skip ⏩ | Skips intros/outros automatically (opt-in). |
+| | Auto-Next ▶️ | Countdown overlay launches next episode (opt-in). |
+| | Progress bar | Accent gradient + knob color. |
+| | Loading spinner | SVG stroke recolored to accent. |
+| **Simulcast Calendar** | Dedicated dark theme | Isolated `calendar.css`, glass header & hover animations. |
+| | Rounded posters | Posters, thumbnails & popovers. |
+| **Footer** | Animated links | Lift on hover, accent tint. |
+| **User menu** | Glass panel | Dark background `#121317`, blur & rounded corners. |
+| **Performance** | Selective injection | Extension disabled on `store.crunchyroll.com` & `help.crunchyroll.com`. |
 
 ---
 
-## Personnalisation
-Ouvrez le **popup** de BetterCrunchy :
-1. Choisissez la couleur d’accent (couleur HEX).  
-2. Définissez le rayon global (px).  
-3. Activez/désactivez : Couleur des titres, Auto-Hide Header, Auto-Skip, Auto-Next.
-
-Les changements sont appliqués **instantanément** sur les pages actives (ou après rafraîchissement si nécessaire).
-
----
-
-## Installation
-1. Téléchargez ou clonez ce dépôt.  
-2. Ouvrez `chrome://extensions` → **Mode développeur**.  
-3. **Charger l’extension non empaquetée** → sélectionnez le dossier `BetterCrunchyroll`.  
-4. Rendez-vous sur Crunchyroll : l’interface est métamorphosée 🎉
-
-> L’extension s’injecte sur `*.crunchyroll.com` hors Store & Help, et sur `*.vrv.co`.
+## 📈 Full Changelog
+See **[CHANGELOG](CHANGELOG.md)** for granular commits. Main milestones:
+* v5.0 – Complete glass redesign, CSS variables.
+* v5.2 – PiP button & video QoL.
+* v5.3 – Calendar dark mode split into `calendar.css`.
+* v5.5 – Dynamic spinner / progress recolor, README overhaul.
 
 ---
 
-## Développement
-* **Manifest V3** – service worker `background.js`.  
-* Scripts : `content.js` (général) + `calendar.css` dédié sur Simulcast Calendar.  
-* Build : aucune dépendance externe, live-reload via rechargement de l’extension.
+## 🎨 Customization
+Open the extension popup:
+1. Pick your **Accent Color** 🎨 (any HEX).
+2. Set **Corner Radius** (px).
+3. Toggles: *Colored Titles*, *Auto-Hide Header*, *Auto-Skip*, *Auto-Next*.
 
-### Structure
+Changes propagate instantly thanks to CSS variables (or after refresh).
+
+---
+
+## ⚡ Installation
+```bash
+# Clone the repo
+git clone https://github.com/YourUser/BetterCrunchy.git
+cd BetterCrunchy
+
+# Load into Chrome / Edge
+chrome://extensions → Enable *Developer mode* → *Load unpacked* → select project folder.
 ```
-BetterCrunchyroll/
-├─ background.js              # service worker (fetch blob, etc.)
-├─ content.js                 # logique principale
-├─ content.css                # styles globaux CR
-├─ calendar.css               # styles spécifiques Simulcast Calendar
-├─ manifest.json              # Manifest V3
-├─ popup.html / popup.js      # UI options
-├─ icons/                     # logos extension
-└─ Crunchyroll Default Files/ # ressources originales de référence
+Navigate to Crunchyroll – enjoy your upgraded interface! 🚀
+
+> The extension injects on `*.crunchyroll.com` (excluding Store & Help) and `*.vrv.co`.
+
+---
+
+## 🔧 Dev Guide
+* Manifest V3 – Service Worker `background.js`.
+* **Global styles**: `content.css` ; **Calendar styles**: `calendar.css`.
+* Live-reload: just hit *Reload* in the Extensions page after changes.
+
+### Project Tree
+```text
+BetterCrunchy/
+├─ background.js          # service worker
+├─ content.js             # main logic
+├─ content.css            # global CR overrides
+├─ calendar.css           # simulcast calendar theme
+├─ manifest.json          # MV3 manifest
+├─ popup.html / popup.js  # settings UI
+├─ icons/                 # logos
+└─ Crunchyroll Default Files/ # reference originals
 ```
 
 ---
 
-## Roadmap
-- [ ] Support complet du **Manga Reader**.  
-- [ ] Mode clair optionnel.  
-- [ ] Personnalisation avancée des raccourcis clavier.  
-- [ ] Portage **Firefox** (MV3 support en cours).
+## 🚀 Roadmap
+- [ ] Manga reader theming 📚
+- [ ] Optional light theme 🌞
+- [ ] Custom keyboard shortcuts ⌨️
+- [ ] Firefox port 🦊 (MV3 parity)
 
 ---
 
-## Crédits & licence
-*Développé avec ❤️ par la communauté anime.*  
-BetterCrunchy est un projet non-officiel, sans lien avec Crunchyroll LLC.  
-Licence MIT – voir `LICENSE`. 
+## 🤝 Contributing
+PRs are welcome! Please:
+1. Fork → feature branch → PR.
+2. Align with existing code style (Prettier defaults).
+3. Describe **what** & **why** – screenshots/gifs appreciated.
+
+Bug reports / feature requests → [Issues](https://github.com/YourUser/BetterCrunchy/issues).
+
+---
+
+## 📝 License
+MIT © YourName – This project is unaffiliated with Crunchyroll LLC. 
