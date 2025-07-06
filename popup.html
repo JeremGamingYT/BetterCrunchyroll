@@ -1,4 +1,4 @@
-<!doctype html><html lang="fr">
+<!doctype html><html lang="en">
 <head>
 <meta charset="utf-8" />
 <title>BetterCrunchy PLUS</title>
@@ -6,12 +6,12 @@
 <style>
 :root{
   --accent:#ff8833;
-  --radius:8px;
-  --bg:#1e1e1e;
-  --card-bg:#262626;
-  --text:#fafafa;
+  --radius:10px;
+  --bg:#111115;
+  --card-bg:rgba(255,255,255,0.06);
+  --text:#f0f0f0;
 }
-html,body{margin:0;padding:0;}
+html,body{margin:0;padding:0;overflow:hidden;}
 body{
   font-family:'Inter',Arial,sans-serif;
   width:300px;
@@ -25,19 +25,26 @@ header{
   display:flex;
   align-items:center;
   gap:.6rem;
-  padding:12px 16px;
-  background:linear-gradient(135deg,#ff7b2e 0%,#ff9933 100%);
+  padding:14px 18px;
+  background:linear-gradient(135deg,var(--accent) 0%,color-mix(in srgb,var(--accent) 70%,white) 100%);
   color:#000;
+  border-bottom:1px solid rgba(255,255,255,.1);
+  border-top-left-radius:var(--radius);
+  border-top-right-radius:var(--radius);
 }
 header img{width:24px;height:24px;}
 header h1{font-size:1.05rem;margin:0;font-weight:600;}
-main{padding:16px;display:flex;flex-direction:column;gap:16px;}
+main{padding:16px;display:flex;flex-direction:column;gap:18px;}
 .card{
   background:var(--card-bg);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.08);
   border-radius:var(--radius);
-  padding:14px 16px;
-  box-shadow:0 2px 6px rgba(0,0,0,.4);
+  padding:16px 18px;
+  box-shadow:0 4px 10px rgba(0,0,0,.5);
+  transition:transform .2s,box-shadow .2s;
 }
+.card:hover{transform:translateY(-3px);box-shadow:0 6px 14px rgba(0,0,0,.6);}
 .card h3{margin:0 0 10px;font-size:.95rem;color:var(--accent);}
 /* Toggle switch */
 .switch{position:relative;width:42px;height:22px;}
@@ -63,23 +70,20 @@ button.primary:hover{filter:brightness(1.1);}
 <main>
   <section class="card">
     <h3>Tweaks</h3>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
-      <span>Arrondi</span><input id="radius" type="range" min="4" max="24">
-    </div>
     <label style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
-      <span>Titres colorés</span>
+      <span>Colored titles</span>
       <label class="switch"><input id="colorTitles" type="checkbox"><span class="slider"></span></label>
     </label>
     <label style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
-      <span>Cacher le header</span>
+      <span>Hide header</span>
       <label class="switch"><input id="autoHideHeader" type="checkbox"><span class="slider"></span></label>
     </label>
   </section>
 
   <section class="card">
-    <h3>Apparence</h3>
+    <h3>Appearance</h3>
     <div style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
-      <span>Thème</span>
+      <span>Theme</span>
       <select id="theme">
         <option value="default">Crunchy</option>
         <option value="dark">Dark++</option>
@@ -87,35 +91,26 @@ button.primary:hover{filter:brightness(1.1);}
       </select>
     </div>
     <div style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
-      <span>Couleur accent</span><input id="accentColor" type="color" style="width:42px;height:26px;padding:0;border:none;border-radius:4px;">
-    </div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
-      <span>Police</span>
-      <select id="font">
-        <option value="Inter">Inter</option>
-        <option value="Roboto">Roboto</option>
-        <option value="Poppins">Poppins</option>
-        <option value="Lato">Lato</option>
-      </select>
+      <span>Accent color</span><input id="accentColor" type="color" style="width:42px;height:26px;padding:0;border:none;border-radius:4px;">
     </div>
   </section>
 
   <section class="card">
-    <h3>Lecture</h3>
+    <h3>Playback</h3>
     <label style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
       <span>Auto-Skip intro/outro</span>
       <label class="switch"><input id="autoSkip" type="checkbox"><span class="slider"></span></label>
     </label>
     <label style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
-      <span>Auto-Next épisode</span>
+      <span>Auto-Next episode</span>
       <label class="switch"><input id="autoNext" type="checkbox"><span class="slider"></span></label>
     </label>
     <div id="autoNextDelayRow" style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
-      <span>Délai Auto-Next (<span id="delayLabel">5</span>s)</span><input id="autoNextDelay" type="range" min="3" max="15" value="5">
+      <span>Auto-Next delay (<span id="delayLabel">5</span>s)</span><input id="autoNextDelay" type="range" min="3" max="15" value="5">
     </div>
   </section>
 
-  <button id="savePage" class="primary">Sauvegarder la page</button>
+  <button id="savePage" class="primary">Save page</button>
 </main>
 <script src="popup.js"></script>
 </body>
