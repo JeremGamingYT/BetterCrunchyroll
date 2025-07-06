@@ -26,9 +26,9 @@
 **BetterCrunchyroll** transforms the vanilla Crunchyroll UI into a sleek, dark, glass-styled experience, complete with silky animations, handy shortcuts and QoL tweaks – no server-side hacks, just pure CSS/JS injected on-the-fly.
 
 <p align="center">
-  <img src="./assets/example_1.png" alt="BetterCrunchyroll calendar view" width="380" />
+  <img src="./Images//example_1.png" alt="BetterCrunchyroll calendar view" width="380" />
   &nbsp;
-  <img src="./assets/example_2.png" alt="BetterCrunchyroll video player" width="380" />
+  <img src="./Images/example_2.png" alt="BetterCrunchyroll video player" width="380" />
 </p>
 
 ---
