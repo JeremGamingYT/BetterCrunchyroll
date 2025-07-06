@@ -3,7 +3,7 @@
     "description": "Crunchyroll with a modern interface and smooth animations and extra features.",
     "version": "6.2.1",
     "manifest_version": 3,
-    "permissions": ["storage", "downloads", "scripting", "tabs"],
+    "permissions": ["storage", "downloads", "scripting", "tabs", "notifications", "alarms"],
     "host_permissions": ["*://*.amaized.net/*", "*://*.crunchyroll.com/*", "https://crunchyroll.com/*"],
   
     "background": { "service_worker": "background.js" },
@@ -15,6 +15,12 @@
     },
   
     "content_scripts": [
+      {
+        "matches": ["*://*.crunchyroll.com/*bettercrunchy/stats*"],
+        "js": ["stats_preload.js"],
+        "run_at": "document_start",
+        "all_frames": true
+      },
       {
         "matches": ["*://*.crunchyroll.com/*", "*://*.vrv.co/*"],
         "css": ["content.css"],
@@ -39,5 +45,12 @@
       }
     ],
   
-    "action": { "default_popup": "popup.html" }
+    "action": { "default_popup": "popup.html" },
+
+    "web_accessible_resources": [
+      {
+        "resources": ["crunchyroll-header.html", "crunchyroll-footer.html", "Crunchyroll Default Files/346dc578e470de46.css", "Crunchyroll Default Files/e97e7874a8d765b8.css"],
+        "matches": ["<all_urls>"]
+      }
+    ]
 }

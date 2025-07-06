@@ -107,4 +107,26 @@ function initPopup(){
   // hide delay row toggle
   const toggleDelay=()=>{$('autoNextDelayRow').style.display=$('autoNext').checked?'flex':'none';};
   toggleDelay();
+
+  // ----------- Test notification ----------
+  if(document.getElementById('testEpisodeNotif')){
+    document.getElementById('testEpisodeNotif').addEventListener('click',()=>{
+      chrome.runtime.sendMessage({type:'TEST_NOTIFICATION'});
+    });
+  }
+
+  /* ---------- Stats ---------- */
+  function fmt(sec){const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60);return `${h}h ${m}m`;}
+  function refreshStats(){
+    chrome.runtime.sendMessage({type:'STAT_REQUEST'}, stats=>{
+      if(stats && document.getElementById('statTime')){
+        document.getElementById('statTime').textContent = fmt(stats.totalSeconds||0);
+      }
+    });
+  }
+  refreshStats();
+  const simBtn=document.getElementById('statSimulate');
+  if(simBtn) simBtn.addEventListener('click',()=>{chrome.runtime.sendMessage({type:'STAT_SIMULATE'}, stats=>{if(stats) document.getElementById('statTime').textContent=fmt(stats.totalSeconds);} );});
+  const resetBtn=document.getElementById('statReset');
+  if(resetBtn) resetBtn.addEventListener('click',()=>{chrome.runtime.sendMessage({type:'STAT_RESET'}, stats=>{if(stats) document.getElementById('statTime').textContent=fmt(stats.totalSeconds);} );});
 }
