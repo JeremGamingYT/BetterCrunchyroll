@@ -9,10 +9,24 @@ const SETTINGS = {
   autoSkip: false,
   autoNext: false,
   autoNextDelay: 5,
+  enabled: true,
 };
 
+// Initial load of settings
 chrome.storage.sync.get(SETTINGS, stored => {
   Object.assign(SETTINGS, stored);
+
+  // Si l'extension est désactivée, on sort immédiatement
+  if (!SETTINGS.enabled) {
+    // Retire le CSS BetterCrunchy inséré via manifest
+    document.querySelectorAll('link[rel="stylesheet"][href*="content.css"]').forEach(el => el.remove());
+    // Retire la feuille de variables racine si elle existe
+    const vars = document.getElementById('bcp-root-vars');
+    if (vars) vars.remove();
+
+    console.log('[BetterCrunchy] Extension désactivée via les paramètres.');
+    return;
+  }
 
   /* Utility to lighten a hex color */
   function lighten(hex, percent=0.3){
@@ -35,6 +49,21 @@ chrome.storage.sync.get(SETTINGS, stored => {
 
   initFeatures();
   recolorProgressBar();
+});
+
+/* Listen for runtime enable/disable toggle */
+chrome.storage.onChanged.addListener((changes, area)=>{
+  if(area!=='sync' || !changes.enabled) return;
+  const enabled = changes.enabled.newValue;
+  if(enabled){
+    // Re-enable: reload to re-inject scripts and styles
+    window.location.reload();
+    return;
+  }
+  // Disable: remove injected styles and cleanup
+  document.querySelectorAll('link[rel="stylesheet"][href*="content.css"]').forEach(el=>el.remove());
+  document.getElementById('bcp-root-vars')?.remove();
+  console.log('[BetterCrunchy] Extension disabled (runtime). Cleaned up.');
 });
 
 function initFeatures(){
@@ -106,6 +135,8 @@ function initFeatures(){
 
   /* ---------- Repositionnement Prev/Next Episodes ---------- */
   runPrevNextSidebar();
+  runDomModDemo(); // Ajout de la démo
+  runSeasonHeaderMarginToggle();
 }
 
 function runColorTitles(){
@@ -648,4 +679,43 @@ function runPrevNextSidebar(){
   tryRelocate();
   const obs = new MutationObserver(tryRelocate);
   obs.observe(document.body, { childList:true, subtree:true });
+}
+
+function runSeasonHeaderMarginToggle(){
+  const CLASS_NAME = 'bcp-season-expanded';
+  const BTN_SELECTOR = 'button.expandable-btn, button[class*="expandable"]';
+
+  const isExpanded = () => {
+    const btns = document.querySelectorAll(BTN_SELECTOR);
+    if(btns.length===0) return false;
+    return Array.from(btns).some(btn => {
+      const aria = btn.getAttribute('aria-expanded');
+      return aria === 'true' || btn.classList.contains('expanded') || btn.classList.contains('is-expanded');
+    });
+  };
+
+  const applyState = () => {
+    const state = isExpanded();
+    document.body.classList.toggle(CLASS_NAME, state);
+    console.debug('[BetterCrunchy] Season header state', state ? 'EXPANDED':'COLLAPSED');
+  };
+
+  // Initial application after DOM ready
+  applyState();
+
+  /* Observe attribute AND additions */
+  const obs = new MutationObserver(muts => {
+    let needs=false;
+    muts.forEach(m=>{
+      if(m.type==='attributes') needs=true;
+      if(m.type==='childList' && (m.addedNodes.length||m.removedNodes.length)) needs=true;
+    });
+    if(needs) applyState();
+  });
+  obs.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['aria-expanded','class']});
+
+  /* Surveille les clics (fallback) */
+  document.addEventListener('click', e => {
+    if(e.target.closest(BTN_SELECTOR)) setTimeout(applyState, 60);
+  }, true);
 }

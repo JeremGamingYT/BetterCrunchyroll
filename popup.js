@@ -10,7 +10,8 @@ const DEF = {
   autoSkip: false,
   autoNext: false,
   autoNextDelay: 5,
-  pipDraggable: false
+  pipDraggable: false,
+  enabled: true
 };
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -33,6 +34,7 @@ function initPopup(){
     $('autoNext').checked      = cfg.autoNext;
     $('autoNextDelay').value   = cfg.autoNextDelay;
     $('delayLabel').textContent= cfg.autoNextDelay;
+    $('extEnabled').checked    = cfg.enabled;
 
     // apply accent and radius to popup itself
     document.documentElement.style.setProperty('--accent', cfg.accentColor);
@@ -102,6 +104,23 @@ function initPopup(){
   $('autoNextDelay').addEventListener('input', e => {
     $('delayLabel').textContent = e.target.value;
     chrome.storage.sync.set({ autoNextDelay: +e.target.value });
+  });
+
+  // ----- Enable / Disable extension -----
+  $('extEnabled').addEventListener('change', e => {
+    const enabled = e.target.checked;
+    chrome.storage.sync.set({ enabled });
+    // (Optionnel) On (re)charge les onglets Crunchyroll pour appliquer immédiatement le changement
+    queryCrunchyTabs(tabs => {
+      tabs.forEach(t => {
+        // Si désactivé on retire les CSS, sinon on insère à nouveau
+        if(!enabled){
+          chrome.scripting.removeCSS({target:{tabId:t.id}, files:['content.css']}, ()=>chrome.tabs.reload(t.id));
+        }else{
+          chrome.scripting.insertCSS({target:{tabId:t.id}, files:['content.css']}, ()=>chrome.tabs.reload(t.id));
+        }
+      });
+    });
   });
 
   // hide delay row toggle

@@ -139,9 +139,9 @@ header,
 }
 
 /********🏻  Compensation de l'espace pris par la navbar ********/
-body:not(.bcp--scrolled){
+/* body:not(.bcp--scrolled){
   padding-top:calc(var(--cx-header-height) + 2rem);
-}
+} */
 
 /********🏻  app-layout header height auto ********/
 .app-layout__header--ywueY{
@@ -172,39 +172,61 @@ body:not(.bcp--scrolled){
 
 /********🏻  Animation hover améliorée pour les cartes ********/
 @keyframes cr-card-shine{
-  0%{opacity:0;transform:translateX(-100%);} 
-  50%{opacity:.35;} 
-  100%{opacity:0;transform:translateX(100%);} 
+  0%   { transform: translateX(-150%) skewX(-25deg); opacity: 0.5; }
+  100% { transform: translateX(150%) skewX(-25deg); opacity: 0; }
 }
 
 /* Cible les différentes familles de cartes */
 [class*="browse-card__card--"],
 .browse-card--esJdT,
 .playable-card--GnRbX,
+.playable-card-mini-static--WU--V,
 .artist-card--K0FbZ{
   position:relative; /* nécessaire pour le pseudo-élément */
-  transition:transform var(--cr-trans), box-shadow var(--cr-trans), filter var(--cr-trans);
+  transition: transform .3s cubic-bezier(.4,0,.2,1), 
+              box-shadow .3s cubic-bezier(.4,0,.2,1), 
+              filter .3s cubic-bezier(.4,0,.2,1);
   overflow:hidden; /* le faisceau reste dans la carte */
+  will-change: transform, box-shadow; /* Optimisation des perfs */
 }
+
+/* Ajout du pseudo-élément pour le miroitement */
+[class*="browse-card__card--"]::before,
+.browse-card--esJdT::before,
+.playable-card--GnRbX::before,
+.playable-card-mini-static--WU--V::before,
+.artist-card--K0FbZ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
 
 /* Effet au survol */
 [class*="browse-card__card--"]:hover,
 .browse-card--esJdT:hover,
 .playable-card--GnRbX:hover,
+.playable-card-mini-static--WU--V:hover,
 .artist-card--K0FbZ:hover{
-  transform:translateY(-4px) scale(1.03);
-  filter:brightness(1.15);
-  box-shadow:var(--cr-shadow-hov), 0 6px 20px rgba(0,0,0,.25);
+  transform: translateY(-5px) scale(1.03);
+  filter: brightness(1.1);
+  box-shadow: var(--cr-shadow-hov), 0 10px 24px rgba(0,0,0,.25);
 }
 
 /* Faisceau lumineux animé */
 [class*="browse-card__card--"]:hover::before,
 .browse-card--esJdT:hover::before,
 .playable-card--GnRbX:hover::before,
+.playable-card-mini-static--WU--V:hover::before,
 .artist-card--K0FbZ:hover::before{
-  content:none !important;
-  background:none !important;
-  animation:none !important;
+  animation: cr-card-shine 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /* video player */
@@ -278,7 +300,14 @@ body:not(.bcp--scrolled){
 
 /********🏻  Ajustement taille cartes browse & fond hover ********/
 .erc-browse-cards-collection .browse-card{
-  width:190px!important;
+  width:160px!important;
+}
+
+/* Réduction de la taille pour d'autres variantes de cartes (series, personalised, carousel) */
+.series-card,
+.personalized-collection-card,
+.carousel-card-wrapper{
+  width:160px!important;
 }
 
 .browse-card-hover__content--aD-bn{
@@ -409,12 +438,8 @@ button[aria-label*="Ajouter" i]{
 .playable-card--GnRbX{
   border-radius:var(--cr-radius)!important;
   overflow:hidden!important;
-  transition:transform var(--cr-trans-fast),box-shadow var(--cr-trans-fast),filter var(--cr-trans-fast)!important;
-}
-.playable-card--GnRbX:hover{
-  transform:translateY(-3px) scale(1.02);
-  filter:brightness(1.1);
-  box-shadow:var(--cr-shadow-hov),0 4px 14px rgba(0,0,0,.25);
+  /* La transition et le hover sont maintenant gérés par les règles
+     de "Animation hover améliorée pour les cartes" pour la cohérence. */
 }
 .playable-card-hover--preaw{
   border-radius:inherit!important;
@@ -483,13 +508,24 @@ button:not(.bcp-pip):not([disabled]):active{
 /********🏻  Boutons Continue Watching / Up Next ********/
 [data-t="continue-watching-btn"],
 [data-t="up-next-btn"],
+[data-t="rewatch-btn"],
 .button--is-type-one--3uIzT{
   background:var(--cr-accent) !important;
   border-color:var(--cr-accent) !important;
   color:#000 !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
 }
+[data-t="continue-watching-btn"]:hover,
+[data-t="up-next-btn"]:hover,
+[data-t="rewatch-btn"]:hover,
+.button--is-type-one--3uIzT:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 [data-t="continue-watching-btn"] svg,
 [data-t="up-next-btn"] svg,
+[data-t="rewatch-btn"] svg,
 .button--is-type-one--3uIzT svg{
   fill:currentColor !important;
 }
@@ -607,7 +643,103 @@ button:not(.bcp-pip):not([disabled]):active{
   transform:translateY(-2px);
 }
 
+/********🏻  Fond transparent pour les boutons du header au survol ********/
+a.erc-header-tile:hover,
+[data-t^="header-menu"]:hover {
+    background-color: transparent !important;
+}
+
 /********🏻  Loading spinner color ********/
 [data-testid="vilos-loading"] path{
   stroke:var(--cr-accent,#ff8833)!important;
+}
+
+/******** Supprimer les éléments inutiles ********/
+[data-t="single-show-card"],
+[data-t="feed-banner"],
+[data-t="music-video-collection-10"] {
+  display: none !important;
+}
+
+/******** Animations & Transitions Fluides ********/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    animation: cr-page-load-fade-in 0.6s ease-out forwards;
+}
+
+/* Transitions génériques pour une meilleure réactivité */
+a, [role="link"], [role="button"]:not(button) {
+  transition: color var(--cr-trans-fast), background-color var(--cr-trans-fast), opacity var(--cr-trans-fast), transform var(--cr-trans-fast);
+}
+
+a:not([class*="button"]):hover, [role="link"]:not([class*="button"]):hover {
+    color: var(--cr-accent) !important;
+    filter: brightness(1.15);
+}
+
+/* Animation d'apparition au défilement */
+@keyframes cr-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cr-page-load-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Cibles pour l'animation au défilement */
+[class*="browse-card--"],
+[class*="playable-card--"],
+[class*="artist-card--"],
+.erc-browse-list__item,
+.news-and-editorial--7Xuhv article,
+.card-watchlist-label--EUFMb,
+[data-t^="card-release"],
+[data-cy="carousel"] {
+  /* Déclenchement de l'animation */
+  animation: cr-fade-in-up linear;
+  animation-timeline: view();
+  animation-range-start: entry 5%;
+  animation-range-end: cover 35%;
+  animation-fill-mode: both;
+}
+
+
+/********🏻  Ajustement taille cartes carousel (anime cards) ********/
+@media (min-width: 50em) {
+  .wide-cards-carousel--in-browse-layout--k-yJA {
+      --wide-cards-carousel__cols: 6 !important;
+      --wide-cards-carousel__rows: 1 !important;
+  }
+}
+
+
+
+.erc-season-with-navigation .top-controls, .erc-season-with-navigation-placeholder .season-header {
+  display: flex !important;
+  align-items: center !important;
+  margin-top: 80px !important;
+  margin-block-end: .75rem !important;
+}
+body.bcp-season-expanded .erc-season-with-navigation .top-controls,
+body.bcp-season-expanded .erc-season-with-navigation-placeholder .season-header{
+  margin-top:-50px!important;
+}
+
+
+@media (min-width: 35.5em) {
+  .erc-series {
+      gap: 3.75rem !important;
+  }
 }
