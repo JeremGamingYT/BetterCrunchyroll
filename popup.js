@@ -110,16 +110,9 @@ function initPopup(){
   $('extEnabled').addEventListener('change', e => {
     const enabled = e.target.checked;
     chrome.storage.sync.set({ enabled });
-    // (Optionnel) On (re)charge les onglets Crunchyroll pour appliquer immédiatement le changement
+    // Recharge les onglets Crunchyroll pour appliquer immédiatement
     queryCrunchyTabs(tabs => {
-      tabs.forEach(t => {
-        // Si désactivé on retire les CSS, sinon on insère à nouveau
-        if(!enabled){
-          chrome.scripting.removeCSS({target:{tabId:t.id}, files:['content.css']}, ()=>chrome.tabs.reload(t.id));
-        }else{
-          chrome.scripting.insertCSS({target:{tabId:t.id}, files:['content.css']}, ()=>chrome.tabs.reload(t.id));
-        }
-      });
+      tabs.forEach(t => chrome.tabs.reload(t.id));
     });
   });
 
