@@ -109,10 +109,11 @@ function initPopup(){
   // ----- Enable / Disable extension -----
   $('extEnabled').addEventListener('change', e => {
     const enabled = e.target.checked;
-    chrome.storage.sync.set({ enabled });
-    // Recharge les onglets Crunchyroll pour appliquer immédiatement
-    queryCrunchyTabs(tabs => {
-      tabs.forEach(t => chrome.tabs.reload(t.id));
+    chrome.storage.sync.set({ enabled }, () => {
+      // Recharge les onglets Crunchyroll pour appliquer immédiatement
+      queryCrunchyTabs(tabs => {
+        tabs.forEach(t => chrome.tabs.reload(t.id));
+      });
     });
   });
 
