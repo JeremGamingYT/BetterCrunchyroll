@@ -2,94 +2,105 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BetterCrunchy PLUS</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root{
       --accent:#ff8833;
-      --radius:10px;
-      --bg:#111115;
+      --radius:12px;
+      --bg:#0b0c10;
       --card-bg:rgba(255,255,255,0.06);
-      --text:#f0f0f0;
-      --muted:#b9b9c0;
-      --outline:#2a2a2f;
+      --text:#f5f6f8;
+      --muted:#aeb2be;
+      --outline:#23242a;
+      --ok:#19c37d; --warn:#ffcc00; --danger:#ff5d5d;
     }
-    html,body{margin:0;padding:0;overflow:hidden;}
+    html,body{margin:0;padding:0;}
     body{
-      font-family:'Inter',Arial,sans-serif;
-      width:300px;
-      background:var(--bg);
+      font-family:'Inter',system-ui,Segoe UI,Arial,sans-serif;
+      width:340px; max-width:100vw;
+      background:radial-gradient(1200px 400px at 120% -10%, rgba(255,136,51,0.20), transparent 60%), var(--bg);
       color:var(--text);
-      display:flex;
-      flex-direction:column;
-      align-items:stretch;
+      display:flex;flex-direction:column;align-items:stretch;
     }
+    /* Header */
     header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:.6rem;
-      padding:14px 18px;
-      background:linear-gradient(135deg,var(--accent) 0%,color-mix(in srgb,var(--accent) 70%,white) 100%);
-      color:#000;
-      border-bottom:1px solid rgba(255,255,255,.1);
+      position:sticky;top:0;z-index:2;
+      display:flex;align-items:center;justify-content:space-between;gap:.6rem;
+      padding:14px 16px 12px;
+      background:linear-gradient(135deg,var(--accent), color-mix(in srgb, var(--accent) 70%, white));
+      color:#0b0c10;
+      border-bottom:1px solid rgba(0,0,0,.15);
       border-top-left-radius:var(--radius);
       border-top-right-radius:var(--radius);
     }
     header .brand{display:flex;align-items:center;gap:.6rem;}
-    header img{width:24px;height:24px;}
-    header h1{font-size:1.05rem;margin:0;font-weight:600;}
-    main{padding:14px;display:flex;flex-direction:column;gap:14px;}
-    .card{
-      background:var(--card-bg);
-      backdrop-filter:blur(8px);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:var(--radius);
-      padding:14px 14px;
-      box-shadow:0 4px 10px rgba(0,0,0,.5);
-      transition:transform .2s,box-shadow .2s;
-    }
-    .card:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(0,0,0,.6);}
-    .card h3{margin:0 0 8px;font-size:.95rem;color:var(--accent);}
-    .row{display:flex;justify-content:space-between;align-items:center;margin:6px 0;}
-    .stack{display:flex;flex-direction:column;gap:2px;}
-    .label{font-size:.9rem;}
-    .hint{font-size:.78rem;color:var(--muted);}
-    .divider{height:1px;background:var(--outline);margin:8px 0;border-radius:1px;}
+    header img{width:24px;height:24px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+    header h1{font-size:1.05rem;margin:0;font-weight:700;letter-spacing:.2px}
+    .kbadge{font-family:"JetBrains Mono",monospace;font-size:.7rem;background:rgba(0,0,0,.12);padding:2px 6px;border-radius:100px}
 
-    /* Toggle switch */
-    .switch{position:relative;width:42px;height:22px;display:inline-block;}
-    .switch input{opacity:0;width:0;height:0;position:absolute;}
-    .slider{position:absolute;cursor:pointer;inset:0;background:#555;border-radius:22px;transition:.25s;outline:2px solid transparent;outline-offset:2px;}
-    .slider:before{content:"";position:absolute;height:18px;width:18px;left:2px;bottom:2px;background:white;border-radius:50%;transition:.25s;}
-    input:checked + .slider{background:var(--accent);} 
-    input:checked + .slider:before{transform:translateX(20px);} 
-    .switch:focus-within .slider{outline:2px solid rgba(255,255,255,.4);} 
+    /* Search */
+    .search{
+      position:relative;margin:10px 12px 0;
+    }
+    .search input{width:100%;padding:10px 34px;border-radius:10px;border:1px solid var(--outline);background:#12131a;color:var(--text)}
+    .search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);opacity:.7}
+
+    /* Tabs */
+    .tabs{display:flex;gap:6px;padding:10px 12px 0}
+    .tab{flex:1;text-align:center;padding:8px 0;border:1px solid var(--outline);border-bottom:none;border-top-left-radius:10px;border-top-right-radius:10px;background:#0e0f14;cursor:pointer;color:var(--muted);font-weight:600;font-size:.85rem}
+    .tab[aria-selected="true"]{color:#000;background:var(--accent);border-color:color-mix(in srgb,var(--accent) 80%, black)}
+
+    /* Main */
+    main{padding:12px;display:flex;flex-direction:column;gap:12px;}
+
+    /* Card */
+    .card{background:var(--card-bg);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px 12px;box-shadow:0 6px 18px rgba(0,0,0,.45);transition:transform .2s,box-shadow .2s}
+    .card:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,0,0,.55)}
+    .card h3{margin:0 0 8px;font-size:.95rem;color:var(--accent)}
+    .row{display:flex;justify-content:space-between;align-items:center;margin:6px 0;gap:8px}
+    .stack{display:flex;flex-direction:column;gap:2px}
+    .label{font-size:.92rem}
+    .hint{font-size:.78rem;color:var(--muted)}
+    .divider{height:1px;background:var(--outline);margin:8px 0;border-radius:1px}
+
+    /* Pills group */
+    .pills{display:flex;gap:6px;flex-wrap:wrap}
+    .pill{padding:6px 10px;border-radius:999px;border:1px solid var(--outline);background:#12131a;color:var(--text);cursor:pointer;font-size:.8rem}
+    .pill[aria-pressed="true"]{background:var(--accent);color:#000;border-color:transparent}
+
+    /* Toggle */
+    .switch{position:relative;width:44px;height:24px;display:inline-block}
+    .switch input{opacity:0;width:0;height:0;position:absolute}
+    .slider{position:absolute;cursor:pointer;inset:0;background:#4b4f5a;border-radius:24px;transition:.25s;outline:2px solid transparent;outline-offset:2px}
+    .slider:before{content:"";position:absolute;height:18px;width:18px;left:3px;bottom:3px;background:linear-gradient(#fff,#e8e8e8);border-radius:50%;box-shadow:0 1px 2px rgba(0,0,0,.35);transition:.25s}
+    input:checked + .slider{background:var(--accent)}
+    input:checked + .slider:before{transform:translateX(20px)}
+    .switch:focus-within .slider{outline:2px solid rgba(255,255,255,.35)}
 
     /* Range */
-    input[type=range]{-webkit-appearance:none;width:160px;height:4px;background:#444;border-radius:2px;outline:none;}
-    input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--accent);cursor:pointer;}
+    input[type=range]{-webkit-appearance:none;width:170px;height:4px;background:#3a3d47;border-radius:3px;outline:none}
+    input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 0 0 2px #0b0c10 inset}
 
     /* Select & Color */
-    select, input[type=color]{
-      background:#333;color:var(--text);border:1px solid #555;border-radius:6px;padding:6px 8px;font-size:.85rem;
-    }
-    input[type=color]{width:42px;height:28px;padding:0;border:none;}
+    select, input[type=color]{background:#12131a;color:var(--text);border:1px solid #3a3d47;border-radius:8px;padding:8px 10px;font-size:.85rem}
+    input[type=color]{width:42px;height:30px;padding:0;border:none}
 
     /* Buttons */
-    .primary{
-      margin-top:8px;width:100%;background:var(--accent);border:none;padding:10px 0;
-      font-weight:700;border-radius:var(--radius);color:#000;cursor:pointer;font-size:.9rem;
-    }
-    .primary:hover{filter:brightness(1.06);} 
-    .primary:focus{outline:2px solid #fff;outline-offset:2px;}
+    .primary{margin-top:6px;width:100%;background:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 80%, black);padding:10px 0;font-weight:800;border-radius:10px;color:#0b0c10;cursor:pointer;font-size:.92rem;letter-spacing:.2px;box-shadow:0 6px 14px rgba(255,136,51,.25)}
+    .primary:hover{filter:brightness(1.06)}
+    .primary:focus{outline:2px solid #fff;outline-offset:2px}
+    .ghost{width:100%;background:transparent;border:1px dashed var(--outline);color:var(--muted);border-radius:10px;padding:10px 0;cursor:pointer}
 
-    footer{
-      padding:10px 14px;color:var(--muted);font-size:.78rem;display:flex;justify-content:space-between;align-items:center;
-      border-top:1px solid rgba(255,255,255,.06);
-    }
-    a.link{color:var(--muted);text-decoration:none;}
-    a.link:hover{text-decoration:underline;}
+    /* Footer */
+    footer{padding:10px 12px 12px;color:var(--muted);font-size:.78rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.06)}
+    a.link{color:var(--muted);text-decoration:none}
+    a.link:hover{text-decoration:underline}
+
+    /* Sections hidden via tabs */
+    [data-panel]{display:none}
+    [data-panel].active{display:block}
   </style>
 </head>
 <body>
@@ -97,9 +108,22 @@
     <div class="brand">
       <img src="icons/logo.png" alt="Logo">
       <h1>BetterCrunchy</h1>
+      <span class="kbadge">PLUS</span>
     </div>
-    <span aria-hidden="true">⚙️</span>
+    <div class="kbadge" id="envBadge" title="Extension active">ON</div>
   </header>
+
+  <div class="search" role="search">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-4.2-4.2m1.2-5.3A7.7 7.7 0 1 1 5.3 5.3a7.7 7.7 0 0 1 12.7 6.2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <input id="searchInput" type="text" placeholder="Rechercher un réglage…" aria-label="Rechercher" />
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" aria-selected="true" data-tab="tweaks">Ajustements</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="appearance">Apparence</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="playback">Lecture</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="tools">Outils</button>
+  </nav>
 
   <main>
     <section class="card" aria-labelledby="sec-ext">
@@ -116,7 +140,7 @@
       </div>
     </section>
 
-    <section class="card" aria-labelledby="sec-tweaks">
+    <section class="card" aria-labelledby="sec-tweaks" data-panel="tweaks" class="active">
       <h3 id="sec-tweaks">Ajustements</h3>
       <div class="row">
         <div class="stack">
@@ -139,9 +163,16 @@
           <span class="slider"></span>
         </label>
       </div>
+
+      <div class="divider"></div>
+      <div class="pills" role="group" aria-label="Accès rapide">
+        <button class="pill" data-jump="appearance">Thème</button>
+        <button class="pill" data-jump="playback">Lecture</button>
+        <button class="pill" data-jump="tools">Outils</button>
+      </div>
     </section>
 
-    <section class="card" aria-labelledby="sec-appearance">
+    <section class="card" aria-labelledby="sec-appearance" data-panel="appearance">
       <h3 id="sec-appearance">Apparence</h3>
       <div class="row">
         <span class="label" id="lbl-theme">Thème</span>
@@ -157,7 +188,7 @@
       </div>
     </section>
 
-    <section class="card" aria-labelledby="sec-playback">
+    <section class="card" aria-labelledby="sec-playback" data-panel="playback">
       <h3 id="sec-playback">Lecture</h3>
       <div class="row">
         <div class="stack">
@@ -187,17 +218,17 @@
       </div>
     </section>
 
-    <section class="card" id="statsCard" aria-labelledby="sec-stats">
+    <section class="card" id="statsCard" aria-labelledby="sec-stats" data-panel="tools">
       <h3 id="sec-stats">Statistiques</h3>
       <p style="margin:6px 0 10px;">Temps total: <strong id="statTime">0h 0m</strong></p>
       <button id="statSimulate" class="primary">+5 min (test)</button>
-      <button id="statReset" class="primary">Réinitialiser</button>
+      <button id="statReset" class="primary" style="background:var(--danger);color:#000;border-color:transparent">Réinitialiser</button>
     </section>
 
-    <section class="card" aria-labelledby="sec-tools">
+    <section class="card" aria-labelledby="sec-tools" data-panel="tools">
       <h3 id="sec-tools">Outils</h3>
       <button id="testEpisodeNotif" class="primary">Tester la notification d’épisode</button>
-      <button id="savePage" class="primary">Capturer la page</button>
+      <button id="savePage" class="ghost">Capturer la page</button>
     </section>
   </main>
 
@@ -207,5 +238,33 @@
   </footer>
 
   <script src="popup.js"></script>
+  <script>
+    // Tabs + Search (UI only)
+    (function(){
+      const tabs = Array.from(document.querySelectorAll('.tab'));
+      const panels = Array.from(document.querySelectorAll('[data-panel]'));
+      const setTab = id => {
+        tabs.forEach(t=>t.setAttribute('aria-selected', String(t.dataset.tab===id)));
+        panels.forEach(p=>p.classList.toggle('active', p.dataset.panel===id));
+      };
+      tabs.forEach(t=>t.addEventListener('click', ()=> setTab(t.dataset.tab)));
+      document.querySelectorAll('.pill[data-jump]').forEach(b=>b.addEventListener('click',()=> setTab(b.dataset.jump)));
+      setTab('tweaks');
+
+      // Search filter
+      const q = document.getElementById('searchInput');
+      q.addEventListener('input', ()=>{
+        const s = q.value.trim().toLowerCase();
+        panels.forEach(p=>{
+          if(!s){ p.style.display = p.classList.contains('active')? 'block':'none'; return; }
+          p.style.display = 'block';
+          Array.from(p.querySelectorAll('.row')).forEach(r=>{
+            const text = r.innerText.toLowerCase();
+            r.style.display = text.includes(s) ? 'flex' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
