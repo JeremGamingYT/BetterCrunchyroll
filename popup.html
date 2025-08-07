@@ -5,103 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BetterCrunchy PLUS</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --accent:#ff8833;
-      --radius:12px;
-      --bg:#0b0c10;
-      --card-bg:rgba(255,255,255,0.06);
-      --text:#f5f6f8;
-      --muted:#aeb2be;
-      --outline:#23242a;
-      --ok:#19c37d; --warn:#ffcc00; --danger:#ff5d5d;
-    }
-    html,body{margin:0;padding:0;}
-    body{
-      font-family:'Inter',system-ui,Segoe UI,Arial,sans-serif;
-      width:340px; max-width:100vw;
-      background:radial-gradient(1200px 400px at 120% -10%, rgba(255,136,51,0.20), transparent 60%), var(--bg);
-      color:var(--text);
-      display:flex;flex-direction:column;align-items:stretch;
-    }
-    /* Header */
-    header{
-      position:sticky;top:0;z-index:2;
-      display:flex;align-items:center;justify-content:space-between;gap:.6rem;
-      padding:14px 16px 12px;
-      background:linear-gradient(135deg,var(--accent), color-mix(in srgb, var(--accent) 70%, white));
-      color:#0b0c10;
-      border-bottom:1px solid rgba(0,0,0,.15);
-      border-top-left-radius:var(--radius);
-      border-top-right-radius:var(--radius);
-    }
-    header .brand{display:flex;align-items:center;gap:.6rem;}
-    header img{width:24px;height:24px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.25)}
-    header h1{font-size:1.05rem;margin:0;font-weight:700;letter-spacing:.2px}
-    .kbadge{font-family:"JetBrains Mono",monospace;font-size:.7rem;background:rgba(0,0,0,.12);padding:2px 6px;border-radius:100px}
-
-    /* Search */
-    .search{
-      position:relative;margin:10px 12px 0;
-    }
-    .search input{width:100%;padding:10px 34px;border-radius:10px;border:1px solid var(--outline);background:#12131a;color:var(--text)}
-    .search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);opacity:.7}
-
-    /* Tabs */
-    .tabs{display:flex;gap:6px;padding:10px 12px 0}
-    .tab{flex:1;text-align:center;padding:8px 0;border:1px solid var(--outline);border-bottom:none;border-top-left-radius:10px;border-top-right-radius:10px;background:#0e0f14;cursor:pointer;color:var(--muted);font-weight:600;font-size:.85rem}
-    .tab[aria-selected="true"]{color:#000;background:var(--accent);border-color:color-mix(in srgb,var(--accent) 80%, black)}
-
-    /* Main */
-    main{padding:12px;display:flex;flex-direction:column;gap:12px;}
-
-    /* Card */
-    .card{background:var(--card-bg);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px 12px;box-shadow:0 6px 18px rgba(0,0,0,.45);transition:transform .2s,box-shadow .2s}
-    .card:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,0,0,.55)}
-    .card h3{margin:0 0 8px;font-size:.95rem;color:var(--accent)}
-    .row{display:flex;justify-content:space-between;align-items:center;margin:6px 0;gap:8px}
-    .stack{display:flex;flex-direction:column;gap:2px}
-    .label{font-size:.92rem}
-    .hint{font-size:.78rem;color:var(--muted)}
-    .divider{height:1px;background:var(--outline);margin:8px 0;border-radius:1px}
-
-    /* Pills group */
-    .pills{display:flex;gap:6px;flex-wrap:wrap}
-    .pill{padding:6px 10px;border-radius:999px;border:1px solid var(--outline);background:#12131a;color:var(--text);cursor:pointer;font-size:.8rem}
-    .pill[aria-pressed="true"]{background:var(--accent);color:#000;border-color:transparent}
-
-    /* Toggle */
-    .switch{position:relative;width:44px;height:24px;display:inline-block}
-    .switch input{opacity:0;width:0;height:0;position:absolute}
-    .slider{position:absolute;cursor:pointer;inset:0;background:#4b4f5a;border-radius:24px;transition:.25s;outline:2px solid transparent;outline-offset:2px}
-    .slider:before{content:"";position:absolute;height:18px;width:18px;left:3px;bottom:3px;background:linear-gradient(#fff,#e8e8e8);border-radius:50%;box-shadow:0 1px 2px rgba(0,0,0,.35);transition:.25s}
-    input:checked + .slider{background:var(--accent)}
-    input:checked + .slider:before{transform:translateX(20px)}
-    .switch:focus-within .slider{outline:2px solid rgba(255,255,255,.35)}
-
-    /* Range */
-    input[type=range]{-webkit-appearance:none;width:170px;height:4px;background:#3a3d47;border-radius:3px;outline:none}
-    input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 0 0 2px #0b0c10 inset}
-
-    /* Select & Color */
-    select, input[type=color]{background:#12131a;color:var(--text);border:1px solid #3a3d47;border-radius:8px;padding:8px 10px;font-size:.85rem}
-    input[type=color]{width:42px;height:30px;padding:0;border:none}
-
-    /* Buttons */
-    .primary{margin-top:6px;width:100%;background:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 80%, black);padding:10px 0;font-weight:800;border-radius:10px;color:#0b0c10;cursor:pointer;font-size:.92rem;letter-spacing:.2px;box-shadow:0 6px 14px rgba(255,136,51,.25)}
-    .primary:hover{filter:brightness(1.06)}
-    .primary:focus{outline:2px solid #fff;outline-offset:2px}
-    .ghost{width:100%;background:transparent;border:1px dashed var(--outline);color:var(--muted);border-radius:10px;padding:10px 0;cursor:pointer}
-
-    /* Footer */
-    footer{padding:10px 12px 12px;color:var(--muted);font-size:.78rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.06)}
-    a.link{color:var(--muted);text-decoration:none}
-    a.link:hover{text-decoration:underline}
-
-    /* Sections hidden via tabs */
-    [data-panel]{display:none}
-    [data-panel].active{display:block}
-  </style>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <header>
@@ -220,9 +124,9 @@
 
     <section class="card" id="statsCard" aria-labelledby="sec-stats" data-panel="tools">
       <h3 id="sec-stats">Statistiques</h3>
-      <p style="margin:6px 0 10px;">Temps total: <strong id="statTime">0h 0m</strong></p>
+      <p class="p">Temps total: <strong id="statTime">0h 0m</strong></p>
       <button id="statSimulate" class="primary">+5 min (test)</button>
-      <button id="statReset" class="primary" style="background:var(--danger);color:#000;border-color:transparent">Réinitialiser</button>
+      <button id="statReset" class="primary danger">Réinitialiser</button>
     </section>
 
     <section class="card" aria-labelledby="sec-tools" data-panel="tools">
@@ -238,33 +142,6 @@
   </footer>
 
   <script src="popup.js"></script>
-  <script>
-    // Tabs + Search (UI only)
-    (function(){
-      const tabs = Array.from(document.querySelectorAll('.tab'));
-      const panels = Array.from(document.querySelectorAll('[data-panel]'));
-      const setTab = id => {
-        tabs.forEach(t=>t.setAttribute('aria-selected', String(t.dataset.tab===id)));
-        panels.forEach(p=>p.classList.toggle('active', p.dataset.panel===id));
-      };
-      tabs.forEach(t=>t.addEventListener('click', ()=> setTab(t.dataset.tab)));
-      document.querySelectorAll('.pill[data-jump]').forEach(b=>b.addEventListener('click',()=> setTab(b.dataset.jump)));
-      setTab('tweaks');
-
-      // Search filter
-      const q = document.getElementById('searchInput');
-      q.addEventListener('input', ()=>{
-        const s = q.value.trim().toLowerCase();
-        panels.forEach(p=>{
-          if(!s){ p.style.display = p.classList.contains('active')? 'block':'none'; return; }
-          p.style.display = 'block';
-          Array.from(p.querySelectorAll('.row')).forEach(r=>{
-            const text = r.innerText.toLowerCase();
-            r.style.display = text.includes(s) ? 'flex' : 'none';
-          });
-        });
-      });
-    })();
-  </script>
+  <script src="popup_ui.js"></script>
 </body>
 </html>
