@@ -8,14 +8,11 @@
   --outline:#23242a;
   --ok:#19c37d; --warn:#ffcc00; --danger:#ff5d5d;
 }
-/* Force the popup document to the desired size */
-html{ width:420px; }
 html,body{margin:0;padding:0;}
 body{
   font-family:'Inter',system-ui,Segoe UI,Arial,sans-serif;
   width:420px; /* élargi le popup */
-  min-width:420px;
-  min-height:540px; /* pour éviter un popup trop bas */
+  max-width:100vw;
   background:radial-gradient(1200px 400px at 120% -10%, rgba(255,136,51,0.20), transparent 60%), var(--bg);
   color:var(--text);
   display:flex;flex-direction:column;align-items:stretch;
@@ -74,7 +71,7 @@ input:checked + .slider:before{transform:translateX(20px)}
 .switch:focus-within .slider{outline:2px solid rgba(255,255,255,.35)}
 
 /* Range */
-input[type=range]{-webkit-appearance:none;width:220px;height:4px;background:#3a3d47;border-radius:3px;outline:none}
+input[type=range]{-webkit-appearance:none;width:200px;height:4px;background:#3a3d47;border-radius:3px;outline:none}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 0 0 2px #0b0c10 inset}
 
 /* Select & Color */
