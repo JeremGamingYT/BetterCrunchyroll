@@ -1,7 +1,7 @@
 {
     "name": "BetterCrunchy",
     "description": "Crunchyroll with a modern interface and smooth animations and extra features.",
-    "version": "6.2.2",
+    "version": "6.2.1",
     "manifest_version": 3,
     "permissions": ["storage", "downloads", "scripting", "tabs", "notifications", "alarms"],
     "host_permissions": ["*://*.amaized.net/*", "*://*.crunchyroll.com/*", "https://crunchyroll.com/*"],
@@ -23,6 +23,7 @@
       },
       {
         "matches": ["*://*.crunchyroll.com/*", "*://*.vrv.co/*"],
+        "css": ["content.css"],
         "js":  ["content.js"],
         "all_frames": true,
         "run_at": "document_idle",
