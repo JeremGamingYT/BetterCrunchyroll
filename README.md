@@ -12,7 +12,7 @@
 <p align="center">
   <img src="./Images/example_before.png" alt="Original Crunchyroll UI" width="380" />
   &nbsp;&nbsp;
-  <img src="./Images/example_2.png" alt="BetterCrunchyroll UI" width="380" />
+  <img src="./Images/exemple_2.png" alt="BetterCrunchyroll UI" width="380" />
 </p>
 
 ---
