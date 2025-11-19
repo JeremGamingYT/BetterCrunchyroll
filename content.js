@@ -430,7 +430,7 @@ function renderFeedContent(sections) {
   if (!sections || sections.length === 0) return '<div class="bcp-feed-placeholder">No Feed Content Found</div>';
 
   return `
-    <div class="bcp-episodes-section" style="margin-top: -100px; position: relative; z-index: 10;">
+    <div class="bcp-episodes-section">
       ${sections.map(section => `
         <div class="bcp-feed-section ${section.isTrending ? 'bcp-trending-section' : ''}">
           <h2 class="bcp-section-title">${section.title}</h2>

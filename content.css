@@ -276,6 +276,12 @@ body.bcp-redesign-active .bcp-container {
   /* Account for fixed navbar */
 }
 
+div#bcp-hero-carousel {
+  margin-bottom: 0rem;
+  z-index: 15;
+  height: 70vh !important;
+}
+
 .bcp-hero-bg {
   position: absolute;
   inset: 0;
@@ -317,13 +323,14 @@ body.bcp-redesign-active .bcp-container {
 
 .bcp-hero-content {
   position: relative;
-  z-index: 10;
+  z-index: 15;
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding: 0 3rem 6rem 3rem;
   display: grid;
   grid-template-columns: 1fr;
+  margin-top: 160px;
 }
 
 @media (min-width: 1024px) {
@@ -458,7 +465,7 @@ body.bcp-redesign-active .bcp-container {
 /* Episode Section */
 .bcp-episodes-section {
   position: relative;
-  z-index: 20;
+  z-index: 0;
   margin-top: 0;
   /* No overlap - positioned below hero */
   padding-bottom: 6rem;
@@ -796,7 +803,7 @@ body.bcp-redesign-active .bcp-container {
   font-weight: 900;
   color: var(--cr-accent);
   text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  z-index: 20;
+  z-index: 2;
   line-height: 1;
   font-family: 'Impact', sans-serif;
 }
@@ -807,7 +814,7 @@ body.bcp-redesign-active .bcp-container {
   min-height: 350px !important;
   margin-bottom: 4rem;
   position: relative;
-  z-index: 5;
+  z-index: 10;
 }
 
 /* Carousel Styles */
@@ -831,7 +838,7 @@ body.bcp-redesign-active .bcp-container {
   transform: translateX(-50%);
   display: flex;
   gap: 0.75rem;
-  z-index: 20;
+  z-index: 0;
 }
 
 .bcp-hero-dot {
@@ -865,7 +872,7 @@ body.bcp-redesign-active .bcp-container {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 20;
+  z-index: 0;
   transition: all 0.2s;
   backdrop-filter: blur(5px);
 }
