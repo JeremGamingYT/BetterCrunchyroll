@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BetterCrunchy PLUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #ff8833;
+      --radius: 10px;
+      --bg: #111115;
+      --card-bg: rgba(255, 255, 255, 0.06);
+      --text: #f0f0f0;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      width: 300px;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: 14px 18px;
+      background: linear-gradient(135deg, var(--accent) 0%, color-mix(in srgb, var(--accent) 70%, white) 100%);
+      color: #000;
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
+    }
+
+    header img {
+      width: 24px;
+      height: 24px;
+    }
+
+    header h1 {
+      font-size: 1.05rem;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    main {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, .6);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: .95rem;
+      color: var(--accent);
+    }
+
+    /* Toggle switch */
+    .switch {
+      position: relative;
+      width: 42px;
+      height: 22px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background: #555;
+      border-radius: 22px;
+      transition: .3s;
+    }
+
+    .slider:before {
+      content: "";
+      position: absolute;
+      height: 18px;
+      width: 18px;
+      left: 2px;
+      bottom: 2px;
+      background: white;
+      border-radius: 50%;
+      transition: .3s;
+    }
+
+    input:checked+.slider {
+      background: var(--accent);
+    }
+
+    input:checked+.slider:before {
+      transform: translateX(20px);
+    }
+
+    /* Range */
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 160px;
+      height: 4px;
+      background: #444;
+      border-radius: 2px;
+      outline: none;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent);
+      cursor: pointer;
+    }
+
+    /* Select & Color */
+    select,
+    input[type=color] {
+      background: #333;
+      color: var(--text);
+      border: 1px solid #555;
+      border-radius: 4px;
+      padding: 4px;
+      font-size: .85rem;
+    }
+
+    button.primary {
+      margin-top: 8px;
+      width: 100%;
+      background: var(--accent);
+      border: none;
+      padding: 10px 0;
+      font-weight: bold;
+      border-radius: var(--radius);
+      color: #000;
+      cursor: pointer;
+      font-size: .9rem;
+    }
+
+    button.primary:hover {
+      filter: brightness(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="icons/logo.png" alt="logo">
+    <h1>BetterCrunchy</h1>
+  </header>
+  <main>
+    <section class="card">
+      <h3>Extension</h3>
+      <label style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
+        <span>Activer BetterCrunchy</span>
+        <label class="switch"><input id="extEnabled" type="checkbox"><span class="slider"></span></label>
+      </label>
+    </section>
+    <section class="card">
+      <h3>Tweaks</h3>
+      <label style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
+        <span>Colored titles</span>
+        <label class="switch"><input id="colorTitles" type="checkbox"><span class="slider"></span></label>
+      </label>
+      <label style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
+        <span>Hide header</span>
+        <label class="switch"><input id="autoHideHeader" type="checkbox"><span class="slider"></span></label>
+      </label>
+    </section>
+
+    <section class="card">
+      <h3>Appearance</h3>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
+        <span>Theme</span>
+        <select id="theme">
+          <option value="default">Crunchy</option>
+          <option value="dark">Dark++</option>
+          <option value="light">Light</option>
+        </select>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
+        <span>Accent color</span><input id="accentColor" type="color"
+          style="width:42px;height:26px;padding:0;border:none;border-radius:4px;">
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Playback</h3>
+      <label style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
+        <span>Auto-Skip intro/outro</span>
+        <label class="switch"><input id="autoSkip" type="checkbox"><span class="slider"></span></label>
+      </label>
+      <label style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
+        <span>Auto-Next episode</span>
+        <label class="switch"><input id="autoNext" type="checkbox"><span class="slider"></span></label>
+      </label>
+      <div id="autoNextDelayRow" style="display:flex;justify-content:space-between;align-items:center;margin:8px 0;">
+        <span>Auto-Next delay (<span id="delayLabel">5</span>s)</span><input id="autoNextDelay" type="range" min="3"
+          max="15" value="5">
+      </div>
+    </section>
+
+    <section class="card" id="statsCard">
+      <h3>Stats</h3>
+      <p>Total watch time: <span id="statTime">0h 0m</span></p>
+      <button id="statSimulate" class="primary">+5 min (Test)</button>
+      <button id="statReset" class="primary">Reset stats</button>
+    </section>
+
+    <section class="card">
+      <h3>Test</h3>
+      <button id="testEpisodeNotif" class="primary">Test Episode Notification</button>
+    </section>
+
+    <button id="savePage" class="primary">Save page</button>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

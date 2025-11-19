@@ -1,0 +1,108 @@
+{
+    "background_color": "#23252b",
+    "display": "minimal-ui",
+    "name": "Crunchyroll - Watch Popular Anime",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "Crunchyroll",
+    "start_url": "/?utm_medium=pwa_app_launch&utm_source=pwa",
+    "theme_color": "#f47521",
+    "description": "Stream the world’s largest dedicated anime collection. Watch over 1,000 titles—from past seasons to new episodes fresh from Japan.",
+    "categories": ["entertainment", "video"],
+    "icons": [
+      {
+        "src": "https://crunchyroll.com/build/assets/img/pwa/v2/512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "https://crunchyroll.com/build/assets/img/pwa/v2/512-maskable.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "scope_extensions": [
+      {
+        "origin": "www.crunchyroll.com"
+      },
+      {
+        "origin": "sso.crunchyroll.com"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "View Watchlist",
+        "short_name": "Watchlist",
+        "url": "/watchlist?utm_medium=pwa_app_launch&utm_source=pwa_shortcut",
+        "description": "Pick up where you left off with your favorite anime series and movies",
+        "icons": [
+          {
+            "src": "https://crunchyroll.com/build/assets/img/pwa/icons/watchlist-icon.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+          }
+        ]
+      },
+      {
+        "name": "Browse Anime",
+        "short_name": "Browse",
+        "url": "/videos/popular?utm_medium=pwa_app_launch&utm_source=pwa_shortcut",
+        "description": "See all anime Crunchyroll has to offer by popularity, freshness, and genre",
+        "icons": [
+          {
+            "src": "https://crunchyroll.com/build/assets/img/pwa/icons/browse-icon.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+          }
+        ]
+      },
+      {
+        "name": "Search",
+        "short_name": "Search",
+        "url": "/search?utm_medium=pwa_app_launch&utm_source=pwa_shortcut",
+        "description": "Search for anime on Crunchyroll",
+        "icons": [
+          {
+            "src": "https://crunchyroll.com/build/assets/img/pwa/icons/search-icon.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+          }
+        ]
+      },
+      {
+        "name": "View Crunchylists",
+        "short_name": "Crunchylists",
+        "url": "/crunchylists?utm_medium=pwa_app_launch&utm_source=pwa_shortcut",
+        "description": "Create and manage your custom Crunchylists",
+        "icons": [
+          {
+            "src": "https://crunchyroll.com/build/assets/img/pwa/icons/crunchylists-icon.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+          }
+        ]
+      },
+      {
+        "name": "View History",
+        "short_name": "History",
+        "url": "/history?utm_medium=pwa_app_launch&utm_source=pwa_shortcut",
+        "description": "See your most recently watched videos on Crunchyroll",
+        "icons": [
+          {
+            "src": "https://crunchyroll.com/build/assets/img/pwa/icons/history-icon.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+          }
+        ]
+      }
+    ],
+    "id": "com.crunchyroll.pwa",
+    "dir": "auto"
+}  
