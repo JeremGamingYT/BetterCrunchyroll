@@ -13,7 +13,7 @@
 
 A complete and premium redesign of Crunchyroll as a Chrome extension that automatically replaces all pages of the official site.
 
-![BetterCrunchyroll Preview](https://via.placeholder.com/1200x600/0a0a0a/f47521?text=BetterCrunchyroll+Premium+Redesign)
+![BetterCrunchyroll Preview](https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/exemple_2.png)
 
 ## ✨ Features
 
