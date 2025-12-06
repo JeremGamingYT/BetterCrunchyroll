@@ -1,0 +1,154 @@
+{
+  "data": [
+    {
+      "id": "G6P8CX55Z",
+      "channel_id": "crunchyroll",
+      "title": "Spice and Wolf",
+      "slug_title": "spice-and-wolf",
+      "series_id": "G6GG38246",
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "es-419",
+        "pt-BR",
+        "en-US"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6P8CX55Z",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GR2PCV33G",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GRDQCGJ21",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G6Q4CZ1E4",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "G6GG38246|S1",
+      "number_of_episodes": 13
+    },
+    {
+      "id": "GY09N3JGY",
+      "channel_id": "crunchyroll",
+      "title": "Spice and Wolf II",
+      "slug_title": "spice-and-wolf-ii",
+      "series_id": "G6GG38246",
+      "season_display_number": "2",
+      "season_sequence_number": 2,
+      "season_number": 2,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY09N3JGY",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GY8VCPWWJ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G65VCD9E2",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GYWEC3WPP",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "G6GG38246|S2",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 2
+}

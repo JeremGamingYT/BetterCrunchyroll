@@ -1,0 +1,5749 @@
+{
+  "total": 21,
+  "data": [
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "sequence_number": 1,
+      "is_dubbed": true,
+      "media_type": "episode",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_subbed": true,
+      "mature_blocked": false,
+      "episode": "1",
+      "identifier": "GP5HJ84P7|S00352501|E1",
+      "audio_locale": "fr-FR",
+      "series_id": "GP5HJ84P7",
+      "season_title": "Saison 1",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "eligible_region": "CA",
+      "id": "G9DU921VQ",
+      "recent_variant": "",
+      "season_slug_title": "season-1",
+      "channel_id": "crunchyroll",
+      "season_number": 1,
+      "is_premium_only": true,
+      "duration_ms": 1420004,
+      "seo_title": "",
+      "series_slug_title": "gachiakuta",
+      "slug_title": "the-sphere",
+      "available_offline": true,
+      "seo_description": "",
+      "listing_id": "",
+      "is_mature": false,
+      "series_title": "Gachiakuta",
+      "recent_audio_locale": "fr-FR",
+      "upload_date": "2025-07-06T00:00:00Z",
+      "production_episode_id": "",
+      "premium_available_date": "2025-07-06T15:30:00Z",
+      "closed_captions_available": false,
+      "premium_date": null,
+      "next_episode_title": "Réceptacles",
+      "available_date": null,
+      "availability_notes": "",
+      "streams_link": "/content/v2/cms/videos/G9DU921VQV/streams",
+      "next_episode_id": "G8WU7P4K7",
+      "slug": "",
+      "availability_status": "available",
+      "description": "Rudo vit avec Regto, son père adoptif, près de la Cité céleste.",
+      "episode_number": 1,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4a5e95bea97e159266e5235eb3047283.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4a5e95bea97e159266e5235eb3047283.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4a5e95bea97e159266e5235eb3047283.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4a5e95bea97e159266e5235eb3047283.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4a5e95bea97e159266e5235eb3047283.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4a5e95bea97e159266e5235eb3047283.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4a5e95bea97e159266e5235eb3047283.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4a5e95bea97e159266e5235eb3047283.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "hd_flag": true,
+      "season_id": "GY75CDJWM",
+      "season_display_number": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 1,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_starts": "2025-07-06T15:30:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "episode_air_date": "2025-07-06T00:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "es-419",
+          "guid": "GEVUWQ4VK",
+          "is_premium_only": true,
+          "media_guid": "GEVUWQ4VKV",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUMX5E0",
+          "is_premium_only": true,
+          "media_guid": "G0DUMX5E0V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G7PU3DXNX",
+          "is_premium_only": true,
+          "media_guid": "G7PU3DXNXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G9DU921VQ",
+          "is_premium_only": true,
+          "media_guid": "G9DU921VQV",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GX9U34P8X",
+          "is_premium_only": true,
+          "media_guid": "GX9U34P8XV",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G4VUW7E4N",
+          "is_premium_only": true,
+          "media_guid": "G4VUW7E4NV",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G14UVPWZM",
+          "is_premium_only": true,
+          "media_guid": "G14UVPWZMV",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GN7UNJP32",
+          "is_premium_only": true,
+          "media_guid": "GN7UNJP32V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GMKUE38D1",
+          "is_premium_only": true,
+          "media_guid": "GMKUE38D1V",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GK9UGN5PK",
+          "is_premium_only": true,
+          "media_guid": "GK9UGN5PKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GJWUQ15DE",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ15DEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GMKUE3QGD",
+          "is_premium_only": true,
+          "media_guid": "GMKUE3QGDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "description",
+        "dub"
+      ],
+      "title": "La Cité céleste",
+      "is_clip": false
+    },
+    {
+      "is_mature": false,
+      "season_title": "Saison 1",
+      "identifier": "GP5HJ84P7|S00352501|E2",
+      "is_subbed": true,
+      "slug_title": "the-inhabited",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GVWU82Q3N",
+          "is_premium_only": true,
+          "media_guid": "GVWU82Q3NV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G31UV205E",
+          "is_premium_only": true,
+          "media_guid": "G31UV205EV",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G8WU7P4K7",
+          "is_premium_only": true,
+          "media_guid": "G8WU7P4K7V",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GZ7UDM0W9",
+          "is_premium_only": true,
+          "media_guid": "GZ7UDM0W9V",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G2XUNV8M0",
+          "is_premium_only": true,
+          "media_guid": "G2XUNV8M0V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GD9UEGP10",
+          "is_premium_only": true,
+          "media_guid": "GD9UEGP10V",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GQJUMZPXX",
+          "is_premium_only": true,
+          "media_guid": "GQJUMZPXXV",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G50UMD78J",
+          "is_premium_only": true,
+          "media_guid": "G50UMD78JV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GWDU73549",
+          "is_premium_only": true,
+          "media_guid": "GWDU73549V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GG1UXV3KD",
+          "is_premium_only": true,
+          "media_guid": "GG1UXV3KDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G0DUMX5V0",
+          "is_premium_only": true,
+          "media_guid": "G0DUMX5V0V",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GVWU82W43",
+          "is_premium_only": true,
+          "media_guid": "GVWU82W43V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "roles": [
+        "description",
+        "dub"
+      ],
+      "episode_air_date": "2025-07-13T00:00:00Z",
+      "closed_captions_available": false,
+      "season_number": 1,
+      "eligible_region": "CA",
+      "series_id": "GP5HJ84P7",
+      "availability_status": "available",
+      "production_episode_id": "",
+      "episode": "2",
+      "series_slug_title": "gachiakuta",
+      "id": "G8WU7P4K7",
+      "availability_notes": "",
+      "channel_id": "crunchyroll",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "season_slug_title": "season-1",
+      "hd_flag": true,
+      "is_dubbed": true,
+      "available_date": null,
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "next_episode_title": "Le Bas-monde",
+      "slug": "",
+      "listing_id": "",
+      "title": "Réceptacles",
+      "episode_number": 2,
+      "sequence_number": 2,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_sequence_number": 1,
+      "is_premium_only": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "availability_starts": "2025-07-13T15:30:00Z",
+      "seo_title": "",
+      "mature_blocked": false,
+      "upload_date": "2025-07-13T00:00:00Z",
+      "season_id": "GY75CDJWM",
+      "series_title": "Gachiakuta",
+      "is_clip": false,
+      "audio_locale": "fr-FR",
+      "description": "Jeté dans la Fosse par les Apôtres, Rudo découvre les Composites.",
+      "season_display_number": "",
+      "premium_available_date": "2025-07-13T15:30:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "seo_description": "",
+      "duration_ms": 1420046,
+      "available_offline": true,
+      "premium_date": null,
+      "media_type": "episode",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8a030d472e4f78e8ce7485d0a3c28ce8.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8a030d472e4f78e8ce7485d0a3c28ce8.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8a030d472e4f78e8ce7485d0a3c28ce8.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8a030d472e4f78e8ce7485d0a3c28ce8.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8a030d472e4f78e8ce7485d0a3c28ce8.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8a030d472e4f78e8ce7485d0a3c28ce8.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8a030d472e4f78e8ce7485d0a3c28ce8.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8a030d472e4f78e8ce7485d0a3c28ce8.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "streams_link": "/content/v2/cms/videos/G8WU7P4K7V/streams",
+      "next_episode_id": "GPWU8XGG5"
+    },
+    {
+      "recent_audio_locale": "fr-FR",
+      "availability_notes": "",
+      "premium_date": null,
+      "season_slug_title": "season-1",
+      "roles": [
+        "dub"
+      ],
+      "episode": "3",
+      "seo_description": "",
+      "season_title": "Saison 1",
+      "listing_id": "",
+      "season_display_number": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode_number": 3,
+      "audio_locale": "fr-FR",
+      "channel_id": "crunchyroll",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/fb4c7d816763d4c6d9cb1981360aa46f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/fb4c7d816763d4c6d9cb1981360aa46f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/fb4c7d816763d4c6d9cb1981360aa46f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/fb4c7d816763d4c6d9cb1981360aa46f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/fb4c7d816763d4c6d9cb1981360aa46f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/fb4c7d816763d4c6d9cb1981360aa46f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/fb4c7d816763d4c6d9cb1981360aa46f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/fb4c7d816763d4c6d9cb1981360aa46f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "duration_ms": 1420046,
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "available_offline": true,
+      "availability_status": "available",
+      "series_title": "Gachiakuta",
+      "production_episode_id": "",
+      "streams_link": "/content/v2/cms/videos/GPWU8XGG5V/streams",
+      "sequence_number": 3,
+      "description": "Rudo, guidé par Enjin, découvre le Bas-monde et les Nettoyeurs.",
+      "is_mature": false,
+      "series_slug_title": "gachiakuta",
+      "season_number": 1,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "identifier": "GP5HJ84P7|S00352501|E3",
+      "is_dubbed": true,
+      "slug_title": "the-ground",
+      "media_type": "episode",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GPWU8XG75",
+          "is_premium_only": true,
+          "media_guid": "GPWU8XG75V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU3D9QP",
+          "is_premium_only": true,
+          "media_guid": "G7PU3D9QPV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GPWU8XGP5",
+          "is_premium_only": true,
+          "media_guid": "GPWU8XGP5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G7PU3D99P",
+          "is_premium_only": true,
+          "media_guid": "G7PU3D99PV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G7PU3D9JP",
+          "is_premium_only": true,
+          "media_guid": "G7PU3D9JPV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G0DUMX8D0",
+          "is_premium_only": true,
+          "media_guid": "G0DUMX8D0V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G0DUMX8K0",
+          "is_premium_only": true,
+          "media_guid": "G0DUMX8K0V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GPWU8XGG5",
+          "is_premium_only": true,
+          "media_guid": "GPWU8XGG5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GPWU8XGD5",
+          "is_premium_only": true,
+          "media_guid": "GPWU8XGD5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G7PU3D9MP",
+          "is_premium_only": true,
+          "media_guid": "G7PU3D9MPV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GVWU8297N",
+          "is_premium_only": true,
+          "media_guid": "GVWU8297NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GK9UG358Q",
+          "is_premium_only": true,
+          "media_guid": "GK9UG358QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_subbed": true,
+      "next_episode_id": "G2XUNVQQJ",
+      "eligible_region": "CA",
+      "seo_title": "",
+      "series_id": "GP5HJ84P7",
+      "next_episode_title": "Le QG des Nettoyeurs",
+      "episode_air_date": "2025-07-27T00:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "mature_blocked": false,
+      "is_clip": false,
+      "slug": "",
+      "premium_available_date": "2025-07-27T15:30:00Z",
+      "available_date": null,
+      "season_sequence_number": 1,
+      "season_id": "GY75CDJWM",
+      "title": "Le Bas-monde",
+      "availability_starts": "2025-07-27T15:30:00Z",
+      "id": "GPWU8XGG5",
+      "recent_variant": "",
+      "upload_date": "2025-07-27T00:00:00Z",
+      "hd_flag": true
+    },
+    {
+      "season_display_number": "",
+      "slug": "",
+      "slug_title": "cleaner-hq",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G2XUNVQKJ",
+          "is_premium_only": true,
+          "media_guid": "G2XUNVQKJV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DU9238N",
+          "is_premium_only": true,
+          "media_guid": "G9DU9238NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G2XUNVQQJ",
+          "is_premium_only": true,
+          "media_guid": "G2XUNVQQJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G9DU923GN",
+          "is_premium_only": true,
+          "media_guid": "G9DU923GNV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G2XUNVQDJ",
+          "is_premium_only": true,
+          "media_guid": "G2XUNVQDJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GEVUWQEXK",
+          "is_premium_only": true,
+          "media_guid": "GEVUWQEXKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G31UV294E",
+          "is_premium_only": true,
+          "media_guid": "G31UV294EV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GEVUWQEDK",
+          "is_premium_only": true,
+          "media_guid": "GEVUWQEDKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G9DU9233N",
+          "is_premium_only": true,
+          "media_guid": "G9DU9233NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G2XUNVQEJ",
+          "is_premium_only": true,
+          "media_guid": "G2XUNVQEJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G9DU9235N",
+          "is_premium_only": true,
+          "media_guid": "G9DU9235NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "G8WU7PJ58",
+          "is_premium_only": true,
+          "media_guid": "G8WU7PJ58V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "season_id": "GY75CDJWM",
+      "is_subbed": true,
+      "closed_captions_available": false,
+      "recent_audio_locale": "fr-FR",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6fffa5c90a8d3128a5f24e0e309e06c4.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6fffa5c90a8d3128a5f24e0e309e06c4.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6fffa5c90a8d3128a5f24e0e309e06c4.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6fffa5c90a8d3128a5f24e0e309e06c4.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6fffa5c90a8d3128a5f24e0e309e06c4.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6fffa5c90a8d3128a5f24e0e309e06c4.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6fffa5c90a8d3128a5f24e0e309e06c4.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6fffa5c90a8d3128a5f24e0e309e06c4.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "eligible_region": "CA",
+      "season_slug_title": "season-1",
+      "title": "Le QG des Nettoyeurs",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "duration_ms": 1420046,
+      "recent_variant": "",
+      "premium_date": null,
+      "series_slug_title": "gachiakuta",
+      "is_dubbed": true,
+      "availability_status": "available",
+      "seo_title": "",
+      "description": "Après un passage au QG, Rudo assiste au combat de Riyo.",
+      "season_title": "Saison 1",
+      "availability_notes": "",
+      "mature_blocked": false,
+      "episode": "4",
+      "is_clip": false,
+      "is_mature": false,
+      "episode_number": 4,
+      "hd_flag": true,
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "audio_locale": "fr-FR",
+      "channel_id": "crunchyroll",
+      "seo_description": "",
+      "identifier": "GP5HJ84P7|S00352501|E4",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "series_id": "GP5HJ84P7",
+      "premium_available_date": "2025-08-03T15:30:00Z",
+      "streams_link": "/content/v2/cms/videos/G2XUNVQQJV/streams",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "roles": [
+        "dub"
+      ],
+      "production_episode_id": "",
+      "is_premium_only": true,
+      "next_episode_title": "Les Vandales",
+      "next_episode_id": "G8WU7PMM4",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_number": 1,
+      "id": "G2XUNVQQJ",
+      "available_offline": true,
+      "series_title": "Gachiakuta",
+      "sequence_number": 4,
+      "season_sequence_number": 1,
+      "upload_date": "2025-08-03T00:00:00Z",
+      "media_type": "episode",
+      "listing_id": "",
+      "availability_starts": "2025-08-03T15:30:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "episode_air_date": "2025-08-03T00:00:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z"
+    },
+    {
+      "slug": "",
+      "next_episode_title": "Rentre-moi dedans !",
+      "next_episode_id": "GZ7UDM448",
+      "availability_notes": "",
+      "season_slug_title": "season-1",
+      "roles": [
+        "dub"
+      ],
+      "episode_number": 5,
+      "versions": [
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G8WU7PMM4",
+          "is_premium_only": true,
+          "media_guid": "G8WU7PMM4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GX9U340Z4",
+          "is_premium_only": true,
+          "media_guid": "GX9U340Z4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G8WU7PMZ4",
+          "is_premium_only": true,
+          "media_guid": "G8WU7PMZ4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G8WU7PM04",
+          "is_premium_only": true,
+          "media_guid": "G8WU7PM04V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GX9U340J4",
+          "is_premium_only": true,
+          "media_guid": "GX9U340J4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GPWU8XGVX",
+          "is_premium_only": true,
+          "media_guid": "GPWU8XGVXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G7PU3D91X",
+          "is_premium_only": true,
+          "media_guid": "G7PU3D91XV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G8WU7PMX4",
+          "is_premium_only": true,
+          "media_guid": "G8WU7PMX4V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9U34054",
+          "is_premium_only": true,
+          "media_guid": "GX9U34054V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GX9U34004",
+          "is_premium_only": true,
+          "media_guid": "GX9U34004V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G7PU3D9MX",
+          "is_premium_only": true,
+          "media_guid": "G7PU3D9MXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GZ7UDMG9K",
+          "is_premium_only": true,
+          "media_guid": "GZ7UDMG9KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/G8WU7PMM4V/streams",
+      "is_mature": false,
+      "closed_captions_available": false,
+      "season_display_number": "",
+      "id": "G8WU7PMM4",
+      "media_type": "episode",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "available_offline": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "recent_variant": "",
+      "premium_date": null,
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "listing_id": "",
+      "duration_ms": 1420004,
+      "season_sequence_number": 1,
+      "identifier": "GP5HJ84P7|S00352501|E5",
+      "description": "Rudo accompagne les Nettoyeurs dans une autre mission.",
+      "seo_title": "",
+      "hd_flag": true,
+      "upload_date": "2025-08-10T00:00:00Z",
+      "production_episode_id": "",
+      "eligible_region": "CA",
+      "season_id": "GY75CDJWM",
+      "availability_status": "available",
+      "recent_audio_locale": "fr-FR",
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "slug_title": "raiders",
+      "seo_description": "",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "episode_air_date": "2025-08-10T00:00:00Z",
+      "audio_locale": "fr-FR",
+      "is_subbed": true,
+      "is_dubbed": true,
+      "episode": "5",
+      "series_title": "Gachiakuta",
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_title": "Saison 1",
+      "availability_starts": "2025-08-10T15:30:00Z",
+      "is_clip": false,
+      "is_premium_only": true,
+      "premium_available_date": "2025-08-10T15:30:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/28015fb6da2a8b0b621c7458c4ce6026.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/28015fb6da2a8b0b621c7458c4ce6026.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/28015fb6da2a8b0b621c7458c4ce6026.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/28015fb6da2a8b0b621c7458c4ce6026.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/28015fb6da2a8b0b621c7458c4ce6026.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/28015fb6da2a8b0b621c7458c4ce6026.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/28015fb6da2a8b0b621c7458c4ce6026.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/28015fb6da2a8b0b621c7458c4ce6026.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "title": "Les Vandales",
+      "season_number": 1,
+      "sequence_number": 5,
+      "series_slug_title": "gachiakuta",
+      "series_id": "GP5HJ84P7"
+    },
+    {
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 1,
+      "is_subbed": true,
+      "next_episode_id": "GD9UEGXXK",
+      "seo_description": "",
+      "season_title": "Saison 1",
+      "is_dubbed": true,
+      "channel_id": "crunchyroll",
+      "episode_number": 6,
+      "slug_title": "one-good-strike",
+      "streams_link": "/content/v2/cms/videos/GZ7UDM448V/streams",
+      "duration_ms": 1420004,
+      "mature_blocked": false,
+      "title": "Rentre-moi dedans !",
+      "id": "GZ7UDM448",
+      "audio_locale": "fr-FR",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "roles": [
+        "dub"
+      ],
+      "upload_date": "2025-08-17T00:00:00Z",
+      "premium_available_date": "2025-08-17T15:30:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_title": "Dénouement",
+      "season_id": "GY75CDJWM",
+      "season_number": 1,
+      "available_date": null,
+      "season_slug_title": "season-1",
+      "identifier": "GP5HJ84P7|S00352501|E6",
+      "hd_flag": true,
+      "series_title": "Gachiakuta",
+      "season_display_number": "",
+      "availability_starts": "2025-08-17T15:30:00Z",
+      "description": "C'est au tout de Rudo d'affronter le mystérieux Jabber.",
+      "series_slug_title": "gachiakuta",
+      "is_mature": false,
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUW72NQ",
+          "is_premium_only": true,
+          "media_guid": "G4VUW72NQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G4VUW722Q",
+          "is_premium_only": true,
+          "media_guid": "G4VUW722QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GZ7UDM448",
+          "is_premium_only": true,
+          "media_guid": "GZ7UDM448V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G4VUW721Q",
+          "is_premium_only": true,
+          "media_guid": "G4VUW721QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G9DU9235Q",
+          "is_premium_only": true,
+          "media_guid": "G9DU9235QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GZ7UDM4K8",
+          "is_premium_only": true,
+          "media_guid": "GZ7UDM4K8V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GZ7UDM4Z8",
+          "is_premium_only": true,
+          "media_guid": "GZ7UDM4Z8V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUW728Q",
+          "is_premium_only": true,
+          "media_guid": "G4VUW728QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GZ7UDM418",
+          "is_premium_only": true,
+          "media_guid": "GZ7UDM418V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G2XUNVQG0",
+          "is_premium_only": true,
+          "media_guid": "G2XUNVQG0V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G9DU923MQ",
+          "is_premium_only": true,
+          "media_guid": "G9DU923MQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GD9UEGM75",
+          "is_premium_only": true,
+          "media_guid": "GD9UEGM75V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "availability_notes": "",
+      "episode_air_date": "2025-08-17T00:00:00Z",
+      "eligible_region": "CA",
+      "sequence_number": 6,
+      "production_episode_id": "",
+      "episode": "6",
+      "series_id": "GP5HJ84P7",
+      "seo_title": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "recent_variant": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/34aa8c9a5901e711d9452354601ba6f3.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/34aa8c9a5901e711d9452354601ba6f3.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/34aa8c9a5901e711d9452354601ba6f3.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/34aa8c9a5901e711d9452354601ba6f3.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/34aa8c9a5901e711d9452354601ba6f3.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/34aa8c9a5901e711d9452354601ba6f3.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/34aa8c9a5901e711d9452354601ba6f3.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/34aa8c9a5901e711d9452354601ba6f3.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "listing_id": "",
+      "slug": "",
+      "premium_date": null,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "is_premium_only": true,
+      "is_clip": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "available_offline": true,
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "recent_audio_locale": "fr-FR"
+    },
+    {
+      "season_slug_title": "season-1",
+      "id": "GD9UEGXXK",
+      "mature_blocked": false,
+      "title": "Dénouement",
+      "season_id": "GY75CDJWM",
+      "slug": "",
+      "eligible_region": "CA",
+      "listing_id": "",
+      "available_offline": true,
+      "next_episode_id": "GQJUMZ22K",
+      "hd_flag": true,
+      "recent_audio_locale": "fr-FR",
+      "closed_captions_available": false,
+      "identifier": "GP5HJ84P7|S00352501|E7",
+      "channel_id": "crunchyroll",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "premium_date": null,
+      "series_slug_title": "gachiakuta",
+      "is_dubbed": true,
+      "streams_link": "/content/v2/cms/videos/GD9UEGXXKV/streams",
+      "media_type": "episode",
+      "is_mature": false,
+      "available_date": null,
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "seo_title": "",
+      "series_title": "Gachiakuta",
+      "duration_ms": 1420046,
+      "season_sequence_number": 1,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "roles": [
+        "dub"
+      ],
+      "description": "Zanka et Rudo affronte Jabber grâce à l'amulette de Gris.",
+      "premium_available_date": "2025-08-24T15:30:00Z",
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "G14UVPMNV",
+          "is_premium_only": true,
+          "media_guid": "G14UVPMNVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GD9UEGXXK",
+          "is_premium_only": true,
+          "media_guid": "GD9UEGXXKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G14UVPMMV",
+          "is_premium_only": true,
+          "media_guid": "G14UVPMMVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G14UVPMGV",
+          "is_premium_only": true,
+          "media_guid": "G14UVPMGVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GD9UEGX8K",
+          "is_premium_only": true,
+          "media_guid": "GD9UEGX8KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GX9U340JX",
+          "is_premium_only": true,
+          "media_guid": "GX9U340JXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G8WU7PM17",
+          "is_premium_only": true,
+          "media_guid": "G8WU7PM17V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GX9U340WX",
+          "is_premium_only": true,
+          "media_guid": "GX9U340WXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GD9UEGXKK",
+          "is_premium_only": true,
+          "media_guid": "GD9UEGXKKV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GD9UEGX5K",
+          "is_premium_only": true,
+          "media_guid": "GD9UEGX5KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G14UVPM9V",
+          "is_premium_only": true,
+          "media_guid": "G14UVPM9VV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GQJUMZ5W2",
+          "is_premium_only": true,
+          "media_guid": "GQJUMZ5W2V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "season_display_number": "",
+      "is_clip": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "episode": "7",
+      "sequence_number": 7,
+      "recent_variant": "",
+      "is_subbed": true,
+      "availability_starts": "2025-08-24T15:30:00Z",
+      "series_id": "GP5HJ84P7",
+      "availability_notes": "",
+      "episode_air_date": "2025-08-24T00:00:00Z",
+      "seo_description": "",
+      "is_premium_only": true,
+      "availability_status": "available",
+      "episode_number": 7,
+      "next_episode_title": "On avance",
+      "season_number": 1,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/28750f74b2cba78a68f27694b6898933.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/28750f74b2cba78a68f27694b6898933.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/28750f74b2cba78a68f27694b6898933.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/28750f74b2cba78a68f27694b6898933.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/28750f74b2cba78a68f27694b6898933.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/28750f74b2cba78a68f27694b6898933.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/28750f74b2cba78a68f27694b6898933.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/28750f74b2cba78a68f27694b6898933.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "upload_date": "2025-08-24T00:00:00Z",
+      "production_episode_id": "",
+      "slug_title": "a-score-to-settle",
+      "audio_locale": "fr-FR",
+      "season_title": "Saison 1"
+    },
+    {
+      "is_subbed": true,
+      "episode_air_date": "2025-08-31T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "availability_starts": "2025-08-31T15:30:00Z",
+      "premium_date": null,
+      "upload_date": "2025-08-31T00:00:00Z",
+      "episode": "8",
+      "hd_flag": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "streams_link": "/content/v2/cms/videos/GQJUMZ22KV/streams",
+      "availability_status": "available",
+      "season_number": 1,
+      "season_sequence_number": 1,
+      "is_premium_only": true,
+      "audio_locale": "fr-FR",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5a4c10b77f13826411dbfe9e42bb2463.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5a4c10b77f13826411dbfe9e42bb2463.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5a4c10b77f13826411dbfe9e42bb2463.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5a4c10b77f13826411dbfe9e42bb2463.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5a4c10b77f13826411dbfe9e42bb2463.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5a4c10b77f13826411dbfe9e42bb2463.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5a4c10b77f13826411dbfe9e42bb2463.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5a4c10b77f13826411dbfe9e42bb2463.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "eligible_region": "CA",
+      "premium_available_date": "2025-08-31T15:30:00Z",
+      "listing_id": "",
+      "title": "On avance",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "available_offline": true,
+      "season_slug_title": "season-1",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "roles": [
+        "dub"
+      ],
+      "series_slug_title": "gachiakuta",
+      "next_episode_id": "G50UMD555",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "season_display_number": "",
+      "duration_ms": 1420004,
+      "recent_variant": "",
+      "series_id": "GP5HJ84P7",
+      "identifier": "GP5HJ84P7|S00352501|E8",
+      "season_title": "Saison 1",
+      "availability_notes": "",
+      "closed_captions_available": false,
+      "id": "GQJUMZ22K",
+      "seo_description": "",
+      "next_episode_title": "La Ville des Graffitis",
+      "slug_title": "moving-forward",
+      "series_title": "Gachiakuta",
+      "description": "Journée de récupération au QG des Nettoyeurs.",
+      "episode_number": 8,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_clip": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "is_mature": false,
+      "season_id": "GY75CDJWM",
+      "production_episode_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GQJUMZ2JK",
+          "is_premium_only": true,
+          "media_guid": "GQJUMZ2JKV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWUQ1VZK",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ1VZKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GQJUMZ2KK",
+          "is_premium_only": true,
+          "media_guid": "GQJUMZ2KKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GJWUQ1VVK",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ1VVKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GJWUQ1VEK",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ1VEKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GQJUMZ2QK",
+          "is_premium_only": true,
+          "media_guid": "GQJUMZ2QKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GJWUQ1V9K",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ1V9KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G4VUW72VN",
+          "is_premium_only": true,
+          "media_guid": "G4VUW72VNV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GQJUMZ22K",
+          "is_premium_only": true,
+          "media_guid": "GQJUMZ22KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G4VUW721N",
+          "is_premium_only": true,
+          "media_guid": "G4VUW721NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GZ7UDM4E9",
+          "is_premium_only": true,
+          "media_guid": "GZ7UDM4E9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "G50UMD0G1",
+          "is_premium_only": true,
+          "media_guid": "G50UMD0G1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "sequence_number": 8,
+      "slug": "",
+      "media_type": "episode",
+      "seo_title": "",
+      "is_dubbed": true,
+      "recent_audio_locale": "fr-FR"
+    },
+    {
+      "upload_date": "2025-09-07T00:00:00Z",
+      "season_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G50UMD5P5",
+          "is_premium_only": true,
+          "media_guid": "G50UMD5P5V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UNJ4Q3",
+          "is_premium_only": true,
+          "media_guid": "GN7UNJ4Q3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GN7UNJ443",
+          "is_premium_only": true,
+          "media_guid": "GN7UNJ443V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G50UMD515",
+          "is_premium_only": true,
+          "media_guid": "G50UMD515V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GN7UNJ423",
+          "is_premium_only": true,
+          "media_guid": "GN7UNJ423V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G14UVPM9M",
+          "is_premium_only": true,
+          "media_guid": "G14UVPM9MV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GD9UEGX30",
+          "is_premium_only": true,
+          "media_guid": "GD9UEGX30V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G50UMD5Q5",
+          "is_premium_only": true,
+          "media_guid": "G50UMD5Q5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G50UMD555",
+          "is_premium_only": true,
+          "media_guid": "G50UMD555V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GN7UNJ4V3",
+          "is_premium_only": true,
+          "media_guid": "GN7UNJ4V3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G14UVPM1M",
+          "is_premium_only": true,
+          "media_guid": "G14UVPM1MV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GWDU7320E",
+          "is_premium_only": true,
+          "media_guid": "GWDU7320EV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "is_dubbed": true,
+      "available_offline": true,
+      "description": "L'équipe Akuta et quelques renforts partent pour Canvas Town.",
+      "season_display_number": "",
+      "hd_flag": true,
+      "season_title": "Saison 1",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "audio_locale": "fr-FR",
+      "episode_air_date": "2025-09-07T00:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ff7f60c34ce866531b392531e5d01b99.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ff7f60c34ce866531b392531e5d01b99.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ff7f60c34ce866531b392531e5d01b99.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ff7f60c34ce866531b392531e5d01b99.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ff7f60c34ce866531b392531e5d01b99.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ff7f60c34ce866531b392531e5d01b99.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ff7f60c34ce866531b392531e5d01b99.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ff7f60c34ce866531b392531e5d01b99.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_sequence_number": 1,
+      "closed_captions_available": false,
+      "recent_audio_locale": "fr-FR",
+      "season_id": "GY75CDJWM",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_premium_only": true,
+      "channel_id": "crunchyroll",
+      "slug_title": "the-city-of-graffiti",
+      "availability_starts": "2025-09-07T15:30:00Z",
+      "series_id": "GP5HJ84P7",
+      "series_title": "Gachiakuta",
+      "season_slug_title": "season-1",
+      "next_episode_id": "GWDU73DDQ",
+      "media_type": "episode",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "premium_available_date": "2025-09-07T15:30:00Z",
+      "roles": [
+        "dub"
+      ],
+      "seo_description": "",
+      "sequence_number": 9,
+      "is_clip": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "available_date": null,
+      "listing_id": "",
+      "identifier": "GP5HJ84P7|S00352501|E9",
+      "is_mature": false,
+      "episode": "9",
+      "mature_blocked": false,
+      "series_slug_title": "gachiakuta",
+      "availability_status": "available",
+      "availability_notes": "",
+      "recent_variant": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "id": "G50UMD555",
+      "episode_number": 9,
+      "duration_ms": 1419962,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "eligible_region": "CA",
+      "slug": "",
+      "title": "La Ville des Graffitis",
+      "streams_link": "/content/v2/cms/videos/G50UMD555V/streams",
+      "premium_date": null,
+      "seo_title": "",
+      "next_episode_title": "Penta - Le Désert interdit"
+    },
+    {
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "identifier": "GP5HJ84P7|S00352501|E10",
+      "season_title": "Saison 1",
+      "listing_id": "",
+      "seo_description": "",
+      "is_subbed": true,
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "availability_starts": "2025-09-14T15:30:00Z",
+      "recent_audio_locale": "fr-FR",
+      "roles": [
+        "dub"
+      ],
+      "description": "Après une halte au QG pour récupérer le full-face de Rudo, cap sur le désert.",
+      "audio_locale": "fr-FR",
+      "season_sequence_number": 1,
+      "is_premium_only": true,
+      "sequence_number": 10,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "episode_air_date": "2025-09-14T00:00:00Z",
+      "episode_number": 10,
+      "season_slug_title": "season-1",
+      "media_type": "episode",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GWDU73DXQ",
+          "is_premium_only": true,
+          "media_guid": "GWDU73DXQV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9UGNX19",
+          "is_premium_only": true,
+          "media_guid": "GK9UGNX19V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GK9UGNXD9",
+          "is_premium_only": true,
+          "media_guid": "GK9UGNXD9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GWDU73DDQ",
+          "is_premium_only": true,
+          "media_guid": "GWDU73DDQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GWDU73DQQ",
+          "is_premium_only": true,
+          "media_guid": "GWDU73DQQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GJWUQ1V9E",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ1V9EV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GQJUMZ23X",
+          "is_premium_only": true,
+          "media_guid": "GQJUMZ23XV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GJWUQ1V0E",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ1V0EV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GK9UGNXX9",
+          "is_premium_only": true,
+          "media_guid": "GK9UGNXX9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GWDU73D1Q",
+          "is_premium_only": true,
+          "media_guid": "GWDU73D1QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GK9UGNXM9",
+          "is_premium_only": true,
+          "media_guid": "GK9UGNXM9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GG1UXVJ1N",
+          "is_premium_only": true,
+          "media_guid": "GG1UXVJ1NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "series_slug_title": "gachiakuta",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "recent_variant": "",
+      "upload_date": "2025-09-14T00:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/025ebe0ba688b8e1a344a7eec1c44bcb.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/025ebe0ba688b8e1a344a7eec1c44bcb.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/025ebe0ba688b8e1a344a7eec1c44bcb.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/025ebe0ba688b8e1a344a7eec1c44bcb.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/025ebe0ba688b8e1a344a7eec1c44bcb.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/025ebe0ba688b8e1a344a7eec1c44bcb.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/025ebe0ba688b8e1a344a7eec1c44bcb.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/025ebe0ba688b8e1a344a7eec1c44bcb.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_dubbed": true,
+      "seo_title": "",
+      "streams_link": "/content/v2/cms/videos/GWDU73DDQV/streams",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "episode": "10",
+      "next_episode_title": "L'Hospitalisé selon Amo",
+      "mature_blocked": false,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "eligible_region": "CA",
+      "closed_captions_available": false,
+      "premium_available_date": "2025-09-14T15:30:00Z",
+      "series_title": "Gachiakuta",
+      "is_clip": false,
+      "season_display_number": "",
+      "available_date": null,
+      "series_id": "GP5HJ84P7",
+      "slug": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "season_id": "GY75CDJWM",
+      "availability_notes": "",
+      "is_mature": false,
+      "slug_title": "penta-the-desert-no-mans-land",
+      "duration_ms": 1420004,
+      "availability_status": "available",
+      "available_offline": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "id": "GWDU73DDQ",
+      "hd_flag": true,
+      "next_episode_id": "GG1UXVGG4",
+      "season_number": 1,
+      "title": "Penta - Le Désert interdit"
+    },
+    {
+      "slug": "",
+      "description": "Au cœur de Penta, le Désert interdit, une immense tour se dresse. C'est la demeure d'Amo.",
+      "episode_air_date": "2025-09-21T00:00:00Z",
+      "season_sequence_number": 1,
+      "identifier": "GP5HJ84P7|S00352501|E11",
+      "next_episode_title": "Un peu comme une malédiction",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "available_date": null,
+      "is_premium_only": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "series_id": "GP5HJ84P7",
+      "series_title": "Gachiakuta",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "duration_ms": 1419920,
+      "sequence_number": 11,
+      "series_slug_title": "gachiakuta",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "roles": [
+        "dub"
+      ],
+      "media_type": "episode",
+      "seo_description": "",
+      "hd_flag": true,
+      "upload_date": "2025-09-21T00:00:00Z",
+      "title": "L'Hospitalisé selon Amo",
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "GMKUE3VKJ",
+          "is_premium_only": true,
+          "media_guid": "GMKUE3VKJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GG1UXVGG4",
+          "is_premium_only": true,
+          "media_guid": "GG1UXVGG4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GMKUE3VGJ",
+          "is_premium_only": true,
+          "media_guid": "GMKUE3VGJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GG1UXVGZ4",
+          "is_premium_only": true,
+          "media_guid": "GG1UXVGZ4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GN7UNJ422",
+          "is_premium_only": true,
+          "media_guid": "GN7UNJ422V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G50UMD5VJ",
+          "is_premium_only": true,
+          "media_guid": "G50UMD5VJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GN7UNJ412",
+          "is_premium_only": true,
+          "media_guid": "GN7UNJ412V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1UXVG94",
+          "is_premium_only": true,
+          "media_guid": "GG1UXVG94V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GMKUE3VVJ",
+          "is_premium_only": true,
+          "media_guid": "GMKUE3VVJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GG1UXVG84",
+          "is_premium_only": true,
+          "media_guid": "GG1UXVG84V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G50UMD5XJ",
+          "is_premium_only": true,
+          "media_guid": "G50UMD5XJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "G50UMZ3KQ",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ3KQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "premium_date": null,
+      "streams_link": "/content/v2/cms/videos/GG1UXVGG4V/streams",
+      "id": "GG1UXVGG4",
+      "season_slug_title": "season-1",
+      "premium_available_date": "2025-09-21T15:30:00Z",
+      "mature_blocked": false,
+      "is_mature": false,
+      "season_id": "GY75CDJWM",
+      "available_offline": true,
+      "production_episode_id": "",
+      "recent_variant": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/329d12d2661801393b4e2af6e2bfc924.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/329d12d2661801393b4e2af6e2bfc924.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/329d12d2661801393b4e2af6e2bfc924.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/329d12d2661801393b4e2af6e2bfc924.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/329d12d2661801393b4e2af6e2bfc924.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/329d12d2661801393b4e2af6e2bfc924.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/329d12d2661801393b4e2af6e2bfc924.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/329d12d2661801393b4e2af6e2bfc924.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_status": "available",
+      "audio_locale": "fr-FR",
+      "season_number": 1,
+      "is_subbed": true,
+      "season_title": "Saison 1",
+      "listing_id": "",
+      "availability_starts": "2025-09-21T15:30:00Z",
+      "eligible_region": "CA",
+      "season_display_number": "",
+      "episode": "11",
+      "is_dubbed": true,
+      "is_clip": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "seo_title": "",
+      "closed_captions_available": false,
+      "next_episode_id": "G0DUMX88K",
+      "channel_id": "crunchyroll",
+      "availability_notes": "",
+      "episode_number": 11,
+      "recent_audio_locale": "fr-FR",
+      "slug_title": "amos-hospitality"
+    },
+    {
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "series_slug_title": "gachiakuta",
+      "duration_ms": 1420046,
+      "seo_description": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3f4ee00e414b71330ae66618ecbea316.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/3f4ee00e414b71330ae66618ecbea316.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/3f4ee00e414b71330ae66618ecbea316.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/3f4ee00e414b71330ae66618ecbea316.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3f4ee00e414b71330ae66618ecbea316.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/3f4ee00e414b71330ae66618ecbea316.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/3f4ee00e414b71330ae66618ecbea316.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/3f4ee00e414b71330ae66618ecbea316.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "channel_id": "crunchyroll",
+      "series_title": "Gachiakuta",
+      "episode_number": 12,
+      "is_mature": false,
+      "audio_locale": "fr-FR",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "streams_link": "/content/v2/cms/videos/G0DUMX88KV/streams",
+      "recent_variant": "",
+      "episode": "12",
+      "mature_blocked": false,
+      "premium_date": null,
+      "roles": [
+        "dub"
+      ],
+      "hd_flag": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUMX8PK",
+          "is_premium_only": true,
+          "media_guid": "G0DUMX8PKV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU829KV",
+          "is_premium_only": true,
+          "media_guid": "GVWU829KVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GVWU8299V",
+          "is_premium_only": true,
+          "media_guid": "GVWU8299VV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GVWU8294V",
+          "is_premium_only": true,
+          "media_guid": "GVWU8294VV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G0DUMX87K",
+          "is_premium_only": true,
+          "media_guid": "G0DUMX87KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G0DUMX8JK",
+          "is_premium_only": true,
+          "media_guid": "G0DUMX8JKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GWDU73DE9",
+          "is_premium_only": true,
+          "media_guid": "GWDU73DE9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GK9UGNXMK",
+          "is_premium_only": true,
+          "media_guid": "GK9UGNXMKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GWDU73DJ9",
+          "is_premium_only": true,
+          "media_guid": "GWDU73DJ9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GK9UGNXKK",
+          "is_premium_only": true,
+          "media_guid": "GK9UGNXKKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G0DUMX88K",
+          "is_premium_only": true,
+          "media_guid": "G0DUMX88KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "G9DU9EVQ3",
+          "is_premium_only": true,
+          "media_guid": "G9DU9EVQ3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "availability_notes": "",
+      "title": "Un peu comme une malédiction",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "availability_starts": "2025-09-28T15:30:00Z",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "recent_audio_locale": "fr-FR",
+      "series_id": "GP5HJ84P7",
+      "closed_captions_available": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_number": 1,
+      "sequence_number": 12,
+      "is_clip": false,
+      "season_id": "GY75CDJWM",
+      "slug": "",
+      "upload_date": "2025-09-28T00:00:00Z",
+      "available_offline": true,
+      "next_episode_title": "Regard vide",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "premium_available_date": "2025-09-28T15:30:00Z",
+      "description": "Le combat fait rage dans la tour. Amo étend son emprise sur les Nettoyeurs.",
+      "availability_status": "available",
+      "is_subbed": true,
+      "id": "G0DUMX88K",
+      "available_date": null,
+      "identifier": "GP5HJ84P7|S00352501|E12",
+      "season_slug_title": "season-1",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_air_date": "2025-09-28T00:00:00Z",
+      "seo_title": "",
+      "media_type": "episode",
+      "season_title": "Saison 1",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "listing_id": "",
+      "is_premium_only": true,
+      "slug_title": "something-like-a-curse",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "is_dubbed": true,
+      "next_episode_id": "GEVUWQEE7"
+    },
+    {
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "audio_locale": "fr-FR",
+      "closed_captions_available": false,
+      "listing_id": "",
+      "is_dubbed": true,
+      "sequence_number": 13,
+      "eligible_region": "CA",
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUWQEM7",
+          "is_premium_only": true,
+          "media_guid": "GEVUWQEM7V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G31UV29G7",
+          "is_premium_only": true,
+          "media_guid": "G31UV29G7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G31UV2997",
+          "is_premium_only": true,
+          "media_guid": "G31UV2997V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G31UV29Z7",
+          "is_premium_only": true,
+          "media_guid": "G31UV29Z7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GEVUWQE97",
+          "is_premium_only": true,
+          "media_guid": "GEVUWQE97V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GG1UXVG4D",
+          "is_premium_only": true,
+          "media_guid": "GG1UXVG4DV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GMKUE3VQ1",
+          "is_premium_only": true,
+          "media_guid": "GMKUE3VQ1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GMKUE3VP1",
+          "is_premium_only": true,
+          "media_guid": "GMKUE3VP1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GEVUWQEE7",
+          "is_premium_only": true,
+          "media_guid": "GEVUWQEE7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GEVUWQEN7",
+          "is_premium_only": true,
+          "media_guid": "GEVUWQEN7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GG1UXVGND",
+          "is_premium_only": true,
+          "media_guid": "GG1UXVGNDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "G4VUWQG23",
+          "is_premium_only": true,
+          "media_guid": "G4VUWQG23V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        }
+      ],
+      "is_clip": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "roles": [
+        "dub"
+      ],
+      "available_offline": true,
+      "available_date": null,
+      "premium_date": null,
+      "episode": "13",
+      "is_subbed": true,
+      "series_slug_title": "gachiakuta",
+      "description": "Amo raconte aux Nettoyeurs les détails de sa vie dans la tour du désert de Penta.",
+      "season_id": "GY75CDJWM",
+      "is_premium_only": true,
+      "season_title": "Saison 1",
+      "hd_flag": true,
+      "identifier": "GP5HJ84P7|S00352501|E13",
+      "channel_id": "crunchyroll",
+      "upload_date": "2025-10-05T00:00:00Z",
+      "recent_audio_locale": "fr-FR",
+      "is_mature": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f03e891e1e7dee9ee20d4f99af7c8e7e.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f03e891e1e7dee9ee20d4f99af7c8e7e.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f03e891e1e7dee9ee20d4f99af7c8e7e.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f03e891e1e7dee9ee20d4f99af7c8e7e.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f03e891e1e7dee9ee20d4f99af7c8e7e.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f03e891e1e7dee9ee20d4f99af7c8e7e.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f03e891e1e7dee9ee20d4f99af7c8e7e.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f03e891e1e7dee9ee20d4f99af7c8e7e.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "season_sequence_number": 1,
+      "episode_air_date": "2025-10-05T00:00:00Z",
+      "id": "GEVUWQEE7",
+      "slug": "",
+      "season_display_number": "",
+      "next_episode_title": "La tempête avant la tempête",
+      "duration_ms": 1420004,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "title": "Regard vide",
+      "media_type": "episode",
+      "availability_status": "available",
+      "slug_title": "an-empty-gaze",
+      "next_episode_id": "G14UV4KGX",
+      "season_slug_title": "season-1",
+      "season_number": 1,
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "premium_available_date": "2025-10-05T15:30:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "streams_link": "/content/v2/cms/videos/GEVUWQEE7V/streams",
+      "production_episode_id": "",
+      "mature_blocked": false,
+      "recent_variant": "",
+      "series_title": "Gachiakuta",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_notes": "",
+      "availability_starts": "2025-10-05T15:30:00Z",
+      "episode_number": 13,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "series_id": "GP5HJ84P7"
+    },
+    {
+      "duration_ms": 1419962,
+      "episode": "14",
+      "episode_air_date": "2025-10-12T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "seo_title": "",
+      "title": "La tempête avant la tempête",
+      "season_id": "GY75CDJWM",
+      "mature_blocked": false,
+      "premium_date": null,
+      "season_number": 1,
+      "recent_audio_locale": "fr-FR",
+      "upload_date": "2025-10-12T00:00:00Z",
+      "channel_id": "crunchyroll",
+      "availability_starts": "2025-11-02T16:30:00Z",
+      "description": "De retour de zone interdite, les Nettoyeurs aimeraient bien souffler. Mais les Vandales rodent.",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUWZV2M",
+          "is_premium_only": true,
+          "media_guid": "GEVUWZV2MV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GJWUQ2PZ0",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ2PZ0V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14UV4KMX",
+          "is_premium_only": true,
+          "media_guid": "G14UV4KMXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GD9UEV1XM",
+          "is_premium_only": true,
+          "media_guid": "GD9UEV1XMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G14UV4KGX",
+          "is_premium_only": true,
+          "media_guid": "G14UV4KGXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GD9UEV18M",
+          "is_premium_only": true,
+          "media_guid": "GD9UEV18MV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G14UV4K9X",
+          "is_premium_only": true,
+          "media_guid": "G14UV4K9XV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GD9UEV1QM",
+          "is_premium_only": true,
+          "media_guid": "GD9UEV1QMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G14UV4K1X",
+          "is_premium_only": true,
+          "media_guid": "G14UV4K1XV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GQJUMGX5N",
+          "is_premium_only": true,
+          "media_guid": "GQJUMGX5NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GJWUQ2PWX",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ2PWXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWUQ24N1",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ24N1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        }
+      ],
+      "production_episode_id": "",
+      "next_episode_title": "Hé, j'te parle !",
+      "season_sequence_number": 1,
+      "id": "G14UV4KGX",
+      "season_title": "Saison 1",
+      "availability_status": "available",
+      "series_title": "Gachiakuta",
+      "premium_available_date": "2025-11-02T16:30:00Z",
+      "streams_link": "/content/v2/cms/videos/G14UV4KGXV/streams",
+      "is_clip": false,
+      "is_subbed": true,
+      "slug_title": "the-storm-before-the-storm",
+      "listing_id": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "next_episode_id": "GJWUQ2PEX",
+      "roles": [
+        "dub"
+      ],
+      "season_slug_title": "season-1",
+      "recent_variant": "",
+      "available_offline": true,
+      "episode_number": 14,
+      "is_mature": false,
+      "seo_description": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "sequence_number": 14,
+      "available_date": null,
+      "identifier": "GP5HJ84P7|S00352501|E14",
+      "series_slug_title": "gachiakuta",
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/10748a247f34913c0d929b55c3bc7103.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/10748a247f34913c0d929b55c3bc7103.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/10748a247f34913c0d929b55c3bc7103.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/10748a247f34913c0d929b55c3bc7103.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/10748a247f34913c0d929b55c3bc7103.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/10748a247f34913c0d929b55c3bc7103.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/10748a247f34913c0d929b55c3bc7103.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/10748a247f34913c0d929b55c3bc7103.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "fr-FR",
+      "media_type": "episode",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_premium_only": true,
+      "is_dubbed": true,
+      "series_id": "GP5HJ84P7",
+      "season_display_number": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "eligible_region": "CA",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "availability_notes": "",
+      "slug": ""
+    },
+    {
+      "slug_title": "clash",
+      "is_dubbed": true,
+      "streams_link": "/content/v2/cms/videos/GJWUQ2PEXV/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G50UMZ8QE",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ8QEV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GN7UND8QM",
+          "is_premium_only": true,
+          "media_guid": "GN7UND8QMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GJWUQ2PVX",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ2PVXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GQJUMGXQN",
+          "is_premium_only": true,
+          "media_guid": "GQJUMGXQNV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GJWUQ2PEX",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ2PEXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GQJUMGXVN",
+          "is_premium_only": true,
+          "media_guid": "GQJUMGXVNV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GJWUQ2P9X",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ2P9XV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GQJUMGX3N",
+          "is_premium_only": true,
+          "media_guid": "GQJUMGX3NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GJWUQ2P0X",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ2P0XV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G50UMZ80N",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ80NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GN7UND8MG",
+          "is_premium_only": true,
+          "media_guid": "GN7UND8MGV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UND5XD",
+          "is_premium_only": true,
+          "media_guid": "GN7UND5XDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        }
+      ],
+      "premium_date": null,
+      "season_display_number": "",
+      "audio_locale": "fr-FR",
+      "upload_date": "2025-10-19T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "roles": [
+        "dub"
+      ],
+      "eligible_region": "CA",
+      "is_clip": false,
+      "is_premium_only": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/cf71f236ca935a8e576cce856eb72af4.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/cf71f236ca935a8e576cce856eb72af4.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/cf71f236ca935a8e576cce856eb72af4.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/cf71f236ca935a8e576cce856eb72af4.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/cf71f236ca935a8e576cce856eb72af4.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/cf71f236ca935a8e576cce856eb72af4.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/cf71f236ca935a8e576cce856eb72af4.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/cf71f236ca935a8e576cce856eb72af4.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_status": "available",
+      "slug": "",
+      "seo_description": "",
+      "recent_variant": "",
+      "available_date": null,
+      "next_episode_id": "GN7UND8VG",
+      "seo_title": "",
+      "available_offline": true,
+      "title": "Hé, j'te parle !",
+      "recent_audio_locale": "fr-FR",
+      "episode": "15",
+      "sequence_number": 15,
+      "closed_captions_available": false,
+      "is_mature": false,
+      "season_id": "GY75CDJWM",
+      "premium_available_date": "2025-11-09T16:30:00Z",
+      "episode_number": 15,
+      "production_episode_id": "",
+      "season_slug_title": "season-1",
+      "season_title": "Saison 1",
+      "channel_id": "crunchyroll",
+      "duration_ms": 1419962,
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "series_slug_title": "gachiakuta",
+      "season_number": 1,
+      "listing_id": "",
+      "availability_starts": "2025-11-09T16:30:00Z",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "description": "Le grand affrontement entre les Nettoyeurs et les Vandales peut commencer !",
+      "series_title": "Gachiakuta",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "series_id": "GP5HJ84P7",
+      "id": "GJWUQ2PEX",
+      "episode_air_date": "2025-10-19T00:00:00Z",
+      "availability_notes": "",
+      "mature_blocked": false,
+      "next_episode_title": "Génie ou type ordinaire",
+      "is_subbed": true,
+      "media_type": "episode",
+      "hd_flag": true,
+      "identifier": "GP5HJ84P7|S00352501|E15"
+    },
+    {
+      "available_date": null,
+      "series_title": "Gachiakuta",
+      "title": "Génie ou type ordinaire",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_mature": false,
+      "is_subbed": true,
+      "is_premium_only": true,
+      "audio_locale": "fr-FR",
+      "slug": "",
+      "series_slug_title": "gachiakuta",
+      "series_id": "GP5HJ84P7",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GWDU7841K",
+          "is_premium_only": true,
+          "media_guid": "GWDU7841KV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GK9UG39XV",
+          "is_premium_only": true,
+          "media_guid": "GK9UG39XVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G50UMZ81N",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ81NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GN7UND8VG",
+          "is_premium_only": true,
+          "media_guid": "GN7UND8VGV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G50UMZ8XN",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ8XNV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GN7UND82G",
+          "is_premium_only": true,
+          "media_guid": "GN7UND82GV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G50UMZ8VN",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ8VNV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GN7UND81G",
+          "is_premium_only": true,
+          "media_guid": "GN7UND81GV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GWDU78423",
+          "is_premium_only": true,
+          "media_guid": "GWDU78423V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GK9UG39E5",
+          "is_premium_only": true,
+          "media_guid": "GK9UG39E5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9UG37VG",
+          "is_premium_only": true,
+          "media_guid": "GK9UG37VGV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GN7UND5DD",
+          "is_premium_only": true,
+          "media_guid": "GN7UND5DDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "season_slug_title": "season-1",
+      "premium_date": null,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "available_offline": true,
+      "episode_air_date": "2025-10-26T00:00:00Z",
+      "channel_id": "crunchyroll",
+      "id": "GN7UND8VG",
+      "eligible_region": "CA",
+      "identifier": "GP5HJ84P7|S00352501|E16",
+      "recent_audio_locale": "fr-FR",
+      "episode": "16",
+      "is_dubbed": true,
+      "season_id": "GY75CDJWM",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/07dcb4d45897d32c4f6ec64035c95303.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/07dcb4d45897d32c4f6ec64035c95303.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/07dcb4d45897d32c4f6ec64035c95303.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/07dcb4d45897d32c4f6ec64035c95303.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/07dcb4d45897d32c4f6ec64035c95303.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/07dcb4d45897d32c4f6ec64035c95303.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/07dcb4d45897d32c4f6ec64035c95303.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/07dcb4d45897d32c4f6ec64035c95303.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "upload_date": "2025-10-26T00:00:00Z",
+      "description": "Zanka affronte Jabber, qui est passé à la vitesse supérieure.",
+      "closed_captions_available": false,
+      "next_episode_title": "Souvenirs d'un homme ordinaire",
+      "media_type": "episode",
+      "season_number": 1,
+      "premium_available_date": "2025-11-16T16:30:00Z",
+      "availability_notes": "",
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "listing_id": "",
+      "seo_title": "",
+      "season_display_number": "",
+      "streams_link": "/content/v2/cms/videos/GN7UND8VGV/streams",
+      "is_clip": false,
+      "mature_blocked": false,
+      "episode_number": 16,
+      "duration_ms": 1420046,
+      "hd_flag": true,
+      "season_title": "Saison 1",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_description": "",
+      "slug_title": "gifted-and-not",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "availability_status": "available",
+      "next_episode_id": "GK9UG39D5",
+      "roles": [
+        "dub"
+      ],
+      "availability_starts": "2025-11-16T16:30:00Z",
+      "sequence_number": 16
+    },
+    {
+      "hd_flag": true,
+      "is_mature": false,
+      "next_episode_title": "Grave à fond",
+      "id": "GK9UG39D5",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/05d86a2c593608f94a79a7cbae252197.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/05d86a2c593608f94a79a7cbae252197.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/05d86a2c593608f94a79a7cbae252197.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/05d86a2c593608f94a79a7cbae252197.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/05d86a2c593608f94a79a7cbae252197.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/05d86a2c593608f94a79a7cbae252197.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/05d86a2c593608f94a79a7cbae252197.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/05d86a2c593608f94a79a7cbae252197.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "description": "Kamuatari abrite la prestigieuse Académie de la Garde infernale, où Zanka a fait ses classes.",
+      "slug": "",
+      "available_offline": true,
+      "roles": [
+        "dub"
+      ],
+      "availability_starts": "2025-11-23T15:30:00Z",
+      "upload_date": "2025-11-02T00:00:00Z",
+      "seo_title": "",
+      "recent_variant": "",
+      "is_clip": false,
+      "audio_locale": "fr-FR",
+      "season_slug_title": "season-1",
+      "media_type": "episode",
+      "title": "Souvenirs d'un homme ordinaire",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "premium_available_date": "2025-11-23T15:30:00Z",
+      "episode_air_date": "2025-11-02T00:00:00Z",
+      "recent_audio_locale": "fr-FR",
+      "next_episode_id": "GMKUEXNG7",
+      "is_premium_only": true,
+      "series_title": "Gachiakuta",
+      "season_sequence_number": 1,
+      "series_slug_title": "gachiakuta",
+      "episode": "17",
+      "available_date": null,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "season_title": "Saison 1",
+      "is_subbed": true,
+      "mature_blocked": false,
+      "episode_number": 17,
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1UX2K80",
+          "is_premium_only": true,
+          "media_guid": "GG1UX2K80V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "G50UMZ85N",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ85NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GK9UG39X5",
+          "is_premium_only": true,
+          "media_guid": "GK9UG39X5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GWDU784Q3",
+          "is_premium_only": true,
+          "media_guid": "GWDU784Q3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GK9UG39D5",
+          "is_premium_only": true,
+          "media_guid": "GK9UG39D5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GWDU784E3",
+          "is_premium_only": true,
+          "media_guid": "GWDU784E3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GK9UG39M5",
+          "is_premium_only": true,
+          "media_guid": "GK9UG39M5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GWDU784J3",
+          "is_premium_only": true,
+          "media_guid": "GWDU784J3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GK9UG39K5",
+          "is_premium_only": true,
+          "media_guid": "GK9UG39K5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GG1UX2KJ2",
+          "is_premium_only": true,
+          "media_guid": "GG1UX2KJ2V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G50UMZ809",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ809V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GMKUEXJ90",
+          "is_premium_only": true,
+          "media_guid": "GMKUEXJ90V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        }
+      ],
+      "slug_title": "memories-of-a-mediocrity",
+      "duration_ms": 1420004,
+      "premium_date": null,
+      "channel_id": "crunchyroll",
+      "season_display_number": "",
+      "availability_notes": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_number": 1,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "is_dubbed": true,
+      "availability_status": "available",
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "season_id": "GY75CDJWM",
+      "streams_link": "/content/v2/cms/videos/GK9UG39D5V/streams",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "series_id": "GP5HJ84P7",
+      "sequence_number": 17,
+      "identifier": "GP5HJ84P7|S00352501|E17",
+      "listing_id": ""
+    },
+    {
+      "slug": "",
+      "availability_starts": "2025-11-30T15:30:00Z",
+      "season_id": "GY75CDJWM",
+      "episode": "18",
+      "seo_title": "",
+      "is_clip": false,
+      "roles": [
+        "dub"
+      ],
+      "episode_air_date": "2025-11-09T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GMKUEXNG7V/streams",
+      "premium_date": null,
+      "available_offline": true,
+      "title": "Grave à fond",
+      "availability_status": "available",
+      "mature_blocked": false,
+      "audio_locale": "fr-FR",
+      "hd_flag": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUMNV75",
+          "is_premium_only": true,
+          "media_guid": "G0DUMNV75V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GWDU784D3",
+          "is_premium_only": true,
+          "media_guid": "GWDU784D3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC24MP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GMKUEXNV7",
+          "is_premium_only": true,
+          "media_guid": "GMKUEXNV7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY09CXJ98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1UX2KZ2",
+          "is_premium_only": true,
+          "media_guid": "GG1UX2KZ2V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6E5CQN8N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GMKUEXNG7",
+          "is_premium_only": true,
+          "media_guid": "GMKUEXNG7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY75CDJWM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GG1UX2K42",
+          "is_premium_only": true,
+          "media_guid": "GG1UX2K42V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY9PC2GDM",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GMKUEXNQ7",
+          "is_premium_only": true,
+          "media_guid": "GMKUEXNQ7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C4ZKE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GG1UX2KN2",
+          "is_premium_only": true,
+          "media_guid": "GG1UX2KN2V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY49C78XK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GMKUEXNP7",
+          "is_premium_only": true,
+          "media_guid": "GMKUEXNP7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPGEJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G0DUMNV2M",
+          "is_premium_only": true,
+          "media_guid": "G0DUMNV2MV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYJQC1EX1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GWDU7842X",
+          "is_premium_only": true,
+          "media_guid": "GWDU7842XV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRNQCJV7D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU80DNG",
+          "is_premium_only": true,
+          "media_guid": "GVWU80DNGV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        }
+      ],
+      "season_slug_title": "season-1",
+      "season_sequence_number": 1,
+      "eligible_region": "CA",
+      "is_premium_only": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug_title": "oh-zap-totes-legit",
+      "description": "Riyo affronte la mystérieuse Vandale aux cheveux dangereux.",
+      "sequence_number": 18,
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "next_episode_id": "GVWU8034E",
+      "identifier": "GP5HJ84P7|S00352501|E18",
+      "availability_notes": "",
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8720029422d7ed8973628ff90a456ff6.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8720029422d7ed8973628ff90a456ff6.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8720029422d7ed8973628ff90a456ff6.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8720029422d7ed8973628ff90a456ff6.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8720029422d7ed8973628ff90a456ff6.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8720029422d7ed8973628ff90a456ff6.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8720029422d7ed8973628ff90a456ff6.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8720029422d7ed8973628ff90a456ff6.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "id": "GMKUEXNG7",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "episode_number": 18,
+      "upload_date": "2025-11-09T00:00:00Z",
+      "season_title": "Saison 1",
+      "recent_variant": "",
+      "season_number": 1,
+      "next_episode_title": "La Série du Gardien",
+      "production_episode_id": "",
+      "channel_id": "crunchyroll",
+      "series_slug_title": "gachiakuta",
+      "season_display_number": "",
+      "series_id": "GP5HJ84P7",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "closed_captions_available": false,
+      "premium_available_date": "2025-11-30T15:30:00Z",
+      "available_date": null,
+      "series_title": "Gachiakuta",
+      "media_type": "episode",
+      "is_subbed": true,
+      "duration_ms": 1420004,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "is_dubbed": true,
+      "seo_description": "",
+      "recent_audio_locale": "fr-FR"
+    },
+    {
+      "availability_status": "available",
+      "episode_number": 19,
+      "upload_date": "2025-11-16T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1420046,
+      "media_type": "episode",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_subbed": true,
+      "series_id": "GP5HJ84P7",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "seo_title": "",
+      "available_offline": true,
+      "episode_air_date": "2025-11-16T00:00:00Z",
+      "next_episode_id": "G7PU34GQE",
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "mature_blocked": false,
+      "hd_flag": true,
+      "available_date": null,
+      "is_premium_only": true,
+      "audio_locale": "ja-JP",
+      "season_slug_title": "season-1",
+      "premium_date": null,
+      "season_number": 1,
+      "sequence_number": 19,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "slug_title": "watchmen-series",
+      "identifier": "GP5HJ84P7|S00352501|E19",
+      "season_display_number": "",
+      "roles": [
+        "main"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUWZ192",
+          "is_premium_only": true,
+          "media_guid": "GEVUWZ192V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G31UVXMK5",
+          "is_premium_only": true,
+          "media_guid": "G31UVXMK5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYK5CND4G",
+          "variant": ""
+        }
+      ],
+      "availability_notes": "",
+      "recent_audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GEVUWZ192V/streams",
+      "series_slug_title": "gachiakuta",
+      "is_clip": false,
+      "season_sequence_number": 1,
+      "description": "Zodyl continue d'exposer ses motivations à Rudo, qui reste sous le choc des révélations.",
+      "premium_available_date": "2025-11-16T15:00:00Z",
+      "closed_captions_available": false,
+      "is_dubbed": true,
+      "id": "GEVUWZ192",
+      "slug": "",
+      "production_episode_id": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "title": "La Série du Gardien",
+      "is_mature": false,
+      "series_title": "Gachiakuta",
+      "eligible_region": "CA",
+      "season_title": "Saison 1",
+      "episode": "19",
+      "listing_id": "",
+      "next_episode_title": "Le Repère",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_id": "G6GGCVZD8",
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a62552445b0bfaab0f4bf1091321da21.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a62552445b0bfaab0f4bf1091321da21.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a62552445b0bfaab0f4bf1091321da21.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a62552445b0bfaab0f4bf1091321da21.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a62552445b0bfaab0f4bf1091321da21.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a62552445b0bfaab0f4bf1091321da21.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a62552445b0bfaab0f4bf1091321da21.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a62552445b0bfaab0f4bf1091321da21.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_variant": "",
+      "seo_description": "",
+      "availability_starts": "2025-11-16T15:00:00Z"
+    },
+    {
+      "recent_audio_locale": "fr-FR",
+      "duration_ms": 1420004,
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "availability_notes": "",
+      "series_title": "Gachiakuta",
+      "availability_starts": "2025-11-23T15:00:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_display_number": "",
+      "audio_locale": "ja-JP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bfedc6b53e9a1286363f2553f680370b.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/bfedc6b53e9a1286363f2553f680370b.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/bfedc6b53e9a1286363f2553f680370b.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/bfedc6b53e9a1286363f2553f680370b.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/bfedc6b53e9a1286363f2553f680370b.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/bfedc6b53e9a1286363f2553f680370b.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/bfedc6b53e9a1286363f2553f680370b.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/bfedc6b53e9a1286363f2553f680370b.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "production_episode_id": "",
+      "title": "Le Repère",
+      "next_episode_title": "Contre-la-montre",
+      "seo_title": "",
+      "series_id": "GP5HJ84P7",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "streams_link": "/content/v2/cms/videos/G7PU34GQEV/streams",
+      "mature_blocked": false,
+      "episode_air_date": "2025-11-23T00:00:00Z",
+      "season_title": "Saison 1",
+      "slug": "",
+      "episode_number": 20,
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "episode": "20",
+      "availability_status": "available",
+      "identifier": "GP5HJ84P7|S00352501|E20",
+      "hd_flag": true,
+      "is_mature": false,
+      "seo_description": "",
+      "closed_captions_available": false,
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "G9DU9EK88",
+      "season_sequence_number": 1,
+      "media_type": "episode",
+      "is_clip": false,
+      "available_offline": true,
+      "is_subbed": true,
+      "series_slug_title": "gachiakuta",
+      "description": "Les Nettoyeurs reprennent le contrôle. L'origine du nom d'Enjin est révélée.",
+      "upload_date": "2025-11-23T00:00:00Z",
+      "sequence_number": 20,
+      "premium_date": null,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_number": 1,
+      "season_id": "G6GGCVZD8",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU34GQE",
+          "is_premium_only": true,
+          "media_guid": "G7PU34GQEV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        }
+      ],
+      "listing_id": "",
+      "season_slug_title": "season-1",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug_title": "ensign",
+      "is_dubbed": false,
+      "id": "G7PU34GQE",
+      "is_premium_only": true,
+      "premium_available_date": "2025-11-23T15:00:00Z"
+    },
+    {
+      "season_title": "Saison 1",
+      "hd_flag": true,
+      "season_tags": [
+        "Été-2025",
+        "Automne-2025"
+      ],
+      "available_date": null,
+      "season_id": "G6GGCVZD8",
+      "is_mature": false,
+      "audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "series_id": "GP5HJ84P7",
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DU9EK88",
+          "is_premium_only": true,
+          "media_guid": "G9DU9EK88V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6GGCVZD8",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "main"
+      ],
+      "identifier": "GP5HJ84P7|S00352501|E21",
+      "availability_starts": "2025-11-30T15:00:00Z",
+      "channel_id": "crunchyroll",
+      "is_subbed": true,
+      "season_number": 1,
+      "season_slug_title": "season-1",
+      "listing_id": "",
+      "title": "Contre-la-montre",
+      "seo_description": "",
+      "premium_available_date": "2025-11-30T15:00:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "sequence_number": 21,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/62ca73b7ec627fe64f64372244557101.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/62ca73b7ec627fe64f64372244557101.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/62ca73b7ec627fe64f64372244557101.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/62ca73b7ec627fe64f64372244557101.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/62ca73b7ec627fe64f64372244557101.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/62ca73b7ec627fe64f64372244557101.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/62ca73b7ec627fe64f64372244557101.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/62ca73b7ec627fe64f64372244557101.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_clip": false,
+      "next_episode_title": "The Power of Protection",
+      "next_episode_id": "GX9U3QV50",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "slug": "",
+      "streams_link": "/content/v2/cms/videos/G9DU9EK88V/streams",
+      "recent_audio_locale": "fr-FR",
+      "season_sequence_number": 1,
+      "media_type": "episode",
+      "available_offline": true,
+      "recent_variant": "",
+      "seo_title": "",
+      "mature_blocked": false,
+      "episode": "21",
+      "availability_notes": "",
+      "duration_ms": 1420129,
+      "episode_number": 21,
+      "id": "G9DU9EK88",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "gachiakuta",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "upload_date": "2025-11-30T00:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "description": "Les Nettoyeurs jouent la montre alors que la Frontière approche. Face à eux, se dresse Bundus.",
+      "closed_captions_available": false,
+      "episode_air_date": "2025-11-30T00:00:00Z",
+      "premium_date": null,
+      "is_premium_only": true,
+      "slug_title": "time-attack",
+      "is_dubbed": false,
+      "season_display_number": "",
+      "availability_status": "available",
+      "series_title": "Gachiakuta"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

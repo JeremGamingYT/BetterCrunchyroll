@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "id": "GY19CP0J0",
+      "channel_id": "crunchyroll",
+      "title": "KamiKatsu: Working for God in a Godless World",
+      "slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "series_id": "GNVHKNP4J",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYP8CX1VW",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GRMGC37MG",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GRJQC1G73",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GY19CP0J0",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GRK5CN02X",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G6NQCJ9KQ",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GNVHKNP4J|S1",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

@@ -1,0 +1,97 @@
+{
+  "data": [
+    {
+      "id": "GS00361956JAJP",
+      "channel_id": "crunchyroll",
+      "title": "Season 1",
+      "slug_title": "season-1",
+      "series_id": "GT00361955",
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Une joueuse de MMO se réveille sous les traits d'un tyran aux ailes noires, Lufas Maphaahl, personnage qu'elle incarnait. Elle découvre qu'elle a subi une cuisante défaite et que, 200 ans plus tard, son monde a été plongé dans le chaos. Bien décidée à remettre de l'ordre, elle s'interroge de savoir qui veut sa mort et, surtout, pourquoi elle est là.",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "es-ES",
+        "it-IT",
+        "ru-RU",
+        "en-US",
+        "es-419",
+        "ar-SA",
+        "de-DE",
+        "fr-FR",
+        "pt-BR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GS00361956JAJP",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GS00361956HIIN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GS00361956TAIN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GS00361956TEIN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GS00361956DEDE",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GT00361955|S00361956",
+      "number_of_episodes": 10
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

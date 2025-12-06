@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "id": "GS00362142FRFR",
+      "channel_id": "crunchyroll",
+      "title": "Season 1",
+      "slug_title": "season-1",
+      "series_id": "G0XHWM1JP",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Akira Oda et toute sa classe de lycée ont été transportés dans un autre monde ! Alors que les autres élèves obtiennent certains pouvoirs, Akira n'acquiert lui que ceux d'un médiocre “assassin”. Cependant, son statut dépasse bientôt celui de “héros”, la profession la plus forte. Après qu'Akira ait commencé à soupçonner le roi d’être à l'origine de leur invocation, il est accusé à tort d'un crime…",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR",
+        "es-419",
+        "de-DE",
+        "es-ES",
+        "ar-SA",
+        "en-US",
+        "ru-RU",
+        "it-IT",
+        "pt-BR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "de-DE",
+          "guid": "GS00362142DEDE",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GS00362142ENUS",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GS00362142FRFR",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GS00362142JAJP",
+          "original": true,
+          "variant": ""
+        }
+      ],
+      "identifier": "G0XHWM1JP|S00362142",
+      "number_of_episodes": 9
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

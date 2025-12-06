@@ -1,0 +1,113 @@
+{
+  "data": [
+    {
+      "id": "GS00362086FRFR",
+      "channel_id": "crunchyroll",
+      "title": "Season 1",
+      "slug_title": "season-1",
+      "series_id": "GW4HM7WQ5",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Scarlet a trop longtemps supporté les brimades de son fiancé, Kyle, second prince du royaume. Non seulement il est arrogant et grossier, mais il a brutalement rompu leurs fiançailles lors d'un bal en l'accusant d'un méfait qu'elle n'a pas commis. Poussée par la trahison, Scarlet laisse éclater sa rage et inflige au prince et à ses nobles invités une correction qu'ils ne sont pas prêts d'oublier…",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "ru-RU",
+        "zh-CN",
+        "es-ES",
+        "de-DE",
+        "ar-SA",
+        "th-TH",
+        "it-IT",
+        "en-US",
+        "es-419",
+        "vi-VN",
+        "id-ID",
+        "pt-BR",
+        "ms-MY",
+        "fr-FR",
+        "zh-HK"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "de-DE",
+          "guid": "GS00362086DEDE",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GS00362086ENUS",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GS00362086ES419",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GS00362086FRFR",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GS00362086HIIN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GS00362086JAJP",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GS00362086PTBR",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GW4HM7WQ5|S00362086",
+      "number_of_episodes": 11
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

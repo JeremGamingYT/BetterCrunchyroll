@@ -1,0 +1,1843 @@
+{
+  "total": 10,
+  "data": [
+    {
+      "id": "GE00361957JAJP",
+      "eligible_region": "CA",
+      "mature_blocked": false,
+      "title": "Un boss final sauvage apparaît !",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "next_episode_id": "GE00361959JAJP",
+      "episode": "1",
+      "available_offline": true,
+      "episode_air_date": "2025-09-27T00:00:00Z",
+      "slug": "",
+      "sequence_number": 1,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "description": "Un jeune homme se retrouve projeté dans le corps d'une héroïne de jeu vidéo qu'il a créée.",
+      "closed_captions_available": false,
+      "season_title": "Yasei no Last Boss",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "premium_date": null,
+      "next_episode_title": "Svalinn, nous voilà !",
+      "slug_title": "a-wild-last-boss-appears",
+      "is_mature": false,
+      "listing_id": "",
+      "is_subbed": true,
+      "media_type": "episode",
+      "premium_available_date": "2025-09-27T14:00:00Z",
+      "season_id": "GS00361956JAJP",
+      "is_dubbed": true,
+      "duration_ms": 1419962,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/12adcf1bd0174485d094c098b686ffe7.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/12adcf1bd0174485d094c098b686ffe7.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/12adcf1bd0174485d094c098b686ffe7.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/12adcf1bd0174485d094c098b686ffe7.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/12adcf1bd0174485d094c098b686ffe7.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/12adcf1bd0174485d094c098b686ffe7.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/12adcf1bd0174485d094c098b686ffe7.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/12adcf1bd0174485d094c098b686ffe7.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "season_display_number": "1",
+      "availability_status": "available",
+      "episode_number": 1,
+      "seo_description": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "audio_locale": "ja-JP",
+      "series_id": "GT00361955",
+      "identifier": "GT00361955|S00361956|E1",
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361957JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361957JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361957HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361957HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00361957TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361957TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00361957TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361957TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361957DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361957DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956DEDE",
+          "variant": ""
+        }
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "hd_flag": true,
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "series_title": "A Wild Last Boss Appeared!",
+      "availability_starts": "2025-09-27T14:00:00Z",
+      "season_sequence_number": 1,
+      "is_premium_only": true,
+      "is_clip": false,
+      "season_slug_title": "season-1",
+      "available_date": null,
+      "production_episode_id": "",
+      "season_number": 1,
+      "roles": [
+        "main"
+      ],
+      "availability_notes": "",
+      "upload_date": "2025-09-27T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00361957JAJPV/streams",
+      "channel_id": "crunchyroll",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "recent_variant": ""
+    },
+    {
+      "audio_locale": "ja-JP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode": "2",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "slug": "",
+      "slug_title": "we-came-to-svel",
+      "is_premium_only": true,
+      "is_dubbed": true,
+      "recent_audio_locale": "ja-JP",
+      "availability_status": "available",
+      "season_title": "Yasei no Last Boss",
+      "media_type": "episode",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_id": "GT00361955",
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "roles": [
+        "main"
+      ],
+      "premium_date": null,
+      "season_display_number": "1",
+      "eligible_region": "CA",
+      "is_clip": false,
+      "availability_notes": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "seo_title": "",
+      "series_title": "A Wild Last Boss Appeared!",
+      "is_subbed": true,
+      "available_offline": true,
+      "identifier": "GT00361955|S00361956|E2",
+      "closed_captions_available": false,
+      "duration_ms": 1420087,
+      "availability_starts": "2025-10-04T14:00:00Z",
+      "episode_number": 2,
+      "season_id": "GS00361956JAJP",
+      "upload_date": "2025-10-04T00:00:00Z",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "next_episode_title": "Aries passe à l'attaque !",
+      "description": "Après avoir secouru les prisonnières des orcs, Luphas et Dina les reconduisent à leur village.",
+      "production_episode_id": "",
+      "sequence_number": 2,
+      "next_episode_id": "GE00361961JAJP",
+      "id": "GE00361959JAJP",
+      "seo_description": "",
+      "season_number": 1,
+      "is_mature": false,
+      "season_slug_title": "season-1",
+      "available_date": null,
+      "streams_link": "/content/v2/cms/videos/GE00361959JAJPV/streams",
+      "season_sequence_number": 1,
+      "mature_blocked": false,
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2025-10-04T14:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/102e26606419840bc6a2bc2a42d8be8b.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/102e26606419840bc6a2bc2a42d8be8b.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/102e26606419840bc6a2bc2a42d8be8b.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/102e26606419840bc6a2bc2a42d8be8b.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/102e26606419840bc6a2bc2a42d8be8b.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/102e26606419840bc6a2bc2a42d8be8b.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/102e26606419840bc6a2bc2a42d8be8b.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/102e26606419840bc6a2bc2a42d8be8b.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "listing_id": "",
+      "recent_variant": "",
+      "episode_air_date": "2025-10-04T00:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361959JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361959JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361959HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361959HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00361959TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361959TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00361959TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361959TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361959DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361959DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956DEDE",
+          "variant": ""
+        }
+      ],
+      "hd_flag": true,
+      "title": "Svalinn, nous voilà !"
+    },
+    {
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ee624ca13cdd74be2a401fb6eb119654.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ee624ca13cdd74be2a401fb6eb119654.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ee624ca13cdd74be2a401fb6eb119654.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ee624ca13cdd74be2a401fb6eb119654.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ee624ca13cdd74be2a401fb6eb119654.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ee624ca13cdd74be2a401fb6eb119654.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ee624ca13cdd74be2a401fb6eb119654.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ee624ca13cdd74be2a401fb6eb119654.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "channel_id": "crunchyroll",
+      "next_episode_id": "GE00361963JAJP",
+      "production_episode_id": "",
+      "season_title": "Yasei no Last Boss",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361961JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361961JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361961HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361961HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00361961TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361961TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00361961TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361961TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361961DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361961DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956DEDE",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "slug": "",
+      "season_slug_title": "season-1",
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "listing_id": "",
+      "season_sequence_number": 1,
+      "available_date": null,
+      "roles": [
+        "main"
+      ],
+      "closed_captions_available": false,
+      "audio_locale": "ja-JP",
+      "availability_starts": "2025-10-11T14:00:00Z",
+      "is_clip": false,
+      "mature_blocked": false,
+      "episode": "3",
+      "title": "Aries passe à l'attaque !",
+      "seo_title": "",
+      "available_offline": true,
+      "description": "Après son coup de semonce, Aries envoie ses troupes à l'assaut de Svalinn.",
+      "series_title": "A Wild Last Boss Appeared!",
+      "id": "GE00361961JAJP",
+      "is_mature": false,
+      "is_subbed": true,
+      "premium_date": null,
+      "season_id": "GS00361956JAJP",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "duration_ms": 1420004,
+      "eligible_region": "CA",
+      "seo_description": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug_title": "aries-has-attacked",
+      "premium_available_date": "2025-10-11T14:00:00Z",
+      "is_dubbed": true,
+      "season_number": 1,
+      "identifier": "GT00361955|S00361956|E3",
+      "series_id": "GT00361955",
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GE00361961JAJPV/streams",
+      "is_premium_only": true,
+      "next_episode_title": "Celui qui tirait les ficelles !",
+      "hd_flag": true,
+      "season_display_number": "1",
+      "availability_notes": "",
+      "media_type": "episode",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "availability_status": "available",
+      "episode_air_date": "2025-10-11T00:00:00Z",
+      "upload_date": "2025-10-11T00:00:00Z",
+      "sequence_number": 3,
+      "episode_number": 3
+    },
+    {
+      "is_premium_only": true,
+      "seo_title": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_number": 1,
+      "eligible_region": "CA",
+      "season_display_number": "1",
+      "season_title": "Yasei no Last Boss",
+      "channel_id": "crunchyroll",
+      "is_subbed": true,
+      "sequence_number": 4,
+      "recent_variant": "",
+      "audio_locale": "ja-JP",
+      "episode_air_date": "2025-10-18T00:00:00Z",
+      "listing_id": "",
+      "identifier": "GT00361955|S00361956|E4",
+      "availability_status": "available",
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "is_dubbed": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00361963JAJPV/streams",
+      "slug_title": "they-were-pulling-strings-behind-the-scenes",
+      "hd_flag": true,
+      "season_sequence_number": 1,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "available_offline": true,
+      "media_type": "episode",
+      "next_episode_id": "GE00361965JAJP",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "closed_captions_available": false,
+      "series_title": "A Wild Last Boss Appeared!",
+      "title": "Celui qui tirait les ficelles !",
+      "duration_ms": 1420004,
+      "upload_date": "2025-10-18T00:00:00Z",
+      "season_slug_title": "season-1",
+      "is_clip": false,
+      "recent_audio_locale": "ja-JP",
+      "episode": "4",
+      "next_episode_title": "Un bain sauvage apparaît",
+      "seo_description": "",
+      "available_date": null,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "premium_available_date": "2025-10-18T14:00:00Z",
+      "availability_notes": "",
+      "premium_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361963JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361963JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361963DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361963DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361963HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361963HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00361963TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361963TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00361963TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361963TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TEIN",
+          "variant": ""
+        }
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/0c0ffaff9df11fdd3635b2d824ca4d51.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/0c0ffaff9df11fdd3635b2d824ca4d51.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/0c0ffaff9df11fdd3635b2d824ca4d51.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/0c0ffaff9df11fdd3635b2d824ca4d51.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0c0ffaff9df11fdd3635b2d824ca4d51.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/0c0ffaff9df11fdd3635b2d824ca4d51.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/0c0ffaff9df11fdd3635b2d824ca4d51.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/0c0ffaff9df11fdd3635b2d824ca4d51.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug": "",
+      "mature_blocked": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "id": "GE00361963JAJP",
+      "description": "Aries explique les raisons de ses attaques à Luphas, qui cherche à savoir ce qui s'est passé.",
+      "availability_starts": "2025-10-18T14:00:00Z",
+      "is_mature": false,
+      "episode_number": 4,
+      "series_id": "GT00361955",
+      "season_id": "GS00361956JAJP",
+      "roles": [
+        "main"
+      ]
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_title": "A Wild Last Boss Appeared!",
+      "description": "Luphas fabrique un moyen de déplacement pour se diriger vers le tombeau des ailes noires.",
+      "season_display_number": "1",
+      "duration_ms": 1420046,
+      "slug": "",
+      "available_date": null,
+      "next_episode_id": "GE00361967JAJP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/837b7ddd1726f58eef0b09a45038719b.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/837b7ddd1726f58eef0b09a45038719b.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/837b7ddd1726f58eef0b09a45038719b.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/837b7ddd1726f58eef0b09a45038719b.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/837b7ddd1726f58eef0b09a45038719b.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/837b7ddd1726f58eef0b09a45038719b.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/837b7ddd1726f58eef0b09a45038719b.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/837b7ddd1726f58eef0b09a45038719b.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_mature": false,
+      "seo_description": "",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "channel_id": "crunchyroll",
+      "season_slug_title": "season-1",
+      "upload_date": "2025-10-25T00:00:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "premium_available_date": "2025-10-25T14:00:00Z",
+      "season_title": "Yasei no Last Boss",
+      "season_number": 1,
+      "media_type": "episode",
+      "identifier": "GT00361955|S00361956|E5",
+      "title": "Un bain sauvage apparaît",
+      "is_premium_only": true,
+      "eligible_region": "CA",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "available_offline": true,
+      "seo_title": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "id": "GE00361965JAJP",
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "roles": [
+        "main"
+      ],
+      "episode": "5",
+      "is_subbed": true,
+      "availability_starts": "2025-10-25T14:00:00Z",
+      "production_episode_id": "",
+      "availability_status": "available",
+      "premium_date": null,
+      "availability_notes": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361965JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361965JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361965HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361965HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00361965TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361965TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00361965TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361965TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361965DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361965DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956DEDE",
+          "variant": ""
+        }
+      ],
+      "episode_air_date": "2025-10-25T00:00:00Z",
+      "is_dubbed": true,
+      "sequence_number": 5,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "is_clip": false,
+      "hd_flag": true,
+      "audio_locale": "ja-JP",
+      "episode_number": 5,
+      "closed_captions_available": false,
+      "listing_id": "",
+      "mature_blocked": false,
+      "season_id": "GS00361956JAJP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_sequence_number": 1,
+      "next_episode_title": "Libra la balance apparaît",
+      "series_id": "GT00361955",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "slug_title": "a-wild-hot-spring-appeared",
+      "streams_link": "/content/v2/cms/videos/GE00361965JAJPV/streams"
+    },
+    {
+      "series_title": "A Wild Last Boss Appeared!",
+      "is_mature": false,
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "season_display_number": "1",
+      "listing_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "channel_id": "crunchyroll",
+      "title": "Libra la balance apparaît",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00361967JAJPV/streams",
+      "season_number": 1,
+      "series_id": "GT00361955",
+      "season_slug_title": "season-1",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/322a7aab3620e8da46fc7c2d44d2032c.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/322a7aab3620e8da46fc7c2d44d2032c.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/322a7aab3620e8da46fc7c2d44d2032c.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/322a7aab3620e8da46fc7c2d44d2032c.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/322a7aab3620e8da46fc7c2d44d2032c.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/322a7aab3620e8da46fc7c2d44d2032c.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/322a7aab3620e8da46fc7c2d44d2032c.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/322a7aab3620e8da46fc7c2d44d2032c.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "closed_captions_available": false,
+      "season_sequence_number": 1,
+      "seo_title": "",
+      "is_premium_only": true,
+      "next_episode_id": "GE00361969JAJP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_subbed": true,
+      "season_id": "GS00361956JAJP",
+      "identifier": "GT00361955|S00361956|E6",
+      "is_dubbed": true,
+      "description": "Luphas est toujours suivie par les Yeux de faucon, en direction de la salle aux trésors.",
+      "id": "GE00361967JAJP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "upload_date": "2025-11-01T00:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361967JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361967JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361967HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361967HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00361967TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361967TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00361967TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361967TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361967DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361967DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956DEDE",
+          "variant": ""
+        }
+      ],
+      "slug_title": "libra-of-the-scales-appeared",
+      "recent_audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "roles": [
+        "main"
+      ],
+      "seo_description": "",
+      "duration_ms": 1420046,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "premium_date": null,
+      "is_clip": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "next_episode_title": "C'était… un messie",
+      "hd_flag": true,
+      "recent_variant": "",
+      "availability_status": "available",
+      "season_title": "Yasei no Last Boss",
+      "episode_number": 6,
+      "sequence_number": 6,
+      "episode": "6",
+      "available_date": null,
+      "available_offline": true,
+      "premium_available_date": "2025-11-01T14:00:00Z",
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "slug": "",
+      "availability_notes": "",
+      "availability_starts": "2025-11-01T14:00:00Z",
+      "episode_air_date": "2025-11-01T00:00:00Z",
+      "audio_locale": "ja-JP",
+      "media_type": "episode",
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ]
+    },
+    {
+      "is_clip": false,
+      "title": "C'était… un messie",
+      "episode": "7",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_premium_only": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode_number": 7,
+      "description": "En route pour récupérer Parthénos la vierge, Luphas fait un détour pour voir Merak, un autre joueur.",
+      "availability_status": "available",
+      "next_episode_title": "Attends, on avait dit 5 % ?",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "duration_ms": 1419962,
+      "available_offline": true,
+      "recent_audio_locale": "ja-JP",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "hd_flag": true,
+      "roles": [
+        "main"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_starts": "2025-11-08T14:00:00Z",
+      "slug": "",
+      "media_type": "episode",
+      "season_title": "Yasei no Last Boss",
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9927a1f540dc730c2d87b768156d3e5a.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9927a1f540dc730c2d87b768156d3e5a.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9927a1f540dc730c2d87b768156d3e5a.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9927a1f540dc730c2d87b768156d3e5a.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9927a1f540dc730c2d87b768156d3e5a.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9927a1f540dc730c2d87b768156d3e5a.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9927a1f540dc730c2d87b768156d3e5a.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9927a1f540dc730c2d87b768156d3e5a.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_description": "",
+      "slug_title": "i-was-a-savior",
+      "series_id": "GT00361955",
+      "sequence_number": 7,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361969JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361969JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00361969TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361969TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361969HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361969HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00361969TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361969TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361969DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361969DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361956DEDE",
+          "variant": ""
+        }
+      ],
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "season_id": "GS00361956JAJP",
+      "identifier": "GT00361955|S00361956|E7",
+      "premium_available_date": "2025-11-08T14:00:00Z",
+      "season_sequence_number": 1,
+      "episode_air_date": "2025-11-08T00:00:00Z",
+      "season_number": 1,
+      "channel_id": "crunchyroll",
+      "is_subbed": true,
+      "premium_date": null,
+      "series_title": "A Wild Last Boss Appeared!",
+      "mature_blocked": false,
+      "is_mature": false,
+      "closed_captions_available": false,
+      "listing_id": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "season_slug_title": "season-1",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_display_number": "1",
+      "seo_title": "",
+      "production_episode_id": "",
+      "audio_locale": "ja-JP",
+      "next_episode_id": "GE00361971JAJP",
+      "availability_notes": "",
+      "is_dubbed": true,
+      "available_date": null,
+      "id": "GE00361969JAJP",
+      "streams_link": "/content/v2/cms/videos/GE00361969JAJPV/streams",
+      "upload_date": "2025-11-08T00:00:00Z"
+    },
+    {
+      "is_subbed": true,
+      "id": "GE00361971JAJP",
+      "season_display_number": "1",
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2025-11-15T00:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "eligible_region": "CA",
+      "availability_notes": "",
+      "season_id": "GS00361956JAJP",
+      "upload_date": "2025-11-15T00:00:00Z",
+      "premium_available_date": "2025-11-15T14:00:00Z",
+      "description": "Arrivée à Gjallarhorn, Luphas se retrouve au beau milieu d'un début de guerre civile.",
+      "next_episode_id": "GE00361973JAJP",
+      "title": "Attends, on avait dit 5 % ?",
+      "slug_title": "hey-5-seriously",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "seo_title": "",
+      "is_clip": false,
+      "duration_ms": 1419962,
+      "media_type": "episode",
+      "seo_description": "",
+      "availability_starts": "2025-11-15T14:00:00Z",
+      "episode_number": 8,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_premium_only": true,
+      "next_episode_title": "Le peuple se révolte !",
+      "season_sequence_number": 1,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_dubbed": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361971JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361971JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        }
+      ],
+      "production_episode_id": "",
+      "is_mature": false,
+      "recent_variant": "",
+      "premium_date": null,
+      "listing_id": "",
+      "streams_link": "/content/v2/cms/videos/GE00361971JAJPV/streams",
+      "sequence_number": 8,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1a881ea1a396f5cef98bc3f6bd8e7da7.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1a881ea1a396f5cef98bc3f6bd8e7da7.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1a881ea1a396f5cef98bc3f6bd8e7da7.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1a881ea1a396f5cef98bc3f6bd8e7da7.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1a881ea1a396f5cef98bc3f6bd8e7da7.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1a881ea1a396f5cef98bc3f6bd8e7da7.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1a881ea1a396f5cef98bc3f6bd8e7da7.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1a881ea1a396f5cef98bc3f6bd8e7da7.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "identifier": "GT00361955|S00361956|E8",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "season-1",
+      "availability_status": "available",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "roles": [
+        "main"
+      ],
+      "episode": "8",
+      "closed_captions_available": false,
+      "series_id": "GT00361955",
+      "season_number": 1,
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "available_date": null,
+      "mature_blocked": false,
+      "available_offline": true,
+      "slug": "",
+      "season_title": "Yasei no Last Boss",
+      "hd_flag": true,
+      "audio_locale": "ja-JP",
+      "series_title": "A Wild Last Boss Appeared!"
+    },
+    {
+      "premium_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e2c3359ee447e2543ee7a3e54eeaae95.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e2c3359ee447e2543ee7a3e54eeaae95.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e2c3359ee447e2543ee7a3e54eeaae95.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e2c3359ee447e2543ee7a3e54eeaae95.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e2c3359ee447e2543ee7a3e54eeaae95.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e2c3359ee447e2543ee7a3e54eeaae95.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e2c3359ee447e2543ee7a3e54eeaae95.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e2c3359ee447e2543ee7a3e54eeaae95.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "availability_status": "available",
+      "recent_audio_locale": "ja-JP",
+      "is_mature": false,
+      "season_id": "GS00361956JAJP",
+      "available_date": null,
+      "episode_number": 9,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_sequence_number": 1,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "listing_id": "",
+      "available_offline": true,
+      "season_title": "Yasei no Last Boss",
+      "id": "GE00361973JAJP",
+      "season_display_number": "1",
+      "is_subbed": true,
+      "sequence_number": 9,
+      "series_id": "GT00361955",
+      "next_episode_title": "Dis-moi qui tu es !",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361973JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361973JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        }
+      ],
+      "identifier": "GT00361955|S00361956|E9",
+      "duration_ms": 1419962,
+      "streams_link": "/content/v2/cms/videos/GE00361973JAJPV/streams",
+      "premium_available_date": "2025-11-22T14:00:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_clip": false,
+      "description": "Aigokeros a lancé son sort sur toute la ville, mais Luphas va tenter de lui faire entendre raison.",
+      "season_slug_title": "season-1",
+      "is_premium_only": true,
+      "next_episode_id": "GE00361975JAJP",
+      "season_number": 1,
+      "episode_air_date": "2025-11-22T00:00:00Z",
+      "hd_flag": true,
+      "channel_id": "crunchyroll",
+      "is_dubbed": false,
+      "media_type": "episode",
+      "seo_description": "",
+      "slug": "",
+      "roles": [
+        "main"
+      ],
+      "seo_title": "",
+      "production_episode_id": "",
+      "availability_notes": "",
+      "series_title": "A Wild Last Boss Appeared!",
+      "availability_starts": "2025-11-22T14:00:00Z",
+      "title": "Le peuple se révolte !",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "audio_locale": "ja-JP",
+      "slug_title": "the-masses-have-rioted",
+      "closed_captions_available": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "mature_blocked": false,
+      "episode": "9",
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "upload_date": "2025-11-22T00:00:00Z"
+    },
+    {
+      "season_sequence_number": 1,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "episode": "10",
+      "available_date": null,
+      "episode_number": 10,
+      "season_number": 1,
+      "recent_audio_locale": "ja-JP",
+      "closed_captions_available": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "premium_date": null,
+      "season_slug_title": "season-1",
+      "seo_description": "",
+      "audio_locale": "ja-JP",
+      "sequence_number": 10,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "series_title": "A Wild Last Boss Appeared!",
+      "next_episode_title": "Une Luphas Mafahl et un Roi-démon sauvages apparaissent en même temps !",
+      "availability_status": "available",
+      "is_clip": false,
+      "slug": "",
+      "season_title": "Yasei no Last Boss",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "media_type": "episode",
+      "is_subbed": true,
+      "episode_air_date": "2025-11-29T00:00:00Z",
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ad86f38a01a3af5483f1cbaf722f0872.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ad86f38a01a3af5483f1cbaf722f0872.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ad86f38a01a3af5483f1cbaf722f0872.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ad86f38a01a3af5483f1cbaf722f0872.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ad86f38a01a3af5483f1cbaf722f0872.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ad86f38a01a3af5483f1cbaf722f0872.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ad86f38a01a3af5483f1cbaf722f0872.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ad86f38a01a3af5483f1cbaf722f0872.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_display_number": "1",
+      "upload_date": "2025-11-29T00:00:00Z",
+      "recent_variant": "",
+      "description": "Dina révèle enfin sa véritable identité et raconte son histoire à Luphas.",
+      "series_id": "GT00361955",
+      "available_offline": true,
+      "id": "GE00361975JAJP",
+      "duration_ms": 1419962,
+      "hd_flag": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361975JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361975JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361956JAJP",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "main"
+      ],
+      "is_mature": false,
+      "premium_available_date": "2025-11-29T14:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00361975JAJPV/streams",
+      "next_episode_id": "GE00361977JAJP",
+      "season_id": "GS00361956JAJP",
+      "identifier": "GT00361955|S00361956|E10",
+      "title": "Dis-moi qui tu es !",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "seo_title": "",
+      "channel_id": "crunchyroll",
+      "is_dubbed": false,
+      "series_slug_title": "a-wild-last-boss-appeared",
+      "slug_title": "who-are-you",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_starts": "2025-11-29T14:00:00Z",
+      "eligible_region": "CA",
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "availability_notes": ""
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

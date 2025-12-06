@@ -1,0 +1,202 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GG5H5XMWV",
+      "channel_id": "crunchyroll",
+      "title": "To Your Eternity",
+      "slug": "",
+      "slug_title": "to-your-eternity",
+      "description": "Un garçon solitaire errant dans les régions arctiques de l'Amérique du Nord rencontre un loup. Tous deux deviennent rapidement amis, dépendant l'un de l'autre pour survivre dans cet environnement hostile. Mais ce garçon a une histoire et sa rencontre avec ce loup n'est pas fortuite...",
+      "extended_description": "",
+      "keywords": [
+        "drama",
+        "fantasy",
+        "supernatural",
+        "deutsche synchro"
+      ],
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/d36ba3ddfdc50519d6ea24142de14170.jpg"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/d36ba3ddfdc50519d6ea24142de14170.jpg"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/d36ba3ddfdc50519d6ea24142de14170.jpg"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/d36ba3ddfdc50519d6ea24142de14170.jpg"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/d36ba3ddfdc50519d6ea24142de14170.jpg"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/d36ba3ddfdc50519d6ea24142de14170.jpg"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/d36ba3ddfdc50519d6ea24142de14170.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/d36ba3ddfdc50519d6ea24142de14170.jpg"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/d36ba3ddfdc50519d6ea24142de14170.jpg"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c92f71bb022e3903fdea48117e9dcd85.jpg"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c92f71bb022e3903fdea48117e9dcd85.jpg"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c92f71bb022e3903fdea48117e9dcd85.jpg"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c92f71bb022e3903fdea48117e9dcd85.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c92f71bb022e3903fdea48117e9dcd85.jpg"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c92f71bb022e3903fdea48117e9dcd85.jpg"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c92f71bb022e3903fdea48117e9dcd85.jpg"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c92f71bb022e3903fdea48117e9dcd85.jpg"
+            }
+          ]
+        ]
+      },
+      "episode_count": 49,
+      "season_count": 3,
+      "media_count": 49,
+      "content_provider": "NHKEnterprise",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": true,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "en-US",
+        "pt-BR",
+        "es-ES",
+        "es-419",
+        "de-DE",
+        "fr-FR",
+        "ar-SA",
+        "ru-RU",
+        "it-IT"
+      ],
+      "audio_locales": [
+        "en-US",
+        "de-DE",
+        "fr-FR",
+        "es-419",
+        "pt-BR",
+        "it-IT",
+        "ja-JP",
+        "ar-SA",
+        "es-ES"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2021,
+      "awards": [
+        {
+          "text": "Nommé aux Anime Awards 2024",
+          "icon_url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/width=48,height=48/awards/anime_award_icon.png",
+          "is_current_award": false,
+          "is_winner": false
+        },
+        {
+          "text": "Vainqueur des Anime Awards 2022",
+          "icon_url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/width=48,height=48/awards/anime_award_icon.png",
+          "is_current_award": false,
+          "is_winner": true
+        }
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

@@ -1,0 +1,1794 @@
+{
+  "total": 12,
+  "data": [
+    {
+      "listing_id": "",
+      "upload_date": "2023-10-04T22:00:00+09:00",
+      "audio_locale": "ja-JP",
+      "id": "G50UZXW05",
+      "availability_starts": "2023-10-04T13:15:00Z",
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "hd_flag": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "eligible_region": "CA",
+      "recent_audio_locale": "ja-JP",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "slug": "",
+      "is_subbed": true,
+      "duration_ms": 1420046,
+      "available_offline": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_date": null,
+      "description": "Charlotte Evans, la fiancée du second prince du royaume de Neils, se retrouve emprisonnée pour haute trahison du jour au lendemain. Elle parvient à s’évader et à fuir dans le pays voisin. C’est là qu’elle rencontre Allen, un mage misanthrope qui décide de l’aider.",
+      "title": "Rencontre interdite",
+      "next_episode_title": "Méthodes de relaxation interdites",
+      "season_number": 1,
+      "identifier": "GP5HJ84M5|S1|E1",
+      "slug_title": "naughty-encounter",
+      "seo_description": "",
+      "media_type": "episode",
+      "mature_blocked": false,
+      "recent_variant": "",
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "season_display_number": "1",
+      "season_id": "GY49C79QZ",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "available_date": null,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4713e6d114d28c54c456e0c09d411cea.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4713e6d114d28c54c456e0c09d411cea.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4713e6d114d28c54c456e0c09d411cea.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4713e6d114d28c54c456e0c09d411cea.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4713e6d114d28c54c456e0c09d411cea.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4713e6d114d28c54c456e0c09d411cea.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4713e6d114d28c54c456e0c09d411cea.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4713e6d114d28c54c456e0c09d411cea.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "is_premium_only": true,
+      "availability_notes": "",
+      "episode": "1",
+      "next_episode_id": "GWDU8EG2Q",
+      "series_id": "GP5HJ84M5",
+      "availability_status": "available",
+      "episode_air_date": "2023-10-04T22:00:00+09:00",
+      "is_dubbed": false,
+      "production_episode_id": "",
+      "closed_captions_available": false,
+      "sequence_number": 1,
+      "seo_title": "",
+      "free_available_date": "2023-10-11T13:15:00Z",
+      "is_mature": false,
+      "premium_available_date": "2023-10-04T13:15:00Z",
+      "is_clip": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G50UZXW05",
+          "is_premium_only": true,
+          "media_guid": "G07FND428",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "streams_link": "/content/v2/cms/videos/G07FND428/streams",
+      "roles": [
+        "main"
+      ],
+      "episode_number": 1
+    },
+    {
+      "next_episode_id": "GG1U240J4",
+      "mature_blocked": false,
+      "next_episode_title": "Confrontation interdite",
+      "seo_title": "",
+      "channel_id": "crunchyroll",
+      "audio_locale": "ja-JP",
+      "description": "Allen est perplexe de voir que Charlotte semble n'éprouver aucune rancœur envers ceux qui l'ont tant maltraitée. Il décide de prendre les choses en main pour la pousser à extérioriser ses sentiments pour les évacuer au lieu de tout accumuler.",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GWDU8EG2Q",
+          "is_premium_only": true,
+          "media_guid": "GEMFZXK7N",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "availability_starts": "2023-10-11T13:15:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/05f70d774107b8ad2dfe23109e541b62.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/05f70d774107b8ad2dfe23109e541b62.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/05f70d774107b8ad2dfe23109e541b62.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/05f70d774107b8ad2dfe23109e541b62.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/05f70d774107b8ad2dfe23109e541b62.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/05f70d774107b8ad2dfe23109e541b62.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/05f70d774107b8ad2dfe23109e541b62.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/05f70d774107b8ad2dfe23109e541b62.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "is_dubbed": false,
+      "roles": [
+        "main"
+      ],
+      "production_episode_id": "",
+      "streams_link": "/content/v2/cms/videos/GEMFZXK7N/streams",
+      "id": "GWDU8EG2Q",
+      "slug_title": "naughty-way-to-release-stress",
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "availability_status": "available",
+      "recent_variant": "",
+      "free_available_date": "2023-10-18T13:15:00Z",
+      "season_sequence_number": 1,
+      "duration_ms": 1420046,
+      "series_id": "GP5HJ84M5",
+      "is_subbed": true,
+      "seo_description": "",
+      "hd_flag": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "episode": "2",
+      "recent_audio_locale": "ja-JP",
+      "eligible_region": "CA",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "season_number": 1,
+      "episode_number": 2,
+      "season_id": "GY49C79QZ",
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "upload_date": "2023-10-11T22:00:00+09:00",
+      "sequence_number": 2,
+      "premium_available_date": "2023-10-11T13:15:00Z",
+      "is_premium_only": true,
+      "is_clip": false,
+      "closed_captions_available": false,
+      "listing_id": "",
+      "slug": "",
+      "availability_notes": "",
+      "episode_air_date": "2023-10-11T22:00:00+09:00",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_mature": false,
+      "identifier": "GP5HJ84M5|S1|E2",
+      "season_display_number": "1",
+      "title": "Méthodes de relaxation interdites",
+      "available_date": null,
+      "premium_date": null,
+      "available_offline": true,
+      "availability_ends": "9998-11-30T08:00:00Z"
+    },
+    {
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "identifier": "GP5HJ84M5|S1|E3",
+      "season_display_number": "1",
+      "free_available_date": "2023-10-25T13:15:00Z",
+      "id": "GG1U240J4",
+      "slug_title": "naughty-showdown",
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "seo_description": "",
+      "available_offline": true,
+      "availability_status": "available",
+      "audio_locale": "ja-JP",
+      "title": "Confrontation interdite",
+      "hd_flag": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_available_date": "2023-10-18T13:15:00Z",
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1U240J4",
+          "is_premium_only": true,
+          "media_guid": "G71F4M07M",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "season_sequence_number": 1,
+      "available_date": null,
+      "slug": "",
+      "season_id": "GY49C79QZ",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_date": null,
+      "episode_number": 3,
+      "episode": "3",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/11485ad0c9fd81d60d4db11fd2404529.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/11485ad0c9fd81d60d4db11fd2404529.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/11485ad0c9fd81d60d4db11fd2404529.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/11485ad0c9fd81d60d4db11fd2404529.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/11485ad0c9fd81d60d4db11fd2404529.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/11485ad0c9fd81d60d4db11fd2404529.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/11485ad0c9fd81d60d4db11fd2404529.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/11485ad0c9fd81d60d4db11fd2404529.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_starts": "2023-10-18T13:15:00Z",
+      "media_type": "episode",
+      "listing_id": "",
+      "is_mature": false,
+      "next_episode_title": "Sortie interdite",
+      "streams_link": "/content/v2/cms/videos/G71F4M07M/streams",
+      "mature_blocked": false,
+      "upload_date": "2023-10-18T22:00:00+09:00",
+      "series_id": "GP5HJ84M5",
+      "roles": [
+        "main"
+      ],
+      "availability_notes": "",
+      "is_dubbed": false,
+      "duration_ms": 1420004,
+      "episode_air_date": "2023-10-18T22:00:00+09:00",
+      "description": "Une inconnue débarque chez Allen, mais elle s'avère être la petite sœur de ce dernier. Très vite, elle se prend d'affection pour Charlotte et décide de lancer un défi à son frère : lequel d'entre eux sera le meilleur professeur pour enseigner l'art de la transgression à Charlotte ?",
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "sequence_number": 3,
+      "closed_captions_available": false,
+      "production_episode_id": "",
+      "is_clip": false,
+      "is_subbed": true,
+      "is_premium_only": true,
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "channel_id": "crunchyroll",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "season_number": 1,
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "next_episode_id": "G0DUND42K"
+    },
+    {
+      "slug": "",
+      "is_mature": false,
+      "is_subbed": true,
+      "identifier": "GP5HJ84M5|S1|E4",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_premium_only": true,
+      "next_episode_title": "Cure thermale interdite",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "episode_number": 4,
+      "streams_link": "/content/v2/cms/videos/G9XFE570M/streams",
+      "hd_flag": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "premium_available_date": "2023-10-25T13:15:00Z",
+      "media_type": "episode",
+      "sequence_number": 4,
+      "is_dubbed": false,
+      "episode": "4",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "series_id": "GP5HJ84M5",
+      "seo_title": "",
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "available_date": null,
+      "id": "G0DUND42K",
+      "recent_audio_locale": "ja-JP",
+      "available_offline": true,
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUND42K",
+          "is_premium_only": true,
+          "media_guid": "G9XFE570M",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "title": "Sortie interdite",
+      "recent_variant": "",
+      "production_episode_id": "",
+      "seo_description": "",
+      "description": "Le chef des voyous qui ont bousculé Charlotte s’avère être une vieille connaissance d’Allen, ce qui va grandement faciliter les choses. Quelque temps après, Charlotte prend une grande décision : sortir seule en ville.",
+      "season_sequence_number": 1,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1420004,
+      "availability_starts": "2023-10-25T13:15:00Z",
+      "audio_locale": "ja-JP",
+      "premium_date": null,
+      "upload_date": "2023-10-25T22:00:00+09:00",
+      "channel_id": "crunchyroll",
+      "eligible_region": "CA",
+      "episode_air_date": "2023-10-25T22:00:00+09:00",
+      "roles": [
+        "main"
+      ],
+      "mature_blocked": false,
+      "next_episode_id": "GEVUZXK77",
+      "slug_title": "naughty-outing",
+      "availability_status": "available",
+      "season_display_number": "1",
+      "is_clip": false,
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d245a16cd775f61d73562159e0c21af3.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d245a16cd775f61d73562159e0c21af3.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d245a16cd775f61d73562159e0c21af3.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d245a16cd775f61d73562159e0c21af3.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d245a16cd775f61d73562159e0c21af3.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d245a16cd775f61d73562159e0c21af3.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d245a16cd775f61d73562159e0c21af3.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d245a16cd775f61d73562159e0c21af3.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_id": "GY49C79QZ",
+      "listing_id": "",
+      "season_number": 1,
+      "closed_captions_available": false,
+      "availability_notes": ""
+    },
+    {
+      "season_display_number": "1",
+      "seo_description": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "series_id": "GP5HJ84M5",
+      "listing_id": "",
+      "availability_starts": "2023-11-01T13:15:00Z",
+      "next_episode_id": "G7PU4MXPP",
+      "streams_link": "/content/v2/cms/videos/GXMFQJ9EE/streams",
+      "recent_audio_locale": "ja-JP",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "slug": "",
+      "available_date": null,
+      "availability_status": "available",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "slug_title": "naughty-hot-spring-trip",
+      "title": "Cure thermale interdite",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "mature_blocked": false,
+      "episode": "5",
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "is_dubbed": false,
+      "production_episode_id": "",
+      "identifier": "GP5HJ84M5|S1|E5",
+      "is_mature": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "upload_date": "2023-11-01T22:00:00+09:00",
+      "premium_available_date": "2023-11-01T13:15:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUZXK77",
+          "is_premium_only": true,
+          "media_guid": "GXMFQJ9EE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "season_number": 1,
+      "is_premium_only": true,
+      "is_clip": false,
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "availability_notes": "",
+      "episode_air_date": "2023-11-01T22:00:00+09:00",
+      "episode_number": 5,
+      "recent_variant": "",
+      "season_sequence_number": 1,
+      "next_episode_title": "Zoo interdit",
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/466bf8b349180b4f963834ba438f9d23.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/466bf8b349180b4f963834ba438f9d23.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/466bf8b349180b4f963834ba438f9d23.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/466bf8b349180b4f963834ba438f9d23.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/466bf8b349180b4f963834ba438f9d23.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/466bf8b349180b4f963834ba438f9d23.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/466bf8b349180b4f963834ba438f9d23.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/466bf8b349180b4f963834ba438f9d23.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "available_offline": true,
+      "id": "GEVUZXK77",
+      "premium_date": null,
+      "audio_locale": "ja-JP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "description": "Eruca et Miacha ont un plan maléfique : envoyer Allen et Charlotte en voyage romantique dans une station thermale de luxe. Les principaux intéressés, bien qu'un peu gênés, décident malgré tout de profiter de leur séjour.",
+      "seo_title": "",
+      "eligible_region": "CA",
+      "roles": [
+        "main"
+      ],
+      "closed_captions_available": false,
+      "sequence_number": 5,
+      "duration_ms": 1420087,
+      "season_id": "GY49C79QZ",
+      "is_subbed": true,
+      "hd_flag": true,
+      "season_tags": [
+        "Automne-2023"
+      ]
+    },
+    {
+      "listing_id": "",
+      "title": "Zoo interdit",
+      "closed_captions_available": false,
+      "season_id": "GY49C79QZ",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_subbed": true,
+      "duration_ms": 1420004,
+      "seo_description": "",
+      "sequence_number": 6,
+      "season_sequence_number": 1,
+      "is_clip": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e4144d87aaef904d2a71ad9985644ef5.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e4144d87aaef904d2a71ad9985644ef5.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e4144d87aaef904d2a71ad9985644ef5.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e4144d87aaef904d2a71ad9985644ef5.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e4144d87aaef904d2a71ad9985644ef5.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e4144d87aaef904d2a71ad9985644ef5.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e4144d87aaef904d2a71ad9985644ef5.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e4144d87aaef904d2a71ad9985644ef5.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": true,
+      "series_id": "GP5HJ84M5",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "hd_flag": true,
+      "slug_title": "naughty-zoo",
+      "upload_date": "2023-11-08T22:00:00+09:00",
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "recent_audio_locale": "ja-JP",
+      "is_dubbed": false,
+      "media_type": "episode",
+      "slug": "",
+      "next_episode_title": "Résidents interdits",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU4MXPP",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ1EKK",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "description": "Le séjour d'Allen et Charlotte se poursuit avec cette fois une visite au zoo magique qui accueille des monstres en tous genres. C'est l'occasion pour Charlotte de se découvrir un nouveau talent et pour Allen d'être confronté à un ennemi inattendu.",
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "identifier": "GP5HJ84M5|S1|E6",
+      "episode": "6",
+      "roles": [
+        "main"
+      ],
+      "episode_air_date": "2023-11-08T22:00:00+09:00",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "available_offline": true,
+      "availability_starts": "2023-11-08T14:15:00Z",
+      "episode_number": 6,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "streams_link": "/content/v2/cms/videos/G4GFQ1EKK/streams",
+      "available_date": null,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "next_episode_id": "G9DUE51ZN",
+      "premium_available_date": "2023-11-08T14:15:00Z",
+      "eligible_region": "CA",
+      "availability_notes": "",
+      "id": "G7PU4MXPP",
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "availability_status": "available",
+      "channel_id": "crunchyroll",
+      "is_mature": false,
+      "audio_locale": "ja-JP",
+      "premium_date": null,
+      "mature_blocked": false,
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "season_number": 1,
+      "season_display_number": "1",
+      "recent_variant": ""
+    },
+    {
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "production_episode_id": "",
+      "hd_flag": true,
+      "premium_available_date": "2023-11-15T14:15:00Z",
+      "identifier": "GP5HJ84M5|S1|E7",
+      "upload_date": "2023-11-15T22:00:00+09:00",
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3bc01fbb5e341df2f714552edd5bc664.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/3bc01fbb5e341df2f714552edd5bc664.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/3bc01fbb5e341df2f714552edd5bc664.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/3bc01fbb5e341df2f714552edd5bc664.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3bc01fbb5e341df2f714552edd5bc664.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/3bc01fbb5e341df2f714552edd5bc664.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/3bc01fbb5e341df2f714552edd5bc664.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/3bc01fbb5e341df2f714552edd5bc664.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "is_dubbed": false,
+      "mature_blocked": false,
+      "is_clip": false,
+      "premium_date": null,
+      "recent_variant": "",
+      "series_id": "GP5HJ84M5",
+      "is_subbed": true,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2023-11-15T22:00:00+09:00",
+      "roles": [
+        "main"
+      ],
+      "audio_locale": "ja-JP",
+      "listing_id": "",
+      "duration_ms": 1420004,
+      "is_premium_only": true,
+      "seo_title": "",
+      "closed_captions_available": false,
+      "title": "Résidents interdits",
+      "availability_status": "available",
+      "is_mature": false,
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "slug": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DUE51ZN",
+          "is_premium_only": true,
+          "media_guid": "G1QF49WQJ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "next_episode_id": "GX9UQJP14",
+      "available_offline": true,
+      "next_episode_title": "Sketchs interdits",
+      "streams_link": "/content/v2/cms/videos/G1QF49WQJ/streams",
+      "season_id": "GY49C79QZ",
+      "id": "G9DUE51ZN",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "slug_title": "naughty-resident",
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "description": "Allen et Charlotte sont de retour de leur séjour, mais ils ne sont pas seuls. Gosetsu, le capybara, et Lü, la fenrir, ont décidé de s'installer au manoir avec eux. En plus de ça, Allen et Charlotte vont découvrir le secret du sous-sol…",
+      "season_number": 1,
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "available_date": null,
+      "episode": "7",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "sequence_number": 7,
+      "availability_starts": "2023-11-15T14:15:00Z",
+      "episode_number": 7,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "recent_audio_locale": "ja-JP",
+      "availability_notes": "",
+      "seo_description": "",
+      "eligible_region": "CA"
+    },
+    {
+      "is_clip": false,
+      "mature_blocked": false,
+      "is_dubbed": false,
+      "sequence_number": 8,
+      "duration_ms": 1420004,
+      "availability_status": "available",
+      "availability_starts": "2023-11-22T14:15:00Z",
+      "next_episode_id": "G4VUQ1EKQ",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "recent_audio_locale": "ja-JP",
+      "episode_air_date": "2023-11-22T22:00:00+09:00",
+      "season_number": 1,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "streams_link": "/content/v2/cms/videos/GJKF295N1/streams",
+      "seo_title": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "closed_captions_available": false,
+      "episode_number": 8,
+      "episode": "8",
+      "upload_date": "2023-11-22T22:00:00+09:00",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_mature": false,
+      "slug": "",
+      "available_date": null,
+      "premium_available_date": "2023-11-22T14:15:00Z",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "identifier": "GP5HJ84M5|S1|E8",
+      "listing_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GX9UQJP14",
+          "is_premium_only": true,
+          "media_guid": "GJKF295N1",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "media_type": "episode",
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "slug_title": "naughty-skits",
+      "eligible_region": "CA",
+      "title": "Sketchs interdits",
+      "available_offline": true,
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "next_episode_title": "Visite familiale interdite",
+      "hd_flag": true,
+      "channel_id": "crunchyroll",
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/37f930c4ad59fd7a880c6b8ae4cc5455.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/37f930c4ad59fd7a880c6b8ae4cc5455.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/37f930c4ad59fd7a880c6b8ae4cc5455.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/37f930c4ad59fd7a880c6b8ae4cc5455.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/37f930c4ad59fd7a880c6b8ae4cc5455.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/37f930c4ad59fd7a880c6b8ae4cc5455.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/37f930c4ad59fd7a880c6b8ae4cc5455.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/37f930c4ad59fd7a880c6b8ae4cc5455.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_display_number": "1",
+      "id": "GX9UQJP14",
+      "availability_notes": "",
+      "roles": [
+        "main"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "seo_description": "",
+      "is_premium_only": true,
+      "recent_variant": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_date": null,
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "description": "Dorothea, la vraie propriétaire du manoir, autorise Allen et Charlotte à rester s'ils acceptent de l'aider à retrouver l'inspiration. Le seul problème, c'est qu'elle essaie d'écrire un roman d'amour et elle leur demande de jouer les amoureux transis.",
+      "season_id": "GY49C79QZ",
+      "season_sequence_number": 1,
+      "series_id": "GP5HJ84M5"
+    },
+    {
+      "media_type": "episode",
+      "channel_id": "crunchyroll",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "premium_available_date": "2023-11-29T14:15:00Z",
+      "slug_title": "naughty-visit-to-the-parents",
+      "description": "Allen et Charlotte se rendent en urgence sur l'île où vit la famille Crawford pour voler à la rescousse de Natalia, la petite sœur de Charlotte. Ils se retrouvent chez les parents d'Allen pour tenter de retrouver sa trace.",
+      "availability_starts": "2023-11-29T14:15:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "season_sequence_number": 1,
+      "episode": "9",
+      "is_subbed": true,
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "recent_audio_locale": "ja-JP",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "available_date": null,
+      "premium_date": null,
+      "is_dubbed": false,
+      "series_id": "GP5HJ84M5",
+      "availability_notes": "",
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "eligible_region": "CA",
+      "closed_captions_available": false,
+      "mature_blocked": false,
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "next_episode_id": "G14U49WQV",
+      "episode_air_date": "2023-11-29T22:00:00+09:00",
+      "seo_description": "",
+      "roles": [
+        "main"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bc4c439d7a92a4dd7a44d513bd8c2e77.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/bc4c439d7a92a4dd7a44d513bd8c2e77.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/bc4c439d7a92a4dd7a44d513bd8c2e77.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/bc4c439d7a92a4dd7a44d513bd8c2e77.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/bc4c439d7a92a4dd7a44d513bd8c2e77.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/bc4c439d7a92a4dd7a44d513bd8c2e77.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/bc4c439d7a92a4dd7a44d513bd8c2e77.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/bc4c439d7a92a4dd7a44d513bd8c2e77.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "streams_link": "/content/v2/cms/videos/GNJFD2PXD/streams",
+      "upload_date": "2023-11-29T22:00:00+09:00",
+      "next_episode_title": "Retrouvailles interdites",
+      "slug": "",
+      "availability_status": "available",
+      "id": "G4VUQ1EKQ",
+      "production_episode_id": "",
+      "sequence_number": 9,
+      "episode_number": 9,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "season_id": "GY49C79QZ",
+      "title": "Visite familiale interdite",
+      "season_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUQ1EKQ",
+          "is_premium_only": true,
+          "media_guid": "GNJFD2PXD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "hd_flag": true,
+      "listing_id": "",
+      "identifier": "GP5HJ84M5|S1|E9",
+      "is_mature": false,
+      "is_premium_only": true,
+      "season_display_number": "1",
+      "is_clip": false,
+      "audio_locale": "ja-JP",
+      "duration_ms": 1420087,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "recent_variant": ""
+    },
+    {
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "episode_air_date": "2023-12-06T22:00:00+09:00",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14U49WQV",
+          "is_premium_only": true,
+          "media_guid": "GKKF3M5VG",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "sequence_number": 10,
+      "description": "Charlotte et Allen se retrouvent à nouveau obligés de partager le même lit, ce qui est l'occasion pour eux de réfléchir à ce qu'ils ressentent vraiment l'un pour l'autre. Le lendemain, ils s'infiltrent à l'école de magie pour retrouver Natalia.",
+      "audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "mature_blocked": false,
+      "availability_starts": "2023-12-06T14:15:00Z",
+      "is_mature": false,
+      "is_clip": false,
+      "season_id": "GY49C79QZ",
+      "id": "G14U49WQV",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_sequence_number": 1,
+      "seo_title": "",
+      "availability_notes": "",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "is_dubbed": false,
+      "series_id": "GP5HJ84M5",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "listing_id": "",
+      "media_type": "episode",
+      "recent_variant": "",
+      "next_episode_id": "GJWU295NK",
+      "episode_number": 10,
+      "slug": "",
+      "episode": "10",
+      "availability_status": "available",
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "channel_id": "crunchyroll",
+      "is_premium_only": true,
+      "season_display_number": "1",
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "premium_available_date": "2023-12-06T14:15:00Z",
+      "available_date": null,
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "next_episode_title": "Donjon interdit",
+      "hd_flag": true,
+      "seo_description": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_number": 1,
+      "closed_captions_available": false,
+      "streams_link": "/content/v2/cms/videos/GKKF3M5VG/streams",
+      "available_offline": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1420087,
+      "premium_date": null,
+      "roles": [
+        "main"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/21772ed4fdc508afbcbc0cb1a7a4a41b.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/21772ed4fdc508afbcbc0cb1a7a4a41b.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/21772ed4fdc508afbcbc0cb1a7a4a41b.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/21772ed4fdc508afbcbc0cb1a7a4a41b.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/21772ed4fdc508afbcbc0cb1a7a4a41b.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/21772ed4fdc508afbcbc0cb1a7a4a41b.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/21772ed4fdc508afbcbc0cb1a7a4a41b.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/21772ed4fdc508afbcbc0cb1a7a4a41b.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_subbed": true,
+      "slug_title": "naughty-reunion",
+      "upload_date": "2023-12-06T22:00:00+09:00",
+      "eligible_region": "CA",
+      "title": "Retrouvailles interdites",
+      "identifier": "GP5HJ84M5|S1|E10",
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness"
+    },
+    {
+      "premium_available_date": "2023-12-13T14:15:00Z",
+      "available_date": null,
+      "recent_audio_locale": "ja-JP",
+      "title": "Donjon interdit",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/92431570ff5af83a317ca08703862c03.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/92431570ff5af83a317ca08703862c03.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/92431570ff5af83a317ca08703862c03.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/92431570ff5af83a317ca08703862c03.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/92431570ff5af83a317ca08703862c03.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/92431570ff5af83a317ca08703862c03.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/92431570ff5af83a317ca08703862c03.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/92431570ff5af83a317ca08703862c03.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "streams_link": "/content/v2/cms/videos/GM8FXQ890/streams",
+      "episode_air_date": "2023-12-13T22:00:00+09:00",
+      "description": "Allen décide d'apprendre à Natalia comment régner sur l'école, mais ce n'est pas du goût de Chris, son rival autoproclamé. Il décide de la défier une fois de plus, mais cette fois, dans un donjon normalement interdit d'accès. Ils vont vite comprendre pourquoi il l'est…",
+      "season_number": 1,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "audio_locale": "ja-JP",
+      "media_type": "episode",
+      "mature_blocked": false,
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "upload_date": "2023-12-13T22:00:00+09:00",
+      "is_premium_only": true,
+      "slug_title": "naughty-dungeon",
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "is_mature": false,
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "GN7UD2PX3",
+      "premium_date": null,
+      "series_id": "GP5HJ84M5",
+      "season_id": "GY49C79QZ",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "identifier": "GP5HJ84M5|S1|E11",
+      "available_offline": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "hd_flag": true,
+      "next_episode_title": "Interdit égale bonheur",
+      "availability_starts": "2023-12-13T14:15:00Z",
+      "production_episode_id": "",
+      "availability_notes": "",
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "recent_variant": "",
+      "is_dubbed": false,
+      "eligible_region": "CA",
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWU295NK",
+          "is_premium_only": true,
+          "media_guid": "GM8FXQ890",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "slug": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "duration_ms": 1420004,
+      "season_display_number": "1",
+      "channel_id": "crunchyroll",
+      "is_clip": false,
+      "listing_id": "",
+      "id": "GJWU295NK",
+      "sequence_number": 11,
+      "closed_captions_available": false,
+      "episode_number": 11,
+      "seo_description": "",
+      "is_subbed": true,
+      "seo_title": "",
+      "episode": "11",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness"
+    },
+    {
+      "season_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "production_episode_id": "",
+      "availability_starts": "2023-12-20T14:15:00Z",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "eligible_region": "CA",
+      "season_number": 1,
+      "is_dubbed": false,
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "channel_id": "crunchyroll",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "audio_locale": "ja-JP",
+      "series_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "availability_status": "available",
+      "roles": [
+        "main"
+      ],
+      "upload_date": "2023-12-20T22:00:00+09:00",
+      "availability_notes": "",
+      "available_offline": true,
+      "episode_number": 12,
+      "season_slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "season_display_number": "1",
+      "is_subbed": true,
+      "closed_captions_available": false,
+      "recent_audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UD2PX3",
+          "is_premium_only": true,
+          "media_guid": "GVMF0WQNG",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY49C79QZ",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/GVMF0WQNG/streams",
+      "slug": "",
+      "seo_title": "",
+      "premium_available_date": "2023-12-20T14:15:00Z",
+      "title": "Interdit égale bonheur",
+      "episode": "12",
+      "available_date": null,
+      "duration_ms": 1419962,
+      "series_id": "GP5HJ84M5",
+      "series_title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "episode_air_date": "2023-12-20T22:00:00+09:00",
+      "identifier": "GP5HJ84M5|S1|E12",
+      "is_premium_only": true,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "description": "Natalia se confie enfin à Charlotte sur son passé. Cette dernière décide de révéler son identité, mais la boss du donjon fait son apparition. Malgré ce contretemps, les deux sœurs parviennent enfin à se retrouver. Allen et Charlotte se retrouvent confrontés à leurs non-dits…",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b6c40f265597abd3955a836b7c4b1429.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b6c40f265597abd3955a836b7c4b1429.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b6c40f265597abd3955a836b7c4b1429.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b6c40f265597abd3955a836b7c4b1429.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b6c40f265597abd3955a836b7c4b1429.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b6c40f265597abd3955a836b7c4b1429.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b6c40f265597abd3955a836b7c4b1429.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b6c40f265597abd3955a836b7c4b1429.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "mature_blocked": false,
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "id": "GN7UD2PX3",
+      "premium_date": null,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "media_type": "episode",
+      "slug_title": "naughty--happiness",
+      "season_id": "GY49C79QZ",
+      "sequence_number": 12,
+      "season_sequence_number": 1,
+      "is_mature": false,
+      "hd_flag": true,
+      "is_clip": false,
+      "seo_description": "",
+      "listing_id": ""
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

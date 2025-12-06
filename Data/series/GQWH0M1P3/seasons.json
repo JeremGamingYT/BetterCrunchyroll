@@ -1,0 +1,118 @@
+{
+  "data": [
+    {
+      "id": "G68VCPM8P",
+      "channel_id": "crunchyroll",
+      "title": "Possibly the Greatest Alchemist of All Time",
+      "slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "series_id": "GQWH0M1P3",
+      "season_display_number": "",
+      "season_sequence_number": 0,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Takumi Iruma, un homme ordinaire, a été invoqué dans un monde fantastique pour devenir un héros. Mais il n'en a pas les capacités et il demande juste à vivre simplement. La déesse Nolyn lui accorde alors le pouvoir de l'alchimie, une compétence ultra-puissante qui lui permet de créer n'importe quoi, comme des épées sacrées et même des vaisseaux volants. Une incroyable aventure commence alors pour lui !",
+      "keywords": [],
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": true,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "th-TH",
+        "es-419",
+        "fr-FR",
+        "it-IT",
+        "en-US",
+        "id-ID",
+        "ms-MY",
+        "ru-RU",
+        "es-ES",
+        "pt-BR",
+        "vi-VN",
+        "zh-CN",
+        "de-DE"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G68VCPM8P",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GYZXCM48V",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G69PC233E",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GYX0C4003",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G649C722D",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GR19CPMMZ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G6JQC1VVP",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GYNQCJ445",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GQWH0M1P3|S1",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

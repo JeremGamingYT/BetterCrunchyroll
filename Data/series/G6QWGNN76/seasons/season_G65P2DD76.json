@@ -1,0 +1,1914 @@
+{
+  "total": 12,
+  "data": [
+    {
+      "is_clip": false,
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "series_title": "Dance in the Vampire Bund",
+      "audio_locale": "ja-JP",
+      "availability_status": "available",
+      "is_dubbed": true,
+      "duration_ms": 1427637,
+      "seo_description": "",
+      "next_episode_id": "GR0XVK4VY",
+      "listing_id": "",
+      "premium_date": null,
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c4114a280075dc0c42fa5a8216f1071e.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c4114a280075dc0c42fa5a8216f1071e.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c4114a280075dc0c42fa5a8216f1071e.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c4114a280075dc0c42fa5a8216f1071e.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c4114a280075dc0c42fa5a8216f1071e.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c4114a280075dc0c42fa5a8216f1071e.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c4114a280075dc0c42fa5a8216f1071e.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c4114a280075dc0c42fa5a8216f1071e.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "season_display_number": "",
+      "mature_blocked": false,
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "season_sequence_number": 1,
+      "available_date": null,
+      "season_title": "Dance in the Vampire Bund",
+      "identifier": "G6QWGNN76|S1|E1",
+      "episode": "1",
+      "available_offline": true,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "season_number": 1,
+      "upload_date": "2018-03-07T15:30:00Z",
+      "description": "The queen of the vampires makes an impromptu appearance on a televised talk show to announce her plans for a mysterious island located off the coast of Japan. ",
+      "is_premium_only": true,
+      "availability_notes": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "hd_flag": true,
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "ja-JP",
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "media_type": "episode",
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "recent_variant": "",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "production_episode_id": "",
+      "eligible_region": "CA",
+      "season_id": "G65P2DD76",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "next_episode_title": "Howling",
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "slug_title": "prom-night",
+      "id": "GYW4G5536",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYW4G5536",
+          "is_premium_only": true,
+          "media_guid": "G8MFN5GVD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G0DUN14G4",
+          "is_premium_only": true,
+          "media_guid": "G9XFEQ7Z7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/G8MFN5GVD/streams",
+      "closed_captions_available": false,
+      "is_subbed": true,
+      "roles": [
+        "main"
+      ],
+      "slug": "",
+      "title": "Prom Night",
+      "series_id": "G6QWGNN76",
+      "sequence_number": 1,
+      "is_mature": true,
+      "episode_number": 1
+    },
+    {
+      "seo_title": "",
+      "episode_number": 2,
+      "is_premium_only": true,
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "recent_variant": "",
+      "listing_id": "",
+      "season_display_number": "",
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "episode": "2",
+      "streams_link": "/content/v2/cms/videos/GDVFV7QZW/streams",
+      "availability_notes": "",
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "is_subbed": true,
+      "media_type": "episode",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "available_offline": true,
+      "next_episode_title": "Teen Wolf",
+      "series_id": "G6QWGNN76",
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1427613,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR0XVK4VY",
+          "is_premium_only": true,
+          "media_guid": "GDVFV7QZW",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUZ2KJ4",
+          "is_premium_only": true,
+          "media_guid": "GXMFQG91P",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "is_dubbed": true,
+      "eligible_region": "CA",
+      "season_id": "G65P2DD76",
+      "availability_status": "available",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "premium_date": null,
+      "is_clip": false,
+      "closed_captions_available": false,
+      "audio_locale": "ja-JP",
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "production_episode_id": "",
+      "season_title": "Dance in the Vampire Bund",
+      "hd_flag": true,
+      "next_episode_id": "GR79VG356",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5b5e89f0c7600b97b07d970d54e68edd.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5b5e89f0c7600b97b07d970d54e68edd.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5b5e89f0c7600b97b07d970d54e68edd.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5b5e89f0c7600b97b07d970d54e68edd.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5b5e89f0c7600b97b07d970d54e68edd.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5b5e89f0c7600b97b07d970d54e68edd.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5b5e89f0c7600b97b07d970d54e68edd.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5b5e89f0c7600b97b07d970d54e68edd.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_number": 1,
+      "description": "High school student Akira Kaburagi isn’t interested in vampires, but when he finds himself in the middle of an assassination attempt on Mina, a promise from his past comes rushing back to him.",
+      "channel_id": "crunchyroll",
+      "series_title": "Dance in the Vampire Bund",
+      "id": "GR0XVK4VY",
+      "title": "Howling",
+      "slug": "",
+      "roles": [
+        "main"
+      ],
+      "is_mature": true,
+      "available_date": null,
+      "recent_audio_locale": "ja-JP",
+      "season_sequence_number": 1,
+      "upload_date": "2018-03-07T15:30:00Z",
+      "sequence_number": 2,
+      "identifier": "G6QWGNN76|S1|E2",
+      "slug_title": "howling",
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "seo_description": ""
+    },
+    {
+      "next_episode_id": "G6XJ7WKMR",
+      "identifier": "G6QWGNN76|S1|E3",
+      "roles": [
+        "main"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_number": 3,
+      "season_number": 1,
+      "audio_locale": "ja-JP",
+      "is_clip": false,
+      "is_mature": true,
+      "media_type": "episode",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "upload_date": "2018-03-07T15:30:00Z",
+      "season_sequence_number": 1,
+      "duration_ms": 1427637,
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5ec8bc1c7a5f3d1ed6463870cf74b1e3.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5ec8bc1c7a5f3d1ed6463870cf74b1e3.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5ec8bc1c7a5f3d1ed6463870cf74b1e3.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5ec8bc1c7a5f3d1ed6463870cf74b1e3.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5ec8bc1c7a5f3d1ed6463870cf74b1e3.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5ec8bc1c7a5f3d1ed6463870cf74b1e3.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5ec8bc1c7a5f3d1ed6463870cf74b1e3.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5ec8bc1c7a5f3d1ed6463870cf74b1e3.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "channel_id": "crunchyroll",
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "streams_link": "/content/v2/cms/videos/GGVF21459/streams",
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "mature_blocked": false,
+      "id": "GR79VG356",
+      "seo_description": "",
+      "description": "The student council is outraged when news of Mina’s arrival gets out, and Akira struggles to deal with the cold, hard facts: he’s a werewolf sworn to serve the queen of the vampires!",
+      "series_id": "G6QWGNN76",
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "next_episode_title": "Interview with the Vampire",
+      "season_display_number": "",
+      "premium_date": null,
+      "season_title": "Dance in the Vampire Bund",
+      "eligible_region": "CA",
+      "availability_status": "available",
+      "season_id": "G65P2DD76",
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "available_date": null,
+      "availability_notes": "",
+      "series_title": "Dance in the Vampire Bund",
+      "slug_title": "teen-wolf",
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR79VG356",
+          "is_premium_only": true,
+          "media_guid": "GGVF21459",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU4Z0PZ",
+          "is_premium_only": true,
+          "media_guid": "G4GFQJZKJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "episode": "3",
+      "is_subbed": true,
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "is_premium_only": true,
+      "listing_id": "",
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "hd_flag": true,
+      "available_offline": true,
+      "recent_audio_locale": "ja-JP",
+      "sequence_number": 3,
+      "is_dubbed": true,
+      "title": "Teen Wolf",
+      "slug": "",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "recent_variant": ""
+    },
+    {
+      "episode": "4",
+      "roles": [
+        "main"
+      ],
+      "season_display_number": "",
+      "sequence_number": 4,
+      "production_episode_id": "",
+      "hd_flag": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_dubbed": true,
+      "id": "G6XJ7WKMR",
+      "slug_title": "interview-with-the-vampire",
+      "seo_title": "",
+      "season_number": 1,
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "channel_id": "crunchyroll",
+      "series_id": "G6QWGNN76",
+      "episode_number": 4,
+      "identifier": "G6QWGNN76|S1|E4",
+      "seo_description": "",
+      "season_id": "G65P2DD76",
+      "is_mature": true,
+      "closed_captions_available": false,
+      "is_clip": false,
+      "upload_date": "2018-03-07T15:30:00Z",
+      "next_episode_title": "Shadow of the Vampire",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6XJ7WKMR",
+          "is_premium_only": true,
+          "media_guid": "G9XFE45N5",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DUEQ7ZJ",
+          "is_premium_only": true,
+          "media_guid": "G1QF402QD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "series_title": "Dance in the Vampire Bund",
+      "recent_audio_locale": "ja-JP",
+      "description": "Mina calls a press conference in an attempt to quiet the public uproar over the Bund, but a last-minute change to the security detail could put both humans and vampires at risk.",
+      "is_subbed": true,
+      "availability_notes": "",
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "premium_date": null,
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "recent_variant": "",
+      "duration_ms": 1517661,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/289c9540717b23fefce8da62889fac72.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/289c9540717b23fefce8da62889fac72.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/289c9540717b23fefce8da62889fac72.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/289c9540717b23fefce8da62889fac72.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/289c9540717b23fefce8da62889fac72.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/289c9540717b23fefce8da62889fac72.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/289c9540717b23fefce8da62889fac72.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/289c9540717b23fefce8da62889fac72.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "streams_link": "/content/v2/cms/videos/G9XFE45N5/streams",
+      "listing_id": "",
+      "mature_blocked": false,
+      "audio_locale": "ja-JP",
+      "season_sequence_number": 1,
+      "availability_status": "available",
+      "eligible_region": "CA",
+      "available_date": null,
+      "media_type": "episode",
+      "season_title": "Dance in the Vampire Bund",
+      "next_episode_id": "GY1XKD10Y",
+      "available_offline": true,
+      "slug": "",
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "title": "Interview with the Vampire",
+      "is_premium_only": true,
+      "season_tags": [
+        "Hiver-2018"
+      ]
+    },
+    {
+      "season_sequence_number": 1,
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "series_title": "Dance in the Vampire Bund",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "available_date": null,
+      "streams_link": "/content/v2/cms/videos/GJKF2K917/streams",
+      "audio_locale": "ja-JP",
+      "media_type": "episode",
+      "is_dubbed": true,
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "channel_id": "crunchyroll",
+      "description": "A high-profile student’s disappearance puts Mina in hot water with the student council, and the Prime Minister takes drastic steps to reject her plans for the Bund. ",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "season_display_number": "",
+      "availability_notes": "",
+      "availability_status": "available",
+      "episode": "5",
+      "closed_captions_available": false,
+      "hd_flag": true,
+      "roles": [
+        "main"
+      ],
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY1XKD10Y",
+          "is_premium_only": true,
+          "media_guid": "GJKF2K917",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9UQG915",
+          "is_premium_only": true,
+          "media_guid": "GJKF2G8NZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "premium_date": null,
+      "id": "GY1XKD10Y",
+      "slug_title": "shadow-of-the-vampire",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_clip": false,
+      "identifier": "G6QWGNN76|S1|E5",
+      "next_episode_title": "From Dusk Till Dawn",
+      "recent_audio_locale": "ja-JP",
+      "eligible_region": "CA",
+      "seo_title": "",
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/58a1da54c0b359ade59d07fdad07bf7d.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/58a1da54c0b359ade59d07fdad07bf7d.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/58a1da54c0b359ade59d07fdad07bf7d.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/58a1da54c0b359ade59d07fdad07bf7d.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/58a1da54c0b359ade59d07fdad07bf7d.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/58a1da54c0b359ade59d07fdad07bf7d.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/58a1da54c0b359ade59d07fdad07bf7d.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/58a1da54c0b359ade59d07fdad07bf7d.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "episode_number": 5,
+      "season_id": "G65P2DD76",
+      "sequence_number": 5,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "series_id": "G6QWGNN76",
+      "is_subbed": true,
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "title": "Shadow of the Vampire",
+      "duration_ms": 1517661,
+      "season_title": "Dance in the Vampire Bund",
+      "production_episode_id": "",
+      "is_premium_only": true,
+      "upload_date": "2018-03-07T15:30:00Z",
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "slug": "",
+      "mature_blocked": false,
+      "is_mature": true,
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "season_number": 1,
+      "listing_id": "",
+      "next_episode_id": "GYQWGN7PY",
+      "available_offline": true,
+      "recent_variant": ""
+    },
+    {
+      "availability_notes": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/44127b974826851b87a3b8e6e9d262e3.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/44127b974826851b87a3b8e6e9d262e3.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/44127b974826851b87a3b8e6e9d262e3.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/44127b974826851b87a3b8e6e9d262e3.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/44127b974826851b87a3b8e6e9d262e3.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/44127b974826851b87a3b8e6e9d262e3.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/44127b974826851b87a3b8e6e9d262e3.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/44127b974826851b87a3b8e6e9d262e3.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "mature_blocked": false,
+      "listing_id": "",
+      "seo_description": "",
+      "production_episode_id": "",
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "seo_title": "",
+      "available_date": null,
+      "season_display_number": "",
+      "season_title": "Dance in the Vampire Bund",
+      "episode": "6",
+      "sequence_number": 6,
+      "audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "roles": [
+        "main"
+      ],
+      "closed_captions_available": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "identifier": "G6QWGNN76|S1|E6",
+      "next_episode_title": "Innocent Blood",
+      "is_clip": false,
+      "season_number": 1,
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "premium_date": null,
+      "id": "GYQWGN7PY",
+      "series_id": "G6QWGNN76",
+      "is_subbed": true,
+      "streams_link": "/content/v2/cms/videos/GVMF01W21/streams",
+      "series_title": "Dance in the Vampire Bund",
+      "slug": "",
+      "description": "Mina refuses to let anything stand in the way of her mission to establish the Bund, but Akira’s loyalty to his new master is shaken when he learns that vampires have infiltrated the school",
+      "available_offline": true,
+      "episode_number": 6,
+      "is_dubbed": true,
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "title": "From Dusk Till Dawn",
+      "upload_date": "2018-03-07T15:30:00Z",
+      "slug_title": "from-dusk-till-dawn",
+      "season_id": "G65P2DD76",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "media_type": "episode",
+      "hd_flag": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYQWGN7PY",
+          "is_premium_only": true,
+          "media_guid": "GVMF01W21",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWU2G8N9",
+          "is_premium_only": true,
+          "media_guid": "GM8FX7W9Q",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 1,
+      "duration_ms": 1451661,
+      "eligible_region": "CA",
+      "recent_variant": "",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "channel_id": "crunchyroll",
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "is_mature": true,
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "next_episode_id": "GRW4G5NKY",
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "availability_status": "available",
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "maturity_ratings": [
+        "TV-MA"
+      ]
+    },
+    {
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "is_mature": true,
+      "title": "Innocent Blood",
+      "eligible_region": "CA",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5a999770b28aa93ae26fe58d109ee0a7.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5a999770b28aa93ae26fe58d109ee0a7.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5a999770b28aa93ae26fe58d109ee0a7.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5a999770b28aa93ae26fe58d109ee0a7.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5a999770b28aa93ae26fe58d109ee0a7.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5a999770b28aa93ae26fe58d109ee0a7.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5a999770b28aa93ae26fe58d109ee0a7.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5a999770b28aa93ae26fe58d109ee0a7.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "id": "GRW4G5NKY",
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 1,
+      "availability_notes": "",
+      "next_episode_title": "Near Dark",
+      "series_title": "Dance in the Vampire Bund",
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/G8MFN5GPD/streams",
+      "slug_title": "innocent-blood",
+      "description": "Despite their differences, Mina and Akira must learn to work together in order to save some student council members from the rogue vampires who’ve taken them hostage.",
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "sequence_number": 7,
+      "is_clip": false,
+      "next_episode_id": "G60XVK42R",
+      "closed_captions_available": false,
+      "episode": "7",
+      "premium_date": null,
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "hd_flag": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "identifier": "G6QWGNN76|S1|E7",
+      "production_episode_id": "",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "slug": "",
+      "season_display_number": "",
+      "listing_id": "",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "seo_description": "",
+      "is_dubbed": true,
+      "duration_ms": 1462701,
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "roles": [
+        "main"
+      ],
+      "season_id": "G65P2DD76",
+      "mature_blocked": false,
+      "available_date": null,
+      "audio_locale": "ja-JP",
+      "season_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRW4G5NKY",
+          "is_premium_only": true,
+          "media_guid": "G8MFN5GPD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UD9GX1",
+          "is_premium_only": true,
+          "media_guid": "GVMF05JN7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "is_subbed": true,
+      "episode_number": 7,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "series_id": "G6QWGNN76",
+      "available_offline": true,
+      "media_type": "episode",
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "upload_date": "2018-03-07T15:30:00Z",
+      "seo_title": "",
+      "channel_id": "crunchyroll",
+      "season_title": "Dance in the Vampire Bund",
+      "availability_status": "available",
+      "is_premium_only": true
+    },
+    {
+      "availability_status": "available",
+      "audio_locale": "ja-JP",
+      "is_clip": false,
+      "is_premium_only": true,
+      "seo_title": "",
+      "id": "G60XVK42R",
+      "production_episode_id": "",
+      "season_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G60XVK42R",
+          "is_premium_only": true,
+          "media_guid": "G5JFZGXD7",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9U30QVE",
+          "is_premium_only": true,
+          "media_guid": "G3WFXDQKN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "description": "On the surface, things appear to have calmed down at the academy, but among the students there are deep physical and psychological scars that have not yet healed.",
+      "streams_link": "/content/v2/cms/videos/G5JFZGXD7/streams",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "series_id": "G6QWGNN76",
+      "season_id": "G65P2DD76",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "availability_notes": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "closed_captions_available": false,
+      "roles": [
+        "main"
+      ],
+      "recent_variant": "",
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "media_type": "episode",
+      "available_offline": true,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "is_subbed": true,
+      "season_title": "Dance in the Vampire Bund",
+      "premium_date": null,
+      "upload_date": "2018-03-07T15:30:00Z",
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "title": "Near Dark",
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "mature_blocked": false,
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "sequence_number": 8,
+      "slug": "",
+      "series_title": "Dance in the Vampire Bund",
+      "is_mature": true,
+      "eligible_region": "CA",
+      "slug_title": "near-dark",
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "is_dubbed": true,
+      "next_episode_id": "G679VG3NY",
+      "episode": "8",
+      "seo_description": "",
+      "available_date": null,
+      "next_episode_title": "The Lost Boys",
+      "episode_number": 8,
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "duration_ms": 1427637,
+      "season_sequence_number": 1,
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "season_display_number": "",
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/38fdbceefdc80e7b5ea3a9bf33e509b5.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/38fdbceefdc80e7b5ea3a9bf33e509b5.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/38fdbceefdc80e7b5ea3a9bf33e509b5.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/38fdbceefdc80e7b5ea3a9bf33e509b5.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/38fdbceefdc80e7b5ea3a9bf33e509b5.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/38fdbceefdc80e7b5ea3a9bf33e509b5.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/38fdbceefdc80e7b5ea3a9bf33e509b5.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/38fdbceefdc80e7b5ea3a9bf33e509b5.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "identifier": "G6QWGNN76|S1|E8"
+    },
+    {
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "description": "Akira’s curiosity about the concept of eternity leads him to ask Mina questions that are difficult to answer. Though it may sound promising, eternity is not without its harsh realities.",
+      "is_premium_only": true,
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "season_number": 1,
+      "is_mature": true,
+      "available_date": null,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "availability_status": "available",
+      "slug_title": "the-lost-boys",
+      "listing_id": "",
+      "is_clip": false,
+      "identifier": "G6QWGNN76|S1|E9",
+      "season_id": "G65P2DD76",
+      "is_subbed": true,
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "season_display_number": "",
+      "eligible_region": "CA",
+      "is_dubbed": true,
+      "title": "The Lost Boys",
+      "streams_link": "/content/v2/cms/videos/GEMFZ0XQE/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G679VG3NY",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ0XQE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU05JXX",
+          "is_premium_only": true,
+          "media_guid": "G25F0WJ11",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "duration_ms": 1427637,
+      "series_title": "Dance in the Vampire Bund",
+      "slug": "",
+      "available_offline": true,
+      "id": "G679VG3NY",
+      "series_id": "G6QWGNN76",
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "recent_audio_locale": "ja-JP",
+      "next_episode_title": "Walpurgis Night",
+      "seo_description": "",
+      "production_episode_id": "",
+      "closed_captions_available": false,
+      "availability_notes": "",
+      "premium_date": null,
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "recent_variant": "",
+      "media_type": "episode",
+      "roles": [
+        "main"
+      ],
+      "sequence_number": 9,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4de184e5aa5302c95a0b53157415ebd4.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4de184e5aa5302c95a0b53157415ebd4.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4de184e5aa5302c95a0b53157415ebd4.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4de184e5aa5302c95a0b53157415ebd4.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4de184e5aa5302c95a0b53157415ebd4.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4de184e5aa5302c95a0b53157415ebd4.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4de184e5aa5302c95a0b53157415ebd4.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4de184e5aa5302c95a0b53157415ebd4.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "upload_date": "2018-03-07T15:30:00Z",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "audio_locale": "ja-JP",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "season_sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "next_episode_id": "GYXJ7WKN6",
+      "mature_blocked": false,
+      "hd_flag": true,
+      "episode_number": 9,
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "episode": "9",
+      "seo_title": "",
+      "season_title": "Dance in the Vampire Bund"
+    },
+    {
+      "episode": "10",
+      "slug_title": "walpurgis-night",
+      "is_mature": true,
+      "season_number": 1,
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "series_title": "Dance in the Vampire Bund",
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GJKF2K927/streams",
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYXJ7WKN6",
+          "is_premium_only": true,
+          "media_guid": "GJKF2K927",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GZ7UV8J35",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ9WN3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "seo_description": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dc3dd8efa91852f2a2d9e2ddae1571cd.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/dc3dd8efa91852f2a2d9e2ddae1571cd.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/dc3dd8efa91852f2a2d9e2ddae1571cd.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/dc3dd8efa91852f2a2d9e2ddae1571cd.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/dc3dd8efa91852f2a2d9e2ddae1571cd.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/dc3dd8efa91852f2a2d9e2ddae1571cd.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/dc3dd8efa91852f2a2d9e2ddae1571cd.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/dc3dd8efa91852f2a2d9e2ddae1571cd.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_id": "G6QWGNN76",
+      "channel_id": "crunchyroll",
+      "media_type": "episode",
+      "available_date": null,
+      "is_subbed": true,
+      "mature_blocked": false,
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "sequence_number": 10,
+      "eligible_region": "CA",
+      "available_offline": true,
+      "season_sequence_number": 1,
+      "slug": "",
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "is_clip": false,
+      "next_episode_title": "Underworld",
+      "listing_id": "",
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "identifier": "G6QWGNN76|S1|E10",
+      "audio_locale": "ja-JP",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_status": "available",
+      "availability_notes": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "description": "The Bund is finally enjoying some well-earned peace when chaos visits once more - the Three Clans have appeared in the Bund, putting Akira’s life in grave peril.",
+      "upload_date": "2018-03-07T15:30:00Z",
+      "is_dubbed": true,
+      "production_episode_id": "",
+      "season_id": "G65P2DD76",
+      "id": "GYXJ7WKN6",
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "duration_ms": 1427613,
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "title": "Walpurgis Night",
+      "premium_date": null,
+      "seo_title": "",
+      "episode_number": 10,
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "hd_flag": true,
+      "season_title": "Dance in the Vampire Bund",
+      "season_display_number": "",
+      "recent_variant": "",
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "GR1XKD11R"
+    },
+    {
+      "available_offline": true,
+      "is_subbed": true,
+      "mature_blocked": false,
+      "upload_date": "2018-03-07T15:30:00Z",
+      "slug_title": "underworld",
+      "description": "Killers-for-hire stalk Akira, and the werewolf’s inability to transform puts his life in jeopardy. Meanwhile, Mina raises the stakes of her wager after a particularly unpleasant test of her purity.",
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "channel_id": "crunchyroll",
+      "is_clip": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a122299701fae88e0f241b02e5dfaf3f.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a122299701fae88e0f241b02e5dfaf3f.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a122299701fae88e0f241b02e5dfaf3f.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a122299701fae88e0f241b02e5dfaf3f.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a122299701fae88e0f241b02e5dfaf3f.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a122299701fae88e0f241b02e5dfaf3f.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a122299701fae88e0f241b02e5dfaf3f.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a122299701fae88e0f241b02e5dfaf3f.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_date": null,
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "seo_description": "",
+      "title": "Underworld",
+      "media_type": "episode",
+      "is_mature": true,
+      "identifier": "G6QWGNN76|S1|E11",
+      "series_title": "Dance in the Vampire Bund",
+      "season_display_number": "",
+      "season_id": "G65P2DD76",
+      "listing_id": "",
+      "available_date": null,
+      "recent_variant": "",
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "episode": "11",
+      "slug": "",
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "next_episode_id": "GYNV0DG9R",
+      "series_id": "G6QWGNN76",
+      "season_number": 1,
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "next_episode_title": "Dance In The Vampire Bund",
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "duration_ms": 1427613,
+      "availability_status": "available",
+      "streams_link": "/content/v2/cms/videos/GVMF01W01/streams",
+      "seo_title": "",
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR1XKD11R",
+          "is_premium_only": true,
+          "media_guid": "GVMF01W01",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUG1704",
+          "is_premium_only": true,
+          "media_guid": "GGVF2Q057",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "season_title": "Dance in the Vampire Bund",
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "id": "GR1XKD11R",
+      "is_premium_only": true,
+      "audio_locale": "ja-JP",
+      "availability_notes": "",
+      "is_dubbed": true,
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "roles": [
+        "main"
+      ],
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "sequence_number": 11,
+      "recent_audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "season_sequence_number": 1,
+      "episode_number": 11
+    },
+    {
+      "identifier": "G6QWGNN76|S1|E12",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/24231adf427620cec9b84d95d5465251.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/24231adf427620cec9b84d95d5465251.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/24231adf427620cec9b84d95d5465251.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/24231adf427620cec9b84d95d5465251.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/24231adf427620cec9b84d95d5465251.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/24231adf427620cec9b84d95d5465251.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/24231adf427620cec9b84d95d5465251.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/24231adf427620cec9b84d95d5465251.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "audio_locale": "ja-JP",
+      "upload_date": "2018-03-07T15:30:00Z",
+      "eligible_region": "CA",
+      "mature_blocked": false,
+      "title": "Dance In The Vampire Bund",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYNV0DG9R",
+          "is_premium_only": true,
+          "media_guid": "G71F48M45",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65P2DD76",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GWDU8WGMP",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ2K38",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CDVJ7",
+          "variant": ""
+        }
+      ],
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "listing_id": "",
+      "season_title": "Dance in the Vampire Bund",
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "episode_air_date": "2018-03-07T15:30:00Z",
+      "is_clip": false,
+      "seo_title": "",
+      "premium_date": null,
+      "description": "Two beastly warriors shed blood in defense of identical princesses, and Mina learns the shocking secret behind the legacy of the true bloods!",
+      "episode_number": 12,
+      "slug_title": "dance-in-the-vampire-bund",
+      "slug": "",
+      "available_offline": true,
+      "recent_variant": "",
+      "production_episode_id": "",
+      "series_id": "G6QWGNN76",
+      "season_slug_title": "dance-in-the-vampire-bund",
+      "streams_link": "/content/v2/cms/videos/G71F48M45/streams",
+      "premium_available_date": "2018-03-07T23:30:00Z",
+      "available_date": null,
+      "recent_audio_locale": "ja-JP",
+      "roles": [
+        "main"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "duration_ms": 1483677,
+      "is_subbed": true,
+      "seo_description": "",
+      "season_id": "G65P2DD76",
+      "episode": "12",
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "season_display_number": "",
+      "series_slug_title": "dance-in-the-vampire-bund",
+      "hd_flag": true,
+      "series_title": "Dance in the Vampire Bund",
+      "closed_captions_available": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "is_mature": true,
+      "season_number": 1,
+      "availability_starts": "2018-03-07T23:30:00Z",
+      "sequence_number": 12,
+      "is_dubbed": true,
+      "free_available_date": "2018-03-07T23:30:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "extended_maturity_rating": {
+        "level": "M3",
+        "rating": "18",
+        "system": "cr-tv"
+      },
+      "id": "GYNV0DG9R",
+      "is_premium_only": true,
+      "season_sequence_number": 1
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

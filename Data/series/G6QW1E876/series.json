@@ -1,0 +1,183 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "G6QW1E876",
+      "channel_id": "crunchyroll",
+      "title": "Princess Connect! Re: Dive",
+      "slug": "",
+      "slug_title": "princess-connect-re-dive",
+      "description": "Dans le beau pays d'Astraea, le jeune Yûki se réveille sans avoir aucun souvenir de son passé. Il rencontre toutefois Kokkoro (une guide ayant juré de prendre soin de lui), Pecorine (une charmante épéiste ayant toujours un petit creux) et enfin Karyl (une sorcière aux oreilles de chat au caractère épineux). Se laissant porter par leur destin, tous les quatre se rassemblent pour former la Guilde des Gourmets.",
+      "extended_description": "",
+      "keywords": [
+        "isekai",
+        "comedy",
+        "adventure",
+        "fantasy",
+        "2020",
+        "video game",
+        "mobile game",
+        "cygames"
+      ],
+      "season_tags": [
+        "Printemps-2020",
+        "Hiver-2022"
+      ],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/6db99da0e4835f3b334a2704b704d0ef.jpe"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/6db99da0e4835f3b334a2704b704d0ef.jpe"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/6db99da0e4835f3b334a2704b704d0ef.jpe"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/6db99da0e4835f3b334a2704b704d0ef.jpe"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/6db99da0e4835f3b334a2704b704d0ef.jpe"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/6db99da0e4835f3b334a2704b704d0ef.jpe"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/6db99da0e4835f3b334a2704b704d0ef.jpe"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/6db99da0e4835f3b334a2704b704d0ef.jpe"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/6db99da0e4835f3b334a2704b704d0ef.jpe"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1a10bc6727c20ab8e55d47e000181d36.jpe"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1a10bc6727c20ab8e55d47e000181d36.jpe"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1a10bc6727c20ab8e55d47e000181d36.jpe"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1a10bc6727c20ab8e55d47e000181d36.jpe"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1a10bc6727c20ab8e55d47e000181d36.jpe"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1a10bc6727c20ab8e55d47e000181d36.jpe"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1a10bc6727c20ab8e55d47e000181d36.jpe"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1a10bc6727c20ab8e55d47e000181d36.jpe"
+            }
+          ]
+        ]
+      },
+      "episode_count": 25,
+      "season_count": 2,
+      "media_count": 25,
+      "content_provider": "Cygames",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": false,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "pt-BR",
+        "es-ES",
+        "es-419",
+        "fr-FR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "en-US",
+        "ru-RU"
+      ],
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2020,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

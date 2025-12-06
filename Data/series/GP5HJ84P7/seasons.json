@@ -1,0 +1,148 @@
+{
+  "data": [
+    {
+      "id": "GY75CDJWM",
+      "channel_id": "crunchyroll",
+      "title": "Season 1",
+      "slug_title": "season-1",
+      "series_id": "GP5HJ84P7",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "S’extirper de la Fosse infernale et changer ce monde de merde ! Accusé à tort de meurtre, Rudo est plongé dans la Fosse, une gigantesque décharge à ciel ouvert. Dans ce monde où les dés semblent pipés d’avance et les Composites rôdent, Rudo va devoir se hisser à la force du poignet et lutter contre l’ordre établi !",
+      "keywords": [
+        "summer-2025",
+        "fall-2025"
+      ],
+      "season_tags": [
+        "summer-2025",
+        "fall-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "it-IT",
+        "ru-RU",
+        "zh-CN",
+        "id-ID",
+        "ms-MY",
+        "es-ES",
+        "fr-FR",
+        "de-DE",
+        "vi-VN",
+        "th-TH",
+        "es-419",
+        "pt-BR",
+        "zh-HK",
+        "en-US"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6GGCVZD8",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GY09CXJ98",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G6E5CQN8N",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GY75CDJWM",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GY9PC2GDM",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GRX0C4ZKE",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GY49C78XK",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G619CPGEJ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GYJQC1EX1",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GRNQCJV7D",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GYK5CND4G",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GRVNC24MP",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GP5HJ84P7|S00352501",
+      "number_of_episodes": 21
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

@@ -1,0 +1,226 @@
+{
+  "data": [
+    {
+      "id": "G65VCD9J1",
+      "channel_id": "crunchyroll",
+      "title": "My Dress-Up Darling",
+      "slug_title": "my-dress-up-darling-french-dub",
+      "series_id": "GQWH0M9N8",
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRMGC3Z8G",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GRJQC1MED",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GR49C738W",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GY19CP3G5",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GYNQCJ7WK",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ar-SA",
+          "guid": "G6X0C47KJ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GY19CPEX7",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GR49C7XMV",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GR19CPE1N",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G65VCD9J1",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GY8VCPX3D",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G609CXPQK",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GQWH0M9N8|S1",
+      "number_of_episodes": 12
+    },
+    {
+      "id": "GR2PCVDD8",
+      "channel_id": "crunchyroll",
+      "title": "My Dress-Up Darling Season 2",
+      "slug_title": "my-dress-up-darling-season-2-french-dub",
+      "series_id": "GQWH0M9N8",
+      "season_display_number": "2",
+      "season_sequence_number": 2,
+      "season_number": 2,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": true,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY19CPG00",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G63VC2ZZ3",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G6P8CXDDE",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GR2PCVDD8",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GY8VCP008",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GRZXCM11K",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GRDQCG885",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GYGGCVZZN",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GQWH0M9N8|S2",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 2
+}

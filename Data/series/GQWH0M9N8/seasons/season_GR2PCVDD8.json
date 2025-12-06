@@ -1,0 +1,2586 @@
+{
+  "total": 12,
+  "data": [
+    {
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e809771179871502fb0aaaa30955c403.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e809771179871502fb0aaaa30955c403.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e809771179871502fb0aaaa30955c403.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e809771179871502fb0aaaa30955c403.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e809771179871502fb0aaaa30955c403.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e809771179871502fb0aaaa30955c403.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e809771179871502fb0aaaa30955c403.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e809771179871502fb0aaaa30955c403.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_mature": false,
+      "available_offline": true,
+      "seo_title": "",
+      "id": "G8WU7PMW3",
+      "recent_audio_locale": "fr-FR",
+      "closed_captions_available": false,
+      "episode_air_date": "2025-07-06T00:00:00+09:00",
+      "season_id": "GR2PCVDD8",
+      "audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GQ9FMZ29N/streams",
+      "episode": "13",
+      "roles": [
+        "dub"
+      ],
+      "identifier": "GQWH0M9N8|S2|E13",
+      "listing_id": "",
+      "next_episode_id": "GQJUMZVK0",
+      "hd_flag": true,
+      "next_episode_title": "Les seins, ça s'enfile",
+      "season_number": 2,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "episode_number": 13,
+      "premium_available_date": "2025-07-26T19:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_status": "available",
+      "is_premium_only": true,
+      "series_title": "My Dress-Up Darling",
+      "availability_starts": "2025-07-26T19:00:00Z",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "season_display_number": "2",
+      "slug_title": "wakana-gojo-15-years-old-teenager",
+      "seo_description": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "media_type": "episode",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1420004,
+      "availability_notes": "",
+      "is_clip": false,
+      "series_slug_title": "my-dress-up-darling",
+      "sequence_number": 13,
+      "season_sequence_number": 2,
+      "description": "Gojô fabrique un costume de Bunny Girl à Kitagawa qu'elle utilise pour un shooting et la fête d'Halloween.",
+      "premium_date": null,
+      "slug": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GVWU82JK1",
+          "is_premium_only": true,
+          "media_guid": "G25FNVJE9",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUW7NEE",
+          "is_premium_only": true,
+          "media_guid": "GNJFNJQPP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GPWU8XG0V",
+          "is_premium_only": true,
+          "media_guid": "GZ4FDM4PE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G2XUNVQ57",
+          "is_premium_only": true,
+          "media_guid": "GDVFEGX2M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G8WU7PMW3",
+          "is_premium_only": true,
+          "media_guid": "GQ9FMZ29N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GZ7UDM4X3",
+          "is_premium_only": true,
+          "media_guid": "G5JFMD54N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G0DUMX80V",
+          "is_premium_only": true,
+          "media_guid": "G9XF923PK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GWDU73DK0",
+          "is_premium_only": true,
+          "media_guid": "GEMFWQEG0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "mature_blocked": false,
+      "recent_variant": "",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "production_episode_id": "",
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "eligible_region": "CA",
+      "series_id": "GQWH0M9N8",
+      "title": "Wakana Gojô, 15 ans, en pleine puberté",
+      "is_dubbed": true,
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "upload_date": "2025-07-06T00:00:00+09:00",
+      "is_subbed": true,
+      "season_tags": []
+    },
+    {
+      "duration_ms": 1420054,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/82b8722bd44f5c517ab7c83de1e77d4d.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/82b8722bd44f5c517ab7c83de1e77d4d.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/82b8722bd44f5c517ab7c83de1e77d4d.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/82b8722bd44f5c517ab7c83de1e77d4d.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/82b8722bd44f5c517ab7c83de1e77d4d.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/82b8722bd44f5c517ab7c83de1e77d4d.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/82b8722bd44f5c517ab7c83de1e77d4d.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/82b8722bd44f5c517ab7c83de1e77d4d.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "hd_flag": true,
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "description": "Kitagawa et Gojô se rendent à un évènement de cosplay à l'aquarium où ils font une rencontre surprenante.",
+      "title": "Les seins, ça s'enfile",
+      "sequence_number": 14,
+      "recent_audio_locale": "fr-FR",
+      "is_mature": false,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "slug_title": "you-can-equip-boobs",
+      "availability_status": "available",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "mature_blocked": false,
+      "episode_number": 14,
+      "upload_date": "2025-07-13T00:00:00+09:00",
+      "audio_locale": "fr-FR",
+      "media_type": "episode",
+      "premium_date": null,
+      "closed_captions_available": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_tags": [],
+      "slug": "",
+      "identifier": "GQWH0M9N8|S2|E14",
+      "episode": "14",
+      "premium_available_date": "2025-08-02T19:00:00Z",
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "recent_variant": "",
+      "season_display_number": "2",
+      "id": "GQJUMZVK0",
+      "is_premium_only": true,
+      "roles": [
+        "dub"
+      ],
+      "season_number": 2,
+      "availability_starts": "2025-08-02T19:00:00Z",
+      "next_episode_id": "GK9UGNK9Z",
+      "series_id": "GQWH0M9N8",
+      "availability_notes": "",
+      "is_dubbed": true,
+      "series_slug_title": "my-dress-up-darling",
+      "is_clip": false,
+      "production_episode_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G31UV2QGJ",
+          "is_premium_only": true,
+          "media_guid": "G8MF7PEZQ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU829P4",
+          "is_premium_only": true,
+          "media_guid": "G25FNVQ5D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GJWUQ1938",
+          "is_premium_only": true,
+          "media_guid": "GM8FE3Q2W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G14UVP9DE",
+          "is_premium_only": true,
+          "media_guid": "GKKFGNMJ4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GQJUMZVK0",
+          "is_premium_only": true,
+          "media_guid": "GGVFXV485",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GPWU8XZ7D",
+          "is_premium_only": true,
+          "media_guid": "GZ4FDM2K1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G0DUMXD7Z",
+          "is_premium_only": true,
+          "media_guid": "G9XF92584",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GWDU73E18",
+          "is_premium_only": true,
+          "media_guid": "GEMFWQX9Z",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/GGVFXV485/streams",
+      "eligible_region": "CA",
+      "episode_air_date": "2025-07-13T00:00:00+09:00",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "available_date": null,
+      "season_sequence_number": 2,
+      "series_title": "My Dress-Up Darling",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "listing_id": "",
+      "seo_description": "",
+      "is_subbed": true,
+      "available_offline": true,
+      "channel_id": "crunchyroll",
+      "next_episode_title": "C'est comme vivre dans leur quotidien, le pied",
+      "season_id": "GR2PCVDD8"
+    },
+    {
+      "series_id": "GQWH0M9N8",
+      "seo_description": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "sequence_number": 15,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "closed_captions_available": false,
+      "season_tags": [],
+      "audio_locale": "fr-FR",
+      "availability_notes": "",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1420097,
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "roles": [
+        "dub"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_title": "My Dress-Up Darling",
+      "is_mature": false,
+      "identifier": "GQWH0M9N8|S2|E15",
+      "season_id": "GR2PCVDD8",
+      "series_slug_title": "my-dress-up-darling",
+      "upload_date": "2025-07-20T00:00:00+09:00",
+      "is_premium_only": true,
+      "recent_audio_locale": "fr-FR",
+      "season_display_number": "2",
+      "eligible_region": "CA",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "description": "Kitagawa et Gojô découvrent une boutique de cosplay complètement ahurissante.",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GPWU8XEP3",
+          "is_premium_only": true,
+          "media_guid": "GZ4FDMJZW",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GMKUE3Q22",
+          "is_premium_only": true,
+          "media_guid": "GPPF8XZ77",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14UVP1KZ",
+          "is_premium_only": true,
+          "media_guid": "GKKFGNK9P",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GQJUMZ3XQ",
+          "is_premium_only": true,
+          "media_guid": "GGVFXVNKZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GK9UGNK9Z",
+          "is_premium_only": true,
+          "media_guid": "G3WFV245P",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G4VUW7VGD",
+          "is_premium_only": true,
+          "media_guid": "GNJFNJ180",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G2XUNVGMW",
+          "is_premium_only": true,
+          "media_guid": "GDVFEG31J",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GZ7UDMEWZ",
+          "is_premium_only": true,
+          "media_guid": "G5JFMDV8Q",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/G3WFV245P/streams",
+      "episode_number": 15,
+      "next_episode_title": "Il connaît mon corps sur le bout des doigts",
+      "mature_blocked": false,
+      "production_episode_id": "",
+      "seo_title": "",
+      "title": "C'est comme vivre dans leur quotidien, le pied",
+      "hd_flag": true,
+      "episode_air_date": "2025-07-20T00:00:00+09:00",
+      "media_type": "episode",
+      "premium_available_date": "2025-08-09T19:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3c66b38db91428c43232e1573989e59e.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/3c66b38db91428c43232e1573989e59e.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/3c66b38db91428c43232e1573989e59e.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/3c66b38db91428c43232e1573989e59e.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3c66b38db91428c43232e1573989e59e.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/3c66b38db91428c43232e1573989e59e.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/3c66b38db91428c43232e1573989e59e.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/3c66b38db91428c43232e1573989e59e.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_starts": "2025-08-09T19:00:00Z",
+      "premium_date": null,
+      "is_clip": false,
+      "season_number": 2,
+      "id": "GK9UGNK9Z",
+      "available_offline": true,
+      "is_dubbed": true,
+      "slug": "",
+      "listing_id": "",
+      "is_subbed": true,
+      "slug_title": "i-wuuuuv-slice-of-life-scenes",
+      "season_sequence_number": 2,
+      "episode": "15",
+      "availability_status": "available",
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "next_episode_id": "G9DU920NP"
+    },
+    {
+      "channel_id": "crunchyroll",
+      "sequence_number": 16,
+      "duration_ms": 1420080,
+      "season_number": 2,
+      "streams_link": "/content/v2/cms/videos/G1QFVP7JE/streams",
+      "is_clip": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "description": "Kitagawa et Gojô sont sommés de préparer un nouveau costume pour la fête du lycée.",
+      "availability_notes": "",
+      "availability_status": "available",
+      "slug": "",
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "id": "G9DU920NP",
+      "audio_locale": "fr-FR",
+      "is_dubbed": true,
+      "slug_title": "",
+      "next_episode_title": "800 millions",
+      "seo_description": "",
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_title": "My Dress-Up Darling",
+      "hd_flag": true,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "episode_number": 16,
+      "availability_starts": "2025-08-16T19:00:00Z",
+      "mature_blocked": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G2XUNVJEZ",
+          "is_premium_only": true,
+          "media_guid": "GDVFEGD54",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9U34WV3",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ10PQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GVWU82MNW",
+          "is_premium_only": true,
+          "media_guid": "G25FNV7X4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GQJUMZ50M",
+          "is_premium_only": true,
+          "media_guid": "GGVFXVJ5X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G9DU920NP",
+          "is_premium_only": true,
+          "media_guid": "G1QFVP7JE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GMKUE31MG",
+          "is_premium_only": true,
+          "media_guid": "GPPF8X9JD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GD9UEGMGV",
+          "is_premium_only": true,
+          "media_guid": "GWMF73238",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GQJUMZ5MM",
+          "is_premium_only": true,
+          "media_guid": "GGVFXVJXX",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "media_type": "episode",
+      "season_display_number": "2",
+      "eligible_region": "CA",
+      "premium_available_date": "2025-08-16T19:00:00Z",
+      "available_offline": true,
+      "recent_audio_locale": "fr-FR",
+      "roles": [
+        "dub"
+      ],
+      "is_premium_only": true,
+      "is_mature": false,
+      "images": {},
+      "seo_title": "",
+      "episode": "16",
+      "series_id": "GQWH0M9N8",
+      "season_sequence_number": 2,
+      "production_episode_id": "",
+      "listing_id": "",
+      "season_id": "GR2PCVDD8",
+      "next_episode_id": "GX9U34EM9",
+      "premium_date": null,
+      "closed_captions_available": false,
+      "identifier": "GQWH0M9N8|S2|E16",
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "title": "Il connaît mon corps sur le bout des doigts",
+      "season_tags": [],
+      "series_slug_title": "my-dress-up-darling",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "episode_air_date": "2025-07-27T00:00:00+09:00",
+      "upload_date": "2025-07-27T00:00:00+09:00",
+      "is_subbed": true,
+      "free_available_date": "9998-11-30T08:00:00Z"
+    },
+    {
+      "is_clip": false,
+      "listing_id": "",
+      "availability_starts": "2025-08-23T19:00:00Z",
+      "series_slug_title": "my-dress-up-darling",
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GJKFQ1W78/streams",
+      "title": "800 millions",
+      "premium_available_date": "2025-08-23T19:00:00Z",
+      "slug": "",
+      "availability_notes": "",
+      "seo_description": "",
+      "next_episode_title": "J'y arriverai de mes mains",
+      "channel_id": "crunchyroll",
+      "description": "Gojô termine la confection du costume et Kitagawa travaille ses attitudes masculines.",
+      "eligible_region": "CA",
+      "seo_title": "",
+      "next_episode_id": "G4VUW750E",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_dubbed": true,
+      "is_subbed": true,
+      "slug_title": "",
+      "closed_captions_available": false,
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "sequence_number": 17,
+      "season_id": "GR2PCVDD8",
+      "series_title": "My Dress-Up Darling",
+      "availability_status": "available",
+      "is_mature": false,
+      "id": "GX9U34EM9",
+      "identifier": "GQWH0M9N8|S2|E17",
+      "season_tags": [],
+      "hd_flag": true,
+      "audio_locale": "fr-FR",
+      "season_number": 2,
+      "is_premium_only": true,
+      "upload_date": "2025-08-03T00:00:00+09:00",
+      "premium_date": null,
+      "series_id": "GQWH0M9N8",
+      "episode_air_date": "2025-08-03T00:00:00+09:00",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "duration_ms": 1420004,
+      "season_display_number": "2",
+      "available_date": null,
+      "episode_number": 17,
+      "images": {},
+      "roles": [
+        "dub"
+      ],
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "mature_blocked": false,
+      "season_sequence_number": 2,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G8WU7PEZD",
+          "is_premium_only": true,
+          "media_guid": "GQ9FMZ7KD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G31UV2NK4",
+          "is_premium_only": true,
+          "media_guid": "G8MF7PJ31",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G50UMD0NG",
+          "is_premium_only": true,
+          "media_guid": "G07FMX2WZ",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GQJUMZ5ZM",
+          "is_premium_only": true,
+          "media_guid": "GGVFXVJVX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GX9U34EM9",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ1W78",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GVWU82MXW",
+          "is_premium_only": true,
+          "media_guid": "G25FNV714",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G14UVP740",
+          "is_premium_only": true,
+          "media_guid": "GKKFGNE30",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G50UMD0MG",
+          "is_premium_only": true,
+          "media_guid": "G07FMX2MZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "recent_audio_locale": "fr-FR",
+      "media_type": "episode",
+      "available_offline": true,
+      "episode": "17"
+    },
+    {
+      "available_date": null,
+      "is_clip": false,
+      "is_subbed": true,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "eligible_region": "CA",
+      "is_premium_only": true,
+      "seo_title": "",
+      "audio_locale": "fr-FR",
+      "season_sequence_number": 2,
+      "series_slug_title": "my-dress-up-darling",
+      "series_id": "GQWH0M9N8",
+      "is_dubbed": true,
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "sequence_number": 18,
+      "premium_date": null,
+      "episode_number": 18,
+      "is_mature": false,
+      "series_title": "My Dress-Up Darling",
+      "next_episode_id": "G14UVP7J0",
+      "season_display_number": "2",
+      "season_id": "GR2PCVDD8",
+      "images": {},
+      "availability_status": "available",
+      "production_episode_id": "",
+      "identifier": "GQWH0M9N8|S2|E18",
+      "availability_notes": "",
+      "recent_audio_locale": "fr-FR",
+      "mature_blocked": false,
+      "slug": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GZ7UDMJZP",
+          "is_premium_only": true,
+          "media_guid": "G5JFMDWQE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GPWU8X9N9",
+          "is_premium_only": true,
+          "media_guid": "GZ4FDMGQG",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GWDU732MZ",
+          "is_premium_only": true,
+          "media_guid": "GEMFWQ73V",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G4VUW750E",
+          "is_premium_only": true,
+          "media_guid": "GNJFNJMKP",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G31UV2NE4",
+          "is_premium_only": true,
+          "media_guid": "G8MF7PJV1",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G50UMD0DG",
+          "is_premium_only": true,
+          "media_guid": "G07FMX2XZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWUQ1W23",
+          "is_premium_only": true,
+          "media_guid": "GM8FE31X2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GWDU7327Z",
+          "is_premium_only": true,
+          "media_guid": "GEMFWQ7WV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "next_episode_title": "On gardera plein de souvenirs",
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "streams_link": "/content/v2/cms/videos/GNJFNJMKP/streams",
+      "available_offline": true,
+      "availability_starts": "2025-08-30T19:00:00Z",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "id": "G4VUW750E",
+      "recent_variant": "",
+      "duration_ms": 1420046,
+      "season_number": 2,
+      "hd_flag": true,
+      "listing_id": "",
+      "slug_title": "",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "description": "Gojô termine le costume de Mlle Rei et Marine participe au concours de beauté du festival, prête à gagner.",
+      "title": "J'y arriverai de mes mains",
+      "upload_date": "2025-08-10T00:00:00+09:00",
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2025-08-30T19:00:00Z",
+      "roles": [
+        "description",
+        "dub"
+      ],
+      "episode_air_date": "2025-08-10T00:00:00+09:00",
+      "season_tags": [],
+      "seo_description": "",
+      "episode": "18"
+    },
+    {
+      "id": "G14UVP7J0",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/70d636cfbf6d48de6267b52c5730bad1.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/70d636cfbf6d48de6267b52c5730bad1.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/70d636cfbf6d48de6267b52c5730bad1.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/70d636cfbf6d48de6267b52c5730bad1.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/70d636cfbf6d48de6267b52c5730bad1.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/70d636cfbf6d48de6267b52c5730bad1.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/70d636cfbf6d48de6267b52c5730bad1.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/70d636cfbf6d48de6267b52c5730bad1.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "next_episode_title": "Je ne sais exprimer ma reconnaissance qu'avec de l'argent",
+      "sequence_number": 19,
+      "recent_variant": "",
+      "slug": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "is_dubbed": true,
+      "season_id": "GR2PCVDD8",
+      "season_tags": [],
+      "availability_notes": "",
+      "identifier": "GQWH0M9N8|S2|E19",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "episode": "19",
+      "roles": [
+        "description",
+        "dub"
+      ],
+      "is_clip": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "upload_date": "2025-08-17T00:00:00+09:00",
+      "episode_number": 19,
+      "channel_id": "crunchyroll",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "available_offline": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "my-dress-up-darling",
+      "episode_air_date": "2025-08-17T00:00:00+09:00",
+      "is_premium_only": true,
+      "description": "Marine met en pause le cosplay mais se fait plaisir avec un achat compulsif !",
+      "mature_blocked": false,
+      "seo_description": "",
+      "audio_locale": "fr-FR",
+      "media_type": "episode",
+      "closed_captions_available": false,
+      "series_title": "My Dress-Up Darling",
+      "streams_link": "/content/v2/cms/videos/GKKFGNE20/streams",
+      "production_episode_id": "",
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "season_number": 2,
+      "season_sequence_number": 2,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GD9UEGD5W",
+          "is_premium_only": true,
+          "media_guid": "GWMF73G1K",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1UXVJ5K",
+          "is_premium_only": true,
+          "media_guid": "G71F3D72G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G14UVP7J0",
+          "is_premium_only": true,
+          "media_guid": "GKKFGNE20",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G2XUNV71X",
+          "is_premium_only": true,
+          "media_guid": "GDVFEGMZ9",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GPWU8X9J9",
+          "is_premium_only": true,
+          "media_guid": "GZ4FDMG3G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GWDU7323Z",
+          "is_premium_only": true,
+          "media_guid": "GEMFWQ7QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UNJMDQ",
+          "is_premium_only": true,
+          "media_guid": "GVMF82M0K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GG1UXVJXK",
+          "is_premium_only": true,
+          "media_guid": "G71F3D73G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "hd_flag": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "seo_title": "",
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "next_episode_id": "GJWUQ1W73",
+      "slug_title": "capture-those-delicious-memories",
+      "premium_available_date": "2025-09-06T19:00:00Z",
+      "listing_id": "",
+      "recent_audio_locale": "fr-FR",
+      "availability_starts": "2025-09-06T19:00:00Z",
+      "series_id": "GQWH0M9N8",
+      "is_mature": false,
+      "eligible_region": "CA",
+      "is_subbed": true,
+      "premium_date": null,
+      "duration_ms": 1420080,
+      "title": "On gardera plein de souvenirs",
+      "season_display_number": "2",
+      "availability_status": "available",
+      "available_date": null
+    },
+    {
+      "season_number": 2,
+      "episode_air_date": "2025-08-24T00:00:00+09:00",
+      "description": "Marine et Gojô se rendent à un event de cosplay en tant qu'observateurs.",
+      "premium_available_date": "2025-09-13T19:00:00Z",
+      "slug_title": "the-only-way-i-can-think-of-to-express-that-gratitude-is-with-money",
+      "season_id": "GR2PCVDD8",
+      "audio_locale": "fr-FR",
+      "next_episode_id": "GN7UNJMKQ",
+      "availability_status": "available",
+      "recent_variant": "",
+      "series_id": "GQWH0M9N8",
+      "is_mature": false,
+      "available_offline": true,
+      "identifier": "GQWH0M9N8|S2|E20",
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/99411c0be8df057de912126193e879d6.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/99411c0be8df057de912126193e879d6.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/99411c0be8df057de912126193e879d6.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/99411c0be8df057de912126193e879d6.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/99411c0be8df057de912126193e879d6.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/99411c0be8df057de912126193e879d6.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/99411c0be8df057de912126193e879d6.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/99411c0be8df057de912126193e879d6.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_dubbed": true,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "available_date": null,
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "hd_flag": true,
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "series_slug_title": "my-dress-up-darling",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "slug": "",
+      "mature_blocked": false,
+      "availability_starts": "2025-09-13T19:00:00Z",
+      "upload_date": "2025-08-24T00:00:00+09:00",
+      "series_title": "My Dress-Up Darling",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "streams_link": "/content/v2/cms/videos/GM8FE31M2/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GQJUMZ7K7",
+          "is_premium_only": true,
+          "media_guid": "GGVFXV080",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G0DUMX2WQ",
+          "is_premium_only": true,
+          "media_guid": "G9XF920NW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GJWUQ1W73",
+          "is_premium_only": true,
+          "media_guid": "GM8FE31M2",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G2XUNV7VX",
+          "is_premium_only": true,
+          "media_guid": "GDVFEGMG9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GG1UXVJVK",
+          "is_premium_only": true,
+          "media_guid": "G71F3D7DG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G8WU7PJVV",
+          "is_premium_only": true,
+          "media_guid": "GQ9FMZ500",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9UGNE3X",
+          "is_premium_only": true,
+          "media_guid": "G3WFV2NX9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G0DUMX2MQ",
+          "is_premium_only": true,
+          "media_guid": "G9XF9209W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "listing_id": "",
+      "title": "Je ne sais exprimer ma reconnaissance qu'avec de l'argent",
+      "duration_ms": 1420004,
+      "episode_number": 20,
+      "seo_description": "",
+      "season_tags": [],
+      "id": "GJWUQ1W73",
+      "premium_date": null,
+      "next_episode_title": "Je ne compte pas dormir cette nuit",
+      "season_display_number": "2",
+      "channel_id": "crunchyroll",
+      "seo_title": "",
+      "availability_notes": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "recent_audio_locale": "fr-FR",
+      "roles": [
+        "description",
+        "dub"
+      ],
+      "is_clip": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "eligible_region": "CA",
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "season_sequence_number": 2,
+      "sequence_number": 20,
+      "media_type": "episode",
+      "is_subbed": true,
+      "episode": "20"
+    },
+    {
+      "season_number": 2,
+      "channel_id": "crunchyroll",
+      "closed_captions_available": false,
+      "episode": "21",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "season_display_number": "2",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_mature": false,
+      "is_subbed": true,
+      "season_id": "GR2PCVDD8",
+      "roles": [
+        "dub"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "is_premium_only": true,
+      "series_slug_title": "my-dress-up-darling",
+      "mature_blocked": false,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "availability_status": "available",
+      "identifier": "GQWH0M9N8|S2|E21",
+      "season_sequence_number": 2,
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "title": "Je ne compte pas dormir cette nuit",
+      "season_tags": [],
+      "recent_variant": "",
+      "series_id": "GQWH0M9N8",
+      "hd_flag": true,
+      "episode_air_date": "2025-08-31T00:00:00+09:00",
+      "next_episode_title": "On va tout faire, là ?",
+      "recent_audio_locale": "fr-FR",
+      "sequence_number": 21,
+      "availability_notes": "",
+      "available_offline": true,
+      "premium_available_date": "2025-09-20T19:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GVMF82MXK/streams",
+      "is_dubbed": true,
+      "available_date": null,
+      "is_clip": false,
+      "premium_date": null,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "audio_locale": "fr-FR",
+      "id": "GN7UNJMKQ",
+      "production_episode_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G50UMDWQ7",
+          "is_premium_only": true,
+          "media_guid": "G07FMX475",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GZ7UDMG3M",
+          "is_premium_only": true,
+          "media_guid": "G5JFMD0ND",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GN7UNJMKQ",
+          "is_premium_only": true,
+          "media_guid": "GVMF82MXK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G8WU7PJPV",
+          "is_premium_only": true,
+          "media_guid": "GQ9FMZ5Z0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G0DUMX2XQ",
+          "is_premium_only": true,
+          "media_guid": "G9XF9202W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GEVUWQ73P",
+          "is_premium_only": true,
+          "media_guid": "GXMF34EMD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GMKUE31XG",
+          "is_premium_only": true,
+          "media_guid": "GPPF8X9KD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GEVUWQ7WP",
+          "is_premium_only": true,
+          "media_guid": "GXMF34E3D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "listing_id": "",
+      "slug": "",
+      "next_episode_id": "GK9UGNE2X",
+      "seo_title": "",
+      "series_title": "My Dress-Up Darling",
+      "upload_date": "2025-08-31T00:00:00+09:00",
+      "description": "Pour se préparer à un cosplay de groupe, Marine et Gojô jouent ensemble et ne voient pas les heures passer.",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug_title": "because-i-dont-intend-to-sleep-tonight",
+      "duration_ms": 1420046,
+      "episode_number": 21,
+      "availability_starts": "2025-09-20T19:00:00Z",
+      "eligible_region": "CA",
+      "seo_description": "",
+      "media_type": "episode",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4edca6d2f1c25024b8f5b2a835fb4eb7.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4edca6d2f1c25024b8f5b2a835fb4eb7.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4edca6d2f1c25024b8f5b2a835fb4eb7.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4edca6d2f1c25024b8f5b2a835fb4eb7.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4edca6d2f1c25024b8f5b2a835fb4eb7.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4edca6d2f1c25024b8f5b2a835fb4eb7.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4edca6d2f1c25024b8f5b2a835fb4eb7.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4edca6d2f1c25024b8f5b2a835fb4eb7.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "sequence_number": 22,
+      "premium_date": null,
+      "season_sequence_number": 2,
+      "is_mature": false,
+      "streams_link": "/content/v2/cms/videos/G3WFV2NE9/streams",
+      "eligible_region": "CA",
+      "available_offline": true,
+      "episode_number": 22,
+      "audio_locale": "fr-FR",
+      "description": "Gojô passe la nuit chez Marine, ce qui la rend très nerveuse et la pousse à l'introspection.",
+      "media_type": "episode",
+      "availability_starts": "2025-09-27T19:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_available_date": "2025-09-27T19:00:00Z",
+      "season_tags": [],
+      "identifier": "GQWH0M9N8|S2|E22",
+      "season_number": 2,
+      "duration_ms": 1420046,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "upload_date": "2025-09-07T00:00:00+09:00",
+      "title": "On va tout faire, là ?",
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "episode_air_date": "2025-09-07T00:00:00+09:00",
+      "is_subbed": true,
+      "is_clip": false,
+      "next_episode_id": "G14UV4ZQ4",
+      "recent_variant": "",
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "closed_captions_available": false,
+      "seo_title": "",
+      "series_id": "GQWH0M9N8",
+      "season_id": "GR2PCVDD8",
+      "season_display_number": "2",
+      "production_episode_id": "",
+      "seo_description": "",
+      "id": "GK9UGNE2X",
+      "channel_id": "crunchyroll",
+      "listing_id": "",
+      "is_premium_only": true,
+      "is_dubbed": true,
+      "recent_audio_locale": "fr-FR",
+      "available_date": null,
+      "next_episode_title": "Je pensais qu'il ne m'arriverait jamais rien de bien",
+      "roles": [
+        "dub"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "series_title": "My Dress-Up Darling",
+      "series_slug_title": "my-dress-up-darling",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GWDU73G1W",
+          "is_premium_only": true,
+          "media_guid": "GEMFWQK92",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GD9UEGMZV",
+          "is_premium_only": true,
+          "media_guid": "GWMF732M8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G7PU3D72W",
+          "is_premium_only": true,
+          "media_guid": "G4GFW750M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GK9UGNE2X",
+          "is_premium_only": true,
+          "media_guid": "G3WFV2NE9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GZ7UDMGMM",
+          "is_premium_only": true,
+          "media_guid": "G5JFMD0DD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GEVUWQ7QP",
+          "is_premium_only": true,
+          "media_guid": "GXMF34E4D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU82M0W",
+          "is_premium_only": true,
+          "media_guid": "G25FNV704",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G9DU9EVZZ",
+          "is_premium_only": true,
+          "media_guid": "G1QFV4ZQQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "mature_blocked": false,
+      "availability_status": "available",
+      "episode": "22",
+      "availability_notes": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d137b72d0cde9e70f4130e698d2b9b29.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d137b72d0cde9e70f4130e698d2b9b29.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d137b72d0cde9e70f4130e698d2b9b29.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d137b72d0cde9e70f4130e698d2b9b29.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d137b72d0cde9e70f4130e698d2b9b29.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d137b72d0cde9e70f4130e698d2b9b29.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d137b72d0cde9e70f4130e698d2b9b29.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d137b72d0cde9e70f4130e698d2b9b29.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug_title": "so-were-gonna-do-it-all-right-now",
+      "hd_flag": true,
+      "slug": ""
+    },
+    {
+      "description": "Gojô s'essaye à la création d'accessoires avec sa nouvelle amie Akira.",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "audio_locale": "fr-FR",
+      "next_episode_id": "GJWUQ2D8W",
+      "hd_flag": true,
+      "is_subbed": true,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "available_date": null,
+      "episode_air_date": "2025-09-14T00:00:00+09:00",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8e7fd8e25f19262aa17dd8c9ae5af878.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8e7fd8e25f19262aa17dd8c9ae5af878.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8e7fd8e25f19262aa17dd8c9ae5af878.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8e7fd8e25f19262aa17dd8c9ae5af878.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8e7fd8e25f19262aa17dd8c9ae5af878.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8e7fd8e25f19262aa17dd8c9ae5af878.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8e7fd8e25f19262aa17dd8c9ae5af878.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8e7fd8e25f19262aa17dd8c9ae5af878.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "roles": [
+        "dub"
+      ],
+      "premium_available_date": "2025-10-04T19:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "seo_description": "",
+      "season_display_number": "2",
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "duration_ms": 1420080,
+      "is_clip": false,
+      "is_mature": false,
+      "series_slug_title": "my-dress-up-darling",
+      "closed_captions_available": false,
+      "identifier": "GQWH0M9N8|S2|E23",
+      "eligible_region": "CA",
+      "season_number": 2,
+      "next_episode_title": "My Dress-Up Darling",
+      "title": "Je pensais qu'il ne m'arriverait jamais rien de bien",
+      "streams_link": "/content/v2/cms/videos/GKKFG3PV3/streams",
+      "premium_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1UXV089",
+          "is_premium_only": true,
+          "media_guid": "G71F3D0QE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G31UV2NX4",
+          "is_premium_only": true,
+          "media_guid": "G8MF7PJN1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GX9U3Q81M",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ2DN7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G14UV4ZQ4",
+          "is_premium_only": true,
+          "media_guid": "GKKFG3PV3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUWQ4K7",
+          "is_premium_only": true,
+          "media_guid": "GNJFND3XJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GJWUQ2DNQ",
+          "is_premium_only": true,
+          "media_guid": "GM8FEXD9E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GN7UND3X0",
+          "is_premium_only": true,
+          "media_guid": "GVMF80GN1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GX9U3Q89Z",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ2D8E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "availability_starts": "2025-10-04T19:00:00Z",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "media_type": "episode",
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "slug": "",
+      "season_id": "GR2PCVDD8",
+      "episode": "23",
+      "is_dubbed": true,
+      "is_premium_only": true,
+      "id": "G14UV4ZQ4",
+      "season_sequence_number": 2,
+      "season_tags": [],
+      "listing_id": "",
+      "episode_number": 23,
+      "series_title": "My Dress-Up Darling",
+      "sequence_number": 23,
+      "availability_notes": "",
+      "production_episode_id": "",
+      "available_offline": true,
+      "recent_variant": "",
+      "mature_blocked": false,
+      "series_id": "GQWH0M9N8",
+      "upload_date": "2025-09-14T00:00:00+09:00",
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "fr-FR",
+      "slug_title": "i-didnt-think-anything-good-would-ever-happen-to-me",
+      "seo_title": "",
+      "availability_status": "available"
+    },
+    {
+      "season_id": "GR2PCVDD8",
+      "availability_status": "available",
+      "season_sequence_number": 2,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "premium_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/20e9145d7d16afa3b60e0305f47fd408.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/20e9145d7d16afa3b60e0305f47fd408.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/20e9145d7d16afa3b60e0305f47fd408.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/20e9145d7d16afa3b60e0305f47fd408.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/20e9145d7d16afa3b60e0305f47fd408.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/20e9145d7d16afa3b60e0305f47fd408.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/20e9145d7d16afa3b60e0305f47fd408.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/20e9145d7d16afa3b60e0305f47fd408.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "fr-FR",
+      "roles": [
+        "dub"
+      ],
+      "available_date": null,
+      "seo_title": "",
+      "premium_available_date": "2025-10-11T19:00:00Z",
+      "duration_ms": 1420040,
+      "available_offline": true,
+      "availability_starts": "2025-10-11T19:00:00Z",
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2025-09-21T00:00:00+09:00",
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Violence sexuelle",
+        "Tabagisme",
+        "Dialogues suggestifs"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_id": "GZ7UDM4X3",
+      "season_number": 2,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_premium_only": true,
+      "season_title": "My Dress-Up Darling Season 2 (French Dub)",
+      "seo_description": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "hd_flag": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "mature_blocked": false,
+      "recent_variant": "",
+      "description": "Marine et Gojô participent à un cosplay de groupe qui s'inspire d'un jeu d'horreur.",
+      "series_id": "GQWH0M9N8",
+      "streams_link": "/content/v2/cms/videos/GM8FEXDW1/streams",
+      "id": "GJWUQ2D8W",
+      "title": "My Dress-Up Darling",
+      "availability_notes": "",
+      "sequence_number": 24,
+      "eligible_region": "CA",
+      "series_title": "My Dress-Up Darling",
+      "episode_number": 24,
+      "next_episode_title": "Wakana Gojô, 15 ans, en pleine puberté",
+      "season_tags": [],
+      "slug_title": "dear-my-dress-up-darling",
+      "identifier": "GQWH0M9N8|S2|E24",
+      "episode": "24",
+      "recent_audio_locale": "fr-FR",
+      "season_slug_title": "my-dress-up-darling-season-2-french-dub",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUMX477",
+          "is_premium_only": true,
+          "media_guid": "G9XF92788",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CPG00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9UG3PVP",
+          "is_premium_only": true,
+          "media_guid": "G3WFVXJKJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYGGCVZZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G4VUWQ4Z1",
+          "is_premium_only": true,
+          "media_guid": "GNJFND3G2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRZXCM11K",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G14UV4Z21",
+          "is_premium_only": true,
+          "media_guid": "GKKFG3PQK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCP008",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GJWUQ2D8W",
+          "is_premium_only": true,
+          "media_guid": "GM8FEXDW1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR2PCVDD8",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GN7UND3PX",
+          "is_premium_only": true,
+          "media_guid": "GVMF80GQN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6P8CXDDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GK9UG3P52",
+          "is_premium_only": true,
+          "media_guid": "G3WFVXJ0E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2ZZ3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G2XUN0ZKN",
+          "is_premium_only": true,
+          "media_guid": "GDVFEV4KE",
+          "original": false,
+          "roles": [
+            "description",
+            "dub"
+          ],
+          "season_guid": "GRDQCG885",
+          "variant": ""
+        }
+      ],
+      "upload_date": "2025-09-21T00:00:00+09:00",
+      "production_episode_id": "",
+      "is_clip": false,
+      "listing_id": "",
+      "series_slug_title": "my-dress-up-darling",
+      "slug": "",
+      "is_mature": false,
+      "media_type": "episode",
+      "season_display_number": "2"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

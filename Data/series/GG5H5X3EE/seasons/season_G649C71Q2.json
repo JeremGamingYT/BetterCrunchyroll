@@ -1,0 +1,2129 @@
+{
+  "total": 9,
+  "data": [
+    {
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c3d16fbc85a9c85c27ade88f08faff85.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c3d16fbc85a9c85c27ade88f08faff85.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c3d16fbc85a9c85c27ade88f08faff85.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c3d16fbc85a9c85c27ade88f08faff85.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c3d16fbc85a9c85c27ade88f08faff85.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c3d16fbc85a9c85c27ade88f08faff85.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c3d16fbc85a9c85c27ade88f08faff85.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c3d16fbc85a9c85c27ade88f08faff85.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_mature": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_starts": "2025-10-07T15:30:00Z",
+      "series_id": "GG5H5X3EE",
+      "duration_ms": 1435061,
+      "season_number": 2,
+      "audio_locale": "ja-JP",
+      "episode_air_date": "2025-10-07T00:00:00Z",
+      "closed_captions_available": false,
+      "episode_number": 1,
+      "season_slug_title": "season-2",
+      "id": "G50UMZ3Z8",
+      "seo_description": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "identifier": "GG5H5X3EE|S00361874|E1",
+      "seo_title": "",
+      "season_sequence_number": 2,
+      "season_title": "Hero Skill - Achats en ligne Saison 2",
+      "roles": [
+        "main"
+      ],
+      "season_id": "G649C71Q2",
+      "streams_link": "/content/v2/cms/videos/G50UMZ3Z8V/streams",
+      "next_episode_title": "Dépeçage du dragon",
+      "slug_title": "my-new-friend-is-absurd",
+      "hd_flag": true,
+      "listing_id": "",
+      "title": "Un nouveau compagnon",
+      "upload_date": "2025-10-07T00:00:00Z",
+      "season_display_number": "",
+      "production_episode_id": "",
+      "slug": "",
+      "is_dubbed": true,
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "sequence_number": 1,
+      "available_offline": true,
+      "series_title": "Hero Skill - Achats en ligne",
+      "availability_status": "available",
+      "premium_available_date": "2025-10-07T15:30:00Z",
+      "media_type": "episode",
+      "description": "En route vers sa nouvelle destination, Mukôda attire une créature étonnante en cuisinant un nouveau plat.",
+      "next_episode_id": "G7PU34NEQ",
+      "recent_audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "availability_notes": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "eligible_region": "CA",
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_date": null,
+      "series_slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "is_subbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G50UMZ3Z8",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ3Z8V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G649C71Q2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1UX2P2M",
+          "is_premium_only": true,
+          "media_guid": "GG1UX2P2MV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CP94G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G0DUMNEN9",
+          "is_premium_only": true,
+          "media_guid": "G0DUMNEN9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1929",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GEVUWZVZG",
+          "is_premium_only": true,
+          "media_guid": "GEVUWZVZGV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ2D1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G7PU34N40",
+          "is_premium_only": true,
+          "media_guid": "G7PU34N40V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNM3E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "G9DU9EVE1",
+          "is_premium_only": true,
+          "media_guid": "G9DU9EVE1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3QE9",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "G9DU9EVJ3",
+          "is_premium_only": true,
+          "media_guid": "G9DU9EVJ3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCPG75",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361875HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361875HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CP9K3",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00361875TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361875TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361874TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00361875TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361875TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361874TEIN",
+          "variant": ""
+        }
+      ],
+      "premium_date": null,
+      "is_clip": false,
+      "episode": "1"
+    },
+    {
+      "streams_link": "/content/v2/cms/videos/G7PU34NEQV/streams",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "id": "G7PU34NEQ",
+      "premium_available_date": "2025-10-14T15:30:00Z",
+      "episode_air_date": "2025-10-14T00:00:00Z",
+      "season_number": 2,
+      "duration_ms": 1435019,
+      "media_type": "episode",
+      "series_slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "next_episode_title": "Steak de dragon trois étoiles",
+      "eligible_region": "CA",
+      "availability_starts": "2025-10-14T15:30:00Z",
+      "season_display_number": "",
+      "availability_status": "available",
+      "description": "Mukôda et ses compagnons arrivent à Doran dans le but de faire dépecer leur fameux dragon.",
+      "production_episode_id": "",
+      "identifier": "GG5H5X3EE|S00361874|E2",
+      "available_offline": true,
+      "available_date": null,
+      "sequence_number": 2,
+      "season_sequence_number": 2,
+      "channel_id": "crunchyroll",
+      "episode": "2",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_title": "Hero Skill - Achats en ligne Saison 2",
+      "is_premium_only": true,
+      "slug_title": "i-will-process-the-earth-dragon",
+      "upload_date": "2025-10-14T00:00:00Z",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "is_dubbed": true,
+      "season_slug_title": "season-2",
+      "availability_notes": "",
+      "listing_id": "",
+      "premium_date": null,
+      "title": "Dépeçage du dragon",
+      "is_mature": false,
+      "is_subbed": true,
+      "is_clip": false,
+      "closed_captions_available": false,
+      "seo_description": "",
+      "series_id": "GG5H5X3EE",
+      "next_episode_id": "GG1UX2KX7",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode_number": 2,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6fa1bde6fa49b8e2d00f2157bffc02d6.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6fa1bde6fa49b8e2d00f2157bffc02d6.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6fa1bde6fa49b8e2d00f2157bffc02d6.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6fa1bde6fa49b8e2d00f2157bffc02d6.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6fa1bde6fa49b8e2d00f2157bffc02d6.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6fa1bde6fa49b8e2d00f2157bffc02d6.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6fa1bde6fa49b8e2d00f2157bffc02d6.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6fa1bde6fa49b8e2d00f2157bffc02d6.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "hd_flag": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "series_title": "Hero Skill - Achats en ligne",
+      "roles": [
+        "main"
+      ],
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU34NEQ",
+          "is_premium_only": true,
+          "media_guid": "G7PU34NEQV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G649C71Q2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G4VUWQ491",
+          "is_premium_only": true,
+          "media_guid": "G4VUWQ491V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1929",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G14UV4ZD1",
+          "is_premium_only": true,
+          "media_guid": "G14UV4ZD1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ2D1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9U3Q8XZ",
+          "is_premium_only": true,
+          "media_guid": "GX9U3Q8XZV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CP94G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GN7UND3QX",
+          "is_premium_only": true,
+          "media_guid": "GN7UND3QXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3QE9",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GJWUQ2D3W",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ2D3WV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNM3E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "G9DU9EKK7",
+          "is_premium_only": true,
+          "media_guid": "G9DU9EKK7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCPG75",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361877HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361877HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CP9K3",
+          "variant": ""
+        }
+      ],
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "slug": "",
+      "mature_blocked": false,
+      "audio_locale": "ja-JP",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "season_id": "G649C71Q2"
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_subbed": true,
+      "season_id": "G649C71Q2",
+      "mature_blocked": false,
+      "available_offline": true,
+      "availability_status": "available",
+      "closed_captions_available": false,
+      "duration_ms": 1434977,
+      "premium_available_date": "2025-10-21T15:30:00Z",
+      "recent_variant": "",
+      "availability_notes": "",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "sequence_number": 3,
+      "eligible_region": "CA",
+      "season_slug_title": "season-2",
+      "media_type": "episode",
+      "identifier": "GG5H5X3EE|S00361874|E3",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "upload_date": "2025-10-21T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GG1UX2KX7V/streams",
+      "title": "Steak de dragon trois étoiles",
+      "series_title": "Hero Skill - Achats en ligne",
+      "premium_date": null,
+      "description": "En attendant qu'Elrand dépèce le dragon, Mukôda se renseigne sur le donjon.",
+      "episode": "3",
+      "is_premium_only": true,
+      "series_slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/540c03f32c578af7fbd063efb86b3ee2.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/540c03f32c578af7fbd063efb86b3ee2.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/540c03f32c578af7fbd063efb86b3ee2.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/540c03f32c578af7fbd063efb86b3ee2.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/540c03f32c578af7fbd063efb86b3ee2.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/540c03f32c578af7fbd063efb86b3ee2.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/540c03f32c578af7fbd063efb86b3ee2.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/540c03f32c578af7fbd063efb86b3ee2.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_dubbed": true,
+      "next_episode_id": "G0DUMNVM3",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_id": "GG5H5X3EE",
+      "episode_number": 3,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "audio_locale": "ja-JP",
+      "hd_flag": true,
+      "availability_starts": "2025-10-21T15:30:00Z",
+      "season_display_number": "",
+      "season_sequence_number": 2,
+      "id": "GG1UX2KX7",
+      "recent_audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1UX2KX7",
+          "is_premium_only": true,
+          "media_guid": "GG1UX2KX7V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G649C71Q2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9UG39GD",
+          "is_premium_only": true,
+          "media_guid": "GK9UG39GDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CP94G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G50UMZ8G3",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ8G3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1929",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GJWUQ2PKZ",
+          "is_premium_only": true,
+          "media_guid": "GJWUQ2PKZV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ2D1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G50UMZ833",
+          "is_premium_only": true,
+          "media_guid": "G50UMZ833V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNM3E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GPWU8K33N",
+          "is_premium_only": true,
+          "media_guid": "GPWU8K33NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3QE9",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GX9U3QVVP",
+          "is_premium_only": true,
+          "media_guid": "GX9U3QVVPV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCPG75",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361879HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361879HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CP9K3",
+          "variant": ""
+        }
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "is_clip": false,
+      "roles": [
+        "main"
+      ],
+      "season_title": "Hero Skill - Achats en ligne Saison 2",
+      "next_episode_title": "Pas de donjon sans accompagnements",
+      "seo_title": "",
+      "season_number": 2,
+      "episode_air_date": "2025-10-21T00:00:00Z",
+      "slug": "",
+      "production_episode_id": "",
+      "listing_id": "",
+      "slug_title": "guaranteed-three-star-earth-dragon-steak",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "seo_description": "",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "is_mature": false
+    },
+    {
+      "season_display_number": "",
+      "slug": "",
+      "title": "Pas de donjon sans accompagnements",
+      "recent_audio_locale": "ja-JP",
+      "premium_date": null,
+      "series_id": "GG5H5X3EE",
+      "audio_locale": "ja-JP",
+      "availability_status": "available",
+      "seo_description": "",
+      "availability_notes": "",
+      "available_date": null,
+      "episode": "4",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "duration_ms": 1435019,
+      "is_dubbed": true,
+      "identifier": "GG5H5X3EE|S00361874|E4",
+      "is_subbed": true,
+      "slug_title": "the-dungeon-with-ready-made-food",
+      "sequence_number": 4,
+      "production_episode_id": "",
+      "availability_starts": "2025-10-28T15:30:00Z",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "available_offline": true,
+      "season_id": "G649C71Q2",
+      "recent_variant": "",
+      "description": "Il est l'heure d'aller conquérir le donjon, mais de nombreux dangers attendent Mukôda et sa troupe.",
+      "is_mature": false,
+      "listing_id": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_number": 4,
+      "eligible_region": "CA",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "media_type": "episode",
+      "season_number": 2,
+      "series_title": "Hero Skill - Achats en ligne",
+      "next_episode_id": "GEVUWZ1W8",
+      "closed_captions_available": false,
+      "season_slug_title": "season-2",
+      "is_clip": false,
+      "hd_flag": true,
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2025-10-28T00:00:00Z",
+      "id": "G0DUMNVM3",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/19e0ff788a390a780378c9a101c58509.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/19e0ff788a390a780378c9a101c58509.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/19e0ff788a390a780378c9a101c58509.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/19e0ff788a390a780378c9a101c58509.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/19e0ff788a390a780378c9a101c58509.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/19e0ff788a390a780378c9a101c58509.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/19e0ff788a390a780378c9a101c58509.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/19e0ff788a390a780378c9a101c58509.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "streams_link": "/content/v2/cms/videos/G0DUMNVM3V/streams",
+      "roles": [
+        "main"
+      ],
+      "next_episode_title": "La faim est notre pire ennemie",
+      "upload_date": "2025-10-28T00:00:00Z",
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "season_sequence_number": 2,
+      "season_title": "Hero Skill - Achats en ligne Saison 2",
+      "premium_available_date": "2025-10-28T15:30:00Z",
+      "series_slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUMNVM3",
+          "is_premium_only": true,
+          "media_guid": "G0DUMNVM3V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G649C71Q2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GMKUEXNEQ",
+          "is_premium_only": true,
+          "media_guid": "GMKUEXNEQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CP94G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GWDU78404",
+          "is_premium_only": true,
+          "media_guid": "GWDU78404V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1929",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GN7UND804",
+          "is_premium_only": true,
+          "media_guid": "GN7UND804V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ2D1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GWDU784Z4",
+          "is_premium_only": true,
+          "media_guid": "GWDU784Z4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNM3E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "G2XUN0MM1",
+          "is_premium_only": true,
+          "media_guid": "G2XUN0MM1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3QE9",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "G4VUWQGGJ",
+          "is_premium_only": true,
+          "media_guid": "G4VUWQGGJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCPG75",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00361881HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00361881HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CP9K3",
+          "variant": ""
+        }
+      ],
+      "seo_title": ""
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "season-2",
+      "recent_variant": "",
+      "upload_date": "2025-11-04T00:00:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "season_number": 2,
+      "season_title": "Hero Skill - Achats en ligne Saison 2",
+      "available_date": null,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "mature_blocked": false,
+      "id": "GEVUWZ1W8",
+      "next_episode_title": "L'évolution d'Achats en ligne",
+      "duration_ms": 1434935,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/836b38c75968ab33ccb45f736fb25396.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/836b38c75968ab33ccb45f736fb25396.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/836b38c75968ab33ccb45f736fb25396.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/836b38c75968ab33ccb45f736fb25396.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/836b38c75968ab33ccb45f736fb25396.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/836b38c75968ab33ccb45f736fb25396.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/836b38c75968ab33ccb45f736fb25396.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/836b38c75968ab33ccb45f736fb25396.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "slug": "",
+      "episode_air_date": "2025-11-04T00:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "title": "La faim est notre pire ennemie",
+      "season_display_number": "",
+      "listing_id": "",
+      "roles": [
+        "main"
+      ],
+      "identifier": "GG5H5X3EE|S00361874|E5",
+      "audio_locale": "ja-JP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "production_episode_id": "",
+      "series_id": "GG5H5X3EE",
+      "hd_flag": true,
+      "episode": "5",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "premium_available_date": "2025-11-04T15:30:00Z",
+      "is_clip": false,
+      "is_premium_only": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUWZ1W8",
+          "is_premium_only": true,
+          "media_guid": "GEVUWZ1W8V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G649C71Q2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU80387",
+          "is_premium_only": true,
+          "media_guid": "GVWU80387V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CP94G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GG1UX2K17",
+          "is_premium_only": true,
+          "media_guid": "GG1UX2K17V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1929",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GK9UG39WD",
+          "is_premium_only": true,
+          "media_guid": "GK9UG39WDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ2D1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GG1UX2KP7",
+          "is_premium_only": true,
+          "media_guid": "GG1UX2KP7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNM3E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "G8WU7NKKP",
+          "is_premium_only": true,
+          "media_guid": "G8WU7NKKPV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3QE9",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00361883THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00361883THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCPG75",
+          "variant": ""
+        }
+      ],
+      "is_mature": false,
+      "series_slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "sequence_number": 5,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "eligible_region": "CA",
+      "is_dubbed": true,
+      "series_title": "Hero Skill - Achats en ligne",
+      "availability_starts": "2025-11-04T15:30:00Z",
+      "available_offline": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "streams_link": "/content/v2/cms/videos/GEVUWZ1W8V/streams",
+      "slug_title": "is-the-enemy-monsters-or-hunger",
+      "availability_status": "available",
+      "next_episode_id": "GE00361885JAJP",
+      "premium_date": null,
+      "season_id": "G649C71Q2",
+      "media_type": "episode",
+      "seo_description": "",
+      "episode_number": 5,
+      "is_subbed": true,
+      "closed_captions_available": false,
+      "season_sequence_number": 2,
+      "description": "Au fur et à mesure de l'avancée dans le donjon, les ennemis se font de plus en plus redoutables.",
+      "channel_id": "crunchyroll"
+    },
+    {
+      "eligible_region": "CA",
+      "availability_notes": "",
+      "seo_title": "",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "is_dubbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c1f1f351ad766c31860ac1fe5b031a3b.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c1f1f351ad766c31860ac1fe5b031a3b.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c1f1f351ad766c31860ac1fe5b031a3b.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c1f1f351ad766c31860ac1fe5b031a3b.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c1f1f351ad766c31860ac1fe5b031a3b.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c1f1f351ad766c31860ac1fe5b031a3b.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c1f1f351ad766c31860ac1fe5b031a3b.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c1f1f351ad766c31860ac1fe5b031a3b.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_date": null,
+      "episode": "6",
+      "identifier": "GG5H5X3EE|S00361874|E6",
+      "season_display_number": "",
+      "media_type": "episode",
+      "channel_id": "crunchyroll",
+      "season_id": "G649C71Q2",
+      "upload_date": "2025-11-11T00:00:00Z",
+      "is_mature": false,
+      "next_episode_id": "G9DU9EK97",
+      "audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GE00361885JAJPV/streams",
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "mature_blocked": false,
+      "versions": [
+        {
+          "audio_locale": "es-419",
+          "guid": "G0DUMNVZ3",
+          "is_premium_only": true,
+          "media_guid": "G0DUMNVZ3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1929",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GMKUEXN0Q",
+          "is_premium_only": true,
+          "media_guid": "GMKUEXN0QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ2D1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G0DUMNVE3",
+          "is_premium_only": true,
+          "media_guid": "G0DUMNVE3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNM3E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361885JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361885JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G649C71Q2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361885ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361885ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CP94G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GE00361885IDID",
+          "is_premium_only": true,
+          "media_guid": "GE00361885IDIDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3QE9",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00361885THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00361885THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCPG75",
+          "variant": ""
+        }
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "season_number": 2,
+      "slug": "",
+      "id": "GE00361885JAJP",
+      "recent_variant": "",
+      "availability_status": "available",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "roles": [
+        "main"
+      ],
+      "description": "Une fois sortis du donjon, Mukôda et sa troupe doivent faire leur rapport à la guilde.",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_starts": "2025-11-11T15:30:00Z",
+      "premium_date": null,
+      "sequence_number": 6,
+      "listing_id": "",
+      "series_slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "episode_number": 6,
+      "available_offline": true,
+      "production_episode_id": "",
+      "is_premium_only": true,
+      "closed_captions_available": false,
+      "season_title": "Hero Skill - Achats en ligne Saison 2",
+      "duration_ms": 1435019,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_title": "Le paradis de la bouffe",
+      "season_slug_title": "season-2",
+      "premium_available_date": "2025-11-11T15:30:00Z",
+      "seo_description": "",
+      "is_subbed": true,
+      "season_sequence_number": 2,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "series_id": "GG5H5X3EE",
+      "hd_flag": true,
+      "episode_air_date": "2025-11-11T00:00:00Z",
+      "slug_title": "online-grocery-levels-up",
+      "recent_audio_locale": "ja-JP",
+      "title": "L'évolution d'Achats en ligne",
+      "series_title": "Hero Skill - Achats en ligne",
+      "is_clip": false
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_id": "GX9U3QV3P",
+      "hd_flag": true,
+      "recent_variant": "",
+      "episode_air_date": "2025-11-18T00:00:00Z",
+      "episode": "7",
+      "is_subbed": true,
+      "availability_notes": "",
+      "listing_id": "",
+      "production_episode_id": "",
+      "season_slug_title": "season-2",
+      "roles": [
+        "main"
+      ],
+      "title": "Le paradis de la bouffe",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "id": "G9DU9EK97",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "available_date": null,
+      "sequence_number": 7,
+      "is_mature": false,
+      "season_number": 2,
+      "availability_status": "available",
+      "season_sequence_number": 2,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "next_episode_title": "Un forgeron rêve-t-il de barbecue ?",
+      "series_title": "Hero Skill - Achats en ligne",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c54953c3e40db61d1ad5865ff7e7c816.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c54953c3e40db61d1ad5865ff7e7c816.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c54953c3e40db61d1ad5865ff7e7c816.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c54953c3e40db61d1ad5865ff7e7c816.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c54953c3e40db61d1ad5865ff7e7c816.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c54953c3e40db61d1ad5865ff7e7c816.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c54953c3e40db61d1ad5865ff7e7c816.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c54953c3e40db61d1ad5865ff7e7c816.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "seo_title": "",
+      "recent_audio_locale": "ja-JP",
+      "series_id": "GG5H5X3EE",
+      "series_slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DU9EK97",
+          "is_premium_only": true,
+          "media_guid": "G9DU9EK97V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G649C71Q2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361887DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361887DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNM3E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00361887PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00361887PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ2D1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00361887ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00361887ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1929",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361887ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361887ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CP94G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GE00361887IDID",
+          "is_premium_only": true,
+          "media_guid": "GE00361887IDIDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3QE9",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00361887THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00361887THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCPG75",
+          "variant": ""
+        }
+      ],
+      "channel_id": "crunchyroll",
+      "availability_starts": "2025-11-18T15:36:00Z",
+      "season_title": "Hero Skill - Achats en ligne Saison 2",
+      "is_premium_only": true,
+      "slug": "",
+      "audio_locale": "ja-JP",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "identifier": "GG5H5X3EE|S00361874|E7",
+      "eligible_region": "CA",
+      "duration_ms": 1434977,
+      "upload_date": "2025-11-18T00:00:00Z",
+      "season_id": "G649C71Q2",
+      "mature_blocked": false,
+      "available_offline": true,
+      "premium_date": null,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_clip": false,
+      "slug_title": "street-snacking-heaven",
+      "streams_link": "/content/v2/cms/videos/G9DU9EK97V/streams",
+      "seo_description": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "is_dubbed": true,
+      "season_display_number": "",
+      "description": "Ugor propose à Mukôda d'aller négocier ses trésors avec la guilde des marchands.",
+      "episode_number": 7,
+      "premium_available_date": "2025-11-18T15:36:00Z"
+    },
+    {
+      "channel_id": "crunchyroll",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "id": "GX9U3QV3P",
+      "next_episode_id": "G4VUWQGWJ",
+      "next_episode_title": "Vacances et chasse vont de pair",
+      "season_number": 2,
+      "premium_available_date": "2025-11-25T15:30:00Z",
+      "recent_variant": "",
+      "available_date": null,
+      "is_premium_only": true,
+      "description": "Mukôda et ses familiers rêvent de barbecue, mais il faut convaincre un forgeron de leur en fabriquer un.",
+      "availability_notes": "",
+      "series_title": "Hero Skill - Achats en ligne",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GX9U3QV3P",
+          "is_premium_only": true,
+          "media_guid": "GX9U3QV3PV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G649C71Q2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00361889ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00361889ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1929",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00361889PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00361889PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ2D1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361889DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361889DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNM3E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361889ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361889ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CP94G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GE00361889IDID",
+          "is_premium_only": true,
+          "media_guid": "GE00361889IDIDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3QE9",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00361889THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00361889THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY8VCPG75",
+          "variant": ""
+        }
+      ],
+      "recent_audio_locale": "ja-JP",
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "season_id": "G649C71Q2",
+      "streams_link": "/content/v2/cms/videos/GX9U3QV3PV/streams",
+      "eligible_region": "CA",
+      "seo_title": "",
+      "episode": "8",
+      "season_sequence_number": 2,
+      "is_mature": false,
+      "listing_id": "",
+      "closed_captions_available": false,
+      "season_title": "Hero Skill - Achats en ligne Saison 2",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_id": "GG5H5X3EE",
+      "season_slug_title": "season-2",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1f778d767df2eb01dbe9ba0cf5d879a3.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1f778d767df2eb01dbe9ba0cf5d879a3.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1f778d767df2eb01dbe9ba0cf5d879a3.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1f778d767df2eb01dbe9ba0cf5d879a3.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1f778d767df2eb01dbe9ba0cf5d879a3.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1f778d767df2eb01dbe9ba0cf5d879a3.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1f778d767df2eb01dbe9ba0cf5d879a3.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1f778d767df2eb01dbe9ba0cf5d879a3.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_display_number": "",
+      "premium_date": null,
+      "series_slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "is_subbed": true,
+      "hd_flag": true,
+      "roles": [
+        "main"
+      ],
+      "episode_number": 8,
+      "sequence_number": 8,
+      "audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "title": "Un forgeron rêve-t-il de barbecue ?",
+      "identifier": "GG5H5X3EE|S00361874|E8",
+      "slug": "",
+      "is_clip": false,
+      "seo_description": "",
+      "upload_date": "2025-11-25T00:00:00Z",
+      "available_offline": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "episode_air_date": "2025-11-25T00:00:00Z",
+      "availability_status": "available",
+      "media_type": "episode",
+      "is_dubbed": true,
+      "availability_starts": "2025-11-25T15:30:00Z",
+      "slug_title": "do-blacksmiths-dream-of-bbq",
+      "duration_ms": 1435061,
+      "mature_blocked": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ]
+    },
+    {
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "season_title": "Hero Skill - Achats en ligne Saison 2",
+      "is_clip": false,
+      "closed_captions_available": false,
+      "next_episode_id": "G14UV4KVD",
+      "hd_flag": true,
+      "listing_id": "",
+      "upload_date": "2025-12-02T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/G4VUWQGWJV/streams",
+      "is_mature": false,
+      "duration_ms": 1435061,
+      "slug": "",
+      "premium_available_date": "2025-12-02T15:30:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_slug_title": "season-2",
+      "episode": "9",
+      "audio_locale": "ja-JP",
+      "mature_blocked": false,
+      "production_episode_id": "",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "season_sequence_number": 2,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_description": "",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "is_dubbed": true,
+      "availability_starts": "2025-12-02T15:30:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/615f5f70172c4c4a9b3b853535772a3f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/615f5f70172c4c4a9b3b853535772a3f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/615f5f70172c4c4a9b3b853535772a3f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/615f5f70172c4c4a9b3b853535772a3f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/615f5f70172c4c4a9b3b853535772a3f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/615f5f70172c4c4a9b3b853535772a3f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/615f5f70172c4c4a9b3b853535772a3f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/615f5f70172c4c4a9b3b853535772a3f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "slug_title": "a-vacation-along-with-subjugation",
+      "sequence_number": 9,
+      "season_id": "G649C71Q2",
+      "title": "Vacances et chasse vont de pair",
+      "series_slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_status": "available",
+      "id": "G4VUWQGWJ",
+      "description": "Mukôda souhaite partir vers la mer et se dirige donc vers la petite ville de Neihof.",
+      "next_episode_title": "Episode 10",
+      "seo_title": "",
+      "premium_date": null,
+      "availability_notes": "",
+      "identifier": "GG5H5X3EE|S00361874|E9",
+      "eligible_region": "CA",
+      "series_title": "Hero Skill - Achats en ligne",
+      "season_number": 2,
+      "season_display_number": "",
+      "media_type": "episode",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUWQGWJ",
+          "is_premium_only": true,
+          "media_guid": "G4VUWQGWJV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G649C71Q2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00361891ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00361891ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1929",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361891DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361891DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNM3E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361891ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361891ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CP94G",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00361891PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00361891PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ2D1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GE00361891IDID",
+          "is_premium_only": true,
+          "media_guid": "GE00361891IDIDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3QE9",
+          "variant": ""
+        }
+      ],
+      "available_date": null,
+      "roles": [
+        "main"
+      ],
+      "available_offline": true,
+      "series_id": "GG5H5X3EE",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode_air_date": "2025-12-02T00:00:00Z",
+      "channel_id": "crunchyroll",
+      "episode_number": 9,
+      "is_subbed": true,
+      "is_premium_only": true
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

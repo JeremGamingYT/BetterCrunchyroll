@@ -1,0 +1,246 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "seo_description": "",
+      "series_title": "JUJUTSU KAISEN",
+      "episode": "",
+      "roles": [
+        "dub"
+      ],
+      "is_clip": false,
+      "season_sequence_number": 2,
+      "media_type": "episode",
+      "availability_status": "available",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/744c2b59dec74abb4d4ac7f32e575950.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/744c2b59dec74abb4d4ac7f32e575950.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/744c2b59dec74abb4d4ac7f32e575950.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/744c2b59dec74abb4d4ac7f32e575950.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/744c2b59dec74abb4d4ac7f32e575950.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/744c2b59dec74abb4d4ac7f32e575950.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/744c2b59dec74abb4d4ac7f32e575950.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/744c2b59dec74abb4d4ac7f32e575950.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_number": 18,
+      "closed_captions_available": false,
+      "episode_number": null,
+      "season_title": "JUJUTSU KAISEN 0 (VF)",
+      "season_slug_title": "jujutsu-kaisen-0-french-dub",
+      "eligible_region": "CA",
+      "is_mature": false,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "duration_ms": 6295432,
+      "next_episode_id": "GMKUX2WX7",
+      "slug": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "available_offline": true,
+      "slug_title": "jujutsu-kaisen-0-french-dub",
+      "title": "JUJUTSU KAISEN 0 (VF)",
+      "is_subbed": true,
+      "sequence_number": 0,
+      "is_premium_only": true,
+      "channel_id": "crunchyroll",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUQ9ZQ3",
+          "is_premium_only": true,
+          "media_guid": "GNJFDEGDZ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6DQCGD78",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14U4D24X",
+          "is_premium_only": true,
+          "media_guid": "GKKF3JQ38",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYQ4CZ7WV",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GJWU2382X",
+          "is_premium_only": true,
+          "media_guid": "GM8FX2WX4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY5VCDWGV",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GN7UDEGDG",
+          "is_premium_only": true,
+          "media_guid": "GVMF0EJ0J",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRWEC3G02",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GK9U3JQ35",
+          "is_premium_only": true,
+          "media_guid": "G3WFX1QX0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCV0PW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GMKUX2WX7",
+          "is_premium_only": true,
+          "media_guid": "GPPFK7EK4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G609CX4EW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GVWU0EJ0E",
+          "is_premium_only": true,
+          "media_guid": "G25F0KJ0K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRE5CQKVQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G31UX1QXG",
+          "is_premium_only": true,
+          "media_guid": "G8MFNXENZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G675CD0N4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GPWUK7EKG",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVKJV4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC27V9",
+          "variant": ""
+        }
+      ],
+      "is_dubbed": true,
+      "season_id": "GRWEC3G02",
+      "seo_title": "",
+      "id": "GN7UDEGDG",
+      "series_slug_title": "jujutsu-kaisen",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "streams_link": "/content/v2/cms/videos/GVMF0EJ0J/streams",
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "premium_date": null,
+      "audio_locale": "fr-FR",
+      "identifier": "GRDV0019R|M|E0",
+      "season_display_number": "",
+      "listing_id": "",
+      "mature_blocked": false,
+      "next_episode_title": "JUJUTSU KAISEN 0 (Russian Dub)",
+      "availability_notes": "",
+      "availability_starts": "2022-09-21T08:05:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_air_date": "2022-09-21T00:00:00+09:00",
+      "recent_variant": "",
+      "season_tags": [],
+      "description": "Lorsqu’il était enfant, Yuta Okkotsu a vu son amie Rika Orimoto perdre la vie dans un terrible accident. Depuis, Rika vient hanter Yuta qui a même souhaité sa propre mort après avoir souffert des années de cette malédiction. Jusqu’au jour où le plus puissant des exorcistes, Satoru Gojo, l’a accueilli dans l’école d’exorcisme de Tokyo. Tandis que Yuta trouve enfin un nouveau sens à sa vie, une menace plane sur le monde. En effet, quelqu’un projette de déchaîner un millier de malédictions sur Shinjuku et Kyoto pour exterminer tous les non-exorcistes...",
+      "available_date": null,
+      "hd_flag": true,
+      "premium_available_date": "2022-09-21T08:05:00Z",
+      "upload_date": "2022-09-21T00:00:00+09:00",
+      "series_id": "GRDV0019R",
+      "recent_audio_locale": "fr-FR"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

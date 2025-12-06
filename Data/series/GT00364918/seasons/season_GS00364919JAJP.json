@@ -1,0 +1,1451 @@
+{
+  "total": 9,
+  "data": [
+    {
+      "episode_air_date": "2025-10-04T00:00:00Z",
+      "hd_flag": true,
+      "eligible_region": "CA",
+      "media_type": "episode",
+      "availability_notes": "",
+      "series_title": "The Banished Court Magician Aims to Become the Strongest",
+      "availability_starts": "2025-10-04T15:00:00Z",
+      "available_offline": true,
+      "identifier": "GT00364918|S00364919|E1",
+      "production_episode_id": "",
+      "episode_number": 1,
+      "season_sequence_number": 1,
+      "listing_id": "",
+      "season_number": 1,
+      "title": "Alec est banni !",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364920JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364920JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364919JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364920ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364920ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364919ENUS",
+          "variant": ""
+        }
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode": "1",
+      "recent_audio_locale": "ja-JP",
+      "seo_title": "",
+      "availability_status": "available",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "audio_locale": "ja-JP",
+      "mature_blocked": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9b9d341950935a87e7c362bb3d494147.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9b9d341950935a87e7c362bb3d494147.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9b9d341950935a87e7c362bb3d494147.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9b9d341950935a87e7c362bb3d494147.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9b9d341950935a87e7c362bb3d494147.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9b9d341950935a87e7c362bb3d494147.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9b9d341950935a87e7c362bb3d494147.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9b9d341950935a87e7c362bb3d494147.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_display_number": "",
+      "season_id": "GS00364919JAJP",
+      "is_mature": false,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "next_episode_id": "GE00364922JAJP",
+      "next_episode_title": "Retrouvailles",
+      "closed_captions_available": false,
+      "series_slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "season_title": "Saison 1",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "description": "Comme son maître, Alec devient sorcier de la cour, mais le prince n’apprécie pas ses sorts de soutien.",
+      "is_subbed": true,
+      "recent_variant": "",
+      "roles": [
+        "main"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "season-1",
+      "is_dubbed": true,
+      "upload_date": "2025-10-04T00:00:00Z",
+      "id": "GE00364920JAJP",
+      "is_premium_only": true,
+      "sequence_number": 1,
+      "slug": "",
+      "streams_link": "/content/v2/cms/videos/GE00364920JAJPV/streams",
+      "duration_ms": 1416959,
+      "seo_description": "",
+      "series_id": "GT00364918",
+      "is_clip": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "premium_available_date": "2025-10-04T15:00:00Z",
+      "slug_title": "alec-banished"
+    },
+    {
+      "recent_audio_locale": "ja-JP",
+      "availability_starts": "2025-10-11T15:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "eligible_region": "CA",
+      "title": "Retrouvailles",
+      "id": "GE00364922JAJP",
+      "series_title": "The Banished Court Magician Aims to Become the Strongest",
+      "sequence_number": 2,
+      "availability_notes": "",
+      "episode": "2",
+      "season_slug_title": "season-1",
+      "availability_status": "available",
+      "slug": "",
+      "available_offline": true,
+      "production_episode_id": "",
+      "season_title": "Saison 1",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "seo_description": "",
+      "mature_blocked": false,
+      "available_date": null,
+      "episode_number": 2,
+      "streams_link": "/content/v2/cms/videos/GE00364922JAJPV/streams",
+      "seo_title": "",
+      "channel_id": "crunchyroll",
+      "is_premium_only": true,
+      "is_mature": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "is_dubbed": true,
+      "series_id": "GT00364918",
+      "hd_flag": true,
+      "season_number": 1,
+      "season_id": "GS00364919JAJP",
+      "listing_id": "",
+      "next_episode_id": "GE00364924JAJP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "series_slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "slug_title": "together-again",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_air_date": "2025-10-11T00:00:00Z",
+      "identifier": "GT00364918|S00364919|E2",
+      "season_sequence_number": 1,
+      "audio_locale": "ja-JP",
+      "premium_available_date": "2025-10-11T15:00:00Z",
+      "season_display_number": "",
+      "is_subbed": true,
+      "media_type": "episode",
+      "description": "Pour pouvoir rejoindre son ancien groupe, Alec doit prouver ses talents à la guilde des aventuriers.",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364922JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364922JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364919JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364922ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364922ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364919ENUS",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "duration_ms": 1417126,
+      "premium_date": null,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "next_episode_title": "Combat acharné contre le gardien du 64e sous-sol",
+      "is_clip": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2150cf34ee443e58bde2d5bf5dc7131a.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/2150cf34ee443e58bde2d5bf5dc7131a.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/2150cf34ee443e58bde2d5bf5dc7131a.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/2150cf34ee443e58bde2d5bf5dc7131a.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2150cf34ee443e58bde2d5bf5dc7131a.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/2150cf34ee443e58bde2d5bf5dc7131a.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/2150cf34ee443e58bde2d5bf5dc7131a.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/2150cf34ee443e58bde2d5bf5dc7131a.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "upload_date": "2025-10-11T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "closed_captions_available": false
+    },
+    {
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/917451f203bfa9ede9f22348c859e6f7.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/917451f203bfa9ede9f22348c859e6f7.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/917451f203bfa9ede9f22348c859e6f7.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/917451f203bfa9ede9f22348c859e6f7.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/917451f203bfa9ede9f22348c859e6f7.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/917451f203bfa9ede9f22348c859e6f7.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/917451f203bfa9ede9f22348c859e6f7.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/917451f203bfa9ede9f22348c859e6f7.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_title": "Saison 1",
+      "description": "Lasting Period se joint au combat contre le gardien qui a mis à mal un groupe de rang S.",
+      "media_type": "episode",
+      "slug": "",
+      "title": "Combat acharné contre le gardien du 64e sous-sol",
+      "roles": [
+        "main"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_clip": false,
+      "is_mature": false,
+      "upload_date": "2025-10-18T00:00:00Z",
+      "availability_status": "available",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "seo_description": "",
+      "duration_ms": 1416959,
+      "identifier": "GT00364918|S00364919|E3",
+      "availability_starts": "2025-10-18T15:00:00Z",
+      "channel_id": "crunchyroll",
+      "episode_number": 3,
+      "mature_blocked": false,
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "listing_id": "",
+      "episode_air_date": "2025-10-18T00:00:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_subbed": true,
+      "season_slug_title": "season-1",
+      "season_id": "GS00364919JAJP",
+      "available_date": null,
+      "series_id": "GT00364918",
+      "id": "GE00364924JAJP",
+      "premium_date": null,
+      "availability_notes": "",
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "audio_locale": "ja-JP",
+      "episode": "3",
+      "season_display_number": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364924JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364924JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364919JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364924ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364924ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364919ENUS",
+          "variant": ""
+        }
+      ],
+      "series_title": "The Banished Court Magician Aims to Become the Strongest",
+      "is_dubbed": true,
+      "streams_link": "/content/v2/cms/videos/GE00364924JAJPV/streams",
+      "sequence_number": 3,
+      "available_offline": true,
+      "recent_variant": "",
+      "season_sequence_number": 1,
+      "eligible_region": "CA",
+      "season_number": 1,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "series_slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "slug_title": "deadly-battle-the-64th-floor-boss",
+      "next_episode_title": "Le véritable gardien",
+      "premium_available_date": "2025-10-18T15:00:00Z",
+      "next_episode_id": "GE00364926JAJP",
+      "is_premium_only": true,
+      "seo_title": "",
+      "production_episode_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      }
+    },
+    {
+      "hd_flag": true,
+      "sequence_number": 4,
+      "production_episode_id": "",
+      "season_slug_title": "season-1",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364926JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364926JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364919JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364926ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364926ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364919ENUS",
+          "variant": ""
+        }
+      ],
+      "identifier": "GT00364918|S00364919|E4",
+      "is_dubbed": true,
+      "availability_status": "available",
+      "is_mature": false,
+      "season_display_number": "",
+      "description": "Les aventuriers de Lasting Period peuvent-ils se fier aux conseils de Loki concernant le combat à venir ?",
+      "id": "GE00364926JAJP",
+      "season_number": 1,
+      "next_episode_title": "Le bon à rien et le morveux gâté",
+      "season_title": "Saison 1",
+      "available_offline": true,
+      "series_title": "The Banished Court Magician Aims to Become the Strongest",
+      "is_premium_only": true,
+      "title": "Le véritable gardien",
+      "audio_locale": "ja-JP",
+      "season_id": "GS00364919JAJP",
+      "upload_date": "2025-10-25T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1417043,
+      "recent_audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "recent_variant": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode_number": 4,
+      "seo_description": "",
+      "series_slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "roles": [
+        "main"
+      ],
+      "season_sequence_number": 1,
+      "premium_date": null,
+      "episode_air_date": "2025-10-25T00:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9c006628cfc3a2914a56f3502eb46270.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9c006628cfc3a2914a56f3502eb46270.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9c006628cfc3a2914a56f3502eb46270.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9c006628cfc3a2914a56f3502eb46270.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9c006628cfc3a2914a56f3502eb46270.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9c006628cfc3a2914a56f3502eb46270.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9c006628cfc3a2914a56f3502eb46270.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9c006628cfc3a2914a56f3502eb46270.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_notes": "",
+      "seo_title": "",
+      "closed_captions_available": false,
+      "is_subbed": true,
+      "available_date": null,
+      "media_type": "episode",
+      "slug_title": "the-true-floor-boss",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "slug": "",
+      "streams_link": "/content/v2/cms/videos/GE00364926JAJPV/streams",
+      "series_id": "GT00364918",
+      "next_episode_id": "GE00364928JAJP",
+      "eligible_region": "CA",
+      "premium_available_date": "2025-10-25T15:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "episode": "4",
+      "mature_blocked": false,
+      "listing_id": "",
+      "availability_starts": "2025-10-25T15:00:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_clip": false
+    },
+    {
+      "identifier": "GT00364918|S00364919|E5",
+      "episode": "5",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1417084,
+      "slug": "",
+      "season_number": 1,
+      "available_offline": true,
+      "season_title": "Saison 1",
+      "eligible_region": "CA",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "is_clip": false,
+      "seo_title": "",
+      "availability_notes": "",
+      "season_slug_title": "season-1",
+      "recent_audio_locale": "ja-JP",
+      "premium_available_date": "2025-11-01T15:30:00Z",
+      "id": "GE00364928JAJP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/09b064f9f82700f95f86520e17116890.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/09b064f9f82700f95f86520e17116890.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/09b064f9f82700f95f86520e17116890.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/09b064f9f82700f95f86520e17116890.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/09b064f9f82700f95f86520e17116890.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/09b064f9f82700f95f86520e17116890.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/09b064f9f82700f95f86520e17116890.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/09b064f9f82700f95f86520e17116890.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "recent_variant": "",
+      "description": "De retour à la surface, Alec reçoit la visite inattendue de son ancien protégé.",
+      "episode_number": 5,
+      "sequence_number": 5,
+      "streams_link": "/content/v2/cms/videos/GE00364928JAJPV/streams",
+      "premium_date": null,
+      "series_title": "The Banished Court Magician Aims to Become the Strongest",
+      "is_dubbed": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "series_id": "GT00364918",
+      "production_episode_id": "",
+      "roles": [
+        "main"
+      ],
+      "season_id": "GS00364919JAJP",
+      "season_sequence_number": 1,
+      "title": "Le bon à rien et le morveux gâté",
+      "series_slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "is_subbed": true,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364928JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364928JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364919JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364928ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364928ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364919ENUS",
+          "variant": ""
+        }
+      ],
+      "availability_status": "available",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_premium_only": true,
+      "episode_air_date": "2025-11-01T00:00:00Z",
+      "next_episode_id": "GE00364930JAJP",
+      "hd_flag": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "next_episode_title": "Alec et Yorha",
+      "season_display_number": "",
+      "closed_captions_available": false,
+      "mature_blocked": false,
+      "slug_title": "the-useless-man-and-the-bratty-kid",
+      "upload_date": "2025-11-01T00:00:00Z",
+      "is_mature": false,
+      "available_date": null,
+      "seo_description": "",
+      "availability_starts": "2025-11-01T15:30:00Z",
+      "listing_id": ""
+    },
+    {
+      "series_slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "season_title": "Saison 1",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "Alec et Yorha",
+      "description": "Profitant du premier moment de calme depuis son arrivée, Alec demande à Yorha de lui faire visiter Fizel.",
+      "eligible_region": "CA",
+      "next_episode_id": "GE00364932JAJP",
+      "is_premium_only": true,
+      "channel_id": "crunchyroll",
+      "listing_id": "",
+      "audio_locale": "ja-JP",
+      "available_offline": true,
+      "season_slug_title": "season-1",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00364930JAJPV/streams",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "identifier": "GT00364918|S00364919|E6",
+      "episode_number": 6,
+      "premium_available_date": "2025-11-08T15:00:00Z",
+      "duration_ms": 1417001,
+      "series_id": "GT00364918",
+      "season_display_number": "",
+      "slug": "",
+      "seo_description": "",
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364930JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364930JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364919JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364930ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364930ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364919ENUS",
+          "variant": ""
+        }
+      ],
+      "availability_starts": "2025-11-08T15:00:00Z",
+      "is_dubbed": true,
+      "upload_date": "2025-11-08T00:00:00Z",
+      "seo_title": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "episode_air_date": "2025-11-08T00:00:00Z",
+      "slug_title": "alec-and-yorha",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "roles": [
+        "main"
+      ],
+      "season_sequence_number": 1,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ad6d7ea688d02b4e3cbad5a313034022.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ad6d7ea688d02b4e3cbad5a313034022.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ad6d7ea688d02b4e3cbad5a313034022.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ad6d7ea688d02b4e3cbad5a313034022.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ad6d7ea688d02b4e3cbad5a313034022.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ad6d7ea688d02b4e3cbad5a313034022.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ad6d7ea688d02b4e3cbad5a313034022.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ad6d7ea688d02b4e3cbad5a313034022.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "mature_blocked": false,
+      "series_title": "The Banished Court Magician Aims to Become the Strongest",
+      "id": "GE00364930JAJP",
+      "available_date": null,
+      "sequence_number": 6,
+      "is_mature": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "production_episode_id": "",
+      "is_subbed": true,
+      "season_number": 1,
+      "recent_variant": "",
+      "closed_captions_available": false,
+      "hd_flag": true,
+      "is_clip": false,
+      "media_type": "episode",
+      "next_episode_title": "Labyrinthe",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "recent_audio_locale": "ja-JP",
+      "season_id": "GS00364919JAJP",
+      "episode": "6",
+      "premium_date": null
+    },
+    {
+      "season_title": "Saison 1",
+      "available_offline": true,
+      "season_display_number": "",
+      "title": "Labyrinthe",
+      "id": "GE00364932JAJP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "mature_blocked": false,
+      "is_premium_only": true,
+      "duration_ms": 1417126,
+      "production_episode_id": "",
+      "season_slug_title": "season-1",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "availability_status": "available",
+      "is_subbed": true,
+      "series_slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364932JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364932JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364919JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364932ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364932ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364919ENUS",
+          "variant": ""
+        }
+      ],
+      "listing_id": "",
+      "recent_audio_locale": "ja-JP",
+      "season_number": 1,
+      "slug_title": "labyrinth",
+      "media_type": "episode",
+      "is_clip": false,
+      "is_mature": false,
+      "seo_title": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "channel_id": "crunchyroll",
+      "series_id": "GT00364918",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/844ecb9d5f5a077d1ff3dea95458b2f3.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/844ecb9d5f5a077d1ff3dea95458b2f3.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/844ecb9d5f5a077d1ff3dea95458b2f3.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/844ecb9d5f5a077d1ff3dea95458b2f3.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/844ecb9d5f5a077d1ff3dea95458b2f3.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/844ecb9d5f5a077d1ff3dea95458b2f3.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/844ecb9d5f5a077d1ff3dea95458b2f3.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/844ecb9d5f5a077d1ff3dea95458b2f3.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "sequence_number": 7,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "next_episode_title": "Cicatrices",
+      "premium_available_date": "2025-11-15T15:30:00Z",
+      "availability_starts": "2025-11-15T15:30:00Z",
+      "seo_description": "",
+      "closed_captions_available": false,
+      "series_title": "The Banished Court Magician Aims to Become the Strongest",
+      "episode": "7",
+      "next_episode_id": "GE00364934JAJP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "identifier": "GT00364918|S00364919|E7",
+      "eligible_region": "CA",
+      "is_dubbed": true,
+      "streams_link": "/content/v2/cms/videos/GE00364932JAJPV/streams",
+      "upload_date": "2025-11-15T00:00:00Z",
+      "episode_air_date": "2025-11-15T00:00:00Z",
+      "season_id": "GS00364919JAJP",
+      "roles": [
+        "main"
+      ],
+      "episode_number": 7,
+      "availability_notes": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "available_date": null,
+      "audio_locale": "ja-JP",
+      "recent_variant": "",
+      "hd_flag": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "premium_date": null,
+      "slug": "",
+      "description": "Divers éléments convergent vers le donjon Labyrinthe. Le groupe Lasting Period acceptera-t-il d’y descendre ?"
+    },
+    {
+      "season_sequence_number": 1,
+      "production_episode_id": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "eligible_region": "CA",
+      "media_type": "episode",
+      "next_episode_id": "GE00364936JAJP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_subbed": true,
+      "description": "Alec et Krasia apprennent le passé d’Olivia et proposent de l’aider à assouvir sa vengeance.",
+      "id": "GE00364934JAJP",
+      "is_clip": false,
+      "recent_audio_locale": "ja-JP",
+      "episode_air_date": "2025-11-22T00:00:00Z",
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "seo_description": "",
+      "sequence_number": 8,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_starts": "2025-11-22T15:00:00Z",
+      "identifier": "GT00364918|S00364919|E8",
+      "season_id": "GS00364919JAJP",
+      "episode_number": 8,
+      "premium_date": null,
+      "available_offline": true,
+      "is_mature": false,
+      "upload_date": "2025-11-22T00:00:00Z",
+      "audio_locale": "ja-JP",
+      "slug_title": "scars",
+      "is_premium_only": true,
+      "listing_id": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "seo_title": "",
+      "availability_status": "available",
+      "closed_captions_available": false,
+      "next_episode_title": "La magie du Sang ardent",
+      "season_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364934JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364934JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364919JAJP",
+          "variant": ""
+        }
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/517de9880ba8d6ca6986f3bbf5d94f8d.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/517de9880ba8d6ca6986f3bbf5d94f8d.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/517de9880ba8d6ca6986f3bbf5d94f8d.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/517de9880ba8d6ca6986f3bbf5d94f8d.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/517de9880ba8d6ca6986f3bbf5d94f8d.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/517de9880ba8d6ca6986f3bbf5d94f8d.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/517de9880ba8d6ca6986f3bbf5d94f8d.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/517de9880ba8d6ca6986f3bbf5d94f8d.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_slug_title": "season-1",
+      "series_slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "duration_ms": 1417084,
+      "series_id": "GT00364918",
+      "season_title": "Saison 1",
+      "roles": [
+        "main"
+      ],
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_display_number": "",
+      "title": "Cicatrices",
+      "premium_available_date": "2025-11-22T15:00:00Z",
+      "episode": "8",
+      "available_date": null,
+      "streams_link": "/content/v2/cms/videos/GE00364934JAJPV/streams",
+      "hd_flag": true,
+      "availability_notes": "",
+      "series_title": "The Banished Court Magician Aims to Become the Strongest",
+      "slug": "",
+      "is_dubbed": false,
+      "recent_variant": ""
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364936JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364936JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364919JAJP",
+          "variant": ""
+        }
+      ],
+      "media_type": "episode",
+      "season_slug_title": "season-1",
+      "eligible_region": "CA",
+      "description": "Un puissant sorcier barre la route de nos aventuriers, alors que Yorha s’éloigne toujours plus d’eux.",
+      "slug": "",
+      "available_date": null,
+      "premium_date": null,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "mature_blocked": false,
+      "seo_description": "",
+      "upload_date": "2025-11-29T00:00:00Z",
+      "id": "GE00364936JAJP",
+      "series_slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "season_title": "Saison 1",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "production_episode_id": "",
+      "availability_starts": "2025-11-29T15:00:00Z",
+      "listing_id": "",
+      "roles": [
+        "main"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ede319dacb05dc810e38162cc4c6410f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ede319dacb05dc810e38162cc4c6410f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ede319dacb05dc810e38162cc4c6410f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ede319dacb05dc810e38162cc4c6410f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ede319dacb05dc810e38162cc4c6410f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ede319dacb05dc810e38162cc4c6410f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ede319dacb05dc810e38162cc4c6410f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ede319dacb05dc810e38162cc4c6410f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_sequence_number": 1,
+      "slug_title": "burning-blood",
+      "availability_status": "available",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "title": "La magie du Sang ardent",
+      "available_offline": true,
+      "next_episode_title": "Le Maître épéiste",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "episode": "9",
+      "is_clip": false,
+      "channel_id": "crunchyroll",
+      "duration_ms": 1417126,
+      "audio_locale": "ja-JP",
+      "is_mature": false,
+      "availability_notes": "",
+      "is_dubbed": false,
+      "season_id": "GS00364919JAJP",
+      "seo_title": "",
+      "episode_air_date": "2025-11-29T00:00:00Z",
+      "episode_number": 9,
+      "recent_audio_locale": "ja-JP",
+      "season_number": 1,
+      "series_title": "The Banished Court Magician Aims to Become the Strongest",
+      "is_premium_only": true,
+      "series_id": "GT00364918",
+      "is_subbed": true,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "hd_flag": true,
+      "recent_variant": "",
+      "closed_captions_available": false,
+      "season_display_number": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "identifier": "GT00364918|S00364919|E9",
+      "premium_available_date": "2025-11-29T15:00:00Z",
+      "sequence_number": 9,
+      "next_episode_id": "GE00364938JAJP",
+      "streams_link": "/content/v2/cms/videos/GE00364936JAJPV/streams"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "G5PHNM7J2",
+      "channel_id": "crunchyroll",
+      "title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "slug": "",
+      "slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "description": "Malgré sa supposée inaptitude à la magie ordinaire, la princesse Anisphia défie les attentes de l'aristocratie en développant la \"magicologie\", une théorie magique unique basée sur les souvenirs de sa vie passée. Un jour, elle est témoin de la chute injuste de la brillante noble Euphyllia, déchue de son titre de prochain monarque du royaume. C'est alors qu'Anisphia concocte un plan pour aider Euphyllia à retrouver sa bonne réputation, ce qui implique en quelque sorte qu'elles vivent ensemble et fassent des recherches sur la magie ! Mais ces deux dames sont loin de se douter que leur rencontre fortuite va modifier non seulement leur propre avenir, mais aussi celui du royaume… et du monde entier !",
+      "extended_description": "",
+      "keywords": [
+        "fantasy"
+      ],
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "images": {
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7bb8fa94cb9349d76d36559294bd729e.jpe"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7bb8fa94cb9349d76d36559294bd729e.jpe"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7bb8fa94cb9349d76d36559294bd729e.jpe"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7bb8fa94cb9349d76d36559294bd729e.jpe"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7bb8fa94cb9349d76d36559294bd729e.jpe"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7bb8fa94cb9349d76d36559294bd729e.jpe"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7bb8fa94cb9349d76d36559294bd729e.jpe"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7bb8fa94cb9349d76d36559294bd729e.jpe"
+            }
+          ]
+        ],
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/b091831ed916c0ee3362396a9f2a7a60.jpe"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/b091831ed916c0ee3362396a9f2a7a60.jpe"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/b091831ed916c0ee3362396a9f2a7a60.jpe"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/b091831ed916c0ee3362396a9f2a7a60.jpe"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/b091831ed916c0ee3362396a9f2a7a60.jpe"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/b091831ed916c0ee3362396a9f2a7a60.jpe"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/b091831ed916c0ee3362396a9f2a7a60.jpe"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/b091831ed916c0ee3362396a9f2a7a60.jpe"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/b091831ed916c0ee3362396a9f2a7a60.jpe"
+            }
+          ]
+        ]
+      },
+      "episode_count": 12,
+      "season_count": 1,
+      "media_count": 12,
+      "content_provider": "Kadokawa Pictures Inc.",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": false,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "de-DE",
+        "en-US",
+        "pt-BR",
+        "ru-RU",
+        "it-IT"
+      ],
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2023,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

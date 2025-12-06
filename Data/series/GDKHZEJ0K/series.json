@@ -1,0 +1,205 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GDKHZEJ0K",
+      "channel_id": "crunchyroll",
+      "title": "Solo Leveling",
+      "slug": "",
+      "slug_title": "solo-leveling",
+      "description": "Solo Leveling est l'adaptation anime à succès du roman et du webtoon de Chugong et DUBU, animée par A-1 Pictures. L'histoire suit Sung Jinwoo, le chasseur le plus faible du monde, qui a été choisi par le mystérieux « système » après avoir survécu de justesse à un raid mortel dans un donjon. Ce système lui permet de progresser au-delà des limites humaines, le faisant passer de proie à prédateur tandis qu'il découvre la sombre vérité qui se cache derrière les donjons infestés de monstres.\r\n\r\nLa première saison (12 épisodes), diffusée le 7 janvier 2024, retrace la transition de Jinwoo du statut de chasseur impuissant de rang E à celui de force invincible. Dans Solo Leveling Season 2 -Arise from the Shadow- (13 épisodes), les choses s'intensifient. Jinwoo apprend à maîtriser ses capacités de nécromancien, commandant une armée d'ombres tout en dissimulant son véritable pouvoir à ses compagnons chasseurs. Sa mission ultime : sauver sa mère et assurer l'avenir de sa famille.\r\n\r\nRéalisé par Shunsuke Nakashige et avec une bande originale puissante composée par Hiroyuki SAWANO, l'anime donne vie à l'action emblématique du webtoon. Avec son système de progression addictif, ses combats époustouflants et ses conspirations obscures, Solo Leveling est devenu un phénomène mondial pour les fans de dark fantasy et de shônen débordant d'action",
+      "extended_description": "",
+      "keywords": [
+        "deutsche synchro",
+        "fantasy",
+        "action",
+        "adventure"
+      ],
+      "season_tags": [
+        "Hiver-2024",
+        "Hiver-2025"
+      ],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/f2d6d93f5ba4a24bcb3b0d1322a645ff.jpg"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/f2d6d93f5ba4a24bcb3b0d1322a645ff.jpg"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/f2d6d93f5ba4a24bcb3b0d1322a645ff.jpg"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/f2d6d93f5ba4a24bcb3b0d1322a645ff.jpg"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/f2d6d93f5ba4a24bcb3b0d1322a645ff.jpg"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/f2d6d93f5ba4a24bcb3b0d1322a645ff.jpg"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/f2d6d93f5ba4a24bcb3b0d1322a645ff.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/f2d6d93f5ba4a24bcb3b0d1322a645ff.jpg"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/f2d6d93f5ba4a24bcb3b0d1322a645ff.jpg"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4a4151b0dcf46207ca9b171b9ac345e5.jpg"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4a4151b0dcf46207ca9b171b9ac345e5.jpg"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4a4151b0dcf46207ca9b171b9ac345e5.jpg"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4a4151b0dcf46207ca9b171b9ac345e5.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4a4151b0dcf46207ca9b171b9ac345e5.jpg"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4a4151b0dcf46207ca9b171b9ac345e5.jpg"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4a4151b0dcf46207ca9b171b9ac345e5.jpg"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4a4151b0dcf46207ca9b171b9ac345e5.jpg"
+            }
+          ]
+        ]
+      },
+      "episode_count": 26,
+      "season_count": 2,
+      "media_count": 26,
+      "content_provider": "Aniplex of America",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "es-419",
+        "th-TH",
+        "de-DE",
+        "id-ID",
+        "pt-BR",
+        "en-US",
+        "es-ES",
+        "it-IT",
+        "te-IN",
+        "zh-CN",
+        "fr-FR",
+        "ar-SA",
+        "vi-VN",
+        "ru-RU",
+        "hi-IN",
+        "ta-IN",
+        "zh-HK",
+        "ms-MY"
+      ],
+      "audio_locales": [
+        "es-ES",
+        "pt-BR",
+        "ta-IN",
+        "te-IN",
+        "ko-KR",
+        "fr-FR",
+        "ja-JP",
+        "hi-IN",
+        "it-IT",
+        "en-US",
+        "es-419",
+        "de-DE"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2025,
+      "awards": [
+        {
+          "text": "Nommé aux Anime Awards 2025",
+          "icon_url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/width=48,height=48/awards/anime_award_icon.png",
+          "is_current_award": false,
+          "is_winner": false
+        }
+      ],
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

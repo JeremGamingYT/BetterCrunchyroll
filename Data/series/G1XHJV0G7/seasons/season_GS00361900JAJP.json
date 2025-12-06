@@ -1,0 +1,1722 @@
+{
+  "total": 10,
+  "data": [
+    {
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "season_display_number": "",
+      "roles": [
+        "main"
+      ],
+      "channel_id": "crunchyroll",
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "listing_id": "",
+      "episode": "1",
+      "eligible_region": "CA",
+      "season_id": "GS00361900JAJP",
+      "production_episode_id": "",
+      "streams_link": "/content/v2/cms/videos/GE00361901JAJPV/streams",
+      "seo_title": "",
+      "slug_title": "episode-1",
+      "description": "Une entité mystérieuse gratifie Takeru de pouvoirs extraordinaires et l'envoie dans un monde parallèle.",
+      "next_episode_id": "GE00361903JAJP",
+      "availability_status": "available",
+      "episode_number": 1,
+      "next_episode_title": "Un dîner à plusieurs",
+      "mature_blocked": false,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "audio_locale": "ja-JP",
+      "available_date": null,
+      "available_offline": true,
+      "upload_date": "2025-09-29T00:00:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_title": "Saison 1",
+      "id": "GE00361901JAJP",
+      "is_clip": false,
+      "is_premium_only": true,
+      "media_type": "episode",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1420004,
+      "season_number": 1,
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "identifier": "G1XHJV0G7|S00361900|E1",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361901JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361901JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361901ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361901ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361901DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361901DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GE00361901IDID",
+          "is_premium_only": true,
+          "media_guid": "GE00361901IDIDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900IDID",
+          "variant": ""
+        }
+      ],
+      "closed_captions_available": false,
+      "is_mature": false,
+      "title": "Une goutte versée",
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "premium_date": null,
+      "is_subbed": true,
+      "availability_notes": "",
+      "hd_flag": true,
+      "series_id": "G1XHJV0G7",
+      "seo_description": "",
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1d6e51d999414e5c15c9f0e07ba16411.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1d6e51d999414e5c15c9f0e07ba16411.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1d6e51d999414e5c15c9f0e07ba16411.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1d6e51d999414e5c15c9f0e07ba16411.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1d6e51d999414e5c15c9f0e07ba16411.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1d6e51d999414e5c15c9f0e07ba16411.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1d6e51d999414e5c15c9f0e07ba16411.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1d6e51d999414e5c15c9f0e07ba16411.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_slug_title": "season-1",
+      "episode_air_date": "2025-09-29T00:00:00Z",
+      "availability_starts": "2025-09-29T16:00:00Z",
+      "premium_available_date": "2025-09-29T16:00:00Z",
+      "sequence_number": 1,
+      "is_dubbed": true,
+      "season_sequence_number": 1
+    },
+    {
+      "next_episode_id": "GE00361905JAJP",
+      "premium_available_date": "2025-10-06T16:00:00Z",
+      "media_type": "episode",
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "availability_notes": "",
+      "episode_air_date": "2025-10-06T00:00:00Z",
+      "is_dubbed": true,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "duration_ms": 1420004,
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "season_display_number": "",
+      "recent_audio_locale": "ja-JP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_clip": false,
+      "identifier": "G1XHJV0G7|S00361900|E2",
+      "channel_id": "crunchyroll",
+      "next_episode_title": "Foyer et Voyage",
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "episode": "2",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "series_id": "G1XHJV0G7",
+      "season_id": "GS00361900JAJP",
+      "eligible_region": "CA",
+      "id": "GE00361903JAJP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "slug": "",
+      "sequence_number": 2,
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "episode_number": 2,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_mature": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361903JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361903JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361903ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361903ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361903DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361903DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GE00361903IDID",
+          "is_premium_only": true,
+          "media_guid": "GE00361903IDIDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900IDID",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00361903JAJPV/streams",
+      "availability_starts": "2025-10-06T16:00:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_number": 1,
+      "is_premium_only": true,
+      "seo_description": "",
+      "seo_title": "",
+      "hd_flag": true,
+      "available_date": null,
+      "roles": [
+        "main"
+      ],
+      "title": "Un dîner à plusieurs",
+      "description": "Après avoir rencontré une elfe affamée, Takeru croise la route d'une famille qui va au même endroit que lui.",
+      "closed_captions_available": false,
+      "recent_variant": "",
+      "premium_date": null,
+      "availability_status": "available",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "audio_locale": "ja-JP",
+      "slug_title": "episode-2",
+      "season_title": "Saison 1",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/71fa3e771d7d687c7541a6e7acba557f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/71fa3e771d7d687c7541a6e7acba557f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/71fa3e771d7d687c7541a6e7acba557f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/71fa3e771d7d687c7541a6e7acba557f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/71fa3e771d7d687c7541a6e7acba557f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/71fa3e771d7d687c7541a6e7acba557f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/71fa3e771d7d687c7541a6e7acba557f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/71fa3e771d7d687c7541a6e7acba557f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_offline": true,
+      "upload_date": "2025-10-06T00:00:00Z",
+      "season_slug_title": "season-1",
+      "listing_id": ""
+    },
+    {
+      "identifier": "G1XHJV0G7|S00361900|E3",
+      "media_type": "episode",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "mature_blocked": false,
+      "upload_date": "2025-10-13T00:00:00Z",
+      "season_number": 1,
+      "season_display_number": "",
+      "production_episode_id": "",
+      "streams_link": "/content/v2/cms/videos/GE00361905JAJPV/streams",
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_clip": false,
+      "season_sequence_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361905JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361905JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361905ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361905ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361905DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361905DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900DEDE",
+          "variant": ""
+        }
+      ],
+      "available_offline": true,
+      "is_dubbed": true,
+      "availability_starts": "2025-10-13T16:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "next_episode_title": "L'Émergence du roi du Mal",
+      "id": "GE00361905JAJP",
+      "episode_air_date": "2025-10-13T00:00:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "slug_title": "episode-3",
+      "available_date": null,
+      "season_title": "Saison 1",
+      "recent_variant": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "seo_description": "",
+      "title": "Foyer et Voyage",
+      "is_subbed": true,
+      "slug": "",
+      "sequence_number": 3,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "series_id": "G1XHJV0G7",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_mature": false,
+      "duration_ms": 1420046,
+      "premium_date": null,
+      "hd_flag": true,
+      "next_episode_id": "GE00361907JAJP",
+      "episode": "3",
+      "roles": [
+        "main"
+      ],
+      "is_premium_only": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f524bdf5194fd9bd763853ba31ab0a5a.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f524bdf5194fd9bd763853ba31ab0a5a.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f524bdf5194fd9bd763853ba31ab0a5a.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f524bdf5194fd9bd763853ba31ab0a5a.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f524bdf5194fd9bd763853ba31ab0a5a.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f524bdf5194fd9bd763853ba31ab0a5a.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f524bdf5194fd9bd763853ba31ab0a5a.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f524bdf5194fd9bd763853ba31ab0a5a.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_status": "available",
+      "availability_notes": "",
+      "audio_locale": "ja-JP",
+      "seo_title": "",
+      "season_slug_title": "season-1",
+      "eligible_region": "CA",
+      "recent_audio_locale": "ja-JP",
+      "listing_id": "",
+      "premium_available_date": "2025-10-13T16:00:00Z",
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "season_id": "GS00361900JAJP",
+      "channel_id": "crunchyroll",
+      "description": "Sur les conseils de Jérôme, Takeru se rend à Belcaim et y intègre la guilde des aventuriers.",
+      "episode_number": 3
+    },
+    {
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "season_id": "GS00361900JAJP",
+      "listing_id": "",
+      "season_slug_title": "season-1",
+      "slug_title": "episode-4",
+      "is_subbed": true,
+      "premium_date": null,
+      "series_id": "G1XHJV0G7",
+      "duration_ms": 1419962,
+      "premium_available_date": "2025-10-20T16:00:00Z",
+      "channel_id": "crunchyroll",
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "next_episode_id": "GE00361909JAJP",
+      "is_premium_only": true,
+      "episode": "4",
+      "sequence_number": 4,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "seo_description": "",
+      "season_number": 1,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_dubbed": true,
+      "slug": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode_number": 4,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361907JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361907JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361907ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361907ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361907DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361907DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900DEDE",
+          "variant": ""
+        }
+      ],
+      "identifier": "G1XHJV0G7|S00361900|E4",
+      "recent_audio_locale": "ja-JP",
+      "next_episode_title": "Les Deux Gardes du corps",
+      "id": "GE00361907JAJP",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "production_episode_id": "",
+      "season_display_number": "",
+      "availability_status": "available",
+      "availability_starts": "2025-10-20T16:00:00Z",
+      "audio_locale": "ja-JP",
+      "season_title": "Saison 1",
+      "available_offline": true,
+      "is_mature": false,
+      "upload_date": "2025-10-20T00:00:00Z",
+      "is_clip": false,
+      "mature_blocked": false,
+      "closed_captions_available": false,
+      "season_sequence_number": 1,
+      "roles": [
+        "main"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/050d43247e92c5dad7f66ff2b108fef5.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/050d43247e92c5dad7f66ff2b108fef5.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/050d43247e92c5dad7f66ff2b108fef5.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/050d43247e92c5dad7f66ff2b108fef5.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/050d43247e92c5dad7f66ff2b108fef5.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/050d43247e92c5dad7f66ff2b108fef5.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/050d43247e92c5dad7f66ff2b108fef5.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/050d43247e92c5dad7f66ff2b108fef5.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_notes": "",
+      "streams_link": "/content/v2/cms/videos/GE00361907JAJPV/streams",
+      "eligible_region": "CA",
+      "title": "L'Émergence du roi du Mal",
+      "media_type": "episode",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "recent_variant": "",
+      "hd_flag": true,
+      "seo_title": "",
+      "episode_air_date": "2025-10-20T00:00:00Z",
+      "description": "Des gobelins ont été repérés. Les aventuriers se préparent à les affronter et Takeru est de la partie."
+    },
+    {
+      "available_offline": true,
+      "is_premium_only": true,
+      "season_number": 1,
+      "seo_description": "",
+      "premium_date": null,
+      "next_episode_id": "GE00361911JAJP",
+      "identifier": "G1XHJV0G7|S00361900|E5",
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "roles": [
+        "main"
+      ],
+      "duration_ms": 1420046,
+      "streams_link": "/content/v2/cms/videos/GE00361909JAJPV/streams",
+      "is_subbed": true,
+      "recent_variant": "",
+      "availability_notes": "",
+      "season_display_number": "",
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "mature_blocked": false,
+      "id": "GE00361909JAJP",
+      "episode_air_date": "2025-10-27T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_title": "Saison 1",
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "episode": "5",
+      "series_id": "G1XHJV0G7",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "description": "Une forgeronne charge Takeru de lui trouver un minerai rare. Sur sa route, il rencontre des connaissances.",
+      "season_sequence_number": 1,
+      "is_dubbed": true,
+      "audio_locale": "ja-JP",
+      "season_id": "GS00361900JAJP",
+      "availability_status": "available",
+      "premium_available_date": "2025-10-27T16:00:00Z",
+      "episode_number": 5,
+      "available_date": null,
+      "recent_audio_locale": "ja-JP",
+      "seo_title": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_mature": false,
+      "slug": "",
+      "is_clip": false,
+      "season_slug_title": "season-1",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/473e94332c3d663cc8fb22145ff49482.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/473e94332c3d663cc8fb22145ff49482.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/473e94332c3d663cc8fb22145ff49482.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/473e94332c3d663cc8fb22145ff49482.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/473e94332c3d663cc8fb22145ff49482.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/473e94332c3d663cc8fb22145ff49482.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/473e94332c3d663cc8fb22145ff49482.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/473e94332c3d663cc8fb22145ff49482.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "upload_date": "2025-10-27T00:00:00Z",
+      "title": "Les Deux Gardes du corps",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "availability_starts": "2025-10-27T16:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "sequence_number": 5,
+      "listing_id": "",
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361909JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361909JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361909ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361909ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361909DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361909DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900DEDE",
+          "variant": ""
+        }
+      ],
+      "closed_captions_available": false,
+      "next_episode_title": "La Requête du seigneur",
+      "slug_title": "episode-5"
+    },
+    {
+      "slug_title": "episode-6",
+      "closed_captions_available": false,
+      "availability_status": "available",
+      "is_mature": false,
+      "roles": [
+        "main"
+      ],
+      "audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "upload_date": "2025-11-03T00:00:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_clip": false,
+      "seo_description": "",
+      "season_number": 1,
+      "available_offline": true,
+      "season_slug_title": "season-1",
+      "available_date": null,
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "recent_variant": "",
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "title": "La Requête du seigneur",
+      "episode_air_date": "2025-11-03T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "hd_flag": true,
+      "description": "Après avoir livré l'ildraite aux forgerons, Takeru est invité chez le seigneur local.",
+      "mature_blocked": false,
+      "season_title": "Saison 1",
+      "series_id": "G1XHJV0G7",
+      "duration_ms": 1420046,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "premium_available_date": "2025-11-03T16:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361911JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361911JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361911ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361911ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361911DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361911DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900DEDE",
+          "variant": ""
+        }
+      ],
+      "is_premium_only": true,
+      "seo_title": "",
+      "availability_starts": "2025-11-03T16:00:00Z",
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "next_episode_id": "GE00361913JAJP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_id": "GS00361900JAJP",
+      "next_episode_title": "La Fleur de la déesse",
+      "availability_notes": "",
+      "slug": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "media_type": "episode",
+      "streams_link": "/content/v2/cms/videos/GE00361911JAJPV/streams",
+      "season_sequence_number": 1,
+      "episode": "6",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b915fb818e32bf324c83963b221282cd.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b915fb818e32bf324c83963b221282cd.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b915fb818e32bf324c83963b221282cd.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b915fb818e32bf324c83963b221282cd.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b915fb818e32bf324c83963b221282cd.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b915fb818e32bf324c83963b221282cd.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b915fb818e32bf324c83963b221282cd.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b915fb818e32bf324c83963b221282cd.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "identifier": "G1XHJV0G7|S00361900|E6",
+      "listing_id": "",
+      "id": "GE00361911JAJP",
+      "production_episode_id": "",
+      "sequence_number": 6,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_display_number": "",
+      "eligible_region": "CA",
+      "is_subbed": true,
+      "recent_audio_locale": "ja-JP",
+      "episode_number": 6,
+      "is_dubbed": true,
+      "premium_date": null
+    },
+    {
+      "available_date": null,
+      "mature_blocked": false,
+      "is_dubbed": true,
+      "is_mature": false,
+      "closed_captions_available": false,
+      "title": "La Fleur de la déesse",
+      "slug": "",
+      "episode_air_date": "2025-11-10T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00361913JAJPV/streams",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_premium_only": true,
+      "episode": "7",
+      "is_clip": false,
+      "slug_title": "episode-7",
+      "seo_description": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "duration_ms": 1420004,
+      "description": "Takeru et Clayston partent pour le village d'Ashus à la recherche de fleurs d'ivel.",
+      "is_subbed": true,
+      "recent_audio_locale": "ja-JP",
+      "premium_available_date": "2025-11-10T16:00:00Z",
+      "premium_date": null,
+      "availability_notes": "",
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "season_id": "GS00361900JAJP",
+      "hd_flag": true,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "audio_locale": "ja-JP",
+      "sequence_number": 7,
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "eligible_region": "CA",
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "id": "GE00361913JAJP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_starts": "2025-11-10T16:00:00Z",
+      "channel_id": "crunchyroll",
+      "series_id": "G1XHJV0G7",
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "identifier": "G1XHJV0G7|S00361900|E7",
+      "season_slug_title": "season-1",
+      "availability_status": "available",
+      "recent_variant": "",
+      "next_episode_title": "Un pas vers l'avenir",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "seo_title": "",
+      "season_display_number": "",
+      "next_episode_id": "GE00361915JAJP",
+      "listing_id": "",
+      "season_title": "Saison 1",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d5c46d0c7ccc97d81b76864fd0489dec.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d5c46d0c7ccc97d81b76864fd0489dec.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d5c46d0c7ccc97d81b76864fd0489dec.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d5c46d0c7ccc97d81b76864fd0489dec.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d5c46d0c7ccc97d81b76864fd0489dec.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d5c46d0c7ccc97d81b76864fd0489dec.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d5c46d0c7ccc97d81b76864fd0489dec.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d5c46d0c7ccc97d81b76864fd0489dec.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "available_offline": true,
+      "episode_number": 7,
+      "roles": [
+        "main"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361913JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361913JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361913ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361913ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00361913DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00361913DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900DEDE",
+          "variant": ""
+        }
+      ],
+      "season_number": 1,
+      "upload_date": "2025-11-10T00:00:00Z",
+      "media_type": "episode"
+    },
+    {
+      "is_dubbed": true,
+      "eligible_region": "CA",
+      "id": "GE00361915JAJP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361915JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361915JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00361915ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00361915ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00361900ENUS",
+          "variant": ""
+        }
+      ],
+      "season_slug_title": "season-1",
+      "episode_number": 8,
+      "episode_air_date": "2025-11-17T00:00:00Z",
+      "media_type": "episode",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_mature": false,
+      "season_number": 1,
+      "recent_variant": "",
+      "is_subbed": true,
+      "description": "Takeru et Clay affrontent les bandits qui ont ravagé le village et pris en otage le jeune Gonza.",
+      "listing_id": "",
+      "premium_date": null,
+      "season_title": "Saison 1",
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "premium_available_date": "2025-11-17T16:00:00Z",
+      "availability_notes": "",
+      "availability_starts": "2025-11-17T16:00:00Z",
+      "title": "Un pas vers l'avenir",
+      "slug": "",
+      "availability_status": "available",
+      "upload_date": "2025-11-17T00:00:00Z",
+      "season_id": "GS00361900JAJP",
+      "season_sequence_number": 1,
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "slug_title": "episode-8",
+      "is_clip": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "season_display_number": "",
+      "roles": [
+        "main"
+      ],
+      "mature_blocked": false,
+      "episode": "8",
+      "audio_locale": "ja-JP",
+      "sequence_number": 8,
+      "duration_ms": 1419962,
+      "streams_link": "/content/v2/cms/videos/GE00361915JAJPV/streams",
+      "series_id": "G1XHJV0G7",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_premium_only": true,
+      "next_episode_id": "GE00361917JAJP",
+      "seo_title": "",
+      "seo_description": "",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "identifier": "G1XHJV0G7|S00361900|E8",
+      "closed_captions_available": false,
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/669af0a71e2fb1e2c1d18ac2cc9d95c0.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/669af0a71e2fb1e2c1d18ac2cc9d95c0.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/669af0a71e2fb1e2c1d18ac2cc9d95c0.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/669af0a71e2fb1e2c1d18ac2cc9d95c0.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/669af0a71e2fb1e2c1d18ac2cc9d95c0.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/669af0a71e2fb1e2c1d18ac2cc9d95c0.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/669af0a71e2fb1e2c1d18ac2cc9d95c0.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/669af0a71e2fb1e2c1d18ac2cc9d95c0.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_audio_locale": "ja-JP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "next_episode_title": "Une visite inopinée",
+      "available_offline": true,
+      "hd_flag": true
+    },
+    {
+      "is_mature": false,
+      "description": "Takeru participe à un concours de récolte. Il doit trouver de la laine de mouton arc-en-ciel.",
+      "next_episode_title": "La Part d'ombre de Brolite",
+      "upload_date": "2025-11-24T00:00:00Z",
+      "is_clip": false,
+      "premium_available_date": "2025-11-24T16:00:00Z",
+      "media_type": "episode",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c92a87a433366c3305fbf3a92306c420.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c92a87a433366c3305fbf3a92306c420.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c92a87a433366c3305fbf3a92306c420.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c92a87a433366c3305fbf3a92306c420.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c92a87a433366c3305fbf3a92306c420.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c92a87a433366c3305fbf3a92306c420.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c92a87a433366c3305fbf3a92306c420.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c92a87a433366c3305fbf3a92306c420.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_display_number": "",
+      "slug": "",
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "production_episode_id": "",
+      "closed_captions_available": false,
+      "is_subbed": true,
+      "series_id": "G1XHJV0G7",
+      "is_premium_only": true,
+      "episode_number": 9,
+      "title": "Une visite inopinée",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_status": "available",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "listing_id": "",
+      "sequence_number": 9,
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "available_offline": true,
+      "roles": [
+        "main"
+      ],
+      "hd_flag": true,
+      "season_sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "available_date": null,
+      "season_title": "Saison 1",
+      "eligible_region": "CA",
+      "season_slug_title": "season-1",
+      "id": "GE00361917JAJP",
+      "next_episode_id": "GE00361919JAJP",
+      "is_dubbed": false,
+      "season_number": 1,
+      "episode": "9",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361917JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361917JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        }
+      ],
+      "identifier": "G1XHJV0G7|S00361900|E9",
+      "premium_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "audio_locale": "ja-JP",
+      "duration_ms": 1420004,
+      "availability_notes": "",
+      "mature_blocked": false,
+      "slug_title": "episode-9",
+      "availability_starts": "2025-11-24T16:00:00Z",
+      "seo_title": "",
+      "episode_air_date": "2025-11-24T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00361917JAJPV/streams",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "season_id": "GS00361900JAJP",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "seo_description": ""
+    },
+    {
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "slug": "",
+      "upload_date": "2025-12-01T00:00:00Z",
+      "premium_available_date": "2025-12-01T16:00:00Z",
+      "season_id": "GS00361900JAJP",
+      "is_dubbed": false,
+      "availability_status": "available",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/35760ad8e214c3d4f051d68155bd4b74.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/35760ad8e214c3d4f051d68155bd4b74.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/35760ad8e214c3d4f051d68155bd4b74.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/35760ad8e214c3d4f051d68155bd4b74.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/35760ad8e214c3d4f051d68155bd4b74.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/35760ad8e214c3d4f051d68155bd4b74.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/35760ad8e214c3d4f051d68155bd4b74.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/35760ad8e214c3d4f051d68155bd4b74.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "closed_captions_available": false,
+      "id": "GE00361919JAJP",
+      "sequence_number": 10,
+      "episode_air_date": "2025-12-01T00:00:00Z",
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00361919JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00361919JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00361900JAJP",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_number": 1,
+      "season_title": "Saison 1",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "mature_blocked": false,
+      "media_type": "episode",
+      "season_slug_title": "season-1",
+      "next_episode_title": "Episode 11",
+      "is_mature": false,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00361919JAJPV/streams",
+      "season_display_number": "",
+      "series_id": "G1XHJV0G7",
+      "title": "La Part d'ombre de Brolite",
+      "next_episode_id": "GE00361921JAJP",
+      "description": "Brolite emmène ses compagnons au pays des elfes. La venue d'étrangers sur ces terres est mal accueillie.",
+      "seo_description": "",
+      "series_slug_title": "a-gatherers-adventure-in-isekai",
+      "season_sequence_number": 1,
+      "roles": [
+        "main"
+      ],
+      "hd_flag": true,
+      "slug_title": "episode-10",
+      "available_date": null,
+      "duration_ms": 1420004,
+      "identifier": "G1XHJV0G7|S00361900|E10",
+      "audio_locale": "ja-JP",
+      "availability_notes": "",
+      "channel_id": "crunchyroll",
+      "availability_starts": "2025-12-01T16:00:00Z",
+      "premium_date": null,
+      "listing_id": "",
+      "episode_number": 10,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "episode": "10",
+      "is_subbed": true,
+      "available_offline": true,
+      "is_premium_only": true,
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "series_title": "A Gatherer's Adventure in Isekai",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_clip": false,
+      "recent_audio_locale": "ja-JP"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GW4HM7WQ5",
+      "channel_id": "crunchyroll",
+      "title": "May I Ask for One Final Thing?",
+      "slug": "",
+      "slug_title": "may-i-ask-for-one-final-thing",
+      "description": "Scarlet a trop longtemps supporté les brimades de son fiancé, Kyle, second prince du royaume. Non seulement il est arrogant et grossier, mais il a brutalement rompu leurs fiançailles lors d'un bal en l'accusant d'un méfait qu'elle n'a pas commis. Poussée par la trahison, Scarlet laisse éclater sa rage et inflige au prince et à ses nobles invités une correction qu'ils ne sont pas prêts d'oublier…",
+      "extended_description": "",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/62c7d519c01c3c50576d5f78a5b13b13.png"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/62c7d519c01c3c50576d5f78a5b13b13.png"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/62c7d519c01c3c50576d5f78a5b13b13.png"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/62c7d519c01c3c50576d5f78a5b13b13.png"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/62c7d519c01c3c50576d5f78a5b13b13.png"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/62c7d519c01c3c50576d5f78a5b13b13.png"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/62c7d519c01c3c50576d5f78a5b13b13.png"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/62c7d519c01c3c50576d5f78a5b13b13.png"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/62c7d519c01c3c50576d5f78a5b13b13.png"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4eb3dbad2eec7df60e055193d3486fa5.png"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4eb3dbad2eec7df60e055193d3486fa5.png"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4eb3dbad2eec7df60e055193d3486fa5.png"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4eb3dbad2eec7df60e055193d3486fa5.png"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4eb3dbad2eec7df60e055193d3486fa5.png"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4eb3dbad2eec7df60e055193d3486fa5.png"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4eb3dbad2eec7df60e055193d3486fa5.png"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4eb3dbad2eec7df60e055193d3486fa5.png"
+            }
+          ]
+        ]
+      },
+      "episode_count": 11,
+      "season_count": 1,
+      "media_count": 11,
+      "content_provider": "LIDEN FILMS",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "id-ID",
+        "ms-MY",
+        "ru-RU",
+        "de-DE",
+        "ar-SA",
+        "pt-BR",
+        "zh-CN",
+        "en-US",
+        "es-ES",
+        "zh-HK",
+        "th-TH",
+        "vi-VN",
+        "it-IT",
+        "fr-FR",
+        "es-419"
+      ],
+      "audio_locales": [
+        "hi-IN",
+        "pt-BR",
+        "en-US",
+        "es-419",
+        "ja-JP",
+        "fr-FR",
+        "de-DE"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2025,
+      "content_descriptors": [
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

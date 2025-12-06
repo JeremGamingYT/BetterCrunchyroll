@@ -1,0 +1,181 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "G5PHNMEEZ",
+      "channel_id": "crunchyroll",
+      "title": "Digimon Ghost Game",
+      "slug": "",
+      "slug_title": "digimon-ghost-game",
+      "description": "Dans un futur proche, la technologie a progressé. Sur les réseaux sociaux, des rumeurs se répandent sur un mystérieux phénomène autour d’un « fantôme hologramme ». Lorsque le collégien Hiro Amanokawa active un étrange objet laissé par son père, il parvient à voir de mystérieuses créatures appelées Digimon. C'est ainsi que Hiro rencontre l'espiègle Gammamon avec lequel il va désormais affronter des monstres effrayants qui terrorisent le monde des humains.",
+      "extended_description": "",
+      "keywords": [
+        "sci-fi",
+        "supernatural",
+        "masatoshi chioka"
+      ],
+      "season_tags": [
+        "Automne-2021",
+        "Hiver-2022",
+        "Printemps-2022",
+        "Été-2022",
+        "Automne-2022",
+        "Hiver-2023"
+      ],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/ad65a82d761a5b38d757d41081c842bc.jpg"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/ad65a82d761a5b38d757d41081c842bc.jpg"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/ad65a82d761a5b38d757d41081c842bc.jpg"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ad65a82d761a5b38d757d41081c842bc.jpg"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/ad65a82d761a5b38d757d41081c842bc.jpg"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/ad65a82d761a5b38d757d41081c842bc.jpg"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/ad65a82d761a5b38d757d41081c842bc.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/ad65a82d761a5b38d757d41081c842bc.jpg"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/ad65a82d761a5b38d757d41081c842bc.jpg"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/0212710e2a0091ef5810fb782c30466e.jpg"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/0212710e2a0091ef5810fb782c30466e.jpg"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/0212710e2a0091ef5810fb782c30466e.jpg"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/0212710e2a0091ef5810fb782c30466e.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0212710e2a0091ef5810fb782c30466e.jpg"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/0212710e2a0091ef5810fb782c30466e.jpg"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/0212710e2a0091ef5810fb782c30466e.jpg"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/0212710e2a0091ef5810fb782c30466e.jpg"
+            }
+          ]
+        ]
+      },
+      "episode_count": 68,
+      "season_count": 1,
+      "media_count": 68,
+      "content_provider": "Toei Animation",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "12",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": false,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "ru-RU",
+        "it-IT",
+        "pt-BR",
+        "es-419",
+        "en-US",
+        "de-DE",
+        "es-ES",
+        "ar-SA",
+        "fr-FR"
+      ],
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2021,
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

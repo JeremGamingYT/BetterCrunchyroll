@@ -1,0 +1,153 @@
+.watch-page-player {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    pointer-events: none; // Let clicks pass through to the native player
+
+    // Top overlay
+    .player-top-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 1.5rem 2rem;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+        z-index: 200;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.3s ease;
+        pointer-events: none;
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .back-btn {
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            flex-shrink: 0;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.2);
+                transform: scale(1.1);
+            }
+        }
+
+        .episode-info-overlay {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+
+            .episode-badge {
+                background: var(--color-primary, #f47521);
+                color: white;
+                padding: 0.25rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.75rem;
+                font-weight: 700;
+                width: fit-content;
+                letter-spacing: 0.03em;
+            }
+
+            h2 {
+                color: white;
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin: 0;
+                text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 0.9rem;
+                margin: 0;
+            }
+        }
+
+        .top-right-controls {
+            display: flex;
+            gap: 0.75rem;
+
+            button {
+                background: rgba(0, 0, 0, 0.5);
+                border: none;
+                color: white;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(10px);
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .loading-indicator {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 150;
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-top-color: var(--color-primary, #f47521);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// Ensure the native Crunchyroll controls are still accessible
+:global {
+
+    #vilos-player,
+    .vilos-player,
+    [data-testid="vilos-player"],
+    .erc-watch-video-player,
+    .video-player-container,
+    .erc-current-media-player {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        z-index: 50 !important;
+    }
+}

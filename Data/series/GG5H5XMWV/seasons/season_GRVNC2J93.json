@@ -1,0 +1,4768 @@
+{
+  "total": 20,
+  "data": [
+    {
+      "season_number": 2,
+      "series_id": "GG5H5XMWV",
+      "season_title": "To Your Eternity Saison 2",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "description": "Voilà quarante ans qu’Imm, l’immortel aux cheveux blancs, vit sur une île déserte, loin de toute forme de civilisation. Il n’est pas seul pour autant, puisque les frappeurs, eux, continuent à lui rendre visite, ce dont il s’accommode fort bien.",
+      "availability_starts": "2022-11-13T19:30:00Z",
+      "id": "G9DUE8D0X",
+      "is_dubbed": true,
+      "next_episode_id": "G50UZQ72G",
+      "seo_description": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "season_id": "GRVNC2J93",
+      "slug": "",
+      "listing_id": "",
+      "audio_locale": "fr-FR",
+      "season_display_number": "",
+      "identifier": "GG5H5XMWV|S00198816|E1",
+      "eligible_region": "CA",
+      "hd_flag": true,
+      "media_type": "episode",
+      "available_offline": true,
+      "roles": [
+        "dub"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_status": "available",
+      "slug_title": "infatuation-reborn",
+      "closed_captions_available": false,
+      "availability_notes": "",
+      "series_title": "To Your Eternity",
+      "is_subbed": true,
+      "premium_date": null,
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "episode_number": 1,
+      "upload_date": "2022-10-23T00:00:00Z",
+      "recent_variant": "",
+      "is_mature": false,
+      "duration_ms": 1503155,
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "fr-FR",
+      "season_slug_title": "to-your-eternity-season-2",
+      "series_slug_title": "to-your-eternity",
+      "available_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14U4NV35",
+          "is_premium_only": true,
+          "media_guid": "G14U4NV35V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1U28710",
+          "is_premium_only": true,
+          "media_guid": "GG1U28710V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G0DUN792E",
+          "is_premium_only": true,
+          "media_guid": "G0DUN792EV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1U28DJ1",
+          "is_premium_only": true,
+          "media_guid": "GG1U28DJ1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G9DUE8D0X",
+          "is_premium_only": true,
+          "media_guid": "G9DUE8D0XV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GPWUKP75Z",
+          "is_premium_only": true,
+          "media_guid": "GPWUKP75ZV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GX9U319NM",
+          "is_premium_only": true,
+          "media_guid": "GX9U319NMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GK9UGVQZM",
+          "is_premium_only": true,
+          "media_guid": "GK9UGVQZMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "mature_blocked": false,
+      "production_episode_id": "",
+      "next_episode_title": "Testament vivant",
+      "is_clip": false,
+      "season_sequence_number": 2,
+      "sequence_number": 1,
+      "title": "Une affection réincarnée",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/41d9c3dc352ade9db356f0bbc2183fe3.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/41d9c3dc352ade9db356f0bbc2183fe3.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/41d9c3dc352ade9db356f0bbc2183fe3.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/41d9c3dc352ade9db356f0bbc2183fe3.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/41d9c3dc352ade9db356f0bbc2183fe3.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/41d9c3dc352ade9db356f0bbc2183fe3.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/41d9c3dc352ade9db356f0bbc2183fe3.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/41d9c3dc352ade9db356f0bbc2183fe3.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": true,
+      "seo_title": "",
+      "premium_available_date": "2022-11-13T19:30:00Z",
+      "episode": "1",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "episode_air_date": "2022-10-23T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/G9DUE8D0XV/streams"
+    },
+    {
+      "available_date": null,
+      "sequence_number": 2,
+      "series_slug_title": "to-your-eternity",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWU2ZQMD",
+          "is_premium_only": true,
+          "media_guid": "GJWU2ZQMDV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9UQ5KEK",
+          "is_premium_only": true,
+          "media_guid": "GX9UQ5KEKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G50UZQ72G",
+          "is_premium_only": true,
+          "media_guid": "G50UZQ72GV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GMKUXK8ZG",
+          "is_premium_only": true,
+          "media_guid": "GMKUXK8ZGV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GVWU0KQVW",
+          "is_premium_only": true,
+          "media_guid": "GVWU0KQVWV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GN7UDQ4K4",
+          "is_premium_only": true,
+          "media_guid": "GN7UDQ4K4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G4VUWKZP7",
+          "is_premium_only": true,
+          "media_guid": "G4VUWKZP7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GMKUE9WZP",
+          "is_premium_only": true,
+          "media_guid": "GMKUE9WZPV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "duration_ms": 1503155,
+      "season_title": "To Your Eternity Saison 2",
+      "availability_notes": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "series_title": "To Your Eternity",
+      "hd_flag": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "slug_title": "beating-will",
+      "episode_number": 2,
+      "eligible_region": "CA",
+      "episode": "2",
+      "season_sequence_number": 2,
+      "is_mature": false,
+      "is_subbed": true,
+      "seo_description": "",
+      "roles": [
+        "dub"
+      ],
+      "mature_blocked": false,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "slug": "",
+      "season_id": "GRVNC2J93",
+      "is_dubbed": true,
+      "premium_available_date": "2022-11-20T19:30:00Z",
+      "next_episode_title": "Celui que tout le monde attend",
+      "channel_id": "crunchyroll",
+      "description": "Tonali se dresse face à Hisame, mais le frappeur dans son bras est plus rapide qu’elle et la blesse grièvement avant de s’enfuir. Imm va-t-il à nouveau voir mourir une de ses plus précieuses amies ?",
+      "season_display_number": "",
+      "episode_air_date": "2022-10-30T00:00:00Z",
+      "available_offline": true,
+      "audio_locale": "fr-FR",
+      "is_premium_only": true,
+      "upload_date": "2022-10-30T00:00:00Z",
+      "closed_captions_available": false,
+      "availability_status": "available",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_date": null,
+      "season_number": 2,
+      "seo_title": "",
+      "is_clip": false,
+      "media_type": "episode",
+      "production_episode_id": "",
+      "streams_link": "/content/v2/cms/videos/G50UZQ72GV/streams",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "next_episode_id": "GMKUXK24K",
+      "availability_starts": "2022-11-20T19:30:00Z",
+      "series_id": "GG5H5XMWV",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/756c24d13f025a799f09ed8f64075358.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/756c24d13f025a799f09ed8f64075358.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/756c24d13f025a799f09ed8f64075358.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/756c24d13f025a799f09ed8f64075358.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/756c24d13f025a799f09ed8f64075358.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/756c24d13f025a799f09ed8f64075358.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/756c24d13f025a799f09ed8f64075358.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/756c24d13f025a799f09ed8f64075358.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "id": "G50UZQ72G",
+      "season_slug_title": "to-your-eternity-season-2",
+      "title": "Testament vivant",
+      "listing_id": "",
+      "recent_variant": "",
+      "identifier": "GG5H5XMWV|S00198816|E2",
+      "recent_audio_locale": "fr-FR"
+    },
+    {
+      "available_offline": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "listing_id": "",
+      "streams_link": "/content/v2/cms/videos/GMKUXK24KV/streams",
+      "id": "GMKUXK24K",
+      "series_title": "To Your Eternity",
+      "series_slug_title": "to-your-eternity",
+      "slug": "",
+      "availability_starts": "2022-11-27T19:30:00Z",
+      "episode_air_date": "2022-11-06T00:00:00Z",
+      "mature_blocked": false,
+      "season_number": 2,
+      "season_sequence_number": 2,
+      "seo_title": "",
+      "series_id": "GG5H5XMWV",
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "media_type": "episode",
+      "season_title": "To Your Eternity Saison 2",
+      "channel_id": "crunchyroll",
+      "next_episode_id": "GK9U31X2D",
+      "availability_notes": "",
+      "availability_status": "available",
+      "episode": "3",
+      "closed_captions_available": false,
+      "slug_title": "the-awaited",
+      "episode_number": 3,
+      "premium_date": null,
+      "season_id": "GRVNC2J93",
+      "recent_audio_locale": "fr-FR",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UDQNZ8",
+          "is_premium_only": true,
+          "media_guid": "GN7UDQNZ8V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUGKPDM",
+          "is_premium_only": true,
+          "media_guid": "GQJUGKPDMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GK9U31J4J",
+          "is_premium_only": true,
+          "media_guid": "GK9U31J4JV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GVWU0KEZ9",
+          "is_premium_only": true,
+          "media_guid": "GVWU0KEZ9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GMKUXK24K",
+          "is_premium_only": true,
+          "media_guid": "GMKUXK24KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G8WUNZ0GD",
+          "is_premium_only": true,
+          "media_guid": "G8WUNZ0GDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G14UVQ284",
+          "is_premium_only": true,
+          "media_guid": "G14UVQ284V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GVWU8NJVM",
+          "is_premium_only": true,
+          "media_guid": "GVWU8NJVMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "audio_locale": "fr-FR",
+      "upload_date": "2022-11-06T00:00:00Z",
+      "season_display_number": "",
+      "available_date": null,
+      "is_dubbed": true,
+      "premium_available_date": "2022-11-27T19:30:00Z",
+      "hd_flag": true,
+      "seo_description": "",
+      "next_episode_title": "Un jeune homme visionnaire",
+      "sequence_number": 3,
+      "is_clip": false,
+      "duration_ms": 1503155,
+      "is_mature": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "recent_variant": "",
+      "roles": [
+        "dub"
+      ],
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/264ac4b5e4143ad5b4ae983a0ac02bbd.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/264ac4b5e4143ad5b4ae983a0ac02bbd.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/264ac4b5e4143ad5b4ae983a0ac02bbd.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/264ac4b5e4143ad5b4ae983a0ac02bbd.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/264ac4b5e4143ad5b4ae983a0ac02bbd.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/264ac4b5e4143ad5b4ae983a0ac02bbd.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/264ac4b5e4143ad5b4ae983a0ac02bbd.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/264ac4b5e4143ad5b4ae983a0ac02bbd.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": true,
+      "identifier": "GG5H5XMWV|S00198816|E3",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_slug_title": "to-your-eternity-season-2",
+      "description": "Le temps ne s’est pas contenté de s’écouler tranquillement pendant qu’Imm repoussait malicieusement les héritières de Hayase. Le monde a aussi changé, et le culte voué à Imm, héros mythique de la révolution de Jananda, fait grincer bien des dents.",
+      "title": "Celui que tout le monde attend",
+      "is_subbed": true
+    },
+    {
+      "sequence_number": 4,
+      "is_mature": false,
+      "slug_title": "the-young-man-who-can-see",
+      "season_sequence_number": 2,
+      "upload_date": "2022-11-13T00:00:00Z",
+      "season_display_number": "",
+      "next_episode_title": "L’expédition du saint",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_number": 2,
+      "next_episode_id": "G2XU0ED4Z",
+      "series_id": "GG5H5XMWV",
+      "duration_ms": 1503155,
+      "availability_starts": "2022-12-04T19:30:00Z",
+      "season_slug_title": "to-your-eternity-season-2",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a5ef745927d720bc1c9c476185343dab.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a5ef745927d720bc1c9c476185343dab.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a5ef745927d720bc1c9c476185343dab.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a5ef745927d720bc1c9c476185343dab.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a5ef745927d720bc1c9c476185343dab.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a5ef745927d720bc1c9c476185343dab.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a5ef745927d720bc1c9c476185343dab.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a5ef745927d720bc1c9c476185343dab.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "premium_date": null,
+      "title": "Un jeune homme visionnaire",
+      "production_episode_id": "",
+      "closed_captions_available": false,
+      "episode_air_date": "2022-11-13T00:00:00Z",
+      "description": "Enfin, on en sait un peu plus sur ce qui a motivé la capture d’Imm par Bonshen, que son excentricité bouffonesque n’empêche pas d'être plutôt observateur et assez retors. Et encore, il y a bien plus étonnant chez lui…",
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9U31GZ7",
+          "is_premium_only": true,
+          "media_guid": "GK9U31GZ7V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GK9U31X2D",
+          "is_premium_only": true,
+          "media_guid": "GK9U31X2DV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GMKUXKVMQ",
+          "is_premium_only": true,
+          "media_guid": "GMKUXKVMQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GJWU2ZV7Z",
+          "is_premium_only": true,
+          "media_guid": "GJWU2ZV7ZV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU0K9X7",
+          "is_premium_only": true,
+          "media_guid": "GVWU0K9X7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GZ7UVZG7J",
+          "is_premium_only": true,
+          "media_guid": "GZ7UVZG7JV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GJWUQN84Q",
+          "is_premium_only": true,
+          "media_guid": "GJWUQN84QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G31UVKQ7K",
+          "is_premium_only": true,
+          "media_guid": "G31UVKQ7KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/GK9U31X2DV/streams",
+      "audio_locale": "fr-FR",
+      "series_title": "To Your Eternity",
+      "series_slug_title": "to-your-eternity",
+      "eligible_region": "CA",
+      "mature_blocked": false,
+      "available_date": null,
+      "slug": "",
+      "episode": "4",
+      "availability_status": "available",
+      "id": "GK9U31X2D",
+      "available_offline": true,
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_number": 4,
+      "identifier": "GG5H5XMWV|S00198816|E4",
+      "season_title": "To Your Eternity Saison 2",
+      "is_premium_only": true,
+      "recent_audio_locale": "fr-FR",
+      "is_subbed": true,
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "seo_description": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "premium_available_date": "2022-12-04T19:30:00Z",
+      "season_id": "GRVNC2J93",
+      "hd_flag": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "roles": [
+        "dub"
+      ],
+      "availability_notes": "",
+      "is_dubbed": true,
+      "is_clip": false
+    },
+    {
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "closed_captions_available": false,
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "is_clip": false,
+      "identifier": "GG5H5XMWV|S00198816|E5",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "to-your-eternity",
+      "recent_audio_locale": "fr-FR",
+      "is_premium_only": true,
+      "upload_date": "2022-11-20T00:00:00Z",
+      "production_episode_id": "",
+      "seo_description": "",
+      "next_episode_id": "GD9UV5MNP",
+      "series_title": "To Your Eternity",
+      "episode": "5",
+      "series_id": "GG5H5XMWV",
+      "slug": "",
+      "premium_available_date": "2022-12-11T19:30:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "duration_ms": 1503155,
+      "streams_link": "/content/v2/cms/videos/G2XU0ED4ZV/streams",
+      "season_id": "GRVNC2J93",
+      "availability_status": "available",
+      "is_dubbed": true,
+      "availability_notes": "",
+      "premium_date": null,
+      "season_sequence_number": 2,
+      "episode_number": 5,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "seo_title": "",
+      "channel_id": "crunchyroll",
+      "is_mature": false,
+      "season_number": 2,
+      "recent_variant": "",
+      "next_episode_title": "L’hérétique",
+      "available_offline": true,
+      "mature_blocked": false,
+      "roles": [
+        "dub"
+      ],
+      "media_type": "episode",
+      "season_title": "To Your Eternity Saison 2",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "season_display_number": "",
+      "is_subbed": true,
+      "available_date": null,
+      "description": "Imm va de surprise en surprise avec Bonshen, qui se révèle plus attachant qu’il n’y paraissait, ainsi qu’avec Todo, qui cachait pourtant bien son jeu. Mais le plus étonné, ce sera Bonshen lui-même, quand il comprendra de quoi Imm est capable en réalité.",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode_air_date": "2022-11-20T00:00:00Z",
+      "sequence_number": 5,
+      "listing_id": "",
+      "season_slug_title": "to-your-eternity-season-2",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7c904a9a5771d92746ff9a385774f077.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7c904a9a5771d92746ff9a385774f077.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7c904a9a5771d92746ff9a385774f077.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7c904a9a5771d92746ff9a385774f077.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7c904a9a5771d92746ff9a385774f077.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7c904a9a5771d92746ff9a385774f077.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7c904a9a5771d92746ff9a385774f077.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7c904a9a5771d92746ff9a385774f077.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "hd_flag": true,
+      "availability_starts": "2022-12-11T19:30:00Z",
+      "slug_title": "the-holy-mans-voyage",
+      "title": "L’expédition du saint",
+      "id": "G2XU0ED4Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GMKUXKEZZ",
+          "is_premium_only": true,
+          "media_guid": "GMKUXKEZZV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GZ7UVZ4MV",
+          "is_premium_only": true,
+          "media_guid": "GZ7UVZ4MVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G31UXGZWJ",
+          "is_premium_only": true,
+          "media_guid": "G31UXGZWJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GPWUKPDZ3",
+          "is_premium_only": true,
+          "media_guid": "GPWUKPDZ3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G2XU0ED4Z",
+          "is_premium_only": true,
+          "media_guid": "G2XU0ED4ZV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GVWU09X35",
+          "is_premium_only": true,
+          "media_guid": "GVWU09X35V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GN7UNXG50",
+          "is_premium_only": true,
+          "media_guid": "GN7UNXG50V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GPWU8NE0J",
+          "is_premium_only": true,
+          "media_guid": "GPWU8NE0JV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "fr-FR",
+      "eligible_region": "CA"
+    },
+    {
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_number": 2,
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/77a2bf058cbf6f0bdfcc4433df78483d.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/77a2bf058cbf6f0bdfcc4433df78483d.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/77a2bf058cbf6f0bdfcc4433df78483d.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/77a2bf058cbf6f0bdfcc4433df78483d.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/77a2bf058cbf6f0bdfcc4433df78483d.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/77a2bf058cbf6f0bdfcc4433df78483d.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/77a2bf058cbf6f0bdfcc4433df78483d.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/77a2bf058cbf6f0bdfcc4433df78483d.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode": "6",
+      "mature_blocked": false,
+      "availability_status": "available",
+      "availability_notes": "",
+      "season_title": "To Your Eternity Saison 2",
+      "description": "Imm, dans le corps de Palona, prend très mal la demande en mariage de Kahaku, qui de son côté s’entête à la poursuivre jusque dans la tente de Todo. Bonshen ordonne au sixième chef des Gardiens de ne plus approcher Imm, sans savoir que lui et sa petite troupe vont au-devant d’ennuis autrement plus graves.",
+      "season_slug_title": "to-your-eternity-season-2",
+      "upload_date": "2022-11-27T00:00:00Z",
+      "is_subbed": true,
+      "next_episode_title": "Châtiment et absolution",
+      "premium_available_date": "2022-12-18T19:30:00Z",
+      "duration_ms": 1503155,
+      "slug": "",
+      "is_mature": false,
+      "audio_locale": "fr-FR",
+      "recent_variant": "",
+      "season_sequence_number": 2,
+      "series_title": "To Your Eternity",
+      "channel_id": "crunchyroll",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GVWU0K8VP",
+          "is_premium_only": true,
+          "media_guid": "GVWU0K8VPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G50UZQ1X7",
+          "is_premium_only": true,
+          "media_guid": "G50UZQ1X7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G8WUNZJDW",
+          "is_premium_only": true,
+          "media_guid": "G8WUNZJDWV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GD9UV5MNP",
+          "is_premium_only": true,
+          "media_guid": "GD9UV5MNPV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GQJUGK5D1",
+          "is_premium_only": true,
+          "media_guid": "GQJUGK5D1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G7PU4938V",
+          "is_premium_only": true,
+          "media_guid": "G7PU4938VV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GK9UGVQ7P",
+          "is_premium_only": true,
+          "media_guid": "GK9UGVQ7PV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G8WU73E2N",
+          "is_premium_only": true,
+          "media_guid": "G8WU73E2NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/GD9UV5MNPV/streams",
+      "roles": [
+        "dub"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_starts": "2022-12-18T19:30:00Z",
+      "hd_flag": true,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "title": "L’hérétique",
+      "premium_date": null,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "seo_description": "",
+      "available_date": null,
+      "series_slug_title": "to-your-eternity",
+      "next_episode_id": "G31UX9E51",
+      "available_offline": true,
+      "recent_audio_locale": "fr-FR",
+      "episode_number": 6,
+      "series_id": "GG5H5XMWV",
+      "episode_air_date": "2022-11-27T00:00:00Z",
+      "sequence_number": 6,
+      "listing_id": "",
+      "eligible_region": "CA",
+      "closed_captions_available": false,
+      "season_display_number": "",
+      "seo_title": "",
+      "is_clip": false,
+      "is_premium_only": true,
+      "season_id": "GRVNC2J93",
+      "slug_title": "heretics-betrayed",
+      "media_type": "episode",
+      "id": "GD9UV5MNP",
+      "identifier": "GG5H5XMWV|S00198816|E6",
+      "is_dubbed": true
+    },
+    {
+      "premium_date": null,
+      "identifier": "GG5H5XMWV|S00198816|E7",
+      "slug": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G31UXGVP3",
+          "is_premium_only": true,
+          "media_guid": "G31UXGVP3V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G50UZQ02P",
+          "is_premium_only": true,
+          "media_guid": "G50UZQ02PV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GMKUXVMN8",
+          "is_premium_only": true,
+          "media_guid": "GMKUXVMN8V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GPWUKGJ3P",
+          "is_premium_only": true,
+          "media_guid": "GPWUKGJ3PV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G31UX9E51",
+          "is_premium_only": true,
+          "media_guid": "G31UX9E51V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G0DUN8QVZ",
+          "is_premium_only": true,
+          "media_guid": "G0DUN8QVZV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GVWU8NJDD",
+          "is_premium_only": true,
+          "media_guid": "GVWU8NJDDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GZ7UDQJPD",
+          "is_premium_only": true,
+          "media_guid": "GZ7UDQJPDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "availability_status": "available",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "recent_audio_locale": "fr-FR",
+      "title": "Châtiment et absolution",
+      "series_title": "To Your Eternity",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode_air_date": "2022-12-04T00:00:00Z",
+      "season_number": 2,
+      "media_type": "episode",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "is_premium_only": true,
+      "hd_flag": true,
+      "id": "G31UX9E51",
+      "recent_variant": "",
+      "season_slug_title": "to-your-eternity-season-2",
+      "is_clip": false,
+      "streams_link": "/content/v2/cms/videos/G31UX9E51V/streams",
+      "seo_description": "",
+      "audio_locale": "fr-FR",
+      "listing_id": "",
+      "next_episode_title": "Au bout du rêve",
+      "mature_blocked": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "episode": "7",
+      "season_sequence_number": 2,
+      "description": "Pendant qu’Imm lutte dans sa prison de métal, Bonshen fait connaissance avec une existence bien moins agréable que celle qu’il a menée jusque-là. Enfermé dans une cage suspendue au-dessus d’une rivière infestée de crocodiles, à peine nourri, il va devoir se justifier devant des juges très défavorablement disposés à son égard.",
+      "closed_captions_available": false,
+      "eligible_region": "CA",
+      "slug_title": "crime-and-forgiveness",
+      "next_episode_id": "G9DUE3947",
+      "season_display_number": "",
+      "available_offline": true,
+      "upload_date": "2022-12-04T00:00:00Z",
+      "production_episode_id": "",
+      "series_id": "GG5H5XMWV",
+      "channel_id": "crunchyroll",
+      "season_title": "To Your Eternity Saison 2",
+      "seo_title": "",
+      "is_subbed": true,
+      "season_id": "GRVNC2J93",
+      "duration_ms": 1503155,
+      "sequence_number": 7,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a68600db7c13bc522de48bb82b78b915.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a68600db7c13bc522de48bb82b78b915.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a68600db7c13bc522de48bb82b78b915.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a68600db7c13bc522de48bb82b78b915.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a68600db7c13bc522de48bb82b78b915.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a68600db7c13bc522de48bb82b78b915.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a68600db7c13bc522de48bb82b78b915.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a68600db7c13bc522de48bb82b78b915.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_starts": "2022-12-25T19:30:00Z",
+      "is_dubbed": true,
+      "is_mature": false,
+      "available_date": null,
+      "series_slug_title": "to-your-eternity",
+      "availability_notes": "",
+      "episode_number": 7,
+      "premium_available_date": "2022-12-25T19:30:00Z",
+      "roles": [
+        "dub"
+      ]
+    },
+    {
+      "season_number": 2,
+      "available_date": null,
+      "is_premium_only": true,
+      "premium_date": null,
+      "id": "G9DUE3947",
+      "season_sequence_number": 2,
+      "upload_date": "2022-12-11T00:00:00Z",
+      "channel_id": "crunchyroll",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GPWUKP8QE",
+          "is_premium_only": true,
+          "media_guid": "GPWUKP8QEV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G2XU0Q1MQ",
+          "is_premium_only": true,
+          "media_guid": "G2XU0Q1MQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G9DUE3947",
+          "is_premium_only": true,
+          "media_guid": "G9DUE3947V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GEVUZEW08",
+          "is_premium_only": true,
+          "media_guid": "GEVUZEW08V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GX9UQ032P",
+          "is_premium_only": true,
+          "media_guid": "GX9UQ032PV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GEVUZE51V",
+          "is_premium_only": true,
+          "media_guid": "GEVUZE51VV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GPWU8NEW0",
+          "is_premium_only": true,
+          "media_guid": "GPWU8NEW0V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GD9UE9D27",
+          "is_premium_only": true,
+          "media_guid": "GD9UE9D27V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "closed_captions_available": false,
+      "next_episode_title": "Une conscience étendue",
+      "seo_title": "",
+      "episode_number": 8,
+      "recent_variant": "",
+      "is_mature": false,
+      "eligible_region": "CA",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ef96dfbfffe0242539392d1f15b2a856.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ef96dfbfffe0242539392d1f15b2a856.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ef96dfbfffe0242539392d1f15b2a856.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ef96dfbfffe0242539392d1f15b2a856.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ef96dfbfffe0242539392d1f15b2a856.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ef96dfbfffe0242539392d1f15b2a856.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ef96dfbfffe0242539392d1f15b2a856.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ef96dfbfffe0242539392d1f15b2a856.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_dubbed": true,
+      "mature_blocked": false,
+      "season_display_number": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "series_id": "GG5H5XMWV",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "series_title": "To Your Eternity",
+      "slug_title": "beyond-dreams",
+      "description": "L’exécution du prince Bonshen a lieu malgré l’étrange malaise collectif qui frappe l’assistance au moment où la lame tombe, comme le prouve le cadavre sans tête toujours agenouillé sur l’échafaud. Tandis que Saïlila se réjouit méchamment, un jeune homme en haillons se réveille bien vivant à Uralis.",
+      "is_clip": false,
+      "recent_audio_locale": "fr-FR",
+      "media_type": "episode",
+      "series_slug_title": "to-your-eternity",
+      "audio_locale": "fr-FR",
+      "roles": [
+        "dub"
+      ],
+      "availability_starts": "2023-01-01T19:30:00Z",
+      "next_episode_id": "GWDU8DN48",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "duration_ms": 1503155,
+      "season_slug_title": "to-your-eternity-season-2",
+      "production_episode_id": "",
+      "slug": "",
+      "identifier": "GG5H5XMWV|S00198816|E8",
+      "streams_link": "/content/v2/cms/videos/G9DUE3947V/streams",
+      "seo_description": "",
+      "hd_flag": true,
+      "episode": "8",
+      "season_title": "To Your Eternity Saison 2",
+      "episode_air_date": "2022-12-11T00:00:00Z",
+      "premium_available_date": "2023-01-01T19:30:00Z",
+      "sequence_number": 8,
+      "season_id": "GRVNC2J93",
+      "availability_status": "available",
+      "is_subbed": true,
+      "available_offline": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "listing_id": "",
+      "title": "Au bout du rêve",
+      "maturity_ratings": [
+        "TV-14"
+      ]
+    },
+    {
+      "eligible_region": "CA",
+      "duration_ms": 1503155,
+      "closed_captions_available": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G2XU0EN28",
+          "is_premium_only": true,
+          "media_guid": "G2XU0EN28V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUG28EK",
+          "is_premium_only": true,
+          "media_guid": "GQJUG28EKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GQJUG24X0",
+          "is_premium_only": true,
+          "media_guid": "GQJUG24X0V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GD9UVX419",
+          "is_premium_only": true,
+          "media_guid": "GD9UVX419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GWDU8DN48",
+          "is_premium_only": true,
+          "media_guid": "GWDU8DN48V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G14U4MX5G",
+          "is_premium_only": true,
+          "media_guid": "G14U4MX5GV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G8WU73E9E",
+          "is_premium_only": true,
+          "media_guid": "G8WU73E9EV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GWDU7VGPN",
+          "is_premium_only": true,
+          "media_guid": "GWDU7VGPNV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "production_episode_id": "",
+      "season_sequence_number": 2,
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "roles": [
+        "dub"
+      ],
+      "episode": "9",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/df2c3580118dd95e2bbb7b4777f28f15.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/df2c3580118dd95e2bbb7b4777f28f15.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/df2c3580118dd95e2bbb7b4777f28f15.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/df2c3580118dd95e2bbb7b4777f28f15.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/df2c3580118dd95e2bbb7b4777f28f15.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/df2c3580118dd95e2bbb7b4777f28f15.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/df2c3580118dd95e2bbb7b4777f28f15.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/df2c3580118dd95e2bbb7b4777f28f15.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "is_dubbed": true,
+      "episode_number": 9,
+      "upload_date": "2022-12-18T00:00:00Z",
+      "series_id": "GG5H5XMWV",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "season_slug_title": "to-your-eternity-season-2",
+      "media_type": "episode",
+      "next_episode_title": "Diapason",
+      "availability_status": "available",
+      "season_title": "To Your Eternity Saison 2",
+      "is_subbed": true,
+      "slug": "",
+      "series_title": "To Your Eternity",
+      "episode_air_date": "2022-12-18T00:00:00Z",
+      "series_slug_title": "to-your-eternity",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "seo_title": "",
+      "recent_audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GWDU8DN48V/streams",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_clip": false,
+      "sequence_number": 9,
+      "available_date": null,
+      "premium_date": null,
+      "channel_id": "crunchyroll",
+      "description": "Après avoir secouru la population d’une ville contrôlée par l’église de Bennett, Imm est face à un nouveau défi : il y a un frappeur à aller débusquer dans un marais, ce qui l’empêche d’utiliser efficacement toutes les formes qu’il peut prendre. L’homme en noir va donc lui accorder un nouveau pouvoir…",
+      "audio_locale": "fr-FR",
+      "hd_flag": true,
+      "id": "GWDU8DN48",
+      "identifier": "GG5H5XMWV|S00198816|E9",
+      "is_mature": false,
+      "listing_id": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_display_number": "",
+      "premium_available_date": "2023-01-15T19:30:00Z",
+      "slug_title": "expanding-consciousness",
+      "season_number": 2,
+      "recent_variant": "",
+      "availability_starts": "2023-01-15T19:30:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "season_id": "GRVNC2J93",
+      "next_episode_id": "GG1U2G7KX",
+      "available_offline": true,
+      "title": "Une conscience étendue",
+      "mature_blocked": false,
+      "seo_description": "",
+      "is_premium_only": true
+    },
+    {
+      "episode_air_date": "2022-12-25T00:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G8WUNZ7D8",
+          "is_premium_only": true,
+          "media_guid": "G8WUNZ7D8V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G50UZ5J8D",
+          "is_premium_only": true,
+          "media_guid": "G50UZ5J8DV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GG1U2G7KX",
+          "is_premium_only": true,
+          "media_guid": "GG1U2G7KXV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU49KGG",
+          "is_premium_only": true,
+          "media_guid": "G7PU49KGGV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GPWUKGW3D",
+          "is_premium_only": true,
+          "media_guid": "GPWUKGW3DV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUQ2Z07",
+          "is_premium_only": true,
+          "media_guid": "G4VUQ2Z07V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GD9UE9D4J",
+          "is_premium_only": true,
+          "media_guid": "GD9UE9D4JV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G0DUMG499",
+          "is_premium_only": true,
+          "media_guid": "G0DUMG499V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "dub"
+      ],
+      "identifier": "GG5H5XMWV|S00198816|E10",
+      "listing_id": "",
+      "available_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e1b521ec5cbd2bce0a2207945b512e73.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e1b521ec5cbd2bce0a2207945b512e73.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e1b521ec5cbd2bce0a2207945b512e73.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e1b521ec5cbd2bce0a2207945b512e73.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e1b521ec5cbd2bce0a2207945b512e73.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e1b521ec5cbd2bce0a2207945b512e73.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e1b521ec5cbd2bce0a2207945b512e73.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e1b521ec5cbd2bce0a2207945b512e73.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug_title": "resonance",
+      "streams_link": "/content/v2/cms/videos/GG1U2G7KXV/streams",
+      "available_offline": true,
+      "next_episode_id": "G14U4M2J4",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_id": "GRVNC2J93",
+      "recent_variant": "",
+      "is_mature": false,
+      "episode_number": 10,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "is_clip": false,
+      "season_sequence_number": 2,
+      "description": "Tandis que Bonshen tente d’arracher à la princesse de Renlil la permission de protéger la cité royale, Imm continue à étendre son pouvoir. Lors d’une promenade en ville, il détecte des ondes de douleur qui proviennent d’une baraque de foire.",
+      "season_slug_title": "to-your-eternity-season-2",
+      "duration_ms": 1503155,
+      "seo_title": "",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "series_slug_title": "to-your-eternity",
+      "series_title": "To Your Eternity",
+      "title": "Diapason",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "production_episode_id": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "eligible_region": "CA",
+      "availability_notes": "",
+      "upload_date": "2022-12-25T00:00:00Z",
+      "next_episode_title": "La valeur de la chair",
+      "media_type": "episode",
+      "is_subbed": true,
+      "slug": "",
+      "season_number": 2,
+      "closed_captions_available": false,
+      "is_dubbed": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "sequence_number": 10,
+      "episode": "10",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "season_title": "To Your Eternity Saison 2",
+      "audio_locale": "fr-FR",
+      "availability_starts": "2023-01-15T19:30:00Z",
+      "availability_status": "available",
+      "hd_flag": true,
+      "premium_available_date": "2023-01-15T19:30:00Z",
+      "series_id": "GG5H5XMWV",
+      "is_premium_only": true,
+      "recent_audio_locale": "fr-FR",
+      "seo_description": "",
+      "id": "GG1U2G7KX",
+      "season_display_number": "",
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "premium_date": null
+    },
+    {
+      "description": "Bonshen n’aura pas eu à chercher longtemps pour dénicher les nouveaux compagnons d’armes d’Imm. C’est spontanément que viennent à lui deux hommes prêts à tout sacrifier pour vaincre les frappeurs, quitte à y laisser la vie. Ensemble, ils partent pour Renlil…",
+      "slug": "",
+      "season_id": "GRVNC2J93",
+      "series_id": "GG5H5XMWV",
+      "series_title": "To Your Eternity",
+      "is_mature": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "identifier": "GG5H5XMWV|S00198816|E11",
+      "seo_description": "",
+      "title": "La valeur de la chair",
+      "availability_starts": "2023-01-29T19:30:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/21bdb2855edf53beffa8c43381bf73ac.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/21bdb2855edf53beffa8c43381bf73ac.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/21bdb2855edf53beffa8c43381bf73ac.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/21bdb2855edf53beffa8c43381bf73ac.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/21bdb2855edf53beffa8c43381bf73ac.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/21bdb2855edf53beffa8c43381bf73ac.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/21bdb2855edf53beffa8c43381bf73ac.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/21bdb2855edf53beffa8c43381bf73ac.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "listing_id": "",
+      "mature_blocked": false,
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "is_premium_only": true,
+      "audio_locale": "fr-FR",
+      "season_title": "To Your Eternity Saison 2",
+      "upload_date": "2023-01-08T00:00:00Z",
+      "premium_available_date": "2023-01-29T19:30:00Z",
+      "hd_flag": true,
+      "is_subbed": true,
+      "available_offline": true,
+      "next_episode_title": "Ce que cache le voile",
+      "recent_variant": "",
+      "sequence_number": 11,
+      "seo_title": "",
+      "season_number": 2,
+      "series_slug_title": "to-your-eternity",
+      "episode_air_date": "2023-01-08T00:00:00Z",
+      "availability_status": "available",
+      "media_type": "episode",
+      "episode_number": 11,
+      "recent_audio_locale": "fr-FR",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug_title": "the-value-of-flesh",
+      "duration_ms": 1503062,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "episode": "11",
+      "id": "G14U4M2J4",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "is_dubbed": true,
+      "closed_captions_available": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "available_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GZ7UVZD7K",
+          "is_premium_only": true,
+          "media_guid": "GZ7UVZD7KV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UD4W01",
+          "is_premium_only": true,
+          "media_guid": "GN7UD4W01V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GX9UQ09MM",
+          "is_premium_only": true,
+          "media_guid": "GX9UQ09MMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G14U4M2J4",
+          "is_premium_only": true,
+          "media_guid": "G14U4M2J4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GJWU2V87Q",
+          "is_premium_only": true,
+          "media_guid": "GJWU2V87QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GN7UD4PNN",
+          "is_premium_only": true,
+          "media_guid": "GN7UD4PNNV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G50UMKWJQ",
+          "is_premium_only": true,
+          "media_guid": "G50UMKWJQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GEVUWJK8G",
+          "is_premium_only": true,
+          "media_guid": "GEVUWJK8GV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "season_slug_title": "to-your-eternity-season-2",
+      "roles": [
+        "dub"
+      ],
+      "season_display_number": "",
+      "next_episode_id": "GK9U3X5GW",
+      "availability_notes": "",
+      "streams_link": "/content/v2/cms/videos/G14U4M2J4V/streams",
+      "premium_date": null,
+      "production_episode_id": "",
+      "season_sequence_number": 2,
+      "is_clip": false,
+      "channel_id": "crunchyroll",
+      "eligible_region": "CA"
+    },
+    {
+      "next_episode_id": "GVWU095PW",
+      "roles": [
+        "dub"
+      ],
+      "channel_id": "crunchyroll",
+      "series_title": "To Your Eternity",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GD9UV5EN5",
+          "is_premium_only": true,
+          "media_guid": "GD9UV5EN5V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9U3XQ2P",
+          "is_premium_only": true,
+          "media_guid": "GK9U3XQ2PV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GJWU2V5Q2",
+          "is_premium_only": true,
+          "media_guid": "GJWU2V5Q2V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GK9U3X5GW",
+          "is_premium_only": true,
+          "media_guid": "GK9U3X5GWV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GMKUXV8ED",
+          "is_premium_only": true,
+          "media_guid": "GMKUXV8EDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GZ7UV4KK8",
+          "is_premium_only": true,
+          "media_guid": "GZ7UV4KK8V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GG1UXW07Z",
+          "is_premium_only": true,
+          "media_guid": "GG1UXW07ZV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GX9U319KG",
+          "is_premium_only": true,
+          "media_guid": "GX9U319KGV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 2,
+      "premium_date": null,
+      "is_dubbed": true,
+      "id": "GK9U3X5GW",
+      "is_premium_only": true,
+      "available_date": null,
+      "title": "Ce que cache le voile",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "listing_id": "",
+      "episode": "12",
+      "slug_title": "secret-behind-the-veil",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "episode_number": 12,
+      "series_id": "GG5H5XMWV",
+      "streams_link": "/content/v2/cms/videos/GK9U3X5GWV/streams",
+      "seo_description": "",
+      "season_display_number": "",
+      "is_subbed": true,
+      "upload_date": "2023-01-15T00:00:00Z",
+      "availability_starts": "2023-02-05T19:30:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f14325e6c8784d20c9ae162eee080e54.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f14325e6c8784d20c9ae162eee080e54.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f14325e6c8784d20c9ae162eee080e54.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f14325e6c8784d20c9ae162eee080e54.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f14325e6c8784d20c9ae162eee080e54.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f14325e6c8784d20c9ae162eee080e54.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f14325e6c8784d20c9ae162eee080e54.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f14325e6c8784d20c9ae162eee080e54.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "hd_flag": true,
+      "season_id": "GRVNC2J93",
+      "media_type": "episode",
+      "sequence_number": 12,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "duration_ms": 1503062,
+      "closed_captions_available": false,
+      "seo_title": "",
+      "next_episode_title": "L’identité du sage",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "is_clip": false,
+      "series_slug_title": "to-your-eternity",
+      "audio_locale": "fr-FR",
+      "availability_notes": "",
+      "available_offline": true,
+      "mature_blocked": false,
+      "recent_variant": "",
+      "season_title": "To Your Eternity Saison 2",
+      "season_number": 2,
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "recent_audio_locale": "fr-FR",
+      "slug": "",
+      "season_slug_title": "to-your-eternity-season-2",
+      "is_mature": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "episode_air_date": "2023-01-15T00:00:00Z",
+      "identifier": "GG5H5XMWV|S00198816|E12",
+      "premium_available_date": "2023-02-05T19:30:00Z",
+      "availability_status": "available",
+      "description": "Imm est toujours aussi perplexe au sujet des trois compagnons que lui a dénichés Bonshen, surtout concernant Messâl qui ne semble ni très impliqué ni très actif. Tandis que tous travaillent à renforcer les défenses de Renlil, il passe en effet son temps à jouer."
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_starts": "2023-02-12T19:30:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "seo_title": "",
+      "duration_ms": 1503062,
+      "season_sequence_number": 2,
+      "next_episode_title": "Le matin du renouveau",
+      "is_clip": false,
+      "season_slug_title": "to-your-eternity-season-2",
+      "slug": "",
+      "series_id": "GG5H5XMWV",
+      "premium_available_date": "2023-02-12T19:30:00Z",
+      "closed_captions_available": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/01d62c2899eb602c5be4f8925c9e0873.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/01d62c2899eb602c5be4f8925c9e0873.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/01d62c2899eb602c5be4f8925c9e0873.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/01d62c2899eb602c5be4f8925c9e0873.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/01d62c2899eb602c5be4f8925c9e0873.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/01d62c2899eb602c5be4f8925c9e0873.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/01d62c2899eb602c5be4f8925c9e0873.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/01d62c2899eb602c5be4f8925c9e0873.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode": "13",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "available_date": null,
+      "streams_link": "/content/v2/cms/videos/GVWU095PWV/streams",
+      "hd_flag": true,
+      "series_slug_title": "to-your-eternity",
+      "title": "L’identité du sage",
+      "production_episode_id": "",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "next_episode_id": "GD9UVXKKK",
+      "media_type": "episode",
+      "mature_blocked": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "availability_status": "available",
+      "is_mature": false,
+      "slug_title": "the-wise-mans-identity",
+      "channel_id": "crunchyroll",
+      "episode_number": 13,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "episode_air_date": "2023-01-22T00:00:00Z",
+      "is_dubbed": true,
+      "available_offline": true,
+      "premium_date": null,
+      "description": "En négociant avec la princesse diverses autorisations, Messâl a prouvé qu’il pouvait être très utile, même si c’est par des moyens assez peu conventionnels. Fa aussi, à sa manière, essaie d’aider le plus possible, et par ricochet, Imm se sent obligé d’en faire un peu trop…",
+      "series_title": "To Your Eternity",
+      "roles": [
+        "dub"
+      ],
+      "season_id": "GRVNC2J93",
+      "id": "GVWU095PW",
+      "seo_description": "",
+      "upload_date": "2023-01-22T00:00:00Z",
+      "recent_audio_locale": "fr-FR",
+      "season_title": "To Your Eternity Saison 2",
+      "is_subbed": true,
+      "audio_locale": "fr-FR",
+      "is_premium_only": true,
+      "availability_notes": "",
+      "identifier": "GG5H5XMWV|S00198816|E13",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GQJUGKMD2",
+          "is_premium_only": true,
+          "media_guid": "GQJUGKMD2V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G8WUNM47W",
+          "is_premium_only": true,
+          "media_guid": "G8WUNM47WV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GMKUXV75G",
+          "is_premium_only": true,
+          "media_guid": "GMKUXV75GV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GVWU095PW",
+          "is_premium_only": true,
+          "media_guid": "GVWU095PWV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G31UX9D74",
+          "is_premium_only": true,
+          "media_guid": "G31UX9D74V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G7PU49924",
+          "is_premium_only": true,
+          "media_guid": "G7PU49924V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GEVUWJK5D",
+          "is_premium_only": true,
+          "media_guid": "GEVUWJK5DV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G14UVQ2XN",
+          "is_premium_only": true,
+          "media_guid": "G14UVQ2XNV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "season_number": 2,
+      "season_display_number": "",
+      "listing_id": "",
+      "sequence_number": 13
+    },
+    {
+      "season_title": "To Your Eternity Saison 2",
+      "available_date": null,
+      "season_display_number": "",
+      "premium_available_date": "2023-02-19T19:30:00Z",
+      "closed_captions_available": false,
+      "is_dubbed": true,
+      "slug_title": "morning-of-rebirth",
+      "eligible_region": "CA",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b68bdc415caa8f4c05f955687ab911da.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b68bdc415caa8f4c05f955687ab911da.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b68bdc415caa8f4c05f955687ab911da.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b68bdc415caa8f4c05f955687ab911da.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b68bdc415caa8f4c05f955687ab911da.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b68bdc415caa8f4c05f955687ab911da.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b68bdc415caa8f4c05f955687ab911da.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b68bdc415caa8f4c05f955687ab911da.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "next_episode_title": "Érosion de conscience",
+      "season_sequence_number": 2,
+      "recent_audio_locale": "fr-FR",
+      "is_mature": false,
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "season_slug_title": "to-your-eternity-season-2",
+      "availability_starts": "2023-02-19T19:30:00Z",
+      "series_id": "GG5H5XMWV",
+      "listing_id": "",
+      "seo_description": "",
+      "premium_date": null,
+      "production_episode_id": "",
+      "season_id": "GRVNC2J93",
+      "available_offline": true,
+      "id": "GD9UVXKKK",
+      "seo_title": "",
+      "identifier": "GG5H5XMWV|S00198816|E14",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_id": "G9DUE33N9",
+      "mature_blocked": false,
+      "duration_ms": 1503062,
+      "slug": "",
+      "availability_status": "available",
+      "description": "Imm obtient de la princesse l’autorisation de détruire le château pour le rebâtir lui-même. Mais à l’approche de la date fatidique, il se montre de plus en plus inquiet : et si ses nouveaux amis allaient mourir sans qu’il puisse les protéger ?",
+      "title": "Le matin du renouveau",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "is_premium_only": true,
+      "media_type": "episode",
+      "upload_date": "2023-01-29T00:00:00Z",
+      "sequence_number": 14,
+      "audio_locale": "fr-FR",
+      "availability_notes": "",
+      "roles": [
+        "dub"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "episode": "14",
+      "series_title": "To Your Eternity",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "hd_flag": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "series_slug_title": "to-your-eternity",
+      "recent_variant": "",
+      "is_clip": false,
+      "episode_number": 14,
+      "episode_air_date": "2023-01-29T00:00:00Z",
+      "channel_id": "crunchyroll",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UD4WQJ",
+          "is_premium_only": true,
+          "media_guid": "GN7UD4WQJV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G2XU0QW3X",
+          "is_premium_only": true,
+          "media_guid": "G2XU0QW3XV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G8WUNMXX4",
+          "is_premium_only": true,
+          "media_guid": "G8WUNMXX4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GD9UVXKKK",
+          "is_premium_only": true,
+          "media_guid": "GD9UVXKKKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GQJUG2JJK",
+          "is_premium_only": true,
+          "media_guid": "GQJUG2JJKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GEVUZENJ8",
+          "is_premium_only": true,
+          "media_guid": "GEVUZENJ8V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G9DU9Z7XZ",
+          "is_premium_only": true,
+          "media_guid": "G9DU9Z7XZV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GJWUQN8JV",
+          "is_premium_only": true,
+          "media_guid": "GJWUQN8JVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "is_subbed": true,
+      "streams_link": "/content/v2/cms/videos/GD9UVXKKKV/streams",
+      "season_number": 2
+    },
+    {
+      "seo_description": "",
+      "series_id": "GG5H5XMWV",
+      "upload_date": "2023-02-05T00:00:00Z",
+      "seo_title": "",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "sequence_number": 15,
+      "available_offline": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7cb31f36234b17944e1949da790aca49.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7cb31f36234b17944e1949da790aca49.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7cb31f36234b17944e1949da790aca49.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7cb31f36234b17944e1949da790aca49.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7cb31f36234b17944e1949da790aca49.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7cb31f36234b17944e1949da790aca49.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7cb31f36234b17944e1949da790aca49.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7cb31f36234b17944e1949da790aca49.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_number": 15,
+      "production_episode_id": "",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "season_number": 2,
+      "hd_flag": true,
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "season_id": "GRVNC2J93",
+      "next_episode_title": "Les trois guerriers immortels",
+      "episode_air_date": "2023-02-05T00:00:00Z",
+      "series_title": "To Your Eternity",
+      "season_display_number": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9U3X813",
+          "is_premium_only": true,
+          "media_guid": "GK9U3X813V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUZEMM7",
+          "is_premium_only": true,
+          "media_guid": "GEVUZEMM7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GEVUZEE3Q",
+          "is_premium_only": true,
+          "media_guid": "GEVUZEE3QV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G9DUE33N9",
+          "is_premium_only": true,
+          "media_guid": "G9DUE33N9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G4VUQ2204",
+          "is_premium_only": true,
+          "media_guid": "G4VUQ2204V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G0DUN8J78",
+          "is_premium_only": true,
+          "media_guid": "G0DUN8J78V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G4VUWKZ37",
+          "is_premium_only": true,
+          "media_guid": "G4VUWKZ37V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GN7UNXGWV",
+          "is_premium_only": true,
+          "media_guid": "GN7UNXGWVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "slug": "",
+      "description": "C’est la fin d’une longue attente pour les habitants de Renlil, qui vont pouvoir affronter les frappeurs face à face et peut-être pouvoir les éliminer pour de bon. La première mauvaise surprise vient de l’armement dont dispose l’ennemi, bientôt suivie d’autres…",
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "series_slug_title": "to-your-eternity",
+      "next_episode_id": "G7PU49JPV",
+      "eligible_region": "CA",
+      "premium_available_date": "2023-02-26T19:30:00Z",
+      "season_slug_title": "to-your-eternity-season-2",
+      "roles": [
+        "dub"
+      ],
+      "id": "G9DUE33N9",
+      "availability_starts": "2023-02-26T19:30:00Z",
+      "is_dubbed": true,
+      "identifier": "GG5H5XMWV|S00198816|E15",
+      "slug_title": "the-self-worn-down",
+      "streams_link": "/content/v2/cms/videos/G9DUE33N9V/streams",
+      "is_premium_only": true,
+      "is_subbed": true,
+      "season_sequence_number": 2,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "audio_locale": "fr-FR",
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode": "15",
+      "availability_notes": "",
+      "channel_id": "crunchyroll",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_clip": false,
+      "title": "Érosion de conscience",
+      "season_title": "To Your Eternity Saison 2",
+      "availability_status": "available",
+      "duration_ms": 1503062,
+      "listing_id": "",
+      "is_mature": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "premium_date": null
+    },
+    {
+      "episode_number": 16,
+      "availability_status": "available",
+      "mature_blocked": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/cf078567c7472cff080668e1226f455f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/cf078567c7472cff080668e1226f455f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/cf078567c7472cff080668e1226f455f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/cf078567c7472cff080668e1226f455f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/cf078567c7472cff080668e1226f455f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/cf078567c7472cff080668e1226f455f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/cf078567c7472cff080668e1226f455f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/cf078567c7472cff080668e1226f455f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_offline": true,
+      "is_dubbed": true,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "premium_date": null,
+      "channel_id": "crunchyroll",
+      "seo_title": "",
+      "media_type": "episode",
+      "season_id": "GRVNC2J93",
+      "sequence_number": 16,
+      "is_clip": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1503062,
+      "eligible_region": "CA",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "series_slug_title": "to-your-eternity",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "identifier": "GG5H5XMWV|S00198816|E16",
+      "season_sequence_number": 2,
+      "episode_air_date": "2023-02-12T00:00:00Z",
+      "id": "G7PU49JPV",
+      "streams_link": "/content/v2/cms/videos/G7PU49JPVV/streams",
+      "availability_notes": "",
+      "listing_id": "",
+      "next_episode_id": "GEVUZEN9N",
+      "audio_locale": "fr-FR",
+      "season_number": 2,
+      "seo_description": "",
+      "next_episode_title": "Ce qu’on veut préserver",
+      "season_title": "To Your Eternity Saison 2",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "recent_variant": "",
+      "is_mature": false,
+      "episode": "16",
+      "availability_starts": "2023-03-05T19:30:00Z",
+      "description": "Bonshen va-t-il réussir son pari ? En tablant sur le pouvoir de résurrection d’Imm alors qu’il n’en connaît pas le fonctionnement, il pourrait bien mener Renlil à la catastrophe, si jamais les trois cadavres sous ses yeux refusent d’ouvrir les yeux. Pour tout arranger, voilà Kahaku qui fait des siennes…",
+      "slug_title": "three-eternal-warriors",
+      "upload_date": "2023-02-12T00:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GMKUXV5KE",
+          "is_premium_only": true,
+          "media_guid": "GMKUXV5KEV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9U3XX28",
+          "is_premium_only": true,
+          "media_guid": "GK9U3XX28V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G0DUN8JG3",
+          "is_premium_only": true,
+          "media_guid": "G0DUN8JG3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G9DUE3GZ7",
+          "is_premium_only": true,
+          "media_guid": "G9DUE3GZ7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G7PU49JPV",
+          "is_premium_only": true,
+          "media_guid": "G7PU49JPVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G14U4M1VV",
+          "is_premium_only": true,
+          "media_guid": "G14U4M1VVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GJWUQN8MQ",
+          "is_premium_only": true,
+          "media_guid": "GJWUQN8MQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GK9UGVQ8M",
+          "is_premium_only": true,
+          "media_guid": "GK9UGVQ8MV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "dub"
+      ],
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "premium_available_date": "2023-03-05T19:30:00Z",
+      "season_display_number": "",
+      "series_title": "To Your Eternity",
+      "title": "Les trois guerriers immortels",
+      "hd_flag": true,
+      "series_id": "GG5H5XMWV",
+      "available_date": null,
+      "season_slug_title": "to-your-eternity-season-2",
+      "recent_audio_locale": "fr-FR",
+      "is_subbed": true,
+      "slug": "",
+      "production_episode_id": ""
+    },
+    {
+      "id": "GEVUZEN9N",
+      "identifier": "GG5H5XMWV|S00198816|E17",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "episode_number": 17,
+      "is_dubbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GVWU09PK1",
+          "is_premium_only": true,
+          "media_guid": "GVWU09PK1V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G14U4MGQD",
+          "is_premium_only": true,
+          "media_guid": "G14U4MGQDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1U2GZ88",
+          "is_premium_only": true,
+          "media_guid": "GG1U2GZ88V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GEVUZEN9N",
+          "is_premium_only": true,
+          "media_guid": "GEVUZEN9NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G7PU49JQM",
+          "is_premium_only": true,
+          "media_guid": "G7PU49JQMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GN7UD4MGV",
+          "is_premium_only": true,
+          "media_guid": "GN7UD4MGVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GN7UNXGZ0",
+          "is_premium_only": true,
+          "media_guid": "GN7UNXGZ0V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GVWU8NJPM",
+          "is_premium_only": true,
+          "media_guid": "GVWU8NJPMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "dub"
+      ],
+      "slug_title": "what-you-want-to-protect",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "episode": "17",
+      "is_subbed": true,
+      "availability_status": "available",
+      "closed_captions_available": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dfaea2d33166349a1a14d587147087b2.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/dfaea2d33166349a1a14d587147087b2.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/dfaea2d33166349a1a14d587147087b2.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/dfaea2d33166349a1a14d587147087b2.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/dfaea2d33166349a1a14d587147087b2.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/dfaea2d33166349a1a14d587147087b2.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/dfaea2d33166349a1a14d587147087b2.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/dfaea2d33166349a1a14d587147087b2.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "series_title": "To Your Eternity",
+      "availability_starts": "2023-03-12T18:30:00Z",
+      "audio_locale": "fr-FR",
+      "next_episode_title": "La mort de l’immortel",
+      "season_display_number": "",
+      "series_slug_title": "to-your-eternity",
+      "title": "Ce qu’on veut préserver",
+      "channel_id": "crunchyroll",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "hd_flag": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_mature": false,
+      "season_title": "To Your Eternity Saison 2",
+      "season_slug_title": "to-your-eternity-season-2",
+      "episode_air_date": "2023-02-19T00:00:00Z",
+      "season_number": 2,
+      "slug": "",
+      "listing_id": "",
+      "sequence_number": 17,
+      "duration_ms": 1503062,
+      "season_id": "GRVNC2J93",
+      "availability_notes": "",
+      "is_premium_only": true,
+      "available_date": null,
+      "streams_link": "/content/v2/cms/videos/GEVUZEN9NV/streams",
+      "upload_date": "2023-02-19T00:00:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "is_clip": false,
+      "premium_available_date": "2023-03-12T18:30:00Z",
+      "available_offline": true,
+      "recent_audio_locale": "fr-FR",
+      "seo_title": "",
+      "premium_date": null,
+      "recent_variant": "",
+      "season_sequence_number": 2,
+      "media_type": "episode",
+      "seo_description": "",
+      "next_episode_id": "GJWU2V0QK",
+      "description": "Trop de morts, trop de sang, trop de mensonges… Imm n’en peut plus. Un pessimisme mal venu le gagne, nourri par une suspicion grandissante envers Bonshen, surtout lorsque Messâl lui demande avec insistance de ressusciter un être cher.",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "mature_blocked": false,
+      "series_id": "GG5H5XMWV"
+    },
+    {
+      "availability_starts": "2023-03-19T18:30:00Z",
+      "episode": "18",
+      "availability_status": "available",
+      "recent_audio_locale": "fr-FR",
+      "is_clip": false,
+      "closed_captions_available": false,
+      "production_episode_id": "",
+      "duration_ms": 1503062,
+      "upload_date": "2023-02-26T00:00:00Z",
+      "listing_id": "",
+      "slug": "",
+      "episode_air_date": "2023-02-26T00:00:00Z",
+      "series_title": "To Your Eternity",
+      "recent_variant": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_id": "GRVNC2J93",
+      "slug_title": "death-of-a-deathless",
+      "available_offline": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "media_type": "episode",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "available_date": null,
+      "next_episode_title": "Et puis, le jour se lève",
+      "season_slug_title": "to-your-eternity-season-2",
+      "availability_notes": "",
+      "title": "La mort de l’immortel",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G31UX97GJ",
+          "is_premium_only": true,
+          "media_guid": "G31UX97GJV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UD4V4D",
+          "is_premium_only": true,
+          "media_guid": "GN7UD4V4DV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G4VUQ2VWQ",
+          "is_premium_only": true,
+          "media_guid": "G4VUQ2VWQV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GJWU2V0QK",
+          "is_premium_only": true,
+          "media_guid": "GJWU2V0QKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GN7UD41N3",
+          "is_premium_only": true,
+          "media_guid": "GN7UD41N3V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G9DUEGZM8",
+          "is_premium_only": true,
+          "media_guid": "G9DUEGZM8V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GWDU7VG9N",
+          "is_premium_only": true,
+          "media_guid": "GWDU7VG9NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G2XUNXJ3V",
+          "is_premium_only": true,
+          "media_guid": "G2XUNXJ3VV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "is_mature": false,
+      "seo_title": "",
+      "description": "Tous ses réceptacles lui ayant été arrachés par le frappeur logé dans le bras de Kahaku, Imm est revenu à l’état de sphère, sans conscience ni souvenirs. March elle-même ne peut plus le sauver, sauf si…",
+      "premium_available_date": "2023-03-19T18:30:00Z",
+      "eligible_region": "CA",
+      "season_number": 2,
+      "mature_blocked": false,
+      "channel_id": "crunchyroll",
+      "id": "GJWU2V0QK",
+      "hd_flag": true,
+      "season_title": "To Your Eternity Saison 2",
+      "is_dubbed": true,
+      "series_slug_title": "to-your-eternity",
+      "episode_number": 18,
+      "identifier": "GG5H5XMWV|S00198816|E18",
+      "roles": [
+        "dub"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "streams_link": "/content/v2/cms/videos/GJWU2V0QKV/streams",
+      "is_premium_only": true,
+      "premium_date": null,
+      "seo_description": "",
+      "sequence_number": 18,
+      "next_episode_id": "GK9U3XEQM",
+      "audio_locale": "fr-FR",
+      "is_subbed": true,
+      "series_id": "GG5H5XMWV",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "season_sequence_number": 2,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/62feaac2f1ed99447f41fdc0b870acaf.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/62feaac2f1ed99447f41fdc0b870acaf.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/62feaac2f1ed99447f41fdc0b870acaf.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/62feaac2f1ed99447f41fdc0b870acaf.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/62feaac2f1ed99447f41fdc0b870acaf.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/62feaac2f1ed99447f41fdc0b870acaf.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/62feaac2f1ed99447f41fdc0b870acaf.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/62feaac2f1ed99447f41fdc0b870acaf.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_display_number": ""
+    },
+    {
+      "hd_flag": true,
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "season_title": "To Your Eternity Saison 2",
+      "title": "Et puis, le jour se lève",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "premium_available_date": "2023-03-26T18:30:00Z",
+      "is_dubbed": true,
+      "id": "GK9U3XEQM",
+      "media_type": "episode",
+      "streams_link": "/content/v2/cms/videos/GK9U3XEQMV/streams",
+      "season_id": "GRVNC2J93",
+      "slug": "",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "seo_description": "",
+      "season_number": 2,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "is_premium_only": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GPWUKG0P3",
+          "is_premium_only": true,
+          "media_guid": "GPWUKG0P3V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU0978V",
+          "is_premium_only": true,
+          "media_guid": "GVWU0978VV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GJWU2VW8V",
+          "is_premium_only": true,
+          "media_guid": "GJWU2VW8VV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GMKUXV1WP",
+          "is_premium_only": true,
+          "media_guid": "GMKUXV1WPV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GK9U3XEQM",
+          "is_premium_only": true,
+          "media_guid": "GK9U3XEQMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GPWUKDX53",
+          "is_premium_only": true,
+          "media_guid": "GPWUKDX53V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GG1UXW0MM",
+          "is_premium_only": true,
+          "media_guid": "GG1UXW0MMV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GZ7UDQJXD",
+          "is_premium_only": true,
+          "media_guid": "GZ7UDQJXDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "episode_air_date": "2023-03-05T00:00:00Z",
+      "is_mature": false,
+      "closed_captions_available": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "audio_locale": "fr-FR",
+      "is_subbed": true,
+      "identifier": "GG5H5XMWV|S00198816|E19",
+      "duration_ms": 1503062,
+      "available_date": null,
+      "sequence_number": 19,
+      "seo_title": "",
+      "production_episode_id": "",
+      "premium_date": null,
+      "episode": "19",
+      "next_episode_id": "G0DUNJGK5",
+      "series_title": "To Your Eternity",
+      "upload_date": "2023-03-05T00:00:00Z",
+      "availability_notes": "",
+      "is_clip": false,
+      "season_display_number": "",
+      "available_offline": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5834734ad8c8a9e3b8af082255c45c17.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5834734ad8c8a9e3b8af082255c45c17.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5834734ad8c8a9e3b8af082255c45c17.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5834734ad8c8a9e3b8af082255c45c17.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5834734ad8c8a9e3b8af082255c45c17.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5834734ad8c8a9e3b8af082255c45c17.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5834734ad8c8a9e3b8af082255c45c17.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5834734ad8c8a9e3b8af082255c45c17.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_slug_title": "to-your-eternity-season-2",
+      "description": "Tentant le tout pour le tout, Bonshen s’est donné la mort pour qu’Imm puisse retrouver tous ses réceptacles. Mais n’est-il pas déjà trop tard pour Renlil ?",
+      "eligible_region": "CA",
+      "recent_variant": "",
+      "availability_starts": "2023-03-26T18:30:00Z",
+      "episode_number": 19,
+      "slug_title": "and-then-dawn",
+      "availability_status": "available",
+      "series_id": "GG5H5XMWV",
+      "mature_blocked": false,
+      "roles": [
+        "dub"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 2,
+      "recent_audio_locale": "fr-FR",
+      "next_episode_title": "La fin d’une époque",
+      "series_slug_title": "to-your-eternity"
+    },
+    {
+      "series_slug_title": "to-your-eternity",
+      "is_premium_only": true,
+      "season_slug_title": "to-your-eternity-season-2",
+      "upload_date": "2023-03-12T00:00:00Z",
+      "available_offline": true,
+      "id": "G0DUNJGK5",
+      "availability_starts": "2023-04-02T18:30:00Z",
+      "availability_status": "available",
+      "title": "La fin d’une époque",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_mature": false,
+      "hd_flag": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G2XU0Q5EZ",
+          "is_premium_only": true,
+          "media_guid": "G2XU0Q5EZV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYK5CNQ00",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G31UX9N0K",
+          "is_premium_only": true,
+          "media_guid": "G31UX9N0KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G63VC2Q9M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1U2ZWN0",
+          "is_premium_only": true,
+          "media_guid": "GG1U2ZWN0V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6K5CNQXW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G0DUNJGK5",
+          "is_premium_only": true,
+          "media_guid": "G0DUNJGK5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2J93",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GEVUZNJD2",
+          "is_premium_only": true,
+          "media_guid": "GEVUZNJD2V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJG4N",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUQ8WK7",
+          "is_premium_only": true,
+          "media_guid": "G4VUQ8WK7V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6MGC3WVD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G7PU3P050",
+          "is_premium_only": true,
+          "media_guid": "G7PU3P050V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMP1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G50UMKW48",
+          "is_premium_only": true,
+          "media_guid": "G50UMKW48V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1V1W",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 2,
+      "eligible_region": "CA",
+      "season_display_number": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5aa1dee07a8d3b2d330faf4f18f7841d.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5aa1dee07a8d3b2d330faf4f18f7841d.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5aa1dee07a8d3b2d330faf4f18f7841d.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5aa1dee07a8d3b2d330faf4f18f7841d.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5aa1dee07a8d3b2d330faf4f18f7841d.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5aa1dee07a8d3b2d330faf4f18f7841d.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5aa1dee07a8d3b2d330faf4f18f7841d.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5aa1dee07a8d3b2d330faf4f18f7841d.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_audio_locale": "fr-FR",
+      "series_id": "GG5H5XMWV",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "mature_blocked": false,
+      "listing_id": "",
+      "season_title": "To Your Eternity Saison 2",
+      "sequence_number": 20,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "episode": "20",
+      "is_subbed": true,
+      "premium_available_date": "2023-04-02T18:30:00Z",
+      "closed_captions_available": false,
+      "audio_locale": "fr-FR",
+      "season_id": "GRVNC2J93",
+      "premium_date": null,
+      "channel_id": "crunchyroll",
+      "media_type": "episode",
+      "episode_number": 20,
+      "seo_description": "",
+      "season_number": 2,
+      "roles": [
+        "dub"
+      ],
+      "slug_title": "end-of-an-era",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "available_date": null,
+      "seo_title": "",
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "availability_notes": "",
+      "next_episode_title": "Une affection réincarnée",
+      "identifier": "GG5H5XMWV|S00198816|E20",
+      "description": "Dans Renlil en liesse, Imm a encore quelques détails à régler : d’abord le sort de Kahaku, parti avec certains de ses réceptacles, puis celui des frappeurs restant dans le monde, qu’il entend bien exterminer. Cette tâche de longue haleine va exiger de lui et de ses amis le plus lourd des sacrifices.",
+      "episode_air_date": "2023-03-12T00:00:00Z",
+      "is_dubbed": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_title": "To Your Eternity",
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "production_episode_id": "",
+      "slug": "",
+      "recent_variant": "",
+      "duration_ms": 1473025,
+      "is_clip": false,
+      "next_episode_id": "GPWUKP75Z",
+      "streams_link": "/content/v2/cms/videos/G0DUNJGK5V/streams"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

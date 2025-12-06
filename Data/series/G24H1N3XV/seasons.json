@@ -1,0 +1,71 @@
+{
+  "data": [
+    {
+      "id": "GY19CP3W0",
+      "channel_id": "crunchyroll",
+      "title": "World's End Harem",
+      "slug_title": "worlds-end-harem",
+      "series_id": "G24H1N3XV",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Nous sommes en 2040. Victime d'une maladie rare, Reito est un jeune homme plongé dans un long sommeil cryogénique le temps qu'un remède soit trouvé. Il promet à sa copine d'enfance, Erisa, qu'ils se retrouveront à son réveil. Au bout de son long sommeil, il découvre un monde dans lequel 99,9 % des hommes ont disparu, peuplé quasi uniquement des 5 milliards de femmes restantes !\r\nReito et quatre autres hommes se voient offrir une vie de luxe et une simple mission : repeupler le monde en faisant tomber enceintes le plus grand nombre de femmes possible ! Tout ce que Reito veut, cependant, c’est retrouver Erisa qui a disparu. Pourra-t-il résister à la tentation et retrouver son seul véritable amour ?",
+      "keywords": [],
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": false,
+      "is_dubbed": false,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "es-ES",
+        "pt-BR",
+        "de-DE",
+        "es-419",
+        "en-US",
+        "it-IT",
+        "ru-RU",
+        "fr-FR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY19CP3W0",
+          "original": true,
+          "variant": ""
+        }
+      ],
+      "identifier": "G24H1N3XV|S1",
+      "number_of_episodes": 11
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

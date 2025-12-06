@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": "GS00362309JAJP",
+      "channel_id": "crunchyroll",
+      "title": "Season 1",
+      "slug_title": "season-1",
+      "series_id": "GT00362308",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "When high schooler Mari runs late for school, she never expects to fall for Tsunagu—a gentle, sensitive, beastfolk! In a world where beastfolk are segregated behind walls, Mari and Tsunagu show their differences are truly bridges. Can their love overcome the divide between beastfolk and humanity?",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "vi-VN",
+        "en-US",
+        "ar-SA",
+        "pt-BR",
+        "es-ES",
+        "th-TH",
+        "de-DE",
+        "id-ID",
+        "ms-MY",
+        "zh-CN",
+        "ru-RU",
+        "es-419",
+        "fr-FR",
+        "zh-HK",
+        "it-IT"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GS00362309JAJP",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GS00362309ENUS",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GS00362309HIIN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GS00362309TAIN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GS00362309TEIN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GS00362309ES419",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GS00362309PTBR",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GT00362308|S00362309",
+      "number_of_episodes": 8
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

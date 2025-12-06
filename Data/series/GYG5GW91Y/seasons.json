@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "id": "GR0X9KG9Y",
+      "channel_id": "crunchyroll",
+      "title": "Gosick",
+      "slug_title": "gosick",
+      "series_id": "GYG5GW91Y",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [
+        "Été-2018"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR0X9KG9Y",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GR75CDV0K",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GYG5GW91Y|S1",
+      "number_of_episodes": 24
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

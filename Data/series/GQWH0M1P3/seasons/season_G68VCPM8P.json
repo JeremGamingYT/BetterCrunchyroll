@@ -1,0 +1,2886 @@
+{
+  "total": 12,
+  "data": [
+    {
+      "season_number": 1,
+      "streams_link": "/content/v2/cms/videos/GNJFNKNKJ/streams",
+      "premium_available_date": "2025-01-01T16:00:00Z",
+      "available_date": null,
+      "sequence_number": 1,
+      "is_premium_only": true,
+      "episode_number": 1,
+      "mature_blocked": false,
+      "production_episode_id": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "media_type": "episode",
+      "free_available_date": "2025-01-08T16:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/cb7cc84535bfece440a0b162c1bba57a.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/cb7cc84535bfece440a0b162c1bba57a.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/cb7cc84535bfece440a0b162c1bba57a.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/cb7cc84535bfece440a0b162c1bba57a.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/cb7cc84535bfece440a0b162c1bba57a.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/cb7cc84535bfece440a0b162c1bba57a.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/cb7cc84535bfece440a0b162c1bba57a.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/cb7cc84535bfece440a0b162c1bba57a.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUW0W07",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKNKJ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUM0M0J",
+          "is_premium_only": true,
+          "media_guid": "GGVFX5X59",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GWDU7MNZ5",
+          "is_premium_only": true,
+          "media_guid": "GEMFW35V4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1UX57PQ",
+          "is_premium_only": true,
+          "media_guid": "G71F32KNZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G0DUMWQEP",
+          "is_premium_only": true,
+          "media_guid": "G9XF9NWVJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G9DU9NWVG",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJ8ZG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G7PU32KN9",
+          "is_premium_only": true,
+          "media_guid": "G4GFW0P42",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GEVUW35V9",
+          "is_premium_only": true,
+          "media_guid": "GXMF3MN85",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "is_subbed": true,
+      "series_id": "GQWH0M1P3",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_starts": "2025-01-01T16:00:00Z",
+      "episode": "1",
+      "recent_audio_locale": "ja-JP",
+      "description": "Takumi, un employé de bureau quadragénaire, se retrouve invoqué par erreur dans un univers fantastique. Il séjourne dans un village chaleureux où il découvre les rudiments de l'alchimie. Très vite, son niveau grimpe en flèche et une destinée plus ambitieuse l'appelle.",
+      "is_dubbed": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "season_id": "G68VCPM8P",
+      "season_sequence_number": 0,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "slug": "",
+      "id": "G4VUW0W07",
+      "title": "J'ai été invoqué par erreur",
+      "seo_description": "",
+      "next_episode_id": "G14UVJVJ4",
+      "episode_air_date": "2025-01-01T22:30:00+09:00",
+      "available_offline": true,
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "closed_captions_available": false,
+      "audio_locale": "ja-JP",
+      "season_display_number": "",
+      "duration_ms": 1420004,
+      "availability_notes": "",
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "roles": [
+        "main"
+      ],
+      "is_mature": false,
+      "slug_title": "i-was-summoned-by-accident",
+      "next_episode_title": "Vers de nouveaux horizons",
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "hd_flag": true,
+      "seo_title": "",
+      "availability_status": "available",
+      "is_clip": false,
+      "eligible_region": "CA",
+      "identifier": "GQWH0M1P3|S1|E1",
+      "premium_date": null,
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "upload_date": "2025-01-01T22:30:00+09:00"
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug": "",
+      "listing_id": "",
+      "availability_starts": "2025-01-08T16:00:00Z",
+      "is_premium_only": true,
+      "next_episode_title": "Contrats et serments",
+      "identifier": "GQWH0M1P3|S1|E2",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/128bf7fbf0adcb72c3fc3a1b91f1674b.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/128bf7fbf0adcb72c3fc3a1b91f1674b.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/128bf7fbf0adcb72c3fc3a1b91f1674b.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/128bf7fbf0adcb72c3fc3a1b91f1674b.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/128bf7fbf0adcb72c3fc3a1b91f1674b.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/128bf7fbf0adcb72c3fc3a1b91f1674b.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/128bf7fbf0adcb72c3fc3a1b91f1674b.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/128bf7fbf0adcb72c3fc3a1b91f1674b.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "roles": [
+        "main"
+      ],
+      "hd_flag": true,
+      "free_available_date": "2025-01-15T16:00:00Z",
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "mature_blocked": false,
+      "closed_captions_available": false,
+      "is_dubbed": true,
+      "title": "Vers de nouveaux horizons",
+      "series_id": "GQWH0M1P3",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "season_id": "G68VCPM8P",
+      "is_subbed": true,
+      "season_display_number": "",
+      "id": "G14UVJVJ4",
+      "channel_id": "crunchyroll",
+      "sequence_number": 2,
+      "season_sequence_number": 0,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "upload_date": "2025-01-08T22:30:00+09:00",
+      "is_mature": false,
+      "premium_date": null,
+      "eligible_region": "CA",
+      "available_date": null,
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "G50UMNMNQ",
+          "is_premium_only": true,
+          "media_guid": "G07FMWMW7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14UVJVJ4",
+          "is_premium_only": true,
+          "media_guid": "GKKFG2G23",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GVWU8XVG0",
+          "is_premium_only": true,
+          "media_guid": "G25FN12P0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GPWU8JQ2M",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD3759",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G31UVEPJV",
+          "is_premium_only": true,
+          "media_guid": "G8MF7VDQ7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G8WU7VDQK",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM0D8X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G2XUN12PP",
+          "is_premium_only": true,
+          "media_guid": "GDVFEZN00",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GZ7UD375N",
+          "is_premium_only": true,
+          "media_guid": "G5JFMN23J",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "ja-JP",
+      "recent_variant": "",
+      "seo_description": "",
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "next_episode_id": "GJWUQ7Q7Q",
+      "episode": "2",
+      "episode_air_date": "2025-01-08T22:30:00+09:00",
+      "duration_ms": 1419920,
+      "available_offline": true,
+      "description": "Alors qu'il perfectionne ses talents d'alchimiste, Takumi part s'établir en ville où il fait la connaissance de Papek, un homme d'affaires qui le prend sous son aile et l'aide à s'installer.",
+      "slug_title": "to-a-new-land",
+      "premium_available_date": "2025-01-08T16:00:00Z",
+      "media_type": "episode",
+      "production_episode_id": "",
+      "is_clip": false,
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_number": 2,
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "season_number": 1,
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GKKFG2G23/streams"
+    },
+    {
+      "streams_link": "/content/v2/cms/videos/GM8FEMEME/streams",
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "season_id": "G68VCPM8P",
+      "hd_flag": true,
+      "season_sequence_number": 0,
+      "premium_date": null,
+      "identifier": "GQWH0M1P3|S1|E3",
+      "episode_number": 3,
+      "episode_air_date": "2025-01-15T22:30:00+09:00",
+      "sequence_number": 3,
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "is_premium_only": true,
+      "next_episode_title": "La première quête de l'équipe de Takumi",
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "slug": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "title": "Contrats et serments",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "availability_notes": "",
+      "recent_audio_locale": "ja-JP",
+      "next_episode_id": "GN7UNKNK0",
+      "season_number": 1,
+      "closed_captions_available": false,
+      "roles": [
+        "main"
+      ],
+      "upload_date": "2025-01-15T22:30:00+09:00",
+      "episode": "3",
+      "media_type": "episode",
+      "slug_title": "contracts-and-oaths",
+      "is_subbed": true,
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWUQ7Q7Q",
+          "is_premium_only": true,
+          "media_guid": "GM8FEMEME",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GWDU7M7MD",
+          "is_premium_only": true,
+          "media_guid": "GEMFW3W3E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1UX5DXJ",
+          "is_premium_only": true,
+          "media_guid": "G71F32W37",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G0DUMW9ZG",
+          "is_premium_only": true,
+          "media_guid": "G9XF9ND4Z",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G7PU32W8D",
+          "is_premium_only": true,
+          "media_guid": "G4GFW0MD7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G9DU9ND4E",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJX54",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GEVUW3803",
+          "is_premium_only": true,
+          "media_guid": "GXMF3MK2M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G4VUW0MDD",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKW00",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        }
+      ],
+      "series_id": "GQWH0M1P3",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "duration_ms": 1419962,
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "channel_id": "crunchyroll",
+      "season_display_number": "",
+      "free_available_date": "2025-01-22T16:00:00Z",
+      "recent_variant": "",
+      "seo_title": "",
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "description": "Sur les conseils de Papek, Takumi se résout à prendre deux esclaves afin d'assurer sa protection et l'aider dans les tâches quotidiennes. D'abord méfiantes, les deux jeunes filles finissent par faire confiance à leur maître, qui les traite avec beaucoup d'humanité.",
+      "is_mature": false,
+      "id": "GJWUQ7Q7Q",
+      "availability_status": "available",
+      "availability_starts": "2025-01-15T16:00:00Z",
+      "is_clip": false,
+      "available_date": null,
+      "production_episode_id": "",
+      "is_dubbed": true,
+      "premium_available_date": "2025-01-15T16:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/27adb4d30c9a2be9050b09a0e0fcb3c5.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/27adb4d30c9a2be9050b09a0e0fcb3c5.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/27adb4d30c9a2be9050b09a0e0fcb3c5.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/27adb4d30c9a2be9050b09a0e0fcb3c5.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/27adb4d30c9a2be9050b09a0e0fcb3c5.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/27adb4d30c9a2be9050b09a0e0fcb3c5.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/27adb4d30c9a2be9050b09a0e0fcb3c5.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/27adb4d30c9a2be9050b09a0e0fcb3c5.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "ja-JP",
+      "available_offline": true,
+      "listing_id": ""
+    },
+    {
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "series_id": "GQWH0M1P3",
+      "eligible_region": "CA",
+      "episode_air_date": "2025-01-22T22:30:00+09:00",
+      "is_subbed": true,
+      "upload_date": "2025-01-22T22:30:00+09:00",
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "seo_title": "",
+      "availability_notes": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_clip": false,
+      "season_number": 1,
+      "next_episode_id": "GK9UG2G2P",
+      "closed_captions_available": false,
+      "audio_locale": "ja-JP",
+      "episode": "4",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2cc4095b2664bb23fdbe16b7f4870d21.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/2cc4095b2664bb23fdbe16b7f4870d21.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/2cc4095b2664bb23fdbe16b7f4870d21.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/2cc4095b2664bb23fdbe16b7f4870d21.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2cc4095b2664bb23fdbe16b7f4870d21.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/2cc4095b2664bb23fdbe16b7f4870d21.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/2cc4095b2664bb23fdbe16b7f4870d21.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/2cc4095b2664bb23fdbe16b7f4870d21.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "duration_ms": 1419920,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "roles": [
+        "main"
+      ],
+      "season_sequence_number": 0,
+      "available_date": null,
+      "seo_description": "",
+      "channel_id": "crunchyroll",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "availability_starts": "2025-01-22T16:00:00Z",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "media_type": "episode",
+      "episode_number": 4,
+      "next_episode_title": "L'ombre de Sidonia",
+      "identifier": "GQWH0M1P3|S1|E4",
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "title": "La première quête de l'équipe de Takumi",
+      "season_display_number": "",
+      "slug": "",
+      "season_id": "G68VCPM8P",
+      "recent_variant": "",
+      "premium_available_date": "2025-01-22T16:00:00Z",
+      "is_dubbed": true,
+      "availability_status": "available",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "description": "Takumi, Sofia et Maria partent accomplir leur première quête pour la guilde. Grâce aux armes et armures forgées avec brio par Takumi, les trois aventuriers font des prouesses qui excèdent leur niveau.",
+      "sequence_number": 4,
+      "hd_flag": true,
+      "id": "GN7UNKNK0",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "slug_title": "takumis-partys-first-battle",
+      "mature_blocked": false,
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1UX5X5Z",
+          "is_premium_only": true,
+          "media_guid": "G71F3232J",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UNKNK0",
+          "is_premium_only": true,
+          "media_guid": "GVMF8X8X1",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GJWUQ7J03",
+          "is_premium_only": true,
+          "media_guid": "GM8FEM5P2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GMKUEM5PG",
+          "is_premium_only": true,
+          "media_guid": "GPPF8J0VD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GN7UNKW1Q",
+          "is_premium_only": true,
+          "media_guid": "GVMF8XP7K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GK9UG28KX",
+          "is_premium_only": true,
+          "media_guid": "G3WFVE749",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G31UVE744",
+          "is_premium_only": true,
+          "media_guid": "G8MF7V211",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GVWU8XP7W",
+          "is_premium_only": true,
+          "media_guid": "G25FN15G4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        }
+      ],
+      "is_mature": false,
+      "listing_id": "",
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "available_offline": true,
+      "is_premium_only": true,
+      "premium_date": null,
+      "production_episode_id": "",
+      "streams_link": "/content/v2/cms/videos/GVMF8X8X1/streams"
+    },
+    {
+      "seo_title": "",
+      "is_mature": false,
+      "duration_ms": 1420004,
+      "description": "Takumi et son équipe partent chasser les Treants et récupérer de précieux minerais.",
+      "listing_id": "",
+      "roles": [
+        "main"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 0,
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "sequence_number": 5,
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "slug_title": "shadow-of-sidonia",
+      "id": "GK9UG2G2P",
+      "premium_available_date": "2025-01-29T16:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "is_subbed": true,
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9UG2G2P",
+          "is_premium_only": true,
+          "media_guid": "G3WFVEVEJ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G0DUMWMWD",
+          "is_premium_only": true,
+          "media_guid": "G9XF9N9N5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GJWUQ7X5J",
+          "is_premium_only": true,
+          "media_guid": "GM8FEM485",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GX9U3M7PV",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7X5P",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUW0XEP",
+          "is_premium_only": true,
+          "media_guid": "GNJFNK7P5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GN7UNK7P7",
+          "is_premium_only": true,
+          "media_guid": "GVMF8XZQZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GK9UG245Q",
+          "is_premium_only": true,
+          "media_guid": "G3WFVE30Q",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14UVJEW3",
+          "is_premium_only": true,
+          "media_guid": "GKKFG245Z",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        }
+      ],
+      "recent_audio_locale": "ja-JP",
+      "season_id": "G68VCPM8P",
+      "series_id": "GQWH0M1P3",
+      "identifier": "GQWH0M1P3|S1|E5",
+      "title": "L'ombre de Sidonia",
+      "mature_blocked": false,
+      "is_premium_only": true,
+      "episode": "5",
+      "season_number": 1,
+      "streams_link": "/content/v2/cms/videos/G3WFVEVEJ/streams",
+      "availability_status": "available",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "episode_number": 5,
+      "upload_date": "2025-01-29T22:30:00+09:00",
+      "audio_locale": "ja-JP",
+      "next_episode_title": "Et le cheval-dragon apparut",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "media_type": "episode",
+      "recent_variant": "",
+      "closed_captions_available": false,
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "is_dubbed": true,
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "available_offline": true,
+      "available_date": null,
+      "seo_description": "",
+      "slug": "",
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "hd_flag": true,
+      "is_clip": false,
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_starts": "2025-01-29T16:00:00Z",
+      "next_episode_id": "GMKUEMEMN",
+      "season_display_number": "",
+      "episode_air_date": "2025-01-29T22:30:00+09:00",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/44bc8e794b85a864808c6c346dcd408e.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/44bc8e794b85a864808c6c346dcd408e.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/44bc8e794b85a864808c6c346dcd408e.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/44bc8e794b85a864808c6c346dcd408e.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/44bc8e794b85a864808c6c346dcd408e.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/44bc8e794b85a864808c6c346dcd408e.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/44bc8e794b85a864808c6c346dcd408e.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/44bc8e794b85a864808c6c346dcd408e.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "is_dubbed": true,
+      "episode": "6",
+      "identifier": "GQWH0M1P3|S1|E6",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "episode_air_date": "2025-02-05T22:30:00+09:00",
+      "recent_audio_locale": "ja-JP",
+      "hd_flag": true,
+      "upload_date": "2025-02-05T22:30:00+09:00",
+      "available_offline": true,
+      "duration_ms": 1420004,
+      "season_display_number": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "availability_starts": "2025-02-05T16:00:00Z",
+      "closed_captions_available": false,
+      "description": "Takumi s'embarque dans une nouvelle aventure qui l'amène à apprivoiser un cheval-dragon.",
+      "is_mature": false,
+      "recent_variant": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/669984e3517553ca2209d339d6deaa06.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/669984e3517553ca2209d339d6deaa06.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/669984e3517553ca2209d339d6deaa06.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/669984e3517553ca2209d339d6deaa06.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/669984e3517553ca2209d339d6deaa06.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/669984e3517553ca2209d339d6deaa06.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/669984e3517553ca2209d339d6deaa06.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/669984e3517553ca2209d339d6deaa06.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug_title": "a-drake-horse-appears",
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "eligible_region": "CA",
+      "premium_available_date": "2025-02-05T16:00:00Z",
+      "sequence_number": 6,
+      "next_episode_title": "La fille aux oreilles de renard de la capitale royale",
+      "roles": [
+        "main"
+      ],
+      "seo_title": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "channel_id": "crunchyroll",
+      "listing_id": "",
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "is_clip": false,
+      "title": "Et le cheval-dragon apparut",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "availability_status": "available",
+      "is_subbed": true,
+      "season_sequence_number": 0,
+      "season_number": 1,
+      "streams_link": "/content/v2/cms/videos/GPPF8J8J3/streams",
+      "slug": "",
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "availability_notes": "",
+      "mature_blocked": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GMKUEMEMN",
+          "is_premium_only": true,
+          "media_guid": "GPPF8J8J3",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUW3W3D",
+          "is_premium_only": true,
+          "media_guid": "GXMF3M3MW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GN7UNKPJ9",
+          "is_premium_only": true,
+          "media_guid": "GVMF8XQ25",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GK9UG25NJ",
+          "is_premium_only": true,
+          "media_guid": "G3WFVE021",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GPWU8J1XZ",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD30M2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G31UVE02Z",
+          "is_premium_only": true,
+          "media_guid": "G8MF7V4P0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G2XUN18VG",
+          "is_premium_only": true,
+          "media_guid": "GDVFEZPG3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G8WU7V4PJ",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM0PZ5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        }
+      ],
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode_number": 6,
+      "seo_description": "",
+      "id": "GMKUEMEMN",
+      "series_id": "GQWH0M1P3",
+      "media_type": "episode",
+      "is_premium_only": true,
+      "next_episode_id": "GVWU8X8XD",
+      "audio_locale": "ja-JP",
+      "premium_date": null,
+      "season_id": "G68VCPM8P"
+    },
+    {
+      "roles": [
+        "main"
+      ],
+      "audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "season_display_number": "",
+      "listing_id": "",
+      "upload_date": "2025-02-12T22:30:00+09:00",
+      "description": "Toujours plus occupé, Takumi engage une nouvelle recrue capable de l'aider en alchimie.",
+      "episode": "7",
+      "is_dubbed": true,
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "seo_description": "",
+      "premium_available_date": "2025-02-12T16:00:00Z",
+      "identifier": "GQWH0M1P3|S1|E7",
+      "episode_air_date": "2025-02-12T22:30:00+09:00",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GVWU8X8XD",
+          "is_premium_only": true,
+          "media_guid": "G25FN1N1Z",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU32327",
+          "is_premium_only": true,
+          "media_guid": "G4GFW0W05",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G8WU7V4GK",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM0PVX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GZ7UD302N",
+          "is_premium_only": true,
+          "media_guid": "G5JFMN7XJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GQJUM0PVE",
+          "is_premium_only": true,
+          "media_guid": "GGVFX534D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G50UMN7X4",
+          "is_premium_only": true,
+          "media_guid": "G07FMW5D0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GWDU7M5EG",
+          "is_premium_only": true,
+          "media_guid": "GEMFW34XK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GD9UEZPQN",
+          "is_premium_only": true,
+          "media_guid": "GWMF7M5E9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        }
+      ],
+      "season_id": "G68VCPM8P",
+      "production_episode_id": "",
+      "id": "GVWU8X8XD",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "next_episode_title": "Un nom pour l'équipe !",
+      "channel_id": "crunchyroll",
+      "is_clip": false,
+      "is_subbed": true,
+      "sequence_number": 7,
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6462266a05422c19c9aa40fea447d54c.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6462266a05422c19c9aa40fea447d54c.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6462266a05422c19c9aa40fea447d54c.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6462266a05422c19c9aa40fea447d54c.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6462266a05422c19c9aa40fea447d54c.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6462266a05422c19c9aa40fea447d54c.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6462266a05422c19c9aa40fea447d54c.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6462266a05422c19c9aa40fea447d54c.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_number": 1,
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_notes": "",
+      "slug_title": "the-fox-eared-girl-of-the-royal-capital",
+      "hd_flag": true,
+      "season_sequence_number": 0,
+      "seo_title": "",
+      "available_offline": true,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "availability_starts": "2025-02-12T16:00:00Z",
+      "series_id": "GQWH0M1P3",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1420004,
+      "streams_link": "/content/v2/cms/videos/G25FN1N1Z/streams",
+      "next_episode_id": "G31UVEVEP",
+      "episode_number": 7,
+      "recent_audio_locale": "ja-JP",
+      "is_mature": false,
+      "availability_status": "available",
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "premium_date": null,
+      "available_date": null,
+      "title": "La fille aux oreilles de renard de la capitale royale",
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "series_title": "Possibly the Greatest Alchemist of All Time"
+    },
+    {
+      "availability_notes": "",
+      "media_type": "episode",
+      "availability_status": "available",
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "id": "G31UVEVEP",
+      "availability_starts": "2025-02-19T16:00:00Z",
+      "slug_title": "lets-choose-a-party-name",
+      "title": "Un nom pour l'équipe !",
+      "next_episode_title": "Résolution",
+      "premium_available_date": "2025-02-19T16:00:00Z",
+      "mature_blocked": false,
+      "season_number": 1,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "next_episode_id": "GPWU8J8J0",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G31UVEVEP",
+          "is_premium_only": true,
+          "media_guid": "G8MF7V7VD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DU9N92Z",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJVPQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GEVUW3M5N",
+          "is_premium_only": true,
+          "media_guid": "GXMF3MXNZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G7PU32EKM",
+          "is_premium_only": true,
+          "media_guid": "G4GFW09P1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GX9U3MXNE",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ734W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G4VUW093K",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKEZX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G9DU9NJWM",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJD81",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GJWUQ73M1",
+          "is_premium_only": true,
+          "media_guid": "GM8FEM2Z3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "available_date": null,
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3bfb09b545c36f2ae12fa5f2e6b8bfdc.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/3bfb09b545c36f2ae12fa5f2e6b8bfdc.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/3bfb09b545c36f2ae12fa5f2e6b8bfdc.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/3bfb09b545c36f2ae12fa5f2e6b8bfdc.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3bfb09b545c36f2ae12fa5f2e6b8bfdc.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/3bfb09b545c36f2ae12fa5f2e6b8bfdc.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/3bfb09b545c36f2ae12fa5f2e6b8bfdc.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/3bfb09b545c36f2ae12fa5f2e6b8bfdc.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug": "",
+      "episode_air_date": "2025-02-19T22:30:00+09:00",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_date": null,
+      "sequence_number": 8,
+      "identifier": "GQWH0M1P3|S1|E8",
+      "closed_captions_available": false,
+      "is_dubbed": true,
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "listing_id": "",
+      "recent_audio_locale": "ja-JP",
+      "description": "Takumi rencontre le roi, qui l'admire beaucoup. Il est sommé de trouver un nom à son équipe.",
+      "seo_title": "",
+      "is_premium_only": true,
+      "is_clip": false,
+      "upload_date": "2025-02-19T22:30:00+09:00",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "roles": [
+        "main"
+      ],
+      "available_offline": true,
+      "season_display_number": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "recent_variant": "",
+      "season_id": "G68VCPM8P",
+      "episode": "8",
+      "series_id": "GQWH0M1P3",
+      "episode_number": 8,
+      "production_episode_id": "",
+      "eligible_region": "CA",
+      "duration_ms": 1420004,
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/G8MF7V7VD/streams",
+      "season_sequence_number": 0,
+      "seo_description": "",
+      "is_subbed": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "is_mature": false
+    },
+    {
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "identifier": "GQWH0M1P3|S1|E9",
+      "media_type": "episode",
+      "recent_variant": "",
+      "is_subbed": true,
+      "season_number": 1,
+      "is_clip": false,
+      "series_id": "GQWH0M1P3",
+      "season_sequence_number": 0,
+      "premium_available_date": "2025-02-26T16:00:00Z",
+      "mature_blocked": false,
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "seo_description": "",
+      "recent_audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "premium_date": null,
+      "sequence_number": 9,
+      "hd_flag": true,
+      "episode": "9",
+      "season_display_number": "",
+      "slug": "",
+      "eligible_region": "CA",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "channel_id": "crunchyroll",
+      "season_id": "G68VCPM8P",
+      "available_date": null,
+      "streams_link": "/content/v2/cms/videos/GZ4FD3D3P/streams",
+      "description": "Sa sécurité étant menacée, Takumi apprivoise un golem afin d'assurer sa protection.",
+      "episode_air_date": "2025-02-26T22:30:00+09:00",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "seo_title": "",
+      "next_episode_id": "G2XUN1N13",
+      "listing_id": "",
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GPWU8J8J0",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD3D3P",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9U3M34M",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7Q17",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G7PU32QN8",
+          "is_premium_only": true,
+          "media_guid": "G4GFW0N4D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GEVUW39VW",
+          "is_premium_only": true,
+          "media_guid": "GXMF3M583",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G4VUW0N4P",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKQ35",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G14UVJNZ3",
+          "is_premium_only": true,
+          "media_guid": "GKKFG21PZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GX9U3M58V",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7ZDP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G9DU9N8VV",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJNZZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        }
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "production_episode_id": "",
+      "episode_number": 9,
+      "slug_title": "resolve",
+      "audio_locale": "ja-JP",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "duration_ms": 1420087,
+      "id": "GPWU8J8J0",
+      "availability_notes": "",
+      "availability_starts": "2025-02-26T16:00:00Z",
+      "is_dubbed": true,
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "upload_date": "2025-02-26T22:30:00+09:00",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "next_episode_title": "Takumi le pionnier",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "closed_captions_available": false,
+      "is_mature": false,
+      "title": "Résolution",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/57e7c40f07b920f29aac6d112ed2bbc9.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/57e7c40f07b920f29aac6d112ed2bbc9.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/57e7c40f07b920f29aac6d112ed2bbc9.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/57e7c40f07b920f29aac6d112ed2bbc9.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/57e7c40f07b920f29aac6d112ed2bbc9.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/57e7c40f07b920f29aac6d112ed2bbc9.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/57e7c40f07b920f29aac6d112ed2bbc9.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/57e7c40f07b920f29aac6d112ed2bbc9.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "availability_status": "available",
+      "mature_blocked": false,
+      "hd_flag": true,
+      "recent_audio_locale": "ja-JP",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "premium_date": null,
+      "episode_number": 10,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f34b015aed79f9d5945447620c7ef954.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f34b015aed79f9d5945447620c7ef954.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f34b015aed79f9d5945447620c7ef954.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f34b015aed79f9d5945447620c7ef954.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f34b015aed79f9d5945447620c7ef954.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f34b015aed79f9d5945447620c7ef954.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f34b015aed79f9d5945447620c7ef954.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f34b015aed79f9d5945447620c7ef954.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "production_episode_id": "",
+      "is_premium_only": true,
+      "next_episode_id": "G8WU7V7VE",
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "channel_id": "crunchyroll",
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "audio_locale": "ja-JP",
+      "title": "Takumi le pionnier",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode": "10",
+      "id": "G2XUN1N13",
+      "premium_available_date": "2025-03-05T16:00:00Z",
+      "closed_captions_available": false,
+      "availability_notes": "",
+      "season_number": 1,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUW0W77",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKNJJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G2XUN1N13",
+          "is_premium_only": true,
+          "media_guid": "GDVFEZEZW",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GMKUEMVM1",
+          "is_premium_only": true,
+          "media_guid": "GPPF8JGJ9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GK9UG2X2K",
+          "is_premium_only": true,
+          "media_guid": "G3WFVE9E4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GVWU8X92N",
+          "is_premium_only": true,
+          "media_guid": "G25FN1QVX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G31UVE92E",
+          "is_premium_only": true,
+          "media_guid": "G8MF7VMPV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GPWU8JGXX",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD34MM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G2XUN1QV0",
+          "is_premium_only": true,
+          "media_guid": "GDVFEZXGV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        }
+      ],
+      "next_episode_title": "Signes de tumulte",
+      "recent_variant": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "available_date": null,
+      "seo_title": "",
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "series_id": "GQWH0M1P3",
+      "upload_date": "2025-03-05T22:30:00+09:00",
+      "sequence_number": 10,
+      "identifier": "GQWH0M1P3|S1|E10",
+      "seo_description": "",
+      "roles": [
+        "main"
+      ],
+      "slug_title": "takumi-takes-on-pioneering",
+      "season_sequence_number": 0,
+      "is_mature": false,
+      "episode_air_date": "2025-03-05T22:30:00+09:00",
+      "media_type": "episode",
+      "eligible_region": "CA",
+      "is_dubbed": true,
+      "listing_id": "",
+      "is_subbed": true,
+      "duration_ms": 1420046,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GDVFEZEZW/streams",
+      "availability_starts": "2025-03-05T16:00:00Z",
+      "available_offline": true,
+      "season_display_number": "",
+      "is_clip": false,
+      "slug": "",
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "description": "Takumi est chargé de bâtir une ville afin d'accueillir des réfugiés et en fait une véritable forteresse.",
+      "season_id": "G68VCPM8P"
+    },
+    {
+      "next_episode_id": "GZ7UD3D30",
+      "episode_number": 11,
+      "premium_available_date": "2025-03-12T15:00:00Z",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "available_date": null,
+      "id": "G8WU7V7VE",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "hd_flag": true,
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "is_clip": false,
+      "is_mature": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "sequence_number": 11,
+      "available_offline": true,
+      "identifier": "GQWH0M1P3|S1|E11",
+      "recent_audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G8WU7V7VE",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM0M07",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G14UVJVP4",
+          "is_premium_only": true,
+          "media_guid": "GKKFG2GN3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G9DU9N30Z",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJM7Q",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G4VUW0257",
+          "is_premium_only": true,
+          "media_guid": "GNJFNK4MJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GX9U3M0EM",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7VW7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G14UVJM74",
+          "is_premium_only": true,
+          "media_guid": "GKKFG2XE3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GJWUQ7VWQ",
+          "is_premium_only": true,
+          "media_guid": "GM8FEMV1E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GN7UNK4M0",
+          "is_premium_only": true,
+          "media_guid": "GVMF8X9M1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        }
+      ],
+      "media_type": "episode",
+      "description": "Takumi et sa bande croisent enfin le chemin des héros invoqués par le Saint-Empire de Sidonia.",
+      "listing_id": "",
+      "slug_title": "signs-of-turmoil",
+      "season_number": 1,
+      "season_sequence_number": 0,
+      "mature_blocked": false,
+      "recent_variant": "",
+      "roles": [
+        "main"
+      ],
+      "episode": "11",
+      "channel_id": "crunchyroll",
+      "season_display_number": "",
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "production_episode_id": "",
+      "seo_description": "",
+      "is_dubbed": true,
+      "title": "Signes de tumulte",
+      "is_subbed": true,
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "season_id": "G68VCPM8P",
+      "streams_link": "/content/v2/cms/videos/GQ9FM0M07/streams",
+      "slug": "",
+      "upload_date": "2025-03-12T22:30:00+09:00",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "closed_captions_available": false,
+      "availability_starts": "2025-03-12T15:00:00Z",
+      "series_id": "GQWH0M1P3",
+      "duration_ms": 1420087,
+      "availability_status": "available",
+      "is_premium_only": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4a83a6cf7860febec1fff8cc0c8c7269.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4a83a6cf7860febec1fff8cc0c8c7269.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4a83a6cf7860febec1fff8cc0c8c7269.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4a83a6cf7860febec1fff8cc0c8c7269.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4a83a6cf7860febec1fff8cc0c8c7269.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4a83a6cf7860febec1fff8cc0c8c7269.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4a83a6cf7860febec1fff8cc0c8c7269.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4a83a6cf7860febec1fff8cc0c8c7269.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "premium_date": null,
+      "audio_locale": "ja-JP",
+      "next_episode_title": "Les liens à l'épreuve",
+      "episode_air_date": "2025-03-12T22:30:00+09:00",
+      "seo_title": "",
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "availability_notes": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ]
+    },
+    {
+      "description": "Takumi est appelé à combattre une horde de monstres aux côtés des deux meilleures équipes de la guilde.",
+      "is_dubbed": true,
+      "premium_date": null,
+      "season_title": "Possibly the Greatest Alchemist of All Time",
+      "slug_title": "when-bonds-are-tested",
+      "streams_link": "/content/v2/cms/videos/G5JFMNMN7/streams",
+      "is_mature": false,
+      "audio_locale": "ja-JP",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "roles": [
+        "main"
+      ],
+      "seo_title": "",
+      "media_type": "episode",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "id": "GZ7UD3D30",
+      "premium_available_date": "2025-03-19T15:00:00Z",
+      "identifier": "GQWH0M1P3|S1|E12",
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWUQ7Q1Q",
+          "is_premium_only": true,
+          "media_guid": "GM8FEME3E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYZXCM48V",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GZ7UD3D30",
+          "is_premium_only": true,
+          "media_guid": "G5JFMNMN7",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G68VCPM8P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G50UMNX1N",
+          "is_premium_only": true,
+          "media_guid": "G07FMWDJW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G69PC233E",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GWDU7MEQ3",
+          "is_premium_only": true,
+          "media_guid": "GEMFW3XNQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G649C722D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G0DUMWDJM",
+          "is_premium_only": true,
+          "media_guid": "G9XF9N5G9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6JQC1VVP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GQJUM0VQN",
+          "is_premium_only": true,
+          "media_guid": "GGVFX54ZW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYX0C4003",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GG1UX54Z2",
+          "is_premium_only": true,
+          "media_guid": "G71F32MJ4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR19CPMMZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GEVUW3XN0",
+          "is_premium_only": true,
+          "media_guid": "GXMF3MJZ2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYNQCJ445",
+          "variant": ""
+        }
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU",
+        "th-TH",
+        "ms-MY",
+        "zh-CN",
+        "id-ID",
+        "vi-VN"
+      ],
+      "series_title": "Possibly the Greatest Alchemist of All Time",
+      "title": "Les liens à l'épreuve",
+      "availability_notes": "",
+      "available_date": null,
+      "availability_starts": "2025-03-19T15:00:00Z",
+      "episode_number": 12,
+      "episode": "12",
+      "season_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 0,
+      "season_tags": [
+        "Hiver-2025"
+      ],
+      "series_slug_title": "possibly-the-greatest-alchemist-of-all-time",
+      "sequence_number": 12,
+      "mature_blocked": false,
+      "series_id": "GQWH0M1P3",
+      "slug": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/618c341dd66dab538114fb3a9651dad1.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/618c341dd66dab538114fb3a9651dad1.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/618c341dd66dab538114fb3a9651dad1.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/618c341dd66dab538114fb3a9651dad1.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/618c341dd66dab538114fb3a9651dad1.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/618c341dd66dab538114fb3a9651dad1.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/618c341dd66dab538114fb3a9651dad1.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/618c341dd66dab538114fb3a9651dad1.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "listing_id": "",
+      "hd_flag": true,
+      "is_premium_only": true,
+      "season_id": "G68VCPM8P",
+      "is_clip": false,
+      "episode_air_date": "2025-03-19T22:30:00+09:00",
+      "season_display_number": "",
+      "availability_status": "available",
+      "duration_ms": 1420046,
+      "is_subbed": true,
+      "upload_date": "2025-03-19T22:30:00+09:00",
+      "eligible_region": "CA",
+      "season_number": 1,
+      "closed_captions_available": false,
+      "production_episode_id": "",
+      "seo_description": ""
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

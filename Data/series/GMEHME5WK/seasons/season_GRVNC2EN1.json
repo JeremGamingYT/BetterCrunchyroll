@@ -1,0 +1,161 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "is_clip": false,
+      "closed_captions_available": false,
+      "roles": [
+        "dub"
+      ],
+      "seo_description": "",
+      "available_date": null,
+      "title": "My Hero Academia: Two Heroes (English Dub)",
+      "audio_locale": "en-US",
+      "id": "G50UZXG1P",
+      "series_slug_title": "my-hero-academia-movies",
+      "season_id": "GRVNC2EN1",
+      "streams_link": "/content/v2/cms/videos/G07FNDZJP/streams",
+      "mature_blocked": false,
+      "media_type": "episode",
+      "subtitle_locales": [
+        "en-US"
+      ],
+      "season_title": "My Hero Academia: Two Heroes",
+      "identifier": "GMEHME5WK|M1|E0",
+      "upload_date": "2023-08-17T17:00:00Z",
+      "channel_id": "crunchyroll",
+      "is_premium_only": true,
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "G50UZXG1P",
+          "is_premium_only": true,
+          "media_guid": "G07FNDZJP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRVNC2EN1",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GQJUGVWQ1",
+          "is_premium_only": true,
+          "media_guid": "GGVF241ZQ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRVNC2EN1",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 1,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "eligible_region": "CA",
+      "season_tags": [],
+      "available_offline": true,
+      "season_slug_title": "my-hero-academia-two-heroes",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/388fbf8efc4e349733d6622834629c0f.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/388fbf8efc4e349733d6622834629c0f.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/388fbf8efc4e349733d6622834629c0f.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/388fbf8efc4e349733d6622834629c0f.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/388fbf8efc4e349733d6622834629c0f.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/388fbf8efc4e349733d6622834629c0f.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/388fbf8efc4e349733d6622834629c0f.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/388fbf8efc4e349733d6622834629c0f.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "sequence_number": 0,
+      "production_episode_id": "",
+      "is_subbed": true,
+      "next_episode_id": "GQJUGVWQ1",
+      "listing_id": "",
+      "episode": "",
+      "recent_audio_locale": "en-US",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_number": 1,
+      "series_title": "My Hero Academia (Films)",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "seo_title": "",
+      "episode_air_date": "2023-08-17T17:00:00Z",
+      "is_mature": false,
+      "slug": "",
+      "premium_date": null,
+      "hd_flag": true,
+      "premium_available_date": "2023-08-18T00:00:00Z",
+      "availability_starts": "2023-08-18T00:00:00Z",
+      "recent_variant": "",
+      "next_episode_title": "My Hero Academia: Two Heroes",
+      "duration_ms": 5750829,
+      "description": "Deku visits I-Expo, the world’s leading hero item exhibition! But a sinister plan is set in motion when villains hack the security system.",
+      "season_display_number": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "series_id": "GMEHME5WK",
+      "availability_status": "available",
+      "is_dubbed": true,
+      "slug_title": "my-hero-academia-two-heroes-english-dub",
+      "episode_number": null,
+      "availability_notes": ""
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

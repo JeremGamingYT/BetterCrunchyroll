@@ -1,0 +1,86 @@
+{
+  "data": [
+    {
+      "id": "G6P50Q9W6",
+      "channel_id": "crunchyroll",
+      "title": "Wise Man's Grandchild",
+      "slug_title": "wise-mans-grandchild",
+      "series_id": "G63K95846",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Dans le Japon moderne, un jeune homme victime d’un accident de la route se retrouve réincarné en bébé dans un autre monde. Il est recueilli par un homme appelé le sage, qui le baptise Shin, l’élève comme son petit-fils et lui apprend la magie. Grâce aux souvenirs qu’il a de sa vie antérieure et la magie enseignée par le sage, il acquiert une puissance hors norme. Quinze années passent, mais le sage se rend compte qu’il a oublié de lui apprendre une chose : le bon sens ! En effet, Shin qui s’était concentré exclusivement sur la magie ne connait rien de ce monde. Afin de pallier ce problème et se faire des amis, Shin entre à l’académie de magie. Tout le monde est sidéré par sa magie, ses talents d’épéiste, et ses connaissances, peu conventionnels. Venez découvrir la vie fantaisiste d’un héros unique en son genre !",
+      "keywords": [],
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "es-419",
+        "fr-FR",
+        "de-DE",
+        "en-US",
+        "pt-BR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6P50Q9W6",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G6Q4CZEM5",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G65VCDEGK",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GYWEC3P0M",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "G63K95846|S1",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

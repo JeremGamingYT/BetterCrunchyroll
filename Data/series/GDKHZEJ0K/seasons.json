@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "id": "G6X0C4XGX",
+      "channel_id": "crunchyroll",
+      "title": "Solo Leveling",
+      "slug_title": "solo-leveling-french-dub",
+      "series_id": "GDKHZEJ0K",
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Ce qui ne vous tue pas vous rend plus fort ! Mais ce dicton ne s'applique pas au chasseur le plus faible de toute l’humanité, Jinwoo Sung. Après avoir été mortellement blessé lorsqu’il est tombé par hasard sur un double donjon caché, Jinwoo est miraculeusement rescapé. Au bord de la mort, il entrevoit une quête et saisit une opportunité qui lui permet dès lors de gagner en puissance très rapidement. À présent, il souhaite découvrir les secrets de ses pouvoirs et du donjon qui les a engendrés.",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR19CPDWM",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G6NQCJE92",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GR9PC2JQQ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GR75CDEZX",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GR49C79JN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G6X0C4XGX",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GY19CPD0M",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GRJQC13GE",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GRK5CNJ0K",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GRMGC3271",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GRWEC3XXV",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "G609CXPPX",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GDKHZEJ0K|S1",
+      "number_of_episodes": 13
+    },
+    {
+      "id": "GR9PC2387",
+      "channel_id": "crunchyroll",
+      "title": "Solo Leveling Season 2 -Arise from the Shadow-",
+      "slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "series_id": "GDKHZEJ0K",
+      "season_display_number": "2",
+      "season_sequence_number": 2,
+      "season_number": 2,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": true,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY09CX813",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GYE5CQE98",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GR75CD9QV",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GR9PC2387",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G6X0C405P",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GR49C72NJ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GY19CPMND",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GRJQC1VZZ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G6NQCJ4Q4",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GRK5CNX1D",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GRMGC3VKQ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "GRGGCVG8J",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GDKHZEJ0K|S2",
+      "number_of_episodes": 13
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 2
+}

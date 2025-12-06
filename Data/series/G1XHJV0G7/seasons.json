@@ -1,0 +1,91 @@
+{
+  "data": [
+    {
+      "id": "GS00361900JAJP",
+      "channel_id": "crunchyroll",
+      "title": "Season 1",
+      "slug_title": "season-1",
+      "series_id": "G1XHJV0G7",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Takeru Kamishiro est un employé tout à fait ordinaire qui se réincarne dans un autre monde, Madeus, où il entame une nouvelle vie dans un environnement d’épées et de magie. Takeru doit tirer le meilleur parti de sa force physique, de son incroyable pouvoir magique et d’une capacité de “recherche” lui permettant de trouver des objets de valeur. C’est le point de départ d’une grande aventure !",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "fr-FR",
+        "id-ID",
+        "de-DE",
+        "ru-RU",
+        "ar-SA",
+        "en-US",
+        "it-IT",
+        "es-419",
+        "es-ES",
+        "pt-BR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GS00361900JAJP",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GS00361900ENUS",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GS00361900DEDE",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GS00361900IDID",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "G1XHJV0G7|S00361900",
+      "number_of_episodes": 10
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

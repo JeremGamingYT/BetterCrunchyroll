@@ -1,0 +1,1818 @@
+{
+  "total": 12,
+  "data": [
+    {
+      "eligible_region": "CA",
+      "upload_date": "2023-01-04T21:00:00+09:00",
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "production_episode_id": "",
+      "identifier": "G5PHNM7J2|S1|E1",
+      "seo_description": "",
+      "available_offline": true,
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_number": 1,
+      "recent_variant": "",
+      "premium_date": null,
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "series_id": "G5PHNM7J2",
+      "is_dubbed": false,
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "slug": "",
+      "next_episode_id": "G8WUNM55V",
+      "next_episode_title": "En faire son assistante ou comment joindre l'utile à l'agréable",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "roles": [
+        "main"
+      ],
+      "episode_number": 1,
+      "title": "La révolution magique de la princesse et de la demoiselle",
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G2XU0Q99X",
+          "is_premium_only": true,
+          "media_guid": "GDVFVX779",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "is_premium_only": true,
+      "media_type": "episode",
+      "sequence_number": 1,
+      "is_clip": false,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "availability_status": "available",
+      "listing_id": "",
+      "availability_starts": "2023-01-04T14:00:00Z",
+      "is_subbed": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "slug_title": "the-magical-revolution-of-the-princess-and-the-young-lady",
+      "description": "Anisphia, princesse du royaume de Palettia, adore la magie et mène de périlleuses expériences pour la maîtriser. Elle est en réalité née sans le moindre pouvoir magique, chose impensable pour un membre ordinaire de la famille royale…",
+      "audio_locale": "ja-JP",
+      "season_display_number": "",
+      "availability_notes": "",
+      "episode_air_date": "2023-01-04T21:00:00+09:00",
+      "seo_title": "",
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "closed_captions_available": false,
+      "recent_audio_locale": "ja-JP",
+      "season_id": "GY75CDXND",
+      "premium_available_date": "2023-01-04T14:00:00Z",
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "episode": "1",
+      "is_mature": false,
+      "streams_link": "/content/v2/cms/videos/GDVFVX779/streams",
+      "season_sequence_number": 1,
+      "duration_ms": 1420054,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e02140e974e9f6feafbd1e802982ec8d.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e02140e974e9f6feafbd1e802982ec8d.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e02140e974e9f6feafbd1e802982ec8d.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e02140e974e9f6feafbd1e802982ec8d.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e02140e974e9f6feafbd1e802982ec8d.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e02140e974e9f6feafbd1e802982ec8d.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e02140e974e9f6feafbd1e802982ec8d.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e02140e974e9f6feafbd1e802982ec8d.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "id": "G2XU0Q99X"
+    },
+    {
+      "is_subbed": true,
+      "closed_captions_available": false,
+      "duration_ms": 1420095,
+      "availability_starts": "2023-01-11T14:00:00Z",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "next_episode_title": "L'épée arc-en-ciel source d'admiration et de souvenirs",
+      "seo_description": "",
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "sequence_number": 2,
+      "identifier": "G5PHNM7J2|S1|E2",
+      "premium_date": null,
+      "next_episode_id": "GZ7UV499M",
+      "season_id": "GY75CDXND",
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "season_sequence_number": 1,
+      "upload_date": "2023-01-11T21:00:00+09:00",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G8WUNM55V",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG2WW0",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "hd_flag": true,
+      "season_display_number": "",
+      "slug_title": "acquisition-of-an-assistant-for-both-profit-and-pleasure",
+      "title": "En faire son assistante ou comment joindre l'utile à l'agréable",
+      "episode_air_date": "2023-01-11T21:00:00+09:00",
+      "availability_notes": "",
+      "is_mature": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_id": "G5PHNM7J2",
+      "is_clip": false,
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "description": "Rejetée par le prince Algard, la pourtant talentueuse Euphyllia voit son destin de future reine consort s'éloigner. Sous le choc, elle est aussitôt emmenée par Anisphia auprès de leurs pères respectifs, devant lesquels l'intrépide princesse émet une proposition inattendue.",
+      "listing_id": "",
+      "recent_audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "roles": [
+        "main"
+      ],
+      "episode_number": 2,
+      "availability_status": "available",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "seo_title": "",
+      "premium_available_date": "2023-01-11T14:00:00Z",
+      "is_dubbed": false,
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "id": "G8WUNM55V",
+      "available_offline": true,
+      "streams_link": "/content/v2/cms/videos/GQ9FG2WW0/streams",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "available_date": null,
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/874c634309d2908882613339a8ab7445.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/874c634309d2908882613339a8ab7445.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/874c634309d2908882613339a8ab7445.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/874c634309d2908882613339a8ab7445.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/874c634309d2908882613339a8ab7445.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/874c634309d2908882613339a8ab7445.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/874c634309d2908882613339a8ab7445.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/874c634309d2908882613339a8ab7445.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "production_episode_id": "",
+      "season_number": 1,
+      "episode": "2",
+      "media_type": "episode",
+      "audio_locale": "ja-JP",
+      "is_premium_only": true
+    },
+    {
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "seo_title": "",
+      "id": "GZ7UV499M",
+      "sequence_number": 3,
+      "availability_notes": "",
+      "season_display_number": "",
+      "closed_captions_available": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode": "3",
+      "next_episode_id": "GD9UVX77V",
+      "mature_blocked": false,
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "season_number": 1,
+      "availability_status": "available",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode_number": 3,
+      "listing_id": "",
+      "available_offline": true,
+      "identifier": "G5PHNM7J2|S1|E3",
+      "is_premium_only": true,
+      "upload_date": "2023-01-18T21:00:00+09:00",
+      "is_mature": false,
+      "season_sequence_number": 1,
+      "is_clip": false,
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "is_subbed": true,
+      "series_id": "G5PHNM7J2",
+      "slug": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "streams_link": "/content/v2/cms/videos/G5JFZ5GGD/streams",
+      "season_id": "GY75CDXND",
+      "roles": [
+        "main"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "hd_flag": true,
+      "episode_air_date": "2023-01-18T21:00:00+09:00",
+      "duration_ms": 1420095,
+      "slug_title": "the-rainbow-magic-sword-of-longing-and-reminiscence",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "premium_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2abd6934d259516563d9e44c6fc63682.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/2abd6934d259516563d9e44c6fc63682.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/2abd6934d259516563d9e44c6fc63682.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/2abd6934d259516563d9e44c6fc63682.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2abd6934d259516563d9e44c6fc63682.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/2abd6934d259516563d9e44c6fc63682.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/2abd6934d259516563d9e44c6fc63682.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/2abd6934d259516563d9e44c6fc63682.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "channel_id": "crunchyroll",
+      "seo_description": "",
+      "next_episode_title": "La princesse et l'enfant perdu, déclarant leur détermination",
+      "available_date": null,
+      "eligible_region": "CA",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "premium_available_date": "2023-01-18T14:00:00Z",
+      "audio_locale": "ja-JP",
+      "availability_starts": "2023-01-18T14:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GZ7UV499M",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ5GGD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "title": "L'épée arc-en-ciel source d'admiration et de souvenirs",
+      "production_episode_id": "",
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "recent_variant": "",
+      "description": "Euphyllia vit désormais dans le palais d'Anisphia, à l'abri du regard de la noblesse. La princesse a toujours en tête de créer un objet magique pour sa nouvelle assistante et se lance dans une série de tests.",
+      "is_dubbed": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ]
+    },
+    {
+      "roles": [
+        "main"
+      ],
+      "is_subbed": true,
+      "available_offline": true,
+      "availability_notes": "",
+      "is_dubbed": false,
+      "seo_title": "",
+      "recent_audio_locale": "ja-JP",
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "closed_captions_available": false,
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "is_premium_only": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6287c519a77f5709ba7f1164c3369267.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6287c519a77f5709ba7f1164c3369267.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6287c519a77f5709ba7f1164c3369267.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6287c519a77f5709ba7f1164c3369267.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6287c519a77f5709ba7f1164c3369267.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6287c519a77f5709ba7f1164c3369267.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6287c519a77f5709ba7f1164c3369267.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6287c519a77f5709ba7f1164c3369267.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_id": "GY75CDXND",
+      "is_clip": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "duration_ms": 1420137,
+      "slug": "",
+      "seo_description": "",
+      "sequence_number": 4,
+      "media_type": "episode",
+      "hd_flag": true,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_mature": false,
+      "next_episode_title": "Le dopant et l'épée pour pourfendre le dragon",
+      "season_number": 1,
+      "streams_link": "/content/v2/cms/videos/GWMF8D008/streams",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "recent_variant": "",
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "mature_blocked": false,
+      "upload_date": "2023-01-25T21:00:00+09:00",
+      "premium_available_date": "2023-01-25T14:00:00Z",
+      "identifier": "G5PHNM7J2|S1|E4",
+      "eligible_region": "CA",
+      "channel_id": "crunchyroll",
+      "description": "Après avoir essayé l'épée Arc-en-ciel, Euphyllia semble légèrement affaiblie physiquement. Anisphia s'empresse de prendre soin d'elle avant que son état n'empire, et la rassure également d'un point de vue émotionnel.",
+      "slug_title": "the-princess-and-the-lost-child-announce-their-decision",
+      "availability_starts": "2023-01-25T14:00:00Z",
+      "audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GD9UVX77V",
+          "is_premium_only": true,
+          "media_guid": "GWMF8D008",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "episode": "4",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_air_date": "2023-01-25T21:00:00+09:00",
+      "id": "GD9UVX77V",
+      "availability_status": "available",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "title": "La princesse et l'enfant perdu, déclarant leur détermination",
+      "available_date": null,
+      "episode_number": 4,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_id": "GQJUG2WWM",
+      "season_sequence_number": 1,
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "series_id": "G5PHNM7J2",
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "listing_id": "",
+      "premium_date": null,
+      "season_display_number": ""
+    },
+    {
+      "episode_number": 5,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "next_episode_title": "En quête de la vérité sur les fiançailles rompues et l'homme charmé",
+      "availability_starts": "2023-02-01T14:00:00Z",
+      "is_subbed": true,
+      "season_number": 1,
+      "id": "GQJUG2WWM",
+      "roles": [
+        "main"
+      ],
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "is_clip": false,
+      "slug_title": "a-magic-medicine-and-a-magic-sword-subjugate-a-magic-dragon",
+      "seo_title": "",
+      "seo_description": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GGVF2G11X/streams",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/00c845b28c212e5f8b14c79bb967fbc9.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/00c845b28c212e5f8b14c79bb967fbc9.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/00c845b28c212e5f8b14c79bb967fbc9.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/00c845b28c212e5f8b14c79bb967fbc9.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/00c845b28c212e5f8b14c79bb967fbc9.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/00c845b28c212e5f8b14c79bb967fbc9.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/00c845b28c212e5f8b14c79bb967fbc9.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/00c845b28c212e5f8b14c79bb967fbc9.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "upload_date": "2023-02-01T21:00:00+09:00",
+      "hd_flag": true,
+      "recent_audio_locale": "ja-JP",
+      "description": "Anisphia et Euphyllia se dirigent à la rencontre de la ruée de monstres et du dragon qui menacent le royaume de Palettia. Sur place, les chevaliers et la guilde d'aventuriers sont en mauvaise posture…",
+      "production_episode_id": "",
+      "premium_available_date": "2023-02-01T14:00:00Z",
+      "recent_variant": "",
+      "mature_blocked": false,
+      "episode_air_date": "2023-02-01T21:00:00+09:00",
+      "audio_locale": "ja-JP",
+      "season_display_number": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "season_sequence_number": 1,
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "slug": "",
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "identifier": "G5PHNM7J2|S1|E5",
+      "next_episode_id": "G50UZ5GGG",
+      "media_type": "episode",
+      "channel_id": "crunchyroll",
+      "listing_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GQJUG2WWM",
+          "is_premium_only": true,
+          "media_guid": "GGVF2G11X",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "episode": "5",
+      "is_dubbed": false,
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "premium_date": null,
+      "title": "Le dopant et l'épée pour pourfendre le dragon",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_premium_only": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "eligible_region": "CA",
+      "season_id": "GY75CDXND",
+      "availability_notes": "",
+      "available_offline": true,
+      "duration_ms": 1420004,
+      "series_id": "G5PHNM7J2",
+      "available_date": null,
+      "availability_status": "available",
+      "sequence_number": 5,
+      "is_mature": false,
+      "closed_captions_available": false
+    },
+    {
+      "next_episode_title": "La conférence en magicologie de son inventrice et de son assistante",
+      "premium_date": null,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "closed_captions_available": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G50UZ5GGG",
+          "is_premium_only": true,
+          "media_guid": "G07FN8ZZZ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "hd_flag": true,
+      "sequence_number": 6,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_mature": false,
+      "eligible_region": "CA",
+      "upload_date": "2023-02-08T21:00:00+09:00",
+      "identifier": "G5PHNM7J2|S1|E6",
+      "channel_id": "crunchyroll",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_starts": "2023-02-08T14:00:00Z",
+      "title": "En quête de la vérité sur les fiançailles rompues et l'homme charmé",
+      "streams_link": "/content/v2/cms/videos/G07FN8ZZZ/streams",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "available_date": null,
+      "slug_title": "getting-to-the-truth-of-the-annulment-and-the-fascination",
+      "recent_audio_locale": "ja-JP",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "availability_status": "available",
+      "available_offline": true,
+      "id": "G50UZ5GGG",
+      "is_dubbed": false,
+      "slug": "",
+      "season_number": 1,
+      "premium_available_date": "2023-02-08T14:00:00Z",
+      "seo_description": "",
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "listing_id": "",
+      "is_subbed": true,
+      "mature_blocked": false,
+      "season_sequence_number": 1,
+      "recent_variant": "",
+      "audio_locale": "ja-JP",
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "description": "En possession de la gemme envoûtée du dragon qu'elle a vaincu, Anisphia se rend chez Tilty afin de lui demander son aide pour exploiter le pouvoir magique de la pierre.",
+      "series_id": "G5PHNM7J2",
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "seo_title": "",
+      "is_clip": false,
+      "media_type": "episode",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/93a17b30aff2d095752ecdd90a3709ae.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/93a17b30aff2d095752ecdd90a3709ae.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/93a17b30aff2d095752ecdd90a3709ae.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/93a17b30aff2d095752ecdd90a3709ae.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/93a17b30aff2d095752ecdd90a3709ae.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/93a17b30aff2d095752ecdd90a3709ae.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/93a17b30aff2d095752ecdd90a3709ae.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/93a17b30aff2d095752ecdd90a3709ae.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "episode_number": 6,
+      "availability_notes": "",
+      "is_premium_only": true,
+      "episode": "6",
+      "duration_ms": 1420004,
+      "episode_air_date": "2023-02-08T21:00:00+09:00",
+      "season_id": "GY75CDXND",
+      "season_display_number": "",
+      "next_episode_id": "GWDU8D00Z",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "roles": [
+        "main"
+      ],
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady"
+    },
+    {
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "is_subbed": true,
+      "next_episode_id": "GG1U2G11K",
+      "available_offline": true,
+      "seo_title": "",
+      "season_display_number": "",
+      "eligible_region": "CA",
+      "is_clip": false,
+      "id": "GWDU8D00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GWDU8D00Z",
+          "is_premium_only": true,
+          "media_guid": "GEMFZE00V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "mature_blocked": false,
+      "identifier": "G5PHNM7J2|S1|E7",
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_dubbed": false,
+      "availability_status": "available",
+      "season_id": "GY75CDXND",
+      "episode_number": 7,
+      "season_sequence_number": 1,
+      "duration_ms": 1419962,
+      "availability_starts": "2023-02-15T14:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "channel_id": "crunchyroll",
+      "next_episode_title": "La définition par la magie du monstre et du commun des mortels",
+      "premium_available_date": "2023-02-15T14:00:00Z",
+      "is_mature": false,
+      "streams_link": "/content/v2/cms/videos/GEMFZE00V/streams",
+      "season_number": 1,
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "slug_title": "the-magic-lecture-of-the-founder-and-the-assistant",
+      "listing_id": "",
+      "recent_variant": "",
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "premium_date": null,
+      "slug": "",
+      "sequence_number": 7,
+      "description": "Après avoir éclairci le mystère qui planait sur le pouvoir de Lainie, Anisphia finit bel et bien par l'inviter dans son palais malgré la présence d'Euphyllia. Comment va se passer la rencontre entre les deux demoiselles ?",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_premium_only": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/474de748a858c77d349ec58b6ae1780d.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/474de748a858c77d349ec58b6ae1780d.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/474de748a858c77d349ec58b6ae1780d.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/474de748a858c77d349ec58b6ae1780d.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/474de748a858c77d349ec58b6ae1780d.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/474de748a858c77d349ec58b6ae1780d.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/474de748a858c77d349ec58b6ae1780d.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/474de748a858c77d349ec58b6ae1780d.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "seo_description": "",
+      "upload_date": "2023-02-15T21:00:00+09:00",
+      "title": "La conférence en magicologie de son inventrice et de son assistante",
+      "episode_air_date": "2023-02-15T21:00:00+09:00",
+      "audio_locale": "ja-JP",
+      "availability_notes": "",
+      "production_episode_id": "",
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_date": null,
+      "episode": "7",
+      "series_id": "G5PHNM7J2",
+      "recent_audio_locale": "ja-JP"
+    },
+    {
+      "premium_date": null,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1U2G11K",
+          "is_premium_only": true,
+          "media_guid": "G71F4988G",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "is_clip": false,
+      "closed_captions_available": false,
+      "mature_blocked": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "eligible_region": "CA",
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "slug": "",
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "G0DUN8ZZQ",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "seo_title": "",
+      "upload_date": "2023-02-22T21:00:00+09:00",
+      "next_episode_title": "La sœur, le frère et la couronne",
+      "duration_ms": 1420046,
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "premium_available_date": "2023-02-22T14:00:00Z",
+      "is_subbed": true,
+      "description": "Après le retentissant discours d'Euphyllia au ministère de la Magie, elle et Anisphia se retrouvent coincées sur place alors que leur présence est nécessaire d'urgence au palais de cette dernière.",
+      "availability_status": "available",
+      "episode": "8",
+      "is_premium_only": true,
+      "availability_notes": "",
+      "audio_locale": "ja-JP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_id": "GY75CDXND",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "season_number": 1,
+      "id": "GG1U2G11K",
+      "listing_id": "",
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "media_type": "episode",
+      "identifier": "G5PHNM7J2|S1|E8",
+      "availability_starts": "2023-02-22T14:00:00Z",
+      "is_dubbed": false,
+      "episode_air_date": "2023-02-22T21:00:00+09:00",
+      "streams_link": "/content/v2/cms/videos/G71F4988G/streams",
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "production_episode_id": "",
+      "episode_number": 8,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e2446babb4e423ddefa89b12d4a4b6a0.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e2446babb4e423ddefa89b12d4a4b6a0.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e2446babb4e423ddefa89b12d4a4b6a0.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e2446babb4e423ddefa89b12d4a4b6a0.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e2446babb4e423ddefa89b12d4a4b6a0.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e2446babb4e423ddefa89b12d4a4b6a0.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e2446babb4e423ddefa89b12d4a4b6a0.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e2446babb4e423ddefa89b12d4a4b6a0.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_offline": true,
+      "seo_description": "",
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "title": "La définition par la magie du monstre et du commun des mortels",
+      "slug_title": "the-magic-definition-of-the-monster-and-the-commoner",
+      "available_date": null,
+      "season_sequence_number": 1,
+      "is_mature": false,
+      "hd_flag": true,
+      "sequence_number": 8,
+      "recent_variant": "",
+      "season_display_number": "",
+      "series_id": "G5PHNM7J2"
+    },
+    {
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "is_dubbed": false,
+      "duration_ms": 1420004,
+      "season_number": 1,
+      "recent_audio_locale": "ja-JP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_date": null,
+      "description": "Doté du pouvoir de vampire de Lainie, Algard attaque sa sœur sans relâche. Ce duel est en même temps l'occasion pour eux d'affirmer leurs profondes convictions.",
+      "closed_captions_available": false,
+      "is_mature": false,
+      "roles": [
+        "main"
+      ],
+      "is_premium_only": true,
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "series_id": "G5PHNM7J2",
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "seo_title": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "media_type": "episode",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "id": "G0DUN8ZZQ",
+      "episode_air_date": "2023-03-01T21:00:00+09:00",
+      "availability_starts": "2023-03-01T14:00:00Z",
+      "premium_date": null,
+      "identifier": "G5PHNM7J2|S1|E9",
+      "slug": "",
+      "season_display_number": "",
+      "channel_id": "crunchyroll",
+      "next_episode_title": "Succession entre résignation et vive émotion",
+      "slug_title": "the-sister-and-brother-and-for-whom-the-crown-is-intended",
+      "episode_number": 9,
+      "production_episode_id": "",
+      "recent_variant": "",
+      "available_offline": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "season_sequence_number": 1,
+      "listing_id": "",
+      "premium_available_date": "2023-03-01T14:00:00Z",
+      "title": "La sœur, le frère et la couronne",
+      "availability_status": "available",
+      "streams_link": "/content/v2/cms/videos/G9XFE344W/streams",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "sequence_number": 9,
+      "seo_description": "",
+      "is_subbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUN8ZZQ",
+          "is_premium_only": true,
+          "media_guid": "G9XFE344W",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "upload_date": "2023-03-01T21:00:00+09:00",
+      "next_episode_id": "GEVUZE00P",
+      "season_id": "GY75CDXND",
+      "episode": "9",
+      "audio_locale": "ja-JP",
+      "hd_flag": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/54537e897fe35f300af7650e1c8ac7c0.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/54537e897fe35f300af7650e1c8ac7c0.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/54537e897fe35f300af7650e1c8ac7c0.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/54537e897fe35f300af7650e1c8ac7c0.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/54537e897fe35f300af7650e1c8ac7c0.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/54537e897fe35f300af7650e1c8ac7c0.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/54537e897fe35f300af7650e1c8ac7c0.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/54537e897fe35f300af7650e1c8ac7c0.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_clip": false,
+      "availability_notes": ""
+    },
+    {
+      "roles": [
+        "main"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "id": "GEVUZE00P",
+      "availability_notes": "",
+      "season_number": 1,
+      "is_premium_only": true,
+      "availability_status": "available",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "season_display_number": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUZE00P",
+          "is_premium_only": true,
+          "media_guid": "GXMFQ022D",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "eligible_region": "CA",
+      "availability_starts": "2023-03-08T14:00:00Z",
+      "seo_description": "",
+      "episode": "10",
+      "identifier": "G5PHNM7J2|S1|E10",
+      "next_episode_title": "Le pacte spirituel du désespoir et de la détermination",
+      "hd_flag": true,
+      "listing_id": "",
+      "description": "L'exil d'Algard rebat les cartes de la succession au trône du royaume de Palettia. Le choix qui s'impose ne laisse pas l'entourage d'Anisphia indifférent…",
+      "slug_title": "the-royal-succession-of-resignation-and-fury",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "mature_blocked": false,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a541c7655636b10499f210439c4f4069.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a541c7655636b10499f210439c4f4069.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a541c7655636b10499f210439c4f4069.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a541c7655636b10499f210439c4f4069.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a541c7655636b10499f210439c4f4069.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a541c7655636b10499f210439c4f4069.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a541c7655636b10499f210439c4f4069.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a541c7655636b10499f210439c4f4069.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "episode_number": 10,
+      "is_dubbed": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "upload_date": "2023-03-08T21:00:00+09:00",
+      "audio_locale": "ja-JP",
+      "seo_title": "",
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "available_date": null,
+      "is_clip": false,
+      "slug": "",
+      "premium_available_date": "2023-03-08T14:00:00Z",
+      "season_sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "episode_air_date": "2023-03-08T21:00:00+09:00",
+      "available_offline": true,
+      "is_subbed": true,
+      "recent_variant": "",
+      "closed_captions_available": false,
+      "is_mature": false,
+      "season_id": "GY75CDXND",
+      "duration_ms": 1420004,
+      "premium_date": null,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "production_episode_id": "",
+      "streams_link": "/content/v2/cms/videos/GXMFQ022D/streams",
+      "next_episode_id": "G7PU4988W",
+      "title": "Succession entre résignation et vive émotion",
+      "sequence_number": 10,
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "series_id": "G5PHNM7J2"
+    },
+    {
+      "eligible_region": "CA",
+      "is_mature": false,
+      "sequence_number": 11,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU4988W",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ2DDM",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "available_offline": true,
+      "series_id": "G5PHNM7J2",
+      "availability_notes": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e226fec14f543d2a7657d2e3b57754e8.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e226fec14f543d2a7657d2e3b57754e8.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e226fec14f543d2a7657d2e3b57754e8.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e226fec14f543d2a7657d2e3b57754e8.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e226fec14f543d2a7657d2e3b57754e8.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e226fec14f543d2a7657d2e3b57754e8.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e226fec14f543d2a7657d2e3b57754e8.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e226fec14f543d2a7657d2e3b57754e8.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_date": null,
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "listing_id": "",
+      "title": "Le pacte spirituel du désespoir et de la détermination",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "next_episode_id": "G9DUE344P",
+      "is_clip": false,
+      "duration_ms": 1420046,
+      "hd_flag": true,
+      "identifier": "G5PHNM7J2|S1|E11",
+      "season_number": 1,
+      "media_type": "episode",
+      "premium_date": null,
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "ja-JP",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_number": 11,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "mature_blocked": false,
+      "description": "Anisphia rend visite aux représentants de l'Église spiritualiste afin de renouer le dialogue avec eux, prévoyant son retour sur la scène royale. Euphyllia, quant à elle, est bien décidée à agir à sa manière après avoir reçu les explications de Lumi au sujet des pactes spirituels.",
+      "seo_title": "",
+      "premium_available_date": "2023-03-15T13:00:00Z",
+      "slug_title": "the-spirit-contract-of-despair-and-determination",
+      "next_episode_title": "Leur révolution magique à elles deux",
+      "is_dubbed": false,
+      "episode": "11",
+      "slug": "",
+      "audio_locale": "ja-JP",
+      "id": "G7PU4988W",
+      "episode_air_date": "2023-03-15T21:00:00+09:00",
+      "closed_captions_available": false,
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "streams_link": "/content/v2/cms/videos/G4GFQ2DDM/streams",
+      "recent_variant": "",
+      "roles": [
+        "main"
+      ],
+      "season_display_number": "",
+      "is_premium_only": true,
+      "seo_description": "",
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "is_subbed": true,
+      "production_episode_id": "",
+      "upload_date": "2023-03-15T21:00:00+09:00",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "season_id": "GY75CDXND",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "availability_starts": "2023-03-15T13:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "availability_status": "available"
+    },
+    {
+      "hd_flag": true,
+      "id": "G9DUE344P",
+      "is_clip": false,
+      "episode": "12",
+      "slug": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "season_display_number": "",
+      "seo_description": "",
+      "recent_variant": "",
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DUE344P",
+          "is_premium_only": true,
+          "media_guid": "G1QF4M55E",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY75CDXND",
+          "variant": ""
+        }
+      ],
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "series_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "duration_ms": 1419962,
+      "is_mature": false,
+      "series_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "availability_status": "available",
+      "slug_title": "their-magical-revolution",
+      "episode_number": 12,
+      "season_id": "GY75CDXND",
+      "season_sequence_number": 1,
+      "is_dubbed": false,
+      "seo_title": "",
+      "media_type": "episode",
+      "streams_link": "/content/v2/cms/videos/G1QF4M55E/streams",
+      "is_subbed": true,
+      "description": "Chacune étant fermement décidée à se sacrifier dans l'intérêt de l'autre, seul un duel peut départager Euphyllia et Anisphia, et ainsi décider de la future souveraine de Palettia.",
+      "production_episode_id": "",
+      "premium_date": null,
+      "season_number": 1,
+      "roles": [
+        "main"
+      ],
+      "season_title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "series_id": "G5PHNM7J2",
+      "recent_audio_locale": "ja-JP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "season_slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "closed_captions_available": false,
+      "premium_available_date": "2023-03-22T13:00:00Z",
+      "eligible_region": "CA",
+      "availability_notes": "",
+      "episode_air_date": "2023-03-22T21:00:00+09:00",
+      "upload_date": "2023-03-22T21:00:00+09:00",
+      "listing_id": "",
+      "sequence_number": 12,
+      "availability_starts": "2023-03-22T13:00:00Z",
+      "available_date": null,
+      "mature_blocked": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b7bfe227916df58d72024a2935f6ad0b.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b7bfe227916df58d72024a2935f6ad0b.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b7bfe227916df58d72024a2935f6ad0b.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b7bfe227916df58d72024a2935f6ad0b.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b7bfe227916df58d72024a2935f6ad0b.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b7bfe227916df58d72024a2935f6ad0b.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b7bfe227916df58d72024a2935f6ad0b.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b7bfe227916df58d72024a2935f6ad0b.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "identifier": "G5PHNM7J2|S1|E12",
+      "title": "Leur révolution magique à elles deux",
+      "channel_id": "crunchyroll"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

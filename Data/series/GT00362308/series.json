@@ -1,0 +1,185 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GT00362308",
+      "channel_id": "crunchyroll",
+      "title": "With You, Our Love Will Make It Through",
+      "slug": "",
+      "slug_title": "with-you-our-love-will-make-it-through",
+      "description": "When high schooler Mari runs late for school, she never expects to fall for Tsunagu—a gentle, sensitive, beastfolk! In a world where beastfolk are segregated behind walls, Mari and Tsunagu show their differences are truly bridges. Can their love overcome the divide between beastfolk and humanity?",
+      "extended_description": "",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f03d1f5a246704a810a92c03555347aa.png"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f03d1f5a246704a810a92c03555347aa.png"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f03d1f5a246704a810a92c03555347aa.png"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f03d1f5a246704a810a92c03555347aa.png"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f03d1f5a246704a810a92c03555347aa.png"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f03d1f5a246704a810a92c03555347aa.png"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f03d1f5a246704a810a92c03555347aa.png"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f03d1f5a246704a810a92c03555347aa.png"
+            }
+          ]
+        ],
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/772355f2732f752f04100c4149cac571.png"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/772355f2732f752f04100c4149cac571.png"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/772355f2732f752f04100c4149cac571.png"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/772355f2732f752f04100c4149cac571.png"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/772355f2732f752f04100c4149cac571.png"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/772355f2732f752f04100c4149cac571.png"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/772355f2732f752f04100c4149cac571.png"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/772355f2732f752f04100c4149cac571.png"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/772355f2732f752f04100c4149cac571.png"
+            }
+          ]
+        ]
+      },
+      "episode_count": 8,
+      "season_count": 1,
+      "media_count": 8,
+      "content_provider": "Millepensee",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "id-ID",
+        "ar-SA",
+        "pt-BR",
+        "ms-MY",
+        "es-419",
+        "zh-HK",
+        "th-TH",
+        "de-DE",
+        "ru-RU",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "zh-CN",
+        "en-US",
+        "vi-VN"
+      ],
+      "audio_locales": [
+        "te-IN",
+        "pt-BR",
+        "es-419",
+        "ja-JP",
+        "ta-IN",
+        "en-US",
+        "hi-IN"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2025,
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ]
+    }
+  ],
+  "meta": {}
+}

@@ -1,0 +1,2454 @@
+{
+  "total": 12,
+  "data": [
+    {
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "available_date": null,
+      "is_clip": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUZN3GP",
+          "is_premium_only": true,
+          "media_guid": "GXMFQZM7D",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G50UZ1MJV",
+          "is_premium_only": true,
+          "media_guid": "G07FNJMQK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GEVUZN0Z8",
+          "is_premium_only": true,
+          "media_guid": "GXMFQZ2QK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G4VUQ8DQJ",
+          "is_premium_only": true,
+          "media_guid": "GNJFDV0D9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GJWU2EK2Z",
+          "is_premium_only": true,
+          "media_guid": "GM8FXG0XK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GWDU8QN47",
+          "is_premium_only": true,
+          "media_guid": "GEMFZN51W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "premium_available_date": "2023-04-26T20:30:00Z",
+      "title": "Ô déesse Mitama, je t’invoque. Disperse nos craintes, purifie nos cœurs et purge nos âmes. Ô déesse, je t’implore, entends nos prières.",
+      "id": "G4VUQ8DQJ",
+      "channel_id": "crunchyroll",
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_id": "GD9UV810G",
+      "media_type": "episode",
+      "availability_starts": "2023-04-26T20:30:00Z",
+      "episode": "1",
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama-please-purify-us-please-cleanse-us-lord-mitama-we-beg-for-you-to-hear-our-prayer",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "mature_blocked": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/33b78895785de3249d91d73f743f4781.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/33b78895785de3249d91d73f743f4781.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/33b78895785de3249d91d73f743f4781.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/33b78895785de3249d91d73f743f4781.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/33b78895785de3249d91d73f743f4781.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/33b78895785de3249d91d73f743f4781.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/33b78895785de3249d91d73f743f4781.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/33b78895785de3249d91d73f743f4781.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "production_episode_id": "",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "season_sequence_number": 1,
+      "identifier": "GNVHKNP4J|S1|E1",
+      "is_premium_only": true,
+      "seo_description": "",
+      "audio_locale": "fr-FR",
+      "roles": [
+        "dub"
+      ],
+      "episode_air_date": "2023-04-06T00:30:00+09:00",
+      "streams_link": "/content/v2/cms/videos/GNJFDV0D9/streams",
+      "next_episode_title": "Ô déesse Mitama, tu es grâce et miséricorde. Ô créatrice de l'univers, je t'invoque, par pitié, entends nos prières.",
+      "slug": "",
+      "season_display_number": "",
+      "sequence_number": 1,
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "seo_title": "",
+      "episode_number": 1,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_id": "GNVHKNP4J",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "season_id": "GY19CP0J0",
+      "recent_audio_locale": "fr-FR",
+      "premium_date": null,
+      "is_subbed": true,
+      "is_mature": false,
+      "listing_id": "",
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "availability_status": "available",
+      "availability_notes": "",
+      "duration_ms": 1425092,
+      "series_title": "Kamisama : Opération Divine",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_number": 1,
+      "upload_date": "2023-04-06T00:30:00+09:00",
+      "is_dubbed": true,
+      "eligible_region": "CA",
+      "description": "Yukito Urabe, dont le père est le gourou d’une secte étrange, est sacrifié au nom d'une déesse et se retrouve dans un monde parallèle dont les habitants ont un comportement qu'il a du mal à comprendre.",
+      "season_tags": [],
+      "available_offline": true
+    },
+    {
+      "hd_flag": true,
+      "is_subbed": true,
+      "series_id": "GNVHKNP4J",
+      "channel_id": "crunchyroll",
+      "available_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/63f6e4e84182ad84e15869cee0401094.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/63f6e4e84182ad84e15869cee0401094.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/63f6e4e84182ad84e15869cee0401094.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/63f6e4e84182ad84e15869cee0401094.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/63f6e4e84182ad84e15869cee0401094.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/63f6e4e84182ad84e15869cee0401094.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/63f6e4e84182ad84e15869cee0401094.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/63f6e4e84182ad84e15869cee0401094.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "title": "Ô déesse Mitama, tu es grâce et miséricorde. Ô créatrice de l'univers, je t'invoque, par pitié, entends nos prières.",
+      "season_tags": [],
+      "episode_air_date": "2023-04-13T00:30:00+09:00",
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_mature": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "duration_ms": 1414832,
+      "next_episode_title": "Ô déesse Mitama, toi qui es à la tête du monde céleste, chasse les mauvais esprits et libère les hommes de leurs péchés. Ô déesse des terres divines, entends nos voix.",
+      "description": "Mitama a réussi son miracle, mais maintenant, les villageois se sont mis l'Empire à dos, et l'avenir semble toujours bien sombre.",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "streams_link": "/content/v2/cms/videos/GWMF8Q4Z3/streams",
+      "availability_notes": "",
+      "episode": "2",
+      "episode_number": 2,
+      "season_number": 1,
+      "seo_description": "",
+      "recent_variant": "",
+      "season_sequence_number": 1,
+      "closed_captions_available": false,
+      "roles": [
+        "dub"
+      ],
+      "season_id": "GY19CP0J0",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU4J2VW",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ80XM",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DUEG4E7",
+          "is_premium_only": true,
+          "media_guid": "G1QF4G542",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GZ7UV1W53",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ183N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GD9UV810G",
+          "is_premium_only": true,
+          "media_guid": "GWMF8Q4Z3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G0DUNJVEV",
+          "is_premium_only": true,
+          "media_guid": "G9XFEGKVK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GZ7UV17XJ",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ124W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "fr-FR",
+      "premium_available_date": "2023-05-03T20:30:00Z",
+      "slug_title": "we-know-we-are-not-worthy-great-lord-mitama-beautiful-is",
+      "is_dubbed": true,
+      "is_premium_only": true,
+      "listing_id": "",
+      "id": "GD9UV810G",
+      "availability_status": "available",
+      "availability_starts": "2023-05-03T20:30:00Z",
+      "next_episode_id": "GZ7UV1NWQ",
+      "available_offline": true,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "media_type": "episode",
+      "eligible_region": "CA",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "production_episode_id": "",
+      "upload_date": "2023-04-13T00:30:00+09:00",
+      "premium_date": null,
+      "sequence_number": 2,
+      "identifier": "GNVHKNP4J|S1|E2",
+      "mature_blocked": false,
+      "season_display_number": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_clip": false,
+      "seo_title": "",
+      "series_title": "Kamisama : Opération Divine",
+      "recent_audio_locale": "fr-FR",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "slug": ""
+    },
+    {
+      "season_display_number": "",
+      "is_clip": false,
+      "season_number": 1,
+      "episode_number": 3,
+      "duration_ms": 1415082,
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "next_episode_title": "Ô déesse Mitama, divine créatrice, tu nous unis et tu symbolises le début et la fin. Purifie ciel et terre et règne sur l’univers. Ô toi l’ultime, entends nos prières.",
+      "audio_locale": "fr-FR",
+      "availability_status": "available",
+      "is_premium_only": true,
+      "sequence_number": 3,
+      "premium_available_date": "2023-05-10T20:30:00Z",
+      "episode": "3",
+      "is_dubbed": true,
+      "recent_audio_locale": "fr-FR",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "series_id": "GNVHKNP4J",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "next_episode_id": "GEVUZNPGX",
+      "season_tags": [],
+      "identifier": "GNVHKNP4J|S1|E3",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "Ô déesse Mitama, toi qui es à la tête du monde céleste, chasse les mauvais esprits et libère les hommes de leurs péchés. Ô déesse des terres divines, entends nos voix.",
+      "is_subbed": true,
+      "seo_description": "",
+      "production_episode_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DUEGNPP",
+          "is_premium_only": true,
+          "media_guid": "G1QF4GJEE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G50UZ183M",
+          "is_premium_only": true,
+          "media_guid": "G07FNJVEM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G8WUN09QJ",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGQ485",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GZ7UV1NWQ",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ1J8K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G4VUQ8PGX",
+          "is_premium_only": true,
+          "media_guid": "GNJFDV587",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GK9U3D4NE",
+          "is_premium_only": true,
+          "media_guid": "G3WFXZ32N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "eligible_region": "CA",
+      "hd_flag": true,
+      "available_date": null,
+      "description": "Pendant que Bertrand tente de rentrer chez lui, Yukito essaie de son côté de sauver le village des multiples dangers qui le menacent.",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b4c5851ec04072aed5a2cb836f715112.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b4c5851ec04072aed5a2cb836f715112.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b4c5851ec04072aed5a2cb836f715112.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b4c5851ec04072aed5a2cb836f715112.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b4c5851ec04072aed5a2cb836f715112.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b4c5851ec04072aed5a2cb836f715112.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b4c5851ec04072aed5a2cb836f715112.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b4c5851ec04072aed5a2cb836f715112.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_notes": "",
+      "streams_link": "/content/v2/cms/videos/G5JFZ1J8K/streams",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "media_type": "episode",
+      "mature_blocked": false,
+      "upload_date": "2023-04-20T00:30:00+09:00",
+      "channel_id": "crunchyroll",
+      "availability_starts": "2023-05-10T20:30:00Z",
+      "listing_id": "",
+      "seo_title": "",
+      "season_id": "GY19CP0J0",
+      "episode_air_date": "2023-04-20T00:30:00+09:00",
+      "season_sequence_number": 1,
+      "premium_date": null,
+      "is_mature": false,
+      "slug": "",
+      "recent_variant": "",
+      "available_offline": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "id": "GZ7UV1NWQ",
+      "roles": [
+        "dub"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama-you-who-rule-over-all-the-hills-of-takaamahara-all-our",
+      "closed_captions_available": false,
+      "series_title": "Kamisama : Opération Divine",
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world"
+    },
+    {
+      "is_subbed": true,
+      "streams_link": "/content/v2/cms/videos/GXMFQZD7J/streams",
+      "closed_captions_available": false,
+      "title": "Ô déesse Mitama, divine créatrice, tu nous unis et tu symbolises le début et la fin. Purifie ciel et terre et règne sur l’univers. Ô toi l’ultime, entends nos prières.",
+      "season_sequence_number": 1,
+      "upload_date": "2023-04-27T00:30:00+09:00",
+      "sequence_number": 4,
+      "is_mature": false,
+      "availability_status": "available",
+      "media_type": "episode",
+      "available_date": null,
+      "availability_notes": "",
+      "episode": "4",
+      "is_premium_only": true,
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "season_tags": [],
+      "is_clip": false,
+      "series_title": "Kamisama : Opération Divine",
+      "available_offline": true,
+      "description": "Pour tenter de convertir l'intégralité du village, Yukito utilise les connaissances qu'il a acquises dans son monde pour apporter quelques progrès technologiques grâce à Mitama.",
+      "is_dubbed": true,
+      "hd_flag": true,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "production_episode_id": "",
+      "premium_available_date": "2023-05-17T20:30:00Z",
+      "season_display_number": "",
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "next_episode_title": "Ô déesse Mitama, tu es à l’origine du monde, et je suis ta créature. Purifie mon être des maléfices et laisse-moi m’épanouir en ces terres paisibles et majestueuses dont tu es l’origine. Ô déesse des terres divines, puisses-tu faire preuve de miséricorde.",
+      "channel_id": "crunchyroll",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/0df19a063c16a320de24d140f2c88171.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/0df19a063c16a320de24d140f2c88171.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/0df19a063c16a320de24d140f2c88171.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/0df19a063c16a320de24d140f2c88171.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0df19a063c16a320de24d140f2c88171.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/0df19a063c16a320de24d140f2c88171.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/0df19a063c16a320de24d140f2c88171.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/0df19a063c16a320de24d140f2c88171.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug": "",
+      "premium_date": null,
+      "listing_id": "",
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama-you-have-aaahhhhh-",
+      "season_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GX9UQZM79",
+          "is_premium_only": true,
+          "media_guid": "GJKF2E7X8",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUGQ4XZ",
+          "is_premium_only": true,
+          "media_guid": "GGVF2Z7KV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GD9UV8NWP",
+          "is_premium_only": true,
+          "media_guid": "GWMF8Q9K5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GQJUGQD91",
+          "is_premium_only": true,
+          "media_guid": "GGVF2ZMEQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GEVUZNPGX",
+          "is_premium_only": true,
+          "media_guid": "GXMFQZD7J",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G4VUQ8ZWN",
+          "is_premium_only": true,
+          "media_guid": "GNJFDVGNQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "episode_air_date": "2023-04-27T00:30:00+09:00",
+      "episode_number": 4,
+      "roles": [
+        "dub"
+      ],
+      "series_id": "GNVHKNP4J",
+      "audio_locale": "fr-FR",
+      "seo_description": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_id": "GY19CP0J0",
+      "next_episode_id": "G8WUN0WN5",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "availability_starts": "2023-05-17T20:30:00Z",
+      "identifier": "GNVHKNP4J|S1|E4",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "duration_ms": 1420087,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "seo_title": "",
+      "id": "GEVUZNPGX"
+    },
+    {
+      "duration_ms": 1420171,
+      "premium_date": null,
+      "availability_notes": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUQ80XE",
+          "is_premium_only": true,
+          "media_guid": "GNJFDVK7P",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DUEGXP0",
+          "is_premium_only": true,
+          "media_guid": "G1QF4G3E7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GN7UDV7J1",
+          "is_premium_only": true,
+          "media_guid": "GVMF04Z27",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GMKUXG4X9",
+          "is_premium_only": true,
+          "media_guid": "GPPFKD5KN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G8WUN0WN5",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGQ9GW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GG1U2ZQP7",
+          "is_premium_only": true,
+          "media_guid": "G71F4JZNK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "closed_captions_available": false,
+      "episode": "5",
+      "seo_title": "",
+      "availability_starts": "2023-05-24T20:30:00Z",
+      "media_type": "episode",
+      "series_id": "GNVHKNP4J",
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama-you-created-all-things",
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "season_tags": [],
+      "availability_status": "available",
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "season_number": 1,
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "season_sequence_number": 1,
+      "is_mature": false,
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "seo_description": "",
+      "episode_number": 5,
+      "id": "G8WUN0WN5",
+      "episode_air_date": "2023-05-04T00:30:00+09:00",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "next_episode_id": "G0DUNJ4M0",
+      "description": "Loki explique ses intentions à Yukito, et celui-ci va en découvrir bien plus qu'il n'en attendait sur le monde dans lequel il a atterri.",
+      "audio_locale": "fr-FR",
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "slug": "",
+      "is_clip": false,
+      "is_subbed": true,
+      "upload_date": "2023-05-04T00:30:00+09:00",
+      "available_date": null,
+      "streams_link": "/content/v2/cms/videos/GQ9FGQ9GW/streams",
+      "season_id": "GY19CP0J0",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_available_date": "2023-05-24T20:30:00Z",
+      "identifier": "GNVHKNP4J|S1|E5",
+      "available_offline": true,
+      "recent_variant": "",
+      "season_display_number": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "roles": [
+        "dub"
+      ],
+      "hd_flag": true,
+      "sequence_number": 5,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d5229691f1d2d260c2a979ecb4cb8e2b.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d5229691f1d2d260c2a979ecb4cb8e2b.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d5229691f1d2d260c2a979ecb4cb8e2b.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d5229691f1d2d260c2a979ecb4cb8e2b.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d5229691f1d2d260c2a979ecb4cb8e2b.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d5229691f1d2d260c2a979ecb4cb8e2b.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d5229691f1d2d260c2a979ecb4cb8e2b.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d5229691f1d2d260c2a979ecb4cb8e2b.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_title": "Kamisama : Opération Divine",
+      "is_premium_only": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "Ô déesse Mitama, tu es à l’origine du monde, et je suis ta créature. Purifie mon être des maléfices et laisse-moi m’épanouir en ces terres paisibles et majestueuses dont tu es l’origine. Ô déesse des terres divines, puisses-tu faire preuve de miséricorde.",
+      "next_episode_title": "Ô déesse miséricordieuse, si tu représentais les cieux, tu serais le soleil, la lune et les étoiles. Si tu représentais les hommes, tu serais le vivant, l’inanimé et l’origine de tout en ce monde. Ô Mitama, déesse toute puissante du monde céleste, entends",
+      "eligible_region": "CA",
+      "is_dubbed": true,
+      "recent_audio_locale": "fr-FR"
+    },
+    {
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14U4GJE0",
+          "is_premium_only": true,
+          "media_guid": "GKKF3D240",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GPWUKD5KK",
+          "is_premium_only": true,
+          "media_guid": "GZ4FV1XVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GG1U2Z0XD",
+          "is_premium_only": true,
+          "media_guid": "G71F4J03W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G0DUNJ4M0",
+          "is_premium_only": true,
+          "media_guid": "G9XFEG79P",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G7PU4J03X",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ8ZWE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G7PU4JQ55",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ8N33",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "season_id": "GY19CP0J0",
+      "episode_air_date": "2023-05-11T00:30:00+09:00",
+      "availability_status": "available",
+      "description": "Yukito et tout le village fêtent la chute de l'Empire et profitent de la vie, sauf Athar qui n'arrive pas à s'en remettre. Il est maintenant l'heure de faire augmenter drastiquement le nombre de fidèles de Mitama.",
+      "next_episode_title": "Ô déesse Mitama, ô divine créatrice, tu nous offres joie et miracles. Tant que j’habiterai ce monde, je partagerai ma foi, et ta miséricorde me couvrira de plénitude. Ô déesse parmi les dieux, ma gratitude est grande et mon être est infime.",
+      "streams_link": "/content/v2/cms/videos/G9XFEG79P/streams",
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "production_episode_id": "",
+      "identifier": "GNVHKNP4J|S1|E6",
+      "is_clip": false,
+      "recent_audio_locale": "fr-FR",
+      "listing_id": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_available_date": "2023-05-31T20:30:00Z",
+      "availability_notes": "",
+      "season_tags": [],
+      "hd_flag": true,
+      "season_sequence_number": 1,
+      "next_episode_id": "G4VUQ8J4J",
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama",
+      "roles": [
+        "dub"
+      ],
+      "season_display_number": "",
+      "media_type": "episode",
+      "episode_number": 6,
+      "is_mature": false,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "duration_ms": 1420129,
+      "slug": "",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "availability_starts": "2023-05-31T20:30:00Z",
+      "series_title": "Kamisama : Opération Divine",
+      "audio_locale": "fr-FR",
+      "channel_id": "crunchyroll",
+      "season_number": 1,
+      "available_offline": true,
+      "upload_date": "2023-05-11T00:30:00+09:00",
+      "is_premium_only": true,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "seo_description": "",
+      "sequence_number": 6,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "eligible_region": "CA",
+      "series_id": "GNVHKNP4J",
+      "available_date": null,
+      "premium_date": null,
+      "is_dubbed": true,
+      "closed_captions_available": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2a0df4ab08efadc3854b64d0c5623006.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/2a0df4ab08efadc3854b64d0c5623006.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/2a0df4ab08efadc3854b64d0c5623006.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/2a0df4ab08efadc3854b64d0c5623006.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2a0df4ab08efadc3854b64d0c5623006.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/2a0df4ab08efadc3854b64d0c5623006.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/2a0df4ab08efadc3854b64d0c5623006.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/2a0df4ab08efadc3854b64d0c5623006.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "title": "Ô déesse miséricordieuse, si tu représentais les cieux, tu serais le soleil, la lune et les étoiles. Si tu représentais les hommes, tu serais le vivant, l’inanimé et l’origine de tout en ce monde. Ô Mitama, déesse toute puissante du monde céleste, entends",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "id": "G0DUNJ4M0",
+      "episode": "6",
+      "seo_title": "",
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "mature_blocked": false,
+      "recent_variant": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_subbed": true
+    },
+    {
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "listing_id": "",
+      "next_episode_title": "Ô déesse Mitama, ton cœur pur chasse les ténèbres. Les dix troncs célestes et les douze branches terrestres me guident. Ô déesse parmi les dieux, divine créatrice de nos terres, entends nos voix.",
+      "episode_air_date": "2023-05-18T00:30:00+09:00",
+      "season_sequence_number": 1,
+      "roles": [
+        "dub"
+      ],
+      "episode": "7",
+      "is_premium_only": true,
+      "season_id": "GY19CP0J0",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "channel_id": "crunchyroll",
+      "closed_captions_available": false,
+      "slug": "",
+      "availability_starts": "2023-06-07T20:30:00Z",
+      "seo_title": "",
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "streams_link": "/content/v2/cms/videos/GNJFDV939/streams",
+      "description": "Pendant que Loki et Bertrand retournent à la capitale, Yukito, Mitama, Arlalle et Roy sont aux prises avec la secte de Dakini.",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama-all-living-beings-were-born-by",
+      "episode_number": 7,
+      "is_mature": false,
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWU2E7X3",
+          "is_premium_only": true,
+          "media_guid": "GM8FXGM42",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G14U4G2VM",
+          "is_premium_only": true,
+          "media_guid": "GKKF3DQGX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GWDU8QWZ4",
+          "is_premium_only": true,
+          "media_guid": "GEMFZN2V1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G0DUNJ1E3",
+          "is_premium_only": true,
+          "media_guid": "G9XFEGQVX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G4VUQ8J4J",
+          "is_premium_only": true,
+          "media_guid": "GNJFDV939",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G8WUN00XW",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGQQJ9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "availability_notes": "",
+      "duration_ms": 1420129,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9f0958f70af3cc38131aa6df21d4fef7.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9f0958f70af3cc38131aa6df21d4fef7.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9f0958f70af3cc38131aa6df21d4fef7.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9f0958f70af3cc38131aa6df21d4fef7.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9f0958f70af3cc38131aa6df21d4fef7.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9f0958f70af3cc38131aa6df21d4fef7.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9f0958f70af3cc38131aa6df21d4fef7.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9f0958f70af3cc38131aa6df21d4fef7.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "title": "Ô déesse Mitama, ô divine créatrice, tu nous offres joie et miracles. Tant que j’habiterai ce monde, je partagerai ma foi, et ta miséricorde me couvrira de plénitude. Ô déesse parmi les dieux, ma gratitude est grande et mon être est infime.",
+      "season_tags": [],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_subbed": true,
+      "is_clip": false,
+      "recent_variant": "",
+      "id": "G4VUQ8J4J",
+      "upload_date": "2023-05-18T00:30:00+09:00",
+      "series_title": "Kamisama : Opération Divine",
+      "recent_audio_locale": "fr-FR",
+      "next_episode_id": "GG1U2ZZ9G",
+      "season_display_number": "",
+      "mature_blocked": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "seo_description": "",
+      "season_number": 1,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "hd_flag": true,
+      "production_episode_id": "",
+      "audio_locale": "fr-FR",
+      "sequence_number": 7,
+      "available_date": null,
+      "premium_available_date": "2023-06-07T20:30:00Z",
+      "series_id": "GNVHKNP4J",
+      "available_offline": true,
+      "media_type": "episode",
+      "premium_date": null,
+      "is_dubbed": true,
+      "identifier": "GNVHKNP4J|S1|E7",
+      "availability_status": "available"
+    },
+    {
+      "season_sequence_number": 1,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_id": "GNVHKNP4J",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "mature_blocked": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UDVK7Q",
+          "is_premium_only": true,
+          "media_guid": "GVMF04XZK",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUQ8N3Z",
+          "is_premium_only": true,
+          "media_guid": "GNJFDVQZG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GZ7UV11KJ",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ11PW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GD9UV88KP",
+          "is_premium_only": true,
+          "media_guid": "GWMF8QQX5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GG1U2ZZ9G",
+          "is_premium_only": true,
+          "media_guid": "G71F4JJE9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G8WUN0195",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGQ34W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "title": "Ô déesse Mitama, ton cœur pur chasse les ténèbres. Les dix troncs célestes et les douze branches terrestres me guident. Ô déesse parmi les dieux, divine créatrice de nos terres, entends nos voix.",
+      "availability_status": "available",
+      "season_tags": [],
+      "sequence_number": 8,
+      "season_number": 1,
+      "episode_air_date": "2023-06-01T00:30:00+09:00",
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "roles": [
+        "dub"
+      ],
+      "slug_title": "we-know-we-are-not-worthy--o-great-lord-mitama-evil-cannot-touch",
+      "duration_ms": 1420046,
+      "series_title": "Kamisama : Opération Divine",
+      "streams_link": "/content/v2/cms/videos/G71F4JJE9/streams",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c82a3e14c2001f825ba903b66204e213.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c82a3e14c2001f825ba903b66204e213.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c82a3e14c2001f825ba903b66204e213.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c82a3e14c2001f825ba903b66204e213.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c82a3e14c2001f825ba903b66204e213.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c82a3e14c2001f825ba903b66204e213.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c82a3e14c2001f825ba903b66204e213.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c82a3e14c2001f825ba903b66204e213.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "fr-FR",
+      "season_id": "GY19CP0J0",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "episode_number": 8,
+      "description": "Yukito continue à mettre son plan à exécution afin de détruire la secte de Dakini.",
+      "is_premium_only": true,
+      "is_clip": false,
+      "hd_flag": true,
+      "upload_date": "2023-06-01T00:30:00+09:00",
+      "is_subbed": true,
+      "slug": "",
+      "availability_starts": "2023-06-21T20:30:00Z",
+      "seo_title": "",
+      "media_type": "episode",
+      "is_mature": false,
+      "closed_captions_available": false,
+      "production_episode_id": "",
+      "recent_variant": "",
+      "subtitle_locales": [],
+      "is_dubbed": true,
+      "available_offline": true,
+      "id": "GG1U2ZZ9G",
+      "next_episode_id": "G9DUEGMWJ",
+      "next_episode_title": "Ô déesse Mitama, ton cœur est bon et si pur. Les trésors et armes divines te protègent des ténèbres et du mal. Ô toi, l’ultime, je t’implore. Entends nos voix, entends nos prières.",
+      "premium_available_date": "2023-06-21T20:30:00Z",
+      "listing_id": "",
+      "season_display_number": "",
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "episode": "8",
+      "audio_locale": "fr-FR",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "available_date": null,
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_description": "",
+      "identifier": "GNVHKNP4J|S1|E8",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "premium_date": null
+    },
+    {
+      "availability_notes": "",
+      "duration_ms": 1420212,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "next_episode_title": "Ô déesse Mitama, ton cœur est pur et sans ombre. Nous te sommes voués corps et âme. Nous sommes tes serviteurs éternels. Que ta bonté nous préserve. Ô toi, l’ultime, ton corps spirituel est sacré. Depuis la création du monde, tu soignes nos peines. Ô dées",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "listing_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9U3D24X",
+          "is_premium_only": true,
+          "media_guid": "G3WFXZE39",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G0DUNJJPJ",
+          "is_premium_only": true,
+          "media_guid": "G9XFEGGJG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GZ7UV1EN5",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ1VJ3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GD9UV8341",
+          "is_premium_only": true,
+          "media_guid": "GWMF8QJN4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G9DUEGMWJ",
+          "is_premium_only": true,
+          "media_guid": "G1QF4G18D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GK9U3M2ZW",
+          "is_premium_only": true,
+          "media_guid": "G3WFXWEP8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "episode": "9",
+      "recent_variant": "",
+      "seo_description": "",
+      "series_id": "GNVHKNP4J",
+      "seo_title": "",
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/G1QF4G18D/streams",
+      "upload_date": "2023-06-08T00:30:00+09:00",
+      "availability_status": "available",
+      "production_episode_id": "",
+      "description": "Yukito essaie de transférer les fidèles de Dakini à Mitama, mais Dakini n'a pas l'intention de se laisser faire.",
+      "season_tags": [],
+      "availability_starts": "2023-06-28T20:30:00Z",
+      "identifier": "GNVHKNP4J|S1|E9",
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "eligible_region": "CA",
+      "roles": [
+        "dub"
+      ],
+      "slug": "",
+      "episode_air_date": "2023-06-08T00:30:00+09:00",
+      "channel_id": "crunchyroll",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama-your-perfectly-pur",
+      "available_offline": true,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "recent_audio_locale": "fr-FR",
+      "is_dubbed": true,
+      "season_display_number": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "series_title": "Kamisama : Opération Divine",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_premium_only": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/61deeccba108fe1ef4728ce155d71efd.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/61deeccba108fe1ef4728ce155d71efd.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/61deeccba108fe1ef4728ce155d71efd.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/61deeccba108fe1ef4728ce155d71efd.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/61deeccba108fe1ef4728ce155d71efd.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/61deeccba108fe1ef4728ce155d71efd.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/61deeccba108fe1ef4728ce155d71efd.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/61deeccba108fe1ef4728ce155d71efd.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "audio_locale": "fr-FR",
+      "closed_captions_available": false,
+      "available_date": null,
+      "season_id": "GY19CP0J0",
+      "premium_available_date": "2023-06-28T20:30:00Z",
+      "season_number": 1,
+      "is_mature": false,
+      "is_clip": false,
+      "mature_blocked": false,
+      "next_episode_id": "GEVUZN7E9",
+      "title": "Ô déesse Mitama, ton cœur est bon et si pur. Les trésors et armes divines te protègent des ténèbres et du mal. Ô toi, l’ultime, je t’implore. Entends nos voix, entends nos prières.",
+      "episode_number": 9,
+      "media_type": "episode",
+      "sequence_number": 9,
+      "id": "G9DUEGMWJ",
+      "premium_date": null
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_mature": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "slug": "",
+      "hd_flag": true,
+      "recent_audio_locale": "fr-FR",
+      "duration_ms": 1420004,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "streams_link": "/content/v2/cms/videos/GXMFQZE05/streams",
+      "seo_description": "",
+      "season_id": "GY19CP0J0",
+      "title": "Ô déesse Mitama, ton cœur est pur et sans ombre. Nous te sommes voués corps et âme. Nous sommes tes serviteurs éternels. Que ta bonté nous préserve. Ô toi, l’ultime, ton corps spirituel est sacré. Depuis la création du monde, tu soignes nos peines. Ô dées",
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "episode_number": 10,
+      "listing_id": "",
+      "episode": "10",
+      "next_episode_id": "G9DUE522K",
+      "series_id": "GNVHKNP4J",
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "season_tags": [],
+      "premium_date": null,
+      "is_dubbed": true,
+      "season_number": 1,
+      "recent_variant": "",
+      "available_offline": true,
+      "production_episode_id": "",
+      "mature_blocked": false,
+      "is_subbed": true,
+      "availability_status": "available",
+      "is_premium_only": true,
+      "closed_captions_available": false,
+      "id": "GEVUZN7E9",
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama",
+      "availability_notes": "",
+      "upload_date": "2023-06-15T00:30:00+09:00",
+      "description": "Yukito veut maintenant étendre l'influence de la secte de Mitama grâce à la musique, mais un nouvel obstacle se dresse sur son chemin.",
+      "episode_air_date": "2023-06-15T00:30:00+09:00",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_clip": false,
+      "next_episode_title": "Ô déesse Mitama, à l’aube de l’univers, alors que les terres se formaient à peine, l’être divin, la déesse Mitama descendit en ce monde. Notre gratitude est infinie. Ô je t’implore, entends nos prières.",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GMKUXGM4G",
+          "is_premium_only": true,
+          "media_guid": "GPPFKDJ5D",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUZND54",
+          "is_premium_only": true,
+          "media_guid": "GXMFQZWNP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G50UZ105W",
+          "is_premium_only": true,
+          "media_guid": "G07FNJ284",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GWDU8Q2D5",
+          "is_premium_only": true,
+          "media_guid": "GEMFZN7E4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GEVUZN7E9",
+          "is_premium_only": true,
+          "media_guid": "GXMFQZE05",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GK9U3MNN5",
+          "is_premium_only": true,
+          "media_guid": "G3WFXW220",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 1,
+      "series_title": "Kamisama : Opération Divine",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "season_display_number": "",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "available_date": null,
+      "roles": [
+        "dub"
+      ],
+      "audio_locale": "fr-FR",
+      "eligible_region": "CA",
+      "premium_available_date": "2023-07-05T20:30:00Z",
+      "media_type": "episode",
+      "channel_id": "crunchyroll",
+      "availability_starts": "2023-07-05T20:30:00Z",
+      "identifier": "GNVHKNP4J|S1|E10",
+      "seo_title": "",
+      "sequence_number": 10,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8f177106f778a8f01407a14d9d112df2.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8f177106f778a8f01407a14d9d112df2.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8f177106f778a8f01407a14d9d112df2.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8f177106f778a8f01407a14d9d112df2.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8f177106f778a8f01407a14d9d112df2.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8f177106f778a8f01407a14d9d112df2.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8f177106f778a8f01407a14d9d112df2.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8f177106f778a8f01407a14d9d112df2.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "season_id": "GY19CP0J0",
+      "streams_link": "/content/v2/cms/videos/G1QF49PPK/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GVWU04XZW",
+          "is_premium_only": true,
+          "media_guid": "G25F0D134",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GWDU8EM94",
+          "is_premium_only": true,
+          "media_guid": "GEMFZX3P1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GEVUZXQQ0",
+          "is_premium_only": true,
+          "media_guid": "GXMFQJ442",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G7PU4MDDN",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ1774",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G9DUE522K",
+          "is_premium_only": true,
+          "media_guid": "G1QF49PPK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GJWU2913D",
+          "is_premium_only": true,
+          "media_guid": "GM8FXQ32D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "is_premium_only": true,
+      "seo_title": "",
+      "premium_date": null,
+      "audio_locale": "fr-FR",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "is_clip": false,
+      "closed_captions_available": false,
+      "season_number": 1,
+      "is_dubbed": true,
+      "is_mature": false,
+      "is_subbed": true,
+      "available_offline": true,
+      "sequence_number": 11,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/838453d5a779288ca7c8ff076775bf3e.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/838453d5a779288ca7c8ff076775bf3e.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/838453d5a779288ca7c8ff076775bf3e.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/838453d5a779288ca7c8ff076775bf3e.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/838453d5a779288ca7c8ff076775bf3e.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/838453d5a779288ca7c8ff076775bf3e.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/838453d5a779288ca7c8ff076775bf3e.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/838453d5a779288ca7c8ff076775bf3e.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_date": null,
+      "id": "G9DUE522K",
+      "series_title": "Kamisama : Opération Divine",
+      "episode_air_date": "2023-06-29T00:30:00+09:00",
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama-in-the-ancient-tim",
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "mature_blocked": false,
+      "upload_date": "2023-06-29T00:30:00+09:00",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "premium_available_date": "2023-07-19T20:30:00Z",
+      "recent_audio_locale": "fr-FR",
+      "availability_status": "available",
+      "season_sequence_number": 1,
+      "title": "Ô déesse Mitama, à l’aube de l’univers, alors que les terres se formaient à peine, l’être divin, la déesse Mitama descendit en ce monde. Notre gratitude est infinie. Ô je t’implore, entends nos prières.",
+      "description": "Cyan se souvient de son enfance du temps du Conseil et des échéances, pendant que Yukito et ses amis s'apprêtent à affronter Gaïa.",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_display_number": "",
+      "channel_id": "crunchyroll",
+      "listing_id": "",
+      "roles": [
+        "dub"
+      ],
+      "slug": "",
+      "seo_description": "",
+      "production_episode_id": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_id": "GNVHKNP4J",
+      "media_type": "episode",
+      "recent_variant": "",
+      "availability_starts": "2023-07-19T20:30:00Z",
+      "hd_flag": true,
+      "episode_number": 11,
+      "next_episode_title": "Ô déesse Mitama, tu règnes sur le monde céleste. Personne ne te surpasse, les démons te fuient. Grâce à ta bénédiction, nous pouvons travailler et avoir une santé d’acier. Merci de nous protéger nuit et jour et de nous apporter du bonheur chaque jour. Ô t",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "duration_ms": 1420129,
+      "next_episode_id": "GN7UD2JE8",
+      "availability_notes": "",
+      "episode": "11",
+      "identifier": "GNVHKNP4J|S1|E11",
+      "season_tags": []
+    },
+    {
+      "listing_id": "",
+      "season_title": "Kamisama : Opération Divine (VF)",
+      "series_title": "Kamisama : Opération Divine",
+      "available_offline": true,
+      "season_id": "GY19CP0J0",
+      "episode_air_date": "2023-07-06T00:30:00+09:00",
+      "episode_number": 12,
+      "next_episode_title": "Ô déesse Mitama, je t’invoque. Disperse nos craintes, purifie nos cœurs et purge nos âmes. Ô déesse, je t’implore, entends nos prières.",
+      "season_slug_title": "kamikatsu-working-for-god-in-a-godless-world-french-dub",
+      "title": "Ô déesse Mitama, tu règnes sur le monde céleste. Personne ne te surpasse, les démons te fuient. Grâce à ta bénédiction, nous pouvons travailler et avoir une santé d’acier. Merci de nous protéger nuit et jour et de nous apporter du bonheur chaque jour. Ô t",
+      "availability_notes": "",
+      "slug": "",
+      "channel_id": "crunchyroll",
+      "is_dubbed": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GVMF0W2E3/streams",
+      "next_episode_id": "GJWU2EK2Z",
+      "upload_date": "2023-07-06T00:30:00+09:00",
+      "mature_blocked": false,
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "sequence_number": 12,
+      "season_display_number": "",
+      "available_date": null,
+      "season_tags": [],
+      "media_type": "episode",
+      "eligible_region": "CA",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "id": "GN7UD2JE8",
+      "is_premium_only": true,
+      "slug_title": "we-know-we-are-not-worthy-o-great-lord-mitama-on-the-throne",
+      "duration_ms": 1440191,
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "availability_status": "available",
+      "seo_description": "",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "hd_flag": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6a9ee06a1f2a9b4265edb2e3b98ee2ad.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6a9ee06a1f2a9b4265edb2e3b98ee2ad.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6a9ee06a1f2a9b4265edb2e3b98ee2ad.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6a9ee06a1f2a9b4265edb2e3b98ee2ad.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6a9ee06a1f2a9b4265edb2e3b98ee2ad.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6a9ee06a1f2a9b4265edb2e3b98ee2ad.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6a9ee06a1f2a9b4265edb2e3b98ee2ad.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6a9ee06a1f2a9b4265edb2e3b98ee2ad.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_mature": false,
+      "description": "Yukito et Mitama sont toujours prisonniers de Gaïa, mais leurs amis font tout pour les sauver et vaincre le monstre gigantesque qui les poursuit.",
+      "closed_captions_available": false,
+      "series_id": "GNVHKNP4J",
+      "roles": [
+        "dub"
+      ],
+      "availability_starts": "2023-07-26T20:30:00Z",
+      "season_number": 1,
+      "episode": "12",
+      "is_clip": false,
+      "premium_available_date": "2023-07-26T20:30:00Z",
+      "series_slug_title": "kamikatsu-working-for-god-in-a-godless-world",
+      "identifier": "GNVHKNP4J|S1|E12",
+      "premium_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G31UXZE34",
+          "is_premium_only": true,
+          "media_guid": "G8MFN0VW1",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GYP8CX1VW",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUQ1773",
+          "is_premium_only": true,
+          "media_guid": "GNJFD2JJZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC37MG",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G14U49PD5",
+          "is_premium_only": true,
+          "media_guid": "GKKF3MNJW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CN02X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUQ179W",
+          "is_premium_only": true,
+          "media_guid": "GNJFD2JEN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1G73",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GN7UD2JE8",
+          "is_premium_only": true,
+          "media_guid": "GVMF0W2E3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CP0J0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GX9UQJQKW",
+          "is_premium_only": true,
+          "media_guid": "GJKF292J0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ9KQ",
+          "variant": ""
+        }
+      ],
+      "seo_title": "",
+      "season_sequence_number": 1
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

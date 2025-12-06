@@ -1,0 +1,1830 @@
+{
+  "total": 12,
+  "data": [
+    {
+      "season_sequence_number": 2,
+      "roles": [
+        "main"
+      ],
+      "identifier": "G6QW1E876|S2|E1",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_offline": true,
+      "media_type": "episode",
+      "premium_available_date": "2022-01-10T17:00:00Z",
+      "sequence_number": 1,
+      "season_id": "G69PC2XQ2",
+      "recent_audio_locale": "ja-JP",
+      "free_available_date": "2022-01-17T17:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/53946754191065eec7c0d1a3ef40c9b2.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/53946754191065eec7c0d1a3ef40c9b2.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/53946754191065eec7c0d1a3ef40c9b2.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/53946754191065eec7c0d1a3ef40c9b2.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/53946754191065eec7c0d1a3ef40c9b2.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/53946754191065eec7c0d1a3ef40c9b2.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/53946754191065eec7c0d1a3ef40c9b2.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/53946754191065eec7c0d1a3ef40c9b2.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "hd_flag": true,
+      "upload_date": "2022-01-11T00:00:00+09:00",
+      "listing_id": "",
+      "id": "G4VUQXP8W",
+      "availability_status": "available",
+      "is_premium_only": true,
+      "closed_captions_available": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "seo_description": "",
+      "availability_starts": "2022-01-10T17:00:00Z",
+      "eligible_region": "CA",
+      "next_episode_title": "Menu 2 - Hésitation d'un chat capricieux",
+      "series_slug_title": "princess-connect-re-dive",
+      "season_number": 2,
+      "is_clip": false,
+      "season_display_number": "2",
+      "slug": "",
+      "production_episode_id": "",
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "seo_title": "",
+      "mature_blocked": false,
+      "episode_air_date": "2022-01-11T00:00:00+09:00",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "channel_id": "crunchyroll",
+      "episode_number": 1,
+      "availability_notes": "",
+      "premium_date": null,
+      "is_subbed": true,
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "audio_locale": "ja-JP",
+      "is_mature": false,
+      "recent_variant": "",
+      "is_dubbed": false,
+      "episode": "1",
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "slug_title": "a-walk-on-the-gourmet-side-curiosity-is-the-best-bouquet-garni",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUQXP8W",
+          "is_premium_only": true,
+          "media_guid": "GNJFD75VN",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "duration_ms": 1420054,
+      "title": "Menu 1 - Rendez-vous chez les Gourmets",
+      "description": "Les Gourmets repartent à la recherche des délices du monde. Karin, de l'association des guildes, leur confie une quête avec un trésor inédit nommé « les gouttes de l'océan ».",
+      "next_episode_id": "G14U4E8G5",
+      "available_date": null,
+      "series_title": "Princess Connect! Re: Dive",
+      "series_id": "G6QW1E876",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "streams_link": "/content/v2/cms/videos/GNJFD75VN/streams"
+    },
+    {
+      "id": "G14U4E8G5",
+      "recent_variant": "",
+      "listing_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_sequence_number": 2,
+      "sequence_number": 2,
+      "episode_air_date": "2022-01-18T00:00:00+09:00",
+      "slug": "",
+      "closed_captions_available": false,
+      "is_dubbed": false,
+      "is_mature": false,
+      "upload_date": "2022-01-18T00:00:00+09:00",
+      "seo_description": "",
+      "duration_ms": 1420095,
+      "channel_id": "crunchyroll",
+      "free_available_date": "2022-01-24T17:00:00Z",
+      "availability_starts": "2022-01-17T17:00:00Z",
+      "season_id": "G69PC2XQ2",
+      "episode_number": 2,
+      "series_title": "Princess Connect! Re: Dive",
+      "availability_notes": "",
+      "next_episode_id": "GJWU2X4ED",
+      "recent_audio_locale": "ja-JP",
+      "description": "Yûki se rend chez une cliente extravagante en prévision d'un concert livré par une guilde d'idoles appelées Carmina. La loyauté de Kyaru est de nouveau tiraillée.",
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "premium_available_date": "2022-01-17T17:00:00Z",
+      "season_display_number": "2",
+      "roles": [
+        "main"
+      ],
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14U4E8G5",
+          "is_premium_only": true,
+          "media_guid": "GKKF347DW",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/GKKF347DW/streams",
+      "is_subbed": true,
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "episode": "2",
+      "next_episode_title": "Menu 3 - Thé dans la forêt mystérieuse",
+      "is_premium_only": true,
+      "identifier": "G6QW1E876|S2|E2",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "audio_locale": "ja-JP",
+      "mature_blocked": false,
+      "is_clip": false,
+      "available_date": null,
+      "production_episode_id": "",
+      "available_offline": true,
+      "slug_title": "a-moody-cats-hesitation-antipasto-in-the-moonlight",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ea6420598867d5e08008bb8ce7373950.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ea6420598867d5e08008bb8ce7373950.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ea6420598867d5e08008bb8ce7373950.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ea6420598867d5e08008bb8ce7373950.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ea6420598867d5e08008bb8ce7373950.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ea6420598867d5e08008bb8ce7373950.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ea6420598867d5e08008bb8ce7373950.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ea6420598867d5e08008bb8ce7373950.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "eligible_region": "CA",
+      "hd_flag": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "princess-connect-re-dive",
+      "premium_date": null,
+      "series_id": "G6QW1E876",
+      "seo_title": "",
+      "title": "Menu 2 - Hésitation d'un chat capricieux",
+      "availability_status": "available",
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "season_number": 2
+    },
+    {
+      "id": "GJWU2X4ED",
+      "roles": [
+        "main"
+      ],
+      "series_title": "Princess Connect! Re: Dive",
+      "seo_title": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "recent_audio_locale": "ja-JP",
+      "is_clip": false,
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "title": "Menu 3 - Thé dans la forêt mystérieuse",
+      "description": "Le groupe croise à nouveau la route d'Aoi, de l'équipe BB. Aoi peine à sortir de sa solitude et à se socialiser avec ses nouvelles camarades de lycée. Les amis font la connaissance d'élèves enquêtant sur une série de disparitions près du lycée.",
+      "duration_ms": 1420179,
+      "episode_air_date": "2022-01-25T00:00:00+09:00",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "identifier": "G6QW1E876|S2|E3",
+      "sequence_number": 3,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f39e39510b21563a0ecabfdda1a63e13.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f39e39510b21563a0ecabfdda1a63e13.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f39e39510b21563a0ecabfdda1a63e13.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f39e39510b21563a0ecabfdda1a63e13.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f39e39510b21563a0ecabfdda1a63e13.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f39e39510b21563a0ecabfdda1a63e13.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f39e39510b21563a0ecabfdda1a63e13.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f39e39510b21563a0ecabfdda1a63e13.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug_title": "tea-party-in-the-mysterious-forest-afternoon-carries-the-scent-of-danger",
+      "hd_flag": true,
+      "season_id": "G69PC2XQ2",
+      "season_number": 2,
+      "availability_starts": "2022-01-24T17:00:00Z",
+      "is_dubbed": false,
+      "is_mature": false,
+      "available_date": null,
+      "premium_date": null,
+      "series_id": "G6QW1E876",
+      "premium_available_date": "2022-01-24T17:00:00Z",
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_premium_only": true,
+      "recent_variant": "",
+      "episode": "3",
+      "next_episode_title": "Menu 4 - Le détective débutant",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "slug": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "mature_blocked": false,
+      "available_offline": true,
+      "audio_locale": "ja-JP",
+      "upload_date": "2022-01-25T00:00:00+09:00",
+      "listing_id": "",
+      "episode_number": 3,
+      "channel_id": "crunchyroll",
+      "season_display_number": "2",
+      "free_available_date": "2022-01-31T17:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GM8FX4JGD/streams",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "closed_captions_available": false,
+      "availability_status": "available",
+      "season_sequence_number": 2,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWU2X4ED",
+          "is_premium_only": true,
+          "media_guid": "GM8FX4JGD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "media_type": "episode",
+      "series_slug_title": "princess-connect-re-dive",
+      "next_episode_id": "GN7UD75V8",
+      "is_subbed": true,
+      "season_tags": [
+        "Hiver-2022"
+      ]
+    },
+    {
+      "is_subbed": true,
+      "episode_number": 4,
+      "roles": [
+        "main"
+      ],
+      "premium_available_date": "2022-01-31T17:00:00Z",
+      "is_clip": false,
+      "description": "La bande de gourmands est de sortie à l'île aux monstres pour chercher de la viande ! De leurs péripéties naît une amitié avec un autre groupe d'aventurières. Ils rencontrent tous ensemble une nuée d'ombres, mais dont l'une d'elles est très particulière.",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "eligible_region": "CA",
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug_title": "the-budding-detective-mirror-glaze-on-the-mind",
+      "series_slug_title": "princess-connect-re-dive",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_display_number": "2",
+      "season_number": 2,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5829ceaf7e0da639b0a789a356f1bba7.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5829ceaf7e0da639b0a789a356f1bba7.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5829ceaf7e0da639b0a789a356f1bba7.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5829ceaf7e0da639b0a789a356f1bba7.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5829ceaf7e0da639b0a789a356f1bba7.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5829ceaf7e0da639b0a789a356f1bba7.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5829ceaf7e0da639b0a789a356f1bba7.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5829ceaf7e0da639b0a789a356f1bba7.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_status": "available",
+      "free_available_date": "2022-02-07T17:00:00Z",
+      "hd_flag": true,
+      "upload_date": "2022-02-01T00:00:00+09:00",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UD75V8",
+          "is_premium_only": true,
+          "media_guid": "GVMF0ZD43",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "seo_title": "",
+      "available_date": null,
+      "availability_starts": "2022-01-31T17:00:00Z",
+      "audio_locale": "ja-JP",
+      "identifier": "G6QW1E876|S2|E4",
+      "premium_date": null,
+      "season_sequence_number": 2,
+      "channel_id": "crunchyroll",
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "slug": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "next_episode_id": "GK9U347D7",
+      "duration_ms": 1420137,
+      "production_episode_id": "",
+      "sequence_number": 4,
+      "available_offline": true,
+      "recent_variant": "",
+      "listing_id": "",
+      "closed_captions_available": false,
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "recent_audio_locale": "ja-JP",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode": "4",
+      "availability_notes": "",
+      "streams_link": "/content/v2/cms/videos/GVMF0ZD43/streams",
+      "title": "Menu 4 - Le détective débutant",
+      "episode_air_date": "2022-02-01T00:00:00+09:00",
+      "media_type": "episode",
+      "season_id": "G69PC2XQ2",
+      "series_title": "Princess Connect! Re: Dive",
+      "is_mature": false,
+      "seo_description": "",
+      "is_premium_only": true,
+      "next_episode_title": "Menu 5 - Lumière et ombre dos à dos",
+      "is_dubbed": false,
+      "id": "GN7UD75V8",
+      "series_id": "G6QW1E876",
+      "season_tags": [
+        "Hiver-2022"
+      ]
+    },
+    {
+      "duration_ms": 1420137,
+      "seo_title": "",
+      "streams_link": "/content/v2/cms/videos/G3WFX3MZM/streams",
+      "available_offline": true,
+      "season_display_number": "2",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "title": "Menu 5 - Lumière et ombre dos à dos",
+      "series_slug_title": "princess-connect-re-dive",
+      "slug_title": "light-and-darkness-as-one-churrasco-of-indecision-and-resolve",
+      "description": "En plein combat, Pecorine a été happée dans son propre royaume par Kaizer, celle qui a usurpé son identité. Yûki se souvient enfin de la raison qui l'a poussé à atterrir dans ce monde.",
+      "episode": "5",
+      "season_id": "G69PC2XQ2",
+      "slug": "",
+      "roles": [
+        "main"
+      ],
+      "sequence_number": 5,
+      "premium_date": null,
+      "next_episode_id": "GMKUX4JGZ",
+      "production_episode_id": "",
+      "recent_variant": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "free_available_date": "2022-02-14T17:00:00Z",
+      "is_premium_only": true,
+      "season_number": 2,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "episode_number": 5,
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2022-02-07T17:00:00Z",
+      "episode_air_date": "2022-02-08T00:00:00+09:00",
+      "available_date": null,
+      "series_title": "Princess Connect! Re: Dive",
+      "media_type": "episode",
+      "id": "GK9U347D7",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_status": "available",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bbf57773dc1908ef8042a81cd5d2437a.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/bbf57773dc1908ef8042a81cd5d2437a.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/bbf57773dc1908ef8042a81cd5d2437a.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/bbf57773dc1908ef8042a81cd5d2437a.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/bbf57773dc1908ef8042a81cd5d2437a.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/bbf57773dc1908ef8042a81cd5d2437a.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/bbf57773dc1908ef8042a81cd5d2437a.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/bbf57773dc1908ef8042a81cd5d2437a.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "closed_captions_available": false,
+      "is_mature": false,
+      "upload_date": "2022-02-08T00:00:00+09:00",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "hd_flag": true,
+      "availability_starts": "2022-02-07T17:00:00Z",
+      "mature_blocked": false,
+      "is_clip": false,
+      "identifier": "G6QW1E876|S2|E5",
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "is_subbed": true,
+      "is_dubbed": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9U347D7",
+          "is_premium_only": true,
+          "media_guid": "G3WFX3MZM",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "listing_id": "",
+      "series_id": "G6QW1E876",
+      "season_sequence_number": 2,
+      "recent_audio_locale": "ja-JP",
+      "audio_locale": "ja-JP",
+      "next_episode_title": "Menu 6 - Nom de code, Monica",
+      "seo_description": "",
+      "eligible_region": "CA",
+      "availability_notes": "",
+      "season_tags": [
+        "Hiver-2022"
+      ]
+    },
+    {
+      "identifier": "G6QW1E876|S2|E6",
+      "is_clip": false,
+      "listing_id": "",
+      "available_date": null,
+      "slug_title": "code-name-monika-bouillabaisse-is-best-enjoyed-hot",
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "GVWU0ZD4P",
+      "seo_description": "",
+      "title": "Menu 6 - Nom de code, Monica",
+      "hd_flag": true,
+      "audio_locale": "ja-JP",
+      "recent_audio_locale": "ja-JP",
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "series_title": "Princess Connect! Re: Dive",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "series_slug_title": "princess-connect-re-dive",
+      "sequence_number": 6,
+      "seo_title": "",
+      "availability_starts": "2022-02-14T17:00:00Z",
+      "availability_status": "available",
+      "season_number": 2,
+      "availability_notes": "",
+      "recent_variant": "",
+      "production_episode_id": "",
+      "free_available_date": "2022-02-21T17:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "upload_date": "2022-02-15T00:00:00+09:00",
+      "episode_number": 6,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GMKUX4JGZ",
+          "is_premium_only": true,
+          "media_guid": "GPPFK5WDQ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "streams_link": "/content/v2/cms/videos/GPPFK5WDQ/streams",
+      "closed_captions_available": false,
+      "series_id": "G6QW1E876",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "next_episode_title": "Menu 7 - La fée farceuse",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "season_id": "G69PC2XQ2",
+      "premium_date": null,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_display_number": "2",
+      "is_subbed": true,
+      "premium_available_date": "2022-02-14T17:00:00Z",
+      "episode_air_date": "2022-02-15T00:00:00+09:00",
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9fed74002af145e645d1c66d6059cbb3.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9fed74002af145e645d1c66d6059cbb3.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9fed74002af145e645d1c66d6059cbb3.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9fed74002af145e645d1c66d6059cbb3.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9fed74002af145e645d1c66d6059cbb3.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9fed74002af145e645d1c66d6059cbb3.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9fed74002af145e645d1c66d6059cbb3.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9fed74002af145e645d1c66d6059cbb3.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "description": "Toute la ville est terrorisée par les rumeurs rapportant un chevalier fantôme qui attaquerait les habitants de Landsol… Les Gourmets se joignent à Monica, une petite espionne en herbe, pour mener l'investigation.",
+      "is_mature": false,
+      "is_premium_only": true,
+      "is_dubbed": false,
+      "eligible_region": "CA",
+      "media_type": "episode",
+      "id": "GMKUX4JGZ",
+      "available_offline": true,
+      "season_sequence_number": 2,
+      "mature_blocked": false,
+      "episode": "6",
+      "channel_id": "crunchyroll",
+      "duration_ms": 1420095
+    },
+    {
+      "available_date": null,
+      "next_episode_title": "Menu 8 - Une lettre vers le bonheur",
+      "slug_title": "the-prankster-pixie-cuore-in-the-mist",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "description": "Chika du groupe Carmina est frappée d'amnésie. Une fois les héros à la rencontre du groupe d'idoles, une autre d'entre elles perd la mémoire. Les aventuriers vont affronter l'entité qui est derrière toutes ces pertes de souvenirs.",
+      "free_available_date": "2022-02-28T17:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "upload_date": "2022-02-22T00:00:00+09:00",
+      "audio_locale": "ja-JP",
+      "listing_id": "",
+      "seo_description": "",
+      "is_clip": false,
+      "id": "GVWU0ZD4P",
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "series_id": "G6QW1E876",
+      "premium_date": null,
+      "streams_link": "/content/v2/cms/videos/G25F03ZD5/streams",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "availability_status": "available",
+      "sequence_number": 7,
+      "premium_available_date": "2022-02-21T17:00:00Z",
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "season_sequence_number": 2,
+      "closed_captions_available": false,
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "channel_id": "crunchyroll",
+      "available_offline": true,
+      "duration_ms": 1420095,
+      "episode": "7",
+      "slug": "",
+      "title": "Menu 7 - La fée farceuse",
+      "is_premium_only": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_dubbed": false,
+      "availability_starts": "2022-02-21T17:00:00Z",
+      "next_episode_id": "G31UX3MZ3",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GVWU0ZD4P",
+          "is_premium_only": true,
+          "media_guid": "G25F03ZD5",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "hd_flag": true,
+      "episode_air_date": "2022-02-22T00:00:00+09:00",
+      "availability_notes": "",
+      "series_slug_title": "princess-connect-re-dive",
+      "episode_number": 7,
+      "seo_title": "",
+      "production_episode_id": "",
+      "season_id": "G69PC2XQ2",
+      "roles": [
+        "main"
+      ],
+      "season_display_number": "2",
+      "series_title": "Princess Connect! Re: Dive",
+      "is_mature": false,
+      "identifier": "G6QW1E876|S2|E7",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ebd48ba328b4727d2ec549f45600bbae.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ebd48ba328b4727d2ec549f45600bbae.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ebd48ba328b4727d2ec549f45600bbae.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ebd48ba328b4727d2ec549f45600bbae.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ebd48ba328b4727d2ec549f45600bbae.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ebd48ba328b4727d2ec549f45600bbae.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ebd48ba328b4727d2ec549f45600bbae.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ebd48ba328b4727d2ec549f45600bbae.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_subbed": true,
+      "eligible_region": "CA",
+      "season_number": 2,
+      "media_type": "episode",
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ]
+    },
+    {
+      "free_available_date": "2022-03-07T17:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/76fd851d8f1fdc2775ca9f5001d72cb7.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/76fd851d8f1fdc2775ca9f5001d72cb7.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/76fd851d8f1fdc2775ca9f5001d72cb7.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/76fd851d8f1fdc2775ca9f5001d72cb7.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/76fd851d8f1fdc2775ca9f5001d72cb7.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/76fd851d8f1fdc2775ca9f5001d72cb7.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/76fd851d8f1fdc2775ca9f5001d72cb7.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/76fd851d8f1fdc2775ca9f5001d72cb7.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_slug_title": "princess-connect-re-dive",
+      "id": "G31UX3MZ3",
+      "closed_captions_available": false,
+      "identifier": "G6QW1E876|S2|E8",
+      "is_clip": false,
+      "description": "Kokkoro est sur le point d'envoyer une lettre importante quand des brigands débarquent pour dévaliser le bureau de poste. Misaki et Suzuna, deux élèves, veulent également retrouver leur courrier dérobé. Pecorine appréhende la réaction de ses amis s'ils apprennent sa véritable identité.",
+      "is_dubbed": false,
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "mature_blocked": false,
+      "slug_title": "a-letter-to-join-feelings-arancini-on-the-green-hill",
+      "recent_variant": "",
+      "slug": "",
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "title": "Menu 8 - Une lettre vers le bonheur",
+      "next_episode_id": "GPWUK5WDE",
+      "listing_id": "",
+      "available_offline": true,
+      "episode_air_date": "2022-03-01T00:00:00+09:00",
+      "streams_link": "/content/v2/cms/videos/G8MFNW90W/streams",
+      "episode": "8",
+      "episode_number": 8,
+      "is_premium_only": true,
+      "is_subbed": true,
+      "duration_ms": 1420095,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "premium_available_date": "2022-02-28T17:00:00Z",
+      "hd_flag": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_date": null,
+      "eligible_region": "CA",
+      "sequence_number": 8,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_notes": "",
+      "series_title": "Princess Connect! Re: Dive",
+      "availability_status": "available",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "channel_id": "crunchyroll",
+      "available_date": null,
+      "season_number": 2,
+      "roles": [
+        "main"
+      ],
+      "series_id": "G6QW1E876",
+      "audio_locale": "ja-JP",
+      "is_mature": false,
+      "season_sequence_number": 2,
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G31UX3MZ3",
+          "is_premium_only": true,
+          "media_guid": "G8MFNW90W",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "availability_starts": "2022-02-28T17:00:00Z",
+      "season_display_number": "2",
+      "production_episode_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "next_episode_title": "Menu 9 - Des cœurs qui se rapprochent, des âmes qui s'éloignent",
+      "season_id": "G69PC2XQ2",
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "upload_date": "2022-03-01T00:00:00+09:00",
+      "media_type": "episode",
+      "seo_title": ""
+    },
+    {
+      "production_episode_id": "",
+      "episode_air_date": "2022-03-08T00:00:00+09:00",
+      "next_episode_title": "Menu 10 - Landsol au coucher de soleil",
+      "seo_description": "",
+      "premium_date": null,
+      "seo_title": "",
+      "next_episode_id": "G2XU03ZD8",
+      "audio_locale": "ja-JP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "recent_variant": "",
+      "id": "GPWUK5WDE",
+      "free_available_date": "2022-03-14T16:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e95912543ac6de18131ccf48f01a74ac.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e95912543ac6de18131ccf48f01a74ac.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e95912543ac6de18131ccf48f01a74ac.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e95912543ac6de18131ccf48f01a74ac.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e95912543ac6de18131ccf48f01a74ac.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e95912543ac6de18131ccf48f01a74ac.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e95912543ac6de18131ccf48f01a74ac.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e95912543ac6de18131ccf48f01a74ac.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": true,
+      "eligible_region": "CA",
+      "title": "Menu 9 - Des cœurs qui se rapprochent, des âmes qui s'éloignent",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_id": "G69PC2XQ2",
+      "availability_notes": "",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "sequence_number": 9,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "episode": "9",
+      "media_type": "episode",
+      "is_mature": false,
+      "available_date": null,
+      "hd_flag": true,
+      "available_offline": true,
+      "listing_id": "",
+      "premium_available_date": "2022-03-07T17:00:00Z",
+      "series_slug_title": "princess-connect-re-dive",
+      "closed_captions_available": false,
+      "roles": [
+        "main"
+      ],
+      "mature_blocked": false,
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "availability_starts": "2022-03-07T17:00:00Z",
+      "season_display_number": "2",
+      "duration_ms": 1420179,
+      "season_number": 2,
+      "slug": "",
+      "series_title": "Princess Connect! Re: Dive",
+      "channel_id": "crunchyroll",
+      "identifier": "G6QW1E876|S2|E9",
+      "description": "Pecorine se décide à avouer sa vraie identité à Kyaru. Pendant ce temps, Lavilis trouve le moyen de mettre Kaizer, impuissante, dos au mur afin de mettre un terme à ses agissements.",
+      "upload_date": "2022-03-08T00:00:00+09:00",
+      "availability_status": "available",
+      "series_id": "G6QW1E876",
+      "streams_link": "/content/v2/cms/videos/GZ4FVXN1J/streams",
+      "is_dubbed": false,
+      "episode_number": 9,
+      "slug_title": "converging-hearts-passing-souls-crepes-the-flavor-of-a-promise",
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "season_sequence_number": 2,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GPWUK5WDE",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVXN1J",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_subbed": true,
+      "is_clip": false,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ]
+    },
+    {
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "available_offline": true,
+      "free_available_date": "2022-03-21T16:00:00Z",
+      "recent_variant": "",
+      "availability_starts": "2022-03-14T16:00:00Z",
+      "next_episode_id": "G8WUNW908",
+      "streams_link": "/content/v2/cms/videos/GDVFVW48P/streams",
+      "season_id": "G69PC2XQ2",
+      "duration_ms": 1420095,
+      "is_clip": false,
+      "upload_date": "2022-03-15T00:00:00+09:00",
+      "is_dubbed": false,
+      "episode_air_date": "2022-03-15T00:00:00+09:00",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G2XU03ZD8",
+          "is_premium_only": true,
+          "media_guid": "GDVFVW48P",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "production_episode_id": "",
+      "premium_available_date": "2022-03-14T16:00:00Z",
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "eligible_region": "CA",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "id": "G2XU03ZD8",
+      "roles": [
+        "main"
+      ],
+      "availability_notes": "",
+      "premium_date": null,
+      "availability_status": "available",
+      "is_subbed": true,
+      "series_slug_title": "princess-connect-re-dive",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/589e395cc45e669b57c3987ed394e17c.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/589e395cc45e669b57c3987ed394e17c.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/589e395cc45e669b57c3987ed394e17c.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/589e395cc45e669b57c3987ed394e17c.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/589e395cc45e669b57c3987ed394e17c.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/589e395cc45e669b57c3987ed394e17c.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/589e395cc45e669b57c3987ed394e17c.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/589e395cc45e669b57c3987ed394e17c.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "listing_id": "",
+      "series_id": "G6QW1E876",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "season_display_number": "2",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "slug": "",
+      "seo_title": "",
+      "slug_title": "landosol-at-sundown",
+      "audio_locale": "ja-JP",
+      "episode": "10",
+      "hd_flag": true,
+      "is_mature": false,
+      "title": "Menu 10 - Landsol au coucher de soleil",
+      "episode_number": 10,
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "description": "Yuni commence à comprendre au travers des archives que l'identité de la princesse Eustiana von Astraea a été usurpée. Kyaru semble perdue à jamais par les Gourmets et sous le contrôle total de Kaizer, mais Pecorine fait tout pour la ramener auprès d'elle.",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_number": 2,
+      "season_sequence_number": 2,
+      "next_episode_title": "Menu 11 - Les Résistants",
+      "identifier": "G6QW1E876|S2|E10",
+      "is_premium_only": true,
+      "seo_description": "",
+      "sequence_number": 10,
+      "media_type": "episode",
+      "series_title": "Princess Connect! Re: Dive",
+      "recent_audio_locale": "ja-JP",
+      "mature_blocked": false,
+      "closed_captions_available": false
+    },
+    {
+      "media_type": "episode",
+      "season_number": 2,
+      "seo_title": "",
+      "seo_description": "",
+      "description": "Pecorine compte mettre définitivement un terme à l'imposture de Kaizer, mais elle doit d'abord affronter Nightmare, la garde royale. Christina et le groupe de Metamorregnant se lancent dans un combat acharné. Kokkoro rencontre enfin son maître, dame Amès.",
+      "title": "Menu 11 - Les Résistants",
+      "sequence_number": 11,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G8WUNW908",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG94Q1",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "next_episode_id": "GZ7UVXN1K",
+      "id": "G8WUNW908",
+      "episode_air_date": "2022-03-22T00:00:00+09:00",
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "availability_notes": "",
+      "available_offline": true,
+      "listing_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_premium_only": true,
+      "availability_starts": "2022-03-21T16:00:00Z",
+      "eligible_region": "CA",
+      "series_title": "Princess Connect! Re: Dive",
+      "is_mature": false,
+      "hd_flag": true,
+      "season_title": "Princess Connect! Re: Dive Saison 2",
+      "recent_audio_locale": "ja-JP",
+      "episode_number": 11,
+      "premium_available_date": "2022-03-21T16:00:00Z",
+      "series_slug_title": "princess-connect-re-dive",
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f53255712e40d84a9914b5d56fb1dfea.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f53255712e40d84a9914b5d56fb1dfea.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f53255712e40d84a9914b5d56fb1dfea.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f53255712e40d84a9914b5d56fb1dfea.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f53255712e40d84a9914b5d56fb1dfea.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f53255712e40d84a9914b5d56fb1dfea.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f53255712e40d84a9914b5d56fb1dfea.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f53255712e40d84a9914b5d56fb1dfea.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "identifier": "G6QW1E876|S2|E11",
+      "roles": [
+        "main"
+      ],
+      "episode": "11",
+      "season_display_number": "2",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_title": "Menu 12 - Reconnexion",
+      "season_sequence_number": 2,
+      "audio_locale": "ja-JP",
+      "available_date": null,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_id": "G69PC2XQ2",
+      "slug_title": "those-who-fight-back",
+      "availability_status": "available",
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_subbed": true,
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "is_clip": false,
+      "closed_captions_available": false,
+      "free_available_date": "2022-03-28T16:00:00Z",
+      "upload_date": "2022-03-22T00:00:00+09:00",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "recent_variant": "",
+      "duration_ms": 1420095,
+      "premium_date": null,
+      "series_id": "G6QW1E876",
+      "is_dubbed": false,
+      "streams_link": "/content/v2/cms/videos/GQ9FG94Q1/streams"
+    },
+    {
+      "series_id": "G6QW1E876",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "identifier": "G6QW1E876|S2|E12",
+      "slug_title": "connecting-the-pieces-with-you-once-more",
+      "id": "GZ7UVXN1K",
+      "streams_link": "/content/v2/cms/videos/G5JFZ4J1P/streams",
+      "season_slug_title": "princess-connect-re-dive-season-2",
+      "is_clip": false,
+      "availability_status": "available",
+      "season_number": 2,
+      "slug": "",
+      "is_mature": false,
+      "is_premium_only": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "closed_captions_available": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_description": "",
+      "series_slug_title": "princess-connect-re-dive",
+      "episode_air_date": "2022-03-29T00:00:00+09:00",
+      "season_sequence_number": 2,
+      "is_dubbed": false,
+      "available_offline": true,
+      "production_episode_id": "",
+      "premium_available_date": "2022-03-28T16:00:00Z",
+      "title": "Menu 12 - Reconnexion",
+      "availability_notes": "",
+      "season_display_number": "2",
+      "audio_locale": "ja-JP",
+      "is_subbed": true,
+      "free_available_date": "2022-04-04T16:00:00Z",
+      "media_type": "episode",
+      "availability_starts": "2022-03-28T16:00:00Z",
+      "upload_date": "2022-03-29T00:00:00+09:00",
+      "premium_date": null,
+      "roles": [
+        "main"
+      ],
+      "sequence_number": 12,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "duration_ms": 1510019,
+      "description": "Kaizer est sur le point de détruire la ville entière, mais la situation se renverse et elle court vers une mort assurée. Pecorine et ses amis, dans un ultime acte de bravoure, se résolvent à voler à son secours.",
+      "hd_flag": true,
+      "mature_blocked": false,
+      "episode": "12",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GZ7UVXN1K",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ4J1P",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G69PC2XQ2",
+          "variant": ""
+        }
+      ],
+      "recent_audio_locale": "ja-JP",
+      "eligible_region": "CA",
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a562ebb4d8e3fbd75627c6f463eb47c5.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a562ebb4d8e3fbd75627c6f463eb47c5.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a562ebb4d8e3fbd75627c6f463eb47c5.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a562ebb4d8e3fbd75627c6f463eb47c5.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a562ebb4d8e3fbd75627c6f463eb47c5.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a562ebb4d8e3fbd75627c6f463eb47c5.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a562ebb4d8e3fbd75627c6f463eb47c5.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a562ebb4d8e3fbd75627c6f463eb47c5.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "channel_id": "crunchyroll",
+      "season_id": "G69PC2XQ2",
+      "recent_variant": "",
+      "series_title": "Princess Connect! Re: Dive",
+      "seo_title": "",
+      "episode_number": 12,
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_title": "Princess Connect! Re: Dive Saison 2"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

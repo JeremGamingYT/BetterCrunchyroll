@@ -1,0 +1,328 @@
+{
+  "data": [
+    {
+      "id": "G6NQCJ5MM",
+      "channel_id": "crunchyroll",
+      "title": "To Your Eternity",
+      "slug_title": "to-your-eternity-french-dub",
+      "series_id": "GG5H5XMWV",
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023",
+        "Printemps-2021",
+        "Été-2021"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6X0C4NZ0",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GY19CP879",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GRJQC14W0",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G6NQCJ5MM",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GR49C7P58",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GRK5CNZVV",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GRWEC3513",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G609CX57M",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ar-SA",
+          "guid": "GRGGCV382",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GG5H5XMWV|S1",
+      "number_of_episodes": 20
+    },
+    {
+      "id": "GRVNC2J93",
+      "channel_id": "crunchyroll",
+      "title": "To Your Eternity Season 2",
+      "slug_title": "to-your-eternity-season-2",
+      "series_id": "GG5H5XMWV",
+      "season_display_number": "",
+      "season_sequence_number": 2,
+      "season_number": 2,
+      "is_complete": false,
+      "description": "Cela fait presque 40 ans que Fushi n'a pas été vu. La douleur de perdre ceux qu'il aimait est devenue trop dure à supporter, alors il a choisi une vie de solitude. Son absence n'a cependant pas empêché ses ennemis mortels, les frappeurs, de semer le chaos. Pour empêcher que le sang ne coule davantage, il sort de son long silence pour les combattre une fois de plus. Il n'a pas besoin d'amis pour...",
+      "keywords": [
+        "winter-2023"
+      ],
+      "season_tags": [
+        "winter-2023"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "de-DE",
+        "es-ES",
+        "es-419",
+        "it-IT",
+        "en-US",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU",
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYK5CNQ00",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G63VC2Q9M",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GYNQCJG4N",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G6K5CNQXW",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GRVNC2J93",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G6MGC3WVD",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GY19CPMP1",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GRJQC1V1W",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GG5H5XMWV|S00198816",
+      "number_of_episodes": 20
+    },
+    {
+      "id": "GR8VCPGN5",
+      "channel_id": "crunchyroll",
+      "title": "Season 3",
+      "slug_title": "season-3",
+      "series_id": "GG5H5XMWV",
+      "season_display_number": "3",
+      "season_sequence_number": 3,
+      "season_number": 3,
+      "is_complete": false,
+      "description": "Après la bataille de Renlil et l'élimination des frappeurs, Imm se réveille dans l'ère moderne. Il jouit d'une vie paisible entouré de précieux amis, anciens et nouveaux. Mais une inquiétante menace se profile de nouveau et Imm comprend alors les véritables objectifs de son créateur, l’observateur. Il devra bientôt prendre la plus difficile des décisions…",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "it-IT",
+        "pt-BR",
+        "de-DE",
+        "ar-SA",
+        "es-ES",
+        "ru-RU",
+        "fr-FR",
+        "es-419"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6VNC2W0X",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GY3VC2WX2",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GYP8CXZKK",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G62PCV40N",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GR8VCPGN5",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G6ZXCM2V5",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G6DQCGQV1",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GYQ4CZVG4",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GG5H5XMWV|S00363224",
+      "number_of_episodes": 9
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 3
+}

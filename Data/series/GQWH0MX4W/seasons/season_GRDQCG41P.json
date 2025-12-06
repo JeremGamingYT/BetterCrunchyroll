@@ -1,0 +1,1878 @@
+{
+  "total": 12,
+  "data": [
+    {
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "season_sequence_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GZ7UV7VE1",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ2ZV1",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GWDU8W0Q4",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ20N1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "season_display_number": "",
+      "audio_locale": "ja-JP",
+      "is_mature": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_dubbed": true,
+      "season_tags": [],
+      "next_episode_title": "Indecisive Prince?!",
+      "eligible_region": "CA",
+      "next_episode_id": "GD9UVNV3Q",
+      "slug_title": "cinderella-dropped-her-panties",
+      "seo_title": "",
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "series_id": "GQWH0MX4W",
+      "is_clip": false,
+      "available_offline": true,
+      "availability_notes": "",
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "channel_id": "crunchyroll",
+      "season_number": 1,
+      "seo_description": "",
+      "mature_blocked": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a7be90d4402e9450e2d5fb2870100dc4.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a7be90d4402e9450e2d5fb2870100dc4.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a7be90d4402e9450e2d5fb2870100dc4.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a7be90d4402e9450e2d5fb2870100dc4.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a7be90d4402e9450e2d5fb2870100dc4.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a7be90d4402e9450e2d5fb2870100dc4.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a7be90d4402e9450e2d5fb2870100dc4.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a7be90d4402e9450e2d5fb2870100dc4.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "duration_ms": 1425203,
+      "is_premium_only": true,
+      "episode": "1",
+      "closed_captions_available": false,
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "is_subbed": true,
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "media_type": "episode",
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "listing_id": "",
+      "recent_audio_locale": "ja-JP",
+      "episode_number": 1,
+      "description": "Keiki Kiryu is a kind-hearted high school student surrounded by attractive girls. One day, he finds a love letter with no sender information, other than a pair of panties. Keiki begins his investigation by speaking to his senpai, Sayuki.",
+      "identifier": "GQWH0MX4W|S1|E1",
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "premium_date": null,
+      "season_id": "GRDQCG41P",
+      "upload_date": "2020-12-22T09:00:00Z",
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "title": "Cinderella Dropped Her Panties?!",
+      "roles": [
+        "main"
+      ],
+      "sequence_number": 1,
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "hd_flag": true,
+      "slug": "",
+      "streams_link": "/content/v2/cms/videos/G5JFZ2ZV1/streams",
+      "id": "GZ7UV7VE1",
+      "recent_variant": "",
+      "availability_status": "available",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_date": null,
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ]
+    },
+    {
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "description": "Keiki's investigation reveals that the senpai he looks up to is a huge pervert, but it doesn't stop him from pushing forward. There are other suspects to interrogate! He approaches his kohai Yuika, a cute and supportive student librarian.",
+      "next_episode_title": "Cinderella is Shy?!",
+      "available_offline": true,
+      "upload_date": "2020-12-22T09:00:00Z",
+      "is_dubbed": true,
+      "availability_status": "available",
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "season_number": 1,
+      "channel_id": "crunchyroll",
+      "streams_link": "/content/v2/cms/videos/GWMF898JE/streams",
+      "season_tags": [],
+      "mature_blocked": false,
+      "series_id": "GQWH0MX4W",
+      "duration_ms": 1425245,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "roles": [
+        "main"
+      ],
+      "available_date": null,
+      "availability_notes": "",
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7cb73cc05bfb5e00714de9cfa9ac5a8d.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7cb73cc05bfb5e00714de9cfa9ac5a8d.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7cb73cc05bfb5e00714de9cfa9ac5a8d.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7cb73cc05bfb5e00714de9cfa9ac5a8d.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7cb73cc05bfb5e00714de9cfa9ac5a8d.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7cb73cc05bfb5e00714de9cfa9ac5a8d.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7cb73cc05bfb5e00714de9cfa9ac5a8d.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7cb73cc05bfb5e00714de9cfa9ac5a8d.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "listing_id": "",
+      "media_type": "episode",
+      "is_subbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GD9UVNV3Q",
+          "is_premium_only": true,
+          "media_guid": "GWMF898JE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1U2Q1Z7",
+          "is_premium_only": true,
+          "media_guid": "G71F4Z8JK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "recent_audio_locale": "ja-JP",
+      "is_mature": false,
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "episode_number": 2,
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "title": "Indecisive Prince?!",
+      "identifier": "GQWH0MX4W|S1|E2",
+      "season_display_number": "",
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_id": "GRDQCG41P",
+      "is_clip": false,
+      "seo_title": "",
+      "slug_title": "indecisive-prince",
+      "season_sequence_number": 1,
+      "eligible_region": "CA",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "premium_date": null,
+      "recent_variant": "",
+      "next_episode_id": "GWDU8982V",
+      "slug": "",
+      "audio_locale": "ja-JP",
+      "hd_flag": true,
+      "id": "GD9UVNV3Q",
+      "episode": "2",
+      "is_premium_only": true,
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "seo_description": "",
+      "closed_captions_available": false,
+      "sequence_number": 2
+    },
+    {
+      "hd_flag": true,
+      "is_clip": false,
+      "is_dubbed": true,
+      "season_id": "GRDQCG41P",
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "available_date": null,
+      "slug_title": "cinderella-is-shy",
+      "next_episode_id": "G0DUN3N2X",
+      "channel_id": "crunchyroll",
+      "media_type": "episode",
+      "episode": "3",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "upload_date": "2020-12-22T09:00:00Z",
+      "is_mature": false,
+      "season_sequence_number": 1,
+      "id": "GWDU8982V",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_display_number": "",
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "slug": "",
+      "closed_captions_available": false,
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "recent_variant": "",
+      "next_episode_title": "Cinderella Can’t Come Out?!",
+      "series_id": "GQWH0MX4W",
+      "availability_notes": "",
+      "description": "In addition to shaking his world-view, Keiki's encounters with the abnormal have led him to conclude that neither Sayuki nor Yuika are the elusive Cinderella. Through process of elimination, the only one remaining is Mao.",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "recent_audio_locale": "ja-JP",
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "identifier": "GQWH0MX4W|S1|E3",
+      "seo_description": "",
+      "production_episode_id": "",
+      "title": "Cinderella is Shy?!",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dce63d2ed590044d76a632f1bee97c6d.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/dce63d2ed590044d76a632f1bee97c6d.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/dce63d2ed590044d76a632f1bee97c6d.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/dce63d2ed590044d76a632f1bee97c6d.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/dce63d2ed590044d76a632f1bee97c6d.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/dce63d2ed590044d76a632f1bee97c6d.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/dce63d2ed590044d76a632f1bee97c6d.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/dce63d2ed590044d76a632f1bee97c6d.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": true,
+      "audio_locale": "ja-JP",
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "is_subbed": true,
+      "duration_ms": 1410141,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GWDU8982V",
+          "is_premium_only": true,
+          "media_guid": "GEMFZPZ7J",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G0DUN1ZJ3",
+          "is_premium_only": true,
+          "media_guid": "G9XFEQ4GX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "available_offline": true,
+      "season_tags": [],
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "listing_id": "",
+      "availability_status": "available",
+      "episode_number": 3,
+      "mature_blocked": false,
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "sequence_number": 3,
+      "premium_date": null,
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "season_number": 1,
+      "seo_title": "",
+      "streams_link": "/content/v2/cms/videos/GEMFZPZ7J/streams"
+    },
+    {
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "closed_captions_available": false,
+      "upload_date": "2020-12-22T09:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/G9XFEXE02/streams",
+      "series_id": "GQWH0MX4W",
+      "channel_id": "crunchyroll",
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/aac76d542b6fabce8c2cda801781f09c.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/aac76d542b6fabce8c2cda801781f09c.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/aac76d542b6fabce8c2cda801781f09c.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/aac76d542b6fabce8c2cda801781f09c.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/aac76d542b6fabce8c2cda801781f09c.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/aac76d542b6fabce8c2cda801781f09c.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/aac76d542b6fabce8c2cda801781f09c.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/aac76d542b6fabce8c2cda801781f09c.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug_title": "cinderella-cant-come-out",
+      "seo_description": "",
+      "identifier": "GQWH0MX4W|S1|E4",
+      "season_display_number": "",
+      "season_tags": [],
+      "audio_locale": "ja-JP",
+      "is_subbed": true,
+      "is_dubbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUN3N2X",
+          "is_premium_only": true,
+          "media_guid": "G9XFEXE02",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU4Z8JV",
+          "is_premium_only": true,
+          "media_guid": "G4GFQJD8X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "next_episode_id": "G7PU45473",
+      "sequence_number": 4,
+      "available_date": null,
+      "next_episode_title": "Operation: Koharu is a first-year student",
+      "is_mature": false,
+      "season_sequence_number": 1,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "premium_date": null,
+      "is_clip": false,
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "is_premium_only": true,
+      "listing_id": "",
+      "id": "G0DUN3N2X",
+      "available_offline": true,
+      "seo_title": "",
+      "title": "Cinderella Can’t Come Out?!",
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "availability_status": "available",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "description": "Keiki continues to receive mixed messages from Mao. Could she be the elusive Cinderella, or is she in love with someone else? Keiki decides that he must confront Mao directly to find out.",
+      "episode_number": 4,
+      "roles": [
+        "main"
+      ],
+      "availability_notes": "",
+      "season_number": 1,
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "hd_flag": true,
+      "eligible_region": "CA",
+      "mature_blocked": false,
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "production_episode_id": "",
+      "duration_ms": 1425117,
+      "season_id": "GRDQCG41P",
+      "slug": "",
+      "media_type": "episode",
+      "episode": "4"
+    },
+    {
+      "episode": "5",
+      "slug_title": "operation-koharu-is-a-first-year-student",
+      "season_number": 1,
+      "season_id": "GRDQCG41P",
+      "next_episode_id": "GX9UQDQE8",
+      "audio_locale": "ja-JP",
+      "series_id": "GQWH0MX4W",
+      "season_tags": [],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "seo_description": "",
+      "slug": "",
+      "available_offline": true,
+      "listing_id": "",
+      "closed_captions_available": false,
+      "roles": [
+        "main"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU45473",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ3Q5W",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9UQG2ZP",
+          "is_premium_only": true,
+          "media_guid": "GJKF2GKE5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "identifier": "GQWH0MX4W|S1|E5",
+      "availability_notes": "",
+      "production_episode_id": "",
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/77b47f662e50bcdea867f4ebec24e4a2.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/77b47f662e50bcdea867f4ebec24e4a2.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/77b47f662e50bcdea867f4ebec24e4a2.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/77b47f662e50bcdea867f4ebec24e4a2.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/77b47f662e50bcdea867f4ebec24e4a2.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/77b47f662e50bcdea867f4ebec24e4a2.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/77b47f662e50bcdea867f4ebec24e4a2.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/77b47f662e50bcdea867f4ebec24e4a2.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "premium_date": null,
+      "next_episode_title": "Cinderella came falling down?!",
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "upload_date": "2020-12-22T09:00:00Z",
+      "duration_ms": 1425117,
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "available_date": null,
+      "is_mature": false,
+      "seo_title": "",
+      "is_dubbed": true,
+      "is_clip": false,
+      "media_type": "episode",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "is_subbed": true,
+      "episode_number": 5,
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "sequence_number": 5,
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "description": "Keiki's search for someone who truly loves him, not as the object of a perverted fantasy, hits another dead end. However, another unsigned letter grabs his attention, although this time, it's blackmail.",
+      "is_premium_only": true,
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/G4GFQ3Q5W/streams",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "eligible_region": "CA",
+      "season_sequence_number": 1,
+      "availability_status": "available",
+      "season_display_number": "",
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "title": "Operation: Koharu is a first-year student",
+      "mature_blocked": false,
+      "hd_flag": true,
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "id": "G7PU45473",
+      "recent_variant": ""
+    },
+    {
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [],
+      "next_episode_title": "Operation: Koharu is a first-year student - Conclusion",
+      "season_id": "GRDQCG41P",
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_subbed": true,
+      "audio_locale": "ja-JP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_dubbed": true,
+      "season_number": 1,
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "hd_flag": true,
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "upload_date": "2020-12-22T09:00:00Z",
+      "season_display_number": "",
+      "sequence_number": 6,
+      "availability_notes": "",
+      "slug": "",
+      "channel_id": "crunchyroll",
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "series_id": "GQWH0MX4W",
+      "seo_description": "",
+      "media_type": "episode",
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e9aed99515925da1ac551e16cc9eacde.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e9aed99515925da1ac551e16cc9eacde.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e9aed99515925da1ac551e16cc9eacde.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e9aed99515925da1ac551e16cc9eacde.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e9aed99515925da1ac551e16cc9eacde.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e9aed99515925da1ac551e16cc9eacde.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e9aed99515925da1ac551e16cc9eacde.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e9aed99515925da1ac551e16cc9eacde.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "title": "Cinderella came falling down?!",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GX9UQDQE8",
+          "is_premium_only": true,
+          "media_guid": "GJKF2M2WD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUQJD8J",
+          "is_premium_only": true,
+          "media_guid": "GNJFD90V9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "is_mature": false,
+      "roles": [
+        "main"
+      ],
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "next_episode_id": "G14U43478",
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "id": "GX9UQDQE8",
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "episode": "6",
+      "season_sequence_number": 1,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "mature_blocked": false,
+      "episode_number": 6,
+      "premium_date": null,
+      "listing_id": "",
+      "streams_link": "/content/v2/cms/videos/GJKF2M2WD/streams",
+      "duration_ms": 1425245,
+      "identifier": "GQWH0MX4W|S1|E6",
+      "available_offline": true,
+      "description": "Keiki works with Koharu to help her win Shoma's heart, but Keiki's attention is diverted by another Cinderella suspect - student council vice-chairperson Ayano Fujimoto. Could she be the one, true, non-perverted secret crush?",
+      "slug_title": "cinderella-came-falling-down",
+      "production_episode_id": "",
+      "is_premium_only": true,
+      "seo_title": "",
+      "closed_captions_available": false,
+      "eligible_region": "CA",
+      "is_clip": false,
+      "recent_variant": "",
+      "availability_status": "available"
+    },
+    {
+      "streams_link": "/content/v2/cms/videos/GKKF3Z3E7/streams",
+      "production_episode_id": "",
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "availability_status": "available",
+      "slug_title": "operation-koharu-is-a-first-year-student---conclusion",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "sequence_number": 7,
+      "episode": "7",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug": "",
+      "episode_number": 7,
+      "season_sequence_number": 1,
+      "premium_date": null,
+      "is_subbed": true,
+      "mature_blocked": false,
+      "season_tags": [],
+      "seo_description": "",
+      "recent_variant": "",
+      "id": "G14U43478",
+      "season_display_number": "",
+      "series_id": "GQWH0MX4W",
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "media_type": "episode",
+      "is_dubbed": true,
+      "roles": [
+        "main"
+      ],
+      "hd_flag": true,
+      "is_mature": false,
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "duration_ms": 1425160,
+      "description": "Another Cinderella candidate turned out to be a pervert. Keiki must now turn his attention away from his own concerns and help Koharu. She must find the courage to tell Shoma her true intentions - and her true age.",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14U43478",
+          "is_premium_only": true,
+          "media_guid": "GKKF3Z3E7",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UD90V4",
+          "is_premium_only": true,
+          "media_guid": "GVMF05149",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "ja-JP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "identifier": "GQWH0MX4W|S1|E7",
+      "upload_date": "2020-12-22T09:00:00Z",
+      "eligible_region": "CA",
+      "title": "Operation: Koharu is a first-year student - Conclusion",
+      "seo_title": "",
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "season_id": "GRDQCG41P",
+      "is_clip": false,
+      "closed_captions_available": false,
+      "availability_notes": "",
+      "available_date": null,
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "next_episode_title": "The Prince lost his panties?!",
+      "next_episode_id": "GN7UDZDMW",
+      "season_number": 1,
+      "listing_id": "",
+      "is_premium_only": true,
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "recent_audio_locale": "ja-JP",
+      "available_offline": true,
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/15807e012c234b1654eafe53e44ea136.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/15807e012c234b1654eafe53e44ea136.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/15807e012c234b1654eafe53e44ea136.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/15807e012c234b1654eafe53e44ea136.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/15807e012c234b1654eafe53e44ea136.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/15807e012c234b1654eafe53e44ea136.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/15807e012c234b1654eafe53e44ea136.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/15807e012c234b1654eafe53e44ea136.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "is_dubbed": true,
+      "description": "With the situation between Koharu and Shoma settled, Keiki resumes his own mission to seek out the elusive Cinderella. Before he can do anything, however, Sayuki and Yuika drop by for a surprise visit.",
+      "production_episode_id": "",
+      "seo_title": "",
+      "episode_number": 8,
+      "eligible_region": "CA",
+      "media_type": "episode",
+      "season_display_number": "",
+      "roles": [
+        "main"
+      ],
+      "availability_notes": "",
+      "series_id": "GQWH0MX4W",
+      "season_number": 1,
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "channel_id": "crunchyroll",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a3f4fa150e88a1da6298236e214215eb.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a3f4fa150e88a1da6298236e214215eb.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a3f4fa150e88a1da6298236e214215eb.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a3f4fa150e88a1da6298236e214215eb.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a3f4fa150e88a1da6298236e214215eb.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a3f4fa150e88a1da6298236e214215eb.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a3f4fa150e88a1da6298236e214215eb.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a3f4fa150e88a1da6298236e214215eb.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "seo_description": "",
+      "next_episode_id": "G50UZ2Z0W",
+      "is_subbed": true,
+      "streams_link": "/content/v2/cms/videos/GVMF0V0MP/streams",
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "mature_blocked": false,
+      "upload_date": "2020-12-22T09:00:00Z",
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "id": "GN7UDZDMW",
+      "hd_flag": true,
+      "slug_title": "the-prince-lost-his-panties",
+      "slug": "",
+      "audio_locale": "ja-JP",
+      "listing_id": "",
+      "sequence_number": 8,
+      "availability_status": "available",
+      "closed_captions_available": false,
+      "available_date": null,
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "available_offline": true,
+      "episode": "8",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "title": "The Prince lost his panties?!",
+      "season_sequence_number": 1,
+      "season_tags": [],
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "is_clip": false,
+      "next_episode_title": "Operation: Keiki is master now!!",
+      "duration_ms": 1425288,
+      "identifier": "GQWH0MX4W|S1|E8",
+      "season_id": "GRDQCG41P",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UDZDMW",
+          "is_premium_only": true,
+          "media_guid": "GVMF0V0MP",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9U30WDD",
+          "is_premium_only": true,
+          "media_guid": "G3WFXD8ZZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "is_premium_only": true,
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "is_mature": false,
+      "premium_date": null
+    },
+    {
+      "slug": "",
+      "series_id": "GQWH0MX4W",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "available_offline": true,
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "production_episode_id": "",
+      "next_episode_title": "The Prince became a Slave?!",
+      "seo_title": "",
+      "title": "Operation: Keiki is master now!!",
+      "slug_title": "operation-keiki-is-master-now",
+      "audio_locale": "ja-JP",
+      "is_subbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/60883e10ab8f7169951f8a4cdebd7952.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/60883e10ab8f7169951f8a4cdebd7952.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/60883e10ab8f7169951f8a4cdebd7952.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/60883e10ab8f7169951f8a4cdebd7952.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/60883e10ab8f7169951f8a4cdebd7952.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/60883e10ab8f7169951f8a4cdebd7952.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/60883e10ab8f7169951f8a4cdebd7952.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/60883e10ab8f7169951f8a4cdebd7952.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_tags": [],
+      "eligible_region": "CA",
+      "duration_ms": 1425160,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "sequence_number": 9,
+      "season_display_number": "",
+      "hd_flag": true,
+      "seo_description": "",
+      "listing_id": "",
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "media_type": "episode",
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "availability_notes": "",
+      "recent_audio_locale": "ja-JP",
+      "season_id": "GRDQCG41P",
+      "premium_date": null,
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "is_clip": false,
+      "recent_variant": "",
+      "availability_status": "available",
+      "description": "The Cinderella panties have gone missing, prompting Keiki to step up his investigation. As a first step, he decides to spend a day with Sayuki - on a date, not as her friend or kohai, but as her master.",
+      "streams_link": "/content/v2/cms/videos/G07FN3N24/streams",
+      "episode_number": 9,
+      "is_premium_only": true,
+      "is_dubbed": true,
+      "upload_date": "2020-12-22T09:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "is_mature": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G50UZ2Z0W",
+          "is_premium_only": true,
+          "media_guid": "G07FN3N24",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU05147",
+          "is_premium_only": true,
+          "media_guid": "G25F0W9DG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "next_episode_id": "GG1U2M2JQ",
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "identifier": "GQWH0MX4W|S1|E9",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_sequence_number": 1,
+      "mature_blocked": false,
+      "id": "G50UZ2Z0W",
+      "season_number": 1,
+      "closed_captions_available": false,
+      "roles": [
+        "main"
+      ],
+      "episode": "9",
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ]
+    },
+    {
+      "slug": "",
+      "eligible_region": "CA",
+      "episode_number": 10,
+      "slug_title": "the-prince-became-a-slave",
+      "season_id": "GRDQCG41P",
+      "id": "GG1U2M2JQ",
+      "streams_link": "/content/v2/cms/videos/G71F4547Z/streams",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_clip": false,
+      "available_date": null,
+      "mature_blocked": false,
+      "media_type": "episode",
+      "availability_status": "available",
+      "available_offline": true,
+      "is_mature": false,
+      "episode": "10",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1U2M2JQ",
+          "is_premium_only": true,
+          "media_guid": "G71F4547Z",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G2XU0W941",
+          "is_premium_only": true,
+          "media_guid": "GDVFVJ7QZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "series_id": "GQWH0MX4W",
+      "roles": [
+        "main"
+      ],
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "title": "The Prince became a Slave?!",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "listing_id": "",
+      "is_subbed": true,
+      "is_dubbed": true,
+      "season_sequence_number": 1,
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "season_tags": [],
+      "audio_locale": "ja-JP",
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "identifier": "GQWH0MX4W|S1|E10",
+      "duration_ms": 1425032,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/0fbec16f5366db4bf28cd916f757d62a.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/0fbec16f5366db4bf28cd916f757d62a.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/0fbec16f5366db4bf28cd916f757d62a.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/0fbec16f5366db4bf28cd916f757d62a.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0fbec16f5366db4bf28cd916f757d62a.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/0fbec16f5366db4bf28cd916f757d62a.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/0fbec16f5366db4bf28cd916f757d62a.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/0fbec16f5366db4bf28cd916f757d62a.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_display_number": "",
+      "closed_captions_available": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "recent_variant": "",
+      "premium_date": null,
+      "is_premium_only": true,
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "season_number": 1,
+      "sequence_number": 10,
+      "recent_audio_locale": "ja-JP",
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "upload_date": "2020-12-22T09:00:00Z",
+      "availability_notes": "",
+      "seo_description": "",
+      "next_episode_id": "GEVUZPZ79",
+      "seo_title": "",
+      "description": "Keiki's attempt to seach for evidence in Yuika's underwear drawer backfires terribly, but he is still able to investigate her. Can he finally confirm Cinderella's identity?",
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "production_episode_id": "",
+      "next_episode_title": "Cinderella took off her swimwear?!",
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?"
+    },
+    {
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "upload_date": "2020-12-22T09:00:00Z",
+      "listing_id": "",
+      "seo_title": "",
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 1,
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "closed_captions_available": false,
+      "is_subbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f1664a46bf9b69dbb794270ca77d41e4.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f1664a46bf9b69dbb794270ca77d41e4.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f1664a46bf9b69dbb794270ca77d41e4.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f1664a46bf9b69dbb794270ca77d41e4.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f1664a46bf9b69dbb794270ca77d41e4.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f1664a46bf9b69dbb794270ca77d41e4.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f1664a46bf9b69dbb794270ca77d41e4.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f1664a46bf9b69dbb794270ca77d41e4.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "media_type": "episode",
+      "hd_flag": true,
+      "available_offline": true,
+      "season_id": "GRDQCG41P",
+      "recent_variant": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "description": "A single photo and a simple change in perspective allows Keiki to deduce who Cinderella is. He begins an elaborate plan to prove it, and catch Cinderella with her panties on.",
+      "mature_blocked": false,
+      "available_date": null,
+      "audio_locale": "ja-JP",
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "is_mature": false,
+      "identifier": "GQWH0MX4W|S1|E11",
+      "eligible_region": "CA",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode": "11",
+      "availability_notes": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUZPZ79",
+          "is_premium_only": true,
+          "media_guid": "GXMFQDQE5",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G8WUN85GP",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG1WVZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ],
+      "availability_status": "available",
+      "duration_ms": 1425160,
+      "season_tags": [],
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GXMFQDQE5/streams",
+      "slug": "",
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "season_number": 1,
+      "title": "Cinderella took off her swimwear?!",
+      "seo_description": "",
+      "series_id": "GQWH0MX4W",
+      "id": "GEVUZPZ79",
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "slug_title": "cinderella-took-off-her-swimwear",
+      "is_clip": false,
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "next_episode_title": "Are you willing to fall in love with a pervert, as long as she's a cutie?",
+      "season_display_number": "",
+      "is_premium_only": true,
+      "is_dubbed": true,
+      "roles": [
+        "main"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_number": 11,
+      "sequence_number": 11,
+      "next_episode_id": "G9DUEXE0G"
+    },
+    {
+      "is_mature": false,
+      "season_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "duration_ms": 1425075,
+      "availability_starts": "2020-12-22T17:00:00Z",
+      "availability_status": "available",
+      "episode_air_date": "2020-12-22T09:00:00Z",
+      "season_sequence_number": 1,
+      "season_tags": [],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR",
+        "de-DE"
+      ],
+      "hd_flag": true,
+      "recent_variant": "",
+      "slug_title": "are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "sequence_number": 12,
+      "season_number": 1,
+      "closed_captions_available": false,
+      "audio_locale": "ja-JP",
+      "is_dubbed": true,
+      "listing_id": "",
+      "series_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "season_display_number": "",
+      "id": "G9DUEXE0G",
+      "is_subbed": true,
+      "season_id": "GRDQCG41P",
+      "episode_number": 12,
+      "premium_date": null,
+      "series_title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "upload_date": "2020-12-22T09:00:00Z",
+      "streams_link": "/content/v2/cms/videos/G1QF4347G/streams",
+      "roles": [
+        "main"
+      ],
+      "premium_available_date": "2020-12-22T17:00:00Z",
+      "identifier": "GQWH0MX4W|S1|E12",
+      "mature_blocked": false,
+      "recent_audio_locale": "ja-JP",
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/67107fe5d7ad6745f6f43ea9068c992e.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/67107fe5d7ad6745f6f43ea9068c992e.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/67107fe5d7ad6745f6f43ea9068c992e.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/67107fe5d7ad6745f6f43ea9068c992e.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/67107fe5d7ad6745f6f43ea9068c992e.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/67107fe5d7ad6745f6f43ea9068c992e.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/67107fe5d7ad6745f6f43ea9068c992e.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/67107fe5d7ad6745f6f43ea9068c992e.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "description": "Until now, Keiki's concern has been about whether or not he can fall in love with a person with certain quirks. But now he must choose whether or not he is willing to jeopardize an existing relationship.",
+      "title": "Are you willing to fall in love with a pervert, as long as she's a cutie?",
+      "is_premium_only": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "episode": "12",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "free_available_date": "2022-12-29T08:00:00Z",
+      "season_slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "seo_description": "",
+      "series_id": "GQWH0MX4W",
+      "is_clip": false,
+      "available_offline": true,
+      "production_episode_id": "",
+      "available_date": null,
+      "media_type": "episode",
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DUEXE0G",
+          "is_premium_only": true,
+          "media_guid": "G1QF4347G",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRDQCG41P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUG1WVW",
+          "is_premium_only": true,
+          "media_guid": "GGVF2Q141",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQGK1",
+          "variant": ""
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

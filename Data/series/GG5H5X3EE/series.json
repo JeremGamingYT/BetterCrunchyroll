@@ -1,0 +1,189 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GG5H5X3EE",
+      "channel_id": "crunchyroll",
+      "title": "Hero Skill - Achats en ligne",
+      "slug": "",
+      "slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "description": "Tsuyoshi Mukoda, un salarié ordinaire, est un jour soudainement transporté dans un autre monde. À son arrivée, la compétence unique (et apparemment inutile) qu'il acquiert est le \"supermarché en ligne\". Découragé au début, le jeune homme finit par comprendre que les aliments modernes qu'il est capable d'apporter dans ce monde, grâce à cette compétence, s'avèrent avoir des effets incroyables !",
+      "extended_description": "",
+      "keywords": [
+        "winter-2023",
+        "shounen"
+      ],
+      "season_tags": [
+        "winter-2023"
+      ],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/9b0198c19091362ac27476fe2b3120ea.png"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/9b0198c19091362ac27476fe2b3120ea.png"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/9b0198c19091362ac27476fe2b3120ea.png"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/9b0198c19091362ac27476fe2b3120ea.png"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/9b0198c19091362ac27476fe2b3120ea.png"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/9b0198c19091362ac27476fe2b3120ea.png"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/9b0198c19091362ac27476fe2b3120ea.png"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/9b0198c19091362ac27476fe2b3120ea.png"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/9b0198c19091362ac27476fe2b3120ea.png"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f2c01221a8eb60ea49e503ff2662ae93.png"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f2c01221a8eb60ea49e503ff2662ae93.png"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f2c01221a8eb60ea49e503ff2662ae93.png"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f2c01221a8eb60ea49e503ff2662ae93.png"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f2c01221a8eb60ea49e503ff2662ae93.png"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f2c01221a8eb60ea49e503ff2662ae93.png"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f2c01221a8eb60ea49e503ff2662ae93.png"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f2c01221a8eb60ea49e503ff2662ae93.png"
+            }
+          ]
+        ]
+      },
+      "episode_count": 21,
+      "season_count": 2,
+      "media_count": 21,
+      "content_provider": "MAPPA",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "zh-CN",
+        "es-ES",
+        "it-IT",
+        "ar-SA",
+        "pt-BR",
+        "th-TH",
+        "id-ID",
+        "ms-MY",
+        "es-419",
+        "ru-RU",
+        "vi-VN",
+        "de-DE",
+        "en-US",
+        "fr-FR",
+        "zh-HK"
+      ],
+      "audio_locales": [
+        "id-ID",
+        "de-DE",
+        "te-IN",
+        "en-US",
+        "es-419",
+        "hi-IN",
+        "ta-IN",
+        "th-TH",
+        "pt-BR",
+        "ja-JP"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2023,
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

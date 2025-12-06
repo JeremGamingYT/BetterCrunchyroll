@@ -1,0 +1,227 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GRDV0019R",
+      "channel_id": "crunchyroll",
+      "title": "JUJUTSU KAISEN",
+      "slug": "",
+      "slug_title": "jujutsu-kaisen",
+      "description": "JUJUTSU KAISEN est une série de manga créée par Gege Akutami et publiée dans le Weekly Shonen Jump. L’œuvre a rapidement été adaptée en anime, avec une animation produite par le Studio MAPPA. La série comporte actuellement deux saisons, la première en 24 épisodes et la seconde, diffusée depuis juillet 2023. Un film préquel, JUJUTSU KAISEN 0, est également sorti en 2022 et a rencontré un grand succès. La série est disponible en version doublée et sous-titrée.\r\n\r\nPlongez dans une série sombre, palpitante et surnaturelle… Suivez le jeune Yuji Itadori dans son initiation aux dangereux arts de l’exorcisme et au monde des fléaux !\r\n\r\nPour sauver son camarade de classe, Yuji Itadori a mangé… un doigt de démon maudit. Il partage désormais son corps avec Ryomen Sukuna, un démon maléfique connu sous le nom de Roi des Fléaux.\r\n\r\nLes fléaux sont des forces surnaturelles créées à partir des émotions négatives des humains. Cette énergie occulte est la source de la puissance des exorcistes, aussi bien que des fléaux. \r\n\r\nYuji rejoint alors l’école d’exorcisme de Tokyo, qui lutte contre les fléaux. Guidé par son professeur, Satoru Gojo, il se lie d’amitié avec Megumi Fushiguro et Nobara Kugisaki, tous deux élèves de première année.\r\n\r\nLa saison 2 remonte le temps dans l’univers de JUJUTSU KAISEN... Nous suivons Satoru Gojo et Suguru Geto, alors étudiants, dans leur mission pour protéger le Plasma Stellaire.",
+      "extended_description": "",
+      "keywords": [
+        "action",
+        "supernatural",
+        "shonen",
+        "vf",
+        "deutsche synchro"
+      ],
+      "season_tags": [
+        "Automne-2020",
+        "Hiver-2021"
+      ],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpg"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpg"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpg"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpg"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpg"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpg"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpg"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpg"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpg"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpg"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpg"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpg"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpg"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpg"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpg"
+            }
+          ]
+        ]
+      },
+      "episode_count": 48,
+      "season_count": 3,
+      "media_count": 48,
+      "content_provider": "Toho",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "de-DE",
+        "ru-RU",
+        "es-419",
+        "fr-FR",
+        "it-IT",
+        "pt-PT",
+        "es-ES",
+        "ar-SA",
+        "en-US",
+        "pt-BR"
+      ],
+      "audio_locales": [
+        "ru-RU",
+        "ja-JP",
+        "it-IT",
+        "fr-FR",
+        "es-419",
+        "en-US",
+        "pt-BR",
+        "de-DE",
+        "es-ES"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2021,
+      "awards": [
+        {
+          "text": "Nommé aux Anime Awards 2024",
+          "icon_url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/width=48,height=48/awards/anime_award_icon.png",
+          "is_current_award": false,
+          "is_winner": false
+        },
+        {
+          "text": "Vainqueur des Anime Awards 2023",
+          "icon_url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/width=48,height=48/awards/anime_award_icon.png",
+          "is_current_award": false,
+          "is_winner": true
+        },
+        {
+          "text": "Nommé aux Anime Awards 2023",
+          "icon_url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/width=48,height=48/awards/anime_award_icon.png",
+          "is_current_award": false,
+          "is_winner": false
+        },
+        {
+          "text": "Vainqueur des Anime Awards 2022",
+          "icon_url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/width=48,height=48/awards/anime_award_icon.png",
+          "is_current_award": false,
+          "is_winner": true
+        },
+        {
+          "text": "Vainqueur des Anime Awards 2021",
+          "icon_url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/width=48,height=48/awards/anime_award_icon.png",
+          "is_current_award": false,
+          "is_winner": true
+        },
+        {
+          "text": "Vainqueur des Anime Awards 2024",
+          "icon_url": "https://imgsrv.crunchyroll.com/cdn-cgi/image/width=48,height=48/awards/anime_award_icon.png",
+          "is_current_award": false,
+          "is_winner": true
+        }
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

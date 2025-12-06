@@ -1,0 +1,2982 @@
+{
+  "total": 16,
+  "data": [
+    {
+      "duration_ms": 1420004,
+      "available_offline": true,
+      "episode": "1",
+      "available_date": null,
+      "recent_audio_locale": "ja-JP",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "closed_captions_available": false,
+      "mature_blocked": false,
+      "seo_description": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "audio_locale": "ja-JP",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "identifier": "G4PH0WXD1|S3|E1",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UNXPWN",
+          "is_premium_only": true,
+          "media_guid": "GVMF8NQP8",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G14UVQND2",
+          "is_premium_only": true,
+          "media_guid": "GKKFGV1JQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1UXWGQX",
+          "is_premium_only": true,
+          "media_guid": "G71F3P9Z3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G0DUMG81Z",
+          "is_premium_only": true,
+          "media_guid": "G9XF9Z3Q4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "is_clip": false,
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "premium_available_date": "2024-10-14T15:00:00Z",
+      "availability_status": "available",
+      "slug": "",
+      "sequence_number": 1,
+      "description": "Hajime et ses compagnons font route, à bord de leur aéronef, vers la jungle de Haltina afin de conquérir un nouveau labyrinthe. Seulement, leur périple est contrarié par ce qui semble être une capture d'esclaves faisant partie du peuple des hommes-lapins. Cependant, Hajime ne se montre pas inquiet quant à leur sort, reconnaissant parmi les potentielles victimes d'anciennes connaissances.",
+      "season_sequence_number": 3,
+      "premium_date": null,
+      "recent_variant": "",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "episode_air_date": "2024-10-14T23:00:00+09:00",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1d89d8c0020ecae239502f44e5758069.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1d89d8c0020ecae239502f44e5758069.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1d89d8c0020ecae239502f44e5758069.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1d89d8c0020ecae239502f44e5758069.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1d89d8c0020ecae239502f44e5758069.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1d89d8c0020ecae239502f44e5758069.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1d89d8c0020ecae239502f44e5758069.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1d89d8c0020ecae239502f44e5758069.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_number": 3,
+      "season_id": "G6K5CNX30",
+      "channel_id": "crunchyroll",
+      "roles": [
+        "main"
+      ],
+      "is_dubbed": true,
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "upload_date": "2024-10-14T23:00:00+09:00",
+      "is_mature": false,
+      "seo_title": "",
+      "is_subbed": true,
+      "next_episode_title": "Les cris de la révolte",
+      "id": "GN7UNXPWN",
+      "season_display_number": "3",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "streams_link": "/content/v2/cms/videos/GVMF8NQP8/streams",
+      "next_episode_id": "GK9UGV58W",
+      "eligible_region": "CA",
+      "slug_title": "haulias-assemble",
+      "episode_number": 1,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "production_episode_id": "",
+      "listing_id": "",
+      "series_id": "G4PH0WXD1",
+      "is_premium_only": true,
+      "title": "Les lapins débarquent",
+      "hd_flag": true,
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "availability_notes": "",
+      "availability_starts": "2024-10-14T15:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      }
+    },
+    {
+      "episode": "2",
+      "seo_title": "",
+      "slug_title": "roar-of-revolution",
+      "recent_audio_locale": "ja-JP",
+      "availability_starts": "2024-10-21T15:00:00Z",
+      "episode_number": 2,
+      "duration_ms": 1420087,
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "episode_air_date": "2024-10-21T23:00:00+09:00",
+      "season_number": 3,
+      "hd_flag": true,
+      "premium_available_date": "2024-10-21T15:00:00Z",
+      "audio_locale": "ja-JP",
+      "description": "Hajime et ses compagnons sont désormais arrivés dans l'Empire de Hoelscher dans le but de sauver les membres de la famille et du peuple de Shea, ces derniers étant détenus dans le château de l'Empereur. Pour ce faire, Hajime fomente un plan afin de s'infiltrer dans ce dernier sans faire trop de vagues, comptant sur un moyen de faire diversion des plus inventifs.",
+      "roles": [
+        "main"
+      ],
+      "media_type": "episode",
+      "is_subbed": true,
+      "season_display_number": "3",
+      "available_date": null,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "sequence_number": 2,
+      "availability_notes": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9UGV58W",
+          "is_premium_only": true,
+          "media_guid": "G3WFVK078",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G50UMK59D",
+          "is_premium_only": true,
+          "media_guid": "G07FMG81X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G50UMK1QN",
+          "is_premium_only": true,
+          "media_guid": "G07FMGJ7W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GWDU7VQ13",
+          "is_premium_only": true,
+          "media_guid": "GEMFWJN9Q",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "season_id": "G6K5CNX30",
+      "title": "Les cris de la révolte",
+      "next_episode_title": "Le supplice de la princesse",
+      "production_episode_id": "",
+      "availability_status": "available",
+      "premium_date": null,
+      "recent_variant": "",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "available_offline": true,
+      "eligible_region": "CA",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c108e58d41951ea0ea7155d0c685a82a.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c108e58d41951ea0ea7155d0c685a82a.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c108e58d41951ea0ea7155d0c685a82a.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c108e58d41951ea0ea7155d0c685a82a.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c108e58d41951ea0ea7155d0c685a82a.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c108e58d41951ea0ea7155d0c685a82a.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c108e58d41951ea0ea7155d0c685a82a.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c108e58d41951ea0ea7155d0c685a82a.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 3,
+      "listing_id": "",
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "mature_blocked": false,
+      "is_clip": false,
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "slug": "",
+      "channel_id": "crunchyroll",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "identifier": "G4PH0WXD1|S3|E2",
+      "seo_description": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "next_episode_id": "G50UMK7E3",
+      "is_mature": false,
+      "streams_link": "/content/v2/cms/videos/G3WFVK078/streams",
+      "upload_date": "2024-10-21T23:00:00+09:00",
+      "is_dubbed": true,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "series_id": "G4PH0WXD1",
+      "id": "GK9UGV58W"
+    },
+    {
+      "series_id": "G4PH0WXD1",
+      "media_type": "episode",
+      "production_episode_id": "",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "recent_variant": "",
+      "slug": "",
+      "upload_date": "2024-10-28T23:00:00+09:00",
+      "eligible_region": "CA",
+      "premium_date": null,
+      "streams_link": "/content/v2/cms/videos/G07FMG59E/streams",
+      "is_mature": false,
+      "is_premium_only": true,
+      "availability_status": "available",
+      "roles": [
+        "main"
+      ],
+      "identifier": "G4PH0WXD1|S3|E3",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "Le supplice de la princesse",
+      "episode_air_date": "2024-10-28T23:00:00+09:00",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "available_date": null,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "next_episode_id": "GWDU7V5P4",
+      "recent_audio_locale": "ja-JP",
+      "available_offline": true,
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "mature_blocked": false,
+      "availability_notes": "",
+      "id": "G50UMK7E3",
+      "is_subbed": true,
+      "premium_available_date": "2024-10-28T15:00:00Z",
+      "availability_starts": "2024-10-28T15:00:00Z",
+      "is_clip": false,
+      "seo_title": "",
+      "audio_locale": "ja-JP",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "season_display_number": "3",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G50UMK7E3",
+          "is_premium_only": true,
+          "media_guid": "G07FMG59E",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUWJN90",
+          "is_premium_only": true,
+          "media_guid": "GXMF31Z52",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GX9U31J0V",
+          "is_premium_only": true,
+          "media_guid": "GJKFQN9VP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14UVQ9M3",
+          "is_premium_only": true,
+          "media_guid": "GKKFGVMXZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "closed_captions_available": false,
+      "channel_id": "crunchyroll",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "season_sequence_number": 3,
+      "season_id": "G6K5CNX30",
+      "sequence_number": 3,
+      "description": "En s'infiltrant dans le château, le groupe mené par Hajime s'est fait remarquer par l'Empereur. Par ailleurs, ce dernier a décidé de marier son fils à la princesse Liliana, afin de renforcer les liens entre les deux royaumes. Seulement, les fiançailles ne se dérouleront probablement pas comme prévu, au vu des desseins du peuple des lapins...",
+      "episode_number": 3,
+      "duration_ms": 1420087,
+      "slug_title": "the-princesss-ordeal",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "next_episode_title": "L'Empire contre les lapins sanguinaires",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_number": 3,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/19ce89d254025e5835ed6a7a95d6a06d.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/19ce89d254025e5835ed6a7a95d6a06d.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/19ce89d254025e5835ed6a7a95d6a06d.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/19ce89d254025e5835ed6a7a95d6a06d.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/19ce89d254025e5835ed6a7a95d6a06d.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/19ce89d254025e5835ed6a7a95d6a06d.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/19ce89d254025e5835ed6a7a95d6a06d.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/19ce89d254025e5835ed6a7a95d6a06d.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_description": "",
+      "hd_flag": true,
+      "episode": "3",
+      "is_dubbed": true,
+      "listing_id": ""
+    },
+    {
+      "hd_flag": true,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "episode_number": 4,
+      "seo_title": "",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "episode_air_date": "2024-11-04T23:00:00+09:00",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ee1496f6c63d95e9dc4ea1b5d0cd251f.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ee1496f6c63d95e9dc4ea1b5d0cd251f.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ee1496f6c63d95e9dc4ea1b5d0cd251f.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ee1496f6c63d95e9dc4ea1b5d0cd251f.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ee1496f6c63d95e9dc4ea1b5d0cd251f.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ee1496f6c63d95e9dc4ea1b5d0cd251f.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ee1496f6c63d95e9dc4ea1b5d0cd251f.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ee1496f6c63d95e9dc4ea1b5d0cd251f.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "premium_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GWDU7V5P4",
+          "is_premium_only": true,
+          "media_guid": "GEMFWJ481",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWUQN9VJ",
+          "is_premium_only": true,
+          "media_guid": "GM8FE9QV5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GMKUE9PQW",
+          "is_premium_only": true,
+          "media_guid": "GPPF8NVZE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GK9UGVKM4",
+          "is_premium_only": true,
+          "media_guid": "G3WFVK4W3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        }
+      ],
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 3,
+      "next_episode_title": "Le retour triomphal des héros",
+      "slug": "",
+      "availability_starts": "2024-11-04T16:00:00Z",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "streams_link": "/content/v2/cms/videos/GEMFWJ481/streams",
+      "slug_title": "the-empire-vs-the-strongest-rabbits",
+      "channel_id": "crunchyroll",
+      "is_mature": false,
+      "availability_notes": "",
+      "series_id": "G4PH0WXD1",
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "upload_date": "2024-11-04T23:00:00+09:00",
+      "id": "GWDU7V5P4",
+      "roles": [
+        "main"
+      ],
+      "episode": "4",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "listing_id": "",
+      "media_type": "episode",
+      "season_display_number": "3",
+      "is_premium_only": true,
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "season_number": 3,
+      "is_clip": false,
+      "recent_audio_locale": "ja-JP",
+      "description": "Les fiançailles liant le fils de l'Empereur et la princesse Liliana sont célébrées en grande pompe lors d'une cérémonie où se sont réunis les nobles de la cour ainsi que Hajime et ses compagnes. C'est ce moment qu'ont choisi Cam et ses hommes-lapins de la tribu Haulia pour s'en prendre à l'Empire et se venger des sévices qu'ils ont subis.",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "season_id": "G6K5CNX30",
+      "duration_ms": 1420004,
+      "premium_available_date": "2024-11-04T16:00:00Z",
+      "production_episode_id": "",
+      "title": "L'Empire contre les lapins sanguinaires",
+      "is_subbed": true,
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "audio_locale": "ja-JP",
+      "identifier": "G4PH0WXD1|S3|E4",
+      "is_dubbed": true,
+      "seo_description": "",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "mature_blocked": false,
+      "closed_captions_available": false,
+      "next_episode_id": "GG1UXW3D7",
+      "sequence_number": 4,
+      "availability_status": "available"
+    },
+    {
+      "slug_title": "the-hero-returns",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "production_episode_id": "",
+      "premium_date": null,
+      "media_type": "episode",
+      "seo_description": "",
+      "slug": "",
+      "upload_date": "2024-11-11T23:00:00+09:00",
+      "episode_number": 5,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "id": "GG1UXW3D7",
+      "is_mature": false,
+      "season_number": 3,
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "season_display_number": "3",
+      "availability_status": "available",
+      "recent_audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "season_sequence_number": 3,
+      "episode": "5",
+      "closed_captions_available": false,
+      "is_subbed": true,
+      "is_clip": false,
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "audio_locale": "ja-JP",
+      "roles": [
+        "main"
+      ],
+      "streams_link": "/content/v2/cms/videos/G71F3PXWK/streams",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/867d7f1a4cf0d01e7d0b029fd9d718cb.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/867d7f1a4cf0d01e7d0b029fd9d718cb.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/867d7f1a4cf0d01e7d0b029fd9d718cb.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/867d7f1a4cf0d01e7d0b029fd9d718cb.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/867d7f1a4cf0d01e7d0b029fd9d718cb.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/867d7f1a4cf0d01e7d0b029fd9d718cb.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/867d7f1a4cf0d01e7d0b029fd9d718cb.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/867d7f1a4cf0d01e7d0b029fd9d718cb.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "duration_ms": 1420046,
+      "availability_starts": "2024-11-11T16:00:00Z",
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "description": "Le clan Haulia est parvenu à mettre à exécution son plan visant à prendre l'avantage sur l'Empire en soumettant ce dernier à ses exigences. Les hommes-lapins voyagent désormais avec Hajime et ses compagnons pour se rendre auprès du Conseil des Anciens, afin que Cam leur expose sa victoire ainsi que les nouvelles ambitions de son clan.",
+      "hd_flag": true,
+      "title": "Le retour triomphal des héros",
+      "premium_available_date": "2024-11-11T16:00:00Z",
+      "available_offline": true,
+      "season_id": "G6K5CNX30",
+      "identifier": "G4PH0WXD1|S3|E5",
+      "next_episode_title": "Le grand labyrinthe de Haltina",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1UXW3D7",
+          "is_premium_only": true,
+          "media_guid": "G71F3PXWK",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GPWU8NVZ7",
+          "is_premium_only": true,
+          "media_guid": "GZ4FDQE2K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GX9U31EKM",
+          "is_premium_only": true,
+          "media_guid": "GJKFQNWJ7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G4VUWK5M7",
+          "is_premium_only": true,
+          "media_guid": "GNJFNXMWJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "available_date": null,
+      "availability_notes": "",
+      "sequence_number": 5,
+      "listing_id": "",
+      "next_episode_id": "G0DUMG593",
+      "recent_variant": "",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "eligible_region": "CA",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_id": "G4PH0WXD1",
+      "seo_title": "",
+      "is_dubbed": true,
+      "episode_air_date": "2024-11-11T23:00:00+09:00"
+    },
+    {
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "premium_available_date": "2024-11-18T16:00:00Z",
+      "season_number": 3,
+      "seo_title": "",
+      "availability_status": "available",
+      "series_id": "G4PH0WXD1",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/12d771f19d7bb61669d7d4ab45b2f241.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/12d771f19d7bb61669d7d4ab45b2f241.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/12d771f19d7bb61669d7d4ab45b2f241.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/12d771f19d7bb61669d7d4ab45b2f241.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/12d771f19d7bb61669d7d4ab45b2f241.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/12d771f19d7bb61669d7d4ab45b2f241.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/12d771f19d7bb61669d7d4ab45b2f241.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/12d771f19d7bb61669d7d4ab45b2f241.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "description": "Hajime et ses compagnons se trouvent désormais dans le grand labyrinthe de Haltina, qui leur réserve de nombreuses surprises. Très rapidement, le groupe se rend compte que les apparences sont trompeuses, et qu'il va falloir compter sur l'instinct pour s'en sortir.",
+      "hd_flag": true,
+      "season_sequence_number": 3,
+      "streams_link": "/content/v2/cms/videos/G9XF9Z1DX/streams",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "roles": [
+        "main"
+      ],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "sequence_number": 6,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "is_mature": false,
+      "identifier": "G4PH0WXD1|S3|E6",
+      "audio_locale": "ja-JP",
+      "upload_date": "2024-11-18T23:00:00+09:00",
+      "next_episode_id": "GEVUWJ488",
+      "slug": "",
+      "title": "Le grand labyrinthe de Haltina",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "is_premium_only": true,
+      "channel_id": "crunchyroll",
+      "slug_title": "haltinas-labyrinth",
+      "mature_blocked": false,
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "episode_air_date": "2024-11-18T23:00:00+09:00",
+      "production_episode_id": "",
+      "premium_date": null,
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "closed_captions_available": false,
+      "is_clip": false,
+      "episode": "6",
+      "availability_starts": "2024-11-18T16:00:00Z",
+      "is_subbed": true,
+      "episode_number": 6,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUMG593",
+          "is_premium_only": true,
+          "media_guid": "G9XF9Z1DX",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G8WU7VVNQ",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM00G8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GZ7UD33VW",
+          "is_premium_only": true,
+          "media_guid": "G5JFMNNZ8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GD9UEZZV4",
+          "is_premium_only": true,
+          "media_guid": "GWMF7MM8N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        }
+      ],
+      "season_display_number": "3",
+      "duration_ms": 1420046,
+      "availability_notes": "",
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "id": "G0DUMG593",
+      "media_type": "episode",
+      "seo_description": "",
+      "season_id": "G6K5CNX30",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_dubbed": true,
+      "next_episode_title": "Une épreuve démoniaque",
+      "eligible_region": "CA"
+    },
+    {
+      "availability_starts": "2024-11-25T16:00:00Z",
+      "available_offline": true,
+      "next_episode_id": "G7PU3PXWV",
+      "episode": "7",
+      "recent_variant": "",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "production_episode_id": "",
+      "season_number": 3,
+      "recent_audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUWJ488",
+          "is_premium_only": true,
+          "media_guid": "GXMF31PKK",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1UX5520",
+          "is_premium_only": true,
+          "media_guid": "G71F32240",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1UX5V1E",
+          "is_premium_only": true,
+          "media_guid": "G71F32D8V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G0DUMWXZ4",
+          "is_premium_only": true,
+          "media_guid": "G9XF9N247",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "media_type": "episode",
+      "channel_id": "crunchyroll",
+      "available_date": null,
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "is_clip": false,
+      "audio_locale": "ja-JP",
+      "premium_available_date": "2024-11-25T16:00:00Z",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "upload_date": "2024-11-25T23:00:00+09:00",
+      "seo_description": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "description": "Hajime et ses compagnons sont parvenus à s'extraire des songes dans lesquels ils étaient bloqués, et ont donc réussi à passer la première épreuve du labyrinthe de Haltina. Seulement, ce dernier leur réserve encore bien des obstacles.",
+      "listing_id": "",
+      "sequence_number": 7,
+      "duration_ms": 1420046,
+      "roles": [
+        "main"
+      ],
+      "mature_blocked": false,
+      "streams_link": "/content/v2/cms/videos/GXMF31PKK/streams",
+      "title": "Une épreuve démoniaque",
+      "id": "GEVUWJ488",
+      "is_subbed": true,
+      "availability_status": "available",
+      "episode_air_date": "2024-11-25T23:00:00+09:00",
+      "is_premium_only": true,
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "slug_title": "a-devilish-trial",
+      "episode_number": 7,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "eligible_region": "CA",
+      "hd_flag": true,
+      "premium_date": null,
+      "slug": "",
+      "closed_captions_available": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dacec31aa583c9c8046abab19e4282c4.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/dacec31aa583c9c8046abab19e4282c4.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/dacec31aa583c9c8046abab19e4282c4.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/dacec31aa583c9c8046abab19e4282c4.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/dacec31aa583c9c8046abab19e4282c4.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/dacec31aa583c9c8046abab19e4282c4.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/dacec31aa583c9c8046abab19e4282c4.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/dacec31aa583c9c8046abab19e4282c4.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_id": "G6K5CNX30",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "season_display_number": "3",
+      "identifier": "G4PH0WXD1|S3|E7",
+      "season_sequence_number": 3,
+      "is_mature": false,
+      "series_id": "G4PH0WXD1",
+      "is_dubbed": true,
+      "availability_notes": "",
+      "next_episode_title": "Saisir l'espoir de ses mains"
+    },
+    {
+      "is_clip": false,
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "premium_date": null,
+      "next_episode_id": "G9DU9Z1D7",
+      "premium_available_date": "2024-12-02T16:00:00Z",
+      "episode_air_date": "2024-12-02T23:00:00+09:00",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU3PXWV",
+          "is_premium_only": true,
+          "media_guid": "G4GFWKEMX",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DU9N24J",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJP5D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GPWU8JK57",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD3VXK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G2XUN103E",
+          "is_premium_only": true,
+          "media_guid": "GDVFEZVW5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "is_subbed": true,
+      "available_offline": true,
+      "id": "G7PU3PXWV",
+      "identifier": "G4PH0WXD1|S3|E8",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "season_display_number": "3",
+      "is_premium_only": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_notes": "",
+      "season_sequence_number": 3,
+      "hd_flag": true,
+      "channel_id": "crunchyroll",
+      "season_number": 3,
+      "is_dubbed": true,
+      "availability_starts": "2024-12-02T16:00:00Z",
+      "seo_description": "",
+      "media_type": "episode",
+      "duration_ms": 1420004,
+      "listing_id": "",
+      "episode_number": 8,
+      "description": "Le groupe de Hajime se trouve toujours dans le labyrinthe de Haltina. Cette fois-ci, ils doivent faire face à une horde de milliers de cafards particulièrement agressifs et puissants. Pour couronner le tout, la magie des lieux inverse leurs émotions...",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "series_id": "G4PH0WXD1",
+      "closed_captions_available": false,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "seo_title": "",
+      "roles": [
+        "main"
+      ],
+      "upload_date": "2024-12-02T23:00:00+09:00",
+      "is_mature": false,
+      "next_episode_title": "Cœurs changeants",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "title": "Saisir l'espoir de ses mains",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "slug_title": "grab-hold-of-hope",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "audio_locale": "ja-JP",
+      "episode": "8",
+      "available_date": null,
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "streams_link": "/content/v2/cms/videos/G4GFWKEMX/streams",
+      "sequence_number": 8,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/0b98251ac6aa70912f56d1a06d797780.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/0b98251ac6aa70912f56d1a06d797780.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/0b98251ac6aa70912f56d1a06d797780.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/0b98251ac6aa70912f56d1a06d797780.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0b98251ac6aa70912f56d1a06d797780.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/0b98251ac6aa70912f56d1a06d797780.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/0b98251ac6aa70912f56d1a06d797780.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/0b98251ac6aa70912f56d1a06d797780.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "production_episode_id": "",
+      "availability_status": "available",
+      "season_id": "G6K5CNX30",
+      "slug": ""
+    },
+    {
+      "listing_id": "",
+      "production_episode_id": "",
+      "streams_link": "/content/v2/cms/videos/G1QFVQWX2/streams",
+      "slug_title": "changing-heart",
+      "eligible_region": "CA",
+      "next_episode_id": "GX9U31PKP",
+      "is_mature": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/451a923fe01812db732c6eb3aa43f655.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/451a923fe01812db732c6eb3aa43f655.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/451a923fe01812db732c6eb3aa43f655.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/451a923fe01812db732c6eb3aa43f655.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/451a923fe01812db732c6eb3aa43f655.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/451a923fe01812db732c6eb3aa43f655.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/451a923fe01812db732c6eb3aa43f655.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/451a923fe01812db732c6eb3aa43f655.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug": "",
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "next_episode_title": "Le dernier grand labyrinthe",
+      "description": "Après avoir conquis le labyrinthe de Haltina, le groupe se voit remettre une puissante magie. Hajime et ses compagnons se rapprochent de plus en plus du dernier grand labyrinthe. Face à cette échéance, les choses évoluent entre Hajime et Shea.",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_air_date": "2024-12-09T23:00:00+09:00",
+      "channel_id": "crunchyroll",
+      "available_offline": true,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "sequence_number": 9,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DU9Z1D7",
+          "is_premium_only": true,
+          "media_guid": "G1QFVQWX2",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G50UMNZ40",
+          "is_premium_only": true,
+          "media_guid": "G07FMWN02",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GX9U3MQWK",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ720J",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G9DU9NEMX",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJ413",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        }
+      ],
+      "season_number": 3,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "premium_date": null,
+      "availability_status": "available",
+      "is_clip": false,
+      "upload_date": "2024-12-09T23:00:00+09:00",
+      "media_type": "episode",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "audio_locale": "ja-JP",
+      "seo_title": "",
+      "available_date": null,
+      "series_id": "G4PH0WXD1",
+      "closed_captions_available": false,
+      "is_dubbed": true,
+      "roles": [
+        "main"
+      ],
+      "is_subbed": true,
+      "season_display_number": "3",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "is_premium_only": true,
+      "title": "Cœurs changeants",
+      "id": "G9DU9Z1D7",
+      "availability_notes": "",
+      "availability_starts": "2024-12-09T16:00:00Z",
+      "seo_description": "",
+      "premium_available_date": "2024-12-09T16:00:00Z",
+      "identifier": "G4PH0WXD1|S3|E9",
+      "episode": "9",
+      "recent_audio_locale": "ja-JP",
+      "season_id": "G6K5CNX30",
+      "season_sequence_number": 3,
+      "hd_flag": true,
+      "duration_ms": 1420046,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "recent_variant": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "mature_blocked": false,
+      "episode_number": 9
+    },
+    {
+      "sequence_number": 10,
+      "availability_status": "available",
+      "is_subbed": true,
+      "next_episode_id": "G4VUWKEMJ",
+      "slug_title": "the-final-labyrinth",
+      "is_mature": false,
+      "premium_date": null,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "identifier": "G4PH0WXD1|S3|E10",
+      "available_date": null,
+      "id": "GX9U31PKP",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "seo_description": "",
+      "is_dubbed": true,
+      "season_sequence_number": 3,
+      "duration_ms": 1419962,
+      "mature_blocked": false,
+      "channel_id": "crunchyroll",
+      "series_id": "G4PH0WXD1",
+      "streams_link": "/content/v2/cms/videos/GJKFQN5J5/streams",
+      "slug": "",
+      "audio_locale": "ja-JP",
+      "premium_available_date": "2024-12-23T16:00:00Z",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "roles": [
+        "main"
+      ],
+      "is_clip": false,
+      "seo_title": "",
+      "season_id": "G6K5CNX30",
+      "availability_notes": "",
+      "is_premium_only": true,
+      "season_number": 3,
+      "available_offline": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "eligible_region": "CA",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_number": 10,
+      "closed_captions_available": false,
+      "title": "Le dernier grand labyrinthe",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_display_number": "3",
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "episode_air_date": "2024-12-23T23:00:00+09:00",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GX9U31PKP",
+          "is_premium_only": true,
+          "media_guid": "GJKFQN5J5",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GX9U3MNQJ",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7429",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G9DU9NWEG",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJ84G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUW0PQV",
+          "is_premium_only": true,
+          "media_guid": "GNJFNK5D1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        }
+      ],
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "production_episode_id": "",
+      "availability_starts": "2024-12-23T16:00:00Z",
+      "description": "À bord du Fenrir, Hajime et ses compagnons sont sur le point d'arriver au dernier grand labyrinthe qu'il leur faudra conquérir pour parvenir au terme de leur aventure. Seulement, le vaisseau ne peut s'approcher, forçant l'équipe à explorer des terres enneigées particulièrement hostiles.",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "recent_variant": "",
+      "next_episode_title": "Victimes de leurs sentiments",
+      "hd_flag": true,
+      "listing_id": "",
+      "episode": "10",
+      "media_type": "episode",
+      "recent_audio_locale": "ja-JP",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "upload_date": "2024-12-23T23:00:00+09:00",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e3542df9195394a9c9b4f438c77beadb.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e3542df9195394a9c9b4f438c77beadb.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e3542df9195394a9c9b4f438c77beadb.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e3542df9195394a9c9b4f438c77beadb.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e3542df9195394a9c9b4f438c77beadb.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e3542df9195394a9c9b4f438c77beadb.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e3542df9195394a9c9b4f438c77beadb.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e3542df9195394a9c9b4f438c77beadb.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_title": "Arifureta: From Commonplace to World's Strongest"
+    },
+    {
+      "is_mature": false,
+      "streams_link": "/content/v2/cms/videos/GNJFNXPW9/streams",
+      "listing_id": "",
+      "availability_status": "available",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1eabf6f1fd83e1f3b8d65d019e8f7957.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1eabf6f1fd83e1f3b8d65d019e8f7957.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1eabf6f1fd83e1f3b8d65d019e8f7957.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1eabf6f1fd83e1f3b8d65d019e8f7957.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1eabf6f1fd83e1f3b8d65d019e8f7957.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1eabf6f1fd83e1f3b8d65d019e8f7957.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1eabf6f1fd83e1f3b8d65d019e8f7957.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1eabf6f1fd83e1f3b8d65d019e8f7957.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "ja-JP",
+      "recent_audio_locale": "ja-JP",
+      "episode": "11",
+      "available_offline": true,
+      "is_premium_only": true,
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "available_date": null,
+      "eligible_region": "CA",
+      "episode_number": 11,
+      "premium_date": null,
+      "is_dubbed": true,
+      "availability_starts": "2024-12-30T16:00:00Z",
+      "id": "G4VUWKEMJ",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "episode_air_date": "2024-12-30T23:00:00+09:00",
+      "is_clip": false,
+      "channel_id": "crunchyroll",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "premium_available_date": "2024-12-30T16:00:00Z",
+      "hd_flag": true,
+      "mature_blocked": false,
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "next_episode_id": "G14UVQWXD",
+      "sequence_number": 11,
+      "series_id": "G4PH0WXD1",
+      "season_sequence_number": 3,
+      "duration_ms": 1420004,
+      "slug": "",
+      "seo_title": "",
+      "next_episode_title": "Accepter la nature de son cœur",
+      "is_subbed": true,
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "closed_captions_available": false,
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "media_type": "episode",
+      "season_id": "G6K5CNX30",
+      "slug_title": "charging-emotions",
+      "roles": [
+        "main"
+      ],
+      "season_display_number": "3",
+      "seo_description": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "identifier": "G4PH0WXD1|S3|E11",
+      "production_episode_id": "",
+      "description": "Hajime et ses compagnons se trouvent à l'intérieur du dernier grand labyrinthe. Alors que le groupe parcourt ses galeries, qui se présentent comme un palais des glaces, Kôki se met à entendre des voix imperceptibles par les autres.",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "upload_date": "2024-12-30T23:00:00+09:00",
+      "availability_notes": "",
+      "title": "Victimes de leurs sentiments",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUWKEMJ",
+          "is_premium_only": true,
+          "media_guid": "GNJFNXPW9",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G9DU9NXN9",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJ3JV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUW0304",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKZK3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GX9U3MDM2",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7M7K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "season_number": 3,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)"
+    },
+    {
+      "available_offline": true,
+      "next_episode_title": "Ça me rassure ! Tu es bien une perverse !",
+      "series_id": "G4PH0WXD1",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "mature_blocked": false,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_id": "G6K5CNX30",
+      "audio_locale": "ja-JP",
+      "title": "Accepter la nature de son cœur",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "is_subbed": true,
+      "seo_description": "",
+      "season_sequence_number": 3,
+      "roles": [
+        "main"
+      ],
+      "episode_air_date": "2025-01-20T23:00:00+09:00",
+      "premium_date": null,
+      "production_episode_id": "",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "availability_status": "available",
+      "is_dubbed": true,
+      "availability_notes": "",
+      "is_premium_only": true,
+      "premium_available_date": "2025-01-20T16:00:00Z",
+      "is_mature": false,
+      "channel_id": "crunchyroll",
+      "episode": "12",
+      "upload_date": "2025-01-20T23:00:00+09:00",
+      "season_number": 3,
+      "season_display_number": "3",
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GKKFGV58J/streams",
+      "is_clip": false,
+      "available_date": null,
+      "hd_flag": true,
+      "description": "Lors de l’épreuve du dernier grand labyrinthe, Hajime et ses compagnons vont devoir affronter leurs propres démons.",
+      "seo_title": "",
+      "duration_ms": 1419962,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9b8008bc24b2cf51b20669e68e0d5544.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9b8008bc24b2cf51b20669e68e0d5544.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9b8008bc24b2cf51b20669e68e0d5544.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9b8008bc24b2cf51b20669e68e0d5544.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9b8008bc24b2cf51b20669e68e0d5544.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9b8008bc24b2cf51b20669e68e0d5544.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9b8008bc24b2cf51b20669e68e0d5544.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9b8008bc24b2cf51b20669e68e0d5544.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "listing_id": "",
+      "episode_number": 12,
+      "identifier": "G4PH0WXD1|S3|E12",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "sequence_number": 12,
+      "slug_title": "true-heart",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14UVQWXD",
+          "is_premium_only": true,
+          "media_guid": "GKKFGV58J",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DU9NX07",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJ372",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GQJUM0EKP",
+          "is_premium_only": true,
+          "media_guid": "GGVFX5D83",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G50UMNEQ9",
+          "is_premium_only": true,
+          "media_guid": "G07FMW971",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "id": "G14UVQWXD",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "availability_starts": "2025-01-20T16:00:00Z",
+      "eligible_region": "CA",
+      "next_episode_id": "GJWUQN5JZ",
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "recent_variant": "",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "slug": "",
+      "closed_captions_available": false,
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ]
+    },
+    {
+      "id": "GJWUQN5JZ",
+      "next_episode_id": "GZ7UD378J",
+      "is_clip": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a3f81104edff4127f15c13eb70d6db06.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a3f81104edff4127f15c13eb70d6db06.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a3f81104edff4127f15c13eb70d6db06.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a3f81104edff4127f15c13eb70d6db06.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a3f81104edff4127f15c13eb70d6db06.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a3f81104edff4127f15c13eb70d6db06.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a3f81104edff4127f15c13eb70d6db06.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a3f81104edff4127f15c13eb70d6db06.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_sequence_number": 3,
+      "premium_available_date": "2025-01-27T16:00:00Z",
+      "duration_ms": 1420004,
+      "available_offline": true,
+      "eligible_region": "CA",
+      "recent_variant": "",
+      "title": "Ça me rassure ! Tu es bien une perverse !",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "audio_locale": "ja-JP",
+      "hd_flag": true,
+      "next_episode_title": "La dispute de la surpuissante lapine et l'invincible vampire",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_display_number": "3",
+      "recent_audio_locale": "ja-JP",
+      "media_type": "episode",
+      "available_date": null,
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "season_id": "G6K5CNX30",
+      "production_episode_id": "",
+      "seo_title": "",
+      "slug": "",
+      "is_mature": false,
+      "roles": [
+        "main"
+      ],
+      "season_number": 3,
+      "channel_id": "crunchyroll",
+      "is_dubbed": true,
+      "streams_link": "/content/v2/cms/videos/GM8FE985K/streams",
+      "series_id": "G4PH0WXD1",
+      "availability_notes": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "identifier": "G4PH0WXD1|S3|E13",
+      "upload_date": "2025-01-27T23:00:00+09:00",
+      "episode_air_date": "2025-01-27T23:00:00+09:00",
+      "is_subbed": true,
+      "mature_blocked": false,
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "premium_date": null,
+      "listing_id": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "episode_number": 13,
+      "episode": "13",
+      "is_premium_only": true,
+      "closed_captions_available": false,
+      "availability_status": "available",
+      "availability_starts": "2025-01-27T16:00:00Z",
+      "slug_title": "thank-god-shes-still-a-pervert",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWUQN5JZ",
+          "is_premium_only": true,
+          "media_guid": "GM8FE985K",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GWDU7MP1X",
+          "is_premium_only": true,
+          "media_guid": "GEMFW389M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GN7UNK751",
+          "is_premium_only": true,
+          "media_guid": "GVMF8XZD7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GK9UG247E",
+          "is_premium_only": true,
+          "media_guid": "G3WFVE3MN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "sequence_number": 13,
+      "description": "Alors que Shizuku se trouve surpassée par son double dans le dernier labyrinthe, Hajime arrive in extremis pour la sauver.",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "seo_description": ""
+    },
+    {
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_id": "G6K5CNX30",
+      "upload_date": "2025-02-03T23:00:00+09:00",
+      "season_sequence_number": 3,
+      "is_dubbed": true,
+      "premium_date": null,
+      "closed_captions_available": false,
+      "episode": "14",
+      "seo_title": "",
+      "available_offline": true,
+      "is_premium_only": true,
+      "duration_ms": 1420004,
+      "streams_link": "/content/v2/cms/videos/G5JFMN29W/streams",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "premium_available_date": "2025-02-03T16:00:00Z",
+      "identifier": "G4PH0WXD1|S3|E14",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GZ7UD378J",
+          "is_premium_only": true,
+          "media_guid": "G5JFMN29W",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G31UVE3P2",
+          "is_premium_only": true,
+          "media_guid": "G8MF7VWDP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G8WU7VEN4",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM07GP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GZ7UD3JV8",
+          "is_premium_only": true,
+          "media_guid": "G5JFMNWZ9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "is_clip": false,
+      "available_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d7053261565574e5e3a53a9791afd8af.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d7053261565574e5e3a53a9791afd8af.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d7053261565574e5e3a53a9791afd8af.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d7053261565574e5e3a53a9791afd8af.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d7053261565574e5e3a53a9791afd8af.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d7053261565574e5e3a53a9791afd8af.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d7053261565574e5e3a53a9791afd8af.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d7053261565574e5e3a53a9791afd8af.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "ja-JP",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_id": "GD9UEZNJP",
+      "id": "GZ7UD378J",
+      "recent_audio_locale": "ja-JP",
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "recent_variant": "",
+      "season_display_number": "3",
+      "roles": [
+        "main"
+      ],
+      "slug_title": "the-overpowered-vampire-princess-and-the-godlike-rabbits-grand-battle",
+      "availability_starts": "2025-02-03T16:00:00Z",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "eligible_region": "CA",
+      "is_subbed": true,
+      "availability_notes": "",
+      "media_type": "episode",
+      "episode_number": 14,
+      "season_number": 3,
+      "slug": "",
+      "mature_blocked": false,
+      "availability_status": "available",
+      "series_id": "G4PH0WXD1",
+      "hd_flag": true,
+      "is_mature": false,
+      "episode_air_date": "2025-02-03T23:00:00+09:00",
+      "seo_description": "",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "title": "La dispute de la surpuissante lapine et l'invincible vampire",
+      "production_episode_id": "",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "description": "C'est désormais à Yue et Kaori d'affronter les démons qui les habitent afin de triompher du dernier grand labyrinthe.",
+      "sequence_number": 14,
+      "next_episode_title": "Ce qui fait le héros",
+      "listing_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "channel_id": "crunchyroll",
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)"
+    },
+    {
+      "season_number": 3,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GD9UEZNJP",
+          "is_premium_only": true,
+          "media_guid": "GWMF7M9W5",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GD9UEZDVK",
+          "is_premium_only": true,
+          "media_guid": "GWMF7MG8X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G50UMN79V",
+          "is_premium_only": true,
+          "media_guid": "G07FMW51K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G7PU32XE4",
+          "is_premium_only": true,
+          "media_guid": "G4GFW0E9Q",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        }
+      ],
+      "episode_air_date": "2025-02-10T23:00:00+09:00",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/46afea30121b2088b6f893cfa4704d93.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/46afea30121b2088b6f893cfa4704d93.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/46afea30121b2088b6f893cfa4704d93.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/46afea30121b2088b6f893cfa4704d93.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/46afea30121b2088b6f893cfa4704d93.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/46afea30121b2088b6f893cfa4704d93.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/46afea30121b2088b6f893cfa4704d93.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/46afea30121b2088b6f893cfa4704d93.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "series_id": "G4PH0WXD1",
+      "listing_id": "",
+      "description": "Alors que Hajime et ses compagnons sont parvenus à vaincre leurs démons, Kôki peine à ne pas sombrer face aux paroles corruptrices de son double.",
+      "is_clip": false,
+      "availability_notes": "",
+      "episode_number": 15,
+      "roles": [
+        "main"
+      ],
+      "recent_variant": "",
+      "next_episode_title": "La clé qui ouvre la porte des démons",
+      "production_episode_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "premium_available_date": "2025-02-10T16:00:00Z",
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_offline": true,
+      "hd_flag": true,
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "premium_date": null,
+      "duration_ms": 1420004,
+      "slug_title": "what-makes-a-hero",
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "is_dubbed": true,
+      "season_sequence_number": 3,
+      "identifier": "G4PH0WXD1|S3|E15",
+      "channel_id": "crunchyroll",
+      "id": "GD9UEZNJP",
+      "mature_blocked": false,
+      "is_subbed": true,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "slug": "",
+      "audio_locale": "ja-JP",
+      "episode": "15",
+      "seo_description": "",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "season_display_number": "3",
+      "sequence_number": 15,
+      "media_type": "episode",
+      "availability_status": "available",
+      "seo_title": "",
+      "closed_captions_available": false,
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "next_episode_id": "GQJUM0D11",
+      "season_id": "G6K5CNX30",
+      "upload_date": "2025-02-10T23:00:00+09:00",
+      "availability_starts": "2025-02-10T16:00:00Z",
+      "title": "Ce qui fait le héros",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "eligible_region": "CA",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_mature": false,
+      "streams_link": "/content/v2/cms/videos/GWMF7M9W5/streams"
+    },
+    {
+      "listing_id": "",
+      "upload_date": "2025-02-17T23:00:00+09:00",
+      "season_slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "seo_title": "",
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "ru-RU"
+      ],
+      "roles": [
+        "main"
+      ],
+      "availability_notes": "",
+      "channel_id": "crunchyroll",
+      "is_clip": false,
+      "season_sequence_number": 3,
+      "series_slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "description": "Les épreuves du labyrinthe étant dépassées, Hajime et ses compagnons se rapprochent de leur objectif.",
+      "hd_flag": true,
+      "slug": "",
+      "season_display_number": "3",
+      "closed_captions_available": false,
+      "duration_ms": 1480106,
+      "seo_description": "",
+      "available_date": null,
+      "series_id": "G4PH0WXD1",
+      "is_dubbed": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode": "16",
+      "is_mature": false,
+      "episode_number": 16,
+      "recent_variant": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_subbed": true,
+      "availability_status": "available",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e51568dd26229be891adde17ec5139b2.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e51568dd26229be891adde17ec5139b2.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e51568dd26229be891adde17ec5139b2.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e51568dd26229be891adde17ec5139b2.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e51568dd26229be891adde17ec5139b2.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e51568dd26229be891adde17ec5139b2.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e51568dd26229be891adde17ec5139b2.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e51568dd26229be891adde17ec5139b2.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "eligible_region": "CA",
+      "sequence_number": 16,
+      "episode_air_date": "2025-02-17T23:00:00+09:00",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GQJUM0D11",
+          "is_premium_only": true,
+          "media_guid": "GGVFX5MQQ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6K5CNX30",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1UX539W",
+          "is_premium_only": true,
+          "media_guid": "G71F32XEP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4ZN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GQJUM0181",
+          "is_premium_only": true,
+          "media_guid": "GGVFX5QPQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VM2",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G50UMN93P",
+          "is_premium_only": true,
+          "media_guid": "G07FMW1EP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPM3P",
+          "variant": ""
+        }
+      ],
+      "is_premium_only": true,
+      "premium_date": null,
+      "season_title": "Arifureta: From Commonplace to World's Strongest (Saison 3)",
+      "identifier": "G4PH0WXD1|S3|E16",
+      "available_offline": true,
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "premium_available_date": "2025-02-17T16:00:00Z",
+      "season_number": 3,
+      "mature_blocked": false,
+      "slug_title": "the-key-to-the-world",
+      "title": "La clé qui ouvre la porte des démons",
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GGVFX5MQQ/streams",
+      "media_type": "episode",
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "availability_starts": "2025-02-17T16:00:00Z",
+      "season_id": "G6K5CNX30",
+      "series_title": "Arifureta: From Commonplace to World's Strongest",
+      "id": "GQJUM0D11",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      }
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

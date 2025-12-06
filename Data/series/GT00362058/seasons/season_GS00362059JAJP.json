@@ -1,0 +1,1343 @@
+{
+  "total": 8,
+  "data": [
+    {
+      "upload_date": "2025-10-12T00:00:00Z",
+      "slug_title": "lil-miss-vampire-is-very-bad",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362060JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362060JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362059JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00362060THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00362060THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362059THTH",
+          "variant": ""
+        }
+      ],
+      "episode": "1",
+      "description": "Ishikawa est une nouvelle élève dans la classe de Tatsuta ; elle est aussi une vampire incapable de mordre.",
+      "roles": [
+        "main"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "slug": "",
+      "episode_air_date": "2025-10-12T00:00:00Z",
+      "season_number": 1,
+      "content_descriptors": [
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "is_clip": false,
+      "eligible_region": "CA",
+      "premium_date": null,
+      "recent_variant": "",
+      "is_subbed": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_starts": "2025-10-12T14:30:00Z",
+      "season_title": "Saison 1",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_notes": "",
+      "series_slug_title": "lil-miss-vampire-cant-suck-right",
+      "sequence_number": 1,
+      "audio_locale": "ja-JP",
+      "seo_title": "",
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GE00362060JAJPV/streams",
+      "is_dubbed": true,
+      "mature_blocked": false,
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2025-10-12T14:30:00Z",
+      "availability_status": "available",
+      "identifier": "GT00362058|S00362059|E1",
+      "available_date": null,
+      "available_offline": true,
+      "production_episode_id": "",
+      "media_type": "episode",
+      "seo_description": "",
+      "season_display_number": "",
+      "episode_number": 1,
+      "listing_id": "",
+      "season_sequence_number": 1,
+      "closed_captions_available": false,
+      "hd_flag": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ac79c8a5539b8dcd7cf5b2b244a02bf4.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ac79c8a5539b8dcd7cf5b2b244a02bf4.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ac79c8a5539b8dcd7cf5b2b244a02bf4.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ac79c8a5539b8dcd7cf5b2b244a02bf4.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ac79c8a5539b8dcd7cf5b2b244a02bf4.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ac79c8a5539b8dcd7cf5b2b244a02bf4.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ac79c8a5539b8dcd7cf5b2b244a02bf4.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ac79c8a5539b8dcd7cf5b2b244a02bf4.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "next_episode_id": "GE00362062JAJP",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "series_title": "Li'l Miss Vampire Can't Suck Right",
+      "season_id": "GS00362059JAJP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_slug_title": "season-1",
+      "id": "GE00362060JAJP",
+      "duration_ms": 1420004,
+      "next_episode_title": "La vampire qui ne connaît pas l'imperfection",
+      "is_premium_only": true,
+      "series_id": "GT00362058",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "title": "La vampire est vraiment nulle",
+      "is_mature": false
+    },
+    {
+      "hd_flag": true,
+      "season_id": "GS00362059JAJP",
+      "next_episode_id": "GE00362064JAJP",
+      "season_display_number": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_number": 1,
+      "availability_status": "available",
+      "recent_audio_locale": "ja-JP",
+      "eligible_region": "CA",
+      "available_date": null,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_title": "Saison 1",
+      "duration_ms": 1420046,
+      "roles": [
+        "main"
+      ],
+      "is_subbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362062JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362062JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362059JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00362062THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00362062THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362059THTH",
+          "variant": ""
+        }
+      ],
+      "series_title": "Li'l Miss Vampire Can't Suck Right",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bd30c3d8aaa12007dc5011907205ee42.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/bd30c3d8aaa12007dc5011907205ee42.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/bd30c3d8aaa12007dc5011907205ee42.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/bd30c3d8aaa12007dc5011907205ee42.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/bd30c3d8aaa12007dc5011907205ee42.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/bd30c3d8aaa12007dc5011907205ee42.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/bd30c3d8aaa12007dc5011907205ee42.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/bd30c3d8aaa12007dc5011907205ee42.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_dubbed": true,
+      "season_slug_title": "season-1",
+      "available_offline": true,
+      "episode_air_date": "2025-10-19T00:00:00Z",
+      "upload_date": "2025-10-19T00:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "channel_id": "crunchyroll",
+      "content_descriptors": [
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "slug_title": "lil-miss-vampire-and-sakuma-san",
+      "audio_locale": "ja-JP",
+      "episode_number": 2,
+      "sequence_number": 2,
+      "description": "Tatsuta continue d'aider Luna comme il le peut, mais les deux élèves vont être rattrapés par la notoriété.",
+      "is_premium_only": true,
+      "is_clip": false,
+      "listing_id": "",
+      "mature_blocked": false,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "next_episode_title": "La vampire et le festival sportif",
+      "series_slug_title": "lil-miss-vampire-cant-suck-right",
+      "premium_available_date": "2025-10-19T14:30:00Z",
+      "slug": "",
+      "seo_title": "",
+      "identifier": "GT00362058|S00362059|E2",
+      "is_mature": false,
+      "media_type": "episode",
+      "series_id": "GT00362058",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "recent_variant": "",
+      "production_episode_id": "",
+      "closed_captions_available": false,
+      "episode": "2",
+      "availability_starts": "2025-10-19T14:30:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00362062JAJPV/streams",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "premium_date": null,
+      "availability_notes": "",
+      "id": "GE00362062JAJP",
+      "seo_description": "",
+      "title": "La vampire qui ne connaît pas l'imperfection"
+    },
+    {
+      "availability_notes": "",
+      "availability_starts": "2025-10-26T14:30:00Z",
+      "hd_flag": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode_number": 3,
+      "next_episode_id": "GE00362066JAJP",
+      "id": "GE00362064JAJP",
+      "episode_air_date": "2025-10-26T00:00:00Z",
+      "seo_description": "",
+      "upload_date": "2025-10-26T00:00:00Z",
+      "seo_title": "",
+      "premium_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_status": "available",
+      "is_subbed": true,
+      "audio_locale": "ja-JP",
+      "slug": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "slug_title": "lil-miss-vampire-and-the-sports-tournament--lil-miss-vampire-and-the-club-search",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362064JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362064JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362059JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00362064THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00362064THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362059THTH",
+          "variant": ""
+        }
+      ],
+      "is_clip": false,
+      "series_id": "GT00362058",
+      "recent_audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "premium_available_date": "2025-10-26T14:30:00Z",
+      "sequence_number": 3,
+      "season_number": 1,
+      "next_episode_title": "La vampire et les cours de cuisine",
+      "available_date": null,
+      "media_type": "episode",
+      "identifier": "GT00362058|S00362059|E3",
+      "streams_link": "/content/v2/cms/videos/GE00362064JAJPV/streams",
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4615b089806eec75d5b1f6be0c99b6ad.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4615b089806eec75d5b1f6be0c99b6ad.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4615b089806eec75d5b1f6be0c99b6ad.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4615b089806eec75d5b1f6be0c99b6ad.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4615b089806eec75d5b1f6be0c99b6ad.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4615b089806eec75d5b1f6be0c99b6ad.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4615b089806eec75d5b1f6be0c99b6ad.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4615b089806eec75d5b1f6be0c99b6ad.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "mature_blocked": false,
+      "series_slug_title": "lil-miss-vampire-cant-suck-right",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "description": "Tatsuta soutient Luna lors de ses matchs et l'accompagne dans sa tournée des clubs.",
+      "season_title": "Saison 1",
+      "is_mature": false,
+      "available_offline": true,
+      "season_display_number": "",
+      "content_descriptors": [
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "duration_ms": 1420004,
+      "title": "La vampire et le festival sportif",
+      "season_sequence_number": 1,
+      "episode": "3",
+      "season_slug_title": "season-1",
+      "is_dubbed": true,
+      "season_id": "GS00362059JAJP",
+      "closed_captions_available": false,
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_title": "Li'l Miss Vampire Can't Suck Right",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "roles": [
+        "main"
+      ],
+      "listing_id": ""
+    },
+    {
+      "id": "GE00362066JAJP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "upload_date": "2025-11-02T00:00:00Z",
+      "recent_variant": "",
+      "next_episode_title": "La vampire et Kusunoki",
+      "premium_available_date": "2025-11-02T14:30:00Z",
+      "season_title": "Saison 1",
+      "roles": [
+        "main"
+      ],
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "season_slug_title": "season-1",
+      "production_episode_id": "",
+      "slug": "",
+      "is_clip": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "availability_notes": "",
+      "season_number": 1,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_mature": false,
+      "audio_locale": "ja-JP",
+      "media_type": "episode",
+      "eligible_region": "CA",
+      "listing_id": "",
+      "availability_status": "available",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362066JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362066JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362059JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00362066THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00362066THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362059THTH",
+          "variant": ""
+        }
+      ],
+      "title": "La vampire et les cours de cuisine",
+      "is_premium_only": true,
+      "recent_audio_locale": "ja-JP",
+      "episode": "4",
+      "closed_captions_available": false,
+      "episode_air_date": "2025-11-02T00:00:00Z",
+      "availability_starts": "2025-11-02T14:30:00Z",
+      "season_sequence_number": 1,
+      "next_episode_id": "GE00362068JAJP",
+      "seo_title": "",
+      "available_offline": true,
+      "streams_link": "/content/v2/cms/videos/GE00362066JAJPV/streams",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "series_slug_title": "lil-miss-vampire-cant-suck-right",
+      "sequence_number": 4,
+      "series_title": "Li'l Miss Vampire Can't Suck Right",
+      "seo_description": "",
+      "available_date": null,
+      "episode_number": 4,
+      "duration_ms": 1420004,
+      "season_id": "GS00362059JAJP",
+      "identifier": "GT00362058|S00362059|E4",
+      "series_id": "GT00362058",
+      "is_subbed": true,
+      "slug_title": "lil-miss-vampire-and-cooking-class--lil-miss-vampires-day-out",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/06adb7c0668a9cf297ffa86dcca573c8.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/06adb7c0668a9cf297ffa86dcca573c8.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/06adb7c0668a9cf297ffa86dcca573c8.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/06adb7c0668a9cf297ffa86dcca573c8.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/06adb7c0668a9cf297ffa86dcca573c8.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/06adb7c0668a9cf297ffa86dcca573c8.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/06adb7c0668a9cf297ffa86dcca573c8.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/06adb7c0668a9cf297ffa86dcca573c8.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "mature_blocked": false,
+      "description": "Luna essaie de préparer un plat pour remercier Tatsuta de ses nombreux dons de sang.",
+      "is_dubbed": true,
+      "season_display_number": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "premium_date": null
+    },
+    {
+      "listing_id": "",
+      "next_episode_id": "GE00362070JAJP",
+      "identifier": "GT00362058|S00362059|E5",
+      "upload_date": "2025-11-09T00:00:00Z",
+      "series_title": "Li'l Miss Vampire Can't Suck Right",
+      "slug": "",
+      "content_descriptors": [
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "season_number": 1,
+      "season_title": "Saison 1",
+      "recent_audio_locale": "ja-JP",
+      "season_slug_title": "season-1",
+      "hd_flag": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362068JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362068JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362059JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00362068THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00362068THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362059THTH",
+          "variant": ""
+        }
+      ],
+      "availability_starts": "2025-11-09T14:30:00Z",
+      "is_premium_only": true,
+      "sequence_number": 5,
+      "premium_available_date": "2025-11-09T14:30:00Z",
+      "season_id": "GS00362059JAJP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "media_type": "episode",
+      "season_display_number": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "series_slug_title": "lil-miss-vampire-cant-suck-right",
+      "eligible_region": "CA",
+      "is_mature": false,
+      "available_offline": true,
+      "description": "Kusunoki, une élève de la classe, s'étonne de la façon dont Tatsuta couve Luna, et se rapproche du groupe.",
+      "production_episode_id": "",
+      "available_date": null,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "title": "La vampire et Kusunoki",
+      "episode_number": 5,
+      "slug_title": "lil-miss-vampire-and-kusunoki-san--lil-miss-vampires-birthday",
+      "availability_status": "available",
+      "seo_description": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bcbe5d05696caefeb0f80860f080cc4f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/bcbe5d05696caefeb0f80860f080cc4f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/bcbe5d05696caefeb0f80860f080cc4f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/bcbe5d05696caefeb0f80860f080cc4f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/bcbe5d05696caefeb0f80860f080cc4f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/bcbe5d05696caefeb0f80860f080cc4f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/bcbe5d05696caefeb0f80860f080cc4f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/bcbe5d05696caefeb0f80860f080cc4f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode": "5",
+      "is_dubbed": true,
+      "id": "GE00362068JAJP",
+      "mature_blocked": false,
+      "next_episode_title": "La vampire et l'interview",
+      "audio_locale": "ja-JP",
+      "is_subbed": true,
+      "roles": [
+        "main"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00362068JAJPV/streams",
+      "channel_id": "crunchyroll",
+      "closed_captions_available": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 1,
+      "recent_variant": "",
+      "duration_ms": 1420004,
+      "series_id": "GT00362058",
+      "is_clip": false,
+      "availability_notes": "",
+      "episode_air_date": "2025-11-09T00:00:00Z",
+      "premium_date": null,
+      "seo_title": ""
+    },
+    {
+      "episode": "6",
+      "availability_notes": "",
+      "id": "GE00362070JAJP",
+      "is_subbed": true,
+      "season_id": "GS00362059JAJP",
+      "is_dubbed": true,
+      "title": "La vampire et l'interview",
+      "availability_starts": "2025-11-16T14:30:00Z",
+      "identifier": "GT00362058|S00362059|E6",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c9dd8bdc7d8ef617db5f5eb7c67009ba.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c9dd8bdc7d8ef617db5f5eb7c67009ba.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c9dd8bdc7d8ef617db5f5eb7c67009ba.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c9dd8bdc7d8ef617db5f5eb7c67009ba.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c9dd8bdc7d8ef617db5f5eb7c67009ba.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c9dd8bdc7d8ef617db5f5eb7c67009ba.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c9dd8bdc7d8ef617db5f5eb7c67009ba.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c9dd8bdc7d8ef617db5f5eb7c67009ba.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_slug_title": "season-1",
+      "is_clip": false,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "slug": "",
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "recent_variant": "",
+      "hd_flag": true,
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "series_title": "Li'l Miss Vampire Can't Suck Right",
+      "listing_id": "",
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GE00362070JAJPV/streams",
+      "premium_available_date": "2025-11-16T14:30:00Z",
+      "closed_captions_available": false,
+      "slug_title": "lil-miss-vampires-interview--lil-miss-vampire-visits-otori-kun",
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "media_type": "episode",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362070JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362070JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362059JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00362070THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00362070THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362059THTH",
+          "variant": ""
+        }
+      ],
+      "availability_status": "available",
+      "seo_title": "",
+      "season_sequence_number": 1,
+      "premium_date": null,
+      "next_episode_title": "La vampire et les maillots de bain",
+      "episode_air_date": "2025-11-16T00:00:00Z",
+      "channel_id": "crunchyroll",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "lil-miss-vampire-cant-suck-right",
+      "upload_date": "2025-11-16T00:00:00Z",
+      "seo_description": "",
+      "is_mature": false,
+      "available_offline": true,
+      "series_id": "GT00362058",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_title": "Saison 1",
+      "description": "Luna attire tellement les regards qu'un journal finit par s'intéresser à elle pour faire un reportage.",
+      "next_episode_id": "GE00362072JAJP",
+      "season_number": 1,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "roles": [
+        "main"
+      ],
+      "episode_number": 6,
+      "audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "season_display_number": "",
+      "sequence_number": 6,
+      "production_episode_id": "",
+      "duration_ms": 1420004
+    },
+    {
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "sequence_number": 7,
+      "season_slug_title": "season-1",
+      "season_number": 1,
+      "production_episode_id": "",
+      "duration_ms": 1420004,
+      "is_dubbed": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "closed_captions_available": false,
+      "season_id": "GS00362059JAJP",
+      "availability_notes": "",
+      "seo_description": "",
+      "series_title": "Li'l Miss Vampire Can't Suck Right",
+      "slug": "",
+      "is_premium_only": true,
+      "episode_number": 7,
+      "season_title": "Saison 1",
+      "episode_air_date": "2025-11-23T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b29017d55043aedeef7ca7b519d20dd4.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b29017d55043aedeef7ca7b519d20dd4.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b29017d55043aedeef7ca7b519d20dd4.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b29017d55043aedeef7ca7b519d20dd4.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b29017d55043aedeef7ca7b519d20dd4.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b29017d55043aedeef7ca7b519d20dd4.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b29017d55043aedeef7ca7b519d20dd4.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b29017d55043aedeef7ca7b519d20dd4.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "roles": [
+        "main"
+      ],
+      "premium_date": null,
+      "hd_flag": true,
+      "recent_variant": "",
+      "identifier": "GT00362058|S00362059|E7",
+      "available_offline": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "is_mature": false,
+      "premium_available_date": "2025-11-23T14:30:00Z",
+      "slug_title": "lil-miss-vampire-and-swimsuits",
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "description": "Alors que la journée à la plage tant attendue approche, Luna et ses amies vont choisir des maillots de bain.",
+      "listing_id": "",
+      "season_display_number": "",
+      "upload_date": "2025-11-23T00:00:00Z",
+      "availability_status": "available",
+      "title": "La vampire et les maillots de bain",
+      "recent_audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362072JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362072JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362059JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GE00362072THTH",
+          "is_premium_only": true,
+          "media_guid": "GE00362072THTHV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362059THTH",
+          "variant": ""
+        }
+      ],
+      "series_slug_title": "lil-miss-vampire-cant-suck-right",
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "series_id": "GT00362058",
+      "audio_locale": "ja-JP",
+      "id": "GE00362072JAJP",
+      "next_episode_id": "GE00362074JAJP",
+      "season_sequence_number": 1,
+      "streams_link": "/content/v2/cms/videos/GE00362072JAJPV/streams",
+      "channel_id": "crunchyroll",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "episode": "7",
+      "next_episode_title": "La vampire à la plage",
+      "available_date": null,
+      "seo_title": "",
+      "eligible_region": "CA",
+      "is_clip": false,
+      "is_subbed": true,
+      "media_type": "episode",
+      "availability_starts": "2025-11-23T14:30:00Z"
+    },
+    {
+      "series_id": "GT00362058",
+      "episode": "8",
+      "episode_air_date": "2025-11-30T00:00:00Z",
+      "content_descriptors": [
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362074JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362074JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362059JAJP",
+          "variant": ""
+        }
+      ],
+      "mature_blocked": false,
+      "audio_locale": "ja-JP",
+      "seo_description": "",
+      "streams_link": "/content/v2/cms/videos/GE00362074JAJPV/streams",
+      "identifier": "GT00362058|S00362059|E8",
+      "title": "La vampire à la plage",
+      "available_date": null,
+      "seo_title": "",
+      "availability_starts": "2025-11-30T14:30:00Z",
+      "season_id": "GS00362059JAJP",
+      "availability_status": "available",
+      "is_premium_only": true,
+      "is_mature": false,
+      "is_dubbed": false,
+      "season_display_number": "",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "slug": "",
+      "sequence_number": 8,
+      "id": "GE00362074JAJP",
+      "episode_number": 8,
+      "listing_id": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_title": "Saison 1",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "availability_notes": "",
+      "season_slug_title": "season-1",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "eligible_region": "CA",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a5eda09dee0cd7af8b6340d4f20dbac9.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a5eda09dee0cd7af8b6340d4f20dbac9.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a5eda09dee0cd7af8b6340d4f20dbac9.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a5eda09dee0cd7af8b6340d4f20dbac9.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a5eda09dee0cd7af8b6340d4f20dbac9.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a5eda09dee0cd7af8b6340d4f20dbac9.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a5eda09dee0cd7af8b6340d4f20dbac9.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a5eda09dee0cd7af8b6340d4f20dbac9.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_slug_title": "lil-miss-vampire-cant-suck-right",
+      "available_offline": true,
+      "duration_ms": 1420046,
+      "description": "Luna, Tatsuta et tous leurs camarades profitent d'une virée à la mer pour créer des souvenirs inoubliables.",
+      "season_number": 1,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "next_episode_title": "Li'l Miss Vampire and the Start of Summer Vacation",
+      "premium_date": null,
+      "is_clip": false,
+      "next_episode_id": "GE00362076JAJP",
+      "series_title": "Li'l Miss Vampire Can't Suck Right",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "channel_id": "crunchyroll",
+      "is_subbed": true,
+      "hd_flag": true,
+      "roles": [
+        "main"
+      ],
+      "slug_title": "lil-miss-vampire-and-the-beach",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "premium_available_date": "2025-11-30T14:30:00Z",
+      "upload_date": "2025-11-30T00:00:00Z",
+      "production_episode_id": ""
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

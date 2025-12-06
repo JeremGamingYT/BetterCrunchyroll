@@ -1,0 +1,2036 @@
+{
+  "total": 14,
+  "data": [
+    {
+      "premium_available_date": "2019-10-02T17:00:00Z",
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "description": "My super-energetic childhood friend, Himawari, and the beautiful, mature student council president, Cosmos, have asked me out on a date? Wait, why am I giving them romantic advise? What about my beautiful harem love comedy? Well, it's time to witness the end of the peaceful rom-com story.",
+      "eligible_region": "CA",
+      "hd_flag": true,
+      "season_id": "GRZJVEQ46",
+      "next_episode_id": "GYVDJVK3Y",
+      "available_offline": true,
+      "episode": "1",
+      "availability_starts": "2019-10-02T17:00:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "production_episode_id": "",
+      "is_dubbed": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRDKJW4DY",
+          "is_premium_only": true,
+          "media_guid": "GXMFQN4EQ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "next_episode_title": "I'm Attacked by an Impossible Spiral",
+      "is_mature": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "audio_locale": "ja-JP",
+      "availability_notes": "",
+      "sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "season_number": 1,
+      "slug_title": "im-really-just-an-ordinary-high-school-student",
+      "free_available_date": "2019-10-09T17:00:00Z",
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "I'm Really Just an Ordinary High School Student",
+      "seo_description": "",
+      "is_clip": false,
+      "series_id": "GY8DP4JDY",
+      "season_sequence_number": 1,
+      "mature_blocked": false,
+      "premium_date": null,
+      "upload_date": "2019-10-03T00:30:00+09:00",
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "episode_number": 1,
+      "slug": "",
+      "season_display_number": "",
+      "episode_air_date": "2019-10-03T00:30:00+09:00",
+      "identifier": "GY8DP4JDY|S1|E1",
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GXMFQN4EQ/streams",
+      "closed_captions_available": false,
+      "availability_status": "available",
+      "recent_variant": "",
+      "id": "GRDKJW4DY",
+      "is_premium_only": true,
+      "duration_ms": 1420150,
+      "seo_title": "",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "is_subbed": true,
+      "media_type": "episode",
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a7870bb32fb8069bedf81c408819e404.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a7870bb32fb8069bedf81c408819e404.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a7870bb32fb8069bedf81c408819e404.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a7870bb32fb8069bedf81c408819e404.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a7870bb32fb8069bedf81c408819e404.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a7870bb32fb8069bedf81c408819e404.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a7870bb32fb8069bedf81c408819e404.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a7870bb32fb8069bedf81c408819e404.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9b8e60e25033aee3dab789273ba28346.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9b8e60e25033aee3dab789273ba28346.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9b8e60e25033aee3dab789273ba28346.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9b8e60e25033aee3dab789273ba28346.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9b8e60e25033aee3dab789273ba28346.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9b8e60e25033aee3dab789273ba28346.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9b8e60e25033aee3dab789273ba28346.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9b8e60e25033aee3dab789273ba28346.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "episode_number": 2,
+      "media_type": "episode",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "premium_date": null,
+      "id": "GYVDJVK3Y",
+      "hd_flag": true,
+      "episode_air_date": "2019-10-10T00:30:00+09:00",
+      "roles": [
+        "main"
+      ],
+      "audio_locale": "ja-JP",
+      "recent_audio_locale": "ja-JP",
+      "title": "I'm Attacked by an Impossible Spiral",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_notes": "",
+      "sequence_number": 2,
+      "seo_description": "",
+      "production_episode_id": "",
+      "is_clip": false,
+      "is_dubbed": false,
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "seo_title": "",
+      "listing_id": "",
+      "season_sequence_number": 1,
+      "slug_title": "im-attacked-by-an-impossible-spiral",
+      "series_id": "GY8DP4JDY",
+      "available_date": null,
+      "description": "Who would've thought my dream of a high school life would run off the rails and go down a thorny path so quickly, all because of an improbable \"double confession of love\"? Oh, hello. I'm Joro. Don't worry! I haven't given up on the idea of a \"harem high school life\" just yet. ",
+      "free_available_date": "2019-10-16T17:00:00Z",
+      "episode": "2",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_mature": false,
+      "next_episode_id": "GY8DP918Y",
+      "availability_starts": "2019-10-09T17:00:00Z",
+      "availability_status": "available",
+      "streams_link": "/content/v2/cms/videos/G4GFQP75W/streams",
+      "closed_captions_available": false,
+      "recent_variant": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYVDJVK3Y",
+          "is_premium_only": true,
+          "media_guid": "G4GFQP75W",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "mature_blocked": false,
+      "season_id": "GRZJVEQ46",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "eligible_region": "CA",
+      "duration_ms": 1420078,
+      "premium_available_date": "2019-10-09T17:00:00Z",
+      "upload_date": "2019-10-10T00:30:00+09:00",
+      "slug": "",
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "is_subbed": true,
+      "season_display_number": "",
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "channel_id": "crunchyroll",
+      "season_number": 1,
+      "identifier": "GY8DP4JDY|S1|E2",
+      "is_premium_only": true,
+      "available_offline": true,
+      "next_episode_title": "I Met You Before"
+    },
+    {
+      "id": "GY8DP918Y",
+      "production_episode_id": "",
+      "duration_ms": 1420102,
+      "season_display_number": "",
+      "availability_starts": "2019-10-16T17:00:00Z",
+      "slug_title": "i-met-you-before",
+      "hd_flag": true,
+      "episode": "3",
+      "available_date": null,
+      "mature_blocked": false,
+      "sequence_number": 3,
+      "roles": [
+        "main"
+      ],
+      "identifier": "GY8DP4JDY|S1|E3",
+      "media_type": "episode",
+      "series_id": "GY8DP4JDY",
+      "is_clip": false,
+      "title": "I Met You Before",
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "description": "It's over. It's all over. One misunderstanding led to the next and now both Himawari and Cosmos are disgusted with me.",
+      "next_episode_title": "The Results of My Hard Work",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "seo_title": "",
+      "slug": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "recent_audio_locale": "ja-JP",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "episode_number": 3,
+      "is_premium_only": true,
+      "audio_locale": "ja-JP",
+      "premium_date": null,
+      "listing_id": "",
+      "seo_description": "",
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY8DP918Y",
+          "is_premium_only": true,
+          "media_guid": "G1QF48P75",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8152ce55bd2e8bf6e9ca841ff5caad74.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8152ce55bd2e8bf6e9ca841ff5caad74.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8152ce55bd2e8bf6e9ca841ff5caad74.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8152ce55bd2e8bf6e9ca841ff5caad74.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8152ce55bd2e8bf6e9ca841ff5caad74.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8152ce55bd2e8bf6e9ca841ff5caad74.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8152ce55bd2e8bf6e9ca841ff5caad74.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8152ce55bd2e8bf6e9ca841ff5caad74.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "free_available_date": "2019-10-23T17:00:00Z",
+      "season_id": "GRZJVEQ46",
+      "closed_captions_available": false,
+      "season_number": 1,
+      "premium_available_date": "2019-10-16T17:00:00Z",
+      "available_offline": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_id": "GR1XWK8GR",
+      "season_sequence_number": 1,
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "is_mature": false,
+      "is_subbed": true,
+      "streams_link": "/content/v2/cms/videos/G1QF48P75/streams",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "recent_variant": "",
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2019-10-17T00:30:00+09:00",
+      "is_dubbed": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "upload_date": "2019-10-17T00:30:00+09:00"
+    },
+    {
+      "recent_audio_locale": "ja-JP",
+      "duration_ms": 1420102,
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "is_dubbed": false,
+      "availability_notes": "",
+      "available_offline": true,
+      "season_id": "GRZJVEQ46",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR1XWK8GR",
+          "is_premium_only": true,
+          "media_guid": "GJKF241WD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "is_mature": false,
+      "episode": "4",
+      "season_display_number": "",
+      "is_premium_only": true,
+      "production_episode_id": "",
+      "hd_flag": true,
+      "seo_description": "",
+      "recent_variant": "",
+      "next_episode_title": "I Thought It Was Working Out Too Well For Me",
+      "title": "The Results of My Hard Work",
+      "id": "GR1XWK8GR",
+      "seo_title": "",
+      "audio_locale": "ja-JP",
+      "description": "With the \"mastermind\" exposed and the misunderstandings about my \"evil deeds\" cleared up to the student body's satisfaction, my peaceful everyday life resumes. But there's still something I haven't gotten back!",
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "availability_starts": "2019-10-23T17:00:00Z",
+      "closed_captions_available": false,
+      "season_number": 1,
+      "upload_date": "2019-10-24T00:30:00+09:00",
+      "episode_air_date": "2019-10-24T00:30:00+09:00",
+      "sequence_number": 4,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f15c92a90eb2767a1ff132f562784d28.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f15c92a90eb2767a1ff132f562784d28.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f15c92a90eb2767a1ff132f562784d28.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f15c92a90eb2767a1ff132f562784d28.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f15c92a90eb2767a1ff132f562784d28.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f15c92a90eb2767a1ff132f562784d28.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f15c92a90eb2767a1ff132f562784d28.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f15c92a90eb2767a1ff132f562784d28.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_clip": false,
+      "free_available_date": "2019-10-30T17:00:00Z",
+      "is_subbed": true,
+      "mature_blocked": false,
+      "next_episode_id": "G63K01QZ6",
+      "slug_title": "the-results-of-my-hard-work",
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "channel_id": "crunchyroll",
+      "roles": [
+        "main"
+      ],
+      "season_sequence_number": 1,
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "premium_date": null,
+      "available_date": null,
+      "availability_status": "available",
+      "streams_link": "/content/v2/cms/videos/GJKF241WD/streams",
+      "identifier": "GY8DP4JDY|S1|E4",
+      "premium_available_date": "2019-10-23T17:00:00Z",
+      "episode_number": 4,
+      "series_id": "GY8DP4JDY",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "listing_id": "",
+      "eligible_region": "CA"
+    },
+    {
+      "closed_captions_available": false,
+      "episode_air_date": "2019-10-31T00:30:00+09:00",
+      "title": "I Thought It Was Working Out Too Well For Me",
+      "streams_link": "/content/v2/cms/videos/GNJFD5JM8/streams",
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_subbed": true,
+      "free_available_date": "2019-11-06T18:00:00Z",
+      "upload_date": "2019-10-31T00:30:00+09:00",
+      "sequence_number": 5,
+      "premium_available_date": "2019-10-30T17:00:00Z",
+      "season_id": "GRZJVEQ46",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "recent_audio_locale": "ja-JP",
+      "duration_ms": 1420102,
+      "production_episode_id": "",
+      "availability_starts": "2019-10-30T17:00:00Z",
+      "audio_locale": "ja-JP",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "roles": [
+        "main"
+      ],
+      "is_premium_only": true,
+      "is_dubbed": false,
+      "is_mature": false,
+      "available_offline": true,
+      "season_sequence_number": 1,
+      "season_display_number": "",
+      "series_id": "GY8DP4JDY",
+      "episode": "5",
+      "recent_variant": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "is_clip": false,
+      "next_episode_title": "When I Need to Say Something, I'll Say It",
+      "availability_notes": "",
+      "available_date": null,
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "slug_title": "i-thought-it-was-working-out-too-well-for-me",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "media_type": "episode",
+      "availability_status": "available",
+      "description": "The exciting springtime of my life! I'm surrounded by beautiful giggling, jiggling girls! Wait, what the hell is this? Hey, Asunaro, you're with the newspaper club! What's this about me being the \"enemy of all women\" and going out with Himawari, Cosmos, and Pansy at the same time?",
+      "seo_description": "",
+      "next_episode_id": "GRVD5DEQR",
+      "episode_number": 5,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G63K01QZ6",
+          "is_premium_only": true,
+          "media_guid": "GNJFD5JM8",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9869ac6ef44ae763575b6ca889bb0f28.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9869ac6ef44ae763575b6ca889bb0f28.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9869ac6ef44ae763575b6ca889bb0f28.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9869ac6ef44ae763575b6ca889bb0f28.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9869ac6ef44ae763575b6ca889bb0f28.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9869ac6ef44ae763575b6ca889bb0f28.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9869ac6ef44ae763575b6ca889bb0f28.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9869ac6ef44ae763575b6ca889bb0f28.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "id": "G63K01QZ6",
+      "premium_date": null,
+      "identifier": "GY8DP4JDY|S1|E5",
+      "listing_id": "",
+      "slug": "",
+      "season_number": 1,
+      "seo_title": ""
+    },
+    {
+      "id": "GRVD5DEQR",
+      "season_id": "GRZJVEQ46",
+      "premium_available_date": "2019-11-06T17:00:00Z",
+      "slug": "",
+      "is_dubbed": false,
+      "closed_captions_available": false,
+      "is_subbed": true,
+      "duration_ms": 1420102,
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "availability_notes": "",
+      "slug_title": "when-i-need-to-say-something-ill-say-it",
+      "available_offline": true,
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "mature_blocked": false,
+      "audio_locale": "ja-JP",
+      "seo_description": "",
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "roles": [
+        "main"
+      ],
+      "description": "If there is a \"god of inconvenience,\" he must love me! One minor slip-up and the \"Three-timing Joro\" article was circulated all over the school! I was back in the pit of despair when who should yank me out but the author of the article herself, Asunaro of the newspaper club.",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ddba8295069cc6bcdad08b0a477760d6.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ddba8295069cc6bcdad08b0a477760d6.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ddba8295069cc6bcdad08b0a477760d6.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ddba8295069cc6bcdad08b0a477760d6.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ddba8295069cc6bcdad08b0a477760d6.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ddba8295069cc6bcdad08b0a477760d6.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ddba8295069cc6bcdad08b0a477760d6.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ddba8295069cc6bcdad08b0a477760d6.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_number": 6,
+      "is_clip": false,
+      "is_mature": false,
+      "sequence_number": 6,
+      "available_date": null,
+      "is_premium_only": true,
+      "eligible_region": "CA",
+      "identifier": "GY8DP4JDY|S1|E6",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "listing_id": "",
+      "streams_link": "/content/v2/cms/videos/GKKF37GJJ/streams",
+      "free_available_date": "2019-11-13T17:00:00Z",
+      "availability_starts": "2019-11-06T17:00:00Z",
+      "hd_flag": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "next_episode_title": "I Discover an Unexpected Side",
+      "season_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRVD5DEQR",
+          "is_premium_only": true,
+          "media_guid": "GKKF37GJJ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "next_episode_id": "GR9V1XE36",
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "title": "When I Need to Say Something, I'll Say It",
+      "series_id": "GY8DP4JDY",
+      "availability_status": "available",
+      "episode": "6",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "recent_audio_locale": "ja-JP",
+      "seo_title": "",
+      "season_display_number": "",
+      "recent_variant": "",
+      "premium_date": null,
+      "episode_air_date": "2019-11-07T00:30:00+09:00",
+      "channel_id": "crunchyroll",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "upload_date": "2019-11-07T00:30:00+09:00",
+      "media_type": "episode"
+    },
+    {
+      "availability_notes": "",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "id": "GR9V1XE36",
+      "available_offline": true,
+      "is_mature": false,
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "season_number": 1,
+      "duration_ms": 1420102,
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "is_clip": false,
+      "slug_title": "i-discover-an-unexpected-side",
+      "audio_locale": "ja-JP",
+      "eligible_region": "CA",
+      "episode": "7",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b2f9c9844af6a6090439ccc734b10a20.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b2f9c9844af6a6090439ccc734b10a20.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b2f9c9844af6a6090439ccc734b10a20.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b2f9c9844af6a6090439ccc734b10a20.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b2f9c9844af6a6090439ccc734b10a20.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b2f9c9844af6a6090439ccc734b10a20.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b2f9c9844af6a6090439ccc734b10a20.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b2f9c9844af6a6090439ccc734b10a20.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "listing_id": "",
+      "mature_blocked": false,
+      "title": "I Discover an Unexpected Side",
+      "production_episode_id": "",
+      "episode_number": 7,
+      "seo_title": "",
+      "recent_audio_locale": "ja-JP",
+      "identifier": "GY8DP4JDY|S1|E7",
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2019-11-14T00:30:00+09:00",
+      "is_premium_only": true,
+      "available_date": null,
+      "availability_status": "available",
+      "is_subbed": true,
+      "recent_variant": "",
+      "premium_date": null,
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "next_episode_title": "Before I Knew it, My Tragedy Had Already Begun",
+      "next_episode_id": "GRG5E4JWR",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "season_display_number": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR9V1XE36",
+          "is_premium_only": true,
+          "media_guid": "GM8FXJE2K",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/GM8FXJE2K/streams",
+      "season_sequence_number": 1,
+      "series_id": "GY8DP4JDY",
+      "free_available_date": "2019-11-20T17:00:00Z",
+      "seo_description": "",
+      "is_dubbed": false,
+      "premium_available_date": "2019-11-13T17:00:00Z",
+      "description": "At last, the time has come! With the Flower Dance accomplished, we get a deserving day off. And there's only one place to go! That's right, a pool! ",
+      "hd_flag": true,
+      "sequence_number": 7,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "upload_date": "2019-11-14T00:30:00+09:00",
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "availability_starts": "2019-11-13T17:00:00Z",
+      "season_id": "GRZJVEQ46",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "roles": [
+        "main"
+      ],
+      "slug": ""
+    },
+    {
+      "slug": "",
+      "closed_captions_available": false,
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "free_available_date": "2019-11-27T17:00:00Z",
+      "seo_description": "",
+      "episode_air_date": "2019-11-21T00:30:00+09:00",
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "premium_available_date": "2019-11-20T17:00:00Z",
+      "duration_ms": 1420102,
+      "slug_title": "before-i-knew-it-my-tragedy-had-already-begun",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "is_subbed": true,
+      "title": "Before I Knew it, My Tragedy Had Already Begun",
+      "premium_date": null,
+      "series_id": "GY8DP4JDY",
+      "upload_date": "2019-11-21T00:30:00+09:00",
+      "season_sequence_number": 1,
+      "audio_locale": "ja-JP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f933f3901253670393a2352c17316515.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f933f3901253670393a2352c17316515.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f933f3901253670393a2352c17316515.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f933f3901253670393a2352c17316515.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f933f3901253670393a2352c17316515.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f933f3901253670393a2352c17316515.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f933f3901253670393a2352c17316515.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f933f3901253670393a2352c17316515.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "eligible_region": "CA",
+      "sequence_number": 8,
+      "episode_number": 8,
+      "season_number": 1,
+      "identifier": "GY8DP4JDY|S1|E8",
+      "is_mature": false,
+      "id": "GRG5E4JWR",
+      "is_dubbed": false,
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "availability_notes": "",
+      "description": "\"From now on I'll do everything I can for you with all my heart.\" That's what the new girl at school said to me! Finally a kind girl appears before me… Yeah, right!",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "next_episode_title": "My Conclusion After Much Consideration",
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "media_type": "episode",
+      "recent_variant": "",
+      "roles": [
+        "main"
+      ],
+      "available_date": null,
+      "next_episode_id": "GR3K0MQXR",
+      "is_clip": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "streams_link": "/content/v2/cms/videos/GVMF0D8E9/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRG5E4JWR",
+          "is_premium_only": true,
+          "media_guid": "GVMF0D8E9",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "is_premium_only": true,
+      "episode": "8",
+      "season_display_number": "",
+      "channel_id": "crunchyroll",
+      "season_id": "GRZJVEQ46",
+      "recent_audio_locale": "ja-JP",
+      "seo_title": "",
+      "available_offline": true,
+      "hd_flag": true,
+      "availability_status": "available",
+      "listing_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "mature_blocked": false,
+      "availability_starts": "2019-11-20T17:00:00Z"
+    },
+    {
+      "title": "My Conclusion After Much Consideration",
+      "next_episode_id": "GYW4W0XN6",
+      "is_premium_only": true,
+      "production_episode_id": "",
+      "roles": [
+        "main"
+      ],
+      "episode": "9",
+      "hd_flag": true,
+      "available_offline": true,
+      "availability_notes": "",
+      "closed_captions_available": false,
+      "season_id": "GRZJVEQ46",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "episode_number": 9,
+      "season_sequence_number": 1,
+      "series_id": "GY8DP4JDY",
+      "duration_ms": 1420102,
+      "availability_status": "available",
+      "slug": "",
+      "identifier": "GY8DP4JDY|S1|E9",
+      "id": "GR3K0MQXR",
+      "premium_date": null,
+      "episode_air_date": "2019-11-28T00:30:00+09:00",
+      "media_type": "episode",
+      "is_mature": false,
+      "seo_title": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "free_available_date": "2019-12-04T17:00:00Z",
+      "description": "I start working at Tsubaki's shop so I can afford to buy Pansy another copy of her book! It's rough since I'm not used to the job, but at this rate, I should be able to manage… Ahhh! I messed up big time!",
+      "recent_variant": "",
+      "is_subbed": true,
+      "audio_locale": "ja-JP",
+      "available_date": null,
+      "season_display_number": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "sequence_number": 9,
+      "recent_audio_locale": "ja-JP",
+      "premium_available_date": "2019-11-27T17:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1e26e3cdfb41077ad3673007d5aa896a.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1e26e3cdfb41077ad3673007d5aa896a.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1e26e3cdfb41077ad3673007d5aa896a.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1e26e3cdfb41077ad3673007d5aa896a.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1e26e3cdfb41077ad3673007d5aa896a.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1e26e3cdfb41077ad3673007d5aa896a.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1e26e3cdfb41077ad3673007d5aa896a.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1e26e3cdfb41077ad3673007d5aa896a.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "streams_link": "/content/v2/cms/videos/G3WFXMV1Z/streams",
+      "season_number": 1,
+      "is_dubbed": false,
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "slug_title": "my-conclusion-after-much-consideration",
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "channel_id": "crunchyroll",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "next_episode_title": "I Politely Move Things Forward",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR3K0MQXR",
+          "is_premium_only": true,
+          "media_guid": "G3WFXMV1Z",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "upload_date": "2019-11-28T00:30:00+09:00",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "listing_id": "",
+      "eligible_region": "CA",
+      "seo_description": "",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "is_clip": false,
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_starts": "2019-11-27T17:00:00Z"
+    },
+    {
+      "next_episode_id": "G6J0XN94R",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "season_sequence_number": 1,
+      "availability_starts": "2019-12-04T17:00:00Z",
+      "availability_notes": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "closed_captions_available": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f0a82c3e428ea7182b3b3a8834249ded.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f0a82c3e428ea7182b3b3a8834249ded.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f0a82c3e428ea7182b3b3a8834249ded.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f0a82c3e428ea7182b3b3a8834249ded.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f0a82c3e428ea7182b3b3a8834249ded.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f0a82c3e428ea7182b3b3a8834249ded.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f0a82c3e428ea7182b3b3a8834249ded.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f0a82c3e428ea7182b3b3a8834249ded.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "listing_id": "",
+      "seo_title": "",
+      "next_episode_title": "Even I'm Useful Once in a While",
+      "upload_date": "2019-12-05T00:30:00+09:00",
+      "season_id": "GRZJVEQ46",
+      "is_clip": false,
+      "premium_date": null,
+      "is_subbed": true,
+      "free_available_date": "2019-12-11T17:00:00Z",
+      "identifier": "GY8DP4JDY|S1|E9.5",
+      "seo_description": "",
+      "slug": "",
+      "audio_locale": "ja-JP",
+      "available_offline": true,
+      "eligible_region": "CA",
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_display_number": "",
+      "series_id": "GY8DP4JDY",
+      "mature_blocked": false,
+      "media_type": "episode",
+      "availability_status": "available",
+      "channel_id": "crunchyroll",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYW4W0XN6",
+          "is_premium_only": true,
+          "media_guid": "GPPFKW87Z",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "title": "I Politely Move Things Forward",
+      "id": "GYW4W0XN6",
+      "hd_flag": true,
+      "slug_title": "i-politely-move-things-forward",
+      "is_dubbed": false,
+      "is_premium_only": true,
+      "recent_audio_locale": "ja-JP",
+      "premium_available_date": "2019-12-04T17:00:00Z",
+      "sequence_number": 9.5,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "production_episode_id": "",
+      "available_date": null,
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "streams_link": "/content/v2/cms/videos/GPPFKW87Z/streams",
+      "is_mature": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_number": null,
+      "episode_air_date": "2019-12-05T00:30:00+09:00",
+      "description": "You've got to be kidding me! Why did it all happen this way? Let's take the time now to politely reflect on everything.",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "duration_ms": 1420102,
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "episode": "9.5",
+      "roles": [
+        "main"
+      ],
+      "season_number": 1,
+      "recent_variant": ""
+    },
+    {
+      "season_number": 1,
+      "season_display_number": "",
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6J0XN94R",
+          "is_premium_only": true,
+          "media_guid": "G25F0ZNKG",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "premium_available_date": "2019-12-11T17:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "free_available_date": "2019-12-18T17:00:00Z",
+      "next_episode_title": "I May Not Be Needed",
+      "availability_notes": "",
+      "roles": [
+        "main"
+      ],
+      "season_sequence_number": 1,
+      "sequence_number": 10,
+      "upload_date": "2019-12-12T00:30:00+09:00",
+      "next_episode_id": "GYQWDXJQY",
+      "series_id": "GY8DP4JDY",
+      "availability_starts": "2019-12-11T17:00:00Z",
+      "premium_date": null,
+      "season_id": "GRZJVEQ46",
+      "availability_status": "available",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "episode": "10",
+      "is_dubbed": false,
+      "mature_blocked": false,
+      "channel_id": "crunchyroll",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "description": "Now what does this dummy want? Baseball team manager Kimie Kamata (nickname: Tampopo) suddenly drags me into the science lab. You probably think she's a cute girl since she's got a flower nickname, right? Well, that’s true. Tampopo is cute… but… but… ",
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/G25F0ZNKG/streams",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "available_offline": true,
+      "seo_title": "",
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "identifier": "GY8DP4JDY|S1|E10",
+      "is_premium_only": true,
+      "recent_audio_locale": "ja-JP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "seo_description": "",
+      "title": "Even I'm Useful Once in a While",
+      "listing_id": "",
+      "is_subbed": true,
+      "slug": "",
+      "episode_air_date": "2019-12-12T00:30:00+09:00",
+      "id": "G6J0XN94R",
+      "is_clip": false,
+      "closed_captions_available": false,
+      "available_date": null,
+      "duration_ms": 1420102,
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "media_type": "episode",
+      "episode_number": 10,
+      "is_mature": false,
+      "slug_title": "even-im-useful-once-in-a-while",
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/af5dbdd096bc70c90523730626ba5b13.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/af5dbdd096bc70c90523730626ba5b13.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/af5dbdd096bc70c90523730626ba5b13.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/af5dbdd096bc70c90523730626ba5b13.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/af5dbdd096bc70c90523730626ba5b13.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/af5dbdd096bc70c90523730626ba5b13.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/af5dbdd096bc70c90523730626ba5b13.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/af5dbdd096bc70c90523730626ba5b13.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "hd_flag": true
+    },
+    {
+      "closed_captions_available": false,
+      "recent_variant": "",
+      "series_id": "GY8DP4JDY",
+      "season_id": "GRZJVEQ46",
+      "title": "I May Not Be Needed",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7f6b0c0c8e35989464e65be4dc5bbe48.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7f6b0c0c8e35989464e65be4dc5bbe48.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7f6b0c0c8e35989464e65be4dc5bbe48.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7f6b0c0c8e35989464e65be4dc5bbe48.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7f6b0c0c8e35989464e65be4dc5bbe48.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7f6b0c0c8e35989464e65be4dc5bbe48.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7f6b0c0c8e35989464e65be4dc5bbe48.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7f6b0c0c8e35989464e65be4dc5bbe48.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "duration_ms": 1420030,
+      "is_clip": false,
+      "availability_notes": "",
+      "description": "It's been decided that the school library will close for lack of people who use it! Cosmos did her best to stop it, but it wasn't enough. But apparently, if the library gets more traffic from students, it'll be saved!",
+      "streams_link": "/content/v2/cms/videos/G8MFN97XJ/streams",
+      "media_type": "episode",
+      "is_dubbed": false,
+      "sequence_number": 11,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "next_episode_id": "GYJ0X4746",
+      "slug_title": "i-may-not-be-needed",
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_subbed": true,
+      "eligible_region": "CA",
+      "audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "slug": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYQWDXJQY",
+          "is_premium_only": true,
+          "media_guid": "G8MFN97XJ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "episode": "11",
+      "seo_description": "",
+      "premium_available_date": "2019-12-18T17:00:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "availability_starts": "2019-12-18T17:00:00Z",
+      "premium_date": null,
+      "episode_air_date": "2019-12-19T00:30:00+09:00",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "roles": [
+        "main"
+      ],
+      "id": "GYQWDXJQY",
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "next_episode_title": "The One I Love Is…",
+      "available_date": null,
+      "free_available_date": "2019-12-25T17:00:00Z",
+      "availability_status": "available",
+      "episode_number": 11,
+      "identifier": "GY8DP4JDY|S1|E11",
+      "recent_audio_locale": "ja-JP",
+      "season_display_number": "",
+      "is_premium_only": true,
+      "season_sequence_number": 1,
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "listing_id": "",
+      "hd_flag": true,
+      "available_offline": true,
+      "upload_date": "2019-12-19T00:30:00+09:00",
+      "is_mature": false,
+      "season_number": 1,
+      "channel_id": "crunchyroll",
+      "series_title": "ORESUKI Are you the only one who loves me?"
+    },
+    {
+      "streams_link": "/content/v2/cms/videos/GZ4FVNDZQ/streams",
+      "slug": "",
+      "episode_number": 12,
+      "upload_date": "2019-12-26T00:30:00+09:00",
+      "availability_status": "available",
+      "hd_flag": true,
+      "availability_notes": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "season_sequence_number": 1,
+      "series_id": "GY8DP4JDY",
+      "media_type": "episode",
+      "description": "Huh? What are you talking about, Pansy? You already have someone who's promised to be your boyfriend? And it's… ",
+      "identifier": "GY8DP4JDY|S1|E12",
+      "next_episode_id": "GRXJXK0PY",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "is_mature": false,
+      "roles": [
+        "main"
+      ],
+      "title": "The One I Love Is…",
+      "free_available_date": "2020-01-01T17:00:00Z",
+      "premium_date": null,
+      "closed_captions_available": false,
+      "next_episode_title": "Our Playball / Our End Run / Our Game",
+      "sequence_number": 12,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "audio_locale": "ja-JP",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "duration_ms": 1420078,
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "season_display_number": "",
+      "slug_title": "the-one-i-love-is",
+      "is_dubbed": false,
+      "recent_variant": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/0a7fc72064ad566f8e740dfd9dbde256.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/0a7fc72064ad566f8e740dfd9dbde256.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/0a7fc72064ad566f8e740dfd9dbde256.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/0a7fc72064ad566f8e740dfd9dbde256.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0a7fc72064ad566f8e740dfd9dbde256.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/0a7fc72064ad566f8e740dfd9dbde256.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/0a7fc72064ad566f8e740dfd9dbde256.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/0a7fc72064ad566f8e740dfd9dbde256.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_date": null,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2019-12-26T00:30:00+09:00",
+      "listing_id": "",
+      "seo_description": "",
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "season_number": 1,
+      "production_episode_id": "",
+      "mature_blocked": false,
+      "id": "GYJ0X4746",
+      "episode": "12",
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "seo_title": "",
+      "season_id": "GRZJVEQ46",
+      "available_offline": true,
+      "premium_available_date": "2019-12-25T17:00:00Z",
+      "is_clip": false,
+      "is_subbed": true,
+      "availability_starts": "2019-12-25T17:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYJ0X4746",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVNDZQ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "is_premium_only": true,
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_ends": "9998-11-30T08:00:00Z"
+    },
+    {
+      "availability_status": "available",
+      "roles": [
+        "main"
+      ],
+      "duration_ms": 4225331,
+      "production_episode_id": "",
+      "premium_available_date": "2020-09-02T03:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "episode": "13-15",
+      "season_number": 1,
+      "is_dubbed": false,
+      "series_id": "GY8DP4JDY",
+      "season_sequence_number": 1,
+      "slug_title": "our-playball--our-end-run--our-game",
+      "series_title": "ORESUKI Are you the only one who loves me?",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "upload_date": "2020-09-02T11:00:00+09:00",
+      "availability_starts": "2020-09-02T03:00:00Z",
+      "is_mature": false,
+      "episode_air_date": "2020-09-02T11:00:00+09:00",
+      "series_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "mature_blocked": false,
+      "season_slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "listing_id": "",
+      "free_available_date": "2020-09-09T03:00:00Z",
+      "premium_date": null,
+      "description": "I'm in a challenge with the superman rom-com protagonist of the century, Hose, with Pansy on the line! The stage is the regional championship baseball tournament! Obviously, I'll fight Hose fair and square… as if! He's better than me in all respects, so of course I'm going to use dirty tricks!",
+      "streams_link": "/content/v2/cms/videos/G9XFEW5PW/streams",
+      "season_display_number": "",
+      "hd_flag": true,
+      "availability_notes": "",
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRXJXK0PY",
+          "is_premium_only": true,
+          "media_guid": "G9XFEW5PW",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRZJVEQ46",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "ja-JP",
+      "seo_title": "",
+      "is_subbed": true,
+      "is_clip": false,
+      "identifier": "GY8DP4JDY|S1|E13",
+      "slug": "",
+      "season_title": "ORESUKI Are you the only one who loves me?",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d7121a3a5b6b5fbd05a61edb49557400.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d7121a3a5b6b5fbd05a61edb49557400.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d7121a3a5b6b5fbd05a61edb49557400.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d7121a3a5b6b5fbd05a61edb49557400.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d7121a3a5b6b5fbd05a61edb49557400.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d7121a3a5b6b5fbd05a61edb49557400.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d7121a3a5b6b5fbd05a61edb49557400.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d7121a3a5b6b5fbd05a61edb49557400.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "id": "GRXJXK0PY",
+      "season_id": "GRZJVEQ46",
+      "available_date": null,
+      "sequence_number": 13,
+      "title": "Our Playball / Our End Run / Our Game",
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "episode_number": 13,
+      "media_type": "episode",
+      "is_premium_only": true,
+      "available_offline": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "closed_captions_available": false,
+      "seo_description": ""
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

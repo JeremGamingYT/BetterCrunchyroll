@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "id": "GRVNC2EN1",
+      "channel_id": "crunchyroll",
+      "title": "My Hero Academia: Two Heroes",
+      "slug_title": "my-hero-academia-two-heroes",
+      "series_id": "GMEHME5WK",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP",
+        "en-US"
+      ],
+      "subtitle_locales": [
+        "en-US"
+      ],
+      "audio_locale": "en-US",
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "GRVNC2EN1",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GMEHME5WK|M1",
+      "number_of_episodes": 1
+    },
+    {
+      "id": "GRQ4CZ2W0",
+      "channel_id": "crunchyroll",
+      "title": "My Hero Academia: Heroes Rising",
+      "slug_title": "my-hero-academia-heroes-rising",
+      "series_id": "GMEHME5WK",
+      "season_display_number": "",
+      "season_sequence_number": 2,
+      "season_number": 7,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRQ4CZ2W0",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GRX0C402D",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G619CPM5E",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GMEHME5WK|M2",
+      "number_of_episodes": 1
+    },
+    {
+      "id": "GR49C78D3",
+      "channel_id": "crunchyroll",
+      "title": "My Hero Academia: You're Next",
+      "slug_title": "my-hero-academia-youre-next-french-dub",
+      "series_id": "GMEHME5WK",
+      "season_display_number": "",
+      "season_sequence_number": 4,
+      "season_number": 45,
+      "is_complete": false,
+      "description": "Dans une société où les héros et les vilains s'affrontent continuellement au nom de la paix et du chaos, Deku, un étudiant du lycée U.A. qui aspire à devenir le meilleur héros possible, affronte celui qui imite le héros qu'il admire depuis longtemps. Deku et les autres élèves de la classe 1-A du lycée U.A. pourront-ils protéger le monde en mettant fin aux agissements de Dark Might, l'homme qui prétend être le nouveau symbole de la paix ?",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": true,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR75CDJ8N",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GR9PC2G4K",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G6X0C4Z2N",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GR49C78D3",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GY19CPG5X",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GRJQC1EKX",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G6NQCJV0G",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GRK5CNDW5",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GRMGC3G07",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GMEHME5WK|M4",
+      "number_of_episodes": 1
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 3
+}

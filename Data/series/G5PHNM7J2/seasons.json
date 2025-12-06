@@ -1,0 +1,71 @@
+{
+  "data": [
+    {
+      "id": "GY75CDXND",
+      "channel_id": "crunchyroll",
+      "title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+      "slug_title": "the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady",
+      "series_id": "G5PHNM7J2",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Malgré sa supposée inaptitude à la magie ordinaire, la princesse Anisphia défie les attentes de l'aristocratie en développant la \"magicologie\", une théorie magique unique basée sur les souvenirs de sa vie passée. Un jour, elle est témoin de la chute injuste de la brillante noble Euphyllia, déchue de son titre de prochain monarque du royaume. C'est alors qu'Anisphia concocte un plan pour aider Euphyllia à retrouver sa bonne réputation, ce qui implique en quelque sorte qu'elles vivent ensemble et fassent des recherches sur la magie ! Mais ces deux dames sont loin de se douter que leur rencontre fortuite va modifier non seulement leur propre avenir, mais aussi celui du royaume… et du monde entier !",
+      "keywords": [],
+      "season_tags": [
+        "Hiver-2023"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": false,
+      "is_dubbed": false,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "pt-BR",
+        "it-IT",
+        "es-ES",
+        "fr-FR",
+        "de-DE",
+        "es-419",
+        "ru-RU",
+        "en-US",
+        "ar-SA"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY75CDXND",
+          "original": true,
+          "variant": ""
+        }
+      ],
+      "identifier": "G5PHNM7J2|S1",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

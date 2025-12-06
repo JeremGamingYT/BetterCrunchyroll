@@ -1,0 +1,308 @@
+{
+  "data": [
+    {
+      "id": "GYE5CQ5WX",
+      "channel_id": "crunchyroll",
+      "title": "JUJUTSU KAISEN",
+      "slug_title": "jujutsu-kaisen-french-dub",
+      "series_id": "GRDV0019R",
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6Q9GGV46",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GR09CXQMJ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GR75CDK31",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GR9PC2W90",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G6X0C4N21",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GYE5CQ5WX",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GYWEC3KX7",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G65VCD4PZ",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GRDV0019R|S1",
+      "number_of_episodes": 24
+    },
+    {
+      "id": "GRWEC3G02",
+      "channel_id": "crunchyroll",
+      "title": "JUJUTSU KAISEN 0",
+      "slug_title": "jujutsu-kaisen-0-french-dub",
+      "series_id": "GRDV0019R",
+      "season_display_number": "",
+      "season_sequence_number": 2,
+      "season_number": 18,
+      "is_complete": false,
+      "description": "Lorsqu’il était enfant, Yuta Okkotsu a vu son amie Rika Orimoto perdre la vie dans un terrible accident. Depuis, Rika vient hanter Yuta qui a même souhaité sa propre mort après avoir souffert des années de cette malédiction. Jusqu’au jour où le plus puissant des exorcistes, Satoru Gojo, l’a accueilli dans l’école d’exorcisme de Tokyo. Tandis que Yuta trouve enfin un nouveau sens à sa vie, une menace plane sur le monde. En effet, quelqu’un projette de déchaîner un millier de malédictions sur Shinjuku et Kyoto pour exterminer tous les non-exorcistes...",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6DQCGD78",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GYQ4CZ7WV",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GY5VCDWGV",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GRWEC3G02",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GRGGCV0PW",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "G609CX4EW",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GRE5CQKVQ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G675CD0N4",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G69PC27V9",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GRDV0019R|M",
+      "number_of_episodes": 1
+    },
+    {
+      "id": "G69PC2QG5",
+      "channel_id": "crunchyroll",
+      "title": "JUJUTSU KAISEN Season 2",
+      "slug_title": "jujutsu-kaisen-season-2-french-dub",
+      "series_id": "GRDV0019R",
+      "season_display_number": "2",
+      "season_sequence_number": 3,
+      "season_number": 2,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6MGC3778",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G6JQC1G97",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GRE5CQ2NE",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G609CX1J7",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ru-RU",
+          "guid": "GYX0C4GZW",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G649C7J85",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GR19CP09Q",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G675CDZJJ",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G69PC2QG5",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GRDV0019R|S2",
+      "number_of_episodes": 23
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 3
+}

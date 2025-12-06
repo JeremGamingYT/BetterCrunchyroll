@@ -1,0 +1,1844 @@
+{
+  "total": 10,
+  "data": [
+    {
+      "is_mature": false,
+      "season_sequence_number": 1,
+      "hd_flag": true,
+      "episode_air_date": "2025-10-02T00:00:00Z",
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "episode": "1",
+      "channel_id": "crunchyroll",
+      "listing_id": "",
+      "is_clip": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364842JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364842JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364842ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364842ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00364842ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00364842ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00364842PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00364842PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00364842DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00364842DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841DEDE",
+          "variant": ""
+        }
+      ],
+      "series_id": "GT00364840",
+      "eligible_region": "CA",
+      "season_slug_title": "season-1",
+      "episode_number": 1,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "premium_available_date": "2025-10-02T17:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6a2d2fd05dedd7e039882dc3d727d562.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6a2d2fd05dedd7e039882dc3d727d562.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6a2d2fd05dedd7e039882dc3d727d562.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6a2d2fd05dedd7e039882dc3d727d562.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6a2d2fd05dedd7e039882dc3d727d562.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6a2d2fd05dedd7e039882dc3d727d562.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6a2d2fd05dedd7e039882dc3d727d562.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6a2d2fd05dedd7e039882dc3d727d562.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_subbed": true,
+      "seo_description": "",
+      "next_episode_id": "GE00364844JAJP",
+      "description": "Melphiera est une jeune et jolie noble, mais à cause de ses goûts culinaires, nul ne veut l’approcher.",
+      "recent_audio_locale": "ja-JP",
+      "sequence_number": 1,
+      "availability_notes": "",
+      "roles": [
+        "main"
+      ],
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "next_episode_title": "Mariage et cadeau tombés du ciel",
+      "series_title": "Pass the Monster Meat, Milady!",
+      "season_id": "GS00364841JAJP",
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "availability_status": "available",
+      "season_display_number": "",
+      "seo_title": "",
+      "available_offline": true,
+      "premium_date": null,
+      "media_type": "episode",
+      "is_dubbed": true,
+      "season_number": 1,
+      "upload_date": "2025-10-02T00:00:00Z",
+      "id": "GE00364842JAJP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_title": "Saison 1",
+      "audio_locale": "ja-JP",
+      "slug_title": "a-jerky-is-a-promise-skatzbitt",
+      "identifier": "GT00364840|S00364841|E1",
+      "availability_starts": "2025-10-02T17:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GE00364842JAJPV/streams",
+      "title": "Viande séchée de Skatzbitt, symbole d’une promesse",
+      "mature_blocked": false,
+      "slug": "",
+      "duration_ms": 1454997,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "available_date": null
+    },
+    {
+      "season_title": "Saison 1",
+      "is_subbed": true,
+      "episode_number": 2,
+      "season_sequence_number": 1,
+      "audio_locale": "ja-JP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/46b31032961e07c4db0ba314075f56cd.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/46b31032961e07c4db0ba314075f56cd.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/46b31032961e07c4db0ba314075f56cd.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/46b31032961e07c4db0ba314075f56cd.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/46b31032961e07c4db0ba314075f56cd.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/46b31032961e07c4db0ba314075f56cd.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/46b31032961e07c4db0ba314075f56cd.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/46b31032961e07c4db0ba314075f56cd.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364844JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364844JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364844ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364844ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00364844ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00364844ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00364844DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00364844DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00364844PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00364844PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841PTBR",
+          "variant": ""
+        }
+      ],
+      "production_episode_id": "",
+      "mature_blocked": false,
+      "season_id": "GS00364841JAJP",
+      "availability_notes": "",
+      "is_clip": false,
+      "duration_ms": 1455081,
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "hd_flag": true,
+      "seo_description": "",
+      "is_dubbed": true,
+      "series_id": "GT00364840",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "premium_date": null,
+      "id": "GE00364844JAJP",
+      "season_slug_title": "season-1",
+      "season_number": 1,
+      "available_date": null,
+      "available_offline": true,
+      "listing_id": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "eligible_region": "CA",
+      "slug_title": "a-proposal-from-above-with-a-gift",
+      "next_episode_title": "Brochettes exquises flambées, Royal Moodler",
+      "slug": "",
+      "media_type": "episode",
+      "availability_starts": "2025-10-09T17:00:00Z",
+      "next_episode_id": "GE00364846JAJP",
+      "closed_captions_available": false,
+      "recent_audio_locale": "ja-JP",
+      "episode_air_date": "2025-10-09T00:00:00Z",
+      "recent_variant": "",
+      "premium_available_date": "2025-10-09T17:00:00Z",
+      "description": "Le père de Melphi reçoit une lettre qui le met dans tous ses états : le duc lui demande la main de sa fille.",
+      "season_display_number": "",
+      "channel_id": "crunchyroll",
+      "episode": "2",
+      "is_premium_only": true,
+      "is_mature": false,
+      "upload_date": "2025-10-09T00:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "seo_title": "",
+      "sequence_number": 2,
+      "identifier": "GT00364840|S00364841|E2",
+      "streams_link": "/content/v2/cms/videos/GE00364844JAJPV/streams",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "series_title": "Pass the Monster Meat, Milady!",
+      "title": "Mariage et cadeau tombés du ciel",
+      "availability_status": "available"
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_dubbed": true,
+      "next_episode_id": "GE00364848JAJP",
+      "seo_description": "",
+      "season_sequence_number": 1,
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "hd_flag": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "is_mature": false,
+      "availability_status": "available",
+      "title": "Brochettes exquises flambées, Royal Moodler",
+      "premium_available_date": "2025-10-16T17:00:00Z",
+      "id": "GE00364846JAJP",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "season_slug_title": "season-1",
+      "media_type": "episode",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364846JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364846JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364846ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364846ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00364846ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00364846ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00364846PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00364846PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00364846DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00364846DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841DEDE",
+          "variant": ""
+        }
+      ],
+      "listing_id": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "closed_captions_available": false,
+      "season_title": "Saison 1",
+      "season_id": "GS00364841JAJP",
+      "is_premium_only": true,
+      "next_episode_title": "Les colonnes de feu sonnent le départ",
+      "season_display_number": "",
+      "season_number": 1,
+      "episode_number": 3,
+      "series_id": "GT00364840",
+      "episode": "3",
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "available_offline": true,
+      "streams_link": "/content/v2/cms/videos/GE00364846JAJPV/streams",
+      "is_clip": false,
+      "audio_locale": "ja-JP",
+      "slug_title": "grilled-skewers-of-prime-meat-royal-moodle",
+      "availability_starts": "2025-10-16T17:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "available_date": null,
+      "roles": [
+        "main"
+      ],
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "identifier": "GT00364840|S00364841|E3",
+      "slug": "",
+      "series_title": "Pass the Monster Meat, Milady!",
+      "mature_blocked": false,
+      "sequence_number": 3,
+      "upload_date": "2025-10-16T00:00:00Z",
+      "description": "Melphi s’apprête à cuisiner le cadeau du duc, dont l’intérêt pour ses méthodes va crescendo.",
+      "seo_title": "",
+      "episode_air_date": "2025-10-16T00:00:00Z",
+      "availability_notes": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/887d5c3a78de38df939026104846ff0f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/887d5c3a78de38df939026104846ff0f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/887d5c3a78de38df939026104846ff0f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/887d5c3a78de38df939026104846ff0f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/887d5c3a78de38df939026104846ff0f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/887d5c3a78de38df939026104846ff0f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/887d5c3a78de38df939026104846ff0f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/887d5c3a78de38df939026104846ff0f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "duration_ms": 1455081,
+      "is_subbed": true
+    },
+    {
+      "series_id": "GT00364840",
+      "duration_ms": 1455039,
+      "seo_title": "",
+      "series_title": "Pass the Monster Meat, Milady!",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "description": "Melphiera a beaucoup de mal à croire en la sincérité du duc. Peut-elle vraiment lui faire confiance ?",
+      "episode_number": 4,
+      "is_clip": false,
+      "title": "Les colonnes de feu sonnent le départ",
+      "premium_available_date": "2025-10-23T17:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "episode": "4",
+      "season_display_number": "",
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e08ee818555de0a17dcc184a337cf51f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e08ee818555de0a17dcc184a337cf51f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e08ee818555de0a17dcc184a337cf51f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e08ee818555de0a17dcc184a337cf51f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e08ee818555de0a17dcc184a337cf51f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e08ee818555de0a17dcc184a337cf51f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e08ee818555de0a17dcc184a337cf51f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e08ee818555de0a17dcc184a337cf51f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "eligible_region": "CA",
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "available_date": null,
+      "season_title": "Saison 1",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_notes": "",
+      "season_number": 1,
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/GE00364848JAJPV/streams",
+      "recent_variant": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364848JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364848JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364848ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364848ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00364848DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00364848DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00364848ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00364848ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00364848PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00364848PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841PTBR",
+          "variant": ""
+        }
+      ],
+      "identifier": "GT00364840|S00364841|E4",
+      "closed_captions_available": false,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_sequence_number": 1,
+      "slug_title": "signaling-departure-with-a-pillar-of-flame",
+      "next_episode_id": "GE00364850JAJP",
+      "premium_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "seo_description": "",
+      "season_slug_title": "season-1",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_mature": false,
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "available_offline": true,
+      "sequence_number": 4,
+      "availability_status": "available",
+      "is_subbed": true,
+      "listing_id": "",
+      "season_id": "GS00364841JAJP",
+      "media_type": "episode",
+      "id": "GE00364848JAJP",
+      "audio_locale": "ja-JP",
+      "upload_date": "2025-10-23T00:00:00Z",
+      "next_episode_title": "Nuit au fort Ritterd",
+      "episode_air_date": "2025-10-23T00:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "availability_starts": "2025-10-23T17:00:00Z",
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_dubbed": true
+    },
+    {
+      "next_episode_title": "C'est la saison ! Poissomonstre frit, Zanas",
+      "available_offline": true,
+      "series_title": "Pass the Monster Meat, Milady!",
+      "availability_notes": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00364850JAJPV/streams",
+      "title": "Nuit au fort Ritterd",
+      "next_episode_id": "GE00364852JAJP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_mature": false,
+      "premium_available_date": "2025-10-30T17:00:00Z",
+      "recent_variant": "",
+      "channel_id": "crunchyroll",
+      "roles": [
+        "main"
+      ],
+      "sequence_number": 5,
+      "season_id": "GS00364841JAJP",
+      "eligible_region": "CA",
+      "id": "GE00364850JAJP",
+      "description": "En route vers le domaine du duc, Melphi préfère au confort d’une auberge une nuit dans un fort militaire.",
+      "availability_starts": "2025-10-30T17:00:00Z",
+      "season_slug_title": "season-1",
+      "is_premium_only": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "media_type": "episode",
+      "hd_flag": true,
+      "seo_title": "",
+      "is_clip": false,
+      "slug_title": "night-at-fort-ritterd",
+      "is_dubbed": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "recent_audio_locale": "ja-JP",
+      "episode_number": 5,
+      "seo_description": "",
+      "audio_locale": "ja-JP",
+      "upload_date": "2025-10-30T00:00:00Z",
+      "season_number": 1,
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "episode_air_date": "2025-10-30T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "closed_captions_available": false,
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e327294ec28b927c82ea6ffb3782ed04.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e327294ec28b927c82ea6ffb3782ed04.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e327294ec28b927c82ea6ffb3782ed04.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e327294ec28b927c82ea6ffb3782ed04.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e327294ec28b927c82ea6ffb3782ed04.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e327294ec28b927c82ea6ffb3782ed04.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e327294ec28b927c82ea6ffb3782ed04.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e327294ec28b927c82ea6ffb3782ed04.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_id": "GT00364840",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "season_title": "Saison 1",
+      "available_date": null,
+      "slug": "",
+      "identifier": "GT00364840|S00364841|E5",
+      "season_display_number": "",
+      "is_subbed": true,
+      "season_sequence_number": 1,
+      "availability_status": "available",
+      "production_episode_id": "",
+      "mature_blocked": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364850JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364850JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364850ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364850ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00364850PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00364850PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00364850DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00364850DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00364850ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00364850ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ES419",
+          "variant": ""
+        }
+      ],
+      "episode": "5",
+      "duration_ms": 1455039,
+      "premium_date": null
+    },
+    {
+      "roles": [
+        "main"
+      ],
+      "availability_status": "available",
+      "is_clip": false,
+      "slug_title": "in-season-battered-and-deep-fried-monster-fish",
+      "availability_notes": "",
+      "season_slug_title": "season-1",
+      "streams_link": "/content/v2/cms/videos/GE00364852JAJPV/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364852JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364852JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364852ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364852ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00364852DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00364852DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00364852PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00364852PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00364852ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00364852ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ES419",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "series_title": "Pass the Monster Meat, Milady!",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1455039,
+      "recent_audio_locale": "ja-JP",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "identifier": "GT00364840|S00364841|E6",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "closed_captions_available": false,
+      "is_dubbed": true,
+      "production_episode_id": "",
+      "audio_locale": "ja-JP",
+      "description": "Pendant la halte au fort, le duc capture un Zanas, un immense poisson qui intéresse beaucoup Melphi.",
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "hd_flag": true,
+      "premium_date": null,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "upload_date": "2025-11-06T00:00:00Z",
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_id": "GE00364854JAJP",
+      "is_subbed": true,
+      "seo_title": "",
+      "seo_description": "",
+      "is_premium_only": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "eligible_region": "CA",
+      "available_offline": true,
+      "sequence_number": 6,
+      "season_display_number": "",
+      "season_id": "GS00364841JAJP",
+      "episode_number": 6,
+      "episode": "6",
+      "episode_air_date": "2025-11-06T00:00:00Z",
+      "available_date": null,
+      "slug": "",
+      "next_episode_title": "Les héritiers du nom de Galbraith",
+      "premium_available_date": "2025-11-06T17:00:00Z",
+      "title": "C'est la saison ! Poissomonstre frit, Zanas",
+      "mature_blocked": false,
+      "availability_starts": "2025-11-06T17:00:00Z",
+      "listing_id": "",
+      "is_mature": false,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "id": "GE00364852JAJP",
+      "media_type": "episode",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/27819810bfde2e097458673d9596f4a2.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/27819810bfde2e097458673d9596f4a2.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/27819810bfde2e097458673d9596f4a2.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/27819810bfde2e097458673d9596f4a2.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/27819810bfde2e097458673d9596f4a2.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/27819810bfde2e097458673d9596f4a2.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/27819810bfde2e097458673d9596f4a2.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/27819810bfde2e097458673d9596f4a2.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_id": "GT00364840",
+      "season_number": 1,
+      "season_title": "Saison 1"
+    },
+    {
+      "title": "Les héritiers du nom de Galbraith",
+      "next_episode_id": "GE00364856JAJP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364854JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364854JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364854ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364854ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00364854PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00364854PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00364854ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00364854ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00364854DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00364854DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841DEDE",
+          "variant": ""
+        }
+      ],
+      "episode": "7",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "hd_flag": true,
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "id": "GE00364854JAJP",
+      "series_id": "GT00364840",
+      "premium_date": null,
+      "season_display_number": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_slug_title": "season-1",
+      "available_date": null,
+      "upload_date": "2025-11-13T00:00:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "production_episode_id": "",
+      "channel_id": "crunchyroll",
+      "is_mature": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "is_premium_only": true,
+      "identifier": "GT00364840|S00364841|E7",
+      "slug_title": "those-who-inherit-the-galbraith-name",
+      "season_id": "GS00364841JAJP",
+      "is_clip": false,
+      "media_type": "episode",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d39b8ca4f492578dfb677ab5aecb5662.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d39b8ca4f492578dfb677ab5aecb5662.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d39b8ca4f492578dfb677ab5aecb5662.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d39b8ca4f492578dfb677ab5aecb5662.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d39b8ca4f492578dfb677ab5aecb5662.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d39b8ca4f492578dfb677ab5aecb5662.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d39b8ca4f492578dfb677ab5aecb5662.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d39b8ca4f492578dfb677ab5aecb5662.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "episode_number": 7,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "availability_starts": "2025-11-13T17:00:00Z",
+      "eligible_region": "CA",
+      "next_episode_title": "Les usages des quartz nuageux",
+      "duration_ms": 1454955,
+      "listing_id": "",
+      "is_dubbed": true,
+      "series_title": "Pass the Monster Meat, Milady!",
+      "streams_link": "/content/v2/cms/videos/GE00364854JAJPV/streams",
+      "description": "Le duc expose à sa fiancée sa vision de l’existence, centrée sur celle du devoir. Melphi ne l’accepte pas.",
+      "is_subbed": true,
+      "roles": [
+        "main"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "season_sequence_number": 1,
+      "season_title": "Saison 1",
+      "mature_blocked": false,
+      "season_number": 1,
+      "slug": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "closed_captions_available": false,
+      "audio_locale": "ja-JP",
+      "episode_air_date": "2025-11-13T00:00:00Z",
+      "available_offline": true,
+      "availability_status": "available",
+      "premium_available_date": "2025-11-13T17:00:00Z",
+      "sequence_number": 7
+    },
+    {
+      "episode": "8",
+      "next_episode_title": "La décision de la Noble aux goûts étranges",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "closed_captions_available": false,
+      "season_display_number": "",
+      "season_id": "GS00364841JAJP",
+      "series_title": "Pass the Monster Meat, Milady!",
+      "upload_date": "2025-11-20T00:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364856JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364856JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00364856ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00364856ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00364841ENUS",
+          "variant": ""
+        }
+      ],
+      "sequence_number": 8,
+      "hd_flag": true,
+      "recent_audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "GE00364858JAJP",
+      "season_number": 1,
+      "is_subbed": true,
+      "available_date": null,
+      "available_offline": true,
+      "premium_date": null,
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "availability_notes": "",
+      "series_id": "GT00364840",
+      "is_dubbed": true,
+      "is_premium_only": true,
+      "title": "Les usages des quartz nuageux",
+      "season_title": "Saison 1",
+      "recent_variant": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 1,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/cbde4356dbe3c5dcf2634e6e2310e446.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/cbde4356dbe3c5dcf2634e6e2310e446.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/cbde4356dbe3c5dcf2634e6e2310e446.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/cbde4356dbe3c5dcf2634e6e2310e446.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/cbde4356dbe3c5dcf2634e6e2310e446.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/cbde4356dbe3c5dcf2634e6e2310e446.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/cbde4356dbe3c5dcf2634e6e2310e446.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/cbde4356dbe3c5dcf2634e6e2310e446.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "premium_available_date": "2025-11-20T17:00:00Z",
+      "availability_status": "available",
+      "is_mature": false,
+      "media_type": "episode",
+      "eligible_region": "CA",
+      "episode_air_date": "2025-11-20T00:00:00Z",
+      "season_slug_title": "season-1",
+      "slug": "",
+      "mature_blocked": false,
+      "audio_locale": "ja-JP",
+      "description": "Le Duc et son escorte n’arrivent pas à se défaire des monstres qui les attaquent. Melphi décide de les aider.",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "id": "GE00364856JAJP",
+      "channel_id": "crunchyroll",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00364856JAJPV/streams",
+      "listing_id": "",
+      "episode_number": 8,
+      "identifier": "GT00364840|S00364841|E8",
+      "slug_title": "uses-for-cloudy-quartz",
+      "is_clip": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "availability_starts": "2025-11-20T17:00:00Z",
+      "duration_ms": 1455039,
+      "seo_title": "",
+      "seo_description": ""
+    },
+    {
+      "audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "is_dubbed": false,
+      "sequence_number": 9,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "mature_blocked": false,
+      "listing_id": "",
+      "next_episode_id": "GE00364860JAJP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "production_episode_id": "",
+      "premium_available_date": "2025-11-27T17:00:00Z",
+      "slug": "",
+      "season_slug_title": "season-1",
+      "description": "Enfin arrivée à Galbraith. Melphi veut faire bonne impression, mais elle a un petit problème technique.",
+      "available_offline": true,
+      "channel_id": "crunchyroll",
+      "title": "La décision de la Noble aux goûts étranges",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/573d53fa888659fb9b04c9b03d80d8b4.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/573d53fa888659fb9b04c9b03d80d8b4.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/573d53fa888659fb9b04c9b03d80d8b4.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/573d53fa888659fb9b04c9b03d80d8b4.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/573d53fa888659fb9b04c9b03d80d8b4.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/573d53fa888659fb9b04c9b03d80d8b4.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/573d53fa888659fb9b04c9b03d80d8b4.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/573d53fa888659fb9b04c9b03d80d8b4.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_status": "available",
+      "roles": [
+        "main"
+      ],
+      "is_mature": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364858JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364858JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        }
+      ],
+      "series_id": "GT00364840",
+      "available_date": null,
+      "duration_ms": 1454997,
+      "season_id": "GS00364841JAJP",
+      "episode_number": 9,
+      "eligible_region": "CA",
+      "is_clip": false,
+      "season_display_number": "",
+      "closed_captions_available": false,
+      "identifier": "GT00364840|S00364841|E9",
+      "recent_variant": "",
+      "season_number": 1,
+      "hd_flag": true,
+      "availability_notes": "",
+      "streams_link": "/content/v2/cms/videos/GE00364858JAJPV/streams",
+      "media_type": "episode",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_subbed": true,
+      "availability_starts": "2025-11-27T17:00:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_title": "Saison 1",
+      "slug_title": "the-voracious-villainesss-resolve",
+      "seo_title": "",
+      "recent_audio_locale": "ja-JP",
+      "premium_date": null,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "id": "GE00364858JAJP",
+      "upload_date": "2025-11-27T00:00:00Z",
+      "episode_air_date": "2025-11-27T00:00:00Z",
+      "episode": "9",
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "season_sequence_number": 1,
+      "seo_description": "",
+      "series_title": "Pass the Monster Meat, Milady!",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "next_episode_title": "La perspective du Duc sanguinaire"
+    },
+    {
+      "content_descriptors": [
+        "Violence"
+      ],
+      "season_title": "Saison 1",
+      "mature_blocked": false,
+      "available_date": null,
+      "seo_description": "",
+      "season_display_number": "",
+      "title": "La perspective du Duc sanguinaire",
+      "duration_ms": 1455039,
+      "season_sequence_number": 1,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_air_date": "2025-12-04T00:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/aeb1d039e7ff9a13fa6b35ab8a35343e.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/aeb1d039e7ff9a13fa6b35ab8a35343e.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/aeb1d039e7ff9a13fa6b35ab8a35343e.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/aeb1d039e7ff9a13fa6b35ab8a35343e.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/aeb1d039e7ff9a13fa6b35ab8a35343e.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/aeb1d039e7ff9a13fa6b35ab8a35343e.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/aeb1d039e7ff9a13fa6b35ab8a35343e.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/aeb1d039e7ff9a13fa6b35ab8a35343e.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "listing_id": "",
+      "recent_audio_locale": "ja-JP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode": "10",
+      "channel_id": "crunchyroll",
+      "production_episode_id": "",
+      "slug_title": "the-blood-mad-dukes-intentions",
+      "closed_captions_available": false,
+      "episode_number": 10,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "audio_locale": "ja-JP",
+      "series_id": "GT00364840",
+      "hd_flag": true,
+      "season_slug_title": "season-1",
+      "seo_title": "",
+      "availability_starts": "2025-12-04T17:00:00Z",
+      "availability_status": "available",
+      "recent_variant": "",
+      "availability_notes": "",
+      "season_number": 1,
+      "premium_available_date": "2025-12-04T17:00:00Z",
+      "slug": "",
+      "streams_link": "/content/v2/cms/videos/GE00364860JAJPV/streams",
+      "is_clip": false,
+      "series_slug_title": "pass-the-monster-meat-milady",
+      "premium_date": null,
+      "roles": [
+        "main"
+      ],
+      "media_type": "episode",
+      "is_premium_only": true,
+      "sequence_number": 10,
+      "description": "Le petit tour de passe-passe de Melphiera soulève certaines interrogations chez les hommes du Duc.",
+      "is_mature": false,
+      "available_offline": true,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "id": "GE00364860JAJP",
+      "upload_date": "2025-12-04T00:00:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364860JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364860JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364841JAJP",
+          "variant": ""
+        }
+      ],
+      "is_subbed": true,
+      "is_dubbed": false,
+      "identifier": "GT00364840|S00364841|E10",
+      "series_title": "Pass the Monster Meat, Milady!",
+      "eligible_region": "CA",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_id": "GS00364841JAJP"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

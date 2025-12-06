@@ -1,0 +1,2309 @@
+{
+  "total": 13,
+  "data": [
+    {
+      "is_clip": false,
+      "season_sequence_number": 1,
+      "is_dubbed": true,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "available_offline": true,
+      "description": "À l’article de la mort, un exorciste décide de se réincarner pour mener une vie parfaite. Il renaît sous les traits de Seika, benjamin d’une famille aristocratique. Alors que noblesse et magie vont de pair, le jeune garçon, dépourvu de mana, doit faire face aux moqueries des siens.",
+      "slug": "",
+      "season_tags": [],
+      "episode_air_date": "2023-01-08T01:30:00+09:00",
+      "eligible_region": "CA",
+      "is_mature": false,
+      "premium_available_date": "2023-01-28T23:00:00Z",
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "hd_flag": true,
+      "channel_id": "crunchyroll",
+      "upload_date": "2023-01-08T01:30:00+09:00",
+      "season_id": "GY3VC203X",
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "roles": [
+        "dub"
+      ],
+      "free_available_date": "2023-08-01T07:00:00Z",
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "sequence_number": 1,
+      "seo_description": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "closed_captions_available": false,
+      "title": "Le Plus Fort des exorcistes",
+      "id": "G8WUNMWJJ",
+      "next_episode_id": "GVWU09Q23",
+      "is_premium_only": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "seo_title": "",
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7a97bb9159fcc549ed8a6b49c7e759e5.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7a97bb9159fcc549ed8a6b49c7e759e5.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7a97bb9159fcc549ed8a6b49c7e759e5.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7a97bb9159fcc549ed8a6b49c7e759e5.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7a97bb9159fcc549ed8a6b49c7e759e5.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7a97bb9159fcc549ed8a6b49c7e759e5.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7a97bb9159fcc549ed8a6b49c7e759e5.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7a97bb9159fcc549ed8a6b49c7e759e5.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode": "1",
+      "next_episode_title": "Lodonea, la cité-académie",
+      "available_date": null,
+      "identifier": "G1XHJVWXG|S1|E1",
+      "audio_locale": "fr-FR",
+      "season_display_number": "",
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "season_number": 1,
+      "availability_notes": "",
+      "episode_number": 1,
+      "slug_title": "the-strongest-exorcist",
+      "mature_blocked": false,
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "availability_status": "available",
+      "duration_ms": 1420004,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GWDU8DZMW",
+          "is_premium_only": false,
+          "media_guid": "GEMFZEV32",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GMKUXV5E9",
+          "is_premium_only": false,
+          "media_guid": "GPPFKG08N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G8WUNMWJJ",
+          "is_premium_only": false,
+          "media_guid": "GQ9FG2955",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GK9U3KV04",
+          "is_premium_only": true,
+          "media_guid": "G3WFX4KD3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "is_subbed": true,
+      "series_id": "G1XHJVWXG",
+      "streams_link": "/content/v2/cms/videos/GQ9FG2955/streams",
+      "premium_date": null,
+      "availability_starts": "2023-01-28T23:00:00Z"
+    },
+    {
+      "channel_id": "crunchyroll",
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "description": "Grâce à sa victoire contre l’eldernewt, Seika a gagné le respect des siens. Pour récompenser son exploit, son père l’autorise à rejoindre l’académie de magie. Gray, jaloux, ne l’entend pas de cette oreille.",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "mature_blocked": false,
+      "season_tags": [],
+      "availability_starts": "2023-02-04T23:00:00Z",
+      "is_dubbed": true,
+      "sequence_number": 2,
+      "seo_title": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "roles": [
+        "dub"
+      ],
+      "seo_description": "",
+      "audio_locale": "fr-FR",
+      "next_episode_title": "Le Héros de la prophétie",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1U2GP59",
+          "is_premium_only": false,
+          "media_guid": "G71F49N2E",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GPWUKG59Z",
+          "is_premium_only": false,
+          "media_guid": "GZ4FV4XG2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GVWU09Q23",
+          "is_premium_only": false,
+          "media_guid": "G25F0Q8VM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GK9U3K2M2",
+          "is_premium_only": true,
+          "media_guid": "G3WFX4EWE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "season_number": 1,
+      "is_clip": false,
+      "duration_ms": 1420004,
+      "episode_number": 2,
+      "is_premium_only": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "season_sequence_number": 1,
+      "premium_date": null,
+      "season_id": "GY3VC203X",
+      "id": "GVWU09Q23",
+      "available_date": null,
+      "premium_available_date": "2023-02-04T23:00:00Z",
+      "production_episode_id": "",
+      "series_id": "G1XHJVWXG",
+      "streams_link": "/content/v2/cms/videos/G25F0Q8VM/streams",
+      "upload_date": "2023-01-15T01:30:00+09:00",
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "season_display_number": "",
+      "is_mature": false,
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "next_episode_id": "GK9U3X0ZX",
+      "title": "Lodonea, la cité-académie",
+      "free_available_date": "2023-08-01T07:00:00Z",
+      "slug": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c5f2be0a95060455f0083dfb68207337.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c5f2be0a95060455f0083dfb68207337.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c5f2be0a95060455f0083dfb68207337.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c5f2be0a95060455f0083dfb68207337.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c5f2be0a95060455f0083dfb68207337.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c5f2be0a95060455f0083dfb68207337.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c5f2be0a95060455f0083dfb68207337.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c5f2be0a95060455f0083dfb68207337.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode": "2",
+      "listing_id": "",
+      "availability_status": "available",
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "identifier": "G1XHJVWXG|S1|E2",
+      "recent_variant": "",
+      "availability_notes": "",
+      "hd_flag": true,
+      "is_subbed": true,
+      "slug_title": "academy-city-lodonea",
+      "episode_air_date": "2023-01-15T01:30:00+09:00",
+      "closed_captions_available": false,
+      "recent_audio_locale": "fr-FR",
+      "eligible_region": "CA",
+      "media_type": "episode"
+    },
+    {
+      "hd_flag": true,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "is_clip": false,
+      "eligible_region": "CA",
+      "next_episode_title": "Le Piège du donjon",
+      "title": "Le Héros de la prophétie",
+      "availability_notes": "",
+      "season_display_number": "",
+      "premium_available_date": "2023-02-11T23:00:00Z",
+      "season_tags": [],
+      "sequence_number": 3,
+      "is_dubbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/68d4a3fb8d49bbc351127e0fe76d18ac.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/68d4a3fb8d49bbc351127e0fe76d18ac.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/68d4a3fb8d49bbc351127e0fe76d18ac.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/68d4a3fb8d49bbc351127e0fe76d18ac.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/68d4a3fb8d49bbc351127e0fe76d18ac.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/68d4a3fb8d49bbc351127e0fe76d18ac.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/68d4a3fb8d49bbc351127e0fe76d18ac.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/68d4a3fb8d49bbc351127e0fe76d18ac.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "channel_id": "crunchyroll",
+      "duration_ms": 1420087,
+      "seo_title": "",
+      "is_premium_only": false,
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "slug": "",
+      "media_type": "episode",
+      "available_offline": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "seo_description": "",
+      "roles": [
+        "dub"
+      ],
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "upload_date": "2023-01-22T01:30:00+09:00",
+      "episode_number": 3,
+      "id": "GK9U3X0ZX",
+      "next_episode_id": "G4VUQ29JQ",
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "season_id": "GY3VC203X",
+      "recent_audio_locale": "fr-FR",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUN8EW7",
+          "is_premium_only": false,
+          "media_guid": "G9XFE3VN8",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UD49ZQ",
+          "is_premium_only": false,
+          "media_guid": "GVMF095VK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GK9U3X0ZX",
+          "is_premium_only": false,
+          "media_guid": "G3WFX9DP9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G4VUQV7V8",
+          "is_premium_only": true,
+          "media_guid": "GNJFD1J1V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "description": "Après leurs examens d’entrée à l’académie, Seika et Ifa se rendent à une soirée destinée à accueillir les nouveaux élèves. Malheureusement, des fauteurs de troubles décident de prendre part aux festivités.",
+      "season_sequence_number": 1,
+      "available_date": null,
+      "premium_date": null,
+      "production_episode_id": "",
+      "closed_captions_available": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_subbed": true,
+      "identifier": "G1XHJVWXG|S1|E3",
+      "listing_id": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "recent_variant": "",
+      "season_number": 1,
+      "mature_blocked": false,
+      "episode_air_date": "2023-01-22T01:30:00+09:00",
+      "streams_link": "/content/v2/cms/videos/G3WFX9DP9/streams",
+      "audio_locale": "fr-FR",
+      "slug_title": "the-hero-the-oracles-spoke-of",
+      "availability_starts": "2023-02-11T23:00:00Z",
+      "free_available_date": "2023-08-01T07:00:00Z",
+      "is_mature": false,
+      "availability_status": "available",
+      "episode": "3",
+      "series_id": "G1XHJVWXG"
+    },
+    {
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "season_number": 1,
+      "next_episode_title": "Mabel Crain",
+      "slug": "",
+      "season_tags": [],
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "available_date": null,
+      "availability_notes": "",
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "recent_variant": "",
+      "is_subbed": true,
+      "closed_captions_available": false,
+      "episode": "4",
+      "next_episode_id": "G31UX99KK",
+      "channel_id": "crunchyroll",
+      "availability_starts": "2023-02-18T23:00:00Z",
+      "description": "Les cours à l’académie ont enfin débuté. À l’approche de l’anniversaire de l’école, le professeur Karen confie une mission à Ifa et Amyu. Seika, qui veut se rapprocher du Héros, profite de ses droits pour prendre la place de son esclave.",
+      "episode_number": 4,
+      "audio_locale": "fr-FR",
+      "id": "G4VUQ29JQ",
+      "duration_ms": 1420046,
+      "streams_link": "/content/v2/cms/videos/GNJFD4E9D/streams",
+      "is_clip": false,
+      "sequence_number": 4,
+      "seo_description": "",
+      "slug_title": "dungeon-trap",
+      "is_mature": false,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "is_premium_only": true,
+      "series_id": "G1XHJVWXG",
+      "eligible_region": "CA",
+      "seo_title": "",
+      "season_sequence_number": 1,
+      "roles": [
+        "dub"
+      ],
+      "upload_date": "2023-01-29T01:30:00+09:00",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "hd_flag": true,
+      "season_id": "GY3VC203X",
+      "premium_available_date": "2023-02-18T23:00:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "listing_id": "",
+      "identifier": "G1XHJVWXG|S1|E4",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dbda934296cbecc7a249f2647d1c8be6.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/dbda934296cbecc7a249f2647d1c8be6.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/dbda934296cbecc7a249f2647d1c8be6.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/dbda934296cbecc7a249f2647d1c8be6.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/dbda934296cbecc7a249f2647d1c8be6.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/dbda934296cbecc7a249f2647d1c8be6.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/dbda934296cbecc7a249f2647d1c8be6.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/dbda934296cbecc7a249f2647d1c8be6.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "available_offline": true,
+      "recent_audio_locale": "fr-FR",
+      "production_episode_id": "",
+      "media_type": "episode",
+      "availability_status": "available",
+      "title": "Le Piège du donjon",
+      "is_dubbed": true,
+      "mature_blocked": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_display_number": "",
+      "episode_air_date": "2023-01-29T01:30:00+09:00",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUZEV3E",
+          "is_premium_only": false,
+          "media_guid": "GXMFQ08M0",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9UQ0XG4",
+          "is_premium_only": true,
+          "media_guid": "GJKF2V3G1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G4VUQ29JQ",
+          "is_premium_only": true,
+          "media_guid": "GNJFD4E9D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G7PU4140W",
+          "is_premium_only": true,
+          "media_guid": "G4GFQVQZM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "premium_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ]
+    },
+    {
+      "slug": "",
+      "mature_blocked": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "next_episode_id": "GG1U2GGJ7",
+      "channel_id": "crunchyroll",
+      "availability_status": "available",
+      "sequence_number": 5,
+      "roles": [
+        "dub"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode": "5",
+      "is_premium_only": true,
+      "description": "La directrice de l’académie envoie Seika à la capitale pour participer au tournoi d’arts martiaux. Elle fait partir avec lui une autre élève, Mabel Crain, que Seika et ses amies peinent à cerner.",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "media_type": "episode",
+      "eligible_region": "CA",
+      "available_date": null,
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "premium_date": null,
+      "closed_captions_available": false,
+      "season_id": "GY3VC203X",
+      "availability_notes": "",
+      "season_display_number": "",
+      "slug_title": "mabel-crane",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/11cad243ff3fce21106bf4a68e7ace11.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/11cad243ff3fce21106bf4a68e7ace11.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/11cad243ff3fce21106bf4a68e7ace11.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/11cad243ff3fce21106bf4a68e7ace11.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/11cad243ff3fce21106bf4a68e7ace11.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/11cad243ff3fce21106bf4a68e7ace11.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/11cad243ff3fce21106bf4a68e7ace11.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/11cad243ff3fce21106bf4a68e7ace11.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_air_date": "2023-02-05T01:30:00+09:00",
+      "identifier": "G1XHJVWXG|S1|E5",
+      "series_id": "G1XHJVWXG",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "season_tags": [],
+      "available_offline": true,
+      "audio_locale": "fr-FR",
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "is_dubbed": true,
+      "seo_title": "",
+      "id": "G31UX99KK",
+      "is_clip": false,
+      "next_episode_title": "Les Espérances de chacun",
+      "streams_link": "/content/v2/cms/videos/G8MFNMM33/streams",
+      "recent_variant": "",
+      "is_mature": false,
+      "seo_description": "",
+      "episode_number": 5,
+      "recent_audio_locale": "fr-FR",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU49N2J",
+          "is_premium_only": false,
+          "media_guid": "G4GFQ2408",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU09KMM",
+          "is_premium_only": true,
+          "media_guid": "G25F0QE77",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G31UX99KK",
+          "is_premium_only": true,
+          "media_guid": "G8MFNMM33",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GJWU20Q3K",
+          "is_premium_only": true,
+          "media_guid": "GM8FXPE20",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "duration_ms": 1420087,
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "hd_flag": true,
+      "availability_starts": "2023-02-25T23:00:00Z",
+      "title": "Mabel Crain",
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "listing_id": "",
+      "upload_date": "2023-02-05T01:30:00+09:00",
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "premium_available_date": "2023-02-25T23:00:00Z"
+    },
+    {
+      "availability_starts": "2023-03-04T23:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1e311416a66e0ed6c40dd82ed1045ed8.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1e311416a66e0ed6c40dd82ed1045ed8.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1e311416a66e0ed6c40dd82ed1045ed8.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1e311416a66e0ed6c40dd82ed1045ed8.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1e311416a66e0ed6c40dd82ed1045ed8.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1e311416a66e0ed6c40dd82ed1045ed8.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1e311416a66e0ed6c40dd82ed1045ed8.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1e311416a66e0ed6c40dd82ed1045ed8.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug_title": "interwoven-plots",
+      "sequence_number": 6,
+      "audio_locale": "fr-FR",
+      "roles": [
+        "dub"
+      ],
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "upload_date": "2023-02-12T01:30:00+09:00",
+      "season_number": 1,
+      "slug": "",
+      "premium_date": null,
+      "availability_notes": "",
+      "next_episode_id": "GJWU2VE3X",
+      "closed_captions_available": false,
+      "recent_audio_locale": "fr-FR",
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DUE3VN5",
+          "is_premium_only": false,
+          "media_guid": "G1QF4MZJ9",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GWDU8DD24",
+          "is_premium_only": true,
+          "media_guid": "GEMFZEE71",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GG1U2GGJ7",
+          "is_premium_only": true,
+          "media_guid": "G71F4997K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G14U41ZDE",
+          "is_premium_only": true,
+          "media_guid": "GKKF3KPJ4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "mature_blocked": false,
+      "title": "Les Espérances de chacun",
+      "is_clip": false,
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_id": "G1XHJVWXG",
+      "season_sequence_number": 1,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "production_episode_id": "",
+      "eligible_region": "CA",
+      "listing_id": "",
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "id": "GG1U2GGJ7",
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2023-03-04T23:00:00Z",
+      "episode_air_date": "2023-02-12T01:30:00+09:00",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "season_tags": [],
+      "is_premium_only": true,
+      "seo_title": "",
+      "available_date": null,
+      "available_offline": true,
+      "hd_flag": true,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_id": "GY3VC203X",
+      "is_dubbed": true,
+      "next_episode_title": "Frère et Sœur",
+      "episode": "6",
+      "is_subbed": true,
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/G71F4997K/streams",
+      "episode_number": 6,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "media_type": "episode",
+      "duration_ms": 1420046,
+      "seo_description": "",
+      "description": "Les duels s’enchaînent dans l’arène de la capitale. Trois concurrents tirent leur épingle du jeu : Seika, Mabel, et Kyle. La nouvelle élève de l’académie semble d’ailleurs intéresser quelques personnes douteuses…",
+      "identifier": "G1XHJVWXG|S1|E6",
+      "season_display_number": "",
+      "is_mature": false
+    },
+    {
+      "availability_starts": "2023-03-11T23:00:00Z",
+      "next_episode_title": "Le Souhait d’Ifa",
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "id": "GJWU2VE3X",
+      "availability_status": "available",
+      "season_id": "GY3VC203X",
+      "hd_flag": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GX9UQ08MW",
+          "is_premium_only": false,
+          "media_guid": "GJKF2VD70",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G14U4MGDX",
+          "is_premium_only": true,
+          "media_guid": "GKKF3XDJ8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GJWU2VE3X",
+          "is_premium_only": true,
+          "media_guid": "GM8FXVG24",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GX9UQWVJE",
+          "is_premium_only": true,
+          "media_guid": "GJKF20P9W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f1254f7f17ad7dacc9d656778bbe67cc.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f1254f7f17ad7dacc9d656778bbe67cc.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f1254f7f17ad7dacc9d656778bbe67cc.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f1254f7f17ad7dacc9d656778bbe67cc.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f1254f7f17ad7dacc9d656778bbe67cc.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f1254f7f17ad7dacc9d656778bbe67cc.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f1254f7f17ad7dacc9d656778bbe67cc.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f1254f7f17ad7dacc9d656778bbe67cc.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": true,
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "episode_air_date": "2023-02-19T01:30:00+09:00",
+      "streams_link": "/content/v2/cms/videos/GM8FXVG24/streams",
+      "description": "Bien qu’il ait deviné une partie des intentions de Mabel, Seika essaie d’en savoir plus sur les raisons qui ont poussé la jeune fille à l’attaquer. Une chose est sûre : ils ont tous deux la ferme intention d’affronter Kyle et finale.",
+      "season_display_number": "",
+      "mature_blocked": false,
+      "listing_id": "",
+      "media_type": "episode",
+      "available_offline": true,
+      "recent_variant": "",
+      "roles": [
+        "dub"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "premium_available_date": "2023-03-11T23:00:00Z",
+      "is_dubbed": true,
+      "seo_title": "",
+      "is_subbed": true,
+      "season_sequence_number": 1,
+      "episode": "7",
+      "season_number": 1,
+      "available_date": null,
+      "closed_captions_available": false,
+      "premium_date": null,
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "channel_id": "crunchyroll",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "sequence_number": 7,
+      "seo_description": "",
+      "next_episode_id": "G14U4M14W",
+      "title": "Frère et Sœur",
+      "recent_audio_locale": "fr-FR",
+      "is_clip": false,
+      "duration_ms": 1420087,
+      "slug": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "production_episode_id": "",
+      "series_id": "G1XHJVWXG",
+      "episode_number": 7,
+      "identifier": "G1XHJVWXG|S1|E7",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_notes": "",
+      "slug_title": "brother-and-sister",
+      "season_tags": [],
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "audio_locale": "fr-FR",
+      "is_mature": false,
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "eligible_region": "CA",
+      "upload_date": "2023-02-19T01:30:00+09:00"
+    },
+    {
+      "eligible_region": "CA",
+      "is_mature": false,
+      "hd_flag": true,
+      "media_type": "episode",
+      "audio_locale": "fr-FR",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUQ2405",
+          "is_premium_only": false,
+          "media_guid": "GNJFD43KM",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G2XU0QGV7",
+          "is_premium_only": true,
+          "media_guid": "GDVFVX3GM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G14U4M14W",
+          "is_premium_only": true,
+          "media_guid": "GKKF3XK35",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G50UZVJ9K",
+          "is_premium_only": true,
+          "media_guid": "G07FNKQ1G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "next_episode_title": "La Décision d’Ifa",
+      "seo_description": "",
+      "season_id": "GY3VC203X",
+      "availability_status": "available",
+      "is_clip": false,
+      "duration_ms": 1420046,
+      "season_sequence_number": 1,
+      "title": "Le Souhait d’Ifa",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_id": "G1XHJVWXG",
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "recent_variant": "",
+      "availability_notes": "",
+      "slug_title": "yifas-feelings",
+      "identifier": "G1XHJVWXG|S1|E8",
+      "episode": "8",
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/79add96ee1f24a02f714e84c3ceca8de.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/79add96ee1f24a02f714e84c3ceca8de.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/79add96ee1f24a02f714e84c3ceca8de.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/79add96ee1f24a02f714e84c3ceca8de.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/79add96ee1f24a02f714e84c3ceca8de.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/79add96ee1f24a02f714e84c3ceca8de.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/79add96ee1f24a02f714e84c3ceca8de.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/79add96ee1f24a02f714e84c3ceca8de.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "id": "G14U4M14W",
+      "next_episode_id": "G0DUN8209",
+      "is_subbed": true,
+      "season_display_number": "",
+      "description": "Seika est invité au royaume d’Asteiria pour enquêter sur une affaire préoccupante. Depuis quelque temps, un dragon d’ordinaire pacifique se serait mis à semer la terreur.",
+      "sequence_number": 8,
+      "episode_number": 8,
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "is_dubbed": true,
+      "availability_starts": "2023-03-18T22:00:00Z",
+      "production_episode_id": "",
+      "streams_link": "/content/v2/cms/videos/GKKF3XK35/streams",
+      "seo_title": "",
+      "available_offline": true,
+      "premium_available_date": "2023-03-18T22:00:00Z",
+      "roles": [
+        "dub"
+      ],
+      "slug": "",
+      "recent_audio_locale": "fr-FR",
+      "upload_date": "2023-02-26T01:30:00+09:00",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "season_tags": [],
+      "premium_date": null,
+      "listing_id": "",
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "is_premium_only": true,
+      "closed_captions_available": false,
+      "season_number": 1,
+      "episode_air_date": "2023-02-26T01:30:00+09:00",
+      "mature_blocked": false,
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world"
+    },
+    {
+      "season_id": "GY3VC203X",
+      "hd_flag": true,
+      "upload_date": "2023-03-05T01:30:00+09:00",
+      "media_type": "episode",
+      "premium_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_status": "available",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7ca2438f456a8a8880a8bab9445a60fb.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7ca2438f456a8a8880a8bab9445a60fb.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7ca2438f456a8a8880a8bab9445a60fb.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7ca2438f456a8a8880a8bab9445a60fb.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7ca2438f456a8a8880a8bab9445a60fb.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7ca2438f456a8a8880a8bab9445a60fb.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7ca2438f456a8a8880a8bab9445a60fb.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7ca2438f456a8a8880a8bab9445a60fb.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "duration_ms": 1420087,
+      "streams_link": "/content/v2/cms/videos/G9XFE30PD/streams",
+      "is_premium_only": true,
+      "closed_captions_available": false,
+      "slug_title": "yifas-resolve",
+      "roles": [
+        "dub"
+      ],
+      "season_number": 1,
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14U4MZPQ",
+          "is_premium_only": false,
+          "media_guid": "GKKF3XPNV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G8WUNM1N3",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG23GN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G0DUN8209",
+          "is_premium_only": true,
+          "media_guid": "G9XFE30PD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GD9UV3NW0",
+          "is_premium_only": true,
+          "media_guid": "GWMF8J9KZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "is_clip": false,
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "next_episode_id": "GN7UDVX45",
+      "sequence_number": 9,
+      "title": "La Décision d’Ifa",
+      "is_subbed": true,
+      "is_dubbed": true,
+      "series_id": "G1XHJVWXG",
+      "available_offline": true,
+      "production_episode_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_tags": [],
+      "identifier": "G1XHJVWXG|S1|E9",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "listing_id": "",
+      "recent_variant": "",
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "availability_starts": "2023-03-25T22:00:00Z",
+      "season_display_number": "",
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "season_sequence_number": 1,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "premium_available_date": "2023-03-25T22:00:00Z",
+      "seo_title": "",
+      "recent_audio_locale": "fr-FR",
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "slug": "",
+      "is_mature": false,
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "description": "À Asteiria, Ifa visite le harem du prince Cecilio en compagnie de Lise. Seika, de son côté, part dans la montagne sur les traces du dragon qui terrifie la population.",
+      "episode_air_date": "2023-03-05T01:30:00+09:00",
+      "eligible_region": "CA",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "episode": "9",
+      "id": "G0DUN8209",
+      "episode_number": 9,
+      "audio_locale": "fr-FR",
+      "next_episode_title": "La Sainte Princesse",
+      "availability_notes": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ]
+    },
+    {
+      "recent_variant": "",
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "mature_blocked": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/452f3f0c775ef4654e27e248e56847d8.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/452f3f0c775ef4654e27e248e56847d8.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/452f3f0c775ef4654e27e248e56847d8.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/452f3f0c775ef4654e27e248e56847d8.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/452f3f0c775ef4654e27e248e56847d8.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/452f3f0c775ef4654e27e248e56847d8.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/452f3f0c775ef4654e27e248e56847d8.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/452f3f0c775ef4654e27e248e56847d8.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_air_date": "2023-03-12T01:30:00+09:00",
+      "audio_locale": "fr-FR",
+      "slug_title": "the-holy-princess",
+      "availability_starts": "2023-04-01T22:00:00Z",
+      "description": "Une invitée de marque est reçue au domaine des Lamprogue. Celle-ci souhaite rencontrer Seika. C’est l’occasion pour le jeune homme de revoir sa famille et de présenter ses amis.",
+      "is_mature": false,
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "roles": [
+        "dub"
+      ],
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "closed_captions_available": false,
+      "is_subbed": true,
+      "streams_link": "/content/v2/cms/videos/GVMF04N9D/streams",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWU2VD17",
+          "is_premium_only": false,
+          "media_guid": "GM8FXVD3M",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1U2GJEM",
+          "is_premium_only": true,
+          "media_guid": "G71F497V5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GN7UDVX45",
+          "is_premium_only": true,
+          "media_guid": "GVMF04N9D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G50UZV4K4",
+          "is_premium_only": true,
+          "media_guid": "G07FNK0G0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 1,
+      "season_tags": [],
+      "is_dubbed": true,
+      "premium_date": null,
+      "next_episode_title": "Vision",
+      "episode_number": 10,
+      "season_id": "GY3VC203X",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "is_premium_only": true,
+      "is_clip": false,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "premium_available_date": "2023-04-01T22:00:00Z",
+      "season_display_number": "",
+      "available_offline": true,
+      "recent_audio_locale": "fr-FR",
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "slug": "",
+      "next_episode_id": "GQJUGQZ47",
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "sequence_number": 10,
+      "available_date": null,
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "hd_flag": true,
+      "media_type": "episode",
+      "production_episode_id": "",
+      "series_id": "G1XHJVWXG",
+      "episode": "10",
+      "upload_date": "2023-03-12T01:30:00+09:00",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_number": 1,
+      "title": "La Sainte Princesse",
+      "duration_ms": 1420046,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "seo_description": "",
+      "availability_status": "available",
+      "id": "GN7UDVX45",
+      "identifier": "G1XHJVWXG|S1|E10"
+    },
+    {
+      "title": "Vision",
+      "seo_title": "",
+      "season_tags": [],
+      "audio_locale": "fr-FR",
+      "premium_available_date": "2023-04-08T22:00:00Z",
+      "recent_variant": "",
+      "is_premium_only": true,
+      "hd_flag": true,
+      "premium_date": null,
+      "slug": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UD43JJ",
+          "is_premium_only": false,
+          "media_guid": "GVMF09G22",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWU2ENVP",
+          "is_premium_only": true,
+          "media_guid": "GM8FXG9VN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GQJUGQZ47",
+          "is_premium_only": true,
+          "media_guid": "GGVF2ZV70",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G50UZVW49",
+          "is_premium_only": true,
+          "media_guid": "G07FNK401",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "recent_audio_locale": "fr-FR",
+      "next_episode_title": "Le Pire Roi des démons",
+      "availability_notes": "",
+      "season_sequence_number": 1,
+      "closed_captions_available": false,
+      "listing_id": "",
+      "streams_link": "/content/v2/cms/videos/GGVF2ZV70/streams",
+      "seo_description": "",
+      "roles": [
+        "dub"
+      ],
+      "upload_date": "2023-03-19T01:30:00+09:00",
+      "id": "GQJUGQZ47",
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "identifier": "G1XHJVWXG|S1|E11",
+      "availability_starts": "2023-04-08T22:00:00Z",
+      "available_date": null,
+      "next_episode_id": "GD9UV8VMJ",
+      "is_subbed": true,
+      "available_offline": true,
+      "is_mature": false,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "is_dubbed": true,
+      "season_number": 1,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode": "11",
+      "description": "Il est temps pour Seika, Ifa, Amyu et Mabel de rentrer à l’académie. Une partie du trajet est faite en compagnie de la princesse Fiona. Grâce à son don, elle prédit que le voyage ne sera pas de tout repos…",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "slug_title": "future-sight",
+      "series_id": "G1XHJVWXG",
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a7a0ad868ddfa07165ecba2a44ac4dd6.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a7a0ad868ddfa07165ecba2a44ac4dd6.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a7a0ad868ddfa07165ecba2a44ac4dd6.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a7a0ad868ddfa07165ecba2a44ac4dd6.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a7a0ad868ddfa07165ecba2a44ac4dd6.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a7a0ad868ddfa07165ecba2a44ac4dd6.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a7a0ad868ddfa07165ecba2a44ac4dd6.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a7a0ad868ddfa07165ecba2a44ac4dd6.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "eligible_region": "CA",
+      "media_type": "episode",
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "sequence_number": 11,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_number": 11,
+      "season_id": "GY3VC203X",
+      "is_clip": false,
+      "mature_blocked": false,
+      "episode_air_date": "2023-03-19T01:30:00+09:00",
+      "availability_status": "available",
+      "season_display_number": "",
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "duration_ms": 1420087
+    },
+    {
+      "availability_starts": "2023-04-15T22:00:00Z",
+      "series_id": "G1XHJVWXG",
+      "premium_date": null,
+      "available_offline": true,
+      "slug_title": "the-most-terrible-demon-king",
+      "duration_ms": 1420046,
+      "description": "À l’académie, une nouvelle cérémonie d’intégration est sur le point d’avoir lieu, mais Seika n’a pas la tête aux réjouissances. Il pressent que de nouveaux ennuis ne tarderont pas à arriver. Un groupe de démons arrive justement à Lodonea…",
+      "available_date": null,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_air_date": "2023-03-26T01:30:00+09:00",
+      "next_episode_title": "Un nouveau départ",
+      "episode_number": 12,
+      "audio_locale": "fr-FR",
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c05cef5e56f3fc7c538ae2f9c9f8d57f.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c05cef5e56f3fc7c538ae2f9c9f8d57f.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c05cef5e56f3fc7c538ae2f9c9f8d57f.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c05cef5e56f3fc7c538ae2f9c9f8d57f.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c05cef5e56f3fc7c538ae2f9c9f8d57f.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c05cef5e56f3fc7c538ae2f9c9f8d57f.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c05cef5e56f3fc7c538ae2f9c9f8d57f.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c05cef5e56f3fc7c538ae2f9c9f8d57f.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_variant": "",
+      "availability_status": "available",
+      "next_episode_id": "G7PU4J3ZG",
+      "premium_available_date": "2023-04-15T22:00:00Z",
+      "is_premium_only": true,
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "sequence_number": 12,
+      "roles": [
+        "dub"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9U3XPN3",
+          "is_premium_only": false,
+          "media_guid": "G3WFX9J2X",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G8WUN0P9D",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGQZ4D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GD9UV8VMJ",
+          "is_premium_only": true,
+          "media_guid": "GWMF8Q82W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GPWUKV1E3",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVE0JW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "is_subbed": true,
+      "seo_description": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "episode": "12",
+      "season_tags": [],
+      "availability_notes": "",
+      "season_number": 1,
+      "seo_title": "",
+      "title": "Le Pire Roi des démons",
+      "id": "GD9UV8VMJ",
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "slug": "",
+      "hd_flag": true,
+      "season_id": "GY3VC203X",
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "season_display_number": "",
+      "upload_date": "2023-03-26T01:30:00+09:00",
+      "is_dubbed": true,
+      "eligible_region": "CA",
+      "is_clip": false,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "listing_id": "",
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "is_mature": false,
+      "recent_audio_locale": "fr-FR",
+      "mature_blocked": false,
+      "season_sequence_number": 1,
+      "media_type": "episode",
+      "closed_captions_available": false,
+      "streams_link": "/content/v2/cms/videos/GWMF8Q82W/streams",
+      "identifier": "G1XHJVWXG|S1|E12",
+      "production_episode_id": ""
+    },
+    {
+      "id": "G7PU4J3ZG",
+      "hd_flag": true,
+      "is_dubbed": true,
+      "seo_title": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "identifier": "G1XHJVWXG|S1|E13",
+      "production_episode_id": "",
+      "is_premium_only": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "listing_id": "",
+      "season_sequence_number": 1,
+      "is_mature": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8b31ca9fcadfcb446e8e2b95dcb093c4.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8b31ca9fcadfcb446e8e2b95dcb093c4.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8b31ca9fcadfcb446e8e2b95dcb093c4.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8b31ca9fcadfcb446e8e2b95dcb093c4.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8b31ca9fcadfcb446e8e2b95dcb093c4.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8b31ca9fcadfcb446e8e2b95dcb093c4.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8b31ca9fcadfcb446e8e2b95dcb093c4.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8b31ca9fcadfcb446e8e2b95dcb093c4.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "available_date": null,
+      "premium_date": null,
+      "season_number": 1,
+      "recent_audio_locale": "fr-FR",
+      "series_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world",
+      "is_clip": false,
+      "series_title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "available_offline": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GMKUXVD3E",
+          "is_premium_only": false,
+          "media_guid": "GPPFKG2X8",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G675CDXGD",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GZ7UV1VG0",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ1Z07",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYP8CX158",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G7PU4J3ZG",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ8WJG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY3VC203X",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GMKUXP7NW",
+          "is_premium_only": true,
+          "media_guid": "GPPFKV43E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6GGCV90D",
+          "variant": ""
+        }
+      ],
+      "next_episode_id": "GK9U3KV04",
+      "media_type": "episode",
+      "episode_air_date": "2023-04-02T01:30:00+09:00",
+      "episode": "13",
+      "seo_description": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "season_title": "The Reincarnation Of The Strongest Exorcist In Another World (VF)",
+      "availability_notes": "",
+      "roles": [
+        "dub"
+      ],
+      "slug_title": "a-new-journey",
+      "season_id": "GY3VC203X",
+      "title": "Un nouveau départ",
+      "recent_variant": "",
+      "is_subbed": true,
+      "description": "Amyu est arrêtée par des chevaliers, qui l’accusent d’avoir commis un crime et la conduisent en prison. Mais Seika n’entend pas laisser le Héros se faire malmener…",
+      "audio_locale": "fr-FR",
+      "sequence_number": 13,
+      "season_slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "series_id": "G1XHJVWXG",
+      "episode_number": 13,
+      "premium_available_date": "2023-04-22T22:00:00Z",
+      "season_display_number": "",
+      "season_tags": [],
+      "availability_starts": "2023-04-22T22:00:00Z",
+      "next_episode_title": "Le Plus Fort des exorcistes",
+      "upload_date": "2023-04-02T01:30:00+09:00",
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_status": "available",
+      "closed_captions_available": false,
+      "slug": "",
+      "duration_ms": 1420087,
+      "streams_link": "/content/v2/cms/videos/G4GFQ8WJG/streams"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "data": [
+    {
+      "id": "G65PW4Q76",
+      "channel_id": "crunchyroll",
+      "title": "Princess Connect! Re: Dive",
+      "slug_title": "princess-connect-re-dive",
+      "series_id": "G6QW1E876",
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Dans le beau pays d'Astraea, le jeune Yûki se réveille sans avoir aucun souvenir de son passé. Il rencontre toutefois Kokkoro (une guide ayant juré de prendre soin de lui), Pecorine (une charmante épéiste ayant toujours un petit creux) et enfin Karyl (une sorcière aux oreilles de chat au caractère épineux). Se laissant porter par leur destin, tous les quatre se rassemblent pour former la Guilde des Gourmets.",
+      "keywords": [],
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": false,
+      "is_dubbed": false,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "pt-BR",
+        "es-419",
+        "fr-FR",
+        "en-US",
+        "es-ES",
+        "de-DE",
+        "ru-RU",
+        "it-IT",
+        "ar-SA"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G65PW4Q76",
+          "original": true,
+          "variant": ""
+        }
+      ],
+      "identifier": "G6QW1E876|S1",
+      "number_of_episodes": 13
+    },
+    {
+      "id": "G69PC2XQ2",
+      "channel_id": "crunchyroll",
+      "title": "Princess Connect! Re: Dive Season 2",
+      "slug_title": "princess-connect-re-dive-season-2",
+      "series_id": "G6QW1E876",
+      "season_display_number": "2",
+      "season_sequence_number": 2,
+      "season_number": 2,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": false,
+      "is_dubbed": false,
+      "is_simulcast": true,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "de-DE",
+        "ar-SA",
+        "fr-FR",
+        "es-419",
+        "es-ES",
+        "ru-RU",
+        "en-US",
+        "pt-BR",
+        "it-IT"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G69PC2XQ2",
+          "original": true,
+          "variant": ""
+        }
+      ],
+      "identifier": "G6QW1E876|S2",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 2
+}

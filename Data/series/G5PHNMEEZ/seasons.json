@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": "GR3VC2PJ5",
+      "channel_id": "crunchyroll",
+      "title": "Digimon Ghost Game",
+      "slug_title": "digimon-ghost-game",
+      "series_id": "G5PHNMEEZ",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Dans un futur proche, la technologie a progressé. Sur les réseaux sociaux, des rumeurs se répandent sur un mystérieux phénomène autour d’un « fantôme hologramme ». Lorsque le collégien Hiro Amanokawa active un étrange objet laissé par son père, il parvient à voir de mystérieuses créatures appelées Digimon. C'est ainsi que Hiro rencontre l'espiègle Gammamon avec lequel il va désormais affronter des monstres effrayants qui terrorisent le monde des humains.",
+      "keywords": [],
+      "season_tags": [
+        "Automne-2021",
+        "Hiver-2022",
+        "Printemps-2022",
+        "Été-2022",
+        "Automne-2022",
+        "Hiver-2023"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "12",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Horreur surnaturelle",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": false,
+      "is_dubbed": false,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "es-419",
+        "en-US",
+        "pt-BR",
+        "it-IT",
+        "ru-RU",
+        "es-ES",
+        "de-DE",
+        "ar-SA",
+        "fr-FR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR3VC2PJ5",
+          "original": true,
+          "variant": ""
+        }
+      ],
+      "identifier": "G5PHNMEEZ|S1",
+      "number_of_episodes": 68
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

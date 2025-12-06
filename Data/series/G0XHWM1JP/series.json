@@ -1,0 +1,175 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "G0XHWM1JP",
+      "channel_id": "crunchyroll",
+      "title": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "slug": "",
+      "slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "description": "Akira Oda et toute sa classe de lycée ont été transportés dans un autre monde ! Alors que les autres élèves obtiennent certains pouvoirs, Akira n'acquiert lui que ceux d'un médiocre “assassin”. Cependant, son statut dépasse bientôt celui de “héros”, la profession la plus forte. Après qu'Akira ait commencé à soupçonner le roi d’être à l'origine de leur invocation, il est accusé à tort d'un crime…",
+      "extended_description": "",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6bb9f58028cfc9e840a540bdfdafbd2d.png"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6bb9f58028cfc9e840a540bdfdafbd2d.png"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6bb9f58028cfc9e840a540bdfdafbd2d.png"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6bb9f58028cfc9e840a540bdfdafbd2d.png"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6bb9f58028cfc9e840a540bdfdafbd2d.png"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6bb9f58028cfc9e840a540bdfdafbd2d.png"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6bb9f58028cfc9e840a540bdfdafbd2d.png"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6bb9f58028cfc9e840a540bdfdafbd2d.png"
+            }
+          ]
+        ],
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/5f0104d91d01e5320cd30ebc865678e1.png"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/5f0104d91d01e5320cd30ebc865678e1.png"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/5f0104d91d01e5320cd30ebc865678e1.png"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/5f0104d91d01e5320cd30ebc865678e1.png"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/5f0104d91d01e5320cd30ebc865678e1.png"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/5f0104d91d01e5320cd30ebc865678e1.png"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/5f0104d91d01e5320cd30ebc865678e1.png"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/5f0104d91d01e5320cd30ebc865678e1.png"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/5f0104d91d01e5320cd30ebc865678e1.png"
+            }
+          ]
+        ]
+      },
+      "episode_count": 9,
+      "season_count": 1,
+      "media_count": 9,
+      "content_provider": "SUNRISE",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "es-ES",
+        "ar-SA",
+        "en-US",
+        "it-IT",
+        "de-DE",
+        "pt-BR",
+        "ru-RU",
+        "es-419",
+        "fr-FR"
+      ],
+      "audio_locales": [
+        "ja-JP",
+        "de-DE",
+        "en-US",
+        "fr-FR"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2025,
+      "content_descriptors": [
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

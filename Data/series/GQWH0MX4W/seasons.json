@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "id": "GRDQCG41P",
+      "channel_id": "crunchyroll",
+      "title": "Hensuki - Are you willing to fall in love with a pervert, as long as she’s a cutie?",
+      "slug_title": "hensuki---are-you-willing-to-fall-in-love-with-a-pervert-as-long-as-shes-a-cutie",
+      "series_id": "GQWH0MX4W",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Contenu sexuel",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "pt-BR",
+        "de-DE",
+        "en-US",
+        "es-419"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRDQCG41P",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GYE5CQGK1",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GQWH0MX4W|S1",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

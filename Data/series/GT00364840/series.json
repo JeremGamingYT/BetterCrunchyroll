@@ -1,0 +1,176 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GT00364840",
+      "channel_id": "crunchyroll",
+      "title": "Pass the Monster Meat, Milady!",
+      "slug": "",
+      "slug_title": "pass-the-monster-meat-milady",
+      "description": "Toute dame aristocrate digne de ce nom se doit de cultiver des goûts raffinés, mais le mets préféré de Melphiera est la viande de monstres ! Mise à l’écart par les siens qui la qualifie d’affreuse vorace, elle est un jour attaquée par un monstre au cours d’un banquet. Elle est sauvée par un duc aussi brutal que mystérieux et charmant. Pourrait-il être celui qui appréciera son appétit monstrueux ?",
+      "extended_description": "",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c6e68d7a5e685a97125998b9387f6fc1.png"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c6e68d7a5e685a97125998b9387f6fc1.png"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c6e68d7a5e685a97125998b9387f6fc1.png"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c6e68d7a5e685a97125998b9387f6fc1.png"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c6e68d7a5e685a97125998b9387f6fc1.png"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c6e68d7a5e685a97125998b9387f6fc1.png"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c6e68d7a5e685a97125998b9387f6fc1.png"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c6e68d7a5e685a97125998b9387f6fc1.png"
+            }
+          ]
+        ],
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/5eee22c06a32fd1f1203841644a8cf51.png"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/5eee22c06a32fd1f1203841644a8cf51.png"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/5eee22c06a32fd1f1203841644a8cf51.png"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/5eee22c06a32fd1f1203841644a8cf51.png"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/5eee22c06a32fd1f1203841644a8cf51.png"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/5eee22c06a32fd1f1203841644a8cf51.png"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/5eee22c06a32fd1f1203841644a8cf51.png"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/5eee22c06a32fd1f1203841644a8cf51.png"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/5eee22c06a32fd1f1203841644a8cf51.png"
+            }
+          ]
+        ]
+      },
+      "episode_count": 10,
+      "season_count": 1,
+      "media_count": 10,
+      "content_provider": "Asahi Production",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "12",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "de-DE",
+        "en-US",
+        "ru-RU",
+        "fr-FR",
+        "ar-SA",
+        "it-IT",
+        "pt-BR",
+        "es-419",
+        "es-ES"
+      ],
+      "audio_locales": [
+        "en-US",
+        "es-419",
+        "de-DE",
+        "pt-BR",
+        "ja-JP"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2025,
+      "content_descriptors": [
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

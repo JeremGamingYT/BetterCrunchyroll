@@ -1,0 +1,1673 @@
+{
+  "total": 9,
+  "data": [
+    {
+      "premium_date": null,
+      "available_offline": true,
+      "availability_starts": "2025-10-06T17:00:00Z",
+      "listing_id": "",
+      "versions": [
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362143DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362143DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362143ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362143ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362143FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362143FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362143JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362143JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362142JAJP",
+          "variant": ""
+        }
+      ],
+      "availability_notes": "",
+      "audio_locale": "fr-FR",
+      "seo_description": "",
+      "closed_captions_available": false,
+      "mature_blocked": false,
+      "seo_title": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e4e3978ce1d226e81be1ccea3ac49c74.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e4e3978ce1d226e81be1ccea3ac49c74.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e4e3978ce1d226e81be1ccea3ac49c74.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e4e3978ce1d226e81be1ccea3ac49c74.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e4e3978ce1d226e81be1ccea3ac49c74.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e4e3978ce1d226e81be1ccea3ac49c74.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e4e3978ce1d226e81be1ccea3ac49c74.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e4e3978ce1d226e81be1ccea3ac49c74.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_sequence_number": 1,
+      "sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "is_mature": false,
+      "available_date": null,
+      "series_title": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "recent_audio_locale": "fr-FR",
+      "upload_date": "2025-10-06T00:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "premium_available_date": "2025-10-06T17:00:00Z",
+      "duration_ms": 1430014,
+      "production_episode_id": "",
+      "season_title": "Je suis un assassin (et je surpasse le héros)",
+      "season_slug_title": "season-1",
+      "eligible_region": "CA",
+      "streams_link": "/content/v2/cms/videos/GE00362143FRFRV/streams",
+      "availability_status": "available",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_display_number": "",
+      "media_type": "episode",
+      "title": "L’assassin mange du pain",
+      "season_number": 1,
+      "is_dubbed": true,
+      "next_episode_id": "GE00362145FRFR",
+      "series_id": "G0XHWM1JP",
+      "episode_air_date": "2025-10-06T00:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_premium_only": true,
+      "season_id": "GS00362142FRFR",
+      "id": "GE00362143FRFR",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "description": "Transporté avec sa classe dans un autre monde, Akira découvre rapidement qu’il surpasse de loin ses camarades.",
+      "recent_variant": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "hd_flag": true,
+      "roles": [
+        "dub"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "episode_number": 1,
+      "next_episode_title": "L’assassin prodigue des soins",
+      "slug": "",
+      "episode": "1",
+      "identifier": "G0XHWM1JP|S00362142|E1",
+      "is_subbed": true,
+      "slug_title": "the-assassin-eats-bread",
+      "is_clip": false
+    },
+    {
+      "next_episode_id": "GE00362147FRFR",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "season_display_number": "",
+      "is_subbed": true,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "is_premium_only": true,
+      "seo_title": "",
+      "recent_audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GE00362145FRFRV/streams",
+      "title": "L’assassin prodigue des soins",
+      "slug_title": "the-assassin-takes-care-of-the-wounded",
+      "audio_locale": "fr-FR",
+      "is_mature": false,
+      "episode_air_date": "2025-10-13T00:00:00Z",
+      "availability_starts": "2025-10-13T17:00:00Z",
+      "channel_id": "crunchyroll",
+      "availability_status": "available",
+      "premium_available_date": "2025-10-13T17:00:00Z",
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bf25601ca50bfcc782e47559b08eb632.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/bf25601ca50bfcc782e47559b08eb632.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/bf25601ca50bfcc782e47559b08eb632.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/bf25601ca50bfcc782e47559b08eb632.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/bf25601ca50bfcc782e47559b08eb632.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/bf25601ca50bfcc782e47559b08eb632.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/bf25601ca50bfcc782e47559b08eb632.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/bf25601ca50bfcc782e47559b08eb632.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_slug_title": "season-1",
+      "roles": [
+        "dub"
+      ],
+      "available_offline": true,
+      "series_slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "closed_captions_available": false,
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "identifier": "G0XHWM1JP|S00362142|E2",
+      "season_number": 1,
+      "duration_ms": 1429972,
+      "upload_date": "2025-10-13T00:00:00Z",
+      "is_dubbed": true,
+      "sequence_number": 2,
+      "season_sequence_number": 1,
+      "is_clip": false,
+      "series_id": "G0XHWM1JP",
+      "hd_flag": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "description": "Akira tente de briser le maléfice qui pèse sur ses camarades, mais une tragédie vient bouleverser ses plans.",
+      "id": "GE00362145FRFR",
+      "media_type": "episode",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_notes": "",
+      "season_id": "GS00362142FRFR",
+      "slug": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "available_date": null,
+      "episode": "2",
+      "recent_variant": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "seo_description": "",
+      "season_title": "Je suis un assassin (et je surpasse le héros)",
+      "premium_date": null,
+      "next_episode_title": "L’assassin caresse un félin",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362145JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362145JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362142JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362145DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362145DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362145ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362145ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362145FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362145FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142FRFR",
+          "variant": ""
+        }
+      ],
+      "episode_number": 2,
+      "series_title": "My Status as an Assassin Obviously Exceeds the Hero's"
+    },
+    {
+      "sequence_number": 3,
+      "recent_audio_locale": "fr-FR",
+      "availability_notes": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/80180473f7e068b0240a2cbba2b27a31.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/80180473f7e068b0240a2cbba2b27a31.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/80180473f7e068b0240a2cbba2b27a31.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/80180473f7e068b0240a2cbba2b27a31.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/80180473f7e068b0240a2cbba2b27a31.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/80180473f7e068b0240a2cbba2b27a31.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/80180473f7e068b0240a2cbba2b27a31.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/80180473f7e068b0240a2cbba2b27a31.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_title": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "is_premium_only": true,
+      "season_sequence_number": 1,
+      "media_type": "episode",
+      "episode": "3",
+      "duration_ms": 1430056,
+      "eligible_region": "CA",
+      "episode_air_date": "2025-10-20T00:00:00Z",
+      "season_display_number": "",
+      "title": "L’assassin caresse un félin",
+      "hd_flag": true,
+      "is_subbed": true,
+      "available_offline": true,
+      "available_date": null,
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362147DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362147DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362147ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362147ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362147FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362147FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362147JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362147JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362142JAJP",
+          "variant": ""
+        }
+      ],
+      "availability_starts": "2025-10-20T17:00:00Z",
+      "is_clip": false,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "production_episode_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "listing_id": "",
+      "is_dubbed": true,
+      "next_episode_title": "L’assassin appelle quelqu’un",
+      "series_slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "identifier": "G0XHWM1JP|S00362142|E3",
+      "episode_number": 3,
+      "series_id": "G0XHWM1JP",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "slug_title": "the-assassin-plays-with-a-cat",
+      "season_id": "GS00362142FRFR",
+      "channel_id": "crunchyroll",
+      "streams_link": "/content/v2/cms/videos/GE00362147FRFRV/streams",
+      "seo_description": "",
+      "season_number": 1,
+      "season_slug_title": "season-1",
+      "is_mature": false,
+      "closed_captions_available": false,
+      "recent_variant": "",
+      "premium_date": null,
+      "mature_blocked": false,
+      "audio_locale": "fr-FR",
+      "premium_available_date": "2025-10-20T17:00:00Z",
+      "description": "Refusant d’achever le boss, Akira cherche un autre moyen de quitter le donjon. Amélia lui suggère un pacte.",
+      "id": "GE00362147FRFR",
+      "roles": [
+        "dub"
+      ],
+      "upload_date": "2025-10-20T00:00:00Z",
+      "season_title": "Je suis un assassin (et je surpasse le héros)",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "next_episode_id": "GE00362149FRFR",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "slug": "",
+      "content_descriptors": [
+        "Violence"
+      ]
+    },
+    {
+      "seo_title": "",
+      "next_episode_title": "L’assassin dort jusqu’au matin",
+      "season_id": "GS00362142FRFR",
+      "episode_number": 4,
+      "title": "L’assassin appelle quelqu’un",
+      "audio_locale": "fr-FR",
+      "is_dubbed": true,
+      "slug": "",
+      "is_clip": false,
+      "series_id": "G0XHWM1JP",
+      "season_slug_title": "season-1",
+      "availability_status": "available",
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2025-10-27T17:30:00Z",
+      "seo_description": "",
+      "media_type": "episode",
+      "duration_ms": 1429972,
+      "is_subbed": true,
+      "series_slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "roles": [
+        "dub"
+      ],
+      "season_sequence_number": 1,
+      "availability_notes": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "upload_date": "2025-10-27T00:00:00Z",
+      "series_title": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "listing_id": "",
+      "production_episode_id": "",
+      "available_offline": true,
+      "premium_date": null,
+      "id": "GE00362149FRFR",
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_premium_only": true,
+      "hd_flag": true,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "availability_starts": "2025-10-27T17:30:00Z",
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_mature": false,
+      "episode_air_date": "2025-10-27T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00362149FRFRV/streams",
+      "description": "Les retrouvailles entre Amélia et sa sœur tournent au vinaigre. Akira est forcé de s’interposer entre elles.",
+      "season_number": 1,
+      "closed_captions_available": false,
+      "next_episode_id": "GE00362151FRFR",
+      "eligible_region": "CA",
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "season_display_number": "",
+      "season_title": "Je suis un assassin (et je surpasse le héros)",
+      "identifier": "G0XHWM1JP|S00362142|E4",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "slug_title": "the-assassin-calls-the-name",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/cc3abf9a47bcea20915a21d8c5f9393b.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/cc3abf9a47bcea20915a21d8c5f9393b.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/cc3abf9a47bcea20915a21d8c5f9393b.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/cc3abf9a47bcea20915a21d8c5f9393b.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/cc3abf9a47bcea20915a21d8c5f9393b.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/cc3abf9a47bcea20915a21d8c5f9393b.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/cc3abf9a47bcea20915a21d8c5f9393b.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/cc3abf9a47bcea20915a21d8c5f9393b.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "sequence_number": 4,
+      "episode": "4",
+      "versions": [
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362149DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362149DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362149ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362149ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362149FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362149FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362149JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362149JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362142JAJP",
+          "variant": ""
+        }
+      ]
+    },
+    {
+      "season_sequence_number": 1,
+      "next_episode_id": "GE00362153FRFR",
+      "seo_description": "",
+      "premium_available_date": "2025-11-03T17:00:00Z",
+      "audio_locale": "fr-FR",
+      "eligible_region": "CA",
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "season_id": "GS00362142FRFR",
+      "episode": "5",
+      "season_number": 1,
+      "id": "GE00362151FRFR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362151JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362151JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362142JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362151ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362151ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362151DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362151DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362151FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362151FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142FRFR",
+          "variant": ""
+        }
+      ],
+      "episode_number": 5,
+      "identifier": "G0XHWM1JP|S00362142|E5",
+      "title": "L’assassin dort jusqu’au matin",
+      "listing_id": "",
+      "mature_blocked": false,
+      "series_title": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "availability_status": "available",
+      "seo_title": "",
+      "upload_date": "2025-11-03T00:00:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "series_slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "is_clip": false,
+      "roles": [
+        "dub"
+      ],
+      "series_id": "G0XHWM1JP",
+      "hd_flag": true,
+      "slug": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "description": "Akira se rend sur le continent des hommes-bêtes. Il y fait la rencontre d’un habile forgeron au lourd passé.",
+      "sequence_number": 5,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "media_type": "episode",
+      "slug_title": "the-assassin-sleeps-in-a-bed",
+      "availability_starts": "2025-11-03T17:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00362151FRFRV/streams",
+      "episode_air_date": "2025-11-03T00:00:00Z",
+      "is_premium_only": true,
+      "is_mature": false,
+      "closed_captions_available": false,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "premium_date": null,
+      "season_slug_title": "season-1",
+      "season_title": "Je suis un assassin (et je surpasse le héros)",
+      "available_offline": true,
+      "available_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6eaf2c195cdc0c3a3bd12bb2960260d1.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6eaf2c195cdc0c3a3bd12bb2960260d1.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6eaf2c195cdc0c3a3bd12bb2960260d1.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6eaf2c195cdc0c3a3bd12bb2960260d1.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6eaf2c195cdc0c3a3bd12bb2960260d1.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6eaf2c195cdc0c3a3bd12bb2960260d1.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6eaf2c195cdc0c3a3bd12bb2960260d1.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6eaf2c195cdc0c3a3bd12bb2960260d1.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "next_episode_title": "L’assassin combat un esprit malin",
+      "channel_id": "crunchyroll",
+      "production_episode_id": "",
+      "duration_ms": 1430056,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_subbed": true,
+      "season_display_number": "",
+      "is_dubbed": true,
+      "availability_notes": ""
+    },
+    {
+      "season_number": 1,
+      "closed_captions_available": false,
+      "premium_available_date": "2025-11-10T17:00:00Z",
+      "episode_air_date": "2025-11-10T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00362153FRFRV/streams",
+      "premium_date": null,
+      "title": "L’assassin combat un esprit malin",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_id": "GS00362142FRFR",
+      "upload_date": "2025-11-10T00:00:00Z",
+      "is_mature": false,
+      "next_episode_title": "L’assassin serre une main",
+      "seo_description": "",
+      "is_premium_only": true,
+      "audio_locale": "fr-FR",
+      "is_dubbed": true,
+      "series_id": "G0XHWM1JP",
+      "recent_audio_locale": "fr-FR",
+      "slug_title": "the-assassin-fights-a-demon",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_slug_title": "season-1",
+      "is_subbed": true,
+      "media_type": "episode",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "season_sequence_number": 1,
+      "available_date": null,
+      "identifier": "G0XHWM1JP|S00362142|E6",
+      "id": "GE00362153FRFR",
+      "availability_starts": "2025-11-10T17:00:00Z",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "season_display_number": "",
+      "duration_ms": 1430056,
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/24534525e46043e1f8af1c3cd55a1441.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/24534525e46043e1f8af1c3cd55a1441.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/24534525e46043e1f8af1c3cd55a1441.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/24534525e46043e1f8af1c3cd55a1441.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/24534525e46043e1f8af1c3cd55a1441.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/24534525e46043e1f8af1c3cd55a1441.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/24534525e46043e1f8af1c3cd55a1441.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/24534525e46043e1f8af1c3cd55a1441.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_title": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "roles": [
+        "dub"
+      ],
+      "series_slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_offline": true,
+      "is_clip": false,
+      "slug": "",
+      "listing_id": "",
+      "description": "Akira est bien décidé à sauver Amélia, quitte à se mettre en danger. Yoru et Crow l’exhortent à la prudence.",
+      "sequence_number": 6,
+      "channel_id": "crunchyroll",
+      "season_title": "Je suis un assassin (et je surpasse le héros)",
+      "next_episode_id": "GE00362155FRFR",
+      "availability_status": "available",
+      "seo_title": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "recent_variant": "",
+      "hd_flag": true,
+      "availability_notes": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362153JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362153JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362142JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362153ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362153ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362153DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362153DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362153FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362153FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142FRFR",
+          "variant": ""
+        }
+      ],
+      "eligible_region": "CA",
+      "mature_blocked": false,
+      "episode_number": 6,
+      "episode": "6"
+    },
+    {
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "recent_audio_locale": "fr-FR",
+      "is_subbed": true,
+      "season_sequence_number": 1,
+      "duration_ms": 1430014,
+      "episode_number": 7,
+      "series_title": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "title": "L’assassin serre une main",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362155JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362155JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362142JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362155ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362155ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362155DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362155DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362155FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362155FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142FRFR",
+          "variant": ""
+        }
+      ],
+      "slug": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "availability_status": "available",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "available_offline": true,
+      "closed_captions_available": false,
+      "audio_locale": "fr-FR",
+      "seo_title": "",
+      "slug_title": "the-assassin-makes-a-vow",
+      "availability_notes": "",
+      "season_title": "Je suis un assassin (et je surpasse le héros)",
+      "identifier": "G0XHWM1JP|S00362142|E7",
+      "seo_description": "",
+      "is_dubbed": true,
+      "recent_variant": "",
+      "upload_date": "2025-11-17T00:00:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "available_date": null,
+      "description": "Un puissant démon vole au secours d’Aurum. Akira et Yoru doivent unir leurs forces pour repousser ses assauts.",
+      "mature_blocked": false,
+      "premium_date": null,
+      "hd_flag": true,
+      "is_clip": false,
+      "roles": [
+        "dub"
+      ],
+      "season_display_number": "",
+      "premium_available_date": "2025-11-17T17:00:00Z",
+      "next_episode_id": "GE00362157FRFR",
+      "eligible_region": "CA",
+      "next_episode_title": "L’assassin oublie son dessein",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d899ba4a43b2edee766ae099167caeb3.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d899ba4a43b2edee766ae099167caeb3.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d899ba4a43b2edee766ae099167caeb3.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d899ba4a43b2edee766ae099167caeb3.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d899ba4a43b2edee766ae099167caeb3.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d899ba4a43b2edee766ae099167caeb3.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d899ba4a43b2edee766ae099167caeb3.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d899ba4a43b2edee766ae099167caeb3.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_mature": false,
+      "production_episode_id": "",
+      "episode": "7",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "id": "GE00362155FRFR",
+      "media_type": "episode",
+      "availability_starts": "2025-11-17T17:00:00Z",
+      "season_slug_title": "season-1",
+      "series_id": "G0XHWM1JP",
+      "episode_air_date": "2025-11-17T00:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "sequence_number": 7,
+      "listing_id": "",
+      "season_id": "GS00362142FRFR",
+      "streams_link": "/content/v2/cms/videos/GE00362155FRFRV/streams",
+      "is_premium_only": true,
+      "channel_id": "crunchyroll",
+      "series_slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "season_number": 1
+    },
+    {
+      "season_id": "GS00362142FRFR",
+      "next_episode_title": "L’assassin poursuit son chemin",
+      "episode_number": 8,
+      "identifier": "G0XHWM1JP|S00362142|E8",
+      "series_title": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/efd7199a8d327c2081b5bebdaa61b7da.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/efd7199a8d327c2081b5bebdaa61b7da.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/efd7199a8d327c2081b5bebdaa61b7da.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/efd7199a8d327c2081b5bebdaa61b7da.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/efd7199a8d327c2081b5bebdaa61b7da.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/efd7199a8d327c2081b5bebdaa61b7da.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/efd7199a8d327c2081b5bebdaa61b7da.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/efd7199a8d327c2081b5bebdaa61b7da.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "roles": [
+        "dub"
+      ],
+      "id": "GE00362157FRFR",
+      "title": "L’assassin oublie son dessein",
+      "seo_description": "",
+      "production_episode_id": "",
+      "recent_audio_locale": "fr-FR",
+      "is_premium_only": true,
+      "season_title": "Je suis un assassin (et je surpasse le héros)",
+      "streams_link": "/content/v2/cms/videos/GE00362157FRFRV/streams",
+      "listing_id": "",
+      "is_dubbed": true,
+      "slug_title": "the-assassin-is-spellbound",
+      "episode": "8",
+      "upload_date": "2025-11-24T00:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362157JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362157JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362142JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362157ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362157ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362157FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362157FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362157DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362157DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142DEDE",
+          "variant": ""
+        }
+      ],
+      "is_subbed": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_mature": false,
+      "available_offline": true,
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "availability_starts": "2025-11-24T17:30:00Z",
+      "next_episode_id": "GE00362159FRFR",
+      "eligible_region": "CA",
+      "availability_notes": "",
+      "description": "Pour prouver leur valeur, Tsukasa et ses amis se rendent à une foire marquée par d’étranges disparitions.",
+      "premium_available_date": "2025-11-24T17:30:00Z",
+      "season_display_number": "",
+      "channel_id": "crunchyroll",
+      "series_id": "G0XHWM1JP",
+      "media_type": "episode",
+      "mature_blocked": false,
+      "sequence_number": 8,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode_air_date": "2025-11-24T00:00:00Z",
+      "is_clip": false,
+      "seo_title": "",
+      "available_date": null,
+      "duration_ms": 1430014,
+      "recent_variant": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "series_slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "slug": "",
+      "audio_locale": "fr-FR",
+      "premium_date": null,
+      "availability_status": "available",
+      "season_sequence_number": 1,
+      "season_slug_title": "season-1",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_number": 1
+    },
+    {
+      "slug": "",
+      "season_number": 1,
+      "next_episode_title": "L’assassin regarde au loin",
+      "recent_variant": "",
+      "premium_available_date": "2025-12-01T17:00:00Z",
+      "series_id": "G0XHWM1JP",
+      "seo_description": "",
+      "season_display_number": "",
+      "episode_air_date": "2025-12-01T00:00:00Z",
+      "roles": [
+        "dub"
+      ],
+      "media_type": "episode",
+      "series_title": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "eligible_region": "CA",
+      "available_offline": true,
+      "available_date": null,
+      "closed_captions_available": false,
+      "production_episode_id": "",
+      "episode_number": 9,
+      "is_clip": false,
+      "availability_starts": "2025-12-01T17:00:00Z",
+      "is_mature": false,
+      "recent_audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GE00362159FRFRV/streams",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d2fde1ccbc77e5d7b0ab420bde878819.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d2fde1ccbc77e5d7b0ab420bde878819.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d2fde1ccbc77e5d7b0ab420bde878819.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d2fde1ccbc77e5d7b0ab420bde878819.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d2fde1ccbc77e5d7b0ab420bde878819.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d2fde1ccbc77e5d7b0ab420bde878819.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d2fde1ccbc77e5d7b0ab420bde878819.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d2fde1ccbc77e5d7b0ab420bde878819.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug_title": "the-assassin-sees-the-sights",
+      "season_id": "GS00362142FRFR",
+      "season_slug_title": "season-1",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "title": "L’assassin poursuit son chemin",
+      "listing_id": "",
+      "availability_notes": "",
+      "identifier": "G0XHWM1JP|S00362142|E9",
+      "episode": "9",
+      "next_episode_id": "GE00362161FRFR",
+      "audio_locale": "fr-FR",
+      "availability_status": "available",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362159JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362159JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362142JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362159ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362159ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362159DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362159DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362159FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362159FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362142FRFR",
+          "variant": ""
+        }
+      ],
+      "description": "Akira consent enfin à aider ses anciens camarades de classe. Leurs chemins se séparent pour quelque temps.",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "duration_ms": 1430056,
+      "is_dubbed": true,
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "is_subbed": true,
+      "mature_blocked": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "seo_title": "",
+      "season_title": "Je suis un assassin (et je surpasse le héros)",
+      "hd_flag": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_premium_only": true,
+      "season_sequence_number": 1,
+      "sequence_number": 9,
+      "id": "GE00362159FRFR",
+      "series_slug_title": "my-status-as-an-assassin-obviously-exceeds-the-heros",
+      "upload_date": "2025-12-01T00:00:00Z"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

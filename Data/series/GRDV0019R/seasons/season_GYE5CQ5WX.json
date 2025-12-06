@@ -1,0 +1,5432 @@
+{
+  "total": 24,
+  "data": [
+    {
+      "is_premium_only": false,
+      "audio_locale": "fr-FR",
+      "slug": "",
+      "series_title": "JUJUTSU KAISEN",
+      "description": "Élève de seconde, Yuji Itadori, véritable force de la nature, ne voit guère dans le surnaturel qu’un prétexte à fréquenter le club de spiritisme de son lycée, où il se sent bien et dont les activités lui permettent de rentrer pas trop tard. N’étant lui-même pas doté de pouvoirs occultes, il ne croit pas aux fantômes et ne prête qu’une oreille polie aux explications d’un inconnu qui lui réclame l’objet qu’il a dérobé dans une station météo. Selon son visiteur, il s’agit en réalité d’une relique extrêmement puissante qui a été placée là pour protéger son lycée contre des monstres…",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "title": "Ryomen Sukuna",
+      "roles": [
+        "dub"
+      ],
+      "slug_title": "ryoumen-sukuna",
+      "free_available_date": "2023-01-19T17:00:00Z",
+      "media_type": "episode",
+      "premium_available_date": "2020-11-20T22:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "seo_description": "",
+      "episode_air_date": "2020-10-03T01:25:00+09:00",
+      "season_sequence_number": 1,
+      "upload_date": "2020-10-03T01:25:00+09:00",
+      "availability_notes": "",
+      "streams_link": "/content/v2/cms/videos/GGVF2MWJQ/streams",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_number": 1,
+      "premium_date": null,
+      "eligible_region": "CA",
+      "listing_id": "",
+      "series_id": "GRDV0019R",
+      "season_number": 1,
+      "id": "GQJUGDN51",
+      "is_dubbed": true,
+      "next_episode_id": "GWDU893ZE",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G69XGG44R",
+          "is_premium_only": false,
+          "media_guid": "G07FNQK95",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GK9U3ZVEW",
+          "is_premium_only": false,
+          "media_guid": "G3WFXPKN8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GVWU0VNM3",
+          "is_premium_only": false,
+          "media_guid": "G25F02X7M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G2XU02X75",
+          "is_premium_only": false,
+          "media_guid": "GDVFVN9M2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G8WUND3JW",
+          "is_premium_only": false,
+          "media_guid": "GQ9FGDN59",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GQJUGDN51",
+          "is_premium_only": false,
+          "media_guid": "GGVF2MWJQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G9DUEQK1V",
+          "is_premium_only": false,
+          "media_guid": "G1QF40KWZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G7PU4ZGX8",
+          "is_premium_only": false,
+          "media_guid": "G4GFQJGED",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "recent_audio_locale": "fr-FR",
+      "sequence_number": 1,
+      "series_slug_title": "jujutsu-kaisen",
+      "next_episode_title": "Pour moi-même",
+      "season_display_number": "1",
+      "recent_variant": "",
+      "duration_ms": 1435123,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "closed_captions_available": false,
+      "hd_flag": true,
+      "episode": "1",
+      "season_id": "GYE5CQ5WX",
+      "availability_starts": "2020-11-20T22:00:00Z",
+      "is_clip": false,
+      "channel_id": "crunchyroll",
+      "season_tags": [],
+      "availability_status": "available",
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "mature_blocked": false,
+      "identifier": "GRDV0019R|S1|E1",
+      "seo_title": "",
+      "is_mature": false,
+      "available_offline": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_subbed": true,
+      "available_date": null,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a8f5d6cd0f0c23c8c6be1935b2b3ebe2.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a8f5d6cd0f0c23c8c6be1935b2b3ebe2.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a8f5d6cd0f0c23c8c6be1935b2b3ebe2.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a8f5d6cd0f0c23c8c6be1935b2b3ebe2.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a8f5d6cd0f0c23c8c6be1935b2b3ebe2.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a8f5d6cd0f0c23c8c6be1935b2b3ebe2.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a8f5d6cd0f0c23c8c6be1935b2b3ebe2.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a8f5d6cd0f0c23c8c6be1935b2b3ebe2.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "sequence_number": 2,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "premium_available_date": "2020-11-27T22:00:00Z",
+      "hd_flag": true,
+      "series_slug_title": "jujutsu-kaisen",
+      "upload_date": "2020-10-10T01:25:00+09:00",
+      "seo_description": "",
+      "season_id": "GYE5CQ5WX",
+      "slug": "",
+      "premium_date": null,
+      "availability_status": "available",
+      "media_type": "episode",
+      "channel_id": "crunchyroll",
+      "episode": "2",
+      "closed_captions_available": false,
+      "next_episode_title": "La bâtisseuse",
+      "availability_starts": "2020-11-27T22:00:00Z",
+      "series_title": "JUJUTSU KAISEN",
+      "season_tags": [],
+      "identifier": "GRDV0019R|S1|E2",
+      "title": "Pour moi-même",
+      "recent_audio_locale": "fr-FR",
+      "id": "GWDU893ZE",
+      "mature_blocked": false,
+      "is_premium_only": false,
+      "listing_id": "",
+      "seo_title": "",
+      "free_available_date": "2023-01-19T17:00:00Z",
+      "recent_variant": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_dubbed": true,
+      "is_mature": false,
+      "is_subbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/de8e2aaf2f8a1e0947287570c645ee31.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/de8e2aaf2f8a1e0947287570c645ee31.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/de8e2aaf2f8a1e0947287570c645ee31.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/de8e2aaf2f8a1e0947287570c645ee31.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/de8e2aaf2f8a1e0947287570c645ee31.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/de8e2aaf2f8a1e0947287570c645ee31.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/de8e2aaf2f8a1e0947287570c645ee31.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/de8e2aaf2f8a1e0947287570c645ee31.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "season_display_number": "1",
+      "roles": [
+        "dub"
+      ],
+      "description": "Ayant volontairement avalé la relique maudite, Yuji va devoir faire face aux conséquences de ce coup de tête aussi téméraire que peu réfléchi, à savoir l’arrivée sur place d’un exorciste d’élite chargé de le tuer, mais aussi très curieux de le voir de près. Ce n’est pas tous les jours que quelqu’un parvient à mettre en échec le terrible démon Sukuna…",
+      "episode_air_date": "2020-10-10T01:25:00+09:00",
+      "duration_ms": 1435037,
+      "season_number": 1,
+      "episode_number": 2,
+      "season_sequence_number": 1,
+      "available_date": null,
+      "audio_locale": "fr-FR",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "slug_title": "for-myself",
+      "series_id": "GRDV0019R",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G64G2V2VR",
+          "is_premium_only": false,
+          "media_guid": "GEMFZ5D82",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GWDU893ZZ",
+          "is_premium_only": false,
+          "media_guid": "GEMFZPQVV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GK9U3ZNPX",
+          "is_premium_only": false,
+          "media_guid": "G3WFXP2J9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GWDU893ZE",
+          "is_premium_only": false,
+          "media_guid": "GEMFZPQVX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G0DUN3XE2",
+          "is_premium_only": false,
+          "media_guid": "G9XFEX2V0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G7PU45DG2",
+          "is_premium_only": false,
+          "media_guid": "G4GFQ37G0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GPWUK40WQ",
+          "is_premium_only": false,
+          "media_guid": "GZ4FV8PN7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G2XU0W5Z5",
+          "is_premium_only": false,
+          "media_guid": "GDVFVJ242",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        }
+      ],
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "streams_link": "/content/v2/cms/videos/GEMFZPQVX/streams",
+      "next_episode_id": "G7PU45DVZ",
+      "is_clip": false,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "available_offline": true,
+      "availability_ends": "9998-11-30T08:00:00Z"
+    },
+    {
+      "slug": "",
+      "episode_number": 3,
+      "premium_available_date": "2020-12-04T22:00:00Z",
+      "availability_notes": "",
+      "mature_blocked": false,
+      "identifier": "GRDV0019R|S1|E3",
+      "episode": "3",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f30887fcbc7fd381afafcc1b768e18b9.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f30887fcbc7fd381afafcc1b768e18b9.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f30887fcbc7fd381afafcc1b768e18b9.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f30887fcbc7fd381afafcc1b768e18b9.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f30887fcbc7fd381afafcc1b768e18b9.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f30887fcbc7fd381afafcc1b768e18b9.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f30887fcbc7fd381afafcc1b768e18b9.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f30887fcbc7fd381afafcc1b768e18b9.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": false,
+      "premium_date": null,
+      "sequence_number": 3,
+      "next_episode_title": "Naissance de la matrice",
+      "availability_starts": "2020-12-04T22:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "seo_description": "",
+      "next_episode_id": "G7PU4545P",
+      "seo_title": "",
+      "closed_captions_available": false,
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "channel_id": "crunchyroll",
+      "season_number": 1,
+      "duration_ms": 1435080,
+      "available_offline": true,
+      "free_available_date": "2023-01-19T17:00:00Z",
+      "season_id": "GYE5CQ5WX",
+      "season_sequence_number": 1,
+      "hd_flag": true,
+      "listing_id": "",
+      "is_subbed": true,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "episode_air_date": "2020-10-17T01:25:00+09:00",
+      "title": "La bâtisseuse",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "description": "Megumi et Yuji accueillent leur unique camarade, que Gojo va immédiatement mettre à l'épreuve. Il craint en effet que, peu habituée à la sournoiserie des fléaux de la capitale, la jeune provinciale n’ait pas le grain de folie nécessaire pour oser les affronter.",
+      "is_dubbed": true,
+      "roles": [
+        "dub"
+      ],
+      "series_slug_title": "jujutsu-kaisen",
+      "series_title": "JUJUTSU KAISEN",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "slug_title": "girl-of-steel",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "audio_locale": "fr-FR",
+      "upload_date": "2020-10-17T01:25:00+09:00",
+      "available_date": null,
+      "is_mature": false,
+      "season_tags": [],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6JK7W70R",
+          "is_premium_only": false,
+          "media_guid": "G71F4K1WE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GN7UDZJ78",
+          "is_premium_only": false,
+          "media_guid": "GVMF0V2Z3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9U3ZN47",
+          "is_premium_only": false,
+          "media_guid": "G3WFXP23M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G0DUN3X04",
+          "is_premium_only": false,
+          "media_guid": "G9XFEX2P7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G7PU45DVZ",
+          "is_premium_only": false,
+          "media_guid": "G4GFQ37XJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GX9UQD475",
+          "is_premium_only": false,
+          "media_guid": "GJKF2M1XZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GN7UD9GD7",
+          "is_premium_only": false,
+          "media_guid": "GVMF05J0Z",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GK9U30Q3Q",
+          "is_premium_only": false,
+          "media_guid": "G3WFXDQXQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        }
+      ],
+      "media_type": "episode",
+      "season_display_number": "1",
+      "series_id": "GRDV0019R",
+      "availability_status": "available",
+      "is_clip": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "id": "G7PU45DVZ",
+      "streams_link": "/content/v2/cms/videos/G4GFQ37XJ/streams"
+    },
+    {
+      "is_clip": false,
+      "premium_available_date": "2020-12-11T22:00:00Z",
+      "recent_audio_locale": "fr-FR",
+      "eligible_region": "CA",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "channel_id": "crunchyroll",
+      "slug_title": "curse-womb-must-die",
+      "episode": "4",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/07e4b59b3818fb74d4897a736156b08a.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/07e4b59b3818fb74d4897a736156b08a.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/07e4b59b3818fb74d4897a736156b08a.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/07e4b59b3818fb74d4897a736156b08a.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/07e4b59b3818fb74d4897a736156b08a.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/07e4b59b3818fb74d4897a736156b08a.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/07e4b59b3818fb74d4897a736156b08a.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/07e4b59b3818fb74d4897a736156b08a.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "fr-FR",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "duration_ms": 1435123,
+      "roles": [
+        "dub"
+      ],
+      "episode_number": 4,
+      "episode_air_date": "2020-10-24T01:25:00+09:00",
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "description": "Un fléau potentiellement de classe S a été repéré dans une prison pour mineurs. Yuji, Megumi et Nobara sont envoyés sur place pour essayer de retrouver des survivants, si tant est qu’il y en ait, et ordre leur est donné de ne surtout pas approcher le fléau lui-même. Malheureusement, ils ne vont pas avoir le choix…",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "is_mature": false,
+      "slug": "",
+      "availability_starts": "2020-12-11T22:00:00Z",
+      "series_title": "JUJUTSU KAISEN",
+      "is_subbed": true,
+      "availability_status": "available",
+      "is_premium_only": true,
+      "season_display_number": "1",
+      "recent_variant": "",
+      "series_id": "GRDV0019R",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "premium_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "title": "Naissance de la matrice",
+      "available_offline": true,
+      "mature_blocked": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6KKD9D36",
+          "is_premium_only": false,
+          "media_guid": "G9XFEWMD8",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G0DUN3NQK",
+          "is_premium_only": true,
+          "media_guid": "G9XFEXEWM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G7PU4545P",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ3Q3K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G4VUQ3Q3Q",
+          "is_premium_only": true,
+          "media_guid": "GNJFDZDZD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GJWU2M2MK",
+          "is_premium_only": true,
+          "media_guid": "GM8FXZXZ0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UDZDZ3",
+          "is_premium_only": true,
+          "media_guid": "GVMF0V0VG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G7PU4ZZEG",
+          "is_premium_only": true,
+          "media_guid": "G4GFQJJ9G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G9DUEQQJW",
+          "is_premium_only": true,
+          "media_guid": "G1QF400D8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        }
+      ],
+      "season_tags": [],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "next_episode_title": "Naissance de la matrice (2)",
+      "identifier": "GRDV0019R|S1|E4",
+      "seo_description": "",
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/G4GFQ3Q3K/streams",
+      "is_dubbed": true,
+      "season_id": "GYE5CQ5WX",
+      "availability_notes": "",
+      "available_date": null,
+      "sequence_number": 4,
+      "season_number": 1,
+      "series_slug_title": "jujutsu-kaisen",
+      "upload_date": "2020-10-24T01:25:00+09:00",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "seo_title": "",
+      "listing_id": "",
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "next_episode_id": "G31UXPXDE",
+      "id": "G7PU4545P"
+    },
+    {
+      "recent_variant": "",
+      "season_id": "GYE5CQ5WX",
+      "availability_notes": "",
+      "is_dubbed": true,
+      "series_id": "GRDV0019R",
+      "premium_date": null,
+      "is_premium_only": true,
+      "season_number": 1,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "seo_description": "",
+      "series_slug_title": "jujutsu-kaisen",
+      "sequence_number": 5,
+      "upload_date": "2020-10-31T01:25:00+09:00",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_air_date": "2020-10-31T01:25:00+09:00",
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "series_title": "JUJUTSU KAISEN",
+      "audio_locale": "fr-FR",
+      "season_tags": [],
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "streams_link": "/content/v2/cms/videos/G8MFNDN8V/streams",
+      "identifier": "GRDV0019R|S1|E5",
+      "is_clip": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "listing_id": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/524c37a1729b9d5c8ea3847e28194e3d.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/524c37a1729b9d5c8ea3847e28194e3d.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/524c37a1729b9d5c8ea3847e28194e3d.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/524c37a1729b9d5c8ea3847e28194e3d.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/524c37a1729b9d5c8ea3847e28194e3d.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/524c37a1729b9d5c8ea3847e28194e3d.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/524c37a1729b9d5c8ea3847e28194e3d.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/524c37a1729b9d5c8ea3847e28194e3d.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "mature_blocked": false,
+      "production_episode_id": "",
+      "next_episode_title": "Après la pluie",
+      "slug_title": "curse-womb-must-die--ii-",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYGVNN34Y",
+          "is_premium_only": false,
+          "media_guid": "GXMFQNWK0",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GMKUXZX81",
+          "is_premium_only": true,
+          "media_guid": "GPPFKQK19",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G31UXPXDE",
+          "is_premium_only": true,
+          "media_guid": "G8MFNDN8V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G2XU020W0",
+          "is_premium_only": true,
+          "media_guid": "GDVFVNVJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GZ7UV7V89",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ2Z9G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUGDG1X",
+          "is_premium_only": true,
+          "media_guid": "GGVF2M2QK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G50UZ9178",
+          "is_premium_only": true,
+          "media_guid": "G07FN1J5V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GQJUG1QP8",
+          "is_premium_only": true,
+          "media_guid": "GGVF2QZ3P",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        }
+      ],
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "season_display_number": "1",
+      "duration_ms": 1435080,
+      "title": "Naissance de la matrice (2)",
+      "id": "G31UXPXDE",
+      "recent_audio_locale": "fr-FR",
+      "episode": "5",
+      "available_date": null,
+      "roles": [
+        "dub"
+      ],
+      "channel_id": "crunchyroll",
+      "media_type": "episode",
+      "available_offline": true,
+      "is_mature": false,
+      "closed_captions_available": false,
+      "availability_starts": "2020-12-18T22:00:00Z",
+      "availability_status": "available",
+      "premium_available_date": "2020-12-18T22:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "episode_number": 5,
+      "next_episode_id": "GD9UVNEX7",
+      "seo_title": "",
+      "is_subbed": true,
+      "slug": "",
+      "hd_flag": true,
+      "description": "Tandis que Nobara est conduite à l’hôpital, Megumi attend le retour de Yuji, qu’il a laissé aux prises avec le fléau de classe S. C’est pourtant quelqu’un de très différent qui va surgir tout à coup…",
+      "eligible_region": "CA"
+    },
+    {
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "premium_available_date": "2020-12-25T22:00:00Z",
+      "season_number": 1,
+      "season_sequence_number": 1,
+      "is_premium_only": true,
+      "episode": "6",
+      "media_type": "episode",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G65J225P6",
+          "is_premium_only": false,
+          "media_guid": "G4GFQPVM8",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GVWU0V8KM",
+          "is_premium_only": true,
+          "media_guid": "G25F02NE7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G31UXPV9K",
+          "is_premium_only": true,
+          "media_guid": "G8MFND7M3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G8WUND7MN",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGDM2G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GD9UVNEX7",
+          "is_premium_only": true,
+          "media_guid": "GWMF897D0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUGDM28",
+          "is_premium_only": true,
+          "media_guid": "GGVF2MXGP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GVWU05M94",
+          "is_premium_only": true,
+          "media_guid": "G25F0W7QD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G31UXDN9W",
+          "is_premium_only": true,
+          "media_guid": "G8MFN8JMG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "available_offline": true,
+      "audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GWMF897D0/streams",
+      "season_tags": [],
+      "duration_ms": 1435208,
+      "is_clip": false,
+      "identifier": "GRDV0019R|S1|E6",
+      "next_episode_title": "Attaque surprise",
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "episode_air_date": "2020-11-07T01:25:00+09:00",
+      "title": "Après la pluie",
+      "seo_description": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/0220a3c6b7dd9ddb0bb61fd389978715.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/0220a3c6b7dd9ddb0bb61fd389978715.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/0220a3c6b7dd9ddb0bb61fd389978715.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/0220a3c6b7dd9ddb0bb61fd389978715.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0220a3c6b7dd9ddb0bb61fd389978715.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/0220a3c6b7dd9ddb0bb61fd389978715.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/0220a3c6b7dd9ddb0bb61fd389978715.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/0220a3c6b7dd9ddb0bb61fd389978715.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_mature": false,
+      "seo_title": "",
+      "availability_notes": "",
+      "is_subbed": true,
+      "listing_id": "",
+      "hd_flag": true,
+      "season_display_number": "1",
+      "channel_id": "crunchyroll",
+      "closed_captions_available": false,
+      "mature_blocked": false,
+      "recent_audio_locale": "fr-FR",
+      "episode_number": 6,
+      "roles": [
+        "dub"
+      ],
+      "availability_starts": "2020-12-25T22:00:00Z",
+      "id": "GD9UVNEX7",
+      "series_title": "JUJUTSU KAISEN",
+      "premium_date": null,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_id": "GRDV0019R",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "production_episode_id": "",
+      "upload_date": "2020-11-07T01:25:00+09:00",
+      "slug": "",
+      "eligible_region": "CA",
+      "description": "Yuji essaie de négocier avec Sukuna afin qu’il le ressuscite, mais le démon veut lui imposer certaines conditions. Megumi et Nobara, eux, s’entraînent avec les première, pendant qu’un serveur de restaurant a une sacrément bonne intuition…",
+      "next_episode_id": "GJWU2MKGZ",
+      "series_slug_title": "jujutsu-kaisen",
+      "season_id": "GYE5CQ5WX",
+      "sequence_number": 6,
+      "slug_title": "after-rain",
+      "available_date": null,
+      "availability_status": "available",
+      "is_dubbed": true,
+      "season_title": "JUJUTSU KAISEN (VF)"
+    },
+    {
+      "is_clip": false,
+      "hd_flag": true,
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "season_id": "GYE5CQ5WX",
+      "episode": "7",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c7fb95ec138af3bf4ae99484d7591a88.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c7fb95ec138af3bf4ae99484d7591a88.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c7fb95ec138af3bf4ae99484d7591a88.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c7fb95ec138af3bf4ae99484d7591a88.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c7fb95ec138af3bf4ae99484d7591a88.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c7fb95ec138af3bf4ae99484d7591a88.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c7fb95ec138af3bf4ae99484d7591a88.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c7fb95ec138af3bf4ae99484d7591a88.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_audio_locale": "fr-FR",
+      "availability_status": "available",
+      "is_mature": false,
+      "mature_blocked": false,
+      "seo_title": "",
+      "series_id": "GRDV0019R",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "description": "En route pour un rendez-vous avec le proviseur, Gojo est attaqué par un fléau de classe S non répertorié. Le combat tourne vite à son avantage, son adversaire n’étant pas en mesure de le toucher. Ce que Gojo ignore, c’est que l’assaillant n’est pas venu seul…",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_dubbed": true,
+      "episode_number": 7,
+      "availability_notes": "",
+      "title": "Attaque surprise",
+      "roles": [
+        "dub"
+      ],
+      "upload_date": "2020-11-14T01:25:00+09:00",
+      "identifier": "GRDV0019R|S1|E7",
+      "series_title": "JUJUTSU KAISEN",
+      "premium_date": null,
+      "episode_air_date": "2020-11-14T01:25:00+09:00",
+      "slug_title": "assault",
+      "audio_locale": "fr-FR",
+      "next_episode_id": "G50UZ23ZE",
+      "slug": "",
+      "id": "GJWU2MKGZ",
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "season_tags": [],
+      "listing_id": "",
+      "season_number": 1,
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "sequence_number": 7,
+      "availability_starts": "2021-01-01T22:00:00Z",
+      "eligible_region": "CA",
+      "recent_variant": "",
+      "is_premium_only": true,
+      "duration_ms": 1435080,
+      "is_subbed": true,
+      "series_slug_title": "jujutsu-kaisen",
+      "next_episode_title": "Ennui",
+      "streams_link": "/content/v2/cms/videos/GM8FXZ07K/streams",
+      "closed_captions_available": false,
+      "channel_id": "crunchyroll",
+      "available_offline": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY1QKKMZR",
+          "is_premium_only": false,
+          "media_guid": "G1QF481X9",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GX9UQD2GP",
+          "is_premium_only": true,
+          "media_guid": "GJKF2MKG5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUQ3DJJ",
+          "is_premium_only": true,
+          "media_guid": "GNJFDZ099",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GJWU2MKGZ",
+          "is_premium_only": true,
+          "media_guid": "GM8FXZ07K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G14U4350D",
+          "is_premium_only": true,
+          "media_guid": "GKKF3ZW0J",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GMKUXZ07Q",
+          "is_premium_only": true,
+          "media_guid": "GPPFKQM4Z",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G7PU4E3VP",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ9WXK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G9DUEJ9PN",
+          "is_premium_only": true,
+          "media_guid": "G1QF4DVEJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "seo_description": "",
+      "season_display_number": "1",
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "available_date": null,
+      "premium_available_date": "2021-01-01T22:00:00Z"
+    },
+    {
+      "next_episode_title": "Petit poisson et retour de bâton",
+      "season_number": 1,
+      "available_date": null,
+      "season_tags": [],
+      "is_premium_only": true,
+      "identifier": "GRDV0019R|S1|E8",
+      "series_id": "GRDV0019R",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "sequence_number": 8,
+      "availability_starts": "2021-01-08T22:00:00Z",
+      "series_slug_title": "jujutsu-kaisen",
+      "slug_title": "boredom",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "series_title": "JUJUTSU KAISEN",
+      "id": "G50UZ23ZE",
+      "roles": [
+        "dub"
+      ],
+      "is_subbed": true,
+      "available_offline": true,
+      "mature_blocked": false,
+      "is_clip": false,
+      "listing_id": "",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "seo_title": "",
+      "is_mature": false,
+      "next_episode_id": "GD9UVN195",
+      "description": "Profitant de la réunion préparatoire au tournoi à venir, deux élèves de l’École d’exorcisme de Kyoto rendent une petite visite de courtoisie à Megumi et Nobara. C’est aussi l’occasion pour Gojo d’aller s’expliquer avec leur proviseur.",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_display_number": "1",
+      "premium_available_date": "2021-01-08T22:00:00Z",
+      "seo_description": "",
+      "audio_locale": "fr-FR",
+      "season_id": "GYE5CQ5WX",
+      "production_episode_id": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_sequence_number": 1,
+      "premium_date": null,
+      "episode": "8",
+      "is_dubbed": true,
+      "episode_air_date": "2020-11-21T01:25:00+09:00",
+      "slug": "",
+      "availability_status": "available",
+      "recent_variant": "",
+      "episode_number": 8,
+      "duration_ms": 1435123,
+      "channel_id": "crunchyroll",
+      "eligible_region": "CA",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/16298e46c642c6a60fa974c8aa99f223.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/16298e46c642c6a60fa974c8aa99f223.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/16298e46c642c6a60fa974c8aa99f223.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/16298e46c642c6a60fa974c8aa99f223.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/16298e46c642c6a60fa974c8aa99f223.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/16298e46c642c6a60fa974c8aa99f223.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/16298e46c642c6a60fa974c8aa99f223.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/16298e46c642c6a60fa974c8aa99f223.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "hd_flag": true,
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "title": "Ennui",
+      "availability_notes": "",
+      "upload_date": "2020-11-21T01:25:00+09:00",
+      "streams_link": "/content/v2/cms/videos/G07FN3EN9/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR4G22Z3Y",
+          "is_premium_only": false,
+          "media_guid": "GJKF240J0",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GQJUGD8GD",
+          "is_premium_only": true,
+          "media_guid": "GGVF2MP2M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G50UZ23ZE",
+          "is_premium_only": true,
+          "media_guid": "G07FN3EN9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GG1U2MP20",
+          "is_premium_only": true,
+          "media_guid": "G71F45N40",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DUEXVE8",
+          "is_premium_only": true,
+          "media_guid": "G1QF43Z4N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GJWU2MD20",
+          "is_premium_only": true,
+          "media_guid": "GM8FXZDXP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GMKUX2ZD1",
+          "is_premium_only": true,
+          "media_guid": "GPPFK7Q29",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G31UX1P5E",
+          "is_premium_only": true,
+          "media_guid": "G8MFNXDKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "recent_audio_locale": "fr-FR"
+    },
+    {
+      "title": "Petit poisson et retour de bâton",
+      "is_mature": false,
+      "closed_captions_available": false,
+      "available_offline": true,
+      "season_display_number": "1",
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "upload_date": "2020-11-28T01:25:00+09:00",
+      "slug": "",
+      "is_clip": false,
+      "episode_number": 9,
+      "media_type": "episode",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dca704817ab11dc38518982f4591a588.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/dca704817ab11dc38518982f4591a588.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/dca704817ab11dc38518982f4591a588.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/dca704817ab11dc38518982f4591a588.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/dca704817ab11dc38518982f4591a588.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/dca704817ab11dc38518982f4591a588.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/dca704817ab11dc38518982f4591a588.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/dca704817ab11dc38518982f4591a588.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_notes": "",
+      "next_episode_title": "Altération absolue",
+      "available_date": null,
+      "episode_air_date": "2020-11-28T01:25:00+09:00",
+      "is_premium_only": true,
+      "season_number": 1,
+      "seo_title": "",
+      "sequence_number": 9,
+      "identifier": "GRDV0019R|S1|E9",
+      "audio_locale": "fr-FR",
+      "is_subbed": true,
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GREMEENG6",
+          "is_premium_only": false,
+          "media_guid": "GNJFD51WM",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GZ7UV7WQK",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ28KP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GD9UVN195",
+          "is_premium_only": true,
+          "media_guid": "GWMF894V1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GWDU894VE",
+          "is_premium_only": true,
+          "media_guid": "GEMFZP1JX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G0DUN3VG2",
+          "is_premium_only": true,
+          "media_guid": "G9XFEXKZ0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUZP13J",
+          "is_premium_only": true,
+          "media_guid": "GXMFQDVM1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GK9U3JQVV",
+          "is_premium_only": true,
+          "media_guid": "G3WFX1QKK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G0DUNP4GM",
+          "is_premium_only": true,
+          "media_guid": "G9XFEJ7Z9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "availability_status": "available",
+      "series_id": "GRDV0019R",
+      "premium_date": null,
+      "id": "GD9UVN195",
+      "duration_ms": 1435165,
+      "is_dubbed": true,
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "roles": [
+        "dub"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_id": "GYE5CQ5WX",
+      "production_episode_id": "",
+      "seo_description": "",
+      "slug_title": "small-fry-and-reverse-retribution",
+      "season_sequence_number": 1,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "streams_link": "/content/v2/cms/videos/GWMF894V1/streams",
+      "season_tags": [],
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "series_title": "JUJUTSU KAISEN",
+      "mature_blocked": false,
+      "series_slug_title": "jujutsu-kaisen",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2021-01-15T22:00:00Z",
+      "listing_id": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "description": "Après avoir fait la connaissance des élèves de Kyoto, revenons à Yuji, chargé par Gojo d’enquêter sur un curieux meurtre commis dans un cinéma. Cerise sur le gâteau, l’exorciste avec lequel il doit travailler s’est déjà fait son opinion sur lui, et elle n’est pas reluisante…",
+      "next_episode_id": "GD9UVNNQ9",
+      "episode": "9",
+      "hd_flag": true,
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "availability_starts": "2021-01-15T22:00:00Z"
+    },
+    {
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "season_tags": [],
+      "season_id": "GYE5CQ5WX",
+      "availability_status": "available",
+      "season_display_number": "1",
+      "slug_title": "idle-transfiguration",
+      "recent_variant": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_notes": "",
+      "is_dubbed": true,
+      "roles": [
+        "dub"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6577d3328ddf02e476ab14fd3027a9ef.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6577d3328ddf02e476ab14fd3027a9ef.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6577d3328ddf02e476ab14fd3027a9ef.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6577d3328ddf02e476ab14fd3027a9ef.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6577d3328ddf02e476ab14fd3027a9ef.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6577d3328ddf02e476ab14fd3027a9ef.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6577d3328ddf02e476ab14fd3027a9ef.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6577d3328ddf02e476ab14fd3027a9ef.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "slug": "",
+      "audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GWMF899EV/streams",
+      "episode_number": 10,
+      "seo_description": "",
+      "is_clip": false,
+      "description": "Yuji parvient assez facilement à entrer en contact avec Junpei Yoshino, seul témoin de la tuerie du cinéma. La tâche est en revanche beaucoup moins aisée pour Nanami, son adversaire ayant le pouvoir de modeler l’enveloppe corporelle de ses victimes, mais aussi leur âme.",
+      "sequence_number": 10,
+      "season_number": 1,
+      "series_title": "JUJUTSU KAISEN",
+      "series_id": "GRDV0019R",
+      "premium_available_date": "2021-01-22T22:00:00Z",
+      "is_subbed": true,
+      "available_date": null,
+      "recent_audio_locale": "fr-FR",
+      "is_mature": false,
+      "identifier": "GRDV0019R|S1|E10",
+      "eligible_region": "CA",
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "season_sequence_number": 1,
+      "media_type": "episode",
+      "duration_ms": 1435165,
+      "available_offline": true,
+      "episode": "10",
+      "series_slug_title": "jujutsu-kaisen",
+      "title": "Altération absolue",
+      "seo_title": "",
+      "availability_starts": "2021-01-22T22:00:00Z",
+      "premium_date": null,
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "id": "GD9UVNNQ9",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR71VVEMR",
+          "is_premium_only": false,
+          "media_guid": "GKKF37K4V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GPWUKQQDD",
+          "is_premium_only": true,
+          "media_guid": "GZ4FV7711",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G2XU022D4",
+          "is_premium_only": true,
+          "media_guid": "GDVFVNN8Q",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GD9UVNNQ9",
+          "is_premium_only": true,
+          "media_guid": "GWMF899EV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GQJUGDDV0",
+          "is_premium_only": true,
+          "media_guid": "GGVF2MM45",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G0DUN33DZ",
+          "is_premium_only": true,
+          "media_guid": "G9XFEXX54",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GVWU0E9GP",
+          "is_premium_only": true,
+          "media_guid": "G25F0KQP5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G31UX19J3",
+          "is_premium_only": true,
+          "media_guid": "G8MFNXMQW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "production_episode_id": "",
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "next_episode_title": "Intransigeance",
+      "next_episode_id": "GX9UQD9P4",
+      "episode_air_date": "2020-12-05T01:25:00+09:00",
+      "upload_date": "2020-12-05T01:25:00+09:00",
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      }
+    },
+    {
+      "roles": [
+        "dub"
+      ],
+      "availability_starts": "2021-01-29T22:00:00Z",
+      "is_mature": false,
+      "season_number": 1,
+      "premium_date": null,
+      "series_title": "JUJUTSU KAISEN",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "production_episode_id": "",
+      "eligible_region": "CA",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d4d2ddc024582047c509cec76911b912.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d4d2ddc024582047c509cec76911b912.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d4d2ddc024582047c509cec76911b912.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d4d2ddc024582047c509cec76911b912.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d4d2ddc024582047c509cec76911b912.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d4d2ddc024582047c509cec76911b912.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d4d2ddc024582047c509cec76911b912.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d4d2ddc024582047c509cec76911b912.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_air_date": "2020-12-12T01:25:00+09:00",
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "duration_ms": 1435080,
+      "description": "Mahito était prévenu, Nanami déteste faire des heures supplémentaires. Son affrontement avec Mahito lui donne cependant matière à réfléchir, et on ne peut pas dire que le résultat soit joyeux. Yuji dîne chez Junpei et sympathise avec lui. Parviendra-t-il à contrebalancer l’influence de Mahito et à chasser les ténèbres qui s’amoncellent dans l’âme de ce garçon tourmenté ?",
+      "premium_available_date": "2021-01-29T22:00:00Z",
+      "hd_flag": true,
+      "mature_blocked": false,
+      "availability_status": "available",
+      "slug": "",
+      "next_episode_id": "G9DUEX8MD",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYEMEENPR",
+          "is_premium_only": false,
+          "media_guid": "GM8FXJP4M",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUGD77K",
+          "is_premium_only": true,
+          "media_guid": "GGVF2M008",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G0DUN344K",
+          "is_premium_only": true,
+          "media_guid": "G9XFEX77M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GEVUZPKK7",
+          "is_premium_only": true,
+          "media_guid": "GXMFQD99E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GX9UQD9P4",
+          "is_premium_only": true,
+          "media_guid": "GJKF2M851",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14U432WV",
+          "is_premium_only": true,
+          "media_guid": "GKKF3ZQ5G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GZ7UVK2VQ",
+          "is_premium_only": true,
+          "media_guid": "G5JFZPXZK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GD9UVKQVZ",
+          "is_premium_only": true,
+          "media_guid": "GWMF8XE8M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        }
+      ],
+      "title": "Intransigeance",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_subbed": true,
+      "is_dubbed": true,
+      "streams_link": "/content/v2/cms/videos/GJKF2M851/streams",
+      "season_sequence_number": 1,
+      "series_id": "GRDV0019R",
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "upload_date": "2020-12-12T01:25:00+09:00",
+      "available_offline": true,
+      "available_date": null,
+      "slug_title": "narrow-minded",
+      "audio_locale": "fr-FR",
+      "identifier": "GRDV0019R|S1|E11",
+      "seo_title": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_clip": false,
+      "media_type": "episode",
+      "seo_description": "",
+      "listing_id": "",
+      "season_id": "GYE5CQ5WX",
+      "episode": "11",
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "fr-FR",
+      "next_episode_title": "Pour toi, un jour",
+      "sequence_number": 11,
+      "id": "GX9UQD9P4",
+      "episode_number": 11,
+      "season_tags": [],
+      "season_display_number": "1",
+      "series_slug_title": "jujutsu-kaisen",
+      "recent_variant": "",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "availability_notes": "",
+      "season_slug_title": "jujutsu-kaisen-french-dub"
+    },
+    {
+      "series_title": "JUJUTSU KAISEN",
+      "episode_number": 12,
+      "season_sequence_number": 1,
+      "media_type": "episode",
+      "available_date": null,
+      "closed_captions_available": false,
+      "mature_blocked": false,
+      "seo_description": "",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/231f27f174d87bc865b49ac74c2f7af3.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/231f27f174d87bc865b49ac74c2f7af3.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/231f27f174d87bc865b49ac74c2f7af3.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/231f27f174d87bc865b49ac74c2f7af3.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/231f27f174d87bc865b49ac74c2f7af3.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/231f27f174d87bc865b49ac74c2f7af3.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/231f27f174d87bc865b49ac74c2f7af3.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/231f27f174d87bc865b49ac74c2f7af3.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "premium_available_date": "2021-02-05T22:00:00Z",
+      "roles": [
+        "dub"
+      ],
+      "listing_id": "",
+      "next_episode_id": "GPWUKQG47",
+      "season_tags": [],
+      "hd_flag": true,
+      "production_episode_id": "",
+      "title": "Pour toi, un jour",
+      "available_offline": true,
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "availability_notes": "",
+      "premium_date": null,
+      "eligible_region": "CA",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_id": "GRDV0019R",
+      "episode": "12",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "duration_ms": 1435165,
+      "sequence_number": 12,
+      "next_episode_title": "À demain",
+      "availability_starts": "2021-02-05T22:00:00Z",
+      "streams_link": "/content/v2/cms/videos/G1QF43N1X/streams",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "id": "G9DUEX8MD",
+      "is_clip": false,
+      "recent_audio_locale": "fr-FR",
+      "seo_title": "",
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "season_display_number": "1",
+      "episode_air_date": "2020-12-19T01:25:00+09:00",
+      "description": "Aveuglé par la colère et le chagrin, Junpei a laissé la noirceur qui l’habitait déjà le submerger, sans s’apercevoir qu’il ne fait que servir les intérêts de Mahito. De son côté, Yuji a été mis au courant de la situation et accourt pour tenter de l’aider. Le spectacle auquel il assiste va le méduser…",
+      "identifier": "GRDV0019R|S1|E12",
+      "is_premium_only": true,
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRWMGG7J6",
+          "is_premium_only": false,
+          "media_guid": "GVMF0D7Z2",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1U2M8NP",
+          "is_premium_only": true,
+          "media_guid": "G71F45Q1N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G0DUN37KV",
+          "is_premium_only": true,
+          "media_guid": "G9XFEX8MK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G9DUEX8MD",
+          "is_premium_only": true,
+          "media_guid": "G1QF43N1X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GX9UQD5W7",
+          "is_premium_only": true,
+          "media_guid": "GJKF2MZ0X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWU2MZ0G",
+          "is_premium_only": true,
+          "media_guid": "GM8FXZKP7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G4VUQNK4P",
+          "is_premium_only": true,
+          "media_guid": "GNJFDQX35",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GX9UQ518V",
+          "is_premium_only": true,
+          "media_guid": "GJKF2ZNDP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "is_dubbed": true,
+      "upload_date": "2020-12-19T01:25:00+09:00",
+      "slug": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "season_id": "GYE5CQ5WX",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_number": 1,
+      "is_mature": false,
+      "audio_locale": "fr-FR",
+      "channel_id": "crunchyroll",
+      "series_slug_title": "jujutsu-kaisen",
+      "slug_title": "to-you-someday",
+      "recent_variant": ""
+    },
+    {
+      "duration_ms": 1435123,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_status": "available",
+      "upload_date": "2020-12-26T01:25:00+09:00",
+      "description": "Sous le déluge des coups infligés par Yuji et Nanami, Mahito voit sa fin arriver. Il se décide donc à jouer une carte majeure, acquise depuis peu : l’Extension du territoire.",
+      "is_mature": false,
+      "premium_date": null,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "channel_id": "crunchyroll",
+      "episode_number": 13,
+      "available_offline": true,
+      "season_id": "GYE5CQ5WX",
+      "next_episode_id": "G14U43100",
+      "available_date": null,
+      "id": "GPWUKQG47",
+      "recent_audio_locale": "fr-FR",
+      "seo_description": "",
+      "premium_available_date": "2021-02-12T22:00:00Z",
+      "season_number": 1,
+      "sequence_number": 13,
+      "media_type": "episode",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "audio_locale": "fr-FR",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_starts": "2021-02-12T22:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GZ4FV748K/streams",
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "production_episode_id": "",
+      "series_title": "JUJUTSU KAISEN",
+      "roles": [
+        "dub"
+      ],
+      "slug": "",
+      "season_tags": [],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5c0bd5c7e36d1965d656b7029f5172b5.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5c0bd5c7e36d1965d656b7029f5172b5.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5c0bd5c7e36d1965d656b7029f5172b5.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5c0bd5c7e36d1965d656b7029f5172b5.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5c0bd5c7e36d1965d656b7029f5172b5.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5c0bd5c7e36d1965d656b7029f5172b5.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5c0bd5c7e36d1965d656b7029f5172b5.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5c0bd5c7e36d1965d656b7029f5172b5.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "eligible_region": "CA",
+      "is_clip": false,
+      "recent_variant": "",
+      "series_slug_title": "jujutsu-kaisen",
+      "is_premium_only": true,
+      "seo_title": "",
+      "season_sequence_number": 1,
+      "slug_title": "tomorrow",
+      "is_subbed": true,
+      "season_display_number": "1",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "episode_air_date": "2020-12-26T01:25:00+09:00",
+      "identifier": "GRDV0019R|S1|E13",
+      "is_dubbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY5J225GY",
+          "is_premium_only": false,
+          "media_guid": "G3WFXM43X",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G31UXP9DD",
+          "is_premium_only": true,
+          "media_guid": "G8MFNDM88",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GPWUKQG47",
+          "is_premium_only": true,
+          "media_guid": "GZ4FV748K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G8WUNDM8M",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGD212",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUGD213",
+          "is_premium_only": true,
+          "media_guid": "GGVF2MGQN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G50UZ2590",
+          "is_premium_only": true,
+          "media_guid": "G07FN3812",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G0DUN7NGJ",
+          "is_premium_only": true,
+          "media_guid": "G9XFE8EZG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GZ7UVZV3J",
+          "is_premium_only": true,
+          "media_guid": "G5JFZQZNW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "availability_notes": "",
+      "episode": "13",
+      "next_episode_title": "Le tournoi - épreuve par équipes (0)",
+      "listing_id": "",
+      "mature_blocked": false,
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "series_id": "GRDV0019R",
+      "title": "À demain"
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_subbed": true,
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "episode_air_date": "2021-01-16T01:25:00+09:00",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "is_mature": false,
+      "mature_blocked": false,
+      "listing_id": "",
+      "id": "G14U43100",
+      "premium_date": null,
+      "recent_variant": "",
+      "season_tags": [],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU45N3E",
+          "is_premium_only": false,
+          "media_guid": "G4GFQ34W9",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GWDU89JWZ",
+          "is_premium_only": true,
+          "media_guid": "GEMFZPD2V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GG1U2MNQK",
+          "is_premium_only": true,
+          "media_guid": "G71F451ZG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G7PU451ZW",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ3VJM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G14U43100",
+          "is_premium_only": true,
+          "media_guid": "GKKF3ZK00",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UDZ19Q",
+          "is_premium_only": true,
+          "media_guid": "GVMF0V75K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GD9UV501Z",
+          "is_premium_only": true,
+          "media_guid": "GWMF81Z4M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GQJUGK8XZ",
+          "is_premium_only": true,
+          "media_guid": "GGVF28PKV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "episode": "14",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "available_date": null,
+      "availability_starts": "2021-03-05T22:00:00Z",
+      "episode_number": 14,
+      "series_slug_title": "jujutsu-kaisen",
+      "is_dubbed": true,
+      "roles": [
+        "dub"
+      ],
+      "streams_link": "/content/v2/cms/videos/GKKF3ZK00/streams",
+      "slug_title": "kyoto-sister-school-exchange-event---group-battle-0--",
+      "description": "Enfin, ça y est ! Yuji va pouvoir faire son grand retour à l’occasion de l’Amicale, le tournoi opposant Tokyo et Kyoto ! Et Gojo, qui a réfléchi à la question, lui prépare une arrivée en fanfare. Mais on se rendra vite compte que l’Amicale porte, cette année, assez mal son nom…",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_title": "JUJUTSU KAISEN",
+      "eligible_region": "CA",
+      "hd_flag": true,
+      "next_episode_title": "Le tournoi - épreuve par équipes (1)",
+      "premium_available_date": "2021-03-05T22:00:00Z",
+      "recent_audio_locale": "fr-FR",
+      "season_number": 1,
+      "season_id": "GYE5CQ5WX",
+      "seo_description": "",
+      "upload_date": "2021-01-16T01:25:00+09:00",
+      "availability_status": "available",
+      "is_clip": false,
+      "availability_notes": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "audio_locale": "fr-FR",
+      "identifier": "GRDV0019R|S1|E14",
+      "next_episode_id": "G2XU02737",
+      "sequence_number": 14,
+      "channel_id": "crunchyroll",
+      "season_sequence_number": 1,
+      "available_offline": true,
+      "closed_captions_available": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "series_id": "GRDV0019R",
+      "title": "Le tournoi - épreuve par équipes (0)",
+      "season_display_number": "1",
+      "is_premium_only": true,
+      "duration_ms": 1435165,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/844131691cc76ab8eeb23f98460b0e34.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/844131691cc76ab8eeb23f98460b0e34.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/844131691cc76ab8eeb23f98460b0e34.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/844131691cc76ab8eeb23f98460b0e34.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/844131691cc76ab8eeb23f98460b0e34.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/844131691cc76ab8eeb23f98460b0e34.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/844131691cc76ab8eeb23f98460b0e34.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/844131691cc76ab8eeb23f98460b0e34.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "production_episode_id": "",
+      "media_type": "episode",
+      "slug": ""
+    },
+    {
+      "is_dubbed": true,
+      "premium_date": null,
+      "season_display_number": "1",
+      "eligible_region": "CA",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug": "",
+      "slug_title": "kyoto-sister-school-exchange-event---group-battle-1--",
+      "series_id": "GRDV0019R",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DUEXV98",
+          "is_premium_only": false,
+          "media_guid": "G1QF43ZVN",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GPWUKQ95V",
+          "is_premium_only": true,
+          "media_guid": "GZ4FV7GXE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G2XU02737",
+          "is_premium_only": true,
+          "media_guid": "GDVFVNMWM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GZ7UV7GJ3",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ20WN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1U2MJ0P",
+          "is_premium_only": true,
+          "media_guid": "G71F4570N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUZP7K5",
+          "is_premium_only": true,
+          "media_guid": "GXMFQDE9N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G14U4NK0P",
+          "is_premium_only": true,
+          "media_guid": "GKKF3190N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GJWU2ZPG2",
+          "is_premium_only": true,
+          "media_guid": "GM8FXKN7X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "mature_blocked": false,
+      "id": "G2XU02737",
+      "availability_notes": "",
+      "upload_date": "2021-01-23T01:25:00+09:00",
+      "season_sequence_number": 1,
+      "recent_variant": "",
+      "next_episode_title": "Le tournoi - épreuve par équipes (2)",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "streams_link": "/content/v2/cms/videos/GDVFVNMWM/streams",
+      "availability_status": "available",
+      "seo_title": "",
+      "audio_locale": "fr-FR",
+      "premium_available_date": "2021-03-12T22:00:00Z",
+      "media_type": "episode",
+      "recent_audio_locale": "fr-FR",
+      "available_date": null,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "sequence_number": 15,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "series_slug_title": "jujutsu-kaisen",
+      "is_subbed": true,
+      "season_number": 1,
+      "season_id": "GYE5CQ5WX",
+      "seo_description": "",
+      "next_episode_id": "GG1U2DWDQ",
+      "is_mature": false,
+      "duration_ms": 1435080,
+      "series_title": "JUJUTSU KAISEN",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7a432f52f7b42b9d7405e91d06495306.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7a432f52f7b42b9d7405e91d06495306.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7a432f52f7b42b9d7405e91d06495306.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7a432f52f7b42b9d7405e91d06495306.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7a432f52f7b42b9d7405e91d06495306.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7a432f52f7b42b9d7405e91d06495306.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7a432f52f7b42b9d7405e91d06495306.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7a432f52f7b42b9d7405e91d06495306.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_offline": true,
+      "identifier": "GRDV0019R|S1|E15",
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "hd_flag": true,
+      "is_clip": false,
+      "episode": "15",
+      "channel_id": "crunchyroll",
+      "closed_captions_available": false,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "description": "Après le coup d’envoi, donné par Gojo et Utahime, chaque groupe commence à appliquer sa stratégie. Yuji, renfort inattendu, est chargé de contenir la puissance de feu de Todo, pour permettre aux pisteurs de Tokyo de trouver les fléaux disséminés dans l’enceinte. Or, du côté de Kyoto, c’est plutôt une chasse au Yuji qui s’est ouverte.",
+      "season_tags": [],
+      "title": "Le tournoi - épreuve par équipes (1)",
+      "listing_id": "",
+      "roles": [
+        "dub"
+      ],
+      "episode_air_date": "2021-01-23T01:25:00+09:00",
+      "episode_number": 15,
+      "production_episode_id": "",
+      "is_premium_only": true,
+      "availability_starts": "2021-03-12T22:00:00Z"
+    },
+    {
+      "available_date": null,
+      "description": "Depuis que Todo connaît les goûts de Yuji en matière de filles, la brute sadique s’est transformée en camarade d’entraînement prodigue en conseils. C’est plus compliqué pour Panda, qui doit se battre contre Mechamaru, et Nobara, opposée à Momo. Mais, tout comme son adversaire, Panda nous réserve bien des surprises…",
+      "recent_audio_locale": "fr-FR",
+      "availability_status": "available",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "listing_id": "",
+      "is_mature": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "sequence_number": 16,
+      "is_clip": false,
+      "season_id": "GYE5CQ5WX",
+      "duration_ms": 1435123,
+      "series_title": "JUJUTSU KAISEN",
+      "premium_available_date": "2021-03-19T21:00:00Z",
+      "identifier": "GRDV0019R|S1|E16",
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/G71F4WPWZ/streams",
+      "slug": "",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "premium_date": null,
+      "next_episode_id": "G7PU4W2EG",
+      "episode_air_date": "2021-01-30T01:25:00+09:00",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "next_episode_title": "Le tournoi - épreuve par équipes (3)",
+      "roles": [
+        "dub"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c7bb1d658d152abd18e3067c636dc7a0.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c7bb1d658d152abd18e3067c636dc7a0.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c7bb1d658d152abd18e3067c636dc7a0.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c7bb1d658d152abd18e3067c636dc7a0.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c7bb1d658d152abd18e3067c636dc7a0.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c7bb1d658d152abd18e3067c636dc7a0.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c7bb1d658d152abd18e3067c636dc7a0.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c7bb1d658d152abd18e3067c636dc7a0.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode": "16",
+      "upload_date": "2021-01-30T01:25:00+09:00",
+      "episode_number": 16,
+      "id": "GG1U2DWDQ",
+      "available_offline": true,
+      "series_slug_title": "jujutsu-kaisen",
+      "mature_blocked": false,
+      "season_number": 1,
+      "production_episode_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GX9UQD830",
+          "is_premium_only": false,
+          "media_guid": "GJKF2MDQV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G2XU05X5M",
+          "is_premium_only": true,
+          "media_guid": "GDVFV2921",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GWDU8PVP5",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ8J84",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GG1U2DWDQ",
+          "is_premium_only": true,
+          "media_guid": "G71F4WPWZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G7PU4WPW9",
+          "is_premium_only": true,
+          "media_guid": "G4GFQMKM2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9UQK1KJ",
+          "is_premium_only": true,
+          "media_guid": "GJKF2JNJ9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G50UZQ2XM",
+          "is_premium_only": true,
+          "media_guid": "G07FN73DM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GWDU819E0",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ9PX0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "title": "Le tournoi - épreuve par équipes (2)",
+      "is_dubbed": true,
+      "eligible_region": "CA",
+      "availability_notes": "",
+      "availability_starts": "2021-03-19T21:00:00Z",
+      "seo_title": "",
+      "season_tags": [],
+      "season_sequence_number": 1,
+      "seo_description": "",
+      "is_subbed": true,
+      "audio_locale": "fr-FR",
+      "is_premium_only": true,
+      "media_type": "episode",
+      "series_id": "GRDV0019R",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_display_number": "1",
+      "slug_title": "kyoto-sister-school-exchange-event---group-battle-2--",
+      "closed_captions_available": false,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ]
+    },
+    {
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUQ34W8",
+          "is_premium_only": false,
+          "media_guid": "GNJFDZ3NV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GWDU8PMX8",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ83MZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GG1U2D59X",
+          "is_premium_only": true,
+          "media_guid": "G71F4W2E3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G7PU4W2EG",
+          "is_premium_only": true,
+          "media_guid": "G4GFQM09G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GX9UQKMXD",
+          "is_premium_only": true,
+          "media_guid": "GJKF2J73M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWU2J738",
+          "is_premium_only": true,
+          "media_guid": "GM8FX5M2W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GG1U280VG",
+          "is_premium_only": true,
+          "media_guid": "G71F4Q0D9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G0DUN74XJ",
+          "is_premium_only": true,
+          "media_guid": "G9XFE872G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/G4GFQM09G/streams",
+      "available_date": null,
+      "production_episode_id": "",
+      "eligible_region": "CA",
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "closed_captions_available": false,
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "mature_blocked": false,
+      "identifier": "GRDV0019R|S1|E17",
+      "hd_flag": true,
+      "episode_number": 17,
+      "is_subbed": true,
+      "slug_title": "kyoto-sister-school-exchange-event---group-battle-3--",
+      "season_sequence_number": 1,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "available_offline": true,
+      "availability_status": "available",
+      "season_display_number": "1",
+      "slug": "",
+      "episode": "17",
+      "duration_ms": 1435123,
+      "episode_air_date": "2021-02-06T01:25:00+09:00",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c79c56d8a0e1e2bc64eb7945343c3baf.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c79c56d8a0e1e2bc64eb7945343c3baf.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c79c56d8a0e1e2bc64eb7945343c3baf.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c79c56d8a0e1e2bc64eb7945343c3baf.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c79c56d8a0e1e2bc64eb7945343c3baf.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c79c56d8a0e1e2bc64eb7945343c3baf.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c79c56d8a0e1e2bc64eb7945343c3baf.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c79c56d8a0e1e2bc64eb7945343c3baf.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "roles": [
+        "dub"
+      ],
+      "next_episode_id": "GK9U3832G",
+      "recent_audio_locale": "fr-FR",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "series_slug_title": "jujutsu-kaisen",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "upload_date": "2021-02-06T01:25:00+09:00",
+      "channel_id": "crunchyroll",
+      "title": "Le tournoi - épreuve par équipes (3)",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_premium_only": true,
+      "premium_date": null,
+      "description": "Trompée par les propos méprisants de Mai au sujet de Maki, Miwa aborde son combat contre cette dernière avec une certaine désinvolture, qui vole vite en éclats devant la différence de niveau abyssale entre les deux exorcistes. Quant à Momo, elle s’est lancée dans un long monologue qui ne semble pas tellement convaincre Nobara…",
+      "season_number": 1,
+      "seo_description": "",
+      "season_id": "GYE5CQ5WX",
+      "listing_id": "",
+      "is_clip": false,
+      "is_mature": false,
+      "sequence_number": 17,
+      "series_id": "GRDV0019R",
+      "availability_starts": "2021-03-26T21:00:00Z",
+      "premium_available_date": "2021-03-26T21:00:00Z",
+      "seo_title": "",
+      "season_tags": [],
+      "recent_variant": "",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "media_type": "episode",
+      "availability_notes": "",
+      "next_episode_title": "Le sage",
+      "is_dubbed": true,
+      "audio_locale": "fr-FR",
+      "id": "G7PU4W2EG",
+      "series_title": "JUJUTSU KAISEN"
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "duration_ms": 1435037,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "identifier": "GRDV0019R|S1|E18",
+      "is_dubbed": true,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "available_offline": true,
+      "closed_captions_available": false,
+      "season_tags": [],
+      "availability_status": "available",
+      "slug": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14U43ZV9",
+          "is_premium_only": false,
+          "media_guid": "GKKF3ZPGM",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G4VUQMQ0K",
+          "is_premium_only": true,
+          "media_guid": "GNJFDWDKX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G14U4X4JJ",
+          "is_premium_only": true,
+          "media_guid": "GKKF38322",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GK9U3832G",
+          "is_premium_only": true,
+          "media_guid": "G3WFX7XEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G31UX7XE4",
+          "is_premium_only": true,
+          "media_guid": "G8MFN2NV1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G8WUN2NPV",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGEGZ0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GPWUKP433",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVZ8WW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G2XU0EWMZ",
+          "is_premium_only": true,
+          "media_guid": "GDVFV5J14",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "season_display_number": "1",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a31daf29d5273a57a884c5b8cd96d0f0.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a31daf29d5273a57a884c5b8cd96d0f0.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a31daf29d5273a57a884c5b8cd96d0f0.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a31daf29d5273a57a884c5b8cd96d0f0.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a31daf29d5273a57a884c5b8cd96d0f0.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a31daf29d5273a57a884c5b8cd96d0f0.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a31daf29d5273a57a884c5b8cd96d0f0.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a31daf29d5273a57a884c5b8cd96d0f0.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "episode": "18",
+      "channel_id": "crunchyroll",
+      "series_id": "GRDV0019R",
+      "is_mature": false,
+      "eligible_region": "CA",
+      "next_episode_id": "G50UZEZQK",
+      "series_title": "JUJUTSU KAISEN",
+      "seo_title": "",
+      "series_slug_title": "jujutsu-kaisen",
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "hd_flag": true,
+      "listing_id": "",
+      "is_clip": false,
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/G3WFX7XEV/streams",
+      "title": "Le sage",
+      "sequence_number": 18,
+      "is_premium_only": true,
+      "id": "GK9U3832G",
+      "recent_audio_locale": "fr-FR",
+      "upload_date": "2021-02-13T01:25:00+09:00",
+      "next_episode_title": "Rayon noir",
+      "mature_blocked": false,
+      "roles": [
+        "dub"
+      ],
+      "is_subbed": true,
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "slug_title": "sage",
+      "season_number": 1,
+      "episode_number": 18,
+      "availability_starts": "2021-04-02T21:00:00Z",
+      "season_id": "GYE5CQ5WX",
+      "audio_locale": "fr-FR",
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "description": "Si les précédents combats se sont déroulés en extérieur, c’est bien dans les locaux même de l’École que Megumi fait face à Noritoshi Kamo, héritier d’un des trois grands clans d’exorcistes et détenteur d’une technique aux effets impressionnants. Moins impressionnants, toutefois, que le fléau avec lequel Inumaki se retrouve nez à nez…",
+      "episode_air_date": "2021-02-13T01:25:00+09:00",
+      "availability_notes": "",
+      "seo_description": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_sequence_number": 1,
+      "premium_date": null,
+      "premium_available_date": "2021-04-02T21:00:00Z"
+    },
+    {
+      "availability_status": "available",
+      "recent_variant": "",
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "audio_locale": "fr-FR",
+      "next_episode_title": "Hors norme",
+      "duration_ms": 1420061,
+      "listing_id": "",
+      "streams_link": "/content/v2/cms/videos/G07FN9N7G/streams",
+      "availability_starts": "2021-04-09T21:00:00Z",
+      "episode_number": 19,
+      "series_id": "GRDV0019R",
+      "seo_description": "",
+      "media_type": "episode",
+      "identifier": "GRDV0019R|S1|E19",
+      "closed_captions_available": false,
+      "season_display_number": "1",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "roles": [
+        "dub"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "is_dubbed": true,
+      "season_sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "next_episode_id": "G4VUQMWDZ",
+      "season_tags": [],
+      "available_offline": true,
+      "eligible_region": "CA",
+      "season_number": 1,
+      "season_id": "GYE5CQ5WX",
+      "is_subbed": true,
+      "id": "G50UZEZQK",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWU2MDQ0",
+          "is_premium_only": false,
+          "media_guid": "GM8FXZDEP",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G2XU050KQ",
+          "is_premium_only": true,
+          "media_guid": "GDVFV2VKX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G8WUN2NX0",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGEGJQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G50UZEZQK",
+          "is_premium_only": true,
+          "media_guid": "G07FN9N7G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GWDU8P81M",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ8Z93",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU4W4Q8",
+          "is_premium_only": true,
+          "media_guid": "G4GFQMQND",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GQJUGKKGV",
+          "is_premium_only": true,
+          "media_guid": "GGVF28824",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GD9UV55V8",
+          "is_premium_only": true,
+          "media_guid": "GWMF8118Q",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        }
+      ],
+      "episode": "19",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "premium_available_date": "2021-04-09T21:00:00Z",
+      "slug_title": "black-flash",
+      "recent_audio_locale": "fr-FR",
+      "is_clip": false,
+      "production_episode_id": "",
+      "is_mature": false,
+      "upload_date": "2021-02-20T01:25:00+09:00",
+      "series_title": "JUJUTSU KAISEN",
+      "sequence_number": 19,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "Rayon noir",
+      "seo_title": "",
+      "description": "Inumaki, Kamo et Megumi ont fort à faire pour réussir ne serait-ce qu’à contenir Hanami assez longtemps pour pouvoir appeler à l’aide le personnel encadrant. La capacité particulière d’Inumaki, pourtant redouté des autres exorcistes, se révèle peu efficace sur le fléau en plus d’être dangereuse pour l’incantateur. Sans renforts, les trois jeunes gens sont perdus…",
+      "series_slug_title": "jujutsu-kaisen",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/050964ab0a90101528f1b743b9604443.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/050964ab0a90101528f1b743b9604443.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/050964ab0a90101528f1b743b9604443.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/050964ab0a90101528f1b743b9604443.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/050964ab0a90101528f1b743b9604443.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/050964ab0a90101528f1b743b9604443.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/050964ab0a90101528f1b743b9604443.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/050964ab0a90101528f1b743b9604443.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "premium_date": null,
+      "is_premium_only": true,
+      "available_date": null,
+      "mature_blocked": false,
+      "hd_flag": true,
+      "availability_notes": "",
+      "episode_air_date": "2021-02-20T01:25:00+09:00",
+      "slug": ""
+    },
+    {
+      "seo_title": "",
+      "id": "G4VUQMWDZ",
+      "is_subbed": true,
+      "recent_variant": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "available_date": null,
+      "availability_status": "available",
+      "seo_description": "",
+      "title": "Hors norme",
+      "series_id": "GRDV0019R",
+      "season_number": 1,
+      "media_type": "episode",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UDZ3NM",
+          "is_premium_only": false,
+          "media_guid": "GVMF0VG8M",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G7PU4W385",
+          "is_premium_only": true,
+          "media_guid": "G4GFQMWD3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GX9UQK327",
+          "is_premium_only": true,
+          "media_guid": "GJKF2JQKX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G4VUQMWDZ",
+          "is_premium_only": true,
+          "media_guid": "GNJFDWN0G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GJWU2JQKG",
+          "is_premium_only": true,
+          "media_guid": "GM8FX5E07",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GMKUX5E0V",
+          "is_premium_only": true,
+          "media_guid": "GPPFK08MG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G2XU0ED1X",
+          "is_premium_only": true,
+          "media_guid": "GDVFV58Z9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GPWUKPDN9",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVZ1QG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        }
+      ],
+      "upload_date": "2021-02-27T01:25:00+09:00",
+      "episode_number": 20,
+      "roles": [
+        "dub"
+      ],
+      "slug": "",
+      "series_slug_title": "jujutsu-kaisen",
+      "streams_link": "/content/v2/cms/videos/GNJFDWN0G/streams",
+      "listing_id": "",
+      "availability_notes": "",
+      "availability_starts": "2021-04-16T21:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d97fecb8aae09a4d425b1def86c23cb6.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d97fecb8aae09a4d425b1def86c23cb6.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d97fecb8aae09a4d425b1def86c23cb6.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d97fecb8aae09a4d425b1def86c23cb6.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d97fecb8aae09a4d425b1def86c23cb6.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d97fecb8aae09a4d425b1def86c23cb6.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d97fecb8aae09a4d425b1def86c23cb6.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d97fecb8aae09a4d425b1def86c23cb6.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_sequence_number": 1,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "channel_id": "crunchyroll",
+      "eligible_region": "CA",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "season_tags": [],
+      "next_episode_id": "G7PU4W30X",
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "series_title": "JUJUTSU KAISEN",
+      "duration_ms": 1420061,
+      "available_offline": true,
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "description": "Où Todo démontre qu’il a bien d’autres atouts que sa force brute… et où Gojo rappelle que décidément, mieux vaut se trouver ailleurs quand il s'y met vraiment.",
+      "recent_audio_locale": "fr-FR",
+      "mature_blocked": false,
+      "identifier": "GRDV0019R|S1|E20",
+      "sequence_number": 20,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_available_date": "2021-04-16T21:00:00Z",
+      "production_episode_id": "",
+      "slug_title": "nonstandard",
+      "is_mature": false,
+      "is_premium_only": true,
+      "premium_date": null,
+      "next_episode_title": "Le match de base-ball",
+      "season_display_number": "1",
+      "episode_air_date": "2021-02-27T01:25:00+09:00",
+      "audio_locale": "fr-FR",
+      "season_id": "GYE5CQ5WX",
+      "episode": "20",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "is_clip": false,
+      "hd_flag": true,
+      "is_dubbed": true
+    },
+    {
+      "audio_locale": "fr-FR",
+      "season_id": "GYE5CQ5WX",
+      "season_number": 1,
+      "available_offline": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_mature": false,
+      "hd_flag": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_premium_only": true,
+      "premium_date": null,
+      "series_title": "JUJUTSU KAISEN",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9U3ZPWV",
+          "is_premium_only": false,
+          "media_guid": "G3WFXPJ8K",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G0DUN9M40",
+          "is_premium_only": true,
+          "media_guid": "G9XFED97P",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G7PU4W30X",
+          "is_premium_only": true,
+          "media_guid": "G4GFQMWZE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14U4XV2M",
+          "is_premium_only": true,
+          "media_guid": "GKKF38GQX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9U38GQK",
+          "is_premium_only": true,
+          "media_guid": "G3WFX7VQ4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GVWU0P8QN",
+          "is_premium_only": true,
+          "media_guid": "G25F05N8X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G31UXG45P",
+          "is_premium_only": true,
+          "media_guid": "G8MFNZ1KD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GPWUKPV30",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVZEWP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "channel_id": "crunchyroll",
+      "slug_title": "jujutsu-koshien",
+      "is_subbed": true,
+      "duration_ms": 1420061,
+      "identifier": "GRDV0019R|S1|E21",
+      "eligible_region": "CA",
+      "premium_available_date": "2021-04-23T21:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e2204b68fbc39a13f19e12bfc59010b7.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e2204b68fbc39a13f19e12bfc59010b7.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e2204b68fbc39a13f19e12bfc59010b7.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e2204b68fbc39a13f19e12bfc59010b7.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e2204b68fbc39a13f19e12bfc59010b7.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e2204b68fbc39a13f19e12bfc59010b7.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e2204b68fbc39a13f19e12bfc59010b7.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e2204b68fbc39a13f19e12bfc59010b7.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_number": 21,
+      "media_type": "episode",
+      "recent_variant": "",
+      "title": "Le match de base-ball",
+      "upload_date": "2021-03-06T01:25:00+09:00",
+      "description": "La diversion opérée par Mahito et sa bande pour s’emparer des doigts de Sukuna a parfaitement atteint son objectif. Les exorcistes, eux, comptent leurs morts et discutent des mesures à prendre. Il va par ailleurs bien falloir en finir avec ce tournoi et désigner un vainqueur…",
+      "listing_id": "",
+      "is_clip": false,
+      "availability_starts": "2021-04-23T21:00:00Z",
+      "id": "G7PU4W30X",
+      "availability_notes": "",
+      "next_episode_id": "G50UZEGJQ",
+      "streams_link": "/content/v2/cms/videos/G4GFQMWZE/streams",
+      "is_dubbed": true,
+      "mature_blocked": false,
+      "available_date": null,
+      "season_sequence_number": 1,
+      "series_id": "GRDV0019R",
+      "seo_title": "",
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "availability_status": "available",
+      "episode": "21",
+      "episode_air_date": "2021-03-06T01:25:00+09:00",
+      "sequence_number": 21,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "series_slug_title": "jujutsu-kaisen",
+      "roles": [
+        "dub"
+      ],
+      "season_tags": [],
+      "closed_captions_available": false,
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "production_episode_id": "",
+      "next_episode_title": "Instinct grégaire",
+      "seo_description": "",
+      "season_display_number": "1",
+      "recent_audio_locale": "fr-FR"
+    },
+    {
+      "description": "Megumi, Yuji et Nobara enquêtent sur une série de meurtres mystérieux perpétrés par un ou plusieurs fléaux. De troublantes similarités semblent les relier, mais ils ne se sont produits ni au même moment, ni dans la même ville. En revanche, les trois victimes avaient fréquenté le même collège… que l’un de nos héros connaît très bien.",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "is_premium_only": true,
+      "seo_title": "",
+      "streams_link": "/content/v2/cms/videos/G07FN9ZQ7/streams",
+      "production_episode_id": "",
+      "slug_title": "the-origin-of-blind-obedience",
+      "upload_date": "2021-03-13T01:25:00+09:00",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/abfe5dfa627e8fd81d1b7c99f4712288.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/abfe5dfa627e8fd81d1b7c99f4712288.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/abfe5dfa627e8fd81d1b7c99f4712288.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/abfe5dfa627e8fd81d1b7c99f4712288.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/abfe5dfa627e8fd81d1b7c99f4712288.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/abfe5dfa627e8fd81d1b7c99f4712288.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/abfe5dfa627e8fd81d1b7c99f4712288.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/abfe5dfa627e8fd81d1b7c99f4712288.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "hd_flag": true,
+      "season_tags": [],
+      "season_number": 1,
+      "roles": [
+        "dub"
+      ],
+      "premium_date": null,
+      "series_title": "JUJUTSU KAISEN",
+      "channel_id": "crunchyroll",
+      "sequence_number": 22,
+      "closed_captions_available": false,
+      "episode_number": 22,
+      "season_display_number": "1",
+      "duration_ms": 1420189,
+      "recent_audio_locale": "fr-FR",
+      "availability_starts": "2021-04-30T21:00:00Z",
+      "premium_available_date": "2021-04-30T21:00:00Z",
+      "title": "Instinct grégaire",
+      "availability_status": "available",
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "is_subbed": true,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "available_date": null,
+      "is_dubbed": true,
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "availability_notes": "",
+      "is_mature": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GMKUXZD0M",
+          "is_premium_only": false,
+          "media_guid": "GPPFKQ2MJ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G8WUN259E",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGEW47",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GZ7UVP9N0",
+          "is_premium_only": true,
+          "media_guid": "G5JFZEGJ7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G50UZEGJQ",
+          "is_premium_only": true,
+          "media_guid": "G07FN9ZQ7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GWDU8P0ND",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ805E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DUED4XZ",
+          "is_premium_only": true,
+          "media_guid": "G1QF4X53Q",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G7PU49PWM",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ2KM1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GJWU2VNX1",
+          "is_premium_only": true,
+          "media_guid": "GM8FXV943",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        }
+      ],
+      "id": "G50UZEGJQ",
+      "episode": "22",
+      "media_type": "episode",
+      "season_sequence_number": 1,
+      "next_episode_title": "Instinct grégaire (2)",
+      "episode_air_date": "2021-03-13T01:25:00+09:00",
+      "season_id": "GYE5CQ5WX",
+      "next_episode_id": "GWDU8PZVG",
+      "is_clip": false,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "slug": "",
+      "listing_id": "",
+      "mature_blocked": false,
+      "series_slug_title": "jujutsu-kaisen",
+      "audio_locale": "fr-FR",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "identifier": "GRDV0019R|S1|E22",
+      "series_id": "GRDV0019R",
+      "available_offline": true,
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "seo_description": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      }
+    },
+    {
+      "series_slug_title": "jujutsu-kaisen",
+      "next_episode_title": "Complices",
+      "eligible_region": "CA",
+      "premium_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d38842a34b6c976f756c321716d66eea.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d38842a34b6c976f756c321716d66eea.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d38842a34b6c976f756c321716d66eea.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d38842a34b6c976f756c321716d66eea.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d38842a34b6c976f756c321716d66eea.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d38842a34b6c976f756c321716d66eea.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d38842a34b6c976f756c321716d66eea.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d38842a34b6c976f756c321716d66eea.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_title": "JUJUTSU KAISEN",
+      "channel_id": "crunchyroll",
+      "season_sequence_number": 1,
+      "availability_status": "available",
+      "is_mature": false,
+      "upload_date": "2021-03-20T01:25:00+09:00",
+      "seo_description": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "description": "Par un fâcheux hasard, les créatures de Mahito ont surgi au moment même où notre trio de choc arrivait sur place. Sans compter le fléau du pont Yasohachi, qui va faire ressurgir d’assez mauvais souvenirs…",
+      "listing_id": "",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "recent_audio_locale": "fr-FR",
+      "availability_notes": "",
+      "premium_available_date": "2021-05-07T21:00:00Z",
+      "duration_ms": 1420019,
+      "series_id": "GRDV0019R",
+      "slug_title": "the-origin-of-blind-obedience---2--",
+      "episode_air_date": "2021-03-20T01:25:00+09:00",
+      "is_premium_only": true,
+      "episode_number": 23,
+      "streams_link": "/content/v2/cms/videos/GEMFZ8VJK/streams",
+      "is_dubbed": true,
+      "availability_starts": "2021-05-07T21:00:00Z",
+      "closed_captions_available": false,
+      "available_offline": true,
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "Instinct grégaire (2)",
+      "roles": [
+        "dub"
+      ],
+      "identifier": "GRDV0019R|S1|E23",
+      "season_tags": [],
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "is_clip": false,
+      "id": "GWDU8PZVG",
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "recent_variant": "",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_id": "GYE5CQ5WX",
+      "sequence_number": 23,
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "season_display_number": "1",
+      "media_type": "episode",
+      "seo_title": "",
+      "season_number": 1,
+      "hd_flag": true,
+      "next_episode_id": "G14U4XZ3P",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "episode": "23",
+      "slug": "",
+      "mature_blocked": false,
+      "audio_locale": "fr-FR",
+      "production_episode_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GVWU0VG12",
+          "is_premium_only": false,
+          "media_guid": "G25F02P9V",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GQJUGE8NE",
+          "is_premium_only": true,
+          "media_guid": "GGVF2DPWD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G50UZE3K4",
+          "is_premium_only": true,
+          "media_guid": "G07FN9EG0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GWDU8PZVG",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ8VJK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G9DUEDVZ3",
+          "is_premium_only": true,
+          "media_guid": "G1QF4XZQM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUQM4K1",
+          "is_premium_only": true,
+          "media_guid": "GNJFDW3X2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G14U4MJ0W",
+          "is_premium_only": true,
+          "media_guid": "GKKF3X205",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GJWU2V7GG",
+          "is_premium_only": true,
+          "media_guid": "GM8FXVM77",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ]
+    },
+    {
+      "availability_notes": "",
+      "seo_description": "",
+      "series_slug_title": "jujutsu-kaisen",
+      "available_date": null,
+      "is_clip": false,
+      "slug": "",
+      "is_premium_only": true,
+      "is_mature": false,
+      "channel_id": "crunchyroll",
+      "duration_ms": 1420061,
+      "premium_date": null,
+      "seo_title": "",
+      "episode_number": 24,
+      "season_display_number": "1",
+      "episode_air_date": "2021-03-27T01:25:00+09:00",
+      "is_subbed": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "identifier": "GRDV0019R|S1|E24",
+      "recent_audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GKKF38PZN/streams",
+      "hd_flag": true,
+      "series_title": "JUJUTSU KAISEN",
+      "season_id": "GYE5CQ5WX",
+      "title": "Complices",
+      "roles": [
+        "dub"
+      ],
+      "season_slug_title": "jujutsu-kaisen-french-dub",
+      "content_descriptors": [
+        "Nudité",
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G31UXPJ8X",
+          "is_premium_only": false,
+          "media_guid": "G8MFNDQ5N",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6Q9GGV46",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GX9UQK8D1",
+          "is_premium_only": true,
+          "media_guid": "GJKF2JDMN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDK31",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUQM430",
+          "is_premium_only": true,
+          "media_guid": "GNJFDW3ZK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR09CXQMJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G14U4XZ3P",
+          "is_premium_only": true,
+          "media_guid": "GKKF38PZN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQ5WX",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GN7UDW3ZN",
+          "is_premium_only": true,
+          "media_guid": "GVMF0PGV8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2W90",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G31UX7JPM",
+          "is_premium_only": true,
+          "media_guid": "G8MFN2QD9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C4N21",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G8WUNM78Q",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG2M18",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3KX7",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G2XU0QNW9",
+          "is_premium_only": true,
+          "media_guid": "GDVFVXEJ7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCD4PZ",
+          "variant": ""
+        }
+      ],
+      "free_available_date": "2025-05-01T07:00:00Z",
+      "is_dubbed": true,
+      "upload_date": "2021-03-27T01:25:00+09:00",
+      "id": "G14U4XZ3P",
+      "series_id": "GRDV0019R",
+      "production_episode_id": "",
+      "premium_available_date": "2021-05-14T21:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5113c68f804c011158c81464998830d4.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5113c68f804c011158c81464998830d4.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5113c68f804c011158c81464998830d4.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5113c68f804c011158c81464998830d4.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5113c68f804c011158c81464998830d4.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5113c68f804c011158c81464998830d4.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5113c68f804c011158c81464998830d4.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5113c68f804c011158c81464998830d4.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "next_episode_id": "G6JK7K45R",
+      "closed_captions_available": false,
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "mature_blocked": false,
+      "description": "Pendant que Megumi fait un petit somme, Nobara et Yuji se mesurent à des adversaires au comportement vraiment très déstabilisant. Détenteurs d’une technique utilisant leur propre sang, les deux frères Kechizu et Eso promettent une mort atroce à nos deux jeunes exorcistes. Qui de Nobara ou de Yuji aura les ressources pour venir à bout de ces créatures étranges ?",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "sequence_number": 24,
+      "season_tags": [],
+      "listing_id": "",
+      "availability_starts": "2021-05-14T21:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "eligible_region": "CA",
+      "recent_variant": "",
+      "season_number": 1,
+      "media_type": "episode",
+      "audio_locale": "fr-FR",
+      "available_offline": true,
+      "season_title": "JUJUTSU KAISEN (VF)",
+      "episode": "24",
+      "season_sequence_number": 1,
+      "next_episode_title": "Ryomen Sukuna",
+      "availability_status": "available",
+      "slug_title": "accomplices"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

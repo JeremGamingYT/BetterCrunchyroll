@@ -1,0 +1,238 @@
+{
+  "data": [
+    {
+      "id": "GYP8CXQPE",
+      "channel_id": "crunchyroll",
+      "title": "Arifureta: From Commonplace to World's Strongest",
+      "slug_title": "arifureta-from-commonplace-to-worlds-strongest",
+      "series_id": "G4PH0WXD1",
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Hajime Nagumo, véritable souffre-douleur, se retrouve transporté avec toute sa classe dans un autre monde. Alors que ses camarades acquièrent des techniques de combat ultra puissantes, Hajime se retrouve doté d’une modeste compétence. Suite à la malveillance d’un camarade, il est laissé pour mort dans un labyrinthe. Hajime, désespéré et le moral en berne, trouve tout de même le moyen de devenir plus fort, et fait une rencontre qui va changer son destin : la vampire Yue. « Je vais te protéger, Yue. Et tu me protègeras. On va tous les balayer et transcender ce monde. » Entrez dans ce monde fantastique qui nous contera les péripéties d’une vampire et d’un jeune garçon prêt à tout pour devenir plus fort.",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "pt-BR",
+        "en-US",
+        "es-419",
+        "fr-FR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYP8CXQPE",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G62PCV2E8",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GR8VCPDZ8",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G6ZXCM7ZK",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "G4PH0WXD1|S1",
+      "number_of_episodes": 13
+    },
+    {
+      "id": "GY9PC2P94",
+      "channel_id": "crunchyroll",
+      "title": "Arifureta: From Commonplace to World's Strongest (2nd Season)",
+      "slug_title": "arifureta-from-commonplace-to-worlds-strongest-2nd-season",
+      "series_id": "G4PH0WXD1",
+      "season_display_number": "2",
+      "season_sequence_number": 2,
+      "season_number": 2,
+      "is_complete": false,
+      "description": "Hajime Nagumo, véritable souffre-douleur, se retrouve transporté avec toute sa classe dans un autre monde. Alors que ses camarades acquièrent des techniques de combat ultra puissantes, Hajime se retrouve doté d’une modeste compétence. Suite à la malveillance d’un camarade, il est laissé pour mort dans un labyrinthe. Hajime, désespéré et le moral en berne, trouve tout de même le moyen de devenir plus fort, et fait une rencontre qui va changer son destin : la vampire Yue. « Je vais te protéger, Yue. Et tu me protègeras. On va tous les balayer et transcender ce monde. » Entrez dans ce monde fantastique qui nous contera les péripéties d’une vampire et d’un jeune garçon prêt à tout pour devenir plus fort.",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "en-US",
+          "guid": "G619CPEV8",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY9PC2P94",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GRX0C4738",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GY49C7XWG",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "G4PH0WXD1|S2",
+      "number_of_episodes": 15
+    },
+    {
+      "id": "G6K5CNX30",
+      "channel_id": "crunchyroll",
+      "title": "Arifureta: From Commonplace to World's Strongest Season 3",
+      "slug_title": "arifureta-from-commonplace-to-worlds-strongest-season-3",
+      "series_id": "G4PH0WXD1",
+      "season_display_number": "3",
+      "season_sequence_number": 3,
+      "season_number": 3,
+      "is_complete": false,
+      "description": "Hajime Nagumo, véritable souffre-douleur, se retrouve transporté avec toute sa classe dans un autre monde. Alors que ses camarades acquièrent des techniques de combat ultra puissantes, Hajime se retrouve doté d’une modeste compétence. Suite à la malveillance d’un camarade, il est laissé pour mort dans un labyrinthe. Hajime, désespéré et le moral en berne, trouve tout de même le moyen de devenir plus fort, et fait une rencontre qui va changer son destin : la vampire Yue…",
+      "keywords": [],
+      "season_tags": [
+        "Automne-2024",
+        "Hiver-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "16",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence sexuelle",
+        "Images à caractère sexuel",
+        "Torture",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": true,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "ru-RU",
+        "es-419",
+        "pt-BR",
+        "en-US",
+        "fr-FR"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6K5CNX30",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GY19CPM3P",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GRJQC1VM2",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G6NQCJ4ZN",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "G4PH0WXD1|S3",
+      "number_of_episodes": 16
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 3
+}

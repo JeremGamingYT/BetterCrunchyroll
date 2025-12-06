@@ -1,0 +1,1556 @@
+{
+  "total": 8,
+  "data": [
+    {
+      "available_date": null,
+      "identifier": "GT00362308|S00362309|E1",
+      "mature_blocked": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ],
+      "season_display_number": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "series_slug_title": "with-you-our-love-will-make-it-through",
+      "next_episode_title": "Épisode 2",
+      "recent_audio_locale": "ja-JP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "premium_date": null,
+      "is_dubbed": true,
+      "available_offline": true,
+      "audio_locale": "ja-JP",
+      "seo_title": "",
+      "streams_link": "/content/v2/cms/videos/GE00362310JAJPV/streams",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "slug": "",
+      "id": "GE00362310JAJP",
+      "season_number": 1,
+      "media_type": "episode",
+      "seo_description": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "recent_variant": "",
+      "season_sequence_number": 1,
+      "series_id": "GT00362308",
+      "is_clip": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "description": "Sur le chemin du lycée, une jeune fille croise un hybride et tombe sous son charme.",
+      "title": "Épisode 1",
+      "slug_title": "episode-1",
+      "premium_available_date": "2025-10-14T15:00:00Z",
+      "sequence_number": 1,
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "next_episode_id": "GE00362312JAJP",
+      "episode": "1",
+      "series_title": "With You, Our Love Will Make It Through",
+      "listing_id": "",
+      "hd_flag": true,
+      "availability_status": "available",
+      "episode_number": 1,
+      "season_id": "GS00362309JAJP",
+      "eligible_region": "CA",
+      "upload_date": "2025-10-14T00:00:00Z",
+      "is_mature": false,
+      "channel_id": "crunchyroll",
+      "production_episode_id": "",
+      "roles": [
+        "main"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362310JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362310JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362309JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362310ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362310ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362310HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362310HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362310TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362310TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362310TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362310TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362310ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362310ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362310PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362310PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309PTBR",
+          "variant": ""
+        }
+      ],
+      "season_title": "Season 1",
+      "availability_starts": "2025-10-14T15:00:00Z",
+      "is_subbed": true,
+      "duration_ms": 1415082,
+      "episode_air_date": "2025-10-14T00:00:00Z",
+      "season_slug_title": "season-1",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c20835c717e59d75659275c00519d0f8.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c20835c717e59d75659275c00519d0f8.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c20835c717e59d75659275c00519d0f8.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c20835c717e59d75659275c00519d0f8.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c20835c717e59d75659275c00519d0f8.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c20835c717e59d75659275c00519d0f8.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c20835c717e59d75659275c00519d0f8.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c20835c717e59d75659275c00519d0f8.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "seo_description": "",
+      "season_slug_title": "season-1",
+      "description": "Tsunagu révèle l'origine de ses pulsions.",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "hd_flag": true,
+      "is_mature": false,
+      "availability_status": "available",
+      "slug": "",
+      "season_id": "GS00362309JAJP",
+      "season_sequence_number": 1,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "premium_date": null,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "next_episode_title": "Épisode 3",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "available_offline": true,
+      "season_number": 1,
+      "slug_title": "episode-2",
+      "episode": "2",
+      "listing_id": "",
+      "duration_ms": 1415041,
+      "series_id": "GT00362308",
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ],
+      "production_episode_id": "",
+      "season_title": "Season 1",
+      "availability_notes": "",
+      "episode_air_date": "2025-10-21T00:00:00Z",
+      "media_type": "episode",
+      "channel_id": "crunchyroll",
+      "next_episode_id": "GE00362314JAJP",
+      "upload_date": "2025-10-21T00:00:00Z",
+      "closed_captions_available": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362312JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362312JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362309JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362312ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362312ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362312ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362312ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362312HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362312HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362312TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362312TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362312TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362312TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362312PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362312PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309PTBR",
+          "variant": ""
+        }
+      ],
+      "episode_number": 2,
+      "streams_link": "/content/v2/cms/videos/GE00362312JAJPV/streams",
+      "series_title": "With You, Our Love Will Make It Through",
+      "title": "Épisode 2",
+      "is_dubbed": true,
+      "is_clip": false,
+      "id": "GE00362312JAJP",
+      "seo_title": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e1665b4cd48d1ade7a2a0f9245048796.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e1665b4cd48d1ade7a2a0f9245048796.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e1665b4cd48d1ade7a2a0f9245048796.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e1665b4cd48d1ade7a2a0f9245048796.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e1665b4cd48d1ade7a2a0f9245048796.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e1665b4cd48d1ade7a2a0f9245048796.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e1665b4cd48d1ade7a2a0f9245048796.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e1665b4cd48d1ade7a2a0f9245048796.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "sequence_number": 2,
+      "identifier": "GT00362308|S00362309|E2",
+      "mature_blocked": false,
+      "audio_locale": "ja-JP",
+      "season_display_number": "",
+      "roles": [
+        "main"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_starts": "2025-10-21T15:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "premium_available_date": "2025-10-21T15:00:00Z",
+      "is_premium_only": true,
+      "eligible_region": "CA",
+      "series_slug_title": "with-you-our-love-will-make-it-through",
+      "available_date": null
+    },
+    {
+      "season_id": "GS00362309JAJP",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "recent_variant": "",
+      "season_title": "Season 1",
+      "seo_title": "",
+      "season_sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "series_slug_title": "with-you-our-love-will-make-it-through",
+      "eligible_region": "CA",
+      "premium_date": null,
+      "available_offline": true,
+      "season_number": 1,
+      "episode": "3",
+      "next_episode_id": "GE00362316JAJP",
+      "production_episode_id": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362314JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362314JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362309JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362314ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362314ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362314HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362314HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362314TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362314TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362314TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362314TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362314ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362314ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362314PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362314PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309PTBR",
+          "variant": ""
+        }
+      ],
+      "premium_available_date": "2025-10-28T15:00:00Z",
+      "hd_flag": true,
+      "id": "GE00362314JAJP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "closed_captions_available": false,
+      "listing_id": "",
+      "mature_blocked": false,
+      "streams_link": "/content/v2/cms/videos/GE00362314JAJPV/streams",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "audio_locale": "ja-JP",
+      "identifier": "GT00362308|S00362309|E3",
+      "series_title": "With You, Our Love Will Make It Through",
+      "is_premium_only": true,
+      "slug_title": "episode-3",
+      "season_display_number": "",
+      "episode_air_date": "2025-10-28T00:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "next_episode_title": "Épisode 04",
+      "is_subbed": true,
+      "season_slug_title": "season-1",
+      "upload_date": "2025-10-28T00:00:00Z",
+      "slug": "",
+      "duration_ms": 1415041,
+      "is_clip": false,
+      "episode_number": 3,
+      "series_id": "GT00362308",
+      "media_type": "episode",
+      "is_dubbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4706e7ca08812b660bee862b448d45ef.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4706e7ca08812b660bee862b448d45ef.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4706e7ca08812b660bee862b448d45ef.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4706e7ca08812b660bee862b448d45ef.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4706e7ca08812b660bee862b448d45ef.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4706e7ca08812b660bee862b448d45ef.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4706e7ca08812b660bee862b448d45ef.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4706e7ca08812b660bee862b448d45ef.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "roles": [
+        "main"
+      ],
+      "description": "Les bonnes notes de Tsunagu posent problème à une élève prête à tout pour réussir.",
+      "availability_status": "available",
+      "sequence_number": 3,
+      "availability_starts": "2025-10-28T15:00:00Z",
+      "title": "Épisode 3",
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ],
+      "is_mature": false,
+      "seo_description": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "available_date": null
+    },
+    {
+      "seo_title": "",
+      "episode_air_date": "2025-11-04T00:00:00Z",
+      "is_clip": false,
+      "is_dubbed": true,
+      "id": "GE00362316JAJP",
+      "channel_id": "crunchyroll",
+      "episode_number": 4,
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "audio_locale": "ja-JP",
+      "seo_description": "",
+      "closed_captions_available": false,
+      "description": "Mari et Tsunagu se voient hors du lycée pour la première fois avec leur ami Aida.",
+      "duration_ms": 1414999,
+      "availability_starts": "2025-11-04T15:00:00Z",
+      "next_episode_title": "Épisode 05",
+      "sequence_number": 4,
+      "is_mature": false,
+      "series_title": "With You, Our Love Will Make It Through",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "is_premium_only": true,
+      "season_title": "Season 1",
+      "premium_date": null,
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GE00362316JAJPV/streams",
+      "roles": [
+        "main"
+      ],
+      "season_number": 1,
+      "eligible_region": "CA",
+      "slug": "",
+      "is_subbed": true,
+      "episode": "4",
+      "upload_date": "2025-11-04T00:00:00Z",
+      "listing_id": "",
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362316JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362316JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362309JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362316ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362316ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362316HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362316HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362316TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362316TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362316TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362316TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362316ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362316ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362316PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362316PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309PTBR",
+          "variant": ""
+        }
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a8a4b9e903d6382405e79b18e1528126.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a8a4b9e903d6382405e79b18e1528126.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a8a4b9e903d6382405e79b18e1528126.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a8a4b9e903d6382405e79b18e1528126.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a8a4b9e903d6382405e79b18e1528126.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a8a4b9e903d6382405e79b18e1528126.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a8a4b9e903d6382405e79b18e1528126.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a8a4b9e903d6382405e79b18e1528126.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "title": "Épisode 04",
+      "media_type": "episode",
+      "mature_blocked": false,
+      "next_episode_id": "GE00362318JAJP",
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ],
+      "season_display_number": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "available_offline": true,
+      "slug_title": "episode-4",
+      "recent_audio_locale": "ja-JP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "season-1",
+      "series_slug_title": "with-you-our-love-will-make-it-through",
+      "identifier": "GT00362308|S00362309|E4",
+      "premium_available_date": "2025-11-04T15:00:00Z",
+      "series_id": "GT00362308",
+      "availability_notes": "",
+      "available_date": null,
+      "season_id": "GS00362309JAJP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "hd_flag": true,
+      "season_tags": [
+        "Automne-2025"
+      ]
+    },
+    {
+      "episode": "5",
+      "id": "GE00362318JAJP",
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ],
+      "eligible_region": "CA",
+      "duration_ms": 1415082,
+      "is_subbed": true,
+      "season_slug_title": "season-1",
+      "season_title": "Season 1",
+      "premium_available_date": "2025-11-11T15:00:00Z",
+      "seo_description": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "with-you-our-love-will-make-it-through",
+      "next_episode_id": "GE00362320JAJP",
+      "production_episode_id": "",
+      "listing_id": "",
+      "roles": [
+        "main"
+      ],
+      "season_number": 1,
+      "media_type": "episode",
+      "title": "Épisode 05",
+      "episode_number": 5,
+      "channel_id": "crunchyroll",
+      "sequence_number": 5,
+      "premium_date": null,
+      "season_display_number": "",
+      "next_episode_title": "Épisode 6",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362318JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362318JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362309JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362318ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362318ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362309ENUS",
+          "variant": ""
+        }
+      ],
+      "recent_variant": "",
+      "description": "Aida remarque le rapprochement entre Mari et Tsunagu. Comment va se dérouler la fête du sport ?",
+      "closed_captions_available": false,
+      "series_id": "GT00362308",
+      "recent_audio_locale": "ja-JP",
+      "is_mature": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b4cf2691b42b7a9e72fff3130364f6dd.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b4cf2691b42b7a9e72fff3130364f6dd.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b4cf2691b42b7a9e72fff3130364f6dd.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b4cf2691b42b7a9e72fff3130364f6dd.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b4cf2691b42b7a9e72fff3130364f6dd.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b4cf2691b42b7a9e72fff3130364f6dd.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b4cf2691b42b7a9e72fff3130364f6dd.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b4cf2691b42b7a9e72fff3130364f6dd.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_date": null,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "availability_status": "available",
+      "season_sequence_number": 1,
+      "is_clip": false,
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "availability_starts": "2025-11-11T15:00:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "slug_title": "episode-5",
+      "slug": "",
+      "episode_air_date": "2025-11-11T00:00:00Z",
+      "available_offline": true,
+      "availability_notes": "",
+      "season_id": "GS00362309JAJP",
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/GE00362318JAJPV/streams",
+      "upload_date": "2025-11-11T00:00:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "is_dubbed": true,
+      "identifier": "GT00362308|S00362309|E5",
+      "is_premium_only": true,
+      "seo_title": "",
+      "series_title": "With You, Our Love Will Make It Through",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "audio_locale": "ja-JP"
+    },
+    {
+      "available_date": null,
+      "availability_notes": "",
+      "duration_ms": 1415041,
+      "episode": "6",
+      "is_subbed": true,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "listing_id": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_date": null,
+      "mature_blocked": false,
+      "id": "GE00362320JAJP",
+      "season_number": 1,
+      "episode_air_date": "2025-11-18T00:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00362320JAJPV/streams",
+      "premium_available_date": "2025-11-18T15:00:00Z",
+      "identifier": "GT00362308|S00362309|E6",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/778a752bac5135d3991bc82739d18876.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/778a752bac5135d3991bc82739d18876.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/778a752bac5135d3991bc82739d18876.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/778a752bac5135d3991bc82739d18876.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/778a752bac5135d3991bc82739d18876.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/778a752bac5135d3991bc82739d18876.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/778a752bac5135d3991bc82739d18876.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/778a752bac5135d3991bc82739d18876.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "description": "Ochi étant blessé, les élèves cherchent un remplaçant pour la course.",
+      "upload_date": "2025-11-18T00:00:00Z",
+      "series_slug_title": "with-you-our-love-will-make-it-through",
+      "availability_starts": "2025-11-18T15:00:00Z",
+      "season_display_number": "",
+      "season_title": "Season 1",
+      "slug_title": "episode-6",
+      "audio_locale": "ja-JP",
+      "recent_variant": "",
+      "episode_number": 6,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_title": "With You, Our Love Will Make It Through",
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ],
+      "roles": [
+        "main"
+      ],
+      "media_type": "episode",
+      "availability_status": "available",
+      "available_offline": true,
+      "is_clip": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "season_sequence_number": 1,
+      "is_mature": false,
+      "is_dubbed": false,
+      "closed_captions_available": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362320JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362320JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362309JAJP",
+          "variant": ""
+        }
+      ],
+      "channel_id": "crunchyroll",
+      "seo_title": "",
+      "title": "Épisode 6",
+      "next_episode_id": "GE00362322JAJP",
+      "seo_description": "",
+      "next_episode_title": "Épisode 7",
+      "recent_audio_locale": "ja-JP",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "eligible_region": "CA",
+      "season_id": "GS00362309JAJP",
+      "hd_flag": true,
+      "slug": "",
+      "is_premium_only": true,
+      "series_id": "GT00362308",
+      "sequence_number": 6,
+      "season_slug_title": "season-1"
+    },
+    {
+      "slug_title": "episode-7",
+      "is_mature": false,
+      "eligible_region": "CA",
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00362322JAJPV/streams",
+      "season_title": "Season 1",
+      "identifier": "GT00362308|S00362309|E7",
+      "media_type": "episode",
+      "season_display_number": "",
+      "episode": "7",
+      "series_title": "With You, Our Love Will Make It Through",
+      "next_episode_title": "Épisode 8",
+      "id": "GE00362322JAJP",
+      "season_slug_title": "season-1",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2025-11-25T15:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "sequence_number": 7,
+      "hd_flag": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d744768314af4ecd3971125cd97f0e11.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d744768314af4ecd3971125cd97f0e11.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d744768314af4ecd3971125cd97f0e11.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d744768314af4ecd3971125cd97f0e11.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d744768314af4ecd3971125cd97f0e11.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d744768314af4ecd3971125cd97f0e11.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d744768314af4ecd3971125cd97f0e11.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d744768314af4ecd3971125cd97f0e11.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_audio_locale": "ja-JP",
+      "seo_description": "",
+      "series_id": "GT00362308",
+      "series_slug_title": "with-you-our-love-will-make-it-through",
+      "recent_variant": "",
+      "is_clip": false,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "episode_air_date": "2025-11-25T00:00:00Z",
+      "available_offline": true,
+      "seo_title": "",
+      "premium_date": null,
+      "next_episode_id": "GE00362324JAJP",
+      "audio_locale": "ja-JP",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_premium_only": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "slug": "",
+      "episode_number": 7,
+      "season_number": 1,
+      "is_subbed": true,
+      "upload_date": "2025-11-25T00:00:00Z",
+      "title": "Épisode 7",
+      "description": "Les sentiments entre Tsunagu et Mari s'intensifient, mais une rivale intervient.",
+      "availability_starts": "2025-11-25T15:00:00Z",
+      "mature_blocked": false,
+      "available_date": null,
+      "production_episode_id": "",
+      "duration_ms": 1415082,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362322JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362322JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362309JAJP",
+          "variant": ""
+        }
+      ],
+      "closed_captions_available": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_sequence_number": 1,
+      "availability_notes": "",
+      "season_id": "GS00362309JAJP",
+      "availability_status": "available",
+      "is_dubbed": false,
+      "listing_id": ""
+    },
+    {
+      "episode_number": 8,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3e6345c06476fb9787323b172a556f18.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/3e6345c06476fb9787323b172a556f18.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/3e6345c06476fb9787323b172a556f18.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/3e6345c06476fb9787323b172a556f18.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3e6345c06476fb9787323b172a556f18.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/3e6345c06476fb9787323b172a556f18.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/3e6345c06476fb9787323b172a556f18.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/3e6345c06476fb9787323b172a556f18.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_starts": "2025-12-02T15:00:00Z",
+      "production_episode_id": "",
+      "episode": "8",
+      "listing_id": "",
+      "slug": "",
+      "episode_air_date": "2025-12-02T00:00:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "series_title": "With You, Our Love Will Make It Through",
+      "premium_available_date": "2025-12-02T15:00:00Z",
+      "sequence_number": 8,
+      "is_clip": false,
+      "closed_captions_available": false,
+      "series_id": "GT00362308",
+      "is_mature": false,
+      "season_display_number": "",
+      "next_episode_id": "GE00362326JAJP",
+      "availability_notes": "",
+      "id": "GE00362324JAJP",
+      "seo_description": "",
+      "series_slug_title": "with-you-our-love-will-make-it-through",
+      "streams_link": "/content/v2/cms/videos/GE00362324JAJPV/streams",
+      "description": "Mari entre dans la cité des hybrides et rencontre vite de l'hostilité.",
+      "media_type": "episode",
+      "duration_ms": 1414999,
+      "recent_audio_locale": "ja-JP",
+      "content_descriptors": [
+        "Grossièretés",
+        "Contenu sexuel"
+      ],
+      "season_sequence_number": 1,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362324JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362324JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362309JAJP",
+          "variant": ""
+        }
+      ],
+      "season_id": "GS00362309JAJP",
+      "season_title": "Season 1",
+      "availability_status": "available",
+      "title": "Épisode 8",
+      "premium_date": null,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "eligible_region": "CA",
+      "identifier": "GT00362308|S00362309|E8",
+      "season_slug_title": "season-1",
+      "is_dubbed": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "roles": [
+        "main"
+      ],
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_premium_only": true,
+      "recent_variant": "",
+      "audio_locale": "ja-JP",
+      "upload_date": "2025-12-02T00:00:00Z",
+      "next_episode_title": "Episode 9",
+      "seo_title": "",
+      "channel_id": "crunchyroll",
+      "available_date": null,
+      "hd_flag": true,
+      "available_offline": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_subbed": true,
+      "slug_title": "episode-8",
+      "mature_blocked": false,
+      "season_number": 1
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

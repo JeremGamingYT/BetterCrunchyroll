@@ -1,0 +1,168 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GY8DP4JDY",
+      "channel_id": "crunchyroll",
+      "title": "ORESUKI Are you the only one who loves me?",
+      "slug": "",
+      "slug_title": "oresuki-are-you-the-only-one-who-loves-me",
+      "description": "Question: What would you do if a girl you liked asked you out on a date? Now imagine it’s not one, but two beautiful girls, the cool beauty, Cosmos, and the cute childhood friend, Himawari!! Of course, you would make plans with both. Except for the “feelings” they confess to you are…\nAsking me for \"romantic advice,\" since they’re both in love with someone else. Hahaha…\nThat’s it! I’m not gonna take it anymore! I’m giving up on this obtuse, harmless persona and going back to my true self. But I can’t give up hope here. If I give them my advice, at least one of them may fall in love with me!",
+      "extended_description": "",
+      "keywords": [
+        "romance"
+      ],
+      "season_tags": [
+        "Automne-2019"
+      ],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/2de3d0b1eeaafe539dfc510bd52ab9b4.jpe"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/2de3d0b1eeaafe539dfc510bd52ab9b4.jpe"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2de3d0b1eeaafe539dfc510bd52ab9b4.jpe"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/2de3d0b1eeaafe539dfc510bd52ab9b4.jpe"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/2de3d0b1eeaafe539dfc510bd52ab9b4.jpe"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/2de3d0b1eeaafe539dfc510bd52ab9b4.jpe"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/2de3d0b1eeaafe539dfc510bd52ab9b4.jpe"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/2de3d0b1eeaafe539dfc510bd52ab9b4.jpe"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/2de3d0b1eeaafe539dfc510bd52ab9b4.jpe"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/610769dbe6bde8a93f8cdf9010cc7b61.jpe"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/610769dbe6bde8a93f8cdf9010cc7b61.jpe"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/610769dbe6bde8a93f8cdf9010cc7b61.jpe"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/610769dbe6bde8a93f8cdf9010cc7b61.jpe"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/610769dbe6bde8a93f8cdf9010cc7b61.jpe"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/610769dbe6bde8a93f8cdf9010cc7b61.jpe"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/610769dbe6bde8a93f8cdf9010cc7b61.jpe"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/610769dbe6bde8a93f8cdf9010cc7b61.jpe"
+            }
+          ]
+        ]
+      },
+      "episode_count": 14,
+      "season_count": 1,
+      "media_count": 14,
+      "content_provider": "Aniplex of America",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": false,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "es-419",
+        "en-US",
+        "pt-BR"
+      ],
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2019,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs"
+      ]
+    }
+  ],
+  "meta": {}
+}

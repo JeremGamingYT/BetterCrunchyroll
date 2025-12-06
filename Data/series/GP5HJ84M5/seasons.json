@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "id": "GY49C79QZ",
+      "channel_id": "crunchyroll",
+      "title": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
+      "slug_title": "im-giving-the-disgraced-noble-lady-i-rescued-a-crash-course-in-naughtiness",
+      "series_id": "GP5HJ84M5",
+      "season_display_number": "1",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Allen Crawford est un sorcier misanthrope surnommé « Le Prince des Ténèbres ». Lorsqu'il rencontre Charlotte Evans, une noble exilée à cause de fausses accusations, il décide malgré tout de s’occuper d’elle. La jeune femme ignore alors qu’il est prêt à lui enseigner les plaisirs, les vices et les joies de la vie coquine. Un cœur brisé peut-il être réparé par des pensées érotiques ?",
+      "keywords": [],
+      "season_tags": [
+        "Automne-2023"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": false,
+      "is_dubbed": false,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "fr-FR",
+        "ru-RU",
+        "de-DE",
+        "en-US",
+        "pt-BR",
+        "ar-SA",
+        "es-419",
+        "es-ES",
+        "it-IT"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY49C79QZ",
+          "original": true,
+          "variant": ""
+        }
+      ],
+      "identifier": "GP5HJ84M5|S1",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

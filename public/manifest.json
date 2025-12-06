@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "BetterCrunchyroll",
+    "version": "1.0.0",
+    "description": "A premium redesign of Crunchyroll with modern UI/UX",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs",
+        "downloads"
+    ],
+    "host_permissions": [
+        "https://www.crunchyroll.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.crunchyroll.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": false
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "index.html",
+                "assets/*",
+                "crunchyroll-api-interceptor.js"
+            ],
+            "matches": [
+                "https://www.crunchyroll.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

@@ -1,0 +1,1984 @@
+{
+  "total": 13,
+  "data": [
+    {
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "season_number": 1,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d117d03f2db78039a2f4ab5441af50f8.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d117d03f2db78039a2f4ab5441af50f8.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d117d03f2db78039a2f4ab5441af50f8.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d117d03f2db78039a2f4ab5441af50f8.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d117d03f2db78039a2f4ab5441af50f8.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d117d03f2db78039a2f4ab5441af50f8.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d117d03f2db78039a2f4ab5441af50f8.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d117d03f2db78039a2f4ab5441af50f8.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "production_episode_id": "",
+      "seo_title": "",
+      "description": "Kokkoro, jeune elfe, va à la rencontre de sa destinée. Elle fait la connaissance de Yûki, à qui elle doit fidélité et dévouement selon la prophétie de dame Amès, sauf que Yûki est complètement amnésique. Durant leur périple, les deux protagonistes rencontrent Pecorine, avec qui ils affronteront ensemble des ennemis plus coriaces que prévu.",
+      "streams_link": "/content/v2/cms/videos/G5JFZJ7VZ/streams",
+      "availability_starts": "2020-04-06T16:30:00Z",
+      "is_dubbed": false,
+      "is_premium_only": true,
+      "is_mature": false,
+      "listing_id": "",
+      "next_episode_title": "Menu 2 – La farce du chat capricieux",
+      "sequence_number": 1,
+      "premium_date": null,
+      "premium_available_date": "2020-04-06T16:30:00Z",
+      "series_id": "G6QW1E876",
+      "audio_locale": "ja-JP",
+      "season_slug_title": "princess-connect-re-dive",
+      "is_clip": false,
+      "title": "Menu 1 – L'aventure commence",
+      "upload_date": "2020-04-07T00:30:00+09:00",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_title": "Princess Connect! Re: Dive",
+      "available_date": null,
+      "next_episode_id": "GR0XP0WVY",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_subbed": true,
+      "hd_flag": true,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "available_offline": true,
+      "seo_description": "",
+      "slug": "",
+      "availability_notes": "",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "id": "GYW43JV36",
+      "episode": "1",
+      "mature_blocked": false,
+      "episode_number": 1,
+      "season_sequence_number": 1,
+      "eligible_region": "CA",
+      "availability_status": "available",
+      "duration_ms": 1420125,
+      "series_slug_title": "princess-connect-re-dive",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYW43JV36",
+          "is_premium_only": true,
+          "media_guid": "G5JFZJ7VZ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "free_available_date": "2020-04-13T16:30:00Z",
+      "identifier": "G6QW1E876|S1|E1",
+      "season_display_number": "1",
+      "series_title": "Princess Connect! Re: Dive",
+      "channel_id": "crunchyroll",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_id": "G65PW4Q76",
+      "roles": [
+        "main"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "media_type": "episode",
+      "slug_title": "the-adventure-begins-sauted-mushrooms-at-sunset",
+      "episode_air_date": "2020-04-07T00:30:00+09:00",
+      "closed_captions_available": false
+    },
+    {
+      "season_display_number": "1",
+      "seo_title": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d3f4a78e1134fa7b7b420f8cb8b7128d.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d3f4a78e1134fa7b7b420f8cb8b7128d.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d3f4a78e1134fa7b7b420f8cb8b7128d.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d3f4a78e1134fa7b7b420f8cb8b7128d.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d3f4a78e1134fa7b7b420f8cb8b7128d.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d3f4a78e1134fa7b7b420f8cb8b7128d.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d3f4a78e1134fa7b7b420f8cb8b7128d.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d3f4a78e1134fa7b7b420f8cb8b7128d.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "eligible_region": "CA",
+      "series_title": "Princess Connect! Re: Dive",
+      "sequence_number": 2,
+      "channel_id": "crunchyroll",
+      "identifier": "G6QW1E876|S1|E2",
+      "slug": "",
+      "is_dubbed": false,
+      "recent_audio_locale": "ja-JP",
+      "series_slug_title": "princess-connect-re-dive",
+      "episode": "2",
+      "description": "Kokkoro et son maître Yûki sont en quête d'une mission afin de subvenir à leurs besoins. Pecorine, elle, poursuit toujours les frères truands en possession de son épée. Les trois personnages feront la rencontre de Kyaru, une jeune fille aux pouvoirs étranges, et bien moins innocente qu'elle n'y paraît.",
+      "available_date": null,
+      "duration_ms": 1420168,
+      "series_id": "G6QW1E876",
+      "available_offline": true,
+      "availability_status": "available",
+      "free_available_date": "2020-04-20T16:30:00Z",
+      "listing_id": "",
+      "id": "GR0XP0WVY",
+      "season_id": "G65PW4Q76",
+      "seo_description": "",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "closed_captions_available": false,
+      "is_clip": false,
+      "mature_blocked": false,
+      "season_slug_title": "princess-connect-re-dive",
+      "roles": [
+        "main"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_id": "G60XP0W2R",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "media_type": "episode",
+      "premium_date": null,
+      "availability_notes": "",
+      "availability_starts": "2020-04-13T16:30:00Z",
+      "hd_flag": true,
+      "title": "Menu 2 – La farce du chat capricieux",
+      "episode_air_date": "2020-04-14T00:30:00+09:00",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "production_episode_id": "",
+      "is_mature": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR0XP0WVY",
+          "is_premium_only": true,
+          "media_guid": "GWMF8N5J7",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "season_title": "Princess Connect! Re: Dive",
+      "recent_variant": "",
+      "season_sequence_number": 1,
+      "next_episode_title": "Menu 3 – La frontière des gourmets",
+      "season_number": 1,
+      "episode_number": 2,
+      "streams_link": "/content/v2/cms/videos/GWMF8N5J7/streams",
+      "slug_title": "a-moody-cats-mischief-warm-golden-rice-balls",
+      "upload_date": "2020-04-14T00:30:00+09:00",
+      "premium_available_date": "2020-04-13T16:30:00Z",
+      "audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "is_subbed": true,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ]
+    },
+    {
+      "is_clip": false,
+      "availability_starts": "2020-04-20T16:30:00Z",
+      "production_episode_id": "",
+      "season_title": "Princess Connect! Re: Dive",
+      "recent_variant": "",
+      "season_display_number": "1",
+      "seo_title": "",
+      "is_premium_only": true,
+      "recent_audio_locale": "ja-JP",
+      "closed_captions_available": false,
+      "identifier": "G6QW1E876|S1|E3",
+      "hd_flag": true,
+      "mature_blocked": false,
+      "next_episode_title": "Menu 4 – Bienvenue chez les Gourmets",
+      "duration_ms": 1420083,
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "description": "Pecorine a trouvé un petit boulot, et elle est désormais serveuse dans une taverne, réputée pour sa bonne chère. Mais une plus grosse surprise encore attend nos amis là-bas. Kokkoro, elle, souhaite fonder une guilde réunissant ses compagnons d'aventure.",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_status": "available",
+      "season_slug_title": "princess-connect-re-dive",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "sequence_number": 3,
+      "is_mature": false,
+      "eligible_region": "CA",
+      "series_slug_title": "princess-connect-re-dive",
+      "is_subbed": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_dubbed": false,
+      "media_type": "episode",
+      "episode": "3",
+      "slug_title": "the-epicurean-frontier-----heavenly-fruit-is-the-secret-ingredient",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G60XP0W2R",
+          "is_premium_only": true,
+          "media_guid": "GGVF273N1",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_number": 1,
+      "available_offline": true,
+      "availability_notes": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/36d4437223945a53fde8f6b57d5b425b.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/36d4437223945a53fde8f6b57d5b425b.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/36d4437223945a53fde8f6b57d5b425b.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/36d4437223945a53fde8f6b57d5b425b.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/36d4437223945a53fde8f6b57d5b425b.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/36d4437223945a53fde8f6b57d5b425b.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/36d4437223945a53fde8f6b57d5b425b.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/36d4437223945a53fde8f6b57d5b425b.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "ja-JP",
+      "roles": [
+        "main"
+      ],
+      "episode_air_date": "2020-04-21T00:30:00+09:00",
+      "series_id": "G6QW1E876",
+      "streams_link": "/content/v2/cms/videos/GGVF273N1/streams",
+      "next_episode_id": "G6790J4NY",
+      "upload_date": "2020-04-21T00:30:00+09:00",
+      "premium_date": null,
+      "free_available_date": "2020-04-27T16:30:00Z",
+      "title": "Menu 3 – La frontière des gourmets",
+      "available_date": null,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "seo_description": "",
+      "premium_available_date": "2020-04-20T16:30:00Z",
+      "series_title": "Princess Connect! Re: Dive",
+      "season_sequence_number": 1,
+      "season_id": "G65PW4Q76",
+      "id": "G60XP0W2R",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "episode_number": 3,
+      "slug": ""
+    },
+    {
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_slug_title": "princess-connect-re-dive",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "available_offline": true,
+      "sequence_number": 4,
+      "listing_id": "",
+      "available_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6790J4NY",
+          "is_premium_only": true,
+          "media_guid": "G07FNQ5KE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "identifier": "G6QW1E876|S1|E4",
+      "production_episode_id": "",
+      "availability_notes": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "eligible_region": "CA",
+      "series_title": "Princess Connect! Re: Dive",
+      "roles": [
+        "main"
+      ],
+      "series_id": "G6QW1E876",
+      "streams_link": "/content/v2/cms/videos/G07FNQ5KE/streams",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "hd_flag": true,
+      "is_premium_only": true,
+      "episode": "4",
+      "is_dubbed": false,
+      "premium_date": null,
+      "season_id": "G65PW4Q76",
+      "availability_status": "available",
+      "seo_description": "",
+      "episode_number": 4,
+      "audio_locale": "ja-JP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "recent_audio_locale": "ja-JP",
+      "series_slug_title": "princess-connect-re-dive",
+      "episode_air_date": "2020-04-28T00:30:00+09:00",
+      "free_available_date": "2020-05-04T16:30:00Z",
+      "next_episode_title": "Menu 5 – Porridge plein d'amour",
+      "is_subbed": true,
+      "duration_ms": 1420168,
+      "media_type": "episode",
+      "title": "Menu 4 – Bienvenue chez les Gourmets",
+      "is_clip": false,
+      "slug_title": "welcome-to-the-gourmet-guild-beef-stew-at-nightfall",
+      "slug": "",
+      "is_mature": false,
+      "season_title": "Princess Connect! Re: Dive",
+      "mature_blocked": false,
+      "season_number": 1,
+      "season_display_number": "1",
+      "id": "G6790J4NY",
+      "availability_starts": "2020-04-27T16:30:00Z",
+      "recent_variant": "",
+      "season_sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "next_episode_id": "G6ME75Q4R",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2a7101746a1758c7b38d60c46557d87e.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/2a7101746a1758c7b38d60c46557d87e.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/2a7101746a1758c7b38d60c46557d87e.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/2a7101746a1758c7b38d60c46557d87e.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2a7101746a1758c7b38d60c46557d87e.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/2a7101746a1758c7b38d60c46557d87e.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/2a7101746a1758c7b38d60c46557d87e.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/2a7101746a1758c7b38d60c46557d87e.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "premium_available_date": "2020-04-27T16:30:00Z",
+      "upload_date": "2020-04-28T00:30:00+09:00",
+      "description": "Kokkoro et ses amis s'installent dans leur nouvelle demeure et apportent leur touche personnelle pour redonner vie au lieu. En ville, Kokkoro fait de curieuses rencontres lors de ses emplettes.",
+      "closed_captions_available": false
+    },
+    {
+      "episode_number": 5,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6ME75Q4R",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ54D1",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "available_date": null,
+      "is_premium_only": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "slug_title": "porridge-made-with-love-topped-with-a-twilight-fate",
+      "availability_status": "available",
+      "media_type": "episode",
+      "availability_starts": "2020-05-04T16:30:00Z",
+      "description": "Yûki tombe très malade, et les filles doivent chercher une solution dans l'urgence. Une soignante réputée semble prometteuse, mais cette fois encore, les apparences sont trompeuses…",
+      "seo_title": "",
+      "season_number": 1,
+      "season_id": "G65PW4Q76",
+      "hd_flag": true,
+      "id": "G6ME75Q4R",
+      "duration_ms": 1420168,
+      "season_slug_title": "princess-connect-re-dive",
+      "identifier": "G6QW1E876|S1|E5",
+      "next_episode_id": "GYEX24JV6",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "title": "Menu 5 – Porridge plein d'amour",
+      "season_display_number": "1",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "listing_id": "",
+      "mature_blocked": false,
+      "is_subbed": true,
+      "series_slug_title": "princess-connect-re-dive",
+      "episode_air_date": "2020-05-05T00:30:00+09:00",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "availability_notes": "",
+      "is_dubbed": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7fc800f46f914fc59c893b409b6e5808.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7fc800f46f914fc59c893b409b6e5808.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7fc800f46f914fc59c893b409b6e5808.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7fc800f46f914fc59c893b409b6e5808.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7fc800f46f914fc59c893b409b6e5808.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7fc800f46f914fc59c893b409b6e5808.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7fc800f46f914fc59c893b409b6e5808.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7fc800f46f914fc59c893b409b6e5808.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_variant": "",
+      "season_title": "Princess Connect! Re: Dive",
+      "series_title": "Princess Connect! Re: Dive",
+      "roles": [
+        "main"
+      ],
+      "sequence_number": 5,
+      "recent_audio_locale": "ja-JP",
+      "seo_description": "",
+      "series_id": "G6QW1E876",
+      "slug": "",
+      "streams_link": "/content/v2/cms/videos/GEMFZ54D1/streams",
+      "premium_available_date": "2020-05-04T16:30:00Z",
+      "upload_date": "2020-05-05T00:30:00+09:00",
+      "is_clip": false,
+      "audio_locale": "ja-JP",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "closed_captions_available": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode": "5",
+      "next_episode_title": "Menu 6 – Organisation du voyage",
+      "free_available_date": "2020-05-11T16:30:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_mature": false,
+      "season_sequence_number": 1,
+      "available_offline": true
+    },
+    {
+      "next_episode_id": "GY1X2EG0Y",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "id": "GYEX24JV6",
+      "recent_variant": "",
+      "hd_flag": true,
+      "availability_notes": "",
+      "available_offline": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_date": null,
+      "episode_air_date": "2020-05-12T00:30:00+09:00",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "eligible_region": "CA",
+      "free_available_date": "2020-05-18T16:30:00Z",
+      "availability_starts": "2020-05-11T16:30:00Z",
+      "series_slug_title": "princess-connect-re-dive",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "is_dubbed": false,
+      "availability_status": "available",
+      "is_clip": false,
+      "season_title": "Princess Connect! Re: Dive",
+      "premium_available_date": "2020-05-11T16:30:00Z",
+      "season_sequence_number": 1,
+      "sequence_number": 6,
+      "upload_date": "2020-05-12T00:30:00+09:00",
+      "season_id": "G65PW4Q76",
+      "recent_audio_locale": "ja-JP",
+      "audio_locale": "ja-JP",
+      "closed_captions_available": false,
+      "title": "Menu 6 – Organisation du voyage",
+      "production_episode_id": "",
+      "is_mature": false,
+      "episode": "6",
+      "is_subbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e9a4072b5aa3e6906a59364f4e561e64.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e9a4072b5aa3e6906a59364f4e561e64.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e9a4072b5aa3e6906a59364f4e561e64.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e9a4072b5aa3e6906a59364f4e561e64.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e9a4072b5aa3e6906a59364f4e561e64.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e9a4072b5aa3e6906a59364f4e561e64.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e9a4072b5aa3e6906a59364f4e561e64.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e9a4072b5aa3e6906a59364f4e561e64.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_number": 1,
+      "seo_description": "",
+      "streams_link": "/content/v2/cms/videos/G71F4KX1K/streams",
+      "duration_ms": 1420125,
+      "slug": "",
+      "seo_title": "",
+      "series_id": "G6QW1E876",
+      "media_type": "episode",
+      "listing_id": "",
+      "season_slug_title": "princess-connect-re-dive",
+      "mature_blocked": false,
+      "slug_title": "melody-of-departure-aromatic-spices-under-the-starry-sky",
+      "premium_date": null,
+      "next_episode_title": "Menu 7 – La lumière perçant les ténèbres",
+      "is_premium_only": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_title": "Princess Connect! Re: Dive",
+      "channel_id": "crunchyroll",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYEX24JV6",
+          "is_premium_only": true,
+          "media_guid": "G71F4KX1K",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "season_display_number": "1",
+      "description": "Les Gourmets trouvent une nouvelle quête très simple : acheminer des épices vers le village de Targum. Sur leur chemin, ils croiseront des visages familiers, certains même trop familiers…",
+      "episode_number": 6,
+      "roles": [
+        "main"
+      ],
+      "identifier": "G6QW1E876|S1|E6"
+    },
+    {
+      "is_clip": false,
+      "channel_id": "crunchyroll",
+      "id": "GY1X2EG0Y",
+      "upload_date": "2020-05-19T00:30:00+09:00",
+      "availability_notes": "",
+      "season_sequence_number": 1,
+      "slug_title": "a-light-to-pierce-the-darkness-like-two-sisters-in-a-pod",
+      "series_id": "G6QW1E876",
+      "series_title": "Princess Connect! Re: Dive",
+      "next_episode_id": "GRJ0GMN2Y",
+      "seo_description": "",
+      "closed_captions_available": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "next_episode_title": "Menu 8 – Le déjeuner des fillettes de Little Lyrical",
+      "season_number": 1,
+      "is_subbed": true,
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "Menu 7 – La lumière perçant les ténèbres",
+      "premium_date": null,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "seo_title": "",
+      "eligible_region": "CA",
+      "availability_starts": "2020-05-18T16:30:00Z",
+      "series_slug_title": "princess-connect-re-dive",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_number": 7,
+      "sequence_number": 7,
+      "availability_status": "available",
+      "slug": "",
+      "streams_link": "/content/v2/cms/videos/G9XFEW1MX/streams",
+      "listing_id": "",
+      "is_dubbed": false,
+      "audio_locale": "ja-JP",
+      "description": "Hatsune, de la guilde des Forestiers, tente de retrouver à tout prix sa sœur, qui a disparu dans la forêt des ombres. Leurs retrouvailles auront des implications sur divers plans astraux. Une ennemie puissante se dresse sur le chemin des Gourmets, venus prêter main-forte.",
+      "episode_air_date": "2020-05-19T00:30:00+09:00",
+      "production_episode_id": "",
+      "hd_flag": true,
+      "available_offline": true,
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "available_date": null,
+      "season_id": "G65PW4Q76",
+      "season_display_number": "1",
+      "roles": [
+        "main"
+      ],
+      "season_title": "Princess Connect! Re: Dive",
+      "duration_ms": 1420040,
+      "is_mature": false,
+      "recent_audio_locale": "ja-JP",
+      "episode": "7",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY1X2EG0Y",
+          "is_premium_only": true,
+          "media_guid": "G9XFEW1MX",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "media_type": "episode",
+      "season_slug_title": "princess-connect-re-dive",
+      "identifier": "G6QW1E876|S1|E7",
+      "recent_variant": "",
+      "free_available_date": "2020-05-25T16:30:00Z",
+      "premium_available_date": "2020-05-18T16:30:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a9930922a996553ed7ed4fbcbd7bac41.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a9930922a996553ed7ed4fbcbd7bac41.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a9930922a996553ed7ed4fbcbd7bac41.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a9930922a996553ed7ed4fbcbd7bac41.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a9930922a996553ed7ed4fbcbd7bac41.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a9930922a996553ed7ed4fbcbd7bac41.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a9930922a996553ed7ed4fbcbd7bac41.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a9930922a996553ed7ed4fbcbd7bac41.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "series_id": "G6QW1E876",
+      "free_available_date": "2020-06-01T16:30:00Z",
+      "next_episode_title": "Menu 9 – Les vacances des Gourmets",
+      "slug": "",
+      "is_premium_only": true,
+      "availability_notes": "",
+      "is_mature": false,
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "closed_captions_available": false,
+      "roles": [
+        "main"
+      ],
+      "is_dubbed": false,
+      "series_title": "Princess Connect! Re: Dive",
+      "available_date": null,
+      "mature_blocked": false,
+      "season_slug_title": "princess-connect-re-dive",
+      "premium_date": null,
+      "description": "Alors que Yûki et ses compagnes de voyage passent par la rizière du village de Targum, ils tombent sur les Little Lyrical, un groupe composée de trois jeunes amies. Celles-ci sont à la recherche de mentors pour leur apprendre à devenir une vraie guilde.",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "identifier": "G6QW1E876|S1|E8",
+      "eligible_region": "CA",
+      "streams_link": "/content/v2/cms/videos/GXMFQNPWK/streams",
+      "media_type": "episode",
+      "season_id": "G65PW4Q76",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "upload_date": "2020-05-26T00:30:00+09:00",
+      "season_title": "Princess Connect! Re: Dive",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7eff417081bf5a31f7c96588074364fb.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7eff417081bf5a31f7c96588074364fb.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7eff417081bf5a31f7c96588074364fb.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7eff417081bf5a31f7c96588074364fb.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7eff417081bf5a31f7c96588074364fb.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7eff417081bf5a31f7c96588074364fb.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7eff417081bf5a31f7c96588074364fb.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7eff417081bf5a31f7c96588074364fb.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode": "8",
+      "episode_air_date": "2020-05-26T00:30:00+09:00",
+      "slug_title": "a-little-lyrical-kids-meal-country-style-fried-eggs",
+      "listing_id": "",
+      "season_number": 1,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "series_slug_title": "princess-connect-re-dive",
+      "id": "GRJ0GMN2Y",
+      "is_clip": false,
+      "title": "Menu 8 – Le déjeuner des fillettes de Little Lyrical",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRJ0GMN2Y",
+          "is_premium_only": true,
+          "media_guid": "GXMFQNPWK",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "sequence_number": 8,
+      "duration_ms": 1420168,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "available_offline": true,
+      "episode_number": 8,
+      "hd_flag": true,
+      "channel_id": "crunchyroll",
+      "audio_locale": "ja-JP",
+      "production_episode_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "next_episode_id": "G6XJPN2MR",
+      "seo_title": "",
+      "is_subbed": true,
+      "seo_description": "",
+      "availability_starts": "2020-05-25T16:30:00Z",
+      "availability_status": "available",
+      "season_display_number": "1",
+      "premium_available_date": "2020-05-25T16:30:00Z"
+    },
+    {
+      "season_display_number": "1",
+      "is_subbed": true,
+      "is_premium_only": true,
+      "listing_id": "",
+      "season_number": 1,
+      "is_mature": false,
+      "availability_starts": "2020-06-01T16:30:00Z",
+      "recent_variant": "",
+      "free_available_date": "2020-06-08T16:30:00Z",
+      "production_episode_id": "",
+      "is_clip": false,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "available_offline": true,
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "premium_date": null,
+      "availability_notes": "",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "upload_date": "2020-06-02T00:30:00+09:00",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_status": "available",
+      "season_title": "Princess Connect! Re: Dive",
+      "id": "G6XJPN2MR",
+      "seo_title": "",
+      "series_title": "Princess Connect! Re: Dive",
+      "season_slug_title": "princess-connect-re-dive",
+      "episode_air_date": "2020-06-02T00:30:00+09:00",
+      "closed_captions_available": false,
+      "episode_number": 9,
+      "slug_title": "a-gourmet-getaway-fragrant-tentacles-on-the-beach",
+      "eligible_region": "CA",
+      "recent_audio_locale": "ja-JP",
+      "next_episode_title": "Menu 10 – Les fleurs rassemblées dans les ténèbres éternelles",
+      "season_id": "G65PW4Q76",
+      "media_type": "episode",
+      "title": "Menu 9 – Les vacances des Gourmets",
+      "audio_locale": "ja-JP",
+      "is_dubbed": false,
+      "description": "Yûki et ses amies se préparent pour une aventure estivale : la plage ! À peine arrivés, ils entrent dans un restaurant au fil des plats sont également rapportées l'histoire du lieu, la concurrence et les rivalités sous-jacentes.",
+      "roles": [
+        "main"
+      ],
+      "series_slug_title": "princess-connect-re-dive",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/285719b39c5ce79b41b13f7d0d20ef8c.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/285719b39c5ce79b41b13f7d0d20ef8c.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/285719b39c5ce79b41b13f7d0d20ef8c.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/285719b39c5ce79b41b13f7d0d20ef8c.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/285719b39c5ce79b41b13f7d0d20ef8c.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/285719b39c5ce79b41b13f7d0d20ef8c.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/285719b39c5ce79b41b13f7d0d20ef8c.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/285719b39c5ce79b41b13f7d0d20ef8c.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "identifier": "G6QW1E876|S1|E9",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "premium_available_date": "2020-06-01T16:30:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "hd_flag": true,
+      "season_sequence_number": 1,
+      "available_date": null,
+      "next_episode_id": "G69V7K59Y",
+      "episode": "9",
+      "seo_description": "",
+      "slug": "",
+      "duration_ms": 1420125,
+      "series_id": "G6QW1E876",
+      "sequence_number": 9,
+      "streams_link": "/content/v2/cms/videos/G4GFQPEVX/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6XJPN2MR",
+          "is_premium_only": true,
+          "media_guid": "G4GFQPEVX",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ]
+    },
+    {
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/66d440757977c387f35e561c85962c38.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/66d440757977c387f35e561c85962c38.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/66d440757977c387f35e561c85962c38.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/66d440757977c387f35e561c85962c38.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/66d440757977c387f35e561c85962c38.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/66d440757977c387f35e561c85962c38.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/66d440757977c387f35e561c85962c38.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/66d440757977c387f35e561c85962c38.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_slug_title": "princess-connect-re-dive",
+      "streams_link": "/content/v2/cms/videos/G1QF48W12/streams",
+      "roles": [
+        "main"
+      ],
+      "eligible_region": "CA",
+      "audio_locale": "ja-JP",
+      "series_slug_title": "princess-connect-re-dive",
+      "episode_number": 10,
+      "recent_variant": "",
+      "available_offline": true,
+      "is_premium_only": true,
+      "duration_ms": 1420083,
+      "upload_date": "2020-06-09T00:30:00+09:00",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "listing_id": "",
+      "is_dubbed": false,
+      "season_display_number": "1",
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_title": "Princess Connect! Re: Dive",
+      "media_type": "episode",
+      "title": "Menu 10 – Les fleurs rassemblées dans les ténèbres éternelles",
+      "season_number": 1,
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "identifier": "G6QW1E876|S1|E10",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G69V7K59Y",
+          "is_premium_only": true,
+          "media_guid": "G1QF48W12",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "free_available_date": "2020-06-15T16:30:00Z",
+      "season_id": "G65PW4Q76",
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2020-06-09T00:30:00+09:00",
+      "next_episode_title": "Menu 11 – Ma maison au crépuscule",
+      "availability_starts": "2020-06-08T16:30:00Z",
+      "mature_blocked": false,
+      "season_title": "Princess Connect! Re: Dive",
+      "premium_available_date": "2020-06-08T16:30:00Z",
+      "episode": "10",
+      "is_subbed": true,
+      "is_mature": false,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "description": "La guilde des Gourmets fait la rencontre d'un esprit avide de flan, et qui transforme ses victimes qu'il hante… en flan. Derrière cela se cache néanmoins une femme vulnérable, en lutte avec elle-même. Les Gourmets tentent alors de lui venir en aide.",
+      "sequence_number": 10,
+      "slug": "",
+      "seo_description": "",
+      "next_episode_id": "GRW43JKKY",
+      "is_clip": false,
+      "premium_date": null,
+      "recent_audio_locale": "ja-JP",
+      "id": "G69V7K59Y",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "slug_title": "flowers-in-eternal-darkness-cursed-pudding",
+      "availability_notes": "",
+      "hd_flag": true,
+      "availability_status": "available",
+      "closed_captions_available": false,
+      "series_id": "G6QW1E876"
+    },
+    {
+      "closed_captions_available": false,
+      "series_id": "G6QW1E876",
+      "upload_date": "2020-06-16T00:30:00+09:00",
+      "id": "GRW43JKKY",
+      "is_mature": false,
+      "media_type": "episode",
+      "season_slug_title": "princess-connect-re-dive",
+      "season_display_number": "1",
+      "season_id": "G65PW4Q76",
+      "title": "Menu 11 – Ma maison au crépuscule",
+      "available_date": null,
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "identifier": "G6QW1E876|S1|E11",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "available_offline": true,
+      "sequence_number": 11,
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRW43JKKY",
+          "is_premium_only": true,
+          "media_guid": "GJKF24505",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "seo_title": "",
+      "premium_date": null,
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "series_slug_title": "princess-connect-re-dive",
+      "episode": "11",
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "free_available_date": "2020-06-22T16:30:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_starts": "2020-06-15T16:30:00Z",
+      "slug_title": "evening-home-a-crispy-quest-hot-dog",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_description": "",
+      "is_premium_only": true,
+      "season_number": 1,
+      "availability_notes": "",
+      "is_subbed": true,
+      "series_title": "Princess Connect! Re: Dive",
+      "production_episode_id": "",
+      "premium_available_date": "2020-06-15T16:30:00Z",
+      "streams_link": "/content/v2/cms/videos/GJKF24505/streams",
+      "listing_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b4b24e397adf841d720c272066b68d3b.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b4b24e397adf841d720c272066b68d3b.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b4b24e397adf841d720c272066b68d3b.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b4b24e397adf841d720c272066b68d3b.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b4b24e397adf841d720c272066b68d3b.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b4b24e397adf841d720c272066b68d3b.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b4b24e397adf841d720c272066b68d3b.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b4b24e397adf841d720c272066b68d3b.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "hd_flag": true,
+      "availability_status": "available",
+      "slug": "",
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "GYXJPN2N6",
+      "episode_air_date": "2020-06-16T00:30:00+09:00",
+      "episode_number": 11,
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "duration_ms": 1420168,
+      "is_clip": false,
+      "season_sequence_number": 1,
+      "description": "Catastrophe ! Pecorine a décapité… la peluche de Kyaru. Heureusement, Kokkoro est experte en couture et peut sauver les meubles, mais encore faut-il trouver de quoi coudre. Elle se rend donc en ville avec ses amis afin de trouver du matériel, mais soudain, Yûki se volatilise et demeure introuvable. Kyaru commence à douter de sa cause et doit choisir entre ses amis et sa maîtresse.",
+      "season_title": "Princess Connect! Re: Dive",
+      "is_dubbed": false,
+      "next_episode_title": "Menu 12 – La spécialité fantaisiste du pâtissier"
+    },
+    {
+      "next_episode_title": "Menu 13 – La princesse perdue",
+      "roles": [
+        "main"
+      ],
+      "duration_ms": 1420211,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "eligible_region": "CA",
+      "seo_description": "",
+      "premium_available_date": "2020-06-22T16:30:00Z",
+      "is_clip": false,
+      "slug_title": "the-whimsical-patissiers-specialty-a-memory-of-labyrinths-and-crepes",
+      "series_id": "G6QW1E876",
+      "seo_title": "",
+      "description": "Les Gourmets sont à la recherche d'ingrédients gourmands, mais récemment, les commerces ne sont plus approvisionnés à cause d'une bête sauvage… Yûki et les siens, lors de leur chasse au monstre, vont faire une rencontre d'un autre royaume…",
+      "episode_number": 12,
+      "mature_blocked": false,
+      "recent_variant": "",
+      "premium_date": null,
+      "season_display_number": "1",
+      "free_available_date": "2020-06-29T16:30:00Z",
+      "slug": "",
+      "next_episode_id": "GYNV9W39R",
+      "series_title": "Princess Connect! Re: Dive",
+      "availability_status": "available",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_sequence_number": 1,
+      "streams_link": "/content/v2/cms/videos/GNJFD5P19/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYXJPN2N6",
+          "is_premium_only": true,
+          "media_guid": "GNJFD5P19",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "season_id": "G65PW4Q76",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "episode": "12",
+      "title": "Menu 12 – La spécialité fantaisiste du pâtissier",
+      "production_episode_id": "",
+      "media_type": "episode",
+      "season_slug_title": "princess-connect-re-dive",
+      "listing_id": "",
+      "upload_date": "2020-06-23T00:30:00+09:00",
+      "is_mature": false,
+      "hd_flag": true,
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "audio_locale": "ja-JP",
+      "is_dubbed": false,
+      "series_slug_title": "princess-connect-re-dive",
+      "id": "GYXJPN2N6",
+      "season_title": "Princess Connect! Re: Dive",
+      "available_offline": true,
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_number": 1,
+      "identifier": "G6QW1E876|S1|E12",
+      "episode_air_date": "2020-06-23T00:30:00+09:00",
+      "is_subbed": true,
+      "availability_notes": "",
+      "availability_starts": "2020-06-22T16:30:00Z",
+      "is_premium_only": true,
+      "closed_captions_available": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9ba9ccec00abccefae8c06e039d34ca4.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9ba9ccec00abccefae8c06e039d34ca4.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9ba9ccec00abccefae8c06e039d34ca4.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9ba9ccec00abccefae8c06e039d34ca4.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9ba9ccec00abccefae8c06e039d34ca4.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9ba9ccec00abccefae8c06e039d34ca4.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9ba9ccec00abccefae8c06e039d34ca4.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9ba9ccec00abccefae8c06e039d34ca4.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "sequence_number": 12,
+      "recent_audio_locale": "ja-JP"
+    },
+    {
+      "sequence_number": 13,
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "series_id": "G6QW1E876",
+      "seo_title": "",
+      "available_date": null,
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "duration_ms": 1420168,
+      "series_title": "Princess Connect! Re: Dive",
+      "season_title": "Princess Connect! Re: Dive",
+      "season_tags": [
+        "Printemps-2020"
+      ],
+      "recent_variant": "",
+      "listing_id": "",
+      "content_descriptors": [
+        "Usage de drogues/alcool\r\n",
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "next_episode_title": "Menu 1 - Rendez-vous chez les Gourmets",
+      "recent_audio_locale": "ja-JP",
+      "id": "GYNV9W39R",
+      "slug": "",
+      "roles": [
+        "main"
+      ],
+      "season_number": 1,
+      "availability_starts": "2020-06-29T16:30:00Z",
+      "available_offline": true,
+      "channel_id": "crunchyroll",
+      "next_episode_id": "G4VUQXP8W",
+      "seo_description": "",
+      "production_episode_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "audio_locale": "ja-JP",
+      "season_display_number": "1",
+      "identifier": "G6QW1E876|S1|E13",
+      "season_slug_title": "princess-connect-re-dive",
+      "free_available_date": "2020-07-06T16:30:00Z",
+      "availability_notes": "",
+      "is_subbed": true,
+      "is_clip": false,
+      "slug_title": "lost-princess-garnished-with-smiles",
+      "streams_link": "/content/v2/cms/videos/GKKF375KJ/streams",
+      "premium_available_date": "2020-06-29T16:30:00Z",
+      "season_id": "G65PW4Q76",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_premium_only": true,
+      "is_mature": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYNV9W39R",
+          "is_premium_only": true,
+          "media_guid": "GKKF375KJ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G65PW4Q76",
+          "variant": ""
+        }
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/035dc8e936bcb40abd13ef492f7cecae.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/035dc8e936bcb40abd13ef492f7cecae.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/035dc8e936bcb40abd13ef492f7cecae.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/035dc8e936bcb40abd13ef492f7cecae.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/035dc8e936bcb40abd13ef492f7cecae.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/035dc8e936bcb40abd13ef492f7cecae.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/035dc8e936bcb40abd13ef492f7cecae.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/035dc8e936bcb40abd13ef492f7cecae.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_sequence_number": 1,
+      "description": "Pecorine livre à Kokkoro le douloureux récit de son histoire, de sa véritable identité et de la malédiction qui l'entoure. Yûki se souvient au fil des paroles de Queen Labyrinth. Nos héros doivent chacun faire la paix avec eux-mêmes avant d'unir leurs forces pour une ultime bataille contre la force qui menace le village.",
+      "episode": "13",
+      "episode_number": 13,
+      "episode_air_date": "2020-06-30T00:30:00+09:00",
+      "media_type": "episode",
+      "upload_date": "2020-06-30T00:30:00+09:00",
+      "series_slug_title": "princess-connect-re-dive",
+      "availability_status": "available",
+      "title": "Menu 13 – La princesse perdue",
+      "is_dubbed": false,
+      "premium_date": null
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

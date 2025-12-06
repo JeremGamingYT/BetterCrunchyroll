@@ -1,0 +1,122 @@
+G1XHJV0G7:1  GET https://static.crunchyroll.com/analytics/cr-eec-8.7.0.js net::ERR_BLOCKED_BY_CLIENT
+content.js:11 [BetterCrunchyroll] Extension loaded
+content.js:28 [BetterCrunchyroll] API Interceptor injected
+content.js:476 [BetterCrunchyroll] 🚀 Fully initialized
+content.js:383 [BetterCrunchyroll] Injecting custom design...
+content.js:418 [BetterCrunchyroll] ✅ Custom design injected
+main.js:1 {xkKZ4: 'g'}
+crunchyroll-api-interceptor.js:9 [BetterCrunchy Interceptor] Initialized
+main.js:19 [Cache] 🧹 Cleaning up expired entries...
+main.js:19 [Cache] ✅ Hit: episodes_GRP8CXQ09 (expires in 14min)
+main.js:19 [Cache] ✅ Hit: episodes_GRDK97P7Y (expires in 14min)
+main.js:19 [Cache] ✅ Hit: episodes_GY75CDJWM (expires in 18min)
+main.js:19 [Cache] ✅ Hit: heroSlides (expires in 24min)
+main.js:19 [Cache] ✅ Hit: episodes_G6JQC18JW (expires in 16min)
+main.js:19 [Cache] ✅ Hit: episodes_GRK5CNZZG (expires in 14min)
+main.js:19 [Cache] ✅ Hit: episodes_G6J0PG50R (expires in 16min)
+main.js:19 [Cache] ✅ Hit: latest (expires in 12min)
+main.js:19 [Cache] ✅ Hit: series_G6NQ5DWZ6 (expires in 14min)
+main.js:19 [Cache] ✅ Hit: episodes_GS00361927JAJP (expires in 19min)
+main.js:19 [Cache] ✅ Hit: episodes_GR2PCVZEW (expires in 16min)
+main.js:19 [Cache] ✅ Hit: series_GZJH3D8J9 (expires in 28min)
+main.js:19 [Cache] ✅ Hit: series_GT00365079 (expires in 28min)
+main.js:19 [Cache] ✅ Hit: series_GP5HJ84P7 (expires in 18min)
+main.js:19 [Cache] ✅ Hit: episodes_GRMGC3KDK (expires in 16min)
+main.js:19 [Cache] ✅ Hit: episodes_GS00361900JAJP (expires in 27min)
+main.js:19 [Cache] ✅ Hit: series_GT00361926 (expires in 19min)
+main.js:19 [Cache] ✅ Hit: episodes_G68VCPM3K (expires in 28min)
+main.js:19 [Cache] ✅ Hit: episodes_GRZXCM292 (expires in 16min)
+main.js:19 [Cache] ✅ Hit: series_G1XHJV0G7 (expires in 27min)
+main.js:19 [Cache] ✅ Hit: episodes_GS00365080JAJP (expires in 28min)
+main.js:19 [Cache] ✅ Hit: newReleases (expires in 29min)
+main.js:19 [Cache] ✅ Hit: episodes_G6VNC2KVD (expires in 16min)
+main.js:19 [Cache] ✅ Cleaned 0 expired entries
+main.js:31 [CrunchyrollAPI] Demande des credentials au content script...
+main.js:63 
+🎯 BetterCrunchyroll API Ready! 
+
+Tapez crunchyAPI.help() pour voir les commandes disponibles.
+
+Exemples rapides:
+  • await crunchyAPI.continueWatching()
+  • await crunchyAPI.watchlist()
+  • await crunchyAPI.testAll()
+    
+content.js:129 [BetterCrunchyroll] Credentials requested by API
+content.js:138 [BetterCrunchyroll] Sending credentials to API: {hasToken: true, hasProfile: true}
+main.js:19 [Cache] ✅ Hit: series_G1XHJV0G7 (expires in 27min)
+main.js:19 [Series] ✅ Using cached data
+main.js:19 [Cache] ✅ Hit: episodes_GS00361900JAJP (expires in 27min)
+main.js:19 [Series] ✅ Using cached episodes for season: 1
+main.js:19 [CrunchyrollData] Development mode - using mock data
+2117-2d96608b8411daea.js:1 Event {isTrusted: true, type: 'error', target: script#etp-analytics, currentTarget: script#etp-analytics, eventPhase: 2, …}
+(anonymous) @ 2117-2d96608b8411daea.js:1
+Promise.catch
+n @ 2117-2d96608b8411daea.js:1
+54278 @ 2117-2d96608b8411daea.js:1
+b @ webpack-8ec2c4bd38261a7f.js:1
+n @ main-app-519c295997cf8632.js:1
+(anonymous) @ main-app-519c295997cf8632.js:1
+b.O @ webpack-8ec2c4bd38261a7f.js:1
+(anonymous) @ main-app-519c295997cf8632.js:1
+d @ webpack-8ec2c4bd38261a7f.js:1
+(anonymous) @ webpack-8ec2c4bd38261a7f.js:1
+(anonymous) @ webpack-8ec2c4bd38261a7f.js:1
+main.js:31 [CrunchyrollAPI] Token expire dans 300 secondes
+main.js:31 🚀 CrunchyrollAPI initialisée {hasToken: true, hasProfile: true, hasAccount: true, locale: 'fr-FR', token: 'eyJhbGciOiJSUzI1NiIs...'}
+main.js:31 ✅ CrunchyrollAPI initialisée et disponible dans window.crunchyAPI
+manifest.json:1 Manifest: scope_extensions entry ignored, required properties 'type' and 'origin' are missing.
+manifest.json:1 Manifest: scope_extensions entry ignored, required properties 'type' and 'origin' are missing.
+content.js:192 [BetterCrunchyroll] Received API response: _auth_v1_token
+content.js:153 [BetterCrunchyroll] Received token data
+content.js:167 [BetterCrunchyroll] ✅ Token stored in chrome.storage.local
+content.js:192 [BetterCrunchyroll] Received API response: _accounts_v1_me
+content.js:192 [BetterCrunchyroll] Received API response: multiprofile
+content.js:192 [BetterCrunchyroll] Received API response: seasons
+content.js:192 [BetterCrunchyroll] Received API response: series_G1XHJV0G7
+8224-3ed5756297825b1f.js:1  GET https://www.crunchyroll.com/metal/v1/fr-fr/theatrical/web/series_tickets/CA/G1XHJV0G7.json 403 (Forbidden)
+(anonymous) @ 8224-3ed5756297825b1f.js:1
+xhr @ 8224-3ed5756297825b1f.js:1
+en @ 8224-3ed5756297825b1f.js:1
+_request @ 8224-3ed5756297825b1f.js:1
+request @ 8224-3ed5756297825b1f.js:1
+(anonymous) @ 8224-3ed5756297825b1f.js:1
+request @ 3074.b3f3dd093f7f0411.js:1
+(anonymous) @ 3074.b3f3dd093f7f0411.js:1
+aQ @ 4470.62561df249fa3598.js:1
+T @ 2117-2d96608b8411daea.js:1
+content.js:192 [BetterCrunchyroll] Received API response: _content_reviews_v3_user_34f17284_47d3_574c_be3d_e32ce10b4ede_rating_series_G1XHJV0G7
+content.js:192 [BetterCrunchyroll] Received API response: discover
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _auth_v1_token
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:202 [BetterCrunchyroll] ✅ Profile stored in chrome.storage.local
+content.js:192 [BetterCrunchyroll] Received API response: up_next
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _accounts_v1_me
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:226 [BetterCrunchyroll] ✅ Data stored: multiprofile
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:226 [BetterCrunchyroll] ✅ Data stored: seasons
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:192 [BetterCrunchyroll] Received API response: _content_v2_34f17284_47d3_574c_be3d_e32ce10b4ede_watchlist
+content.js:226 [BetterCrunchyroll] ✅ Data stored: series_G1XHJV0G7
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _content_reviews_v3_user_34f17284_47d3_574c_be3d_e32ce10b4ede_rating_series_G1XHJV0G7
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:192 [BetterCrunchyroll] Received API response: episodes_GS00361900JAJP
+content.js:226 [BetterCrunchyroll] ✅ Data stored: discover
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:192 [BetterCrunchyroll] Received API response: _content_v2_34f17284_47d3_574c_be3d_e32ce10b4ede_playheads
+content.js:192 [BetterCrunchyroll] Received API response: discover
+content.js:226 [BetterCrunchyroll] ✅ Data stored: up_next
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _content_v2_34f17284_47d3_574c_be3d_e32ce10b4ede_watchlist
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:226 [BetterCrunchyroll] ✅ Data stored: episodes_GS00361900JAJP
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _content_v2_34f17284_47d3_574c_be3d_e32ce10b4ede_playheads
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+content.js:226 [BetterCrunchyroll] ✅ Data stored: discover
+content.js:104 [BetterCrunchyroll] Data enrichment disabled (Mock Mode)
+G1XHJV0G7/a-gatherers-adventure-in-isekai:1 The resource https://www.crunchyroll.com/fonts/CrunchyrollAtyp-Bold.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+G1XHJV0G7/a-gatherers-adventure-in-isekai:1 The resource https://www.crunchyroll.com/fonts/DMSans.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+G1XHJV0G7/a-gatherers-adventure-in-isekai:1 The resource https://www.crunchyroll.com/fonts/CrunchyrollAtyp-Regular.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.

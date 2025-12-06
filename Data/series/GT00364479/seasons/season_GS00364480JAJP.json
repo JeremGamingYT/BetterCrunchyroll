@@ -1,0 +1,1349 @@
+{
+  "total": 9,
+  "data": [
+    {
+      "listing_id": "",
+      "recent_variant": "",
+      "description": "Après dix ans d'absence, le héros Rovel, qui avait sauvé le royaume de Tenbahl des monstres, refait surface.",
+      "media_type": "episode",
+      "hd_flag": true,
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Grossièretés"
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "series_slug_title": "dad-is-a-hero-mom-is-a-spirit-im-a-reincarnator",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "series_id": "GT00364479",
+      "season_number": 1,
+      "is_premium_only": true,
+      "id": "GE00364481JAJP",
+      "slug": "",
+      "sequence_number": 1,
+      "season_id": "GS00364480JAJP",
+      "channel_id": "crunchyroll",
+      "season_display_number": "",
+      "recent_audio_locale": "ja-JP",
+      "mature_blocked": false,
+      "available_offline": true,
+      "season_title": "Saison 1",
+      "seo_title": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "available_date": null,
+      "episode_air_date": "2025-10-05T00:00:00Z",
+      "upload_date": "2025-10-05T00:00:00Z",
+      "is_dubbed": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_title": "Le problème de la maison Vankreift",
+      "availability_starts": "2025-10-05T15:30:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364481JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364481JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364480JAJP",
+          "variant": ""
+        }
+      ],
+      "production_episode_id": "",
+      "availability_status": "available",
+      "is_subbed": true,
+      "episode_number": 1,
+      "premium_available_date": "2025-10-05T15:30:00Z",
+      "audio_locale": "ja-JP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f6226e8d873e5bca60ff27eebe3653c3.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f6226e8d873e5bca60ff27eebe3653c3.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f6226e8d873e5bca60ff27eebe3653c3.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f6226e8d873e5bca60ff27eebe3653c3.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f6226e8d873e5bca60ff27eebe3653c3.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f6226e8d873e5bca60ff27eebe3653c3.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f6226e8d873e5bca60ff27eebe3653c3.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f6226e8d873e5bca60ff27eebe3653c3.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "identifier": "GT00364479|S00364480|E1",
+      "season_sequence_number": 1,
+      "next_episode_id": "GE00364483JAJP",
+      "seo_description": "",
+      "season_slug_title": "season-1",
+      "availability_notes": "",
+      "streams_link": "/content/v2/cms/videos/GE00364481JAJPV/streams",
+      "is_mature": false,
+      "is_clip": false,
+      "premium_date": null,
+      "series_title": "Dad is a hero, Mom is a spirit, I'm a reincarnator",
+      "slug_title": "the-hero-returns",
+      "eligible_region": "CA",
+      "title": "Le retour du héros",
+      "episode": "1",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "duration_ms": 1430973,
+      "roles": [
+        "main"
+      ]
+    },
+    {
+      "season_sequence_number": 1,
+      "listing_id": "",
+      "is_clip": false,
+      "season_number": 1,
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f04d7dc07067f216379cdb1a8d013453.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f04d7dc07067f216379cdb1a8d013453.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f04d7dc07067f216379cdb1a8d013453.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f04d7dc07067f216379cdb1a8d013453.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f04d7dc07067f216379cdb1a8d013453.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f04d7dc07067f216379cdb1a8d013453.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f04d7dc07067f216379cdb1a8d013453.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f04d7dc07067f216379cdb1a8d013453.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "premium_date": null,
+      "media_type": "episode",
+      "description": "De retour dans son monde, Rovel doit régler les problèmes de la maison Vankreift, en écartant les gêneurs.",
+      "episode": "2",
+      "id": "GE00364483JAJP",
+      "available_date": null,
+      "recent_audio_locale": "ja-JP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "season_display_number": "",
+      "channel_id": "crunchyroll",
+      "audio_locale": "ja-JP",
+      "series_title": "Dad is a hero, Mom is a spirit, I'm a reincarnator",
+      "premium_available_date": "2025-10-12T15:30:00Z",
+      "slug": "",
+      "sequence_number": 2,
+      "seo_description": "",
+      "availability_notes": "",
+      "available_offline": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "closed_captions_available": false,
+      "season_id": "GS00364480JAJP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "recent_variant": "",
+      "is_premium_only": true,
+      "season_slug_title": "season-1",
+      "duration_ms": 1431015,
+      "series_slug_title": "dad-is-a-hero-mom-is-a-spirit-im-a-reincarnator",
+      "eligible_region": "CA",
+      "availability_status": "available",
+      "season_title": "Saison 1",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364483JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364483JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364480JAJP",
+          "variant": ""
+        }
+      ],
+      "episode_number": 2,
+      "hd_flag": true,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "mature_blocked": false,
+      "streams_link": "/content/v2/cms/videos/GE00364483JAJPV/streams",
+      "identifier": "GT00364479|S00364480|E2",
+      "is_subbed": true,
+      "title": "Le problème de la maison Vankreift",
+      "upload_date": "2025-10-12T00:00:00Z",
+      "slug_title": "vankreift-family-predicament",
+      "episode_air_date": "2025-10-12T00:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "is_mature": false,
+      "next_episode_title": "Le roi Ravisel",
+      "series_id": "GT00364479",
+      "content_descriptors": [
+        "Grossièretés"
+      ],
+      "is_dubbed": false,
+      "next_episode_id": "GE00364485JAJP",
+      "availability_starts": "2025-10-12T15:30:00Z"
+    },
+    {
+      "duration_ms": 1431015,
+      "sequence_number": 3,
+      "episode_number": 3,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/455fb8ecb1d93821e98128b7099aadbd.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/455fb8ecb1d93821e98128b7099aadbd.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/455fb8ecb1d93821e98128b7099aadbd.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/455fb8ecb1d93821e98128b7099aadbd.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/455fb8ecb1d93821e98128b7099aadbd.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/455fb8ecb1d93821e98128b7099aadbd.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/455fb8ecb1d93821e98128b7099aadbd.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/455fb8ecb1d93821e98128b7099aadbd.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_status": "available",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "id": "GE00364485JAJP",
+      "seo_description": "",
+      "next_episode_title": "Le châtiment de la déesse Vahl",
+      "audio_locale": "ja-JP",
+      "episode": "3",
+      "slug": "",
+      "slug_title": "king-ravisel",
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "ja-JP",
+      "description": "Le retour de Rovel et ses liens précieux avec le monde des esprits suscitent l'intérêt de la Couronne.",
+      "season_sequence_number": 1,
+      "eligible_region": "CA",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "available_date": null,
+      "identifier": "GT00364479|S00364480|E3",
+      "series_slug_title": "dad-is-a-hero-mom-is-a-spirit-im-a-reincarnator",
+      "is_subbed": true,
+      "media_type": "episode",
+      "production_episode_id": "",
+      "seo_title": "",
+      "season_number": 1,
+      "hd_flag": true,
+      "recent_variant": "",
+      "upload_date": "2025-10-19T00:00:00Z",
+      "series_id": "GT00364479",
+      "season_title": "Saison 1",
+      "series_title": "Dad is a hero, Mom is a spirit, I'm a reincarnator",
+      "is_clip": false,
+      "season_slug_title": "season-1",
+      "season_display_number": "",
+      "premium_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "next_episode_id": "GE00364487JAJP",
+      "streams_link": "/content/v2/cms/videos/GE00364485JAJPV/streams",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_id": "GS00364480JAJP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "roles": [
+        "main"
+      ],
+      "is_dubbed": false,
+      "episode_air_date": "2025-10-19T00:00:00Z",
+      "available_offline": true,
+      "is_mature": false,
+      "premium_available_date": "2025-10-19T15:30:00Z",
+      "availability_starts": "2025-10-19T15:30:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364485JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364485JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364480JAJP",
+          "variant": ""
+        }
+      ],
+      "mature_blocked": false,
+      "title": "Le roi Ravisel",
+      "content_descriptors": [
+        "Grossièretés"
+      ],
+      "availability_notes": ""
+    },
+    {
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "availability_starts": "2025-10-26T15:30:00Z",
+      "slug_title": "goddess-vrs-condemnation",
+      "production_episode_id": "",
+      "seo_description": "",
+      "upload_date": "2025-10-26T00:00:00Z",
+      "slug": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "identifier": "GT00364479|S00364480|E4",
+      "streams_link": "/content/v2/cms/videos/GE00364487JAJPV/streams",
+      "season_id": "GS00364480JAJP",
+      "media_type": "episode",
+      "next_episode_id": "GE00364489JAJP",
+      "is_mature": false,
+      "content_descriptors": [
+        "Grossièretés"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "eligible_region": "CA",
+      "title": "Le châtiment de la déesse Vahl",
+      "is_subbed": true,
+      "next_episode_title": "La discorde entre la Couronne et les esprits",
+      "availability_status": "available",
+      "series_title": "Dad is a hero, Mom is a spirit, I'm a reincarnator",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364487JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364487JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364480JAJP",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "ja-JP",
+      "season_sequence_number": 1,
+      "premium_available_date": "2025-10-26T15:30:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "id": "GE00364487JAJP",
+      "series_slug_title": "dad-is-a-hero-mom-is-a-spirit-im-a-reincarnator",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5a26d2827faa08c1fe758db0f2d8c261.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5a26d2827faa08c1fe758db0f2d8c261.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5a26d2827faa08c1fe758db0f2d8c261.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5a26d2827faa08c1fe758db0f2d8c261.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5a26d2827faa08c1fe758db0f2d8c261.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5a26d2827faa08c1fe758db0f2d8c261.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5a26d2827faa08c1fe758db0f2d8c261.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5a26d2827faa08c1fe758db0f2d8c261.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_offline": true,
+      "season_title": "Saison 1",
+      "season_display_number": "",
+      "series_id": "GT00364479",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_clip": false,
+      "availability_notes": "",
+      "hd_flag": true,
+      "available_date": null,
+      "closed_captions_available": false,
+      "season_number": 1,
+      "is_dubbed": false,
+      "seo_title": "",
+      "recent_audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "roles": [
+        "main"
+      ],
+      "premium_date": null,
+      "episode": "4",
+      "mature_blocked": false,
+      "duration_ms": 1431057,
+      "recent_variant": "",
+      "episode_air_date": "2025-10-26T00:00:00Z",
+      "season_slug_title": "season-1",
+      "listing_id": "",
+      "sequence_number": 4,
+      "episode_number": 4,
+      "is_premium_only": true,
+      "description": "Pour qu'il y ait une héritière chez les Vankreift, Rovel demande à Sauvel d'introduire sa femme et sa fille."
+    },
+    {
+      "next_episode_title": "Le sens de la fête des esprits",
+      "season_id": "GS00364480JAJP",
+      "sequence_number": 5,
+      "description": "La Couronne profite du désastreux mariage entre Sauvel et Aria pour tenter de se rapprocher d'Ellen.",
+      "series_title": "Dad is a hero, Mom is a spirit, I'm a reincarnator",
+      "closed_captions_available": false,
+      "season_title": "Saison 1",
+      "season_sequence_number": 1,
+      "availability_notes": "",
+      "media_type": "episode",
+      "eligible_region": "CA",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_premium_only": true,
+      "slug": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_slug_title": "season-1",
+      "episode_number": 5,
+      "season_number": 1,
+      "recent_variant": "",
+      "seo_title": "",
+      "is_mature": false,
+      "availability_starts": "2025-11-02T15:30:00Z",
+      "series_slug_title": "dad-is-a-hero-mom-is-a-spirit-im-a-reincarnator",
+      "is_clip": false,
+      "id": "GE00364489JAJP",
+      "title": "La discorde entre la Couronne et les esprits",
+      "episode": "5",
+      "premium_date": null,
+      "streams_link": "/content/v2/cms/videos/GE00364489JAJPV/streams",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "is_dubbed": false,
+      "season_display_number": "",
+      "audio_locale": "ja-JP",
+      "is_subbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/caa0b4f35bed68ae2c35507ca384ceb1.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/caa0b4f35bed68ae2c35507ca384ceb1.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/caa0b4f35bed68ae2c35507ca384ceb1.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/caa0b4f35bed68ae2c35507ca384ceb1.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/caa0b4f35bed68ae2c35507ca384ceb1.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/caa0b4f35bed68ae2c35507ca384ceb1.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/caa0b4f35bed68ae2c35507ca384ceb1.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/caa0b4f35bed68ae2c35507ca384ceb1.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "available_offline": true,
+      "duration_ms": 1430931,
+      "roles": [
+        "main"
+      ],
+      "series_id": "GT00364479",
+      "production_episode_id": "",
+      "recent_audio_locale": "ja-JP",
+      "hd_flag": true,
+      "mature_blocked": false,
+      "episode_air_date": "2025-11-02T00:00:00Z",
+      "listing_id": "",
+      "slug_title": "feud-between-the-royal-family-and-the-spirits",
+      "available_date": null,
+      "channel_id": "crunchyroll",
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364489JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364489JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364480JAJP",
+          "variant": ""
+        }
+      ],
+      "identifier": "GT00364479|S00364480|E5",
+      "content_descriptors": [
+        "Grossièretés"
+      ],
+      "upload_date": "2025-11-02T00:00:00Z",
+      "availability_status": "available",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "next_episode_id": "GE00364491JAJP",
+      "premium_available_date": "2025-11-02T15:30:00Z"
+    },
+    {
+      "next_episode_id": "GE00364493JAJP",
+      "mature_blocked": false,
+      "season_id": "GS00364480JAJP",
+      "is_premium_only": true,
+      "season_slug_title": "season-1",
+      "series_title": "Dad is a hero, Mom is a spirit, I'm a reincarnator",
+      "seo_description": "",
+      "available_offline": true,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "premium_date": null,
+      "episode_number": 6,
+      "audio_locale": "ja-JP",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00364491JAJPV/streams",
+      "seo_title": "",
+      "duration_ms": 1430973,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/04c68030539acf08ab30d744a7645891.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/04c68030539acf08ab30d744a7645891.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/04c68030539acf08ab30d744a7645891.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/04c68030539acf08ab30d744a7645891.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/04c68030539acf08ab30d744a7645891.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/04c68030539acf08ab30d744a7645891.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/04c68030539acf08ab30d744a7645891.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/04c68030539acf08ab30d744a7645891.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_title": "Saison 1",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364491JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364491JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364480JAJP",
+          "variant": ""
+        }
+      ],
+      "description": "Rovel et Ellen se présentent au château pour rencontrer le roi, ce dernier ayant un plan pour la jeune fille.",
+      "episode": "6",
+      "production_episode_id": "",
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2025-11-09T15:30:00Z",
+      "roles": [
+        "main"
+      ],
+      "recent_variant": "",
+      "is_dubbed": false,
+      "slug": "",
+      "identifier": "GT00364479|S00364480|E6",
+      "hd_flag": true,
+      "sequence_number": 6,
+      "is_mature": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "series_slug_title": "dad-is-a-hero-mom-is-a-spirit-im-a-reincarnator",
+      "availability_starts": "2025-11-09T15:30:00Z",
+      "next_episode_title": "La malédiction de la mine",
+      "series_id": "GT00364479",
+      "recent_audio_locale": "ja-JP",
+      "id": "GE00364491JAJP",
+      "listing_id": "",
+      "episode_air_date": "2025-11-09T00:00:00Z",
+      "season_number": 1,
+      "eligible_region": "CA",
+      "is_subbed": true,
+      "is_clip": false,
+      "media_type": "episode",
+      "slug_title": "the-significance-of-the-spirit-festival",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "closed_captions_available": false,
+      "available_date": null,
+      "availability_status": "available",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "title": "Le sens de la fête des esprits",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "content_descriptors": [
+        "Grossièretés"
+      ],
+      "availability_notes": "",
+      "upload_date": "2025-11-09T00:00:00Z"
+    },
+    {
+      "next_episode_id": "GE00364495JAJP",
+      "content_descriptors": [
+        "Grossièretés"
+      ],
+      "hd_flag": true,
+      "listing_id": "",
+      "is_dubbed": false,
+      "channel_id": "crunchyroll",
+      "season_display_number": "",
+      "duration_ms": 1431098,
+      "seo_title": "",
+      "title": "La malédiction de la mine",
+      "season_sequence_number": 1,
+      "series_slug_title": "dad-is-a-hero-mom-is-a-spirit-im-a-reincarnator",
+      "season_slug_title": "season-1",
+      "upload_date": "2025-11-16T00:00:00Z",
+      "availability_notes": "",
+      "slug_title": "the-curse-of-the-mines",
+      "seo_description": "",
+      "premium_available_date": "2025-11-16T15:30:00Z",
+      "identifier": "GT00364479|S00364480|E7",
+      "episode": "7",
+      "next_episode_title": "La melancolía de Rafilia",
+      "availability_starts": "2025-11-16T15:30:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364493JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364493JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364480JAJP",
+          "variant": ""
+        }
+      ],
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "audio_locale": "ja-JP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "episode_air_date": "2025-11-16T00:00:00Z",
+      "is_mature": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "production_episode_id": "",
+      "available_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_date": null,
+      "eligible_region": "CA",
+      "mature_blocked": false,
+      "slug": "",
+      "season_title": "Saison 1",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "is_premium_only": true,
+      "closed_captions_available": false,
+      "season_id": "GS00364480JAJP",
+      "roles": [
+        "main"
+      ],
+      "is_clip": false,
+      "availability_status": "available",
+      "is_subbed": true,
+      "season_number": 1,
+      "series_id": "GT00364479",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "streams_link": "/content/v2/cms/videos/GE00364493JAJPV/streams",
+      "sequence_number": 7,
+      "available_offline": true,
+      "media_type": "episode",
+      "description": "Rovel et Sauvel se rendent à une mine maudite pour annoncer aux ouvriers sa fermeture, mais Ellen a une idée.",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b7e85b175c4d7c1d23120611578fd9ed.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b7e85b175c4d7c1d23120611578fd9ed.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b7e85b175c4d7c1d23120611578fd9ed.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b7e85b175c4d7c1d23120611578fd9ed.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b7e85b175c4d7c1d23120611578fd9ed.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b7e85b175c4d7c1d23120611578fd9ed.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b7e85b175c4d7c1d23120611578fd9ed.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b7e85b175c4d7c1d23120611578fd9ed.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "episode_number": 7,
+      "series_title": "Dad is a hero, Mom is a spirit, I'm a reincarnator",
+      "id": "GE00364493JAJP"
+    },
+    {
+      "series_id": "GT00364479",
+      "availability_status": "available",
+      "eligible_region": "CA",
+      "next_episode_id": "GE00364497JAJP",
+      "premium_available_date": "2025-11-23T15:30:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7f249efedaf30bf092b719a8fcd5294a.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7f249efedaf30bf092b719a8fcd5294a.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7f249efedaf30bf092b719a8fcd5294a.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7f249efedaf30bf092b719a8fcd5294a.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7f249efedaf30bf092b719a8fcd5294a.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7f249efedaf30bf092b719a8fcd5294a.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7f249efedaf30bf092b719a8fcd5294a.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7f249efedaf30bf092b719a8fcd5294a.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_air_date": "2025-11-23T00:00:00Z",
+      "id": "GE00364495JAJP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "next_episode_title": "La princesse guérisseuse",
+      "slug_title": "melancholy-of-rafilia",
+      "season_id": "GS00364480JAJP",
+      "availability_notes": "",
+      "recent_variant": "",
+      "series_slug_title": "dad-is-a-hero-mom-is-a-spirit-im-a-reincarnator",
+      "content_descriptors": [
+        "Grossièretés"
+      ],
+      "closed_captions_available": false,
+      "duration_ms": 1431057,
+      "hd_flag": true,
+      "is_premium_only": true,
+      "available_date": null,
+      "roles": [
+        "main"
+      ],
+      "available_offline": true,
+      "slug": "",
+      "listing_id": "",
+      "season_title": "Saison 1",
+      "audio_locale": "ja-JP",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "episode_number": 8,
+      "description": "Rafilia siente que no encaja entre los nobles y decide rebelarse contra su padre por su falta de atención.",
+      "availability_starts": "2025-11-23T15:30:00Z",
+      "channel_id": "crunchyroll",
+      "series_title": "Dad is a hero, Mom is a spirit, I'm a reincarnator",
+      "sequence_number": 8,
+      "production_episode_id": "",
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364495JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364495JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364480JAJP",
+          "variant": ""
+        }
+      ],
+      "is_dubbed": false,
+      "is_subbed": true,
+      "title": "La melancolía de Rafilia",
+      "season_display_number": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "upload_date": "2025-11-23T00:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "is_mature": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_number": 1,
+      "season_sequence_number": 1,
+      "episode": "8",
+      "seo_title": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "media_type": "episode",
+      "streams_link": "/content/v2/cms/videos/GE00364495JAJPV/streams",
+      "is_clip": false,
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_date": null,
+      "identifier": "GT00364479|S00364480|E8",
+      "season_slug_title": "season-1"
+    },
+    {
+      "slug_title": "the-healing-princess",
+      "mature_blocked": false,
+      "season_title": "Saison 1",
+      "is_clip": false,
+      "seo_description": "",
+      "available_date": null,
+      "is_premium_only": true,
+      "next_episode_title": "The Kidnapping Incident",
+      "content_descriptors": [
+        "Grossièretés"
+      ],
+      "production_episode_id": "",
+      "season_id": "GS00364480JAJP",
+      "series_slug_title": "dad-is-a-hero-mom-is-a-spirit-im-a-reincarnator",
+      "series_title": "Dad is a hero, Mom is a spirit, I'm a reincarnator",
+      "episode_air_date": "2025-11-30T00:00:00Z",
+      "season_sequence_number": 1,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "identifier": "GT00364479|S00364480|E9",
+      "recent_audio_locale": "ja-JP",
+      "availability_status": "available",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "episode_number": 9,
+      "sequence_number": 9,
+      "closed_captions_available": false,
+      "title": "La princesse guérisseuse",
+      "id": "GE00364497JAJP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8c7e9e14c9ac4cfd86c84d6120cb287d.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8c7e9e14c9ac4cfd86c84d6120cb287d.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8c7e9e14c9ac4cfd86c84d6120cb287d.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8c7e9e14c9ac4cfd86c84d6120cb287d.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8c7e9e14c9ac4cfd86c84d6120cb287d.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8c7e9e14c9ac4cfd86c84d6120cb287d.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8c7e9e14c9ac4cfd86c84d6120cb287d.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8c7e9e14c9ac4cfd86c84d6120cb287d.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "ja-JP",
+      "episode": "9",
+      "description": "Ellen s'occupe de soigner les malades et de produire des médicaments, créant de nombreuses convoitises.",
+      "duration_ms": 1431015,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "channel_id": "crunchyroll",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00364497JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00364497JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00364480JAJP",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00364497JAJPV/streams",
+      "recent_variant": "",
+      "series_id": "GT00364479",
+      "is_subbed": true,
+      "eligible_region": "CA",
+      "season_display_number": "",
+      "premium_available_date": "2025-11-30T15:30:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "upload_date": "2025-11-30T00:00:00Z",
+      "available_offline": true,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "it-IT",
+        "pt-BR",
+        "ru-RU"
+      ],
+      "slug": "",
+      "availability_notes": "",
+      "is_mature": false,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "listing_id": "",
+      "next_episode_id": "GE00364499JAJP",
+      "roles": [
+        "main"
+      ],
+      "availability_starts": "2025-11-30T15:30:00Z",
+      "is_dubbed": false,
+      "seo_title": "",
+      "hd_flag": true,
+      "season_slug_title": "season-1",
+      "premium_date": null,
+      "media_type": "episode",
+      "season_number": 1
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

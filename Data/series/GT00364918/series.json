@@ -1,0 +1,175 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GT00364918",
+      "channel_id": "crunchyroll",
+      "title": "The Banished Court Magician Aims to Become the Strongest",
+      "slug": "",
+      "slug_title": "the-banished-court-magician-aims-to-become-the-strongest",
+      "description": "Autrefois magicien de la cour qui soutenait en coulisse le prince héritier, Alec Ygret est écarté puis exilé car jugé incapable de produire autre chose que des sorts de soutien. Désormais sans emploi, il tombe sur Yorha, l'une des membres de son ancien groupe de l'académie de magie qui avait marqué l’histoire en franchissant tous les étages du donjon de la capitale.",
+      "extended_description": "",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/932eb94376a88b5211b370b82f3fa4ca.png"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/932eb94376a88b5211b370b82f3fa4ca.png"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/932eb94376a88b5211b370b82f3fa4ca.png"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/932eb94376a88b5211b370b82f3fa4ca.png"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/932eb94376a88b5211b370b82f3fa4ca.png"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/932eb94376a88b5211b370b82f3fa4ca.png"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/932eb94376a88b5211b370b82f3fa4ca.png"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/932eb94376a88b5211b370b82f3fa4ca.png"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/932eb94376a88b5211b370b82f3fa4ca.png"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/47b6b5b0cc54c998867e103d7eef80d5.png"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/47b6b5b0cc54c998867e103d7eef80d5.png"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/47b6b5b0cc54c998867e103d7eef80d5.png"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/47b6b5b0cc54c998867e103d7eef80d5.png"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/47b6b5b0cc54c998867e103d7eef80d5.png"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/47b6b5b0cc54c998867e103d7eef80d5.png"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/47b6b5b0cc54c998867e103d7eef80d5.png"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/47b6b5b0cc54c998867e103d7eef80d5.png"
+            }
+          ]
+        ]
+      },
+      "episode_count": 9,
+      "season_count": 1,
+      "media_count": 9,
+      "content_provider": "Gekkou",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "ru-RU",
+        "es-419",
+        "fr-FR",
+        "ar-SA",
+        "de-DE",
+        "pt-BR",
+        "es-ES",
+        "it-IT",
+        "en-US"
+      ],
+      "audio_locales": [
+        "en-US",
+        "ja-JP"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2025,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

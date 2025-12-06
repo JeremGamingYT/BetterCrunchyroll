@@ -1,0 +1,187 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "G63K95846",
+      "channel_id": "crunchyroll",
+      "title": "Wise Man's Grandchild",
+      "slug": "",
+      "slug_title": "wise-mans-grandchild",
+      "description": "Dans le Japon moderne, un jeune homme victime d’un accident de la route se retrouve réincarné en bébé dans un autre monde. Il est recueilli par un homme appelé le sage, qui le baptise Shin, l’élève comme son petit-fils et lui apprend la magie. Grâce aux souvenirs qu’il a de sa vie antérieure et la magie enseignée par le sage, il acquiert une puissance hors norme. Quinze années passent, mais le sage se rend compte qu’il a oublié de lui apprendre une chose : le bon sens ! En effet, Shin qui s’était concentré exclusivement sur la magie ne connait rien de ce monde.",
+      "extended_description": "",
+      "keywords": [
+        "fantasy",
+        "adventure",
+        "isekai",
+        "romance",
+        "seinen",
+        "tatsuya takahashi",
+        "2019",
+        "light novel",
+        "tsuyoshi yoshioka",
+        "kenja no mago",
+        "magic",
+        "reincarnation",
+        "adult protagonist",
+        "king arthur"
+      ],
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "images": {
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/246dc55d21b1b20158f04247511feecc.jpg"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/246dc55d21b1b20158f04247511feecc.jpg"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/246dc55d21b1b20158f04247511feecc.jpg"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/246dc55d21b1b20158f04247511feecc.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/246dc55d21b1b20158f04247511feecc.jpg"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/246dc55d21b1b20158f04247511feecc.jpg"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/246dc55d21b1b20158f04247511feecc.jpg"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/246dc55d21b1b20158f04247511feecc.jpg"
+            }
+          ]
+        ],
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/908263a2588b24bd827345eb0e57b7e8.jpg"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/908263a2588b24bd827345eb0e57b7e8.jpg"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/908263a2588b24bd827345eb0e57b7e8.jpg"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/908263a2588b24bd827345eb0e57b7e8.jpg"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/908263a2588b24bd827345eb0e57b7e8.jpg"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/908263a2588b24bd827345eb0e57b7e8.jpg"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/908263a2588b24bd827345eb0e57b7e8.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/908263a2588b24bd827345eb0e57b7e8.jpg"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/908263a2588b24bd827345eb0e57b7e8.jpg"
+            }
+          ]
+        ]
+      },
+      "episode_count": 12,
+      "season_count": 1,
+      "media_count": 12,
+      "content_provider": "Kadokawa Pictures Inc.",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "fr-FR",
+        "pt-BR",
+        "en-US",
+        "de-DE",
+        "es-419"
+      ],
+      "audio_locales": [
+        "pt-BR",
+        "en-US",
+        "ja-JP",
+        "es-419"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2019,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

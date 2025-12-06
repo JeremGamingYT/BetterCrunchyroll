@@ -1,0 +1,186 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "id": "GMEHME5WK",
+      "channel_id": "crunchyroll",
+      "title": "My Hero Academia (Films)",
+      "slug": "",
+      "slug_title": "my-hero-academia-movies",
+      "description": "Super héros, super pouvoirs… On a tous déjà rêvé secrètement de posséder une qualité hors du commun, de briller ou d’être LA personne la plus puissante de l’univers. Dans ce nouveau monde, ce rêve est à la portée de quasiment toute la population car les humains peuvent désormais naître avec un pouvoir : le « alter ». Mais certains malchanceux naissent sans alter. C’est très fâcheux si on est chétif, pleurnicheur et dépourvu de charisme et surtout si malgré tout ça, on nourrit l’ambition de devenir le méga super héros de tous les temps.",
+      "extended_description": "",
+      "keywords": [
+        "deutsche synchro",
+        "shonen",
+        "action",
+        "drama",
+        "movie"
+      ],
+      "season_tags": [],
+      "images": {
+        "poster_tall": [
+          [
+            {
+              "width": 60,
+              "height": 90,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/16b4519a07a67df6e7cc62e3c5f5a422.jpg"
+            },
+            {
+              "width": 120,
+              "height": 180,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/16b4519a07a67df6e7cc62e3c5f5a422.jpg"
+            },
+            {
+              "width": 240,
+              "height": 360,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/16b4519a07a67df6e7cc62e3c5f5a422.jpg"
+            },
+            {
+              "width": 480,
+              "height": 720,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/16b4519a07a67df6e7cc62e3c5f5a422.jpg"
+            },
+            {
+              "width": 750,
+              "height": 1125,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/16b4519a07a67df6e7cc62e3c5f5a422.jpg"
+            },
+            {
+              "width": 960,
+              "height": 1440,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/16b4519a07a67df6e7cc62e3c5f5a422.jpg"
+            },
+            {
+              "width": 1125,
+              "height": 1688,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/16b4519a07a67df6e7cc62e3c5f5a422.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 1800,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/16b4519a07a67df6e7cc62e3c5f5a422.jpg"
+            },
+            {
+              "width": 1560,
+              "height": 2340,
+              "type": "poster_tall",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/16b4519a07a67df6e7cc62e3c5f5a422.jpg"
+            }
+          ]
+        ],
+        "poster_wide": [
+          [
+            {
+              "width": 320,
+              "height": 180,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/84b221f6775ab8c437ba86d8a4ad7e65.jpg"
+            },
+            {
+              "width": 600,
+              "height": 338,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/84b221f6775ab8c437ba86d8a4ad7e65.jpg"
+            },
+            {
+              "width": 640,
+              "height": 360,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/84b221f6775ab8c437ba86d8a4ad7e65.jpg"
+            },
+            {
+              "width": 800,
+              "height": 450,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/84b221f6775ab8c437ba86d8a4ad7e65.jpg"
+            },
+            {
+              "width": 1200,
+              "height": 675,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/84b221f6775ab8c437ba86d8a4ad7e65.jpg"
+            },
+            {
+              "width": 1440,
+              "height": 810,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/84b221f6775ab8c437ba86d8a4ad7e65.jpg"
+            },
+            {
+              "width": 1600,
+              "height": 900,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/84b221f6775ab8c437ba86d8a4ad7e65.jpg"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "type": "poster_wide",
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/84b221f6775ab8c437ba86d8a4ad7e65.jpg"
+            }
+          ]
+        ]
+      },
+      "episode_count": 3,
+      "season_count": 3,
+      "media_count": 3,
+      "content_provider": "Toho",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "subtitle_locales": [
+        "es-ES",
+        "es-419",
+        "ar-SA",
+        "pl-PL",
+        "en-US",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "fr-FR",
+        "pt-PT"
+      ],
+      "audio_locales": [
+        "pt-BR",
+        "es-ES",
+        "en-US",
+        "ru-RU",
+        "it-IT",
+        "ca-ES",
+        "fr-FR",
+        "de-DE",
+        "ja-JP",
+        "es-419"
+      ],
+      "availability_status": "available",
+      "availability_notes": "",
+      "series_launch_year": 2025,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ]
+    }
+  ],
+  "meta": {}
+}

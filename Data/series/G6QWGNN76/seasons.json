@@ -1,0 +1,73 @@
+{
+  "data": [
+    {
+      "id": "G65P2DD76",
+      "channel_id": "crunchyroll",
+      "title": "Dance in the Vampire Bund",
+      "slug_title": "dance-in-the-vampire-bund",
+      "series_id": "G6QWGNN76",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "",
+      "keywords": [],
+      "season_tags": [
+        "Hiver-2018"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "18",
+        "level": "M3"
+      },
+      "maturity_ratings": [
+        "TV-MA"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Tabagisme",
+        "Contenu sexuel",
+        "Violence"
+      ],
+      "is_mature": true,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "pt-BR",
+        "es-419",
+        "es-ES",
+        "en-US"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G65P2DD76",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G675CDVJ7",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "G6QWGNN76|S1",
+      "number_of_episodes": 12
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

@@ -1,0 +1,1667 @@
+{
+  "total": 11,
+  "data": [
+    {
+      "episode_number": 1,
+      "upload_date": "2022-01-08T01:30:00+09:00",
+      "description": "Reito, un jeune garçon cryogénisé dans le but de guérir d'une maladie, se réveille dans un monde où 99,9 % des hommes ont disparu. On lui apprend alors qu'il fait partie des derniers espoirs de l'humanité qui devront repeupler le monde.",
+      "is_clip": false,
+      "id": "GJWU2XPEP",
+      "season_number": 1,
+      "season_id": "GY19CP3W0",
+      "media_type": "episode",
+      "available_offline": true,
+      "is_dubbed": false,
+      "availability_notes": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "series_title": "World's End Harem",
+      "eligible_region": "CA",
+      "roles": [
+        "main"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWU2XPEP",
+          "is_premium_only": true,
+          "media_guid": "GM8FX4NGN",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "availability_status": "available",
+      "listing_id": "",
+      "sequence_number": 1,
+      "mature_blocked": false,
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "episode_air_date": "2022-01-08T01:30:00+09:00",
+      "season_sequence_number": 1,
+      "recent_variant": "",
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2022-01-07T18:30:00Z",
+      "is_premium_only": true,
+      "next_episode_id": "GN7UD78V5",
+      "streams_link": "/content/v2/cms/videos/GM8FX4NGN/streams",
+      "title": "Le monde des femmes",
+      "seo_description": "",
+      "identifier": "G24H1N3XV|S1|E1",
+      "series_id": "G24H1N3XV",
+      "season_title": "World's End Harem",
+      "slug_title": "world-of-women",
+      "season_display_number": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "worlds-end-harem",
+      "slug": "",
+      "closed_captions_available": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/05d27783a0a48c13c82990e35a6e914f.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/05d27783a0a48c13c82990e35a6e914f.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/05d27783a0a48c13c82990e35a6e914f.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/05d27783a0a48c13c82990e35a6e914f.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/05d27783a0a48c13c82990e35a6e914f.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/05d27783a0a48c13c82990e35a6e914f.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/05d27783a0a48c13c82990e35a6e914f.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/05d27783a0a48c13c82990e35a6e914f.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "next_episode_title": "Deux femmes",
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "availability_starts": "2022-01-07T18:30:00Z",
+      "available_date": null,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "episode": "1",
+      "hd_flag": true,
+      "audio_locale": "ja-JP",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_mature": false,
+      "recent_audio_locale": "ja-JP",
+      "duration_ms": 1420095,
+      "premium_date": null,
+      "seo_title": "",
+      "production_episode_id": "",
+      "season_slug_title": "worlds-end-harem"
+    },
+    {
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UD78V5",
+          "is_premium_only": true,
+          "media_guid": "GVMF0Z34D",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "season_title": "World's End Harem",
+      "production_episode_id": "",
+      "identifier": "G24H1N3XV|S1|E2",
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "premium_date": null,
+      "recent_variant": "",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "listing_id": "",
+      "roles": [
+        "main"
+      ],
+      "media_type": "episode",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "id": "GN7UD78V5",
+      "upload_date": "2022-01-15T01:30:00+09:00",
+      "availability_starts": "2022-01-14T18:30:00Z",
+      "is_mature": false,
+      "mature_blocked": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_slug_title": "worlds-end-harem",
+      "series_id": "G24H1N3XV",
+      "audio_locale": "ja-JP",
+      "recent_audio_locale": "ja-JP",
+      "title": "Deux femmes",
+      "seo_title": "",
+      "duration_ms": 1420179,
+      "series_slug_title": "worlds-end-harem",
+      "availability_status": "available",
+      "available_date": null,
+      "is_subbed": true,
+      "season_sequence_number": 1,
+      "is_clip": false,
+      "is_dubbed": false,
+      "streams_link": "/content/v2/cms/videos/GVMF0Z34D/streams",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "closed_captions_available": false,
+      "available_offline": true,
+      "hd_flag": true,
+      "premium_available_date": "2022-01-14T18:30:00Z",
+      "episode_number": 2,
+      "season_number": 1,
+      "sequence_number": 2,
+      "season_display_number": "",
+      "slug": "",
+      "seo_description": "",
+      "next_episode_title": "Numéro trois",
+      "availability_notes": "",
+      "slug_title": "two-women",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_premium_only": true,
+      "channel_id": "crunchyroll",
+      "episode": "2",
+      "description": "Alors qu'il prend tout juste conscience de sa situation, Reito fait la connaissance de Nº 1, le premier homme à avoir été réveillé après la pandémie mondiale. Peu après, notre protagoniste se voit également mettre à la charge de deux jeunes femmes qui assureront sa sécurité, mais pas seulement...",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode_air_date": "2022-01-15T01:30:00+09:00",
+      "season_id": "GY19CP3W0",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/748aa840f5b79c348da3724752eb889b.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/748aa840f5b79c348da3724752eb889b.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/748aa840f5b79c348da3724752eb889b.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/748aa840f5b79c348da3724752eb889b.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/748aa840f5b79c348da3724752eb889b.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/748aa840f5b79c348da3724752eb889b.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/748aa840f5b79c348da3724752eb889b.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/748aa840f5b79c348da3724752eb889b.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_title": "World's End Harem",
+      "next_episode_id": "GK9U349DZ",
+      "eligible_region": "CA"
+    },
+    {
+      "season_display_number": "",
+      "is_subbed": true,
+      "premium_available_date": "2022-01-21T18:30:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9U349DZ",
+          "is_premium_only": true,
+          "media_guid": "G3WFX35ZP",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/G3WFX35ZP/streams",
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "season_id": "GY19CP3W0",
+      "season_sequence_number": 1,
+      "is_dubbed": false,
+      "season_slug_title": "worlds-end-harem",
+      "slug_title": "3rd-man",
+      "roles": [
+        "main"
+      ],
+      "is_clip": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "upload_date": "2022-01-22T01:30:00+09:00",
+      "availability_notes": "",
+      "slug": "",
+      "production_episode_id": "",
+      "episode_air_date": "2022-01-22T01:30:00+09:00",
+      "available_date": null,
+      "id": "GK9U349DZ",
+      "eligible_region": "CA",
+      "availability_starts": "2022-01-21T18:30:00Z",
+      "audio_locale": "ja-JP",
+      "sequence_number": 3,
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "seo_description": "",
+      "premium_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3e49af5df9410c932dc16dd78f92be61.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/3e49af5df9410c932dc16dd78f92be61.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/3e49af5df9410c932dc16dd78f92be61.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/3e49af5df9410c932dc16dd78f92be61.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3e49af5df9410c932dc16dd78f92be61.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/3e49af5df9410c932dc16dd78f92be61.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/3e49af5df9410c932dc16dd78f92be61.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/3e49af5df9410c932dc16dd78f92be61.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_title": "World's End Harem",
+      "next_episode_id": "GMKUX4NG5",
+      "duration_ms": 1420054,
+      "media_type": "episode",
+      "description": "Shôta Doi, un élève de lycée qui était jadis persécuté se réveille aujourd'hui dans le monde d'après la pandémie, toutefois, il semble évoluer dans un environnement différent de ses deux prédécesseurs.",
+      "season_title": "World's End Harem",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "hd_flag": true,
+      "seo_title": "",
+      "is_premium_only": true,
+      "series_id": "G24H1N3XV",
+      "series_slug_title": "worlds-end-harem",
+      "episode": "3",
+      "availability_status": "available",
+      "available_offline": true,
+      "closed_captions_available": false,
+      "mature_blocked": false,
+      "recent_variant": "",
+      "episode_number": 3,
+      "channel_id": "crunchyroll",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "next_episode_title": "Le secret de l'école",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_number": 1,
+      "recent_audio_locale": "ja-JP",
+      "listing_id": "",
+      "identifier": "G24H1N3XV|S1|E3",
+      "title": "Numéro trois",
+      "is_mature": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ]
+    },
+    {
+      "seo_title": "",
+      "channel_id": "crunchyroll",
+      "duration_ms": 1420095,
+      "recent_audio_locale": "ja-JP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/567e51770cd3afc10dfce93ed5f6fcac.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/567e51770cd3afc10dfce93ed5f6fcac.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/567e51770cd3afc10dfce93ed5f6fcac.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/567e51770cd3afc10dfce93ed5f6fcac.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/567e51770cd3afc10dfce93ed5f6fcac.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/567e51770cd3afc10dfce93ed5f6fcac.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/567e51770cd3afc10dfce93ed5f6fcac.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/567e51770cd3afc10dfce93ed5f6fcac.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_date": null,
+      "is_subbed": true,
+      "next_episode_title": "La première victime",
+      "slug": "",
+      "season_title": "World's End Harem",
+      "title": "Le secret de l'école",
+      "description": "Pour Shôta, la vie se poursuit au sein de son nouveau lycée, et tandis qu'il fait plus ample connaissance avec les filles de sa classe, quelques doutes germent dans son esprit. Quelle est la vraie raison de sa présence ici ?",
+      "production_episode_id": "",
+      "availability_notes": "",
+      "premium_date": null,
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GMKUX4NG5",
+          "is_premium_only": true,
+          "media_guid": "GPPFK53D0",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "is_clip": false,
+      "listing_id": "",
+      "availability_status": "available",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "premium_available_date": "2022-01-28T18:30:00Z",
+      "id": "GMKUX4NG5",
+      "streams_link": "/content/v2/cms/videos/GPPFK53D0/streams",
+      "episode_air_date": "2022-01-29T01:30:00+09:00",
+      "seo_description": "",
+      "next_episode_id": "GVWU0Z34Z",
+      "is_mature": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "recent_variant": "",
+      "slug_title": "schools-secret",
+      "season_sequence_number": 1,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_number": 1,
+      "is_dubbed": false,
+      "series_slug_title": "worlds-end-harem",
+      "episode_number": 4,
+      "series_title": "World's End Harem",
+      "season_id": "GY19CP3W0",
+      "availability_starts": "2022-01-28T18:30:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "worlds-end-harem",
+      "closed_captions_available": false,
+      "eligible_region": "CA",
+      "available_offline": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "sequence_number": 4,
+      "hd_flag": true,
+      "series_id": "G24H1N3XV",
+      "identifier": "G24H1N3XV|S1|E4",
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "upload_date": "2022-01-29T01:30:00+09:00",
+      "mature_blocked": false,
+      "episode": "4",
+      "media_type": "episode",
+      "is_premium_only": true,
+      "season_display_number": "",
+      "roles": [
+        "main"
+      ]
+    },
+    {
+      "channel_id": "crunchyroll",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "is_dubbed": false,
+      "season_id": "GY19CP3W0",
+      "slug": "",
+      "duration_ms": 1420054,
+      "mature_blocked": false,
+      "recent_audio_locale": "ja-JP",
+      "media_type": "episode",
+      "season_slug_title": "worlds-end-harem",
+      "seo_description": "",
+      "description": "Nous retrouvons notre protagoniste Reito, qui a décidé de mener ses recherches dans l'espoir de trouver un vaccin contre le virus MK. On lui présente alors la femme de celui qui fut la première victime de la pandémie.",
+      "episode_number": 5,
+      "season_number": 1,
+      "seo_title": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "series_id": "G24H1N3XV",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a7d035e1c21b7622c60a3d38eede7d33.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a7d035e1c21b7622c60a3d38eede7d33.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a7d035e1c21b7622c60a3d38eede7d33.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a7d035e1c21b7622c60a3d38eede7d33.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a7d035e1c21b7622c60a3d38eede7d33.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a7d035e1c21b7622c60a3d38eede7d33.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a7d035e1c21b7622c60a3d38eede7d33.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a7d035e1c21b7622c60a3d38eede7d33.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "sequence_number": 5,
+      "series_title": "World's End Harem",
+      "eligible_region": "CA",
+      "is_clip": false,
+      "available_date": null,
+      "season_display_number": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GVWU0Z34Z",
+          "is_premium_only": true,
+          "media_guid": "G25F03MD3",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 1,
+      "series_slug_title": "worlds-end-harem",
+      "availability_starts": "2022-02-04T18:30:00Z",
+      "episode": "5",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "next_episode_id": "G31UX35ZQ",
+      "hd_flag": true,
+      "audio_locale": "ja-JP",
+      "recent_variant": "",
+      "slug_title": "first-victim",
+      "production_episode_id": "",
+      "roles": [
+        "main"
+      ],
+      "premium_date": null,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_title": "World's End Harem",
+      "listing_id": "",
+      "is_premium_only": true,
+      "id": "GVWU0Z34Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "La première victime",
+      "identifier": "G24H1N3XV|S1|E5",
+      "closed_captions_available": false,
+      "streams_link": "/content/v2/cms/videos/G25F03MD3/streams",
+      "is_subbed": true,
+      "episode_air_date": "2022-02-05T01:30:00+09:00",
+      "availability_status": "available",
+      "next_episode_title": "Motivations similaires",
+      "availability_notes": "",
+      "available_offline": true,
+      "is_mature": false,
+      "upload_date": "2022-02-05T01:30:00+09:00",
+      "premium_available_date": "2022-02-04T18:30:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ]
+    },
+    {
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "eligible_region": "CA",
+      "next_episode_id": "GPWUK53D1",
+      "availability_notes": "",
+      "media_type": "episode",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "duration_ms": 1420054,
+      "season_number": 1,
+      "title": "Motivations similaires",
+      "season_sequence_number": 1,
+      "season_display_number": "",
+      "is_subbed": true,
+      "upload_date": "2022-02-12T01:30:00+09:00",
+      "recent_audio_locale": "ja-JP",
+      "premium_available_date": "2022-02-11T18:30:00Z",
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "seo_description": "",
+      "channel_id": "crunchyroll",
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "is_dubbed": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3ff6350aee6592a7204ade97249ba8d4.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/3ff6350aee6592a7204ade97249ba8d4.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/3ff6350aee6592a7204ade97249ba8d4.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/3ff6350aee6592a7204ade97249ba8d4.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3ff6350aee6592a7204ade97249ba8d4.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/3ff6350aee6592a7204ade97249ba8d4.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/3ff6350aee6592a7204ade97249ba8d4.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/3ff6350aee6592a7204ade97249ba8d4.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_date": null,
+      "is_mature": false,
+      "hd_flag": true,
+      "id": "G31UX35ZQ",
+      "series_id": "G24H1N3XV",
+      "episode_air_date": "2022-02-12T01:30:00+09:00",
+      "listing_id": "",
+      "series_title": "World's End Harem",
+      "episode_number": 6,
+      "roles": [
+        "main"
+      ],
+      "available_offline": true,
+      "seo_title": "",
+      "season_slug_title": "worlds-end-harem",
+      "series_slug_title": "worlds-end-harem",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_date": null,
+      "episode": "6",
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G31UX35ZQ",
+          "is_premium_only": true,
+          "media_guid": "G8MFNWK0E",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "identifier": "G24H1N3XV|S1|E6",
+      "sequence_number": 6,
+      "recent_variant": "",
+      "season_id": "GY19CP3W0",
+      "slug_title": "intertwining-plots",
+      "audio_locale": "ja-JP",
+      "is_clip": false,
+      "closed_captions_available": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_title": "World's End Harem",
+      "availability_starts": "2022-02-11T18:30:00Z",
+      "slug": "",
+      "next_episode_title": "À tour de rôle",
+      "description": "Reito continue ses recherches, mais se rend compte qu'il est confronté à un mur. En effet, il n'a pas accès à toutes les ressources dont il a besoin pour mener à bien son projet et tout porte à croire que certaines entités sont derrière ceci. Pendant ce temps, Hino jette son dévolu sur la sœur de notre héros.",
+      "streams_link": "/content/v2/cms/videos/G8MFNWK0E/streams",
+      "production_episode_id": ""
+    },
+    {
+      "audio_locale": "ja-JP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "streams_link": "/content/v2/cms/videos/GZ4FVXW10/streams",
+      "is_dubbed": false,
+      "recent_audio_locale": "ja-JP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a36e2ab4e6df8aca70bf7a603083502e.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a36e2ab4e6df8aca70bf7a603083502e.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a36e2ab4e6df8aca70bf7a603083502e.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a36e2ab4e6df8aca70bf7a603083502e.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a36e2ab4e6df8aca70bf7a603083502e.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a36e2ab4e6df8aca70bf7a603083502e.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a36e2ab4e6df8aca70bf7a603083502e.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a36e2ab4e6df8aca70bf7a603083502e.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "id": "GPWUK53D1",
+      "season_sequence_number": 1,
+      "seo_title": "",
+      "season_number": 1,
+      "season_id": "GY19CP3W0",
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "availability_status": "available",
+      "roles": [
+        "main"
+      ],
+      "upload_date": "2022-02-19T01:30:00+09:00",
+      "is_mature": false,
+      "available_date": null,
+      "series_id": "G24H1N3XV",
+      "premium_available_date": "2022-02-18T18:30:00Z",
+      "title": "À tour de rôle",
+      "is_clip": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "media_type": "episode",
+      "next_episode_id": "G2XU03MDW",
+      "episode_number": 7,
+      "series_slug_title": "worlds-end-harem",
+      "duration_ms": 1420054,
+      "premium_date": null,
+      "series_title": "World's End Harem",
+      "season_slug_title": "worlds-end-harem",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "episode_air_date": "2022-02-19T01:30:00+09:00",
+      "next_episode_title": "Vengeance",
+      "season_title": "World's End Harem",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_subbed": true,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "recent_variant": "",
+      "season_display_number": "",
+      "episode": "7",
+      "slug_title": "assigned-to-me",
+      "description": "Nous reprenons l'histoire aux côtés de Doi, qui continue à mener sa nouvelle vie au sein de son lycée. Toutefois, son passé continue de le hanter, bien qu'il ne soit pas le seul à être tourmenté...",
+      "identifier": "G24H1N3XV|S1|E7",
+      "seo_description": "",
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "production_episode_id": "",
+      "availability_starts": "2022-02-18T18:30:00Z",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "slug": "",
+      "hd_flag": true,
+      "eligible_region": "CA",
+      "closed_captions_available": false,
+      "sequence_number": 7,
+      "available_offline": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GPWUK53D1",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVXW10",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ]
+    },
+    {
+      "seo_title": "",
+      "series_slug_title": "worlds-end-harem",
+      "premium_available_date": "2022-02-25T18:30:00Z",
+      "channel_id": "crunchyroll",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G2XU03MDW",
+          "is_premium_only": true,
+          "media_guid": "GDVFVW18J",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug_title": "revenge",
+      "mature_blocked": false,
+      "episode_air_date": "2022-02-26T01:30:00+09:00",
+      "sequence_number": 8,
+      "series_title": "World's End Harem",
+      "premium_date": null,
+      "duration_ms": 1420095,
+      "episode_number": 8,
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "description": "Une nouvelle camarade de classe se présente à Shôta, il s'agit d'une vieille connaissance qui semble-t-il, ne semble pas très haut placée dans le cœur du jeune garçon. Pire encore, celui semble bien décidé à prendre sa revanche sur le passé en commençant par elle.",
+      "availability_starts": "2022-02-25T18:30:00Z",
+      "closed_captions_available": false,
+      "season_id": "GY19CP3W0",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8b9bc4e7ff75147f7c4d95b6b0e2a8a0.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8b9bc4e7ff75147f7c4d95b6b0e2a8a0.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8b9bc4e7ff75147f7c4d95b6b0e2a8a0.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8b9bc4e7ff75147f7c4d95b6b0e2a8a0.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8b9bc4e7ff75147f7c4d95b6b0e2a8a0.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8b9bc4e7ff75147f7c4d95b6b0e2a8a0.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8b9bc4e7ff75147f7c4d95b6b0e2a8a0.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8b9bc4e7ff75147f7c4d95b6b0e2a8a0.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "next_episode_id": "G8WUNWK0X",
+      "hd_flag": true,
+      "production_episode_id": "",
+      "season_display_number": "",
+      "availability_notes": "",
+      "id": "G2XU03MDW",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_title": "World's End Harem",
+      "series_id": "G24H1N3XV",
+      "title": "Vengeance",
+      "season_slug_title": "worlds-end-harem",
+      "eligible_region": "CA",
+      "season_sequence_number": 1,
+      "identifier": "G24H1N3XV|S1|E8",
+      "is_mature": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "seo_description": "",
+      "roles": [
+        "main"
+      ],
+      "available_offline": true,
+      "upload_date": "2022-02-26T01:30:00+09:00",
+      "slug": "",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "listing_id": "",
+      "is_clip": false,
+      "streams_link": "/content/v2/cms/videos/GDVFVW18J/streams",
+      "media_type": "episode",
+      "is_premium_only": true,
+      "is_dubbed": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "next_episode_title": "La forêt de chair",
+      "audio_locale": "ja-JP",
+      "season_number": 1,
+      "availability_status": "available",
+      "available_date": null,
+      "episode": "8"
+    },
+    {
+      "description": "Reito, qui continue d'investiguer sur l'origine du virus MK, se rapproche de plus en plus de la vérité, et Shôta, de son côté, profite pleinement de ses avantages d'homme survivant. Pendant ce temps, en coulisses, se trament de nombreux complots...",
+      "seo_description": "",
+      "premium_available_date": "2022-03-04T18:30:00Z",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "season_id": "GY19CP3W0",
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "GZ7UVXW1Z",
+      "channel_id": "crunchyroll",
+      "series_title": "World's End Harem",
+      "is_subbed": true,
+      "duration_ms": 1420095,
+      "title": "La forêt de chair",
+      "episode_air_date": "2022-03-05T01:30:00+09:00",
+      "available_date": null,
+      "recent_variant": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "seo_title": "",
+      "closed_captions_available": false,
+      "series_slug_title": "worlds-end-harem",
+      "identifier": "G24H1N3XV|S1|E9",
+      "eligible_region": "CA",
+      "availability_starts": "2022-03-04T18:30:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G8WUNWK0X",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG9XQJ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "available_offline": true,
+      "availability_notes": "",
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/GQ9FG9XQJ/streams",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/44644275454bd2f8fc2365e20c5c1549.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/44644275454bd2f8fc2365e20c5c1549.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/44644275454bd2f8fc2365e20c5c1549.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/44644275454bd2f8fc2365e20c5c1549.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/44644275454bd2f8fc2365e20c5c1549.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/44644275454bd2f8fc2365e20c5c1549.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/44644275454bd2f8fc2365e20c5c1549.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/44644275454bd2f8fc2365e20c5c1549.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "next_episode_title": "Les deux numéros",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_title": "World's End Harem",
+      "episode_number": 9,
+      "id": "G8WUNWK0X",
+      "media_type": "episode",
+      "audio_locale": "ja-JP",
+      "is_dubbed": false,
+      "is_premium_only": true,
+      "listing_id": "",
+      "upload_date": "2022-03-05T01:30:00+09:00",
+      "is_clip": false,
+      "premium_date": null,
+      "availability_status": "available",
+      "mature_blocked": false,
+      "sequence_number": 9,
+      "season_display_number": "",
+      "production_episode_id": "",
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "season_slug_title": "worlds-end-harem",
+      "slug_title": "feast-of-debauchery",
+      "episode": "9",
+      "season_number": 1,
+      "slug": "",
+      "series_id": "G24H1N3XV",
+      "is_mature": false,
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_sequence_number": 1
+    },
+    {
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "closed_captions_available": false,
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "slug_title": "the-two-numbers",
+      "premium_date": null,
+      "identifier": "G24H1N3XV|S1|E10",
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "available_date": null,
+      "title": "Les deux numéros",
+      "mature_blocked": false,
+      "episode_number": 10,
+      "available_offline": true,
+      "episode": "10",
+      "season_slug_title": "worlds-end-harem",
+      "is_dubbed": false,
+      "audio_locale": "ja-JP",
+      "season_title": "World's End Harem",
+      "channel_id": "crunchyroll",
+      "media_type": "episode",
+      "series_title": "World's End Harem",
+      "recent_variant": "",
+      "slug": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "worlds-end-harem",
+      "hd_flag": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5af4f8ed3097f8026984076c9efc7620.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5af4f8ed3097f8026984076c9efc7620.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5af4f8ed3097f8026984076c9efc7620.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5af4f8ed3097f8026984076c9efc7620.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5af4f8ed3097f8026984076c9efc7620.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5af4f8ed3097f8026984076c9efc7620.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5af4f8ed3097f8026984076c9efc7620.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5af4f8ed3097f8026984076c9efc7620.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_display_number": "",
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "next_episode_title": "Évasion",
+      "recent_audio_locale": "ja-JP",
+      "season_id": "GY19CP3W0",
+      "roles": [
+        "main"
+      ],
+      "seo_title": "",
+      "availability_starts": "2022-03-11T18:30:00Z",
+      "episode_air_date": "2022-03-12T01:30:00+09:00",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GZ7UVXW1Z",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ481Q",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "next_episode_id": "GD9UVW18X",
+      "availability_status": "available",
+      "season_number": 1,
+      "is_mature": false,
+      "series_id": "G24H1N3XV",
+      "sequence_number": 10,
+      "upload_date": "2022-03-12T01:30:00+09:00",
+      "duration_ms": 1420054,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_subbed": true,
+      "id": "GZ7UVXW1Z",
+      "description": "Shôta a été victime d'une victime d'une tentative d'enlèvement qui, fort heureusement, a été déjouée. Il apprend par la même occasion qu'il n'est pas le seul homme survivant, contrairement à ses croyances initiales. Reito, de son côté, en apprend davantage sur la situation d'Elisa...",
+      "listing_id": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_clip": false,
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "season_sequence_number": 1,
+      "seo_description": "",
+      "premium_available_date": "2022-03-11T18:30:00Z",
+      "is_premium_only": true,
+      "streams_link": "/content/v2/cms/videos/G5JFZ481Q/streams"
+    },
+    {
+      "production_episode_id": "",
+      "closed_captions_available": false,
+      "series_slug_title": "worlds-end-harem",
+      "series_id": "G24H1N3XV",
+      "media_type": "episode",
+      "season_tags": [
+        "Hiver-2022"
+      ],
+      "channel_id": "crunchyroll",
+      "availability_notes": "",
+      "seo_title": "",
+      "is_clip": false,
+      "description": "Après avoir fait la rencontre de Shôta, Reito décide d'échapper à l'emprise de l'UW en s'évadant du centre. Alors qu'il est sur le point de mener son plan à exécution, de nouveaux événements surviennent.",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "pt-BR",
+        "it-IT",
+        "de-DE",
+        "ru-RU"
+      ],
+      "mature_blocked": false,
+      "content_descriptors": [
+        "Nudité",
+        "Contenu sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "premium_available_date": "2022-03-18T17:30:00Z",
+      "is_mature": false,
+      "season_id": "GY19CP3W0",
+      "seo_description": "",
+      "season_number": 1,
+      "is_premium_only": true,
+      "roles": [
+        "main"
+      ],
+      "duration_ms": 1420012,
+      "sequence_number": 11,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "series_title": "World's End Harem",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9f4f433d502f72453998f851c3229e07.jpe",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9f4f433d502f72453998f851c3229e07.jpe",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9f4f433d502f72453998f851c3229e07.jpe",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9f4f433d502f72453998f851c3229e07.jpe",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9f4f433d502f72453998f851c3229e07.jpe",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9f4f433d502f72453998f851c3229e07.jpe",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9f4f433d502f72453998f851c3229e07.jpe",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9f4f433d502f72453998f851c3229e07.jpe",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode": "11",
+      "recent_variant": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "slug": "",
+      "season_title": "World's End Harem",
+      "id": "GD9UVW18X",
+      "audio_locale": "ja-JP",
+      "available_offline": true,
+      "premium_date": null,
+      "recent_audio_locale": "ja-JP",
+      "listing_id": "",
+      "episode_number": 11,
+      "eligible_region": "CA",
+      "is_subbed": true,
+      "slug_title": "escape",
+      "identifier": "G24H1N3XV|S1|E11",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_display_number": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_starts": "2022-03-18T17:30:00Z",
+      "title": "Évasion",
+      "available_date": null,
+      "season_slug_title": "worlds-end-harem",
+      "episode_air_date": "2022-03-19T01:30:00+09:00",
+      "season_sequence_number": 1,
+      "streams_link": "/content/v2/cms/videos/GWMF8K4QD/streams",
+      "availability_status": "available",
+      "hd_flag": true,
+      "upload_date": "2022-03-19T01:30:00+09:00",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GD9UVW18X",
+          "is_premium_only": true,
+          "media_guid": "GWMF8K4QD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY19CP3W0",
+          "variant": ""
+        }
+      ],
+      "is_dubbed": false
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

@@ -1,0 +1,2214 @@
+{
+  "total": 12,
+  "data": [
+    {
+      "season_sequence_number": 1,
+      "next_episode_title": "Le nouvel élève briseur de conventions",
+      "series_id": "G63K95846",
+      "season_display_number": "",
+      "mature_blocked": false,
+      "availability_status": "available",
+      "next_episode_id": "GRZJM1P46",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR247QZP6",
+          "is_premium_only": true,
+          "media_guid": "GQ9FGX713",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G7PU40N25",
+          "is_premium_only": true,
+          "media_guid": "G4GFQZ403",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G8WUNEQN3",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG78GN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUG78MG",
+          "is_premium_only": true,
+          "media_guid": "GGVF20PX2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "main"
+      ],
+      "listing_id": "",
+      "is_dubbed": true,
+      "series_slug_title": "wise-mans-grandchild",
+      "audio_locale": "ja-JP",
+      "hd_flag": true,
+      "is_premium_only": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "identifier": "G63K95846|S1|E1",
+      "recent_audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2019-04-10T23:30:00+09:00",
+      "media_type": "episode",
+      "seo_description": "",
+      "season_slug_title": "wise-mans-grandchild",
+      "availability_notes": "",
+      "availability_starts": "2019-04-22T19:00:00Z",
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "premium_date": null,
+      "season_number": 1,
+      "recent_variant": "",
+      "free_available_date": "2019-04-22T19:00:00Z",
+      "title": "Départ à la capitale de l'ignare",
+      "streams_link": "/content/v2/cms/videos/GQ9FGX713/streams",
+      "upload_date": "2019-04-10T23:30:00+09:00",
+      "eligible_region": "CA",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "episode_number": 1,
+      "id": "GR247QZP6",
+      "available_offline": true,
+      "closed_captions_available": false,
+      "is_mature": false,
+      "seo_title": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/31105ab14e9bad66b2fbd5fb7ba7acfe.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/31105ab14e9bad66b2fbd5fb7ba7acfe.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/31105ab14e9bad66b2fbd5fb7ba7acfe.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/31105ab14e9bad66b2fbd5fb7ba7acfe.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/31105ab14e9bad66b2fbd5fb7ba7acfe.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/31105ab14e9bad66b2fbd5fb7ba7acfe.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/31105ab14e9bad66b2fbd5fb7ba7acfe.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/31105ab14e9bad66b2fbd5fb7ba7acfe.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_clip": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_id": "G6P50Q9W6",
+      "episode": "1",
+      "slug": "",
+      "is_subbed": true,
+      "duration_ms": 1420104,
+      "season_title": "Wise Man's Grandchild",
+      "premium_available_date": "2019-04-22T19:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "slug_title": "a-babe-in-the-woods-goes-to-the-capital",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "available_date": null,
+      "sequence_number": 1,
+      "series_title": "Wise Man's Grandchild",
+      "description": "Shin est un jeune homme élevé par son grand-père dans la forêt. Il s'est vite découvert un talent pour la magie en suivant l'enseignement de son grand-père, mais hélas, il a encore beaucoup à apprendre."
+    },
+    {
+      "season_slug_title": "wise-mans-grandchild",
+      "available_date": null,
+      "episode_air_date": "2019-04-17T23:30:00+09:00",
+      "media_type": "episode",
+      "season_number": 1,
+      "hd_flag": true,
+      "recent_audio_locale": "ja-JP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/759644da64533fb61ba27da1e9c2f962.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/759644da64533fb61ba27da1e9c2f962.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/759644da64533fb61ba27da1e9c2f962.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/759644da64533fb61ba27da1e9c2f962.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/759644da64533fb61ba27da1e9c2f962.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/759644da64533fb61ba27da1e9c2f962.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/759644da64533fb61ba27da1e9c2f962.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/759644da64533fb61ba27da1e9c2f962.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_mature": false,
+      "series_id": "G63K95846",
+      "next_episode_title": "Situation de crise !",
+      "recent_variant": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "premium_available_date": "2019-04-22T19:00:00Z",
+      "identifier": "G63K95846|S1|E2",
+      "availability_notes": "",
+      "availability_starts": "2019-04-22T19:00:00Z",
+      "is_dubbed": true,
+      "series_slug_title": "wise-mans-grandchild",
+      "duration_ms": 1420189,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "description": "Shin est arrivé à la capitale et se prépare à passer l'examen d'entrée de l'académie de magie. Il ne va pas y faire que des bonnes rencontres…",
+      "is_clip": false,
+      "slug_title": "the-unconventional-new-student",
+      "season_id": "G6P50Q9W6",
+      "season_title": "Wise Man's Grandchild",
+      "upload_date": "2019-04-17T23:30:00+09:00",
+      "premium_date": null,
+      "streams_link": "/content/v2/cms/videos/G5JFZ8W90/streams",
+      "listing_id": "",
+      "available_offline": true,
+      "mature_blocked": false,
+      "availability_status": "available",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRZJM1P46",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ8W90",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GX9UQ98M7",
+          "is_premium_only": true,
+          "media_guid": "GJKF28D7X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GD9UVD0VG",
+          "is_premium_only": true,
+          "media_guid": "GWMF8GZ83",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1U20PXP",
+          "is_premium_only": true,
+          "media_guid": "G71F40N3N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "id": "GRZJM1P46",
+      "seo_description": "",
+      "closed_captions_available": false,
+      "slug": "",
+      "production_episode_id": "",
+      "channel_id": "crunchyroll",
+      "free_available_date": "2019-04-24T15:30:00Z",
+      "is_subbed": true,
+      "next_episode_id": "G6G5J7Q86",
+      "seo_title": "",
+      "title": "Le nouvel élève briseur de conventions",
+      "season_sequence_number": 1,
+      "audio_locale": "ja-JP",
+      "series_title": "Wise Man's Grandchild",
+      "eligible_region": "CA",
+      "roles": [
+        "main"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_premium_only": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "sequence_number": 2,
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "season_display_number": "",
+      "episode_number": 2,
+      "episode": "2"
+    },
+    {
+      "closed_captions_available": false,
+      "available_offline": true,
+      "season_sequence_number": 1,
+      "next_episode_id": "GYJ0MEDV6",
+      "channel_id": "crunchyroll",
+      "episode": "3",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_mature": false,
+      "identifier": "G63K95846|S1|E3",
+      "premium_date": null,
+      "eligible_region": "CA",
+      "season_slug_title": "wise-mans-grandchild",
+      "id": "G6G5J7Q86",
+      "series_title": "Wise Man's Grandchild",
+      "seo_description": "",
+      "season_number": 1,
+      "recent_audio_locale": "ja-JP",
+      "hd_flag": true,
+      "is_dubbed": true,
+      "sequence_number": 3,
+      "series_id": "G63K95846",
+      "premium_available_date": "2019-04-24T15:30:00Z",
+      "season_title": "Wise Man's Grandchild",
+      "availability_notes": "",
+      "slug": "",
+      "season_display_number": "",
+      "media_type": "episode",
+      "audio_locale": "ja-JP",
+      "season_id": "G6P50Q9W6",
+      "listing_id": "",
+      "slug_title": "an-emergency-arises",
+      "upload_date": "2019-04-24T23:30:00+09:00",
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "available_date": null,
+      "availability_status": "available",
+      "episode_air_date": "2019-04-24T23:30:00+09:00",
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "series_slug_title": "wise-mans-grandchild",
+      "duration_ms": 1420147,
+      "streams_link": "/content/v2/cms/videos/GJKF2P8GM/streams",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "is_clip": false,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "seo_title": "",
+      "next_episode_title": "Le nom du coupable",
+      "roles": [
+        "main"
+      ],
+      "description": "Après avoir intégré l'académie de magie sans encombre, Shin va rencontrer ses nouveaux camarades de classe. Toutefois, c'est un autre élève qui va lui donner du fil à retordre…",
+      "free_available_date": "2019-05-01T15:30:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3fc100062a19fb042b4c37f71de036ca.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/3fc100062a19fb042b4c37f71de036ca.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/3fc100062a19fb042b4c37f71de036ca.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/3fc100062a19fb042b4c37f71de036ca.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3fc100062a19fb042b4c37f71de036ca.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/3fc100062a19fb042b4c37f71de036ca.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/3fc100062a19fb042b4c37f71de036ca.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/3fc100062a19fb042b4c37f71de036ca.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_number": 3,
+      "is_subbed": true,
+      "production_episode_id": "",
+      "title": "Situation de crise !",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6G5J7Q86",
+          "is_premium_only": true,
+          "media_guid": "GJKF2P8GM",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GN7UDG3KE",
+          "is_premium_only": true,
+          "media_guid": "GVMF0JGXE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G50UZW3ZM",
+          "is_premium_only": true,
+          "media_guid": "G07FN4ENM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU40N35",
+          "is_premium_only": true,
+          "media_guid": "G4GFQZ4W3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "availability_starts": "2019-04-24T15:30:00Z",
+      "recent_variant": ""
+    },
+    {
+      "free_available_date": "2019-05-08T15:30:00Z",
+      "season_title": "Wise Man's Grandchild",
+      "availability_starts": "2019-05-01T15:30:00Z",
+      "series_id": "G63K95846",
+      "slug_title": "the-name-of-the-instigator",
+      "recent_variant": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYJ0MEDV6",
+          "is_premium_only": true,
+          "media_guid": "GNJFD8G9W",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GMKUXWDMV",
+          "is_premium_only": true,
+          "media_guid": "GPPFKE2JG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1U20P2P",
+          "is_premium_only": true,
+          "media_guid": "G71F40N4N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9UQ9837",
+          "is_premium_only": true,
+          "media_guid": "GJKF28DQX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "duration_ms": 1420104,
+      "is_clip": false,
+      "roles": [
+        "main"
+      ],
+      "premium_available_date": "2019-05-01T15:30:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/fdac5548e594bbac474e9a74ddca5a84.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/fdac5548e594bbac474e9a74ddca5a84.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/fdac5548e594bbac474e9a74ddca5a84.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/fdac5548e594bbac474e9a74ddca5a84.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/fdac5548e594bbac474e9a74ddca5a84.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/fdac5548e594bbac474e9a74ddca5a84.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/fdac5548e594bbac474e9a74ddca5a84.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/fdac5548e594bbac474e9a74ddca5a84.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_slug_title": "wise-mans-grandchild",
+      "upload_date": "2019-05-01T23:30:00+09:00",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "description": "Après l'incident causé par l'apparition du démonoïde, l'enquête suit son cours et va vite désigner un coupable…",
+      "season_display_number": "",
+      "closed_captions_available": false,
+      "title": "Le nom du coupable",
+      "episode_number": 4,
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GNJFD8G9W/streams",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_air_date": "2019-05-01T23:30:00+09:00",
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "slug": "",
+      "series_title": "Wise Man's Grandchild",
+      "premium_date": null,
+      "id": "GYJ0MEDV6",
+      "availability_status": "available",
+      "is_dubbed": true,
+      "available_offline": true,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "eligible_region": "CA",
+      "season_sequence_number": 1,
+      "next_episode_id": "GYG5JM37Y",
+      "next_episode_title": "Le nouveau héros sans précédent",
+      "season_number": 1,
+      "identifier": "G63K95846|S1|E4",
+      "is_premium_only": true,
+      "season_id": "G6P50Q9W6",
+      "mature_blocked": false,
+      "is_subbed": true,
+      "audio_locale": "ja-JP",
+      "availability_notes": "",
+      "hd_flag": true,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "episode": "4",
+      "listing_id": "",
+      "media_type": "episode",
+      "channel_id": "crunchyroll",
+      "seo_description": "",
+      "is_mature": false,
+      "production_episode_id": "",
+      "series_slug_title": "wise-mans-grandchild",
+      "sequence_number": 4,
+      "available_date": null
+    },
+    {
+      "episode_air_date": "2019-05-08T23:30:00+09:00",
+      "series_title": "Wise Man's Grandchild",
+      "availability_notes": "",
+      "slug_title": "a-pioneering-new-hero",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_display_number": "",
+      "title": "Le nouveau héros sans précédent",
+      "upload_date": "2019-05-08T23:30:00+09:00",
+      "episode": "5",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYG5JM37Y",
+          "is_premium_only": true,
+          "media_guid": "GKKF39Q04",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GPWUKE2JV",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVJ53E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GEVUZKVZ5",
+          "is_premium_only": true,
+          "media_guid": "GXMFQ98QN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUQZ4WZ",
+          "is_premium_only": true,
+          "media_guid": "GNJFDG3NG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "availability_status": "available",
+      "premium_date": null,
+      "season_title": "Wise Man's Grandchild",
+      "season_sequence_number": 1,
+      "streams_link": "/content/v2/cms/videos/GKKF39Q04/streams",
+      "free_available_date": "2019-05-15T15:30:00Z",
+      "season_id": "G6P50Q9W6",
+      "availability_starts": "2019-05-08T15:30:00Z",
+      "audio_locale": "ja-JP",
+      "hd_flag": true,
+      "description": "Après son nouveau coup d'éclat, Shin se retrouve célébré en héros. Tandis qu'il décide d'aider ses amis à progresser en magie, la guerre se prépare.",
+      "is_clip": false,
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "listing_id": "",
+      "premium_available_date": "2019-05-08T15:30:00Z",
+      "id": "GYG5JM37Y",
+      "slug": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "production_episode_id": "",
+      "recent_variant": "",
+      "closed_captions_available": false,
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "series_id": "G63K95846",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "seo_description": "",
+      "available_offline": true,
+      "season_number": 1,
+      "next_episode_id": "GY5PDV3EY",
+      "recent_audio_locale": "ja-JP",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1c82ab8eee870f9a58417f2ecc50cf3b.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1c82ab8eee870f9a58417f2ecc50cf3b.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1c82ab8eee870f9a58417f2ecc50cf3b.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1c82ab8eee870f9a58417f2ecc50cf3b.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1c82ab8eee870f9a58417f2ecc50cf3b.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1c82ab8eee870f9a58417f2ecc50cf3b.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1c82ab8eee870f9a58417f2ecc50cf3b.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1c82ab8eee870f9a58417f2ecc50cf3b.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_subbed": true,
+      "roles": [
+        "main"
+      ],
+      "available_date": null,
+      "next_episode_title": "Début du conflit et entraînement commun",
+      "series_slug_title": "wise-mans-grandchild",
+      "eligible_region": "CA",
+      "season_slug_title": "wise-mans-grandchild",
+      "episode_number": 5,
+      "sequence_number": 5,
+      "duration_ms": 1420061,
+      "is_dubbed": true,
+      "media_type": "episode",
+      "identifier": "G63K95846|S1|E5",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "is_mature": false,
+      "seo_title": ""
+    },
+    {
+      "season_id": "G6P50Q9W6",
+      "season_sequence_number": 1,
+      "next_episode_title": "En route pour le stage d'entraînement !",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9d74b512fb8977dc79fc994ced5caaf9.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9d74b512fb8977dc79fc994ced5caaf9.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9d74b512fb8977dc79fc994ced5caaf9.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9d74b512fb8977dc79fc994ced5caaf9.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9d74b512fb8977dc79fc994ced5caaf9.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9d74b512fb8977dc79fc994ced5caaf9.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9d74b512fb8977dc79fc994ced5caaf9.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9d74b512fb8977dc79fc994ced5caaf9.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": true,
+      "description": "Tandis que le conflit entre Blusfia et Earlsheid prend une tournure plus sérieuse, l'académie de magie organise un entraînement commun avec l'école des chevaliers.",
+      "mature_blocked": false,
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "GYG5WVJEY",
+      "seo_title": "",
+      "series_title": "Wise Man's Grandchild",
+      "is_clip": false,
+      "identifier": "G63K95846|S1|E6",
+      "season_display_number": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "streams_link": "/content/v2/cms/videos/GM8FXNW7W/streams",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY5PDV3EY",
+          "is_premium_only": true,
+          "media_guid": "GM8FXNW7W",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G8WUNEQP3",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG78ZN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G9DUE7VED",
+          "is_premium_only": true,
+          "media_guid": "G1QF42Z4X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UDG3NE",
+          "is_premium_only": true,
+          "media_guid": "GVMF0JG8E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "media_type": "episode",
+      "production_episode_id": "",
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "available_offline": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "title": "Début du conflit et entraînement commun",
+      "listing_id": "",
+      "slug_title": "outbreak-of-war-and-a-joint-training-exercise",
+      "seo_description": "",
+      "recent_variant": "",
+      "availability_notes": "",
+      "is_subbed": true,
+      "upload_date": "2019-05-15T23:30:00+09:00",
+      "series_id": "G63K95846",
+      "availability_starts": "2019-05-15T15:30:00Z",
+      "is_dubbed": true,
+      "season_number": 1,
+      "channel_id": "crunchyroll",
+      "free_available_date": "2019-05-22T15:30:00Z",
+      "season_slug_title": "wise-mans-grandchild",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "premium_date": null,
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "series_slug_title": "wise-mans-grandchild",
+      "is_mature": false,
+      "season_title": "Wise Man's Grandchild",
+      "audio_locale": "ja-JP",
+      "duration_ms": 1420147,
+      "available_date": null,
+      "availability_status": "available",
+      "sequence_number": 6,
+      "premium_available_date": "2019-05-15T15:30:00Z",
+      "episode_air_date": "2019-05-15T23:30:00+09:00",
+      "episode_number": 6,
+      "hd_flag": true,
+      "eligible_region": "CA",
+      "id": "GY5PDV3EY",
+      "episode": "6",
+      "slug": ""
+    },
+    {
+      "season_slug_title": "wise-mans-grandchild",
+      "production_episode_id": "",
+      "hd_flag": true,
+      "premium_available_date": "2019-05-22T15:30:00Z",
+      "availability_starts": "2019-05-22T15:30:00Z",
+      "upload_date": "2019-05-22T23:30:00+09:00",
+      "series_title": "Wise Man's Grandchild",
+      "sequence_number": 7,
+      "is_premium_only": true,
+      "seo_title": "",
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GVMF03J5Q/streams",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d9233c83406f06a1a6c8e474a12a2e8e.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d9233c83406f06a1a6c8e474a12a2e8e.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d9233c83406f06a1a6c8e474a12a2e8e.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d9233c83406f06a1a6c8e474a12a2e8e.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d9233c83406f06a1a6c8e474a12a2e8e.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d9233c83406f06a1a6c8e474a12a2e8e.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d9233c83406f06a1a6c8e474a12a2e8e.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d9233c83406f06a1a6c8e474a12a2e8e.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug": "",
+      "season_id": "G6P50Q9W6",
+      "series_slug_title": "wise-mans-grandchild",
+      "season_display_number": "",
+      "mature_blocked": false,
+      "media_type": "episode",
+      "available_offline": true,
+      "free_available_date": "2019-05-29T15:30:00Z",
+      "availability_status": "available",
+      "next_episode_title": "Serment d'une nuit étoilée",
+      "description": "L'entraînement commun entre élèves mages et chevaliers se poursuit, non sans encombres. Suite à ça, Shin décide d'organiser un stage pour son groupe de recherche.",
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYG5WVJEY",
+          "is_premium_only": true,
+          "media_guid": "GVMF03J5Q",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G50UZW3DM",
+          "is_premium_only": true,
+          "media_guid": "G07FN4EXM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G4VUQZ4QZ",
+          "is_premium_only": true,
+          "media_guid": "GNJFDG3DG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G50UZW3M5",
+          "is_premium_only": true,
+          "media_guid": "G07FN4EM8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "episode": "7",
+      "roles": [
+        "main"
+      ],
+      "seo_description": "",
+      "identifier": "G63K95846|S1|E7",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "listing_id": "",
+      "next_episode_id": "GR4PQMGZY",
+      "season_sequence_number": 1,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "duration_ms": 1420104,
+      "availability_notes": "",
+      "slug_title": "lets-go-to-camp",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_clip": false,
+      "season_title": "Wise Man's Grandchild",
+      "premium_date": null,
+      "episode_number": 7,
+      "id": "GYG5WVJEY",
+      "season_number": 1,
+      "closed_captions_available": false,
+      "available_date": null,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "title": "En route pour le stage d'entraînement !",
+      "series_id": "G63K95846",
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "is_subbed": true,
+      "is_mature": false,
+      "episode_air_date": "2019-05-22T23:30:00+09:00",
+      "audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "is_dubbed": true
+    },
+    {
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/63cacde8bf7e2f840ee0a563cdd11c99.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/63cacde8bf7e2f840ee0a563cdd11c99.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/63cacde8bf7e2f840ee0a563cdd11c99.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/63cacde8bf7e2f840ee0a563cdd11c99.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/63cacde8bf7e2f840ee0a563cdd11c99.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/63cacde8bf7e2f840ee0a563cdd11c99.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/63cacde8bf7e2f840ee0a563cdd11c99.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/63cacde8bf7e2f840ee0a563cdd11c99.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_subbed": true,
+      "availability_status": "available",
+      "streams_link": "/content/v2/cms/videos/G3WFX5QDD/streams",
+      "channel_id": "crunchyroll",
+      "series_title": "Wise Man's Grandchild",
+      "recent_variant": "",
+      "production_episode_id": "",
+      "premium_date": null,
+      "season_sequence_number": 1,
+      "premium_available_date": "2019-05-29T15:30:00Z",
+      "availability_notes": "",
+      "is_dubbed": true,
+      "is_mature": false,
+      "seo_description": "",
+      "listing_id": "",
+      "series_slug_title": "wise-mans-grandchild",
+      "identifier": "G63K95846|S1|E8",
+      "available_date": null,
+      "id": "GR4PQMGZY",
+      "hd_flag": true,
+      "available_offline": true,
+      "next_episode_id": "G6MEXM17R",
+      "roles": [
+        "main"
+      ],
+      "slug": "",
+      "season_display_number": "",
+      "free_available_date": "2019-06-05T15:30:00Z",
+      "duration_ms": 1420104,
+      "closed_captions_available": false,
+      "recent_audio_locale": "ja-JP",
+      "season_number": 1,
+      "season_title": "Wise Man's Grandchild",
+      "slug_title": "a-starlit-pledge",
+      "upload_date": "2019-05-29T23:30:00+09:00",
+      "next_episode_title": "Petit-fils, objet magique et fête de fiançailles",
+      "series_id": "G63K95846",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "mature_blocked": false,
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR4PQMGZY",
+          "is_premium_only": true,
+          "media_guid": "G3WFX5QDD",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G7PU40ND5",
+          "is_premium_only": true,
+          "media_guid": "G4GFQZ473",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GK9U3QP31",
+          "is_premium_only": true,
+          "media_guid": "G3WFXQJXG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUZKVW7",
+          "is_premium_only": true,
+          "media_guid": "GXMFQ983E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "description": "Le stage d'entraînement intensif se poursuit avec l'aide des grands-parents de Shin. Mais à l'aube des combats contre les démonoïdes, Shin doit mettre les choses au point avec Sizilien.",
+      "availability_starts": "2019-05-29T15:30:00Z",
+      "episode_air_date": "2019-05-29T23:30:00+09:00",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "wise-mans-grandchild",
+      "audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "title": "Serment d'une nuit étoilée",
+      "episode_number": 8,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "sequence_number": 8,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "eligible_region": "CA",
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "is_clip": false,
+      "episode": "8",
+      "media_type": "episode",
+      "season_id": "G6P50Q9W6"
+    },
+    {
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "production_episode_id": "",
+      "is_subbed": true,
+      "season_display_number": "",
+      "episode": "9",
+      "id": "G6MEXM17R",
+      "is_mature": false,
+      "series_slug_title": "wise-mans-grandchild",
+      "season_slug_title": "wise-mans-grandchild",
+      "is_clip": false,
+      "mature_blocked": false,
+      "next_episode_title": "La chute de l'empire",
+      "availability_notes": "",
+      "title": "Petit-fils, objet magique et fête de fiançailles",
+      "eligible_region": "CA",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "upload_date": "2019-06-05T23:30:00+09:00",
+      "episode_air_date": "2019-06-05T23:30:00+09:00",
+      "seo_title": "",
+      "availability_status": "available",
+      "sequence_number": 9,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/936995ec4b199b1f69267fdef94bc2a0.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/936995ec4b199b1f69267fdef94bc2a0.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/936995ec4b199b1f69267fdef94bc2a0.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/936995ec4b199b1f69267fdef94bc2a0.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/936995ec4b199b1f69267fdef94bc2a0.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/936995ec4b199b1f69267fdef94bc2a0.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/936995ec4b199b1f69267fdef94bc2a0.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/936995ec4b199b1f69267fdef94bc2a0.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "description": "Tandis que le stage d'entraînement se poursuit et gagne en intensité, Shin et Sizilien prennent une décision quant à leur relation.",
+      "is_premium_only": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "streams_link": "/content/v2/cms/videos/GPPFK3E47/streams",
+      "premium_available_date": "2019-06-05T15:30:00Z",
+      "availability_starts": "2019-06-05T15:30:00Z",
+      "duration_ms": 1420104,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "free_available_date": "2019-06-12T15:30:00Z",
+      "recent_variant": "",
+      "episode_number": 9,
+      "series_id": "G63K95846",
+      "roles": [
+        "main"
+      ],
+      "identifier": "G63K95846|S1|E9",
+      "season_number": 1,
+      "slug": "",
+      "seo_description": "",
+      "series_title": "Wise Man's Grandchild",
+      "season_title": "Wise Man's Grandchild",
+      "recent_audio_locale": "ja-JP",
+      "audio_locale": "ja-JP",
+      "media_type": "episode",
+      "is_dubbed": true,
+      "next_episode_id": "GREXQJ81Y",
+      "available_offline": true,
+      "premium_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6MEXM17R",
+          "is_premium_only": true,
+          "media_guid": "GPPFK3E47",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G4VUQZ47Z",
+          "is_premium_only": true,
+          "media_guid": "GNJFDG3JG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GMKUXWDXV",
+          "is_premium_only": true,
+          "media_guid": "GPPFKE2KG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUQZ4DQ",
+          "is_premium_only": true,
+          "media_guid": "GNJFDG30D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 1,
+      "closed_captions_available": false,
+      "channel_id": "crunchyroll",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "slug_title": "the-grandchild-the-magic-gear--and-the-engagement-party",
+      "listing_id": "",
+      "season_id": "G6P50Q9W6",
+      "hd_flag": true,
+      "available_date": null
+    },
+    {
+      "season_id": "G6P50Q9W6",
+      "id": "GREXQJ81Y",
+      "available_date": null,
+      "sequence_number": 10,
+      "production_episode_id": "",
+      "upload_date": "2019-06-12T23:30:00+09:00",
+      "roles": [
+        "main"
+      ],
+      "season_sequence_number": 1,
+      "episode_air_date": "2019-06-12T23:30:00+09:00",
+      "free_available_date": "2019-06-19T15:30:00Z",
+      "season_slug_title": "wise-mans-grandchild",
+      "eligible_region": "CA",
+      "is_mature": false,
+      "description": "Son objectif désormais rempli, Oliver Schtrom se retrouve désœuvré. Toutefois, ses subordonnés ne l'entendent pas de cette oreille. Shin et ses amis se retrouvent face à une nouvelle responsabilité.",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GREXQJ81Y",
+          "is_premium_only": true,
+          "media_guid": "G25F0MJWE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14U42ZPW",
+          "is_premium_only": true,
+          "media_guid": "GKKF3QPN5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9U3QPW9",
+          "is_premium_only": true,
+          "media_guid": "G3WFXQJ85",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GVWU0JG04",
+          "is_premium_only": true,
+          "media_guid": "G25F0JP0D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        }
+      ],
+      "availability_notes": "",
+      "season_number": 1,
+      "is_subbed": true,
+      "next_episode_id": "GRJ0E8X2Y",
+      "title": "La chute de l'empire",
+      "recent_variant": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_starts": "2019-06-12T15:30:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "mature_blocked": false,
+      "duration_ms": 1420104,
+      "available_offline": true,
+      "next_episode_title": "Le groupe de magiciens le plus puissant de l'histoire",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/396c4f7a533fc24ff5d80122571ab7c3.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/396c4f7a533fc24ff5d80122571ab7c3.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/396c4f7a533fc24ff5d80122571ab7c3.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/396c4f7a533fc24ff5d80122571ab7c3.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/396c4f7a533fc24ff5d80122571ab7c3.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/396c4f7a533fc24ff5d80122571ab7c3.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/396c4f7a533fc24ff5d80122571ab7c3.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/396c4f7a533fc24ff5d80122571ab7c3.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "streams_link": "/content/v2/cms/videos/G25F0MJWE/streams",
+      "closed_captions_available": false,
+      "episode_number": 10,
+      "seo_title": "",
+      "series_id": "G63K95846",
+      "is_clip": false,
+      "series_slug_title": "wise-mans-grandchild",
+      "recent_audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "availability_status": "available",
+      "seo_description": "",
+      "listing_id": "",
+      "episode": "10",
+      "season_title": "Wise Man's Grandchild",
+      "media_type": "episode",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "premium_date": null,
+      "identifier": "G63K95846|S1|E10",
+      "season_display_number": "",
+      "series_title": "Wise Man's Grandchild",
+      "slug_title": "the-fall-of-the-empire",
+      "premium_available_date": "2019-06-12T15:30:00Z",
+      "is_dubbed": true,
+      "slug": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "hd_flag": true,
+      "audio_locale": "ja-JP",
+      "channel_id": "crunchyroll"
+    },
+    {
+      "episode": "11",
+      "premium_available_date": "2019-06-19T15:30:00Z",
+      "recent_audio_locale": "ja-JP",
+      "closed_captions_available": false,
+      "audio_locale": "ja-JP",
+      "eligible_region": "CA",
+      "listing_id": "",
+      "availability_starts": "2019-06-19T15:30:00Z",
+      "is_subbed": true,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "sequence_number": 11,
+      "mature_blocked": false,
+      "free_available_date": "2019-06-26T15:30:00Z",
+      "description": "Shin et ses amis se rendent au royaume de Sweed qui subit une attaque de démonoïdes. Le conflit fait rage, et ils décident d'agir en groupes de deux.",
+      "series_id": "G63K95846",
+      "is_clip": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_dubbed": true,
+      "episode_number": 11,
+      "premium_date": null,
+      "series_slug_title": "wise-mans-grandchild",
+      "streams_link": "/content/v2/cms/videos/G8MFNKE8M/streams",
+      "slug": "",
+      "seo_description": "",
+      "season_id": "G6P50Q9W6",
+      "episode_air_date": "2019-06-19T23:30:00+09:00",
+      "next_episode_id": "GRQWNX29R",
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "production_episode_id": "",
+      "upload_date": "2019-06-19T23:30:00+09:00",
+      "availability_notes": "",
+      "next_episode_title": "Et ensuite, le monde…",
+      "is_premium_only": true,
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "season_slug_title": "wise-mans-grandchild",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRJ0E8X2Y",
+          "is_premium_only": true,
+          "media_guid": "G8MFNKE8M",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GN7UDG3JE",
+          "is_premium_only": true,
+          "media_guid": "GVMF0JG2E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G31UXQJXW",
+          "is_premium_only": true,
+          "media_guid": "G8MFNEQNG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU0JG1V",
+          "is_premium_only": true,
+          "media_guid": "G25F0JP92",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "identifier": "G63K95846|S1|E11",
+      "seo_title": "",
+      "channel_id": "crunchyroll",
+      "availability_status": "available",
+      "hd_flag": true,
+      "available_offline": true,
+      "season_title": "Wise Man's Grandchild",
+      "season_number": 1,
+      "id": "GRJ0E8X2Y",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f78b4529eed892fb22c0cf01fce94f4e.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f78b4529eed892fb22c0cf01fce94f4e.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f78b4529eed892fb22c0cf01fce94f4e.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f78b4529eed892fb22c0cf01fce94f4e.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f78b4529eed892fb22c0cf01fce94f4e.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f78b4529eed892fb22c0cf01fce94f4e.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f78b4529eed892fb22c0cf01fce94f4e.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f78b4529eed892fb22c0cf01fce94f4e.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug_title": "the-mightiest-corps-of-magicians-ever",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "title": "Le groupe de magiciens le plus puissant de l'histoire",
+      "duration_ms": 1420147,
+      "available_date": null,
+      "roles": [
+        "main"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "recent_variant": "",
+      "season_sequence_number": 1,
+      "series_title": "Wise Man's Grandchild",
+      "season_display_number": "",
+      "is_mature": false
+    },
+    {
+      "channel_id": "crunchyroll",
+      "availability_status": "available",
+      "seo_title": "",
+      "roles": [
+        "main"
+      ],
+      "upload_date": "2019-06-26T23:30:00+09:00",
+      "sequence_number": 12,
+      "is_subbed": true,
+      "season_number": 1,
+      "episode_air_date": "2019-06-26T23:30:00+09:00",
+      "listing_id": "",
+      "availability_notes": "",
+      "production_episode_id": "",
+      "title": "Et ensuite, le monde…",
+      "is_mature": false,
+      "slug_title": "and-so-off-into-the-world",
+      "is_premium_only": true,
+      "season_display_number": "",
+      "series_title": "Wise Man's Grandchild",
+      "recent_variant": "",
+      "slug": "",
+      "series_id": "G63K95846",
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "identifier": "G63K95846|S1|E12",
+      "description": "L'attaque au royaume de Sweed se poursuit, et les amis de Shin se retrouvent face à une adversaire redoutable. Shin en vient à comprendre la vraie ampleur du danger.",
+      "episode": "12",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "streams_link": "/content/v2/cms/videos/GZ4FVWJ81/streams",
+      "season_slug_title": "wise-mans-grandchild",
+      "available_offline": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3bfb58455526ffccf0cbc0f261ee0b37.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/3bfb58455526ffccf0cbc0f261ee0b37.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/3bfb58455526ffccf0cbc0f261ee0b37.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/3bfb58455526ffccf0cbc0f261ee0b37.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3bfb58455526ffccf0cbc0f261ee0b37.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/3bfb58455526ffccf0cbc0f261ee0b37.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/3bfb58455526ffccf0cbc0f261ee0b37.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/3bfb58455526ffccf0cbc0f261ee0b37.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_audio_locale": "ja-JP",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "hd_flag": true,
+      "season_tags": [
+        "Printemps-2019"
+      ],
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_number": 12,
+      "is_dubbed": true,
+      "is_clip": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRQWNX29R",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVWJ81",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "G6P50Q9W6",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GVWU0JG24",
+          "is_premium_only": true,
+          "media_guid": "G25F0JPVD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6Q4CZEM5",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G8WUNEQ73",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG78MN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G65VCDEGK",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GPWUKE2M5",
+          "is_premium_only": true,
+          "media_guid": "GZ4FVJ59X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYWEC3P0M",
+          "variant": ""
+        }
+      ],
+      "mature_blocked": false,
+      "id": "GRQWNX29R",
+      "season_id": "G6P50Q9W6",
+      "premium_available_date": "2019-06-26T15:30:00Z",
+      "closed_captions_available": false,
+      "season_title": "Wise Man's Grandchild",
+      "duration_ms": 1420019,
+      "seo_description": "",
+      "free_available_date": "2019-07-03T15:30:00Z",
+      "premium_date": null,
+      "audio_locale": "ja-JP",
+      "series_slug_title": "wise-mans-grandchild",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "fr-FR",
+        "pt-BR",
+        "de-DE"
+      ],
+      "eligible_region": "CA",
+      "availability_starts": "2019-06-26T15:30:00Z",
+      "available_date": null
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

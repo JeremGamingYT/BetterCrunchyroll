@@ -1,0 +1,1637 @@
+{
+  "total": 9,
+  "data": [
+    {
+      "upload_date": "2025-10-05T00:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GE00362116JAJPV/streams",
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "closed_captions_available": false,
+      "season_slug_title": "season-1",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/652d892859514624b71a7a729639095e.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/652d892859514624b71a7a729639095e.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/652d892859514624b71a7a729639095e.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/652d892859514624b71a7a729639095e.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/652d892859514624b71a7a729639095e.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/652d892859514624b71a7a729639095e.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/652d892859514624b71a7a729639095e.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/652d892859514624b71a7a729639095e.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "eligible_region": "CA",
+      "seo_description": "",
+      "mature_blocked": false,
+      "episode_air_date": "2025-10-05T00:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "slug_title": "deceitful-mysterious-marie",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "next_episode_id": "GE00362118JAJP",
+      "episode_number": 1,
+      "hd_flag": true,
+      "listing_id": "",
+      "duration_ms": 1422006,
+      "episode": "1",
+      "series_title": "Mechanical Marie",
+      "premium_date": null,
+      "media_type": "episode",
+      "seo_title": "",
+      "id": "GE00362116JAJP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362116JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362116JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362115JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362116TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362116TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362116HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362116HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362116TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362116TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TEIN",
+          "variant": ""
+        }
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "title": "Marie, entre mensonge et secrets",
+      "is_mature": false,
+      "available_date": null,
+      "audio_locale": "ja-JP",
+      "season_id": "GS00362115JAJP",
+      "roles": [
+        "main"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_premium_only": true,
+      "season_display_number": "",
+      "season_title": "Saison 1",
+      "description": "Arthur, héritier menacé, reçoit une soubrette-robot qui est en réalité chargée le protéger.",
+      "is_clip": false,
+      "sequence_number": 1,
+      "series_id": "G79H23ZJ9",
+      "recent_variant": "",
+      "series_slug_title": "mechanical-marie",
+      "slug": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_dubbed": true,
+      "season_sequence_number": 1,
+      "production_episode_id": "",
+      "availability_notes": "",
+      "next_episode_title": "Marie suspectée",
+      "season_number": 1,
+      "channel_id": "crunchyroll",
+      "availability_starts": "2025-10-05T14:00:00Z",
+      "available_offline": true,
+      "availability_status": "available",
+      "identifier": "G79H23ZJ9|S00362115|E1",
+      "premium_available_date": "2025-10-05T14:00:00Z"
+    },
+    {
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "episode_number": 2,
+      "season_sequence_number": 1,
+      "is_subbed": true,
+      "title": "Marie suspectée",
+      "mature_blocked": false,
+      "sequence_number": 2,
+      "series_slug_title": "mechanical-marie",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362118JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362118JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362115JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362118TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362118TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362118TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362118TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362118HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362118HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115HIIN",
+          "variant": ""
+        }
+      ],
+      "description": "L’attitude de Marie lors d’un tête à tête éveille les soupçons d’Arthur. Roy décide de la remplacer.",
+      "is_mature": false,
+      "season_slug_title": "season-1",
+      "premium_available_date": "2025-10-12T14:00:00Z",
+      "season_id": "GS00362115JAJP",
+      "season_title": "Saison 1",
+      "recent_audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "identifier": "G79H23ZJ9|S00362115|E2",
+      "episode_air_date": "2025-10-12T00:00:00Z",
+      "upload_date": "2025-10-12T00:00:00Z",
+      "available_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/75fd45f329f94e396b86f40def44c93f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/75fd45f329f94e396b86f40def44c93f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/75fd45f329f94e396b86f40def44c93f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/75fd45f329f94e396b86f40def44c93f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/75fd45f329f94e396b86f40def44c93f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/75fd45f329f94e396b86f40def44c93f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/75fd45f329f94e396b86f40def44c93f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/75fd45f329f94e396b86f40def44c93f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_starts": "2025-10-12T14:00:00Z",
+      "availability_notes": "",
+      "is_clip": false,
+      "season_number": 1,
+      "closed_captions_available": false,
+      "seo_description": "",
+      "recent_variant": "",
+      "media_type": "episode",
+      "is_premium_only": true,
+      "listing_id": "",
+      "slug": "",
+      "series_id": "G79H23ZJ9",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "hd_flag": true,
+      "is_dubbed": true,
+      "next_episode_id": "GE00362120JAJP",
+      "streams_link": "/content/v2/cms/videos/GE00362118JAJPV/streams",
+      "season_display_number": "",
+      "next_episode_title": "Marie démasquée",
+      "duration_ms": 1422006,
+      "premium_date": null,
+      "audio_locale": "ja-JP",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "roles": [
+        "main"
+      ],
+      "production_episode_id": "",
+      "series_title": "Mechanical Marie",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "availability_status": "available",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "seo_title": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug_title": "mistrusted-marie",
+      "available_offline": true,
+      "episode": "2",
+      "eligible_region": "CA",
+      "id": "GE00362118JAJP"
+    },
+    {
+      "availability_notes": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9f993da44eed7c9f6d8d07599d4d5599.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9f993da44eed7c9f6d8d07599d4d5599.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9f993da44eed7c9f6d8d07599d4d5599.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9f993da44eed7c9f6d8d07599d4d5599.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9f993da44eed7c9f6d8d07599d4d5599.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9f993da44eed7c9f6d8d07599d4d5599.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9f993da44eed7c9f6d8d07599d4d5599.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9f993da44eed7c9f6d8d07599d4d5599.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "closed_captions_available": false,
+      "slug": "",
+      "media_type": "episode",
+      "title": "Marie démasquée",
+      "eligible_region": "CA",
+      "next_episode_title": "Marie amoureuse",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_available_date": "2025-10-19T14:00:00Z",
+      "season_number": 1,
+      "episode": "3",
+      "series_title": "Mechanical Marie",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "available_offline": true,
+      "listing_id": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "episode_air_date": "2025-10-19T00:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "season_id": "GS00362115JAJP",
+      "season_sequence_number": 1,
+      "is_subbed": true,
+      "series_id": "G79H23ZJ9",
+      "is_mature": false,
+      "audio_locale": "ja-JP",
+      "next_episode_id": "GE00362122JAJP",
+      "season_display_number": "",
+      "seo_description": "",
+      "mature_blocked": false,
+      "identifier": "G79H23ZJ9|S00362115|E3",
+      "id": "GE00362120JAJP",
+      "recent_variant": "",
+      "production_episode_id": "",
+      "is_clip": false,
+      "is_premium_only": true,
+      "premium_date": null,
+      "duration_ms": 1422006,
+      "slug_title": "unmasked-marie",
+      "upload_date": "2025-10-19T00:00:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "availability_status": "available",
+      "is_dubbed": true,
+      "roles": [
+        "main"
+      ],
+      "channel_id": "crunchyroll",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/GE00362120JAJPV/streams",
+      "sequence_number": 3,
+      "series_slug_title": "mechanical-marie",
+      "episode_number": 3,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362120JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362120JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362115JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362120TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362120TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362120HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362120HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362120TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362120TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TEIN",
+          "variant": ""
+        }
+      ],
+      "seo_title": "",
+      "season_title": "Saison 1",
+      "availability_starts": "2025-10-19T14:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "available_date": null,
+      "season_slug_title": "season-1",
+      "description": "Marie joue le robot et découvre le goût des piles AA, les difficultés du mode amante et les dangers de l’eau."
+    },
+    {
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "season_display_number": "",
+      "sequence_number": 4,
+      "production_episode_id": "",
+      "recent_audio_locale": "ja-JP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_id": "GS00362115JAJP",
+      "is_clip": false,
+      "season_number": 1,
+      "available_offline": true,
+      "episode": "4",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362122JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362122JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362115JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362122TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362122TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362122TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362122TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TEIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362122HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362122HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115HIIN",
+          "variant": ""
+        }
+      ],
+      "series_slug_title": "mechanical-marie",
+      "next_episode_title": "Marie jalouse",
+      "slug_title": "lovestruck-marie",
+      "identifier": "G79H23ZJ9|S00362115|E4",
+      "available_date": null,
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GE00362122JAJPV/streams",
+      "premium_date": null,
+      "season_title": "Saison 1",
+      "episode_air_date": "2025-10-26T00:00:00Z",
+      "season_slug_title": "season-1",
+      "listing_id": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ab3ac33ae09759542a5d149e303d78d3.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ab3ac33ae09759542a5d149e303d78d3.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ab3ac33ae09759542a5d149e303d78d3.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ab3ac33ae09759542a5d149e303d78d3.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ab3ac33ae09759542a5d149e303d78d3.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ab3ac33ae09759542a5d149e303d78d3.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ab3ac33ae09759542a5d149e303d78d3.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ab3ac33ae09759542a5d149e303d78d3.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_status": "available",
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "slug": "",
+      "seo_description": "",
+      "is_subbed": true,
+      "hd_flag": true,
+      "season_sequence_number": 1,
+      "audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "id": "GE00362122JAJP",
+      "next_episode_id": "GE00362124JAJP",
+      "series_id": "G79H23ZJ9",
+      "description": "Marie change de costume pour mieux prendre soin d’Arthur, et sous le masque, s’avoue ses sentiments.",
+      "title": "Marie amoureuse",
+      "availability_notes": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_mature": false,
+      "is_premium_only": true,
+      "series_title": "Mechanical Marie",
+      "closed_captions_available": false,
+      "seo_title": "",
+      "is_dubbed": true,
+      "availability_starts": "2025-10-26T14:00:00Z",
+      "episode_number": 4,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "duration_ms": 1422006,
+      "upload_date": "2025-10-26T00:00:00Z",
+      "premium_available_date": "2025-10-26T14:00:00Z",
+      "roles": [
+        "main"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "media_type": "episode"
+    },
+    {
+      "is_mature": false,
+      "season_slug_title": "season-1",
+      "production_episode_id": "",
+      "availability_status": "available",
+      "audio_locale": "ja-JP",
+      "eligible_region": "CA",
+      "next_episode_id": "GE00362126JAJP",
+      "season_number": 1,
+      "identifier": "G79H23ZJ9|S00362115|E5",
+      "availability_starts": "2025-11-02T14:00:00Z",
+      "episode_air_date": "2025-11-02T00:00:00Z",
+      "season_sequence_number": 1,
+      "channel_id": "crunchyroll",
+      "season_title": "Saison 1",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362124JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362124JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362115JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362124HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362124HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362124TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362124TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362124TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362124TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TEIN",
+          "variant": ""
+        }
+      ],
+      "description": "Grâce à Marie 2.0, Marie compose avec de nouveaux sentiments pour éviter une défaillance système critique.",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "available_date": null,
+      "is_dubbed": true,
+      "streams_link": "/content/v2/cms/videos/GE00362124JAJPV/streams",
+      "premium_date": null,
+      "closed_captions_available": false,
+      "hd_flag": true,
+      "is_premium_only": true,
+      "episode_number": 5,
+      "slug": "",
+      "next_episode_title": "Marie prisonnière",
+      "is_clip": false,
+      "recent_variant": "",
+      "series_id": "G79H23ZJ9",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "media_type": "episode",
+      "listing_id": "",
+      "slug_title": "jealous-marie",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "title": "Marie jalouse",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/076d66f5f65f4102cc8cb1a5061cf952.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/076d66f5f65f4102cc8cb1a5061cf952.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/076d66f5f65f4102cc8cb1a5061cf952.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/076d66f5f65f4102cc8cb1a5061cf952.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/076d66f5f65f4102cc8cb1a5061cf952.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/076d66f5f65f4102cc8cb1a5061cf952.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/076d66f5f65f4102cc8cb1a5061cf952.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/076d66f5f65f4102cc8cb1a5061cf952.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_slug_title": "mechanical-marie",
+      "seo_title": "",
+      "seo_description": "",
+      "episode": "5",
+      "duration_ms": 1422006,
+      "sequence_number": 5,
+      "roles": [
+        "main"
+      ],
+      "season_id": "GS00362115JAJP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "series_title": "Mechanical Marie",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_subbed": true,
+      "premium_available_date": "2025-11-02T14:00:00Z",
+      "season_display_number": "",
+      "availability_notes": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "upload_date": "2025-11-02T00:00:00Z",
+      "available_offline": true,
+      "mature_blocked": false,
+      "id": "GE00362124JAJP",
+      "free_available_date": "9998-11-30T17:45:00Z"
+    },
+    {
+      "episode_air_date": "2025-11-09T00:00:00Z",
+      "availability_status": "available",
+      "availability_notes": "",
+      "slug": "",
+      "seo_title": "",
+      "series_id": "G79H23ZJ9",
+      "hd_flag": true,
+      "audio_locale": "ja-JP",
+      "season_sequence_number": 1,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "channel_id": "crunchyroll",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "slug_title": "captive-marie",
+      "is_subbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362126JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362126JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362115JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GE00362126TAIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362126TAINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TAIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362126HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362126HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GE00362126TEIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362126TEINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362115TEIN",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "main"
+      ],
+      "id": "GE00362126JAJP",
+      "is_clip": false,
+      "season_number": 1,
+      "season_display_number": "",
+      "sequence_number": 6,
+      "next_episode_title": "Marie combative",
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "seo_description": "",
+      "title": "Marie prisonnière",
+      "description": "Marie essaie de distraire Arthur d’une mauvaise journée. Le club de robotique s’intéresse de près à elle.",
+      "season_slug_title": "season-1",
+      "available_date": null,
+      "production_episode_id": "",
+      "is_premium_only": true,
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GE00362126JAJPV/streams",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "media_type": "episode",
+      "closed_captions_available": false,
+      "episode": "6",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "episode_number": 6,
+      "series_title": "Mechanical Marie",
+      "listing_id": "",
+      "season_title": "Saison 1",
+      "available_offline": true,
+      "series_slug_title": "mechanical-marie",
+      "is_dubbed": true,
+      "availability_starts": "2025-11-09T14:00:00Z",
+      "next_episode_id": "GE00362128JAJP",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "premium_date": null,
+      "premium_available_date": "2025-11-09T14:00:00Z",
+      "upload_date": "2025-11-09T00:00:00Z",
+      "duration_ms": 1422006,
+      "season_id": "GS00362115JAJP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/89c423812d998a8079196fb9d3bf7cd4.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/89c423812d998a8079196fb9d3bf7cd4.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/89c423812d998a8079196fb9d3bf7cd4.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/89c423812d998a8079196fb9d3bf7cd4.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/89c423812d998a8079196fb9d3bf7cd4.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/89c423812d998a8079196fb9d3bf7cd4.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/89c423812d998a8079196fb9d3bf7cd4.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/89c423812d998a8079196fb9d3bf7cd4.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_mature": false,
+      "recent_variant": "",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "identifier": "G79H23ZJ9|S00362115|E6"
+    },
+    {
+      "episode_number": 7,
+      "is_subbed": true,
+      "available_offline": true,
+      "recent_audio_locale": "ja-JP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/480cf58bfe956cc3d6829c8990d8b2e0.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/480cf58bfe956cc3d6829c8990d8b2e0.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/480cf58bfe956cc3d6829c8990d8b2e0.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/480cf58bfe956cc3d6829c8990d8b2e0.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/480cf58bfe956cc3d6829c8990d8b2e0.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/480cf58bfe956cc3d6829c8990d8b2e0.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/480cf58bfe956cc3d6829c8990d8b2e0.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/480cf58bfe956cc3d6829c8990d8b2e0.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_starts": "2025-11-16T14:00:00Z",
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "media_type": "episode",
+      "available_date": null,
+      "upload_date": "2025-11-16T00:00:00Z",
+      "eligible_region": "CA",
+      "premium_available_date": "2025-11-16T14:00:00Z",
+      "season_id": "GS00362115JAJP",
+      "mature_blocked": false,
+      "season_number": 1,
+      "closed_captions_available": false,
+      "season_display_number": "",
+      "is_premium_only": true,
+      "is_clip": false,
+      "next_episode_title": "Marie dans les îles du sud",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "description": "Un duel de lycées permet à Marie de lever le voile sur l’enfance de M. Arthur.",
+      "episode": "7",
+      "season_title": "Saison 1",
+      "roles": [
+        "main"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00362128JAJPV/streams",
+      "seo_title": "",
+      "season_sequence_number": 1,
+      "episode_air_date": "2025-11-16T00:00:00Z",
+      "series_slug_title": "mechanical-marie",
+      "sequence_number": 7,
+      "channel_id": "crunchyroll",
+      "slug_title": "martial-marie",
+      "listing_id": "",
+      "series_title": "Mechanical Marie",
+      "is_mature": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362128JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362128JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362115JAJP",
+          "variant": ""
+        }
+      ],
+      "seo_description": "",
+      "series_id": "G79H23ZJ9",
+      "is_dubbed": false,
+      "availability_status": "available",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "hd_flag": true,
+      "premium_date": null,
+      "id": "GE00362128JAJP",
+      "duration_ms": 1421964,
+      "title": "Marie combative",
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "audio_locale": "ja-JP",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "slug": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_slug_title": "season-1",
+      "recent_variant": "",
+      "availability_notes": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "next_episode_id": "GE00362130JAJP",
+      "identifier": "G79H23ZJ9|S00362115|E7"
+    },
+    {
+      "available_offline": true,
+      "sequence_number": 8,
+      "audio_locale": "ja-JP",
+      "available_date": null,
+      "media_type": "episode",
+      "season_display_number": "",
+      "episode_air_date": "2025-11-23T00:00:00Z",
+      "is_clip": false,
+      "recent_audio_locale": "ja-JP",
+      "season_title": "Saison 1",
+      "eligible_region": "CA",
+      "seo_title": "",
+      "identifier": "G79H23ZJ9|S00362115|E8",
+      "is_dubbed": false,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "premium_available_date": "2025-11-23T14:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GE00362130JAJPV/streams",
+      "production_episode_id": "",
+      "title": "Marie dans les îles du sud",
+      "series_title": "Mechanical Marie",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c518b6e49d454ab6ebd5bf6cb19bb256.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c518b6e49d454ab6ebd5bf6cb19bb256.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c518b6e49d454ab6ebd5bf6cb19bb256.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c518b6e49d454ab6ebd5bf6cb19bb256.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c518b6e49d454ab6ebd5bf6cb19bb256.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c518b6e49d454ab6ebd5bf6cb19bb256.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c518b6e49d454ab6ebd5bf6cb19bb256.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c518b6e49d454ab6ebd5bf6cb19bb256.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "closed_captions_available": false,
+      "episode_number": 8,
+      "hd_flag": true,
+      "season_number": 1,
+      "description": "Marie doit réviser en tête à tête avec M. Arthur, mais Noah s’incruste. La récompense : un séjour au soleil.",
+      "availability_starts": "2025-11-23T14:00:00Z",
+      "season_slug_title": "season-1",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362130JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362130JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362115JAJP",
+          "variant": ""
+        }
+      ],
+      "series_id": "G79H23ZJ9",
+      "roles": [
+        "main"
+      ],
+      "seo_description": "",
+      "availability_status": "available",
+      "id": "GE00362130JAJP",
+      "upload_date": "2025-11-23T00:00:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "next_episode_id": "GE00362132JAJP",
+      "mature_blocked": false,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "recent_variant": "",
+      "duration_ms": 1422006,
+      "slug_title": "tropical-marie",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "episode": "8",
+      "is_premium_only": true,
+      "is_mature": false,
+      "next_episode_title": "Marie, mensonges et secrets",
+      "season_sequence_number": 1,
+      "is_subbed": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "slug": "",
+      "availability_notes": "",
+      "listing_id": "",
+      "season_id": "GS00362115JAJP",
+      "series_slug_title": "mechanical-marie"
+    },
+    {
+      "audio_locale": "ja-JP",
+      "premium_date": null,
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/GE00362132JAJPV/streams",
+      "season_title": "Saison 1",
+      "id": "GE00362132JAJP",
+      "eligible_region": "CA",
+      "channel_id": "crunchyroll",
+      "slug_title": "deceitful-mysterious-exposed-marie",
+      "is_mature": false,
+      "episode": "9",
+      "seo_description": "",
+      "mature_blocked": false,
+      "production_episode_id": "",
+      "series_slug_title": "mechanical-marie",
+      "season_slug_title": "season-1",
+      "series_title": "Mechanical Marie",
+      "next_episode_id": "GE00362134JAJP",
+      "premium_available_date": "2025-11-30T14:00:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "recent_variant": "",
+      "available_date": null,
+      "season_display_number": "",
+      "next_episode_title": "Marie abandonne",
+      "is_dubbed": false,
+      "hd_flag": true,
+      "seo_title": "",
+      "duration_ms": 1422006,
+      "availability_status": "available",
+      "roles": [
+        "main"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362132JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362132JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362115JAJP",
+          "variant": ""
+        }
+      ],
+      "availability_notes": "",
+      "season_number": 1,
+      "media_type": "episode",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "closed_captions_available": false,
+      "is_clip": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_offline": true,
+      "episode_number": 9,
+      "content_descriptors": [
+        "Grossièretés",
+        "Tabagisme",
+        "Violence"
+      ],
+      "availability_starts": "2025-11-30T14:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "title": "Marie, mensonges et secrets",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "12",
+        "system": "cr-tv"
+      },
+      "description": "Marie tente de se rapprocher des membres du fan-club d’Arthur. Ce dernier devient soupçonneux.",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "upload_date": "2025-11-30T00:00:00Z",
+      "identifier": "G79H23ZJ9|S00362115|E9",
+      "is_subbed": true,
+      "listing_id": "",
+      "slug": "",
+      "season_sequence_number": 1,
+      "is_premium_only": true,
+      "sequence_number": 9,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/aac0e834635b0a73df5ebf005c03d28d.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/aac0e834635b0a73df5ebf005c03d28d.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/aac0e834635b0a73df5ebf005c03d28d.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/aac0e834635b0a73df5ebf005c03d28d.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/aac0e834635b0a73df5ebf005c03d28d.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/aac0e834635b0a73df5ebf005c03d28d.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/aac0e834635b0a73df5ebf005c03d28d.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/aac0e834635b0a73df5ebf005c03d28d.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_air_date": "2025-11-30T00:00:00Z",
+      "season_id": "GS00362115JAJP",
+      "series_id": "G79H23ZJ9"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

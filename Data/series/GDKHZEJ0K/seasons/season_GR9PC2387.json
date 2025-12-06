@@ -1,0 +1,3526 @@
+{
+  "total": 13,
+  "data": [
+    {
+      "is_mature": false,
+      "closed_captions_available": false,
+      "availability_notes": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_clip": false,
+      "next_episode_title": "I Suppose You aren’t Aware",
+      "roles": [
+        "dub"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "media_type": "episode",
+      "seo_description": "",
+      "season_tags": [],
+      "is_dubbed": true,
+      "series_slug_title": "solo-leveling",
+      "eligible_region": "CA",
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "identifier": "GDKHZEJ0K|S2|E13",
+      "recent_audio_locale": "fr-FR",
+      "slug_title": "you-arent-e-rank-are-you",
+      "season_display_number": "2",
+      "series_id": "GDKHZEJ0K",
+      "duration_ms": 1420011,
+      "season_id": "GR9PC2387",
+      "recent_variant": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "description": "Hwang Dongsoo arrive en Corée, bien déterminé à retrouver ceux qui ont causé la mort de son frère. Jinwoo, de son côté, prend Songyi sous son aile pour lui faire changer d’avis sur le métier de chasseur.",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "mature_blocked": false,
+      "production_episode_id": "",
+      "episode_air_date": "2025-01-05T00:00:00+09:00",
+      "premium_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GEVUW3W5G",
+          "is_premium_only": true,
+          "media_guid": "GXMF3M3N7",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UNK8MW",
+          "is_premium_only": true,
+          "media_guid": "GVMF8X3MP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G50UMNJ18",
+          "is_premium_only": true,
+          "media_guid": "G07FMWQJV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GWDU7MNQN",
+          "is_premium_only": true,
+          "media_guid": "GEMFW35N5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GG1UX57ZM",
+          "is_premium_only": true,
+          "media_guid": "G71F32KJ5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G7PU32KJ0",
+          "is_premium_only": true,
+          "media_guid": "G4GFW0P8Z",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G9DU9NWG1",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJ8GW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G0DUMWQJ9",
+          "is_premium_only": true,
+          "media_guid": "G9XF9NWGD",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GX9U3MNZG",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ74EG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G14UVJ8GN",
+          "is_premium_only": true,
+          "media_guid": "GKKFG27D1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GN7UNK5VV",
+          "is_premium_only": true,
+          "media_guid": "GVMF8XD44",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "GG1UX5EJP",
+          "is_premium_only": true,
+          "media_guid": "G71F32V7N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        }
+      ],
+      "available_offline": true,
+      "season_sequence_number": 2,
+      "sequence_number": 13,
+      "episode": "13",
+      "id": "G0DUMWQJ9",
+      "episode_number": 13,
+      "channel_id": "crunchyroll",
+      "premium_available_date": "2025-01-25T21:00:00Z",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_subbed": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "streams_link": "/content/v2/cms/videos/G9XF9NWGD/streams",
+      "availability_status": "available",
+      "slug": "",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "next_episode_id": "GX9U3MD01",
+      "upload_date": "2025-01-05T00:00:00+09:00",
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "seo_title": "",
+      "is_premium_only": true,
+      "title": "You aren’t E-rank, are You",
+      "audio_locale": "fr-FR",
+      "season_number": 2,
+      "listing_id": "",
+      "availability_starts": "2025-01-25T21:00:00Z",
+      "hd_flag": true,
+      "series_title": "Solo Leveling",
+      "available_date": null
+    },
+    {
+      "title": "I Suppose You aren’t Aware",
+      "is_clip": false,
+      "next_episode_title": "Still a Long Way to Go",
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_sequence_number": 2,
+      "duration_ms": 1420097,
+      "slug_title": "i-suppose-you-arent-aware",
+      "series_id": "GDKHZEJ0K",
+      "episode_air_date": "2025-01-12T00:00:00+09:00",
+      "audio_locale": "fr-FR",
+      "sequence_number": 14,
+      "upload_date": "2025-01-12T00:00:00+09:00",
+      "episode_number": 14,
+      "series_title": "Solo Leveling",
+      "seo_title": "",
+      "premium_date": null,
+      "id": "GX9U3MD01",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "series_slug_title": "solo-leveling",
+      "eligible_region": "CA",
+      "season_number": 2,
+      "available_date": null,
+      "hd_flag": true,
+      "next_episode_id": "GVWU8XPZE",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "availability_status": "available",
+      "identifier": "GDKHZEJ0K|S2|E14",
+      "season_id": "GR9PC2387",
+      "channel_id": "crunchyroll",
+      "closed_captions_available": false,
+      "listing_id": "",
+      "roles": [
+        "dub"
+      ],
+      "description": "Dans le portail rouge, Jinwoo agrandit son armée. Kim Chul, maintenant esseulé, finit par retrouver l’autre groupe et lui demande des explications. L’arrivée des elfes de glace ne viendra pas arranger les choses.",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_offline": true,
+      "availability_starts": "2025-02-01T21:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G7PU323K0",
+          "is_premium_only": true,
+          "media_guid": "G4GFW0WPZ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GMKUEMJGP",
+          "is_premium_only": true,
+          "media_guid": "GPPF8JWDV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G7PU325Q1",
+          "is_premium_only": true,
+          "media_guid": "G4GFW03NV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G9DU9NX80",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJ3N7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUW0320",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKZ4K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G14UVJ3MP",
+          "is_premium_only": true,
+          "media_guid": "GKKFG2ZXN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GX9U3MD01",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7MVN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GN7UNKZ4N",
+          "is_premium_only": true,
+          "media_guid": "GVMF8XV98",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G8WU7VDMW",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM0D29",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GZ7UD374J",
+          "is_premium_only": true,
+          "media_guid": "G5JFMN25W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GD9UEZNXP",
+          "is_premium_only": true,
+          "media_guid": "GWMF7M9D5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "G0DUMW02V",
+          "is_premium_only": true,
+          "media_guid": "G9XF9NP0K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        }
+      ],
+      "season_display_number": "2",
+      "is_mature": false,
+      "mature_blocked": false,
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "seo_description": "",
+      "recent_audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GJKFQ7MVN/streams",
+      "season_tags": [],
+      "media_type": "episode",
+      "recent_variant": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "premium_available_date": "2025-02-01T21:00:00Z",
+      "is_premium_only": true,
+      "episode": "14",
+      "availability_notes": "",
+      "slug": "",
+      "is_subbed": true,
+      "is_dubbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      }
+    },
+    {
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "is_premium_only": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G9DU9N9W1",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJV8W",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GQJUM0D21",
+          "is_premium_only": true,
+          "media_guid": "GGVFX5MGQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GK9UG2845",
+          "is_premium_only": true,
+          "media_guid": "G3WFVE730",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GMKUEM547",
+          "is_premium_only": true,
+          "media_guid": "GPPF8J054",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G31UVE73G",
+          "is_premium_only": true,
+          "media_guid": "G8MF7V2WZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GVWU8XPZE",
+          "is_premium_only": true,
+          "media_guid": "G25FN153K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GPWU8J05G",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD3PX4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G8WU7V2WG",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM0E9V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GQJUM0E7N",
+          "is_premium_only": true,
+          "media_guid": "GGVFX5D0W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GZ7UD3PXE",
+          "is_premium_only": true,
+          "media_guid": "G5JFMNE4V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GD9UEZ2WM",
+          "is_premium_only": true,
+          "media_guid": "GWMF7MPK2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "GEVUW3G75",
+          "is_premium_only": true,
+          "media_guid": "GXMF3M7EN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        }
+      ],
+      "listing_id": "",
+      "next_episode_id": "GX9U3M72Q",
+      "premium_date": null,
+      "premium_available_date": "2025-02-08T21:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "audio_locale": "fr-FR",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_variant": "",
+      "identifier": "GDKHZEJ0K|S2|E15",
+      "media_type": "episode",
+      "slug_title": "still-a-long-way-to-go",
+      "is_mature": false,
+      "season_sequence_number": 2,
+      "availability_status": "available",
+      "episode_number": 15,
+      "is_subbed": true,
+      "closed_captions_available": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "seo_description": "",
+      "season_tags": [],
+      "series_slug_title": "solo-leveling",
+      "channel_id": "crunchyroll",
+      "episode": "15",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "title": "Still a Long Way to Go",
+      "availability_starts": "2025-02-08T21:00:00Z",
+      "is_dubbed": true,
+      "subtitle_locales": [],
+      "duration_ms": 1419969,
+      "is_clip": false,
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "episode_air_date": "2025-01-19T00:00:00+09:00",
+      "production_episode_id": "",
+      "series_title": "Solo Leveling",
+      "mature_blocked": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "sequence_number": 15,
+      "season_display_number": "2",
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/G25FN153K/streams",
+      "season_id": "GR9PC2387",
+      "eligible_region": "CA",
+      "available_date": null,
+      "series_id": "GDKHZEJ0K",
+      "description": "Aux États-Unis, un individu étrange est capturé. De son côté, Jinwoo décide de retourner dans la forteresse démoniaque.",
+      "roles": [
+        "dub"
+      ],
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "availability_notes": "",
+      "season_number": 2,
+      "recent_audio_locale": "fr-FR",
+      "id": "GVWU8XPZE",
+      "slug": "",
+      "next_episode_title": "I Need to Stop Faking",
+      "upload_date": "2025-01-19T00:00:00+09:00"
+    },
+    {
+      "eligible_region": "CA",
+      "recent_variant": "",
+      "season_number": 2,
+      "duration_ms": 1420011,
+      "is_subbed": true,
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "availability_starts": "2025-02-15T21:00:00Z",
+      "series_id": "GDKHZEJ0K",
+      "slug": "",
+      "season_tags": [],
+      "identifier": "GDKHZEJ0K|S2|E16",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "availability_notes": "",
+      "description": "Jinwoo souhaite faire de nouveau évaluer son rang. Sans surprise, les résultats sont sans appel et ne tarderont pas à faire parler.",
+      "available_offline": true,
+      "series_slug_title": "solo-leveling",
+      "premium_available_date": "2025-02-15T21:00:00Z",
+      "episode_air_date": "2025-01-26T00:00:00+09:00",
+      "media_type": "episode",
+      "premium_date": null,
+      "upload_date": "2025-01-26T00:00:00+09:00",
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "streams_link": "/content/v2/cms/videos/GJKFQ7XK2/streams",
+      "seo_description": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "is_dubbed": true,
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "next_episode_id": "GPWU8J59V",
+      "series_title": "Solo Leveling",
+      "seo_title": "",
+      "available_date": null,
+      "mature_blocked": false,
+      "subtitle_locales": [],
+      "roles": [
+        "dub"
+      ],
+      "is_premium_only": true,
+      "season_display_number": "2",
+      "availability_status": "available",
+      "recent_audio_locale": "fr-FR",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "episode": "16",
+      "next_episode_title": "This is What We’re Trained to Do",
+      "listing_id": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "id": "GX9U3M72Q",
+      "episode_number": 16,
+      "season_sequence_number": 2,
+      "closed_captions_available": false,
+      "production_episode_id": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "fr-FR",
+      "slug_title": "i-need-to-stop-faking",
+      "is_clip": false,
+      "season_id": "GR9PC2387",
+      "is_mature": false,
+      "sequence_number": 16,
+      "title": "I Need to Stop Faking",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GX9U3M3NG",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7Q4G",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUW38K0",
+          "is_premium_only": true,
+          "media_guid": "GXMF3MK92",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G9DU9NP42",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJE5P",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GX9U3M72Q",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7XK2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G4VUW0XDW",
+          "is_premium_only": true,
+          "media_guid": "GNJFNK70N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G7PU32V82",
+          "is_premium_only": true,
+          "media_guid": "G4GFW0XD0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G14UVJE55",
+          "is_premium_only": true,
+          "media_guid": "GKKFG24WW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GN7UNK708",
+          "is_premium_only": true,
+          "media_guid": "GVMF8XZ13",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GJWUQ7XKD",
+          "is_premium_only": true,
+          "media_guid": "GM8FEM40D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GK9UG24W7",
+          "is_premium_only": true,
+          "media_guid": "G3WFVE38M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GMKUEM40Z",
+          "is_premium_only": true,
+          "media_guid": "GPPF8J5MQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "G9DU9NP0D",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJE7X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        }
+      ]
+    },
+    {
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G4VUW0WP9",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKN5E",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "G4VUW0X5Z",
+          "is_premium_only": true,
+          "media_guid": "GNJFNK7MG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GVWU8XZM4",
+          "is_premium_only": true,
+          "media_guid": "G25FN137D",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G31UVE3NW",
+          "is_premium_only": true,
+          "media_guid": "G8MF7VWJG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GPWU8J59V",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD3XGE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G8WU7VE33",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM07NN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GZ7UD3JQ3",
+          "is_premium_only": true,
+          "media_guid": "G5JFMNWKN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GQJUM07NG",
+          "is_premium_only": true,
+          "media_guid": "GGVFX50W2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GWDU7MGV0",
+          "is_premium_only": true,
+          "media_guid": "GEMFW3KJ0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G50UMNWKM",
+          "is_premium_only": true,
+          "media_guid": "G07FMW4GM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUW0ZKZ",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKGXG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G4VUW0EX9",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKP7E",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "fr-FR",
+      "episode_air_date": "2025-02-02T00:00:00+09:00",
+      "premium_available_date": "2025-02-22T21:00:00Z",
+      "season_tags": [],
+      "season_id": "GR9PC2387",
+      "available_date": null,
+      "season_sequence_number": 2,
+      "next_episode_id": "GPWU8J15J",
+      "listing_id": "",
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "sequence_number": 17,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "identifier": "GDKHZEJ0K|S2|E17",
+      "season_number": 2,
+      "seo_description": "",
+      "availability_status": "available",
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "series_title": "Solo Leveling",
+      "episode": "17",
+      "season_display_number": "2",
+      "channel_id": "crunchyroll",
+      "slug_title": "this-is-what-were-trained-to-do",
+      "media_type": "episode",
+      "mature_blocked": false,
+      "series_slug_title": "solo-leveling",
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "availability_starts": "2025-02-22T21:00:00Z",
+      "recent_audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GZ4FD3XGE/streams",
+      "recent_variant": "",
+      "is_dubbed": true,
+      "eligible_region": "CA",
+      "roles": [
+        "dub"
+      ],
+      "is_premium_only": true,
+      "id": "GPWU8J59V",
+      "title": "This is What We’re Trained to Do",
+      "upload_date": "2025-02-02T00:00:00+09:00",
+      "duration_ms": 1419969,
+      "is_mature": false,
+      "subtitle_locales": [],
+      "next_episode_title": "Don’t Look Down on My Guys",
+      "premium_date": null,
+      "hd_flag": true,
+      "episode_number": 17,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "series_id": "GDKHZEJ0K",
+      "description": "Jinwoo est interrompu par Cha Hae-in. Cette dernière est intriguée par le jeune homme. Plus tard, Jinwoo participe à un raid qui tourne au vinaigre…",
+      "is_subbed": true,
+      "production_episode_id": "",
+      "is_clip": false,
+      "closed_captions_available": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z"
+    },
+    {
+      "production_episode_id": "",
+      "availability_starts": "2025-03-01T21:00:00Z",
+      "audio_locale": "fr-FR",
+      "duration_ms": 1420011,
+      "streams_link": "/content/v2/cms/videos/GZ4FD30X3/streams",
+      "series_id": "GDKHZEJ0K",
+      "is_dubbed": true,
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "recent_variant": "",
+      "id": "GPWU8J15J",
+      "series_title": "Solo Leveling",
+      "episode_air_date": "2025-02-09T00:00:00+09:00",
+      "is_subbed": true,
+      "season_sequence_number": 2,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "seo_description": "",
+      "season_number": 2,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_notes": "",
+      "recent_audio_locale": "fr-FR",
+      "channel_id": "crunchyroll",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_tags": [],
+      "identifier": "GDKHZEJ0K|S2|E18",
+      "episode_number": 18,
+      "is_mature": false,
+      "available_date": null,
+      "is_premium_only": true,
+      "is_clip": false,
+      "season_id": "GR9PC2387",
+      "series_slug_title": "solo-leveling",
+      "slug_title": "dont-look-down-on-my-guys",
+      "media_type": "episode",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "sequence_number": 18,
+      "next_episode_title": "The 10th S-rank Hunter",
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "premium_available_date": "2025-03-01T21:00:00Z",
+      "listing_id": "",
+      "hd_flag": true,
+      "description": "Intriguée par Jinwoo, Cha Hae-in rejoint le donjon. À l’intérieur, la troupe de Kihoon arrive face au boss, qui compte ne faire qu’une bouchée d’eux.",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "available_offline": true,
+      "season_display_number": "2",
+      "closed_captions_available": false,
+      "subtitle_locales": [],
+      "seo_title": "",
+      "slug": "",
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "episode": "18",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G14UVJV8N",
+          "is_premium_only": true,
+          "media_guid": "GKKFG2G71",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "G14UVJE7W",
+          "is_premium_only": true,
+          "media_guid": "GKKFG24E5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWUQ78NG",
+          "is_premium_only": true,
+          "media_guid": "GM8FEMW97",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GVWU8XQPM",
+          "is_premium_only": true,
+          "media_guid": "G25FN1857",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G31UVE03K",
+          "is_premium_only": true,
+          "media_guid": "G8MF7V4W3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GPWU8J15J",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD30X3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G2XUN183V",
+          "is_premium_only": true,
+          "media_guid": "GDVFEZPWG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G8WU7V4WN",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM0P9G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GD9UEZPW7",
+          "is_premium_only": true,
+          "media_guid": "GWMF7M5K0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GZ7UD30XD",
+          "is_premium_only": true,
+          "media_guid": "G5JFMN74M",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G50UMN748",
+          "is_premium_only": true,
+          "media_guid": "G07FMW50V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14UVJWEN",
+          "is_premium_only": true,
+          "media_guid": "GKKFG2541",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        }
+      ],
+      "next_episode_id": "GZ7UD38MG",
+      "title": "Don’t Look Down on My Guys",
+      "roles": [
+        "dub"
+      ],
+      "availability_status": "available",
+      "upload_date": "2025-02-09T00:00:00+09:00"
+    },
+    {
+      "series_title": "Solo Leveling",
+      "recent_variant": "",
+      "available_date": null,
+      "is_mature": false,
+      "seo_title": "",
+      "streams_link": "/content/v2/cms/videos/G5JFMN9D0/streams",
+      "duration_ms": 1420011,
+      "title": "The 10th S-rank Hunter",
+      "availability_starts": "2025-03-08T21:00:00Z",
+      "season_id": "GR9PC2387",
+      "hd_flag": true,
+      "series_slug_title": "solo-leveling",
+      "season_sequence_number": 2,
+      "available_offline": true,
+      "audio_locale": "fr-FR",
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "episode": "19",
+      "seo_description": "",
+      "is_clip": false,
+      "is_premium_only": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_air_date": "2025-02-16T00:00:00+09:00",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "premium_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "eligible_region": "CA",
+      "availability_notes": "",
+      "media_type": "episode",
+      "mature_blocked": false,
+      "sequence_number": 19,
+      "upload_date": "2025-02-16T00:00:00+09:00",
+      "episode_number": 19,
+      "closed_captions_available": false,
+      "recent_audio_locale": "fr-FR",
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "premium_available_date": "2025-03-08T21:00:00Z",
+      "identifier": "GDKHZEJ0K|S2|E19",
+      "id": "GZ7UD38MG",
+      "production_episode_id": "",
+      "season_tags": [],
+      "slug": "",
+      "is_subbed": true,
+      "channel_id": "crunchyroll",
+      "subtitle_locales": [],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GJWUQ7Q4V",
+          "is_premium_only": true,
+          "media_guid": "GM8FEMEJV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "GK9UG258M",
+          "is_premium_only": true,
+          "media_guid": "G3WFVE07W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9UG254M",
+          "is_premium_only": true,
+          "media_guid": "G3WFVE03W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G8WU7V8P1",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM01Z3",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GZ7UD38MG",
+          "is_premium_only": true,
+          "media_guid": "G5JFMN9D0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G0DUMW1NZ",
+          "is_premium_only": true,
+          "media_guid": "G9XF9NQE4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GG1UX5Q2X",
+          "is_premium_only": true,
+          "media_guid": "G71F32Z43",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GQJUM01G0",
+          "is_premium_only": true,
+          "media_guid": "GGVFX5Q25",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G50UMN9ZD",
+          "is_premium_only": true,
+          "media_guid": "G07FMW1NX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GWDU7MW88",
+          "is_premium_only": true,
+          "media_guid": "GEMFW32ZZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GD9UEZJV9",
+          "is_premium_only": true,
+          "media_guid": "GWMF7MW8V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G14UVJDM5",
+          "is_premium_only": true,
+          "media_guid": "GKKFG2JXW",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        }
+      ],
+      "series_id": "GDKHZEJ0K",
+      "listing_id": "",
+      "is_dubbed": true,
+      "next_episode_id": "G50UMNPQ1",
+      "availability_status": "available",
+      "slug_title": "the-10th-s-rank-hunter",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_number": 2,
+      "description": "La nouvelle évaluation du rang S de Jinwoo va faire de l’ombre à un acteur de cinéma devenu chasseur.",
+      "season_display_number": "2",
+      "next_episode_title": "Looking Up was Tiring Me Out",
+      "roles": [
+        "dub"
+      ]
+    },
+    {
+      "title": "Looking Up was Tiring Me Out",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "slug_title": "looking-up-was-tiring-me-out",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_sequence_number": 2,
+      "duration_ms": 1420054,
+      "listing_id": "",
+      "closed_captions_available": false,
+      "identifier": "GDKHZEJ0K|S2|E20",
+      "series_title": "Solo Leveling",
+      "id": "G50UMNPQ1",
+      "seo_title": "",
+      "season_display_number": "2",
+      "is_dubbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "streams_link": "/content/v2/cms/videos/G07FMWP7J/streams",
+      "production_episode_id": "",
+      "upload_date": "2025-02-23T00:00:00+09:00",
+      "available_date": null,
+      "mature_blocked": false,
+      "season_id": "GR9PC2387",
+      "premium_available_date": "2025-03-15T20:00:00Z",
+      "premium_date": null,
+      "audio_locale": "fr-FR",
+      "availability_status": "available",
+      "availability_starts": "2025-03-15T20:00:00Z",
+      "next_episode_id": "G4VUW0NXZ",
+      "is_clip": false,
+      "seo_description": "",
+      "slug": "",
+      "channel_id": "crunchyroll",
+      "series_id": "GDKHZEJ0K",
+      "is_premium_only": true,
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "eligible_region": "CA",
+      "subtitle_locales": [],
+      "episode_air_date": "2025-02-23T00:00:00+09:00",
+      "media_type": "episode",
+      "availability_notes": "",
+      "available_offline": true,
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "season_tags": [],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_number": 2,
+      "is_mature": false,
+      "hd_flag": true,
+      "episode_number": 20,
+      "recent_audio_locale": "fr-FR",
+      "next_episode_title": "It was All Worth It",
+      "is_subbed": true,
+      "recent_variant": "",
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "sequence_number": 20,
+      "episode": "20",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GN7UNKN5V",
+          "is_premium_only": true,
+          "media_guid": "GVMF8X8D4",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "GPWU8J4XD",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD38M1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUW32ZV",
+          "is_premium_only": true,
+          "media_guid": "GXMF3MGQ8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GQJUM0JK2",
+          "is_premium_only": true,
+          "media_guid": "GGVFX598G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G50UMNPQ1",
+          "is_premium_only": true,
+          "media_guid": "G07FMWP7J",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GG1UX598N",
+          "is_premium_only": true,
+          "media_guid": "G71F32EQ1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GWDU7MX1E",
+          "is_premium_only": true,
+          "media_guid": "GEMFW3M9X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G0DUMWP72",
+          "is_premium_only": true,
+          "media_guid": "G9XF9NJ80",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GEVUW3MEJ",
+          "is_premium_only": true,
+          "media_guid": "GXMF3MX01",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GX9U3MX0Q",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ73V2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "G9DU9NJ32",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJDMP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G9DU9N8PD",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJNEX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        }
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "roles": [
+        "dub"
+      ],
+      "series_slug_title": "solo-leveling",
+      "description": "Jinwoo se fait une alliée de choix. En parallèle, la Corée s’allie au Japon pour lutter contre un fléau à venir."
+    },
+    {
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "title": "It was All Worth It",
+      "season_display_number": "2",
+      "series_slug_title": "solo-leveling",
+      "available_date": null,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GK9UG2G7M",
+          "is_premium_only": true,
+          "media_guid": "G3WFVEVMW",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "GZ7UD3KZK",
+          "is_premium_only": true,
+          "media_guid": "G5JFMNPQP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU8XE9P",
+          "is_premium_only": true,
+          "media_guid": "G25FN1KQ5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GX9U3M577",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7ZXX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G14UVJNEW",
+          "is_premium_only": true,
+          "media_guid": "GKKFG2145",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G4VUW0NXZ",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKQ7G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GK9UG2141",
+          "is_premium_only": true,
+          "media_guid": "G3WFVEG3G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GMKUEMK4V",
+          "is_premium_only": true,
+          "media_guid": "GPPF8JP5G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GPWU8JP5V",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD3ZXE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G2XUN1E37",
+          "is_premium_only": true,
+          "media_guid": "GDVFEZ5WM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G8WU7VZE3",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM0K7N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "G50UMN530",
+          "is_premium_only": true,
+          "media_guid": "G07FMW8E2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        }
+      ],
+      "sequence_number": 21,
+      "recent_audio_locale": "fr-FR",
+      "recent_variant": "",
+      "series_title": "Solo Leveling",
+      "seo_title": "",
+      "eligible_region": "CA",
+      "streams_link": "/content/v2/cms/videos/GNJFNKQ7G/streams",
+      "duration_ms": 1420011,
+      "next_episode_id": "GG1UX5GK5",
+      "premium_available_date": "2025-03-22T20:00:00Z",
+      "identifier": "GDKHZEJ0K|S2|E21",
+      "media_type": "episode",
+      "slug": "",
+      "season_id": "GR9PC2387",
+      "episode_number": 21,
+      "seo_description": "",
+      "production_episode_id": "",
+      "listing_id": "",
+      "description": "Jinwoo a tous les ingrédients pour créer l’Élixir de vie sacré. Il n’a qu’une hâte : sortir sa mère du sommeil éternel.",
+      "series_id": "GDKHZEJ0K",
+      "subtitle_locales": [],
+      "season_number": 2,
+      "audio_locale": "fr-FR",
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "slug_title": "it-was-all-worth-it",
+      "closed_captions_available": false,
+      "episode_air_date": "2025-03-02T00:00:00+09:00",
+      "is_clip": false,
+      "id": "G4VUW0NXZ",
+      "is_premium_only": true,
+      "is_dubbed": true,
+      "hd_flag": true,
+      "availability_status": "available",
+      "roles": [
+        "dub"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "availability_starts": "2025-03-22T20:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_offline": true,
+      "season_tags": [],
+      "season_sequence_number": 2,
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "next_episode_title": "We Need a Hero",
+      "availability_notes": "",
+      "is_subbed": true,
+      "upload_date": "2025-03-02T00:00:00+09:00",
+      "episode": "21"
+    },
+    {
+      "seo_description": "",
+      "series_slug_title": "solo-leveling",
+      "roles": [
+        "dub"
+      ],
+      "duration_ms": 1420054,
+      "audio_locale": "fr-FR",
+      "season_sequence_number": 2,
+      "upload_date": "2025-03-09T00:00:00+09:00",
+      "is_mature": false,
+      "recent_variant": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_subbed": true,
+      "availability_notes": "",
+      "channel_id": "crunchyroll",
+      "eligible_region": "CA",
+      "closed_captions_available": false,
+      "episode": "22",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "premium_available_date": "2025-03-29T20:00:00Z",
+      "season_tags": [],
+      "streams_link": "/content/v2/cms/videos/G71F329G2/streams",
+      "availability_status": "available",
+      "media_type": "episode",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": true,
+      "recent_audio_locale": "fr-FR",
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "seo_title": "",
+      "identifier": "GDKHZEJ0K|S2|E22",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G50UMNMJV",
+          "is_premium_only": true,
+          "media_guid": "G07FMWMQK",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "GEVUW39G5",
+          "is_premium_only": true,
+          "media_guid": "GXMF3M57N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1UX580P",
+          "is_premium_only": true,
+          "media_guid": "G71F32Q0N",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "GEVUW3E1Z",
+          "is_premium_only": true,
+          "media_guid": "GXMF3M0VQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G0DUMW8VX",
+          "is_premium_only": true,
+          "media_guid": "G9XF9N3K2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GG1UX5GK5",
+          "is_premium_only": true,
+          "media_guid": "G71F329G2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GWDU7MD4V",
+          "is_premium_only": true,
+          "media_guid": "GEMFW3E1J",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "G9DU9N3K4",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJMK5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GN7UNK48W",
+          "is_premium_only": true,
+          "media_guid": "GVMF8X93P",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G50UMN58W",
+          "is_premium_only": true,
+          "media_guid": "G07FMW8V4",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GWDU7MD45",
+          "is_premium_only": true,
+          "media_guid": "GEMFW3E14",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GVWU8X443",
+          "is_premium_only": true,
+          "media_guid": "G25FN1DDM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        }
+      ],
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "slug_title": "we-need-a-hero",
+      "sequence_number": 22,
+      "mature_blocked": false,
+      "season_number": 2,
+      "available_date": null,
+      "is_clip": false,
+      "episode_air_date": "2025-03-09T00:00:00+09:00",
+      "id": "GG1UX5GK5",
+      "series_id": "GDKHZEJ0K",
+      "slug": "",
+      "season_display_number": "2",
+      "description": "Le combat amical entre les chasseurs de rang S coréens et japonais bat son plein. Un avant-goût du raid à venir…",
+      "season_id": "GR9PC2387",
+      "production_episode_id": "",
+      "title": "We Need a Hero",
+      "listing_id": "",
+      "hd_flag": true,
+      "series_title": "Solo Leveling",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_starts": "2025-03-29T20:00:00Z",
+      "next_episode_id": "GPWU8JDDQ",
+      "subtitle_locales": [],
+      "next_episode_title": "It’s Going to Get Even More Intense",
+      "episode_number": 22,
+      "premium_date": null,
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "is_dubbed": true
+    },
+    {
+      "is_mature": false,
+      "slug": "",
+      "next_episode_title": "Are You the King of Humans",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GWDU7M7N2",
+          "is_premium_only": true,
+          "media_guid": "GEMFW3W57",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "GD9UEZX0Q",
+          "is_premium_only": true,
+          "media_guid": "GWMF7MDZE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUW3E19",
+          "is_premium_only": true,
+          "media_guid": "GXMF3M0V5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G2XUN1DD5",
+          "is_premium_only": true,
+          "media_guid": "GDVFEZ882",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GPWU8JDDQ",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD3117",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G31UVEZZM",
+          "is_premium_only": true,
+          "media_guid": "G8MF7V009",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G8WU7V00W",
+          "is_premium_only": true,
+          "media_guid": "GQ9FM0QQ9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GD9UEZ88P",
+          "is_premium_only": true,
+          "media_guid": "GWMF7MQQ5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G50UMN11P",
+          "is_premium_only": true,
+          "media_guid": "G07FMWJJP",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GWDU7MQQ1",
+          "is_premium_only": true,
+          "media_guid": "GEMFW3NN9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GG1UX5ZZG",
+          "is_premium_only": true,
+          "media_guid": "G71F32JJ9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GG1UX5JW9",
+          "is_premium_only": true,
+          "media_guid": "G71F327PE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        }
+      ],
+      "is_clip": false,
+      "season_id": "GR9PC2387",
+      "availability_notes": "",
+      "series_id": "GDKHZEJ0K",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_premium_only": true,
+      "season_display_number": "2",
+      "available_date": null,
+      "identifier": "GDKHZEJ0K|S2|E23",
+      "streams_link": "/content/v2/cms/videos/GZ4FD3117/streams",
+      "availability_starts": "2025-04-05T20:00:00Z",
+      "eligible_region": "CA",
+      "available_offline": true,
+      "media_type": "episode",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "series_title": "Solo Leveling",
+      "season_tags": [],
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "id": "GPWU8JDDQ",
+      "season_number": 2,
+      "premium_date": null,
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "episode_air_date": "2025-03-16T00:00:00+09:00",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "series_slug_title": "solo-leveling",
+      "next_episode_id": "GEVUW37JE",
+      "seo_description": "",
+      "premium_available_date": "2025-04-05T20:00:00Z",
+      "mature_blocked": false,
+      "is_subbed": true,
+      "recent_audio_locale": "fr-FR",
+      "duration_ms": 1420011,
+      "hd_flag": true,
+      "upload_date": "2025-03-16T00:00:00+09:00",
+      "production_episode_id": "",
+      "slug_title": "its-going-to-get-even-more-intense",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "subtitle_locales": [],
+      "channel_id": "crunchyroll",
+      "is_dubbed": true,
+      "audio_locale": "fr-FR",
+      "season_sequence_number": 2,
+      "description": "Si dans l’équipe coréenne, la mission sur Jeju avance bien, un ennemi redoutable décime une partie de l’équipe japonaise.",
+      "episode": "23",
+      "listing_id": "",
+      "roles": [
+        "dub"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_title": "",
+      "episode_number": 23,
+      "sequence_number": 23,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "closed_captions_available": false,
+      "title": "It’s Going to Get Even More Intense",
+      "availability_status": "available",
+      "recent_variant": ""
+    },
+    {
+      "series_title": "Solo Leveling",
+      "episode_number": 24,
+      "title": "Are You the King of Humans",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode": "24",
+      "streams_link": "/content/v2/cms/videos/GXMF3ME10/streams",
+      "series_id": "GDKHZEJ0K",
+      "season_display_number": "2",
+      "series_slug_title": "solo-leveling",
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "is_subbed": true,
+      "available_offline": true,
+      "is_mature": false,
+      "recent_audio_locale": "fr-FR",
+      "closed_captions_available": false,
+      "duration_ms": 1419926,
+      "episode_air_date": "2025-03-23T00:00:00+09:00",
+      "slug_title": "are-you-the-king-of-humans",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "production_episode_id": "",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "id": "GEVUW37JE",
+      "season_id": "GR9PC2387",
+      "premium_available_date": "2025-04-12T20:00:00Z",
+      "next_episode_title": "On to the Next Target",
+      "available_date": null,
+      "seo_description": "",
+      "audio_locale": "fr-FR",
+      "description": "Jinwoo rejoint l’île de Jeju, à la rescousse des chasseurs coréens. Il est prêt à affronter le roi des fourmis.",
+      "premium_date": null,
+      "is_dubbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "is_clip": false,
+      "is_premium_only": true,
+      "listing_id": "",
+      "channel_id": "crunchyroll",
+      "availability_notes": "",
+      "identifier": "GDKHZEJ0K|S2|E24",
+      "availability_starts": "2025-04-12T20:00:00Z",
+      "eligible_region": "CA",
+      "availability_status": "available",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "season_number": 2,
+      "sequence_number": 24,
+      "slug": "",
+      "media_type": "episode",
+      "roles": [
+        "dub"
+      ],
+      "recent_variant": "",
+      "upload_date": "2025-03-23T00:00:00+09:00",
+      "next_episode_id": "G31UVEN9D",
+      "season_tags": [],
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GG1UX5XMW",
+          "is_premium_only": true,
+          "media_guid": "G71F3235P",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "GMKUEMGGD",
+          "is_premium_only": true,
+          "media_guid": "GPPF8JDD2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UNKV2N",
+          "is_premium_only": true,
+          "media_guid": "GVMF8X4W8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GEVUW37JE",
+          "is_premium_only": true,
+          "media_guid": "GXMF3ME10",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G7PU327PJ",
+          "is_premium_only": true,
+          "media_guid": "G4GFW05K8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G0DUMW2G7",
+          "is_premium_only": true,
+          "media_guid": "G9XF9N0Z8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G9DU9N0Z5",
+          "is_premium_only": true,
+          "media_guid": "G1QFVJ7Q9",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GPWU8J9J3",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD3G3W",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GX9U3ME1W",
+          "is_premium_only": true,
+          "media_guid": "GJKFQ7WN0",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G4VUW05K5",
+          "is_premium_only": true,
+          "media_guid": "GNJFNKMXM",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GN7UNKMKJ",
+          "is_premium_only": true,
+          "media_guid": "GVMF8XMX2",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GMKUEM1VW",
+          "is_premium_only": true,
+          "media_guid": "GPPF8J9GE",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 2,
+      "hd_flag": true,
+      "mature_blocked": false
+    },
+    {
+      "title": "On to the Next Target",
+      "season_number": 2,
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "upload_date": "2025-03-30T00:00:00+09:00",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "id": "G31UVEN9D",
+      "production_episode_id": "",
+      "episode_number": 25,
+      "availability_status": "available",
+      "episode_air_date": "2025-03-30T00:00:00+09:00",
+      "season_id": "GR9PC2387",
+      "next_episode_title": "You aren’t E-rank, are You",
+      "slug": "",
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "roles": [
+        "dub"
+      ],
+      "is_mature": false,
+      "availability_starts": "2025-04-19T20:00:00Z",
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "16",
+        "system": "cr-tv"
+      },
+      "content_descriptors": [
+        "Sang/Gore",
+        "Violence"
+      ],
+      "is_clip": false,
+      "hd_flag": true,
+      "available_date": null,
+      "next_episode_id": "GG1UX57ZM",
+      "series_slug_title": "solo-leveling",
+      "is_premium_only": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "audio_locale": "fr-FR",
+      "availability_notes": "",
+      "available_offline": true,
+      "slug_title": "on-to-the-next-target",
+      "season_slug_title": "solo-leveling-season-2--arise-from-the-shadow--french-dub",
+      "description": "Jinwoo dévoile sa carte maîtresse pour sauver Cha Hae-in. Encore nombreuses, les fourmis survivantes quittent l’île de Jeju…",
+      "premium_date": null,
+      "recent_audio_locale": "fr-FR",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "premium_available_date": "2025-04-19T20:00:00Z",
+      "series_title": "Solo Leveling",
+      "season_display_number": "2",
+      "episode": "25",
+      "series_id": "GDKHZEJ0K",
+      "is_subbed": true,
+      "recent_variant": "",
+      "season_title": "Solo Leveling Season 2 -Arise from the Shadow- (French Dub)",
+      "mature_blocked": false,
+      "channel_id": "crunchyroll",
+      "listing_id": "",
+      "is_dubbed": true,
+      "duration_ms": 1420011,
+      "season_sequence_number": 2,
+      "streams_link": "/content/v2/cms/videos/G8MF7VJM8/streams",
+      "sequence_number": 25,
+      "season_tags": [],
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G0DUMWM3W",
+          "is_premium_only": true,
+          "media_guid": "G9XF9N9XN",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GY09CX813",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ko-KR",
+          "guid": "G50UMN0K7",
+          "is_premium_only": true,
+          "media_guid": "G07FMW2G5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRGGCVG8J",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GD9UEZMZW",
+          "is_premium_only": true,
+          "media_guid": "GWMF7M2MK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRMGC3VKQ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "G31UVEN9D",
+          "is_premium_only": true,
+          "media_guid": "G8MF7VJM8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR9PC2387",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GPWU8J9G7",
+          "is_premium_only": true,
+          "media_guid": "GZ4FD3G4K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GYE5CQE98",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GVWU8XM9Q",
+          "is_premium_only": true,
+          "media_guid": "G25FN17Q8",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6X0C405P",
+          "variant": ""
+        },
+        {
+          "audio_locale": "it-IT",
+          "guid": "G2XUN17QE",
+          "is_premium_only": true,
+          "media_guid": "GDVFEZMX5",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR49C72NJ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-ES",
+          "guid": "GZ7UD3G41",
+          "is_premium_only": true,
+          "media_guid": "G5JFMN051",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GY19CPMND",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GQJUM0523",
+          "is_premium_only": true,
+          "media_guid": "GGVFX5JGN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRJQC1VZZ",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "G50UMN050",
+          "is_premium_only": true,
+          "media_guid": "G07FMW282",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G6NQCJ4Q4",
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GWDU7M2QV",
+          "is_premium_only": true,
+          "media_guid": "GEMFW37NJ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRK5CNX1D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GN7UNJKXX",
+          "is_premium_only": true,
+          "media_guid": "GVMF82XNN",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CD9QV",
+          "variant": ""
+        }
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "seo_description": "",
+      "identifier": "GDKHZEJ0K|S2|E25"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

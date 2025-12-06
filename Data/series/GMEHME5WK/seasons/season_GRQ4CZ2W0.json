@@ -1,0 +1,174 @@
+{
+  "total": 1,
+  "data": [
+    {
+      "sequence_number": 0,
+      "episode_air_date": "2024-10-17T17:30:00Z",
+      "series_id": "GMEHME5WK",
+      "season_slug_title": "my-hero-academia-heroes-rising",
+      "season_id": "GRQ4CZ2W0",
+      "next_episode_title": "World Heroes' Mission",
+      "season_sequence_number": 2,
+      "hd_flag": true,
+      "seo_description": "",
+      "media_type": "episode",
+      "next_episode_id": "GWDU8JVX5",
+      "recent_variant": "",
+      "is_mature": false,
+      "season_tags": [],
+      "duration_ms": 6238251,
+      "availability_starts": "2024-10-18T00:30:00Z",
+      "slug_title": "my-hero-academia-heroes-rising",
+      "roles": [
+        "main"
+      ],
+      "premium_available_date": "2024-10-18T00:30:00Z",
+      "streams_link": "/content/v2/cms/videos/GGVFXWQ73/streams",
+      "listing_id": "",
+      "season_title": "My Hero Academia: Heroes Rising",
+      "slug": "",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_date": null,
+      "is_premium_only": true,
+      "available_offline": true,
+      "mature_blocked": false,
+      "identifier": "GMEHME5WK|M2|E0",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_title": "My Hero Academia (Films)",
+      "subtitle_locales": [
+        "en-US",
+        "es-419"
+      ],
+      "is_dubbed": true,
+      "episode_number": null,
+      "is_subbed": true,
+      "channel_id": "crunchyroll",
+      "closed_captions_available": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GQJUMN14P",
+          "is_premium_only": true,
+          "media_guid": "GGVFXWQ73",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GRQ4CZ2W0",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GG1UXWQ78",
+          "is_premium_only": true,
+          "media_guid": "G71F3PZKQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GRX0C402D",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU3PZKM",
+          "is_premium_only": true,
+          "media_guid": "G4GFWKJP1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "G619CPM5E",
+          "variant": ""
+        }
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6d1f003b2d0e2f940ef66166f7467445.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6d1f003b2d0e2f940ef66166f7467445.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6d1f003b2d0e2f940ef66166f7467445.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6d1f003b2d0e2f940ef66166f7467445.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6d1f003b2d0e2f940ef66166f7467445.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6d1f003b2d0e2f940ef66166f7467445.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6d1f003b2d0e2f940ef66166f7467445.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6d1f003b2d0e2f940ef66166f7467445.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_audio_locale": "ja-JP",
+      "title": "My Hero Academia: Heroes Rising",
+      "episode": "",
+      "seo_title": "",
+      "production_episode_id": "",
+      "is_clip": false,
+      "audio_locale": "ja-JP",
+      "series_slug_title": "my-hero-academia-movies",
+      "season_display_number": "",
+      "upload_date": "2024-10-17T17:30:00Z",
+      "season_number": 7,
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "availability_notes": "",
+      "premium_date": null,
+      "id": "GQJUMN14P",
+      "eligible_region": "CA",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "description": "Class 1-A visits Nabu Island where they finally get to do some real hero work. The place is so peaceful that it's more like a vacation ... until they're attacked by a villain with an unfathomable Quirk! His power is eerily familiar, and it looks like Shigaraki had a hand in the plan. But with All Might retired and citizens' lives on the line, there's no time for questions. Deku and his friends are the next generation of heroes, and they're the island's only hope.",
+      "free_available_date": "9998-11-30T08:00:00Z",
+      "availability_status": "available"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

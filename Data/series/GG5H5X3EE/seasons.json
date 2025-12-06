@@ -1,0 +1,267 @@
+{
+  "data": [
+    {
+      "id": "GR49C7EPD",
+      "channel_id": "crunchyroll",
+      "title": "Campfire Cooking in Another World with My Absurd Skill",
+      "slug_title": "campfire-cooking-in-another-world-with-my-absurd-skill",
+      "series_id": "GG5H5X3EE",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Tsuyoshi Mukoda, un salarié ordinaire, est un jour soudainement transporté dans un autre monde. À son arrivée, la compétence unique (et apparemment inutile) qu'il acquiert est le \"supermarché en ligne\". Découragé au début, le jeune homme finit par comprendre que les aliments modernes qu'il est capable d'apporter dans ce monde, grâce à cette compétence, s'avèrent avoir des effets incroyables !",
+      "keywords": [],
+      "season_tags": [
+        "Automne-2025",
+        "Hiver-2023"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "ms-MY",
+        "zh-HK",
+        "zh-CN",
+        "en-US",
+        "vi-VN",
+        "es-419",
+        "es-ES",
+        "id-ID",
+        "ru-RU",
+        "ar-SA",
+        "it-IT",
+        "pt-BR",
+        "de-DE",
+        "fr-FR",
+        "th-TH"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR49C7EPD",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G619CP0EG",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GYJQC1GX9",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GYE5CQMD9",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GRNQCJVKM",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GG5H5X3EE|S1",
+      "number_of_episodes": 12
+    },
+    {
+      "id": "G649C71Q2",
+      "channel_id": "crunchyroll",
+      "title": "Season 2",
+      "slug_title": "season-2",
+      "series_id": "GG5H5X3EE",
+      "season_display_number": "",
+      "season_sequence_number": 2,
+      "season_number": 2,
+      "is_complete": false,
+      "description": "Tsuyoshi Mukoda, un salarié ordinaire, est un jour soudainement transporté dans un autre monde. À son arrivée, la compétence unique (et apparemment inutile) qu'il acquiert est le \"supermarché en ligne\". Découragé au début, le jeune homme finit par comprendre que les aliments modernes qu'il est capable d'apporter dans ce monde, grâce à cette compétence, s'avèrent avoir des effets incroyables !",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "zh-HK",
+        "pt-BR",
+        "de-DE",
+        "en-US",
+        "vi-VN",
+        "es-ES",
+        "ru-RU",
+        "ms-MY",
+        "ar-SA",
+        "fr-FR",
+        "it-IT",
+        "es-419",
+        "th-TH",
+        "id-ID",
+        "zh-CN"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G649C71Q2",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GR19CP94G",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "G6JQC1929",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GYNQCJ2D1",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "G6K5CNM3E",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "G6MGC3QE9",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GY8VCPG75",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G619CP9K3",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GS00361874DEDE",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GS00361874ENUS",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GS00361874ES419",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "id-ID",
+          "guid": "GS00361874IDID",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GS00361874PTBR",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "th-TH",
+          "guid": "GS00361874THTH",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GS00361874HIIN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "ta-IN",
+          "guid": "GS00361874TAIN",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "te-IN",
+          "guid": "GS00361874TEIN",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GG5H5X3EE|S00361874",
+      "number_of_episodes": 9
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 2
+}

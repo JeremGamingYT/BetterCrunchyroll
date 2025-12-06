@@ -1,0 +1,367 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 9998;
+}
+
+.anime-detail-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 1100px;
+    max-height: 90vh;
+    background: #101010;
+    border-radius: 24px;
+    overflow: hidden;
+    z-index: 9999;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--color-glass-border);
+    display: flex;
+    flex-direction: column;
+
+    .close-btn {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: rotate(90deg) scale(1.1);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    .modal-header {
+        position: relative;
+        height: 450px;
+        flex-shrink: 0;
+        overflow: hidden;
+
+        .header-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #101010 0%, rgba(16, 16, 16, 0.8) 20%, rgba(16, 16, 16, 0.2) 60%, rgba(16, 16, 16, 0) 100%);
+        }
+
+        .header-content {
+            position: absolute;
+            bottom: 2rem;
+            left: 3rem;
+            right: 3rem;
+            z-index: 10;
+
+            h2 {
+                font-size: 3.5rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+                text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+            }
+
+            .meta {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                margin-bottom: 1.5rem;
+
+                .rating {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    color: #fff;
+                    background: rgba(255, 255, 255, 0.1);
+                    padding: 0.4rem 0.8rem;
+                    border-radius: 8px;
+                    backdrop-filter: blur(4px);
+                }
+
+                .episodes {
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+            }
+
+            .tags {
+                display: flex;
+                gap: 0.75rem;
+                flex-wrap: wrap;
+
+                .tag {
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    color: rgba(255, 255, 255, 0.9);
+                    background: rgba(255, 255, 255, 0.08);
+                    padding: 0.5rem 1rem;
+                    border-radius: 100px;
+                    backdrop-filter: blur(8px);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+
+    .modal-body {
+        padding: 0 3rem 3rem;
+        overflow-y: auto;
+        flex-grow: 1;
+
+        /* Custom Scrollbar for modal body */
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 2.5rem;
+            max-width: 800px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1.25rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+
+            button {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 1rem 2.5rem;
+                border-radius: 12px;
+                font-weight: 700;
+                font-size: 1rem;
+                transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+                cursor: pointer;
+
+                &.btn-primary {
+                    background: linear-gradient(135deg, var(--color-primary) 0%, #ff5e00 100%);
+                    color: #fff;
+                    box-shadow: 0 8px 20px -5px rgba(244, 117, 33, 0.4);
+
+                    &:hover {
+                        transform: translateY(-3px);
+                        box-shadow: 0 15px 30px -5px rgba(244, 117, 33, 0.5);
+                    }
+                }
+
+                &.btn-secondary {
+                    background: rgba(255, 255, 255, 0.05);
+                    color: #fff;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(4px);
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.1);
+                        border-color: rgba(255, 255, 255, 0.3);
+                        transform: translateY(-3px);
+                    }
+                }
+
+                &.btn-icon {
+                    width: 54px;
+                    padding: 0;
+                    justify-content: center;
+                    background: rgba(255, 255, 255, 0.05);
+                    color: #fff;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.1);
+                        border-color: rgba(255, 255, 255, 0.3);
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+        }
+
+        .episodes-list {
+            h3 {
+                font-size: 1.75rem;
+                font-weight: 700;
+                margin-bottom: 2rem;
+                color: #fff;
+                border-left: 4px solid var(--color-primary);
+                padding-left: 1rem;
+            }
+
+            .episodes-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 1.5rem;
+
+                .episode-card {
+                    cursor: pointer;
+                    transition: transform 0.3s var(--ease-out);
+
+                    &:hover {
+                        transform: translateY(-8px);
+
+                        .episode-thumbnail {
+                            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+                            border-color: rgba(255, 255, 255, 0.2);
+
+                            .play-overlay {
+                                opacity: 1;
+                                backdrop-filter: blur(2px);
+
+                                svg {
+                                    transform: scale(1.1);
+                                }
+                            }
+
+                            img {
+                                transform: scale(1.05);
+                            }
+                        }
+
+                        .episode-info h4 {
+                            color: var(--color-primary);
+                        }
+                    }
+
+                    .episode-thumbnail {
+                        position: relative;
+                        width: 100%;
+                        aspect-ratio: 16/9;
+                        border-radius: 12px;
+                        overflow: hidden;
+                        margin-bottom: 0.75rem;
+                        background: var(--color-bg);
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                        transition: all 0.3s ease;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transition: transform 0.5s var(--ease-out);
+                        }
+
+                        .play-overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.3);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            opacity: 0;
+                            transition: all 0.3s ease;
+
+                            svg {
+                                color: #fff;
+                                filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+                                transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+                            }
+                        }
+                    }
+
+                    .episode-info {
+                        h4 {
+                            font-size: 1rem;
+                            font-weight: 600;
+                            margin-bottom: 0.35rem;
+                            color: #fff;
+                            transition: color 0.2s;
+                        }
+
+                        p {
+                            font-size: 0.85rem;
+                            color: var(--color-text-secondary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .anime-detail-modal {
+        width: 100%;
+        height: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+
+        .modal-header {
+            height: 350px;
+
+            .header-content {
+                left: 1.5rem;
+                right: 1.5rem;
+                bottom: 1.5rem;
+
+                h2 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .modal-body {
+            padding: 0 1.5rem 2rem;
+
+            .actions {
+                flex-direction: column;
+
+                button {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

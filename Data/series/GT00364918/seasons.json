@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "id": "GS00364919JAJP",
+      "channel_id": "crunchyroll",
+      "title": "Season 1",
+      "slug_title": "season-1",
+      "series_id": "GT00364918",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Autrefois magicien de la cour qui soutenait en coulisse le prince héritier, Alec Ygret est écarté puis exilé car jugé incapable de produire autre chose que des sorts de soutien. Désormais sans emploi, il tombe sur Yorha, l'une des membres de son ancien groupe de l'académie de magie qui avait marqué l’histoire en franchissant tous les étages du donjon de la capitale.",
+      "keywords": [
+        "fall-2025"
+      ],
+      "season_tags": [
+        "fall-2025"
+      ],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Images à caractère sexuel",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "ja-JP"
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "ru-RU",
+        "it-IT",
+        "fr-FR",
+        "pt-BR",
+        "ar-SA",
+        "de-DE",
+        "es-419",
+        "es-ES"
+      ],
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GS00364919JAJP",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GS00364919ENUS",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "GT00364918|S00364919",
+      "number_of_episodes": 9
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}

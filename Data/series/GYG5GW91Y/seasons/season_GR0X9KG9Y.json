@@ -1,0 +1,3726 @@
+{
+  "total": 24,
+  "data": [
+    {
+      "season_sequence_number": 1,
+      "upload_date": "2018-07-26T17:00:00Z",
+      "streams_link": "/content/v2/cms/videos/G3WFXJ3QE/streams",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f2caad107254884019374b4630769c33.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f2caad107254884019374b4630769c33.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f2caad107254884019374b4630769c33.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f2caad107254884019374b4630769c33.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f2caad107254884019374b4630769c33.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f2caad107254884019374b4630769c33.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f2caad107254884019374b4630769c33.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f2caad107254884019374b4630769c33.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "season_id": "GR0X9KG9Y",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYEX5QKX6",
+          "is_premium_only": true,
+          "media_guid": "G3WFXJ3QE",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G0DUN1ZD3",
+          "is_premium_only": true,
+          "media_guid": "G9XFEQ45X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "channel_id": "crunchyroll",
+      "is_premium_only": true,
+      "season_number": 1,
+      "is_dubbed": true,
+      "premium_date": null,
+      "audio_locale": "ja-JP",
+      "seo_description": "",
+      "season_slug_title": "gosick",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "is_subbed": true,
+      "description": "After exchange student Kazuya Kujo encounters the strange gothic genius Victorique, Inspector Grevil de Blois comes to her for advice on the murder of a local fortune-teller. Soon the two students embark on an unexpected journey to solve the case.",
+      "media_type": "episode",
+      "is_clip": false,
+      "listing_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "hd_flag": true,
+      "mature_blocked": false,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "production_episode_id": "",
+      "recent_audio_locale": "ja-JP",
+      "sequence_number": 1,
+      "season_display_number": "",
+      "roles": [
+        "main"
+      ],
+      "episode": "1",
+      "is_mature": false,
+      "season_title": "Gosick",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "duration_ms": 1487229,
+      "series_title": "Gosick",
+      "seo_title": "",
+      "available_offline": true,
+      "recent_variant": "",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "slug_title": "the-black-reaper-finds-the-golden-fairy",
+      "next_episode_title": "The Souls of the Dead Raise the Sunken Ship",
+      "title": "The Black Reaper Finds the Golden Fairy",
+      "id": "GYEX5QKX6",
+      "episode_number": 1,
+      "series_id": "GYG5GW91Y",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "closed_captions_available": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "next_episode_id": "GR9VPEM36",
+      "identifier": "GYG5GW91Y|S1|E1",
+      "slug": "",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "series_slug_title": "gosick",
+      "available_date": null,
+      "availability_status": "available"
+    },
+    {
+      "title": "The Souls of the Dead Raise the Sunken Ship",
+      "season_sequence_number": 1,
+      "slug": "",
+      "season_slug_title": "gosick",
+      "season_title": "Gosick",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_status": "available",
+      "available_offline": true,
+      "slug_title": "the-souls-of-the-dead-raise-the-sunken-ship",
+      "hd_flag": true,
+      "listing_id": "",
+      "recent_variant": "",
+      "series_id": "GYG5GW91Y",
+      "mature_blocked": false,
+      "duration_ms": 1487349,
+      "eligible_region": "CA",
+      "is_clip": false,
+      "is_dubbed": true,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "next_episode_id": "GR4P9QM0Y",
+      "audio_locale": "ja-JP",
+      "is_mature": false,
+      "availability_notes": "",
+      "season_number": 1,
+      "next_episode_title": "The Hares Trade a Vow in the Morning Light",
+      "recent_audio_locale": "ja-JP",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "seo_description": "",
+      "season_id": "GR0X9KG9Y",
+      "seo_title": "",
+      "identifier": "GYG5GW91Y|S1|E2",
+      "series_title": "Gosick",
+      "production_episode_id": "",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/0554aeee8eda8fa10442b0f33fef119a.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/0554aeee8eda8fa10442b0f33fef119a.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/0554aeee8eda8fa10442b0f33fef119a.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/0554aeee8eda8fa10442b0f33fef119a.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0554aeee8eda8fa10442b0f33fef119a.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/0554aeee8eda8fa10442b0f33fef119a.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/0554aeee8eda8fa10442b0f33fef119a.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/0554aeee8eda8fa10442b0f33fef119a.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "season_display_number": "",
+      "channel_id": "crunchyroll",
+      "premium_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "closed_captions_available": false,
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "id": "GR9VPEM36",
+      "description": "When Kujo, Victorique, and the other guests are drugged at dinner, they begin to suspect someone seeks revenge for the tragic events of ten years earlier aboard the same mysterious ship, The Queen Berry. Then, one by one, the guests begin to die.",
+      "is_subbed": true,
+      "series_slug_title": "gosick",
+      "episode_number": 2,
+      "episode": "2",
+      "roles": [
+        "main"
+      ],
+      "media_type": "episode",
+      "streams_link": "/content/v2/cms/videos/GEMFZVGKZ/streams",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "sequence_number": 2,
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "available_date": null,
+      "is_premium_only": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR9VPEM36",
+          "is_premium_only": true,
+          "media_guid": "GEMFZVGKZ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUZ20X8",
+          "is_premium_only": true,
+          "media_guid": "GXMFQG2JK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ]
+    },
+    {
+      "seo_title": "",
+      "id": "GR4P9QM0Y",
+      "sequence_number": 3,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/97603a1c58dfdda9b338015ccd223bed.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/97603a1c58dfdda9b338015ccd223bed.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/97603a1c58dfdda9b338015ccd223bed.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/97603a1c58dfdda9b338015ccd223bed.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/97603a1c58dfdda9b338015ccd223bed.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/97603a1c58dfdda9b338015ccd223bed.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/97603a1c58dfdda9b338015ccd223bed.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/97603a1c58dfdda9b338015ccd223bed.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "streams_link": "/content/v2/cms/videos/G4GFQ4XZG/streams",
+      "availability_status": "available",
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "available_offline": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "ja-JP",
+      "series_id": "GYG5GW91Y",
+      "is_premium_only": true,
+      "seo_description": "",
+      "roles": [
+        "main"
+      ],
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "episode": "3",
+      "is_clip": false,
+      "is_dubbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR4P9QM0Y",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ4XZG",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU4Z8MV",
+          "is_premium_only": true,
+          "media_guid": "G4GFQJD1X",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "audio_locale": "ja-JP",
+      "listing_id": "",
+      "series_title": "Gosick",
+      "media_type": "episode",
+      "recent_variant": "",
+      "closed_captions_available": false,
+      "next_episode_title": "The Golden Thread Shreds the Moment",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "series_slug_title": "gosick",
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode_number": 3,
+      "is_mature": false,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "hd_flag": true,
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "description": "Kujo throws himself in harm’s way to save Victorique from a killer. At police headquarters, Victorique brilliantly reveals the true mastermind behind the harrowing events aboard the haunting ship, as well as the dark reasons behind the original tragedy.",
+      "is_subbed": true,
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "duration_ms": 1487637,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "next_episode_id": "GRJ0QE13Y",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_tags": [
+        "Été-2018"
+      ],
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "season_id": "GR0X9KG9Y",
+      "availability_notes": "",
+      "title": "The Hares Trade a Vow in the Morning Light",
+      "identifier": "GYG5GW91Y|S1|E3",
+      "premium_date": null,
+      "season_title": "Gosick",
+      "season_display_number": "",
+      "mature_blocked": false,
+      "eligible_region": "CA",
+      "season_number": 1,
+      "season_slug_title": "gosick",
+      "slug_title": "the-hares-trade-a-vow-in-the-morning-light",
+      "slug": ""
+    },
+    {
+      "content_descriptors": [
+        "Violence"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "available_offline": true,
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GKKF3P4Q4/streams",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/073d5b6625c1b1bccaad5634f325a651.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/073d5b6625c1b1bccaad5634f325a651.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/073d5b6625c1b1bccaad5634f325a651.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/073d5b6625c1b1bccaad5634f325a651.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/073d5b6625c1b1bccaad5634f325a651.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/073d5b6625c1b1bccaad5634f325a651.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/073d5b6625c1b1bccaad5634f325a651.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/073d5b6625c1b1bccaad5634f325a651.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "slug": "",
+      "episode_number": 4,
+      "series_slug_title": "gosick",
+      "seo_description": "",
+      "audio_locale": "ja-JP",
+      "identifier": "GYG5GW91Y|S1|E4",
+      "season_display_number": "",
+      "season_title": "Gosick",
+      "availability_status": "available",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "series_id": "GYG5GW91Y",
+      "is_premium_only": true,
+      "channel_id": "crunchyroll",
+      "is_clip": false,
+      "premium_date": null,
+      "eligible_region": "CA",
+      "next_episode_title": "There is a Mysterious Ghost in the Abandoned Warehouse",
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "description": "When Kujo sees a motorcyclist decapitated, Victorique must prove his innocence. Later, Kujo and the beautiful new exchange student from England, Avril, uncover an eight-year-old murder in the academy crypt.",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "sequence_number": 4,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "season_id": "GR0X9KG9Y",
+      "season_sequence_number": 1,
+      "title": "The Golden Thread Shreds the Moment",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRJ0QE13Y",
+          "is_premium_only": true,
+          "media_guid": "GKKF3P4Q4",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9UQG2JP",
+          "is_premium_only": true,
+          "media_guid": "GJKF2GK95",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "available_date": null,
+      "episode": "4",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "duration_ms": 1487109,
+      "listing_id": "",
+      "closed_captions_available": false,
+      "next_episode_id": "GRKE57X8R",
+      "availability_notes": "",
+      "seo_title": "",
+      "is_mature": false,
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "slug_title": "the-golden-thread-shreds-the-moment",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "series_title": "Gosick",
+      "roles": [
+        "main"
+      ],
+      "media_type": "episode",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "mature_blocked": false,
+      "season_slug_title": "gosick",
+      "is_dubbed": true,
+      "is_subbed": true,
+      "hd_flag": true,
+      "season_number": 1,
+      "id": "GRJ0QE13Y"
+    },
+    {
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "is_dubbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7e3d8b3f99d5ad5087daa692f391d0e2.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/7e3d8b3f99d5ad5087daa692f391d0e2.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/7e3d8b3f99d5ad5087daa692f391d0e2.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/7e3d8b3f99d5ad5087daa692f391d0e2.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7e3d8b3f99d5ad5087daa692f391d0e2.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/7e3d8b3f99d5ad5087daa692f391d0e2.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/7e3d8b3f99d5ad5087daa692f391d0e2.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/7e3d8b3f99d5ad5087daa692f391d0e2.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "audio_locale": "ja-JP",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRKE57X8R",
+          "is_premium_only": true,
+          "media_guid": "GPPFK25E7",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUQJD1J",
+          "is_premium_only": true,
+          "media_guid": "GNJFD9029",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "main"
+      ],
+      "is_clip": false,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "sequence_number": 5,
+      "series_id": "GYG5GW91Y",
+      "description": "The Phantom Thief Kuiaran returns after an eight-year absence. Kujo is knocked out as he investigates the strange sounds emanating from the haunted storehouse. And, as usual, Victorique must put the pieces together before anyone else gets hurt.",
+      "is_premium_only": true,
+      "seo_title": "",
+      "streams_link": "/content/v2/cms/videos/GPPFK25E7/streams",
+      "eligible_region": "CA",
+      "next_episode_id": "GYVDNQEPY",
+      "id": "GRKE57X8R",
+      "production_episode_id": "",
+      "episode": "5",
+      "availability_notes": "",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "season_display_number": "",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "slug_title": "there-is-a-mysterious-ghost-in-the-abandoned-warehouse",
+      "listing_id": "",
+      "season_number": 1,
+      "series_slug_title": "gosick",
+      "seo_description": "",
+      "mature_blocked": false,
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "hd_flag": true,
+      "slug": "",
+      "is_subbed": true,
+      "season_title": "Gosick",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "premium_date": null,
+      "duration_ms": 1487181,
+      "closed_captions_available": false,
+      "recent_variant": "",
+      "season_sequence_number": 1,
+      "season_slug_title": "gosick",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_id": "GR0X9KG9Y",
+      "availability_status": "available",
+      "next_episode_title": "The Gray Wolf Calls to its Kin",
+      "title": "There is a Mysterious Ghost in the Abandoned Warehouse",
+      "episode_number": 5,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "series_title": "Gosick",
+      "identifier": "GYG5GW91Y|S1|E5",
+      "available_offline": true,
+      "recent_audio_locale": "ja-JP",
+      "channel_id": "crunchyroll",
+      "available_date": null,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_mature": false
+    },
+    {
+      "upload_date": "2018-07-26T17:00:00Z",
+      "channel_id": "crunchyroll",
+      "identifier": "GYG5GW91Y|S1|E6",
+      "listing_id": "",
+      "is_subbed": true,
+      "recent_audio_locale": "ja-JP",
+      "episode": "6",
+      "title": "The Gray Wolf Calls to its Kin",
+      "is_clip": false,
+      "is_dubbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "available_date": null,
+      "id": "GYVDNQEPY",
+      "season_display_number": "",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "season_slug_title": "gosick",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "available_offline": true,
+      "availability_status": "available",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "season_id": "GR0X9KG9Y",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYVDNQEPY",
+          "is_premium_only": true,
+          "media_guid": "GDVFV0WDQ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWU2GK9Z",
+          "is_premium_only": true,
+          "media_guid": "GM8FX70QK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "seo_title": "",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "duration_ms": 1487589,
+      "closed_captions_available": false,
+      "series_id": "GYG5GW91Y",
+      "sequence_number": 6,
+      "season_number": 1,
+      "episode_number": 6,
+      "seo_description": "",
+      "mature_blocked": false,
+      "hd_flag": true,
+      "next_episode_id": "GRP58JXQR",
+      "slug_title": "the-gray-wolf-calls-to-its-kin",
+      "description": "Kujo follows along as Victorique responds to an odd summons to the descendants of the Gray Wolves. As they travel to a village in the mountains, Victorique relates the tale of her mother, Cordelia Gallo, and the criminal accusations leveled against her.",
+      "media_type": "episode",
+      "is_premium_only": true,
+      "production_episode_id": "",
+      "series_title": "Gosick",
+      "availability_notes": "",
+      "season_title": "Gosick",
+      "audio_locale": "ja-JP",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "season_sequence_number": 1,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/18b4e78a5d0491eefd156e324967ea76.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/18b4e78a5d0491eefd156e324967ea76.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/18b4e78a5d0491eefd156e324967ea76.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/18b4e78a5d0491eefd156e324967ea76.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/18b4e78a5d0491eefd156e324967ea76.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/18b4e78a5d0491eefd156e324967ea76.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/18b4e78a5d0491eefd156e324967ea76.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/18b4e78a5d0491eefd156e324967ea76.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_mature": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "slug": "",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "premium_date": null,
+      "roles": [
+        "main"
+      ],
+      "series_slug_title": "gosick",
+      "streams_link": "/content/v2/cms/videos/GDVFV0WDQ/streams",
+      "next_episode_title": "A Divine Revelation is Given on the Solstice"
+    },
+    {
+      "series_slug_title": "gosick",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "season_sequence_number": 1,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "premium_date": null,
+      "availability_status": "available",
+      "season_title": "Gosick",
+      "eligible_region": "CA",
+      "next_episode_id": "GYZJX0DVR",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "slug_title": "a-divine-revelation-is-given-on-the-solstice",
+      "channel_id": "crunchyroll",
+      "roles": [
+        "main"
+      ],
+      "closed_captions_available": false,
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "sequence_number": 7,
+      "season_number": 1,
+      "audio_locale": "ja-JP",
+      "hd_flag": true,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "available_date": null,
+      "id": "GRP58JXQR",
+      "seo_title": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9ee687a7be5dc6b10db5cb3ad54c982a.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9ee687a7be5dc6b10db5cb3ad54c982a.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9ee687a7be5dc6b10db5cb3ad54c982a.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9ee687a7be5dc6b10db5cb3ad54c982a.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9ee687a7be5dc6b10db5cb3ad54c982a.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9ee687a7be5dc6b10db5cb3ad54c982a.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9ee687a7be5dc6b10db5cb3ad54c982a.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9ee687a7be5dc6b10db5cb3ad54c982a.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "listing_id": "",
+      "episode_number": 7,
+      "identifier": "GYG5GW91Y|S1|E7",
+      "season_id": "GR0X9KG9Y",
+      "production_episode_id": "",
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GGVF2PE35/streams",
+      "is_premium_only": true,
+      "is_dubbed": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "seo_description": "",
+      "title": "A Divine Revelation is Given on the Solstice",
+      "available_offline": true,
+      "is_subbed": true,
+      "slug": "",
+      "media_type": "episode",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRP58JXQR",
+          "is_premium_only": true,
+          "media_guid": "GGVF2PE35",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GK9U30WMD",
+          "is_premium_only": true,
+          "media_guid": "G3WFXD8WZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "duration_ms": 1488189,
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "episode": "7",
+      "recent_audio_locale": "ja-JP",
+      "description": "As Victorique attempts to clear her mother’s name and track down clues to the real murderer of the village elder, suspicious accidents begin to claim the lives of the other visitors.",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "season_slug_title": "gosick",
+      "mature_blocked": false,
+      "series_title": "Gosick",
+      "availability_notes": "",
+      "is_mature": false,
+      "next_episode_title": "Howls Echo in the Kingdom of the Past",
+      "series_id": "GYG5GW91Y",
+      "is_clip": false,
+      "season_display_number": ""
+    },
+    {
+      "roles": [
+        "main"
+      ],
+      "is_dubbed": true,
+      "season_number": 1,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "mature_blocked": false,
+      "upload_date": "2018-07-26T17:00:00Z",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "season_display_number": "",
+      "audio_locale": "ja-JP",
+      "available_offline": true,
+      "production_episode_id": "",
+      "seo_description": "",
+      "is_clip": false,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_mature": false,
+      "slug": "",
+      "episode": "8",
+      "sequence_number": 8,
+      "seo_title": "",
+      "availability_status": "available",
+      "next_episode_id": "G6W4E5XGR",
+      "series_title": "Gosick",
+      "channel_id": "crunchyroll",
+      "recent_variant": "",
+      "series_id": "GYG5GW91Y",
+      "hd_flag": true,
+      "listing_id": "",
+      "season_title": "Gosick",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "available_date": null,
+      "series_slug_title": "gosick",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "premium_date": null,
+      "season_sequence_number": 1,
+      "season_slug_title": "gosick",
+      "title": "Howls Echo in the Kingdom of the Past",
+      "is_subbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYZJX0DVR",
+          "is_premium_only": true,
+          "media_guid": "G9XFEVP14",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU051W7",
+          "is_premium_only": true,
+          "media_guid": "G25F0W94G",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "identifier": "GYG5GW91Y|S1|E8",
+      "description": "In true genius form, Victorique reveals the other visitors’ criminal intentions. Kujo aids Victorique in a ruse to draw a confession from the murderer of elder Theodore while the bond of Kujo’s and Victorique’s friendship is strengthened.",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "slug_title": "howls-echo-in-the-kingdom-of-the-past",
+      "streams_link": "/content/v2/cms/videos/G9XFEVP14/streams",
+      "closed_captions_available": false,
+      "episode_number": 8,
+      "id": "GYZJX0DVR",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c92b13812bb14a6602b15853a0f5395b.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c92b13812bb14a6602b15853a0f5395b.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c92b13812bb14a6602b15853a0f5395b.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c92b13812bb14a6602b15853a0f5395b.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c92b13812bb14a6602b15853a0f5395b.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c92b13812bb14a6602b15853a0f5395b.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c92b13812bb14a6602b15853a0f5395b.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c92b13812bb14a6602b15853a0f5395b.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "media_type": "episode",
+      "season_id": "GR0X9KG9Y",
+      "eligible_region": "CA",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "is_premium_only": true,
+      "duration_ms": 1488141,
+      "next_episode_title": "Blue Roses Bloom in the Man-Eating Department Store",
+      "availability_notes": ""
+    },
+    {
+      "audio_locale": "ja-JP",
+      "available_date": null,
+      "is_dubbed": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dcb0a2887fbb9333aac22a9377f76468.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/dcb0a2887fbb9333aac22a9377f76468.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/dcb0a2887fbb9333aac22a9377f76468.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/dcb0a2887fbb9333aac22a9377f76468.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/dcb0a2887fbb9333aac22a9377f76468.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/dcb0a2887fbb9333aac22a9377f76468.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/dcb0a2887fbb9333aac22a9377f76468.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/dcb0a2887fbb9333aac22a9377f76468.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "season_display_number": "",
+      "series_title": "Gosick",
+      "id": "G6W4E5XGR",
+      "is_premium_only": true,
+      "is_mature": false,
+      "media_type": "episode",
+      "closed_captions_available": false,
+      "slug": "",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "series_id": "GYG5GW91Y",
+      "description": "On a shopping trip to the capital, Kujo accidentally stumbles into an apparent criminal operation at the Jeantan department store that involves a terrified girl in the basement. But when he returns with Inspector Grevil, nothing is as he remembers it.",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6W4E5XGR",
+          "is_premium_only": true,
+          "media_guid": "GJKF2DX5M",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GPWUK4MVN",
+          "is_premium_only": true,
+          "media_guid": "GZ4FV89EQ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "series_slug_title": "gosick",
+      "availability_status": "available",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "availability_notes": "",
+      "premium_date": null,
+      "season_slug_title": "gosick",
+      "sequence_number": 9,
+      "hd_flag": true,
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GJKF2DX5M/streams",
+      "season_id": "GR0X9KG9Y",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "title": "Blue Roses Bloom in the Man-Eating Department Store",
+      "slug_title": "blue-roses-bloom-in-the-man-eating-department-store",
+      "listing_id": "",
+      "mature_blocked": false,
+      "upload_date": "2018-07-26T17:00:00Z",
+      "season_number": 1,
+      "identifier": "GYG5GW91Y|S1|E9",
+      "episode_number": 9,
+      "is_subbed": true,
+      "seo_description": "",
+      "season_sequence_number": 1,
+      "season_title": "Gosick",
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "is_clip": false,
+      "seo_title": "",
+      "duration_ms": 1486173,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "available_offline": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "episode": "9",
+      "next_episode_title": "The Cold-Catcher Dreams About a Stubborn Friend",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_tags": [
+        "Été-2018"
+      ],
+      "roles": [
+        "main"
+      ],
+      "next_episode_id": "GY795G21R"
+    },
+    {
+      "channel_id": "crunchyroll",
+      "availability_notes": "",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "listing_id": "",
+      "mature_blocked": false,
+      "series_title": "Gosick",
+      "season_number": 1,
+      "id": "GY795G21R",
+      "identifier": "GYG5GW91Y|S1|E10",
+      "season_slug_title": "gosick",
+      "available_offline": true,
+      "availability_status": "available",
+      "slug": "",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "recent_audio_locale": "ja-JP",
+      "is_clip": false,
+      "season_title": "Gosick",
+      "audio_locale": "ja-JP",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "eligible_region": "CA",
+      "next_episode_title": "His Drill Speaks Eloquently of Love",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_id": "GR0X9KG9Y",
+      "season_sequence_number": 1,
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "closed_captions_available": false,
+      "description": "Upon hearing the escaped girl’s story, Kujo, with the help of a clever street urchin, convinces the police of the criminal activity within the Jeantan department store. With the aid of Victorique’s insight, Kujo and the police uncover a terrible secret.",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "is_premium_only": true,
+      "title": "The Cold-Catcher Dreams About a Stubborn Friend",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "slug_title": "the-cold-catcher-dreams-about-a-stubborn-friend",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/65ddf58b3f534d73cbb4738e1e46348d.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/65ddf58b3f534d73cbb4738e1e46348d.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/65ddf58b3f534d73cbb4738e1e46348d.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/65ddf58b3f534d73cbb4738e1e46348d.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/65ddf58b3f534d73cbb4738e1e46348d.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/65ddf58b3f534d73cbb4738e1e46348d.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/65ddf58b3f534d73cbb4738e1e46348d.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/65ddf58b3f534d73cbb4738e1e46348d.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "streams_link": "/content/v2/cms/videos/GPPFK2517/streams",
+      "episode_number": 10,
+      "series_id": "GYG5GW91Y",
+      "production_episode_id": "",
+      "media_type": "episode",
+      "hd_flag": true,
+      "series_slug_title": "gosick",
+      "recent_variant": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_subbed": true,
+      "is_dubbed": true,
+      "available_date": null,
+      "premium_date": null,
+      "sequence_number": 10,
+      "next_episode_id": "G61X9D5V6",
+      "seo_title": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY795G21R",
+          "is_premium_only": true,
+          "media_guid": "GPPFK2517",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GZ7UV89EV",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ9GVZ",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_display_number": "",
+      "seo_description": "",
+      "duration_ms": 1487757,
+      "episode": "10",
+      "roles": [
+        "main"
+      ],
+      "is_mature": false
+    },
+    {
+      "is_clip": false,
+      "production_episode_id": "",
+      "series_slug_title": "gosick",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "content_descriptors": [
+        "Violence"
+      ],
+      "season_slug_title": "gosick",
+      "eligible_region": "CA",
+      "episode_number": 11,
+      "sequence_number": 11,
+      "listing_id": "",
+      "available_offline": true,
+      "roles": [
+        "main"
+      ],
+      "series_id": "GYG5GW91Y",
+      "hd_flag": true,
+      "season_id": "GR0X9KG9Y",
+      "media_type": "episode",
+      "available_date": null,
+      "closed_captions_available": false,
+      "channel_id": "crunchyroll",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9dd694b87f5a6ea018ca0396218dbcbd.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9dd694b87f5a6ea018ca0396218dbcbd.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9dd694b87f5a6ea018ca0396218dbcbd.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9dd694b87f5a6ea018ca0396218dbcbd.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9dd694b87f5a6ea018ca0396218dbcbd.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9dd694b87f5a6ea018ca0396218dbcbd.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9dd694b87f5a6ea018ca0396218dbcbd.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9dd694b87f5a6ea018ca0396218dbcbd.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_subbed": true,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_title": "Gosick",
+      "premium_date": null,
+      "slug_title": "his-drill-speaks-eloquently-of-love",
+      "season_sequence_number": 1,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "next_episode_id": "GYMEGX126",
+      "seo_title": "",
+      "duration_ms": 1488141,
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GDVFV0WPQ/streams",
+      "episode": "11",
+      "recent_audio_locale": "ja-JP",
+      "series_title": "Gosick",
+      "is_premium_only": true,
+      "id": "G61X9D5V6",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "identifier": "GYG5GW91Y|S1|E11",
+      "audio_locale": "ja-JP",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "availability_status": "available",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "mature_blocked": false,
+      "availability_notes": "",
+      "title": "His Drill Speaks Eloquently of Love",
+      "seo_description": "",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "season_number": 1,
+      "next_episode_title": "The Cicadas' Hum Rings Out on a Summer Afternoon",
+      "slug": "",
+      "is_mature": false,
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "description": "When the love of Inspector Grevil’s life, Jacqueline, visits the academy, Victorique tells a tale of the past in which she helped Grevil save Jacqueline from an accusation of murder—and demanded something from him in return.",
+      "is_dubbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G61X9D5V6",
+          "is_premium_only": true,
+          "media_guid": "GDVFV0WPQ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GD9UVJ73E",
+          "is_premium_only": true,
+          "media_guid": "GWMF8W0J7",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "season_display_number": ""
+    },
+    {
+      "streams_link": "/content/v2/cms/videos/GGVF2PEQ5/streams",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "closed_captions_available": false,
+      "episode": "12",
+      "series_slug_title": "gosick",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/390d2cc7665c030d407d171ea2e1c057.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/390d2cc7665c030d407d171ea2e1c057.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/390d2cc7665c030d407d171ea2e1c057.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/390d2cc7665c030d407d171ea2e1c057.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/390d2cc7665c030d407d171ea2e1c057.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/390d2cc7665c030d407d171ea2e1c057.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/390d2cc7665c030d407d171ea2e1c057.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/390d2cc7665c030d407d171ea2e1c057.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "upload_date": "2018-07-26T17:00:00Z",
+      "hd_flag": true,
+      "season_id": "GR0X9KG9Y",
+      "roles": [
+        "main"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_premium_only": true,
+      "eligible_region": "CA",
+      "id": "GYMEGX126",
+      "sequence_number": 12,
+      "season_sequence_number": 1,
+      "premium_date": null,
+      "availability_notes": "",
+      "seo_description": "",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "is_subbed": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYMEGX126",
+          "is_premium_only": true,
+          "media_guid": "GGVF2PEQ5",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GWDU8W0J4",
+          "is_premium_only": true,
+          "media_guid": "GEMFZ20D1",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "next_episode_id": "GY3KV3GXY",
+      "slug": "",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "available_date": null,
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "channel_id": "crunchyroll",
+      "title": "The Cicadas' Hum Rings Out on a Summer Afternoon",
+      "season_slug_title": "gosick",
+      "episode_number": 12,
+      "slug_title": "the-cicadas-hum-rings-out-on-a-summer-afternoon",
+      "duration_ms": 1487565,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "media_type": "episode",
+      "next_episode_title": "The Fool Names His Own Spokesman",
+      "availability_status": "available",
+      "available_offline": true,
+      "is_mature": false,
+      "is_dubbed": true,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "listing_id": "",
+      "audio_locale": "ja-JP",
+      "season_number": 1,
+      "season_display_number": "",
+      "seo_title": "",
+      "is_clip": false,
+      "description": "When Avril invites Kujo to spend summer vacation with her in the Mediterranean, he chooses instead to spend it with Victorique at the academy. While he climbs trees and dreams of his childhood, Victorique trades riddles with Kujo’s bright brother.",
+      "season_title": "Gosick",
+      "recent_audio_locale": "ja-JP",
+      "recent_variant": "",
+      "series_id": "GYG5GW91Y",
+      "identifier": "GYG5GW91Y|S1|E12",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "series_title": "Gosick",
+      "mature_blocked": false
+    },
+    {
+      "seo_title": "",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "is_clip": false,
+      "production_episode_id": "",
+      "season_slug_title": "gosick",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GY3KV3GXY",
+          "is_premium_only": true,
+          "media_guid": "G9XFEVPQ4",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GG1U2Q1N7",
+          "is_premium_only": true,
+          "media_guid": "G71F4Z81K",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "is_subbed": true,
+      "next_episode_id": "G624PVW7Y",
+      "episode": "13",
+      "channel_id": "crunchyroll",
+      "is_mature": false,
+      "hd_flag": true,
+      "eligible_region": "CA",
+      "season_sequence_number": 1,
+      "slug": "",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "series_slug_title": "gosick",
+      "listing_id": "",
+      "availability_notes": "",
+      "slug_title": "the-fool-names-his-own-spokesman",
+      "audio_locale": "ja-JP",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "series_id": "GYG5GW91Y",
+      "title": "The Fool Names His Own Spokesman",
+      "series_title": "Gosick",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e4e3a0f5838cb41c1b5561ced72adc3c.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/e4e3a0f5838cb41c1b5561ced72adc3c.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/e4e3a0f5838cb41c1b5561ced72adc3c.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/e4e3a0f5838cb41c1b5561ced72adc3c.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e4e3a0f5838cb41c1b5561ced72adc3c.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/e4e3a0f5838cb41c1b5561ced72adc3c.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/e4e3a0f5838cb41c1b5561ced72adc3c.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/e4e3a0f5838cb41c1b5561ced72adc3c.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "closed_captions_available": false,
+      "recent_audio_locale": "ja-JP",
+      "streams_link": "/content/v2/cms/videos/G9XFEVPQ4/streams",
+      "next_episode_title": "The Ill-Tempered Frill Condemns the Farting Newt",
+      "mature_blocked": false,
+      "season_display_number": "",
+      "available_date": null,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "available_offline": true,
+      "media_type": "episode",
+      "season_id": "GR0X9KG9Y",
+      "identifier": "GYG5GW91Y|S1|E13",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "is_premium_only": true,
+      "sequence_number": 13,
+      "id": "GY3KV3GXY",
+      "availability_status": "available",
+      "description": "Avril leads Kujo into a forbidden clock tower and tells him the ghost story of the alchemist who is said to haunt it. Later, Kujo follows a stranger into the clock tower and witnesses his mysterious death.",
+      "seo_description": "",
+      "recent_variant": "",
+      "season_number": 1,
+      "is_dubbed": true,
+      "roles": [
+        "main"
+      ],
+      "episode_number": 13,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "duration_ms": 1469157,
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_title": "Gosick",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "premium_date": null
+    },
+    {
+      "season_number": 1,
+      "is_clip": false,
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "is_mature": false,
+      "season_display_number": "",
+      "seo_title": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "slug": "",
+      "closed_captions_available": false,
+      "availability_notes": "",
+      "production_episode_id": "",
+      "hd_flag": true,
+      "is_dubbed": true,
+      "next_episode_id": "G6ZJX0QVY",
+      "title": "The Ill-Tempered Frill Condemns the Farting Newt",
+      "season_title": "Gosick",
+      "is_premium_only": true,
+      "id": "G624PVW7Y",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "recent_variant": "",
+      "duration_ms": 1468965,
+      "listing_id": "",
+      "sequence_number": 14,
+      "premium_date": null,
+      "episode": "14",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "streams_link": "/content/v2/cms/videos/GJKF2DXGM/streams",
+      "audio_locale": "ja-JP",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "available_date": null,
+      "mature_blocked": false,
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "slug_title": "the-ill-tempered-frill-condemns-the-farting-newt",
+      "series_slug_title": "gosick",
+      "media_type": "episode",
+      "series_title": "Gosick",
+      "description": "Ms. Cecil coaxes Victorique into the classroom to meet her peers where she has an altercation with Avril. Together—but not without friction—Victorique, Avril, and Kujo dive deeper into the mystery of the deaths in the alchemist’s tower.",
+      "channel_id": "crunchyroll",
+      "roles": [
+        "main"
+      ],
+      "recent_audio_locale": "ja-JP",
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G624PVW7Y",
+          "is_premium_only": true,
+          "media_guid": "GJKF2DXGM",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G0DUN1ZK3",
+          "is_premium_only": true,
+          "media_guid": "G9XFEQ4MX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "series_id": "GYG5GW91Y",
+      "episode_number": 14,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/84c181346778cd9f2000a404217d99f4.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/84c181346778cd9f2000a404217d99f4.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/84c181346778cd9f2000a404217d99f4.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/84c181346778cd9f2000a404217d99f4.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/84c181346778cd9f2000a404217d99f4.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/84c181346778cd9f2000a404217d99f4.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/84c181346778cd9f2000a404217d99f4.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/84c181346778cd9f2000a404217d99f4.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "identifier": "GYG5GW91Y|S1|E14",
+      "next_episode_title": "The Two Monsters Form a Bond",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "availability_status": "available",
+      "is_subbed": true,
+      "season_id": "GR0X9KG9Y",
+      "season_slug_title": "gosick",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "upload_date": "2018-07-26T17:00:00Z",
+      "available_offline": true,
+      "eligible_region": "CA",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "season_sequence_number": 1
+    },
+    {
+      "content_descriptors": [
+        "Violence"
+      ],
+      "season_title": "Gosick",
+      "mature_blocked": false,
+      "season_sequence_number": 1,
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "audio_locale": "ja-JP",
+      "media_type": "episode",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_mature": false,
+      "sequence_number": 15,
+      "listing_id": "",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "season_slug_title": "gosick",
+      "slug": "",
+      "series_title": "Gosick",
+      "available_date": null,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/796adb14b010aab355caca8e0bc2e618.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/796adb14b010aab355caca8e0bc2e618.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/796adb14b010aab355caca8e0bc2e618.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/796adb14b010aab355caca8e0bc2e618.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/796adb14b010aab355caca8e0bc2e618.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/796adb14b010aab355caca8e0bc2e618.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/796adb14b010aab355caca8e0bc2e618.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/796adb14b010aab355caca8e0bc2e618.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_clip": false,
+      "series_id": "GYG5GW91Y",
+      "is_subbed": true,
+      "title": "The Two Monsters Form a Bond",
+      "next_episode_id": "GYQW4NM1Y",
+      "identifier": "GYG5GW91Y|S1|E15",
+      "roles": [
+        "main"
+      ],
+      "episode_number": 15,
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "availability_status": "available",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "duration_ms": 1469157,
+      "next_episode_title": "The Fly-Headed Mary Caused the Fall",
+      "series_slug_title": "gosick",
+      "seo_title": "",
+      "hd_flag": true,
+      "streams_link": "/content/v2/cms/videos/GVMF0GZ5Q/streams",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "season_tags": [
+        "Été-2018"
+      ],
+      "id": "G6ZJX0QVY",
+      "closed_captions_available": false,
+      "upload_date": "2018-07-26T17:00:00Z",
+      "episode": "15",
+      "premium_date": null,
+      "is_dubbed": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6ZJX0QVY",
+          "is_premium_only": true,
+          "media_guid": "GVMF0GZ5Q",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GEVUZ20D8",
+          "is_premium_only": true,
+          "media_guid": "GXMFQG2WK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "recent_audio_locale": "ja-JP",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "seo_description": "",
+      "availability_notes": "",
+      "is_premium_only": true,
+      "season_display_number": "",
+      "slug_title": "the-two-monsters-form-a-bond",
+      "channel_id": "crunchyroll",
+      "description": "Kujo has an unsettling encounter with an associate of Victorique’s mother. Later, Victorique ushers everyone inside the tower to unravel the murders and mystery of the missing alchemist.",
+      "season_number": 1,
+      "recent_variant": "",
+      "available_offline": true,
+      "season_id": "GR0X9KG9Y",
+      "production_episode_id": ""
+    },
+    {
+      "audio_locale": "ja-JP",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f3a40eb1e180aef8195e7dfbf107fe77.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f3a40eb1e180aef8195e7dfbf107fe77.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f3a40eb1e180aef8195e7dfbf107fe77.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f3a40eb1e180aef8195e7dfbf107fe77.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f3a40eb1e180aef8195e7dfbf107fe77.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f3a40eb1e180aef8195e7dfbf107fe77.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f3a40eb1e180aef8195e7dfbf107fe77.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f3a40eb1e180aef8195e7dfbf107fe77.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_dubbed": true,
+      "recent_variant": "",
+      "media_type": "episode",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYQW4NM1Y",
+          "is_premium_only": true,
+          "media_guid": "G8MFNQW8M",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G7PU4Z81V",
+          "is_premium_only": true,
+          "media_guid": "G4GFQJDVX",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "identifier": "GYG5GW91Y|S1|E16",
+      "series_id": "GYG5GW91Y",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "season_slug_title": "gosick",
+      "premium_date": null,
+      "seo_title": "",
+      "recent_audio_locale": "ja-JP",
+      "episode_number": 16,
+      "season_sequence_number": 1,
+      "availability_status": "available",
+      "available_date": null,
+      "season_number": 1,
+      "is_premium_only": true,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "next_episode_id": "GRW4E50GY",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "roles": [
+        "main"
+      ],
+      "listing_id": "",
+      "series_title": "Gosick",
+      "hd_flag": true,
+      "is_clip": false,
+      "availability_notes": "",
+      "next_episode_title": "The Box Rests in the Spiral Labyrinth",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "title": "The Fly-Headed Mary Caused the Fall",
+      "slug": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "season_title": "Gosick",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "eligible_region": "CA",
+      "production_episode_id": "",
+      "available_offline": true,
+      "is_subbed": true,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "closed_captions_available": false,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "series_slug_title": "gosick",
+      "episode": "16",
+      "mature_blocked": false,
+      "season_id": "GR0X9KG9Y",
+      "season_display_number": "",
+      "streams_link": "/content/v2/cms/videos/G8MFNQW8M/streams",
+      "sequence_number": 16,
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "channel_id": "crunchyroll",
+      "seo_description": "",
+      "duration_ms": 1469037,
+      "is_mature": false,
+      "slug_title": "the-fly-headed-mary-caused-the-fall",
+      "description": "Kujo is shocked to discover that the Marquis has moved his daughter, Victorique, to a convent in Lithuania. With the inspector’s assistance, Kujo travels there to rescue her when he learns of an unusual performance and a bigger political plot.",
+      "id": "GYQW4NM1Y"
+    },
+    {
+      "streams_link": "/content/v2/cms/videos/G5JFZ3490/streams",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "duration_ms": 1468917,
+      "next_episode_title": "The Obsidian Train Carries Numerous Lies",
+      "media_type": "episode",
+      "season_slug_title": "gosick",
+      "closed_captions_available": false,
+      "production_episode_id": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "next_episode_id": "G60X9KM9R",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_slug_title": "gosick",
+      "is_mature": false,
+      "id": "GRW4E50GY",
+      "mature_blocked": false,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "channel_id": "crunchyroll",
+      "is_clip": false,
+      "slug": "",
+      "season_id": "GR0X9KG9Y",
+      "seo_title": "",
+      "is_subbed": true,
+      "is_premium_only": true,
+      "series_id": "GYG5GW91Y",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "title": "The Box Rests in the Spiral Labyrinth",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "available_date": null,
+      "audio_locale": "ja-JP",
+      "season_display_number": "",
+      "season_number": 1,
+      "slug_title": "the-box-rests-in-the-spiral-labyrinth",
+      "availability_status": "available",
+      "is_dubbed": true,
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "listing_id": "",
+      "episode": "17",
+      "premium_date": null,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "series_title": "Gosick",
+      "hd_flag": true,
+      "seo_description": "",
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GRW4E50GY",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ3490",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G9DUEQ4M7",
+          "is_premium_only": true,
+          "media_guid": "G1QF40512",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "season_sequence_number": 1,
+      "season_title": "Gosick",
+      "identifier": "GYG5GW91Y|S1|E17",
+      "sequence_number": 17,
+      "recent_audio_locale": "ja-JP",
+      "available_offline": true,
+      "availability_notes": "",
+      "description": "Two people are murdered in the midst of an illusionist performance. Cordelia, Victorique’s mother, gives Kujo a keepsake and a riddle for her daughter to solve. And Kujo confronts the Marquis, Victorique’s father.",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8d900bcb824a269a638ebfac1bc80677.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8d900bcb824a269a638ebfac1bc80677.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8d900bcb824a269a638ebfac1bc80677.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8d900bcb824a269a638ebfac1bc80677.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8d900bcb824a269a638ebfac1bc80677.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8d900bcb824a269a638ebfac1bc80677.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8d900bcb824a269a638ebfac1bc80677.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8d900bcb824a269a638ebfac1bc80677.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "roles": [
+        "main"
+      ],
+      "episode_number": 17
+    },
+    {
+      "seo_title": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G60X9KM9R",
+          "is_premium_only": true,
+          "media_guid": "GEMFZVGMZ",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GX9UQG2WP",
+          "is_premium_only": true,
+          "media_guid": "GJKF2GK05",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "availability_status": "available",
+      "available_offline": true,
+      "recent_variant": "",
+      "is_clip": false,
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "streams_link": "/content/v2/cms/videos/GEMFZVGMZ/streams",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "next_episode_id": "G6795GM1Y",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "season_id": "GR0X9KG9Y",
+      "seo_description": "",
+      "media_type": "episode",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "id": "G60X9KM9R",
+      "sequence_number": 18,
+      "episode": "18",
+      "production_episode_id": "",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_display_number": "",
+      "is_mature": false,
+      "season_title": "Gosick",
+      "is_dubbed": true,
+      "is_premium_only": true,
+      "slug_title": "the-obsidian-train-carries-numerous-lies",
+      "available_date": null,
+      "mature_blocked": false,
+      "availability_notes": "",
+      "identifier": "GYG5GW91Y|S1|E18",
+      "channel_id": "crunchyroll",
+      "eligible_region": "CA",
+      "title": "The Obsidian Train Carries Numerous Lies",
+      "episode_number": 18,
+      "upload_date": "2018-07-26T17:00:00Z",
+      "is_subbed": true,
+      "season_sequence_number": 1,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "series_title": "Gosick",
+      "next_episode_title": "The Rosy Life is Buried Under a New Snow",
+      "duration_ms": 1469109,
+      "listing_id": "",
+      "season_number": 1,
+      "premium_date": null,
+      "season_slug_title": "gosick",
+      "description": "Victorique and Kujo find themselves in the middle of a bloody feud between the Ministry of the Occult and the Royal Science Academy of Saubure. In a train headed toward disaster, how will the friends save themselves and everyone aboard?",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/eb5e76353302df32c54187bc72ce86ca.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/eb5e76353302df32c54187bc72ce86ca.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/eb5e76353302df32c54187bc72ce86ca.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/eb5e76353302df32c54187bc72ce86ca.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/eb5e76353302df32c54187bc72ce86ca.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/eb5e76353302df32c54187bc72ce86ca.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/eb5e76353302df32c54187bc72ce86ca.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/eb5e76353302df32c54187bc72ce86ca.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "roles": [
+        "main"
+      ],
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "series_id": "GYG5GW91Y",
+      "closed_captions_available": false,
+      "audio_locale": "ja-JP",
+      "slug": "",
+      "series_slug_title": "gosick",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "hd_flag": true,
+      "recent_audio_locale": "ja-JP"
+    },
+    {
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "next_episode_title": "Guided by the Phantom of the Phantom",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "duration_ms": 1469109,
+      "is_clip": false,
+      "description": "The Marquis arranges for a performance of the Blue Rose of Saubreme to draw out Cordelia. While Cordelia recollects her past, Victorique is summoned by the Marquis to solve the unsolved mystery behind Coco Rose, the Queen of Saubure.",
+      "seo_description": "",
+      "season_slug_title": "gosick",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "hd_flag": true,
+      "roles": [
+        "main"
+      ],
+      "available_date": null,
+      "listing_id": "",
+      "eligible_region": "CA",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "season_sequence_number": 1,
+      "recent_audio_locale": "ja-JP",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "slug": "",
+      "season_number": 1,
+      "season_title": "Gosick",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "is_premium_only": true,
+      "upload_date": "2018-07-26T17:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "closed_captions_available": false,
+      "identifier": "GYG5GW91Y|S1|E19",
+      "series_slug_title": "gosick",
+      "streams_link": "/content/v2/cms/videos/G4GFQ4X9G/streams",
+      "media_type": "episode",
+      "episode": "19",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6795GM1Y",
+          "is_premium_only": true,
+          "media_guid": "G4GFQ4X9G",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G4VUQJDVJ",
+          "is_premium_only": true,
+          "media_guid": "GNJFD9019",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "mature_blocked": false,
+      "series_id": "GYG5GW91Y",
+      "production_episode_id": "",
+      "audio_locale": "ja-JP",
+      "title": "The Rosy Life is Buried Under a New Snow",
+      "seo_title": "",
+      "slug_title": "the-rosy-life-is-buried-under-a-new-snow",
+      "available_offline": true,
+      "season_id": "GR0X9KG9Y",
+      "availability_status": "available",
+      "series_title": "Gosick",
+      "episode_number": 19,
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "sequence_number": 19,
+      "next_episode_id": "GYXJ0WE36",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/efd822c54b658c3911120dc8b50b1471.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/efd822c54b658c3911120dc8b50b1471.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/efd822c54b658c3911120dc8b50b1471.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/efd822c54b658c3911120dc8b50b1471.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/efd822c54b658c3911120dc8b50b1471.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/efd822c54b658c3911120dc8b50b1471.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/efd822c54b658c3911120dc8b50b1471.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/efd822c54b658c3911120dc8b50b1471.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "id": "G6795GM1Y",
+      "season_display_number": "",
+      "recent_variant": "",
+      "channel_id": "crunchyroll",
+      "is_mature": false,
+      "is_subbed": true,
+      "premium_date": null,
+      "is_dubbed": true
+    },
+    {
+      "seo_title": "",
+      "audio_locale": "ja-JP",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "hd_flag": true,
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "media_type": "episode",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "available_offline": true,
+      "season_display_number": "",
+      "id": "GYXJ0WE36",
+      "sequence_number": 20,
+      "season_slug_title": "gosick",
+      "season_number": 1,
+      "slug_title": "guided-by-the-phantom-of-the-phantom",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYXJ0WE36",
+          "is_premium_only": true,
+          "media_guid": "GKKF3P4J4",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GJWU2GK0Z",
+          "is_premium_only": true,
+          "media_guid": "GM8FX70PK",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "is_premium_only": true,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "production_episode_id": "",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_sequence_number": 1,
+      "available_date": null,
+      "next_episode_id": "GR1X9DVVR",
+      "slug": "",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "series_id": "GYG5GW91Y",
+      "premium_date": null,
+      "recent_variant": "",
+      "episode_number": 20,
+      "roles": [
+        "main"
+      ],
+      "series_slug_title": "gosick",
+      "recent_audio_locale": "ja-JP",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6c1a1f22a4397cd6879f9a85d440b8df.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6c1a1f22a4397cd6879f9a85d440b8df.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6c1a1f22a4397cd6879f9a85d440b8df.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6c1a1f22a4397cd6879f9a85d440b8df.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6c1a1f22a4397cd6879f9a85d440b8df.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6c1a1f22a4397cd6879f9a85d440b8df.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6c1a1f22a4397cd6879f9a85d440b8df.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6c1a1f22a4397cd6879f9a85d440b8df.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "streams_link": "/content/v2/cms/videos/GKKF3P4J4/streams",
+      "is_clip": false,
+      "episode": "20",
+      "is_subbed": true,
+      "channel_id": "crunchyroll",
+      "next_episode_title": "The Holy Night Bell Drives the Hour Onward",
+      "is_dubbed": true,
+      "is_mature": false,
+      "identifier": "GYG5GW91Y|S1|E20",
+      "availability_status": "available",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "listing_id": "",
+      "title": "Guided by the Phantom of the Phantom",
+      "season_id": "GR0X9KG9Y",
+      "season_title": "Gosick",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_title": "Gosick",
+      "description": "As Victorique is escorted into a room below the theater filled with old articles and clippings, the Marquis demands she solve the unsolved murder of Coco Rose, the Queen. Kujo aids her by independently rounding up clues around a missing dancer.",
+      "availability_notes": "",
+      "eligible_region": "CA",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "mature_blocked": false,
+      "duration_ms": 1469421,
+      "closed_captions_available": false,
+      "seo_description": ""
+    },
+    {
+      "hd_flag": true,
+      "season_tags": [
+        "Été-2018"
+      ],
+      "season_display_number": "",
+      "available_date": null,
+      "description": "Armed with knowledge gained from Nicole Lulu’s grave and watching the play from a box seat, Victorique reveals how the Queen’s death was executed and covered up. But does Victorique know more than she tells Grevil?",
+      "mature_blocked": false,
+      "slug_title": "the-holy-night-bell-drives-the-hour-onward",
+      "streams_link": "/content/v2/cms/videos/GPPFK2577/streams",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "premium_date": null,
+      "season_slug_title": "gosick",
+      "recent_variant": "",
+      "listing_id": "",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "slug": "",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "audio_locale": "ja-JP",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "series_title": "Gosick",
+      "sequence_number": 21,
+      "series_slug_title": "gosick",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_sequence_number": 1,
+      "recent_audio_locale": "ja-JP",
+      "is_clip": false,
+      "season_id": "GR0X9KG9Y",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_notes": "",
+      "seo_description": "",
+      "series_id": "GYG5GW91Y",
+      "id": "GR1X9DVVR",
+      "next_episode_title": "A Christmas Carol Hangs Happiness by the Window",
+      "season_number": 1,
+      "availability_status": "available",
+      "eligible_region": "CA",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GR1X9DVVR",
+          "is_premium_only": true,
+          "media_guid": "GPPFK2577",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GN7UD9014",
+          "is_premium_only": true,
+          "media_guid": "GVMF05179",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "channel_id": "crunchyroll",
+      "is_premium_only": true,
+      "available_offline": true,
+      "closed_captions_available": false,
+      "identifier": "GYG5GW91Y|S1|E21",
+      "title": "The Holy Night Bell Drives the Hour Onward",
+      "roles": [
+        "main"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/82b825733d977d809e3224f64e9a1e67.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/82b825733d977d809e3224f64e9a1e67.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/82b825733d977d809e3224f64e9a1e67.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/82b825733d977d809e3224f64e9a1e67.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/82b825733d977d809e3224f64e9a1e67.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/82b825733d977d809e3224f64e9a1e67.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/82b825733d977d809e3224f64e9a1e67.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/82b825733d977d809e3224f64e9a1e67.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "seo_title": "",
+      "is_subbed": true,
+      "is_mature": false,
+      "production_episode_id": "",
+      "episode_number": 21,
+      "season_title": "Gosick",
+      "is_dubbed": true,
+      "next_episode_id": "GYNVQD83R",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "episode": "21",
+      "duration_ms": 1469589
+    },
+    {
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "available_date": null,
+      "recent_variant": "",
+      "episode": "22",
+      "next_episode_title": "Checkmate is Called on a Gray Chess Board",
+      "slug": "",
+      "recent_audio_locale": "ja-JP",
+      "availability_notes": "",
+      "mature_blocked": false,
+      "identifier": "GYG5GW91Y|S1|E22",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a474e29635ee1224de5d3d3215c63684.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/a474e29635ee1224de5d3d3215c63684.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/a474e29635ee1224de5d3d3215c63684.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/a474e29635ee1224de5d3d3215c63684.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a474e29635ee1224de5d3d3215c63684.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/a474e29635ee1224de5d3d3215c63684.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/a474e29635ee1224de5d3d3215c63684.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/a474e29635ee1224de5d3d3215c63684.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "series_slug_title": "gosick",
+      "series_title": "Gosick",
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "sequence_number": 22,
+      "season_slug_title": "gosick",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "season_display_number": "",
+      "availability_status": "available",
+      "premium_date": null,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "is_dubbed": true,
+      "roles": [
+        "main"
+      ],
+      "media_type": "episode",
+      "series_id": "GYG5GW91Y",
+      "streams_link": "/content/v2/cms/videos/G8MFNQWXM/streams",
+      "season_sequence_number": 1,
+      "slug_title": "a-christmas-carol-hangs-happiness-by-the-window",
+      "next_episode_id": "G6MEGXV2R",
+      "episode_number": 22,
+      "seo_title": "",
+      "eligible_region": "CA",
+      "closed_captions_available": false,
+      "upload_date": "2018-07-26T17:00:00Z",
+      "is_subbed": true,
+      "description": "After Kujo receives a Christmas gift from Victorique, soldiers seize him—intent on removing him, along with all foreigners, from the country under the king’s orders. When Kujo escapes, is it only to flee into the clutches of a more devious faction?",
+      "season_number": 1,
+      "available_offline": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "id": "GYNVQD83R",
+      "season_title": "Gosick",
+      "production_episode_id": "",
+      "listing_id": "",
+      "is_premium_only": true,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "title": "A Christmas Carol Hangs Happiness by the Window",
+      "audio_locale": "ja-JP",
+      "seo_description": "",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "season_id": "GR0X9KG9Y",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GYNVQD83R",
+          "is_premium_only": true,
+          "media_guid": "G8MFNQWXM",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GVWU05177",
+          "is_premium_only": true,
+          "media_guid": "G25F0W9GG",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "duration_ms": 1469661,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "is_mature": false,
+      "is_clip": false
+    },
+    {
+      "season_id": "GR0X9KG9Y",
+      "availability_status": "available",
+      "availability_notes": "",
+      "season_sequence_number": 1,
+      "duration_ms": 1469085,
+      "slug": "",
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "title": "Checkmate is Called on a Gray Chess Board",
+      "available_date": null,
+      "episode_number": 23,
+      "is_subbed": true,
+      "next_episode_id": "G63KV3DX6",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "slug_title": "checkmate-is-called-on-a-gray-chess-board",
+      "recent_audio_locale": "ja-JP",
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "eligible_region": "CA",
+      "sequence_number": 23,
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_id": "GYG5GW91Y",
+      "available_offline": true,
+      "season_title": "Gosick",
+      "hd_flag": true,
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "description": "After exposing the Minister of Science and his secret plans, the Marquis rises to power and pushes Saubure toward a military alliance with Germany. But Victorique’s mother, Cordelia, has other plans.",
+      "season_display_number": "",
+      "streams_link": "/content/v2/cms/videos/G5JFZ34P0/streams",
+      "season_tags": [
+        "Été-2018"
+      ],
+      "media_type": "episode",
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "season_number": 1,
+      "is_dubbed": true,
+      "episode": "23",
+      "is_clip": false,
+      "channel_id": "crunchyroll",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "upload_date": "2018-07-26T17:00:00Z",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G6MEGXV2R",
+          "is_premium_only": true,
+          "media_guid": "G5JFZ34P0",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "G8WUN85JP",
+          "is_premium_only": true,
+          "media_guid": "GQ9FG1W5Z",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "id": "G6MEGXV2R",
+      "series_slug_title": "gosick",
+      "seo_description": "",
+      "is_mature": false,
+      "mature_blocked": false,
+      "roles": [
+        "main"
+      ],
+      "recent_variant": "",
+      "series_title": "Gosick",
+      "closed_captions_available": false,
+      "audio_locale": "ja-JP",
+      "is_premium_only": true,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dcbbdebb96e1f8643cdab23a53988358.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/dcbbdebb96e1f8643cdab23a53988358.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/dcbbdebb96e1f8643cdab23a53988358.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/dcbbdebb96e1f8643cdab23a53988358.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/dcbbdebb96e1f8643cdab23a53988358.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/dcbbdebb96e1f8643cdab23a53988358.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/dcbbdebb96e1f8643cdab23a53988358.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/dcbbdebb96e1f8643cdab23a53988358.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "seo_title": "",
+      "premium_date": null,
+      "production_episode_id": "",
+      "listing_id": "",
+      "identifier": "GYG5GW91Y|S1|E23",
+      "season_slug_title": "gosick",
+      "next_episode_title": "Eternity is Seen Over the Reaper's Shoulder"
+    },
+    {
+      "sequence_number": 24,
+      "seo_title": "",
+      "season_sequence_number": 1,
+      "series_id": "GYG5GW91Y",
+      "eligible_region": "CA",
+      "premium_available_date": "2018-07-27T00:00:00Z",
+      "is_premium_only": true,
+      "subtitle_locales": [
+        "en-US",
+        "es-419",
+        "pt-BR"
+      ],
+      "identifier": "GYG5GW91Y|S1|E24",
+      "recent_variant": "",
+      "closed_captions_available": false,
+      "media_type": "episode",
+      "streams_link": "/content/v2/cms/videos/GEMFZVG9Z/streams",
+      "seo_description": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1dfc6a909113fd1452aaf12b71638c3e.jpg",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1dfc6a909113fd1452aaf12b71638c3e.jpg",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1dfc6a909113fd1452aaf12b71638c3e.jpg",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1dfc6a909113fd1452aaf12b71638c3e.jpg",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1dfc6a909113fd1452aaf12b71638c3e.jpg",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1dfc6a909113fd1452aaf12b71638c3e.jpg",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1dfc6a909113fd1452aaf12b71638c3e.jpg",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1dfc6a909113fd1452aaf12b71638c3e.jpg",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "title": "Eternity is Seen Over the Reaper's Shoulder",
+      "series_title": "Gosick",
+      "is_dubbed": true,
+      "slug": "",
+      "production_episode_id": "",
+      "hd_flag": true,
+      "season_number": 1,
+      "season_display_number": "",
+      "availability_notes": "",
+      "recent_audio_locale": "ja-JP",
+      "is_subbed": true,
+      "episode_number": 24,
+      "description": "With the help of Brian Roscoe, Victorique evades her pursuers and escapes Saubure. As war breaks out, Kujo joins the Japanese army. Letter after letter, he writes to Victorique. Will they be reunited in the end?",
+      "upload_date": "2018-07-26T17:00:00Z",
+      "channel_id": "crunchyroll",
+      "episode_air_date": "2018-07-26T17:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_tags": [
+        "Été-2018"
+      ],
+      "audio_locale": "ja-JP",
+      "roles": [
+        "main"
+      ],
+      "season_id": "GR0X9KG9Y",
+      "season_slug_title": "gosick",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_starts": "2018-07-27T00:00:00Z",
+      "free_available_date": "2018-07-27T00:00:00Z",
+      "premium_date": null,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G63KV3DX6",
+          "is_premium_only": true,
+          "media_guid": "GEMFZVG9Z",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GR0X9KG9Y",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GD9UVJ7ME",
+          "is_premium_only": true,
+          "media_guid": "GWMF8W027",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GR75CDV0K",
+          "variant": ""
+        }
+      ],
+      "available_offline": true,
+      "duration_ms": 1454949,
+      "is_clip": false,
+      "is_mature": false,
+      "availability_ends": "9998-11-30T08:00:00Z",
+      "season_title": "Gosick",
+      "listing_id": "",
+      "available_date": null,
+      "episode": "24",
+      "availability_status": "available",
+      "id": "G63KV3DX6",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "mature_blocked": false,
+      "slug_title": "eternity-is-seen-over-the-reapers-shoulder",
+      "series_slug_title": "gosick"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

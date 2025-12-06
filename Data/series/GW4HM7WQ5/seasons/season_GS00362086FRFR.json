@@ -1,0 +1,2505 @@
+{
+  "total": 11,
+  "data": [
+    {
+      "production_episode_id": "",
+      "sequence_number": 1,
+      "id": "GE00362087FRFR",
+      "is_dubbed": true,
+      "series_id": "GW4HM7WQ5",
+      "channel_id": "crunchyroll",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "identifier": "GW4HM7WQ5|S00362086|E1",
+      "available_date": null,
+      "slug": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ef0aca73f1ceb69d447e5bd0c4f6a851.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/ef0aca73f1ceb69d447e5bd0c4f6a851.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/ef0aca73f1ceb69d447e5bd0c4f6a851.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/ef0aca73f1ceb69d447e5bd0c4f6a851.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ef0aca73f1ceb69d447e5bd0c4f6a851.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/ef0aca73f1ceb69d447e5bd0c4f6a851.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/ef0aca73f1ceb69d447e5bd0c4f6a851.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/ef0aca73f1ceb69d447e5bd0c4f6a851.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "availability_starts": "2025-10-03T17:00:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "episode": "1",
+      "mature_blocked": false,
+      "roles": [
+        "dub"
+      ],
+      "availability_notes": "",
+      "episode_number": 1,
+      "season_slug_title": "season-1",
+      "slug_title": "may-i-kindly-beat-the-tar-out-of-those-evil-nobles-pigs",
+      "availability_status": "available",
+      "streams_link": "/content/v2/cms/videos/GE00362087FRFRV/streams",
+      "is_mature": false,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "seo_title": "",
+      "premium_date": null,
+      "series_title": "May I Ask for One Final Thing?",
+      "upload_date": "2025-10-03T00:00:00Z",
+      "seo_description": "",
+      "media_type": "episode",
+      "season_sequence_number": 1,
+      "description": "Libérée de son rôle de parfaite fiancée, Scarlet peut désormais cogner tout ce qui bouge.",
+      "season_id": "GS00362086FRFR",
+      "season_display_number": "",
+      "versions": [
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362087DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362087DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362087ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362087ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362087ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362087ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362087FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362087FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362087HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362087HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362087JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362087JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362087PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362087PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        }
+      ],
+      "next_episode_title": "L’art de jouer du poing, la quintessence de l’élégance féminine ?",
+      "listing_id": "",
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "recent_variant": "",
+      "premium_available_date": "2025-10-03T17:00:00Z",
+      "closed_captions_available": false,
+      "episode_air_date": "2025-10-03T00:00:00Z",
+      "duration_ms": 1420046,
+      "is_clip": false,
+      "eligible_region": "CA",
+      "hd_flag": true,
+      "season_number": 1,
+      "is_premium_only": true,
+      "title": "Tabasser des noblions (ces fumiers) pour avoir l’esprit plus léger ?",
+      "audio_locale": "fr-FR",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_subbed": true,
+      "available_offline": true,
+      "season_title": "Princesse Puncheuse",
+      "recent_audio_locale": "fr-FR",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "next_episode_id": "GE00362089FRFR"
+    },
+    {
+      "season_slug_title": "season-1",
+      "availability_notes": "",
+      "availability_status": "available",
+      "channel_id": "crunchyroll",
+      "episode_number": 2,
+      "next_episode_title": "Parlementer patiemment ou cogner de l’aristocrate éhontément ?",
+      "media_type": "episode",
+      "is_mature": false,
+      "episode_air_date": "2025-10-03T00:00:00Z",
+      "episode": "2",
+      "versions": [
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362089DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362089DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362089ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362089ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362089FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362089FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362089HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362089HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362089JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362089JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362089PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362089PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362089ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362089ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        }
+      ],
+      "seo_description": "",
+      "recent_audio_locale": "fr-FR",
+      "streams_link": "/content/v2/cms/videos/GE00362089FRFRV/streams",
+      "premium_available_date": "2025-10-03T17:00:00Z",
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "premium_date": null,
+      "production_episode_id": "",
+      "id": "GE00362089FRFR",
+      "season_number": 1,
+      "upload_date": "2025-10-03T00:00:00Z",
+      "is_dubbed": true,
+      "closed_captions_available": false,
+      "eligible_region": "CA",
+      "season_sequence_number": 1,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_premium_only": true,
+      "identifier": "GW4HM7WQ5|S00362086|E2",
+      "sequence_number": 2,
+      "availability_starts": "2025-10-03T17:00:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "listing_id": "",
+      "description": "La réputation de Scarlet dépasse désormais les murs du palais, ce qui n’est pas au goût de tout le monde.",
+      "available_offline": true,
+      "season_title": "Princesse Puncheuse",
+      "seo_title": "",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "is_subbed": true,
+      "available_date": null,
+      "hd_flag": true,
+      "duration_ms": 1420046,
+      "is_clip": false,
+      "season_id": "GS00362086FRFR",
+      "series_id": "GW4HM7WQ5",
+      "recent_variant": "",
+      "title": "L’art de jouer du poing, la quintessence de l’élégance féminine ?",
+      "slug_title": "may-i-offer-you-the-taste-of-my-fist-as-the-ladylike-thing-to-do",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "series_title": "May I Ask for One Final Thing?",
+      "audio_locale": "fr-FR",
+      "season_display_number": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/52b1f2f7c0b0701e89e8fadc5bc700bf.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/52b1f2f7c0b0701e89e8fadc5bc700bf.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/52b1f2f7c0b0701e89e8fadc5bc700bf.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/52b1f2f7c0b0701e89e8fadc5bc700bf.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/52b1f2f7c0b0701e89e8fadc5bc700bf.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/52b1f2f7c0b0701e89e8fadc5bc700bf.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/52b1f2f7c0b0701e89e8fadc5bc700bf.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/52b1f2f7c0b0701e89e8fadc5bc700bf.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "roles": [
+        "dub"
+      ],
+      "next_episode_id": "GE00362091FRFR",
+      "slug": "",
+      "mature_blocked": false
+    },
+    {
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "premium_available_date": "2025-10-10T16:30:00Z",
+      "roles": [
+        "dub"
+      ],
+      "listing_id": "",
+      "season_slug_title": "season-1",
+      "seo_title": "",
+      "series_id": "GW4HM7WQ5",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "available_date": null,
+      "season_display_number": "",
+      "audio_locale": "fr-FR",
+      "production_episode_id": "",
+      "availability_notes": "",
+      "slug_title": "i-considered-a-negotiated-resolution-but-may-i-biff-and-pow-those-noblemen-instead",
+      "sequence_number": 3,
+      "season_title": "Princesse Puncheuse",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "availability_status": "available",
+      "upload_date": "2025-10-10T00:00:00Z",
+      "mature_blocked": false,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "series_title": "May I Ask for One Final Thing?",
+      "next_episode_title": "Retrouver l'être tant désiré par mes poings (un punching-ball) ?",
+      "seo_description": "",
+      "next_episode_id": "GE00362093FRFR",
+      "eligible_region": "CA",
+      "media_type": "episode",
+      "episode_number": 3,
+      "description": "Scarlet entend bien trouver qui coordonne la traite d’esclaves, pourtant interdite au Pallistan.",
+      "identifier": "GW4HM7WQ5|S00362086|E3",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/72a4f91060e4d7efc960e8ca9e899b3f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/72a4f91060e4d7efc960e8ca9e899b3f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/72a4f91060e4d7efc960e8ca9e899b3f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/72a4f91060e4d7efc960e8ca9e899b3f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/72a4f91060e4d7efc960e8ca9e899b3f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/72a4f91060e4d7efc960e8ca9e899b3f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/72a4f91060e4d7efc960e8ca9e899b3f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/72a4f91060e4d7efc960e8ca9e899b3f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "title": "Parlementer patiemment ou cogner de l’aristocrate éhontément ?",
+      "available_offline": true,
+      "premium_date": null,
+      "season_number": 1,
+      "duration_ms": 1419962,
+      "season_id": "GS00362086FRFR",
+      "hd_flag": true,
+      "slug": "",
+      "is_premium_only": true,
+      "is_subbed": true,
+      "closed_captions_available": false,
+      "availability_starts": "2025-10-10T16:30:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "is_mature": false,
+      "is_dubbed": true,
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GE00362091FRFRV/streams",
+      "episode_air_date": "2025-10-10T00:00:00Z",
+      "is_clip": false,
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "channel_id": "crunchyroll",
+      "recent_audio_locale": "fr-FR",
+      "season_sequence_number": 1,
+      "id": "GE00362091FRFR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362091JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362091JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362091HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362091HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362091DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362091DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362091ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362091ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362091ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362091ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362091FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362091FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362091PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362091PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        }
+      ],
+      "episode": "3",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z"
+    },
+    {
+      "roles": [
+        "dub"
+      ],
+      "episode_air_date": "2025-10-17T00:00:00Z",
+      "id": "GE00362093FRFR",
+      "season_sequence_number": 1,
+      "next_episode_title": "Envoyer valdinguer ce maudit prince ?",
+      "episode_number": 4,
+      "season_number": 1,
+      "closed_captions_available": false,
+      "premium_date": null,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "available_offline": true,
+      "seo_description": "",
+      "availability_starts": "2025-10-17T16:30:00Z",
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "is_subbed": true,
+      "next_episode_id": "GE00362095FRFR",
+      "description": "Déterminée à faire tomber Godwin, Scarlet s’infiltre dans une vente aux enchères.",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "audio_locale": "fr-FR",
+      "media_type": "episode",
+      "streams_link": "/content/v2/cms/videos/GE00362093FRFRV/streams",
+      "upload_date": "2025-10-17T00:00:00Z",
+      "seo_title": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "title": "Retrouver l'être tant désiré par mes poings (un punching-ball) ?",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "season_id": "GS00362086FRFR",
+      "versions": [
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362093DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362093DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362093ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362093ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362093ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362093ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362093FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362093FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362093HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362093HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362093JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362093JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362093PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362093PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        }
+      ],
+      "series_id": "GW4HM7WQ5",
+      "slug_title": "may-i-go-to-see-my-fists-beloved-one-punching-bag",
+      "duration_ms": 1420011,
+      "mature_blocked": false,
+      "season_slug_title": "season-1",
+      "season_title": "Princesse Puncheuse",
+      "hd_flag": true,
+      "sequence_number": 4,
+      "is_clip": false,
+      "availability_notes": "",
+      "channel_id": "crunchyroll",
+      "listing_id": "",
+      "availability_status": "available",
+      "slug": "",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "series_title": "May I Ask for One Final Thing?",
+      "is_premium_only": true,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "recent_variant": "",
+      "identifier": "GW4HM7WQ5|S00362086|E4",
+      "episode": "4",
+      "eligible_region": "CA",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/55cd3f60de42858849fd8a37f378399e.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/55cd3f60de42858849fd8a37f378399e.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/55cd3f60de42858849fd8a37f378399e.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/55cd3f60de42858849fd8a37f378399e.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/55cd3f60de42858849fd8a37f378399e.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/55cd3f60de42858849fd8a37f378399e.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/55cd3f60de42858849fd8a37f378399e.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/55cd3f60de42858849fd8a37f378399e.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "is_dubbed": true,
+      "recent_audio_locale": "fr-FR",
+      "premium_available_date": "2025-10-17T16:30:00Z",
+      "production_episode_id": "",
+      "is_mature": false,
+      "available_date": null,
+      "season_display_number": ""
+    },
+    {
+      "description": "Godwin hors d’état de nuire, c’est désormais l’influence des adeptes du palmiaïsme qui inquiète Scarlet et ses amis.",
+      "premium_date": null,
+      "is_premium_only": true,
+      "season_display_number": "",
+      "episode_number": 5,
+      "channel_id": "crunchyroll",
+      "upload_date": "2025-10-24T00:00:00Z",
+      "mature_blocked": false,
+      "sequence_number": 5,
+      "episode": "5",
+      "season_sequence_number": 1,
+      "is_dubbed": true,
+      "premium_available_date": "2025-10-24T16:30:00Z",
+      "audio_locale": "fr-FR",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_number": 1,
+      "available_offline": true,
+      "is_subbed": true,
+      "media_type": "episode",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2750368722ae380d4e359c5e1692871c.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/2750368722ae380d4e359c5e1692871c.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/2750368722ae380d4e359c5e1692871c.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/2750368722ae380d4e359c5e1692871c.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2750368722ae380d4e359c5e1692871c.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/2750368722ae380d4e359c5e1692871c.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/2750368722ae380d4e359c5e1692871c.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/2750368722ae380d4e359c5e1692871c.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "episode_air_date": "2025-10-24T00:00:00Z",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GE00362095FRFRV/streams",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "availability_starts": "2025-10-24T16:30:00Z",
+      "seo_title": "",
+      "roles": [
+        "dub"
+      ],
+      "availability_status": "available",
+      "available_date": null,
+      "versions": [
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362095FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362095FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362095HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362095HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362095JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362095JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362095PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362095PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362095DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362095DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362095ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362095ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362095ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362095ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        }
+      ],
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "title": "Envoyer valdinguer ce maudit prince ?",
+      "season_title": "Princesse Puncheuse",
+      "series_id": "GW4HM7WQ5",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "closed_captions_available": false,
+      "next_episode_id": "GE00362097FRFR",
+      "series_title": "May I Ask for One Final Thing?",
+      "hd_flag": true,
+      "season_id": "GS00362086FRFR",
+      "production_episode_id": "",
+      "recent_audio_locale": "fr-FR",
+      "next_episode_title": "Envoyer ce porc en orbite ?",
+      "listing_id": "",
+      "identifier": "GW4HM7WQ5|S00362086|E5",
+      "seo_description": "",
+      "is_clip": false,
+      "availability_notes": "",
+      "id": "GE00362095FRFR",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug": "",
+      "eligible_region": "CA",
+      "season_slug_title": "season-1",
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "duration_ms": 1420004,
+      "is_mature": false,
+      "slug_title": "may-i-clobber-this-asshole-prince"
+    },
+    {
+      "available_date": null,
+      "is_clip": false,
+      "next_episode_id": "GE00362099FRFR",
+      "available_offline": true,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362097JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362097JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362097PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362097PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362097FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362097FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362097DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362097DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362097ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362097ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362097ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362097ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362097HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362097HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        }
+      ],
+      "episode_air_date": "2025-10-31T00:00:00Z",
+      "sequence_number": 6,
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "is_dubbed": true,
+      "next_episode_title": "Faire du contraste une arme ?",
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "channel_id": "crunchyroll",
+      "eligible_region": "CA",
+      "roles": [
+        "dub"
+      ],
+      "id": "GE00362097FRFR",
+      "seo_title": "",
+      "title": "Envoyer ce porc en orbite ?",
+      "availability_status": "available",
+      "season_title": "Princesse Puncheuse",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_starts": "2025-10-31T16:30:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "slug": "",
+      "episode_number": 6,
+      "media_type": "episode",
+      "listing_id": "",
+      "hd_flag": true,
+      "series_title": "May I Ask for One Final Thing?",
+      "seo_description": "",
+      "audio_locale": "fr-FR",
+      "season_id": "GS00362086FRFR",
+      "series_id": "GW4HM7WQ5",
+      "upload_date": "2025-10-31T00:00:00Z",
+      "season_display_number": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1e77ef9cbf4863e96c8e791566e28212.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1e77ef9cbf4863e96c8e791566e28212.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1e77ef9cbf4863e96c8e791566e28212.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1e77ef9cbf4863e96c8e791566e28212.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1e77ef9cbf4863e96c8e791566e28212.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1e77ef9cbf4863e96c8e791566e28212.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1e77ef9cbf4863e96c8e791566e28212.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1e77ef9cbf4863e96c8e791566e28212.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "closed_captions_available": false,
+      "identifier": "GW4HM7WQ5|S00362086|E6",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "episode": "6",
+      "availability_notes": "",
+      "recent_variant": "",
+      "streams_link": "/content/v2/cms/videos/GE00362097FRFRV/streams",
+      "description": "Prétextant partir faire une cure, Scarlet s’en va retrouver la sainte Diana.",
+      "is_mature": false,
+      "season_number": 1,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "is_subbed": true,
+      "slug_title": "may-i-send-this-pig-flying-into-the-sky",
+      "premium_date": null,
+      "recent_audio_locale": "fr-FR",
+      "premium_available_date": "2025-10-31T16:30:00Z",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_premium_only": true,
+      "mature_blocked": false,
+      "production_episode_id": "",
+      "season_slug_title": "season-1",
+      "duration_ms": 1420004,
+      "season_sequence_number": 1
+    },
+    {
+      "is_dubbed": true,
+      "slug_title": "may-i-carry-out-a-plan-that-shows-a-new-side-of-you",
+      "upload_date": "2025-11-07T00:00:00Z",
+      "episode_number": 7,
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "available_offline": true,
+      "next_episode_title": "Offrir un poing plutôt qu'un mouchoir ?",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "season_display_number": "",
+      "id": "GE00362099FRFR",
+      "sequence_number": 7,
+      "production_episode_id": "",
+      "is_mature": false,
+      "eligible_region": "CA",
+      "mature_blocked": false,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "media_type": "episode",
+      "recent_variant": "",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "availability_starts": "2025-11-07T16:30:00Z",
+      "seo_title": "",
+      "episode": "7",
+      "is_premium_only": true,
+      "next_episode_id": "GE00362101FRFR",
+      "seo_description": "",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "season_slug_title": "season-1",
+      "season_title": "Princesse Puncheuse",
+      "premium_available_date": "2025-11-07T16:30:00Z",
+      "roles": [
+        "dub"
+      ],
+      "identifier": "GW4HM7WQ5|S00362086|E7",
+      "series_id": "GW4HM7WQ5",
+      "slug": "",
+      "season_number": 1,
+      "availability_notes": "",
+      "closed_captions_available": false,
+      "listing_id": "",
+      "season_sequence_number": 1,
+      "recent_audio_locale": "fr-FR",
+      "audio_locale": "fr-FR",
+      "series_title": "May I Ask for One Final Thing?",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "is_subbed": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "episode_air_date": "2025-11-07T00:00:00Z",
+      "available_date": null,
+      "duration_ms": 1420046,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "availability_status": "available",
+      "is_clip": false,
+      "premium_date": null,
+      "title": "Faire du contraste une arme ?",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/65de6ca059f5e2e07ad7abef0050acbe.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/65de6ca059f5e2e07ad7abef0050acbe.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/65de6ca059f5e2e07ad7abef0050acbe.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/65de6ca059f5e2e07ad7abef0050acbe.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/65de6ca059f5e2e07ad7abef0050acbe.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/65de6ca059f5e2e07ad7abef0050acbe.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/65de6ca059f5e2e07ad7abef0050acbe.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/65de6ca059f5e2e07ad7abef0050acbe.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362099JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362099JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362099HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362099HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362099PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362099PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362099DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362099DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362099ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362099ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362099ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362099ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362099FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362099FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        }
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00362099FRFRV/streams",
+      "season_id": "GS00362086FRFR",
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "description": "Les dévots de Palmia entendent empêcher le départ du pèlerinage, mais Scarlet n’est pas de cet avis."
+    },
+    {
+      "season_sequence_number": 1,
+      "recent_variant": "",
+      "is_subbed": true,
+      "eligible_region": "CA",
+      "next_episode_id": "GE00362103FRFR",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "title": "Offrir un poing plutôt qu'un mouchoir ?",
+      "is_dubbed": true,
+      "seo_description": "",
+      "season_slug_title": "season-1",
+      "availability_status": "available",
+      "is_premium_only": true,
+      "roles": [
+        "dub"
+      ],
+      "is_mature": false,
+      "availability_starts": "2025-11-14T16:30:00Z",
+      "available_offline": true,
+      "episode_air_date": "2025-11-14T00:00:00Z",
+      "audio_locale": "fr-FR",
+      "premium_date": null,
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_clip": false,
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "next_episode_title": "Avouer que ce n'est pas à la portée de tout le monde ?",
+      "closed_captions_available": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4ed133d28afe81be87fd38a073b8038e.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/4ed133d28afe81be87fd38a073b8038e.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/4ed133d28afe81be87fd38a073b8038e.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/4ed133d28afe81be87fd38a073b8038e.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4ed133d28afe81be87fd38a073b8038e.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/4ed133d28afe81be87fd38a073b8038e.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/4ed133d28afe81be87fd38a073b8038e.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/4ed133d28afe81be87fd38a073b8038e.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "recent_audio_locale": "fr-FR",
+      "listing_id": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "duration_ms": 1420046,
+      "series_title": "May I Ask for One Final Thing?",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "series_id": "GW4HM7WQ5",
+      "availability_notes": "",
+      "season_display_number": "",
+      "media_type": "episode",
+      "mature_blocked": false,
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362101JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362101JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362101HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362101HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362101PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362101PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362101FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362101FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362101ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362101ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362101DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362101DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362101ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362101ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        }
+      ],
+      "identifier": "GW4HM7WQ5|S00362086|E8",
+      "id": "GE00362101FRFR",
+      "available_date": null,
+      "description": "Léonardo découvre pourquoi Scarlet est si chère à la famille royale.",
+      "channel_id": "crunchyroll",
+      "hd_flag": true,
+      "season_id": "GS00362086FRFR",
+      "sequence_number": 8,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "season_title": "Princesse Puncheuse",
+      "episode": "8",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "production_episode_id": "",
+      "episode_number": 8,
+      "seo_title": "",
+      "slug_title": "may-i-offer-you-a-fist-in-place-of-a-handkerchief",
+      "upload_date": "2025-11-14T00:00:00Z",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "season_number": 1,
+      "streams_link": "/content/v2/cms/videos/GE00362101FRFRV/streams",
+      "slug": "",
+      "premium_available_date": "2025-11-14T16:30:00Z"
+    },
+    {
+      "identifier": "GW4HM7WQ5|S00362086|E9",
+      "recent_variant": "",
+      "eligible_region": "CA",
+      "season_sequence_number": 1,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "is_dubbed": true,
+      "next_episode_id": "GE00362105FRFR",
+      "sequence_number": 9,
+      "channel_id": "crunchyroll",
+      "availability_notes": "",
+      "available_date": null,
+      "upload_date": "2025-11-21T00:00:00Z",
+      "seo_title": "",
+      "media_type": "episode",
+      "duration_ms": 1420004,
+      "recent_audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362103JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362103JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362103HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362103HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362103FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362103FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362103PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362103PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362103DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362103DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362103ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362103ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362103ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362103ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        }
+      ],
+      "roles": [
+        "dub"
+      ],
+      "audio_locale": "fr-FR",
+      "description": "Un traître pourtant insoupçonnable se cache parmi les fidèles de Palmia.",
+      "mature_blocked": false,
+      "slug_title": "may-i-explain-that-this-is-not-something-that-just-anyone-can-do",
+      "slug": "",
+      "is_mature": false,
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/50e7565fc525bcea9917fe70abc88612.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/50e7565fc525bcea9917fe70abc88612.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/50e7565fc525bcea9917fe70abc88612.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/50e7565fc525bcea9917fe70abc88612.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/50e7565fc525bcea9917fe70abc88612.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/50e7565fc525bcea9917fe70abc88612.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/50e7565fc525bcea9917fe70abc88612.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/50e7565fc525bcea9917fe70abc88612.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_offline": true,
+      "closed_captions_available": false,
+      "availability_status": "available",
+      "episode_number": 9,
+      "series_title": "May I Ask for One Final Thing?",
+      "premium_available_date": "2025-11-21T16:30:00Z",
+      "is_subbed": true,
+      "is_clip": false,
+      "season_title": "Princesse Puncheuse",
+      "season_display_number": "",
+      "season_slug_title": "season-1",
+      "title": "Avouer que ce n'est pas à la portée de tout le monde ?",
+      "season_id": "GS00362086FRFR",
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "listing_id": "",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "seo_description": "",
+      "production_episode_id": "",
+      "episode": "9",
+      "is_premium_only": true,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "streams_link": "/content/v2/cms/videos/GE00362103FRFRV/streams",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "availability_starts": "2025-11-21T16:30:00Z",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "hd_flag": true,
+      "episode_air_date": "2025-11-21T00:00:00Z",
+      "season_number": 1,
+      "series_id": "GW4HM7WQ5",
+      "premium_date": null,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "id": "GE00362103FRFR",
+      "next_episode_title": "Faire cuire à point à coups de poing ?"
+    },
+    {
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "listing_id": "",
+      "is_mature": false,
+      "identifier": "GW4HM7WQ5|S00362086|E10",
+      "is_dubbed": true,
+      "availability_ends": "9998-12-01T07:59:00Z",
+      "eligible_region": "CA",
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "id": "GE00362105FRFR",
+      "available_date": null,
+      "availability_starts": "2025-11-28T16:30:00Z",
+      "audio_locale": "fr-FR",
+      "slug_title": "may-i-cook-this-thick-cut-of-pork-through-with-body-punches",
+      "seo_title": "",
+      "season_title": "Princesse Puncheuse",
+      "recent_variant": "",
+      "episode_number": 10,
+      "closed_captions_available": false,
+      "is_subbed": true,
+      "series_id": "GW4HM7WQ5",
+      "premium_date": null,
+      "next_episode_id": "GE00362107FRFR",
+      "seo_description": "",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362105JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362105JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362105HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362105HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362105PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362105PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362105FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362105FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362105DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362105DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362105ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362105ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362105ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362105ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        }
+      ],
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/0b005756315bfc0aac7d59f08b2e8d44.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/0b005756315bfc0aac7d59f08b2e8d44.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/0b005756315bfc0aac7d59f08b2e8d44.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/0b005756315bfc0aac7d59f08b2e8d44.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0b005756315bfc0aac7d59f08b2e8d44.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/0b005756315bfc0aac7d59f08b2e8d44.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/0b005756315bfc0aac7d59f08b2e8d44.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/0b005756315bfc0aac7d59f08b2e8d44.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "available_offline": true,
+      "season_sequence_number": 1,
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "production_episode_id": "",
+      "season_display_number": "",
+      "sequence_number": 10,
+      "content_descriptors": [
+        "Violence"
+      ],
+      "is_clip": false,
+      "channel_id": "crunchyroll",
+      "mature_blocked": false,
+      "recent_audio_locale": "fr-FR",
+      "season_id": "GS00362086FRFR",
+      "episode": "10",
+      "is_premium_only": true,
+      "season_number": 1,
+      "streams_link": "/content/v2/cms/videos/GE00362105FRFRV/streams",
+      "hd_flag": true,
+      "series_title": "May I Ask for One Final Thing?",
+      "next_episode_title": "Qui dit manque de cuisson dit coups de hachoir ?",
+      "title": "Faire cuire à point à coups de poing ?",
+      "media_type": "episode",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "premium_available_date": "2025-11-28T16:30:00Z",
+      "availability_notes": "",
+      "description": "La guerre gronde, mais Julius peut compter sur un allié inattendu.",
+      "season_slug_title": "season-1",
+      "episode_air_date": "2025-11-28T00:00:00Z",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "duration_ms": 1420087,
+      "upload_date": "2025-11-28T00:00:00Z",
+      "roles": [
+        "dub"
+      ],
+      "slug": "",
+      "availability_status": "available"
+    },
+    {
+      "series_slug_title": "may-i-ask-for-one-final-thing",
+      "availability_starts": "2025-12-05T16:30:00Z",
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "availability_status": "available",
+      "premium_date": null,
+      "season_title": "Princesse Puncheuse",
+      "episode_air_date": "2025-12-05T00:00:00Z",
+      "identifier": "GW4HM7WQ5|S00362086|E11",
+      "is_mature": false,
+      "season_number": 1,
+      "production_episode_id": "",
+      "season_sequence_number": 1,
+      "closed_captions_available": false,
+      "available_offline": true,
+      "is_premium_only": true,
+      "recent_variant": "",
+      "images": {
+        "thumbnail": [
+          [
+            {
+              "height": 180,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/57352dbaee5487959aaaca8d941cab4f.png",
+              "type": "thumbnail",
+              "width": 320
+            },
+            {
+              "height": 338,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/57352dbaee5487959aaaca8d941cab4f.png",
+              "type": "thumbnail",
+              "width": 600
+            },
+            {
+              "height": 360,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/57352dbaee5487959aaaca8d941cab4f.png",
+              "type": "thumbnail",
+              "width": 640
+            },
+            {
+              "height": 450,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/57352dbaee5487959aaaca8d941cab4f.png",
+              "type": "thumbnail",
+              "width": 800
+            },
+            {
+              "height": 675,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/57352dbaee5487959aaaca8d941cab4f.png",
+              "type": "thumbnail",
+              "width": 1200
+            },
+            {
+              "height": 810,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/57352dbaee5487959aaaca8d941cab4f.png",
+              "type": "thumbnail",
+              "width": 1440
+            },
+            {
+              "height": 900,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/57352dbaee5487959aaaca8d941cab4f.png",
+              "type": "thumbnail",
+              "width": 1600
+            },
+            {
+              "height": 1080,
+              "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/57352dbaee5487959aaaca8d941cab4f.png",
+              "type": "thumbnail",
+              "width": 1920
+            }
+          ]
+        ]
+      },
+      "id": "GE00362107FRFR",
+      "series_title": "May I Ask for One Final Thing?",
+      "roles": [
+        "dub"
+      ],
+      "sequence_number": 11,
+      "subtitle_locales": [
+        "ar-SA",
+        "de-DE",
+        "en-US",
+        "es-419",
+        "es-ES",
+        "fr-FR",
+        "id-ID",
+        "it-IT",
+        "ms-MY",
+        "pt-BR",
+        "ru-RU",
+        "th-TH",
+        "vi-VN",
+        "zh-CN",
+        "zh-HK"
+      ],
+      "next_episode_title": "Tabasser des noblions (ces fumiers) pour avoir l’esprit plus léger ?",
+      "title": "Qui dit manque de cuisson dit coups de hachoir ?",
+      "extended_maturity_rating": {
+        "level": "M2",
+        "rating": "14",
+        "system": "cr-tv"
+      },
+      "media_type": "episode",
+      "mature_blocked": false,
+      "listing_id": "",
+      "is_subbed": true,
+      "is_clip": false,
+      "seo_description": "",
+      "season_tags": [
+        "Automne-2025"
+      ],
+      "is_dubbed": true,
+      "series_id": "GW4HM7WQ5",
+      "hd_flag": true,
+      "seo_title": "",
+      "content_descriptors": [
+        "Violence"
+      ],
+      "description": "Les Dragons Rouges menacent de mettre à mal les négociations avec Falconia.",
+      "season_display_number": "",
+      "duration_ms": 1419962,
+      "available_date": null,
+      "episode_number": 11,
+      "episode": "11",
+      "season_slug_title": "season-1",
+      "free_available_date": "9998-11-30T17:45:00Z",
+      "recent_audio_locale": "fr-FR",
+      "next_episode_id": "GE00362087HIIN",
+      "eligible_region": "CA",
+      "upload_date": "2025-12-05T00:00:00Z",
+      "availability_notes": "",
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "GE00362107JAJP",
+          "is_premium_only": true,
+          "media_guid": "GE00362107JAJPV",
+          "original": true,
+          "roles": [
+            "main"
+          ],
+          "season_guid": "GS00362086JAJP",
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "GE00362107HIIN",
+          "is_premium_only": true,
+          "media_guid": "GE00362107HIINV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086HIIN",
+          "variant": ""
+        },
+        {
+          "audio_locale": "pt-BR",
+          "guid": "GE00362107PTBR",
+          "is_premium_only": true,
+          "media_guid": "GE00362107PTBRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086PTBR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "es-419",
+          "guid": "GE00362107ES419",
+          "is_premium_only": true,
+          "media_guid": "GE00362107ES419V",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ES419",
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GE00362107FRFR",
+          "is_premium_only": true,
+          "media_guid": "GE00362107FRFRV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086FRFR",
+          "variant": ""
+        },
+        {
+          "audio_locale": "de-DE",
+          "guid": "GE00362107DEDE",
+          "is_premium_only": true,
+          "media_guid": "GE00362107DEDEV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086DEDE",
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GE00362107ENUS",
+          "is_premium_only": true,
+          "media_guid": "GE00362107ENUSV",
+          "original": false,
+          "roles": [
+            "dub"
+          ],
+          "season_guid": "GS00362086ENUS",
+          "variant": ""
+        }
+      ],
+      "premium_available_date": "2025-12-05T16:30:00Z",
+      "slug_title": "as-these-appear-undercooked-may-i-turn-them-into-mince-meat",
+      "season_id": "GS00362086FRFR",
+      "streams_link": "/content/v2/cms/videos/GE00362107FRFRV/streams",
+      "slug": "",
+      "channel_id": "crunchyroll",
+      "availability_ends": "9998-12-01T07:59:00Z"
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  }
+}

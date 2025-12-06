@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "id": "GY3VC203X",
+      "channel_id": "crunchyroll",
+      "title": "The Reincarnation Of The Strongest Exorcist In Another World",
+      "slug_title": "the-reincarnation-of-the-strongest-exorcist-in-another-world-french-dub",
+      "series_id": "G1XHJVWXG",
+      "season_display_number": "",
+      "season_sequence_number": 1,
+      "season_number": 1,
+      "is_complete": false,
+      "description": "Même si on est le meilleur exorciste du monde, la puissance ne suffit pas à rendre heureux. Haruyoshi Kuga, exorciste au génie imbattable, est aux portes de la mort après avoir été trahi par la cour impériale. Déterminé à être heureux dans sa prochaine vie, il se sert d’une technique de réincarnation secrète de sa création pour se transporter dans un autre monde.  Il s’appelle désormais Seika et prend conscience qu’il n’a pas été assez rusé. Dans cette nouvelle vie, il décide d’être plus calculateur, simplement dans le but de trouver enfin le bonheur…",
+      "keywords": [],
+      "season_tags": [],
+      "images": {},
+      "extended_maturity_rating": {
+        "system": "cr-tv",
+        "rating": "14",
+        "level": "M2"
+      },
+      "maturity_ratings": [
+        "TV-14"
+      ],
+      "content_descriptors": [
+        "Grossièretés",
+        "Dialogues suggestifs",
+        "Violence"
+      ],
+      "is_mature": false,
+      "mature_blocked": false,
+      "is_subbed": true,
+      "is_dubbed": true,
+      "is_simulcast": false,
+      "seo_title": "",
+      "seo_description": "",
+      "availability_notes": "",
+      "audio_locales": [
+        "fr-FR"
+      ],
+      "subtitle_locales": [
+        "fr-FR"
+      ],
+      "audio_locale": "fr-FR",
+      "versions": [
+        {
+          "audio_locale": "ja-JP",
+          "guid": "G675CDXGD",
+          "original": true,
+          "variant": ""
+        },
+        {
+          "audio_locale": "en-US",
+          "guid": "GYP8CX158",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "fr-FR",
+          "guid": "GY3VC203X",
+          "original": false,
+          "variant": ""
+        },
+        {
+          "audio_locale": "hi-IN",
+          "guid": "G6GGCV90D",
+          "original": false,
+          "variant": ""
+        }
+      ],
+      "identifier": "G1XHJVWXG|S1",
+      "number_of_episodes": 13
+    }
+  ],
+  "meta": {
+    "versions_considered": true
+  },
+  "total": 1
+}
