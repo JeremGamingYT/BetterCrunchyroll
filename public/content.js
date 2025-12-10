@@ -255,104 +255,127 @@
         return window.location.pathname.includes('/watch/');
     }
 
-    // Function to inject our custom watch page overlay
+    // Function to inject enhanced overlay on watch pages (use native player)
     function injectWatchOverlay() {
-        if (document.getElementById('bettercrunchyroll-watch-overlay')) return;
+        // If already injected, skip
+        if (document.getElementById('bettercrunchyroll-root')) {
+            return;
+        }
 
-        console.log('[BetterCrunchyroll] Adding watch overlay...');
+        console.log('[BetterCrunchyroll] Watch page detected - injecting custom UI with native player...');
 
-        // Create overlay with back button
-        const overlay = document.createElement('div');
-        overlay.id = 'bettercrunchyroll-watch-overlay';
-        overlay.innerHTML = `
-            <button id="bc-back-btn" title="Retour à BetterCrunchyroll">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m12 19-7-7 7-7"/>
-                    <path d="M19 12H5"/>
-                </svg>
-            </button>
-        `;
-        document.body.appendChild(overlay);
-
-        // Add styles for the overlay AND hide all Crunchyroll UI except video player
+        // Add styles to hide Crunchyroll UI but keep video player
         const style = document.createElement('style');
         style.id = 'bettercrunchyroll-watch-style';
         style.textContent = `
-            /* Hide EVERYTHING on the page */
-            body > *:not(.video-player-wrapper):not(#bettercrunchyroll-watch-overlay):not(script):not(style):not(link) {
+            /* Hide ALL Crunchyroll UI */
+            .app-layout__header--ywueY,
+            .erc-large-header,
+            header,
+            nav,
+            .erc-header,
+            .erc-footer,
+            footer,
+            .erc-watch-menu,
+            [data-testid="vilos-sidebar"],
+            .app-layout-footer,
+            .app-layout-header,
+            .erc-watch-sidebar,
+            .erc-current-media-info,
+            .content-header,
+            [class*="header"],
+            [class*="footer"],
+            [class*="sidebar"]:not(.video-player-wrapper),
+            .breadcrumb-wrapper,
+            .erc-playback-info,
+            .erc-watch-info,
+            .erc-watch-actions,
+            .erc-watch-comments,
+            .content-wrapper > *:not([class*="player"]):not([class*="vilos"]):not(iframe):not(#bettercrunchyroll-root) {
                 display: none !important;
+                visibility: hidden !important;
             }
             
-            /* Make sure video player wrapper is visible and fullscreen */
-            .video-player-wrapper {
-                display: block !important;
+            /* Our React root - takes full screen but allows video player through */
+            #bettercrunchyroll-root {
                 position: fixed !important;
                 top: 0 !important;
                 left: 0 !important;
                 width: 100vw !important;
                 height: 100vh !important;
-                z-index: 1 !important;
+                z-index: 10 !important;
+                pointer-events: auto;
+            }
+            
+            /* Video player container - positioned by our React component */
+            .video-player-wrapper,
+            [class*="video-player"],
+            [class*="vilos"],
+            .erc-video-player,
+            #vilos-player,
+            .player-container,
+            [class*="erc-watch-player"] {
+                position: fixed !important;
+                z-index: 5 !important;
                 background: #000 !important;
             }
             
-            .video-player-wrapper .video-player-spacer {
-                display: none !important;
+            /* Ensure iframes are visible */
+            iframe[src*="player"],
+            iframe[src*="vilos"],
+            .video-player-wrapper iframe,
+            [class*="player"] iframe {
+                width: 100% !important;
+                height: 100% !important;
             }
             
-            .video-player-wrapper .video-player {
-                width: 100vw !important;
-                height: 100vh !important;
-                border: none !important;
+            /* Video element */
+            video {
+                object-fit: contain !important;
             }
             
             /* Dark background */
             html, body {
-                background: #000 !important;
+                background: #0a0a0a !important;
                 overflow: hidden !important;
                 margin: 0 !important;
                 padding: 0 !important;
             }
             
-            /* Our overlay styling */
-            #bettercrunchyroll-watch-overlay {
-                position: fixed;
-                top: 20px;
-                left: 20px;
-                z-index: 999999;
-                pointer-events: auto;
-            }
-            
-            #bc-back-btn {
-                background: rgba(0, 0, 0, 0.7);
-                border: none;
-                color: white;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: all 0.3s ease;
-                backdrop-filter: blur(10px);
-                opacity: 0.7;
-            }
-            
-            #bc-back-btn:hover {
-                background: rgba(244, 117, 33, 0.9);
-                transform: scale(1.1);
-                opacity: 1;
+            /* Remove any layout constraints */
+            .content-wrapper, .app-layout, main, #content {
+                margin: 0 !important;
+                padding: 0 !important;
+                transform: none !important;
+                position: static !important;
             }
         `;
         document.head.appendChild(style);
 
-        // Back button click handler
-        document.getElementById('bc-back-btn').addEventListener('click', () => {
-            // Navigate back to our app's home
-            window.location.href = 'https://www.crunchyroll.com/';
-        });
+        // Create root element for our React app
+        const rootElement = document.createElement('div');
+        rootElement.id = 'bettercrunchyroll-root';
+        document.body.appendChild(rootElement);
 
-        console.log('[BetterCrunchyroll] ✅ Watch overlay injected - only video player visible');
+        // Inject our React app
+        const script = document.createElement('script');
+        script.src = chrome.runtime.getURL('assets/main.js');
+        script.type = 'module';
+        (document.head || document.documentElement).appendChild(script);
+
+        // Inject our CSS
+        const css = document.createElement('link');
+        css.rel = 'stylesheet';
+        css.href = chrome.runtime.getURL('assets/main.css');
+        (document.head || document.documentElement).appendChild(css);
+
+        // Also load the watch controller for additional features
+        const watchController = document.createElement('script');
+        watchController.id = 'bc-watch-controller';
+        watchController.src = chrome.runtime.getURL('watch-controller.js');
+        (document.head || document.documentElement).appendChild(watchController);
+
+        console.log('[BetterCrunchyroll] ✅ Watch page with custom UI injected');
     }
 
     // Function to inject our React app (for non-watch pages)
@@ -435,7 +458,7 @@
             observerTimeout = null;
 
             if (isWatchPage()) {
-                // On watch pages, just ensure overlay exists
+                // On watch pages, ensure our overlay exists
                 if (document.body && !document.getElementById('bettercrunchyroll-watch-overlay')) {
                     injectWatchOverlay();
                 }

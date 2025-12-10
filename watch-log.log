@@ -1,0 +1,639 @@
+content.js:11 [BetterCrunchyroll] Extension loaded
+content.js:28 [BetterCrunchyroll] API Interceptor injected
+content.js:436 [BetterCrunchyroll] 🚀 Fully initialized
+G9DU921VQ:1  GET https://static.crunchyroll.com/analytics/cr-eec-8.8.0.js net::ERR_BLOCKED_BY_CLIENT
+content.js:266 [BetterCrunchyroll] Watch page detected - injecting custom player...
+content.js:315 [BetterCrunchyroll] ✅ Custom player injected on watch page
+content.js:262 [BetterCrunchyroll] Watch page - React app already present
+main.js:19 [Cache] 🧹 Cleaning up expired entries...
+main.js:19 [Cache] ✅ Hit: recommendations (expires in 14min)
+main.js:19 [Cache] ✅ Hit: episodes_G68VCP0VQ (expires in 14min)
+main.js:19 [Cache] ✅ Hit: popular (expires in 14min)
+main.js:19 [Cache] ✅ Hit: series_GP5HJ84P7 (expires in 23min)
+main.js:19 [Cache] ✅ Hit: series_GEXH3W29Z (expires in 14min)
+main.js:19 [Cache] ✅ Hit: episodes_GY75CDJWM (expires in 23min)
+main.js:19 [Cache] ✅ Hit: heroItems (expires in 14min)
+main.js:19 [Cache] ✅ Hit: newReleases (expires in 14min)
+main.js:19 [Cache] ✅ Cleaned 0 expired entries
+main.js:51 
+🎯 BetterCrunchyroll API Ready! 
+
+Tapez crunchyAPI.help() pour voir les commandes disponibles.
+
+Exemples rapides:
+  • await crunchyAPI.continueWatching()
+  • await crunchyAPI.watchlist()
+  • await crunchyAPI.testAll()
+    
+main.js:19 ✅ CrunchyrollAPI initialisée et disponible dans window.crunchyAPI
+main.js:19 [CrunchyrollData] Development mode - using mock data
+2117-2d96608b8411daea.js:1 Event {isTrusted: true, type: 'error', target: script#etp-analytics, currentTarget: script#etp-analytics, eventPhase: 2, …}
+(anonymous) @ 2117-2d96608b8411daea.js:1
+Promise.catch
+n @ 2117-2d96608b8411daea.js:1
+54278 @ 2117-2d96608b8411daea.js:1
+s @ webpack-86a1ef771d52ee7a.js:1
+n @ main-app-4b4ecd33df699708.js:1
+(anonymous) @ main-app-4b4ecd33df699708.js:1
+(anonymous) @ webpack-86a1ef771d52ee7a.js:1
+(anonymous) @ main-app-4b4ecd33df699708.js:1
+d @ webpack-86a1ef771d52ee7a.js:1
+(anonymous) @ webpack-86a1ef771d52ee7a.js:1
+(anonymous) @ webpack-86a1ef771d52ee7a.js:1
+main.js:19 [Watch] Loading stream for: G9DU921VQ
+crunchyroll-api-interceptor.js:9 [BetterCrunchy Interceptor] Initialized
+manifest.json:1 Manifest: scope_extensions entry ignored, required properties 'type' and 'origin' are missing.
+manifest.json:1 Manifest: scope_extensions entry ignored, required properties 'type' and 'origin' are missing.
+G9DU921VQ:17  GET https://cr-play-service.prd.crunchyrollsvc.com/v1/G9DU921VQ/android/phone/play 400 (Bad Request)
+window.fetch @ G9DU921VQ:17
+request @ main.js:19
+await in request
+getPlayStream @ main.js:19
+Ii @ main.js:19
+await in Ii
+(anonymous) @ main.js:19
+Ns @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+hp @ main.js:8
+(anonymous) @ main.js:8
+rt @ main.js:1
+2117-2d96608b8411daea.js:1 [Watch] Error loading episode: Error: HTTP 400: {"error":40016,"reason":"Outdated Token"}
+    at hA.request (main.js:19:95158)
+    at async Ii (main.js:19:142622)
+push.92304.window.console.error @ 2117-2d96608b8411daea.js:1
+Ii @ main.js:19
+await in Ii
+(anonymous) @ main.js:19
+Ns @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+on @ main.js:8
+Pm @ main.js:8
+hp @ main.js:8
+(anonymous) @ main.js:8
+rt @ main.js:1
+content.js:192 [BetterCrunchyroll] Received API response: multiprofile
+content.js:202 [BetterCrunchyroll] ✅ Profile stored in chrome.storage.local
+content.js:192 [BetterCrunchyroll] Received API response: _accounts_v1_me
+content.js:226 [BetterCrunchyroll] ✅ Data stored: multiprofile
+content.js:192 [BetterCrunchyroll] Received API response: objects
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _accounts_v1_me
+fd9d1056-bba8ded5af747540.js:1 Allow attribute will take precedence over 'allowfullscreen'.
+sY @ fd9d1056-bba8ded5af747540.js:1
+sG @ fd9d1056-bba8ded5af747540.js:1
+(anonymous) @ fd9d1056-bba8ded5af747540.js:1
+iu @ fd9d1056-bba8ded5af747540.js:1
+ia @ fd9d1056-bba8ded5af747540.js:1
+(anonymous) @ fd9d1056-bba8ded5af747540.js:1
+il @ fd9d1056-bba8ded5af747540.js:1
+nb @ fd9d1056-bba8ded5af747540.js:1
+nw @ fd9d1056-bba8ded5af747540.js:1
+(anonymous) @ fd9d1056-bba8ded5af747540.js:1
+XMLHttpRequest.send
+(anonymous) @ 8224-3ed5756297825b1f.js:1
+xhr @ 8224-3ed5756297825b1f.js:1
+(anonymous) @ 3074.4656db95d0cb2dba.js:1
+e @ 3074.4656db95d0cb2dba.js:1
+en @ 8224-3ed5756297825b1f.js:1
+Promise.then
+_request @ 8224-3ed5756297825b1f.js:1
+request @ 8224-3ed5756297825b1f.js:1
+(anonymous) @ 8224-3ed5756297825b1f.js:1
+request @ 3074.4656db95d0cb2dba.js:1
+(anonymous) @ 3074.4656db95d0cb2dba.js:1
+n9 @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 9267.c5aeaf23828a372f.js:1
+dispatch @ 625-bd658e708b269e94.js:5
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 9267.c5aeaf23828a372f.js:1
+dispatch @ 625-bd658e708b269e94.js:5
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+Promise.then
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 9267.c5aeaf23828a372f.js:1
+dispatch @ 625-bd658e708b269e94.js:5
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 9267.c5aeaf23828a372f.js:1
+dispatch @ 625-bd658e708b269e94.js:5
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+Promise.then
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 4470.cc6137475c577d98.js:1
+(anonymous) @ 9267.c5aeaf23828a372f.js:1
+dispatch @ 625-bd658e708b269e94.js:5
+(anonymous) @ 2715.8b598d94d182e3be.js:1
+Promise.then
+(anonymous) @ 2715.8b598d94d182e3be.js:1
+(anonymous) @ 9267.c5aeaf23828a372f.js:1
+U @ 2715.8b598d94d182e3be.js:1
+(anonymous) @ layout-0b8ded5277fff669.js:1
+await in (anonymous)
+(anonymous) @ layout-0b8ded5277fff669.js:1
+aW @ fd9d1056-bba8ded5af747540.js:1
+oe @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+or @ fd9d1056-bba8ded5af747540.js:1
+ol @ fd9d1056-bba8ded5af747540.js:1
+id @ fd9d1056-bba8ded5af747540.js:1
+nb @ fd9d1056-bba8ded5af747540.js:1
+(anonymous) @ fd9d1056-bba8ded5af747540.js:1
+is @ fd9d1056-bba8ded5af747540.js:1
+o1 @ fd9d1056-bba8ded5af747540.js:1
+oZ @ fd9d1056-bba8ded5af747540.js:1
+T @ 2117-2d96608b8411daea.js:1
+content.js:192 [BetterCrunchyroll] Received API response: series_GP5HJ84P7
+content.js:192 [BetterCrunchyroll] Received API response: seasons
+content.js:192 [BetterCrunchyroll] Received API response: _content_reviews_v3_user_34f17284_47d3_574c_be3d_e32ce10b4ede_rating_series_GP5HJ84P7
+content.js:192 [BetterCrunchyroll] Received API response: _content_reviews_v3_user_34f17284_47d3_574c_be3d_e32ce10b4ede_rating_episode_G9DU921VQ
+content.js:192 [BetterCrunchyroll] Received API response: discover
+content.js:226 [BetterCrunchyroll] ✅ Data stored: objects
+player.html:17  GET https://imasdk.googleapis.com/pal/sdkloader/pal.js net::ERR_BLOCKED_BY_CLIENT
+bundle.js:2 It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.
+(anonymous) @ bundle.js:2
+O @ bundle.js:2
+I.next @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+R @ bundle.js:2
+Ty @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+yae @ bundle.js:2
+bae.checkEME @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+yae @ bundle.js:2
+bae.getSupportedDrms @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+(anonymous) @ bundle.js:2
+f @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+u @ bundle.js:2
+e.put @ bundle.js:2
+(anonymous) @ bundle.js:2
+d @ bundle.js:2
+g @ bundle.js:2
+p @ bundle.js:2
+e.put @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+componentDidMount @ bundle.js:2
+ss @ bundle.js:2
+yl @ bundle.js:2
+t.unstable_runWithPriority @ bundle.js:2
+Zi @ bundle.js:2
+gl @ bundle.js:2
+rl @ bundle.js:2
+Js @ bundle.js:2
+Ul @ bundle.js:2
+(anonymous) @ bundle.js:2
+al @ bundle.js:2
+Yl @ bundle.js:2
+t.render @ bundle.js:2
+run @ bundle.js:2
+e.runApplication @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+content.js:226 [BetterCrunchyroll] ✅ Data stored: series_GP5HJ84P7
+content.js:192 [BetterCrunchyroll] Received API response: _content_v2_34f17284_47d3_574c_be3d_e32ce10b4ede_playheads
+content.js:226 [BetterCrunchyroll] ✅ Data stored: seasons
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _content_reviews_v3_user_34f17284_47d3_574c_be3d_e32ce10b4ede_rating_series_GP5HJ84P7
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _content_reviews_v3_user_34f17284_47d3_574c_be3d_e32ce10b4ede_rating_episode_G9DU921VQ
+content.js:192 [BetterCrunchyroll] Received API response: _content_v2_34f17284_47d3_574c_be3d_e32ce10b4ede_watchlist
+content.js:226 [BetterCrunchyroll] ✅ Data stored: discover
+bundle.js:2 WebAssembly support detected: yes
+bundle.js:2 Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+n.createCanvas @ bundle.js:2
+n.init @ bundle.js:2
+e.exports.e.exports @ bundle.js:2
+(anonymous) @ bundle.js:2
+C @ bundle.js:2
+createLibassChannel @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+(anonymous) @ bundle.js:2
+f @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+(anonymous) @ bundle.js:2
+d @ bundle.js:2
+g @ bundle.js:2
+p @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+u @ bundle.js:2
+put @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+o.Receiver.get @ bundle.js:2
+o.Receiver.receive @ bundle.js:2
+(anonymous) @ bundle.js:2
+content.js:192 [BetterCrunchyroll] Received API response: _auth_v1_token
+content.js:153 [BetterCrunchyroll] Received token data
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _content_v2_34f17284_47d3_574c_be3d_e32ce10b4ede_playheads
+subtitles-octopus-worker.js:2676 warning: Browser does not support creating object URLs. Built-in browser image decoding will not be available.
+bundle.js:2  POST https://e0vemjple0l1luii7h5vlu5no.litix.io/ net::ERR_BLOCKED_BY_CLIENT
+ft @ bundle.js:2
+dt._sendBeaconQueue @ bundle.js:2
+dt.flushEvents @ bundle.js:2
+value @ bundle.js:2
+value @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+o @ bundle.js:2
+value @ bundle.js:2
+a.emit @ bundle.js:2
+(anonymous) @ bundle.js:2
+i @ bundle.js:2
+(anonymous) @ bundle.js:2
+o @ bundle.js:2
+value @ bundle.js:2
+a.emit @ bundle.js:2
+emit @ bundle.js:2
+Qt.e.mux.emit @ bundle.js:2
+handleLoadSource @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+(anonymous) @ bundle.js:2
+f @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+u @ bundle.js:2
+e.put @ bundle.js:2
+e.put @ bundle.js:2
+(anonymous) @ bundle.js:2
+dispatch @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+d @ bundle.js:2
+g @ bundle.js:2
+p @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+Promise.then
+P @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+v @ bundle.js:2
+t.cont @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+(anonymous) @ bundle.js:2
+d @ bundle.js:2
+g @ bundle.js:2
+p @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+Z @ bundle.js:2
+O.<computed> @ bundle.js:2
+(anonymous) @ bundle.js:2
+m @ bundle.js:2
+h @ bundle.js:2
+l @ bundle.js:2
+u @ bundle.js:2
+put @ bundle.js:2
+(anonymous) @ bundle.js:2
+(anonymous) @ bundle.js:2
+o.Receiver.get @ bundle.js:2
+o.Receiver.receive @ bundle.js:2
+(anonymous) @ bundle.js:2
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _content_v2_34f17284_47d3_574c_be3d_e32ce10b4ede_watchlist
+content.js:167 [BetterCrunchyroll] ✅ Token stored in chrome.storage.local
+content.js:226 [BetterCrunchyroll] ✅ Data stored: _auth_v1_token
+content.js:192 [BetterCrunchyroll] Received API response: discover
+content.js:226 [BetterCrunchyroll] ✅ Data stored: discover
+bundle.js:2  POST https://e0vemjple0l1luii7h5vlu5no.litix.io/ net::ERR_BLOCKED_BY_CLIENT
+ft @ bundle.js:2
+dt._sendBeaconQueue @ bundle.js:2
+(anonymous) @ bundle.js:2

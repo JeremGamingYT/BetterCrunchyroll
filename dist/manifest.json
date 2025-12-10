@@ -33,7 +33,8 @@
             "resources": [
                 "index.html",
                 "assets/*",
-                "crunchyroll-api-interceptor.js"
+                "crunchyroll-api-interceptor.js",
+                "watch-controller.js"
             ],
             "matches": [
                 "https://www.crunchyroll.com/*"

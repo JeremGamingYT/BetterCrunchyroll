@@ -26,7 +26,9 @@ function App() {
         <Route path="/:locale/series/:id" element={<Series />} />
 
         <Route path="/watch/:id" element={<Watch />} />
+        <Route path="/watch/:id/:slug" element={<Watch />} />
         <Route path="/:locale/watch/:id" element={<Watch />} />
+        <Route path="/:locale/watch/:id/:slug" element={<Watch />} />
 
         <Route path="/latest" element={<Latest />} />
         <Route path="/:locale/latest" element={<Latest />} />

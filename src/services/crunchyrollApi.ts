@@ -741,7 +741,9 @@ class CrunchyrollAPI {
     }
 
     async getPlayStream(contentId: string) {
-        return this.request<any>('GET', `/v1/${contentId}/web/chrome/play`, {
+        // Use android/phone endpoint to get HLS streams without DRM
+        // Web endpoints return DASH with DRM which has CORS issues
+        return this.request<any>('GET', `/v1/${contentId}/android/phone/play`, {
             baseUrl: PLAY_API_BASE,
             includeLocale: false,
             headers: {
@@ -749,6 +751,59 @@ class CrunchyrollAPI {
                 'x-cr-stream-limits': 'false'
             }
         });
+    }
+
+    /**
+     * Save the playhead (watch progress) for a content item.
+     * POST /content/v2/${account_uuid}/playheads
+     */
+    async savePlayhead(contentId: string, playhead: number) {
+        const account = this.accountId || this.profileId;
+        if (!account) return { success: false, error: 'Missing account id' };
+
+        try {
+            await this.request('POST', `/content/v2/${account}/playheads`, {
+                body: { content_id: contentId, playhead: Math.floor(playhead) },
+                useCache: false
+            });
+            return { success: true };
+        } catch (e: any) {
+            return { success: false, error: e?.message || 'Failed to save playhead' };
+        }
+    }
+
+    /**
+     * Get skip events (intro, credits, preview) for an episode.
+     * Uses the static skip-events endpoint.
+     */
+    async getSkipEvents(contentId: string) {
+        try {
+            const response = await fetch(`https://static.crunchyroll.com/skip-events/production/${contentId}.json`);
+            if (!response.ok) return null;
+            return await response.json();
+        } catch {
+            return null;
+        }
+    }
+
+    /**
+     * Get similar series based on a content ID.
+     * GET /content/v2/discover/${account_uuid}/similar_to/${series_id}
+     */
+    async getSimilar(seriesId: string, limit = 20) {
+        const account = this.accountId || this.profileId;
+        if (!account) return [];
+
+        try {
+            const response = await this.request<ApiListResponse<any>>(
+                'GET',
+                `/content/v2/discover/${account}/similar_to/${seriesId}`,
+                { params: { n: limit } }
+            );
+            return response?.data || [];
+        } catch {
+            return [];
+        }
     }
 
     // ---------------------------------------------------------------------
