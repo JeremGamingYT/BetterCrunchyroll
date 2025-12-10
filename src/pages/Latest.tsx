@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import AnimeCard, { type Anime } from '../components/AnimeCard';
 import PageLoader from '../components/PageLoader';
 import { cacheService } from '../services/cacheService';
+import { ensureCrunchyApi } from '../utils/apiInstance';
 import '../styles/GridPage.scss';
 
 const getCurrentSeasonalTag = (): string => {
@@ -47,20 +48,8 @@ const Latest = () => {
                 return;
             }
 
-            const api = (window as any).crunchyAPI;
-            if (!api) {
-                // Retry après un délai si l'API n'est pas encore prête
-                if (retryCount < 3) {
-                    console.log('[Latest] API not ready, retrying in 500ms...');
-                    setTimeout(() => loadLatest(retryCount + 1), 500);
-                    return;
-                }
-                console.error('[Latest] window.crunchyAPI not available after retries');
-                setLoading(false);
-                return;
-            }
-
             console.log('[Latest] Loading latest episodes...');
+            const api = await ensureCrunchyApi();
             const currentSeason = getCurrentSeasonalTag();
 
             // Récupérer les séries de la saison actuelle
@@ -106,9 +95,7 @@ const Latest = () => {
                 return;
             }
         } finally {
-            if (retryCount >= 2 || (window as any).crunchyAPI) {
-                setLoading(false);
-            }
+            setLoading(false);
         }
     };
 

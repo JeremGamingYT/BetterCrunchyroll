@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import crunchyrollAPI from './crunchyrollApi.js';
+import crunchyrollAPI from './crunchyrollApi';
 
 /**
  * Service to collect all Crunchyroll data and save it locally
@@ -120,7 +120,7 @@ class DataCollector {
             const data = await crunchyrollAPI.getContinueWatching(100);
             if (data) {
                 await this.saveFile('history/history.json', data);
-                data.data?.forEach((item) => {
+                data.forEach((item) => {
                     const id = item.panel?.episode_metadata?.series_id || item.id;
                     if (id) ids.add(id);
                 });
@@ -158,10 +158,7 @@ class DataCollector {
             // Get Series Info
             const seriesData = await crunchyrollAPI.getSeries(seriesId);
             if (seriesData) {
-                // Sometimes it returns a list, sometimes single object depending on endpoint nuances
-                // API method returns list usually with one item if searching by ID
-                const seriesObj = Array.isArray(seriesData.data) ? seriesData.data[0] : seriesData.data;
-                const finalId = seriesObj?.id || seriesId;
+                const finalId = seriesData.id || seriesId;
 
                 await this.saveFile(`series/${finalId}/series.json`, seriesData);
 
@@ -171,8 +168,8 @@ class DataCollector {
                     await this.saveFile(`series/${finalId}/seasons.json`, seasonsData);
 
                     // Get Episodes for each season
-                    if (seasonsData.data) {
-                        for (const season of seasonsData.data) {
+                    if (Array.isArray(seasonsData)) {
+                        for (const season of seasonsData) {
                             await this.collectSeason(finalId, season.id);
                             await new Promise(r => setTimeout(r, 200));
                         }

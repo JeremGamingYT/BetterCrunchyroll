@@ -4,6 +4,7 @@ import { ArrowLeft, Play, Star, Bookmark, Share2, Clock } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import PageLoader from '../components/PageLoader';
 import { cacheService } from '../services/cacheService';
+import { ensureCrunchyApi } from '../utils/apiInstance';
 import './Series.scss';
 
 interface SeriesData {
@@ -70,6 +71,7 @@ const Series = () => {
         try {
             setLoading(true);
             setError(null);
+            const api = await ensureCrunchyApi();
 
             // Vérifier le cache d'abord
             const cacheKey = `series_${seriesId}`;
@@ -86,20 +88,17 @@ const Series = () => {
                     }
                 }
                 setLoading(false);
-                return;
-            }
-
-            const api = (window as any).crunchyAPI;
-            if (!api) {
-                setError('API Crunchyroll non disponible');
-                setLoading(false);
+                // Background update watchlist status and rating
+                checkWatchlistStatus(seriesId);
+                loadUserRating(seriesId);
                 return;
             }
 
             console.log('[Series] Loading series data for:', seriesId);
 
-            // 1. Récupérer les informations de la série
-            const series = await api.getSeries(seriesId);
+            // OPTIMISATION: Utiliser la méthode batch pour récupérer série, saisons et watchlist en parallèle
+            const { series, seasons: seasonsData, isInWatchlist: watchlistStatus } = await api.getSeriesWithSeasons(seriesId);
+
             if (!series) {
                 setError('Série introuvable');
                 setLoading(false);
@@ -107,19 +106,18 @@ const Series = () => {
             }
 
             setSeriesData(series);
+            setIsInWatchlist(watchlistStatus);
 
-            // Vérifier si la série est dans la watchlist
-            checkWatchlistStatus(seriesId);
+            // Charger le rating en arrière-plan
+            loadUserRating(seriesId);
 
-            // 2. Récupérer les saisons
-            const seasonsData = await api.getSeasons(seriesId);
             if (seasonsData && Array.isArray(seasonsData)) {
                 const sortedSeasons = seasonsData.sort(
                     (a: Season, b: Season) => a.season_number - b.season_number
                 );
                 setSeasons(sortedSeasons);
 
-                // 3. Charger les épisodes de la première saison
+                // Charger les épisodes de la première saison
                 if (sortedSeasons.length > 0) {
                     setActiveSeason(sortedSeasons[0]);
                     await loadEpisodes(sortedSeasons[0]);
@@ -141,18 +139,15 @@ const Series = () => {
     useEffect(() => {
         if (id) {
             loadSeriesData(id);
-            loadUserRating(id);
         }
     }, [id]);
 
     const loadUserRating = async (seriesId: string) => {
         try {
-            const api = (window as any).crunchyAPI;
-            if (api) {
-                const data = await api.getUserRating(seriesId, 'series');
-                if (data && data.rating) {
-                    setUserRating(data.rating); // e.g., "5s", "4s"
-                }
+            const api = await ensureCrunchyApi();
+            const data = await api.getUserRating(seriesId, 'series');
+            if (data && data.rating) {
+                setUserRating(data.rating); // e.g., "5s", "4s"
             }
         } catch (e) {
             console.error('[Series] Error loading user rating:', e);
@@ -163,13 +158,11 @@ const Series = () => {
         if (!id) return;
         try {
             const ratingString = `${ratingVal}s`;
-            const api = (window as any).crunchyAPI;
-            if (api) {
-                // Optimistic update
-                setUserRating(ratingString);
-                await api.updateUserRating(id, ratingString, 'series');
-                console.log('[Series] Rating updated:', ratingString);
-            }
+            // Optimistic update
+            setUserRating(ratingString);
+            const api = await ensureCrunchyApi();
+            await api.updateUserRating(id, ratingString, 'series');
+            console.log('[Series] Rating updated:', ratingString);
         } catch (e) {
             console.error('[Series] Error updating rating:', e);
         }
@@ -195,9 +188,7 @@ const Series = () => {
 
     const checkWatchlistStatus = async (seriesId: string) => {
         try {
-            const api = (window as any).crunchyAPI;
-            if (!api) return;
-
+            const api = await ensureCrunchyApi();
             const inWatchlist = await api.isInWatchlist(seriesId);
             setIsInWatchlist(inWatchlist);
             console.log('[Series] Watchlist status:', inWatchlist);
@@ -221,14 +212,12 @@ const Series = () => {
                 return cachedEpisodes;
             }
 
-            const api = (window as any).crunchyAPI?.api;
-            if (!api) return null;
-
             console.log('[Series] Loading episodes for season:', season.id);
 
             // Marquer la saison comme en chargement AVANT la requête
             updateSeasonLoadingState(season.id, true);
 
+            const api = await ensureCrunchyApi();
             const episodes = await api.getEpisodes(season.id);
             if (episodes && Array.isArray(episodes)) {
                 const sortedEpisodes = episodes.sort(
@@ -288,10 +277,8 @@ const Series = () => {
 
     const refreshPlayheads = async (seasonId: string, episodes: Episode[]) => {
         try {
-            const api = (window as any).crunchyAPI?.api;
-            if (!api) return;
-
             const episodeIds = episodes.map(ep => ep.id);
+            const api = await ensureCrunchyApi();
             const playheads = await api.getPlayheads(episodeIds);
 
             if (Object.keys(playheads).length > 0) {
@@ -340,11 +327,7 @@ const Series = () => {
 
         try {
             setWatchlistLoading(true);
-            const api = (window as any).crunchyAPI;
-            if (!api) {
-                console.error('[Series] API non disponible');
-                return;
-            }
+            const api = await ensureCrunchyApi();
 
             if (isInWatchlist) {
                 // Retirer de la watchlist

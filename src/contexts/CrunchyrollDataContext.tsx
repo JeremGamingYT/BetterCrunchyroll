@@ -1,9 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
-
-// Chrome Extension API types (global declaration)
-declare global {
-    const chrome: any;
-}
+import crunchyrollAPI from '../services/crunchyrollApi';
 
 
 
@@ -259,10 +255,6 @@ export const CrunchyrollDataProvider: React.FC<{ children: ReactNode }> = ({ chi
         }
 
         try {
-            // Dynamically import the API service
-            // @ts-ignore - JS module in TS context
-            const { default: crunchyrollAPI } = await import('../services/crunchyrollApi.js');
-
             // Initialize if not already done
             await crunchyrollAPI.initialize();
 

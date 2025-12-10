@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import AnimeCard, { type Anime } from '../components/AnimeCard';
 import PageLoader from '../components/PageLoader';
 import { cacheService } from '../services/cacheService';
+import { ensureCrunchyApi } from '../utils/apiInstance';
 import '../styles/GridPage.scss';
 
 const Popular = () => {
@@ -35,41 +36,42 @@ const Popular = () => {
                 return;
             }
 
-            const api = (window as any).crunchyAPI;
-            if (!api) {
-                // Retry après un délai si l'API n'est pas encore prête
-                if (retryCount < 3) {
-                    console.log('[Popular] API not ready, retrying in 500ms...');
-                    setTimeout(() => loadPopular(retryCount + 1), 500);
-                    return;
-                }
-                console.error('[Popular] window.crunchyAPI not available after retries');
-                setLoading(false);
-                return;
-            }
-
             console.log('[Popular] Loading popular series...');
 
-            // Récupérer les recommandations (contient les séries populaires avec ratings)
-            const recoData = await api.recommendations();
+            // Initialiser API (fallback sur l'instance globale si disponible)
+            const api = await ensureCrunchyApi();
 
-            if (!recoData?.recommendations || recoData.recommendations.length === 0) {
-                console.warn('[Popular] No recommendations data');
+            // Fetch more series to get a good sample for sorting by rating
+            // Note: The Crunchyroll API doesn't support sort_by parameter
+            // So we fetch a larger set and sort client-side by rating
+            const browseData = await api.browse({
+                type: 'series',
+                limit: 100 // Get more to have better data for rating sort
+            });
+
+            if (!browseData?.data || browseData.data.length === 0) {
+                console.warn('[Popular] No browse data found');
+
+                // Retry if first attempt
+                if (retryCount < 2) {
+                    console.log('[Popular] Retrying...');
+                    setTimeout(() => loadPopular(retryCount + 1), 1000);
+                    return;
+                }
+
                 setLoading(false);
                 return;
             }
 
-            // Filtrer et trier par popularité (rating × nombre de votes)
-            const seriesWithRating = recoData.recommendations
-                .filter((series: any) => series.rating?.average && series.rating?.total)
-                .sort((a: any, b: any) => {
-                    const aScore = parseFloat(a.rating?.average || '0') * Math.log10(parseInt(a.rating?.total || '0') + 1);
-                    const bScore = parseFloat(b.rating?.average || '0') * Math.log10(parseInt(b.rating?.total || '0') + 1);
-                    return bScore - aScore;
-                });
+            // Sort by rating (highest first)
+            const sortedByRating = [...browseData.data].sort((a: any, b: any) => {
+                const ratingA = a.rating?.average || 0;
+                const ratingB = b.rating?.average || 0;
+                return ratingB - ratingA;
+            });
 
-            // Formater les données - prendre plus de séries pour la pagination
-            const formatted: Anime[] = seriesWithRating.slice(0, 100).map((series: any) => ({
+            // Formater les données
+            const formatted: Anime[] = sortedByRating.map((series: any) => ({
                 id: series.id,
                 title: series.title,
                 image: series.images?.poster_wide?.[0]?.[0]?.source || series.images?.poster_tall?.[0]?.[0]?.source || '',
@@ -86,8 +88,9 @@ const Popular = () => {
 
             setPopularAnime(formatted);
             setDisplayedAnime(formatted.slice(0, displayCount));
-            cacheService.set('popularPage', formatted, 20); // Cache de 20 minutes
-            console.log(`[Popular] ✅ Loaded ${formatted.length} popular series`);
+            cacheService.set('popularPage', formatted, 60); // Cache de 1h
+            console.log(`[Popular] ✅ Loaded ${formatted.length} popular series (sorted by rating)`);
+            setLoading(false);
         } catch (error) {
             console.error('[Popular] Error loading popular:', error);
             // Retry on error
@@ -96,10 +99,7 @@ const Popular = () => {
                 setTimeout(() => loadPopular(retryCount + 1), 1000);
                 return;
             }
-        } finally {
-            if (retryCount >= 2 || (window as any).crunchyAPI) {
-                setLoading(false);
-            }
+            setLoading(false);
         }
     };
 

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import AnimeCard, { type Anime } from '../components/AnimeCard';
 import PageLoader from '../components/PageLoader';
+import { ensureCrunchyApi } from '../utils/apiInstance';
 import '../styles/GridPage.scss';
 
 const Watchlist = () => {
@@ -18,22 +19,12 @@ const Watchlist = () => {
         try {
             setLoading(true);
 
-            // Récupérer l'API depuis window.crunchyAPI
-            const api = (window as any).crunchyAPI;
-
-            if (!api) {
-                if (retryCount < 3) {
-                    console.log('[Watchlist] API not ready, retrying in 500ms...');
-                    setTimeout(() => loadWatchlist(retryCount + 1), 500);
-                    return;
-                }
-                console.error('[Watchlist] window.crunchyAPI not available after retries');
-                setLoading(false);
-                return;
-            }
-
             console.log('[Watchlist] Loading watchlist...');
-            const watchlistData = await api.watchlist();
+            const api = await ensureCrunchyApi();
+            // Support both helper (watchlist) and core (getWatchlist)
+            const watchlistData = typeof api.watchlist === 'function'
+                ? await api.watchlist()
+                : await api.getWatchlist?.();
 
             if (!watchlistData || !watchlistData.data) {
                 console.warn('[Watchlist] No watchlist data returned');

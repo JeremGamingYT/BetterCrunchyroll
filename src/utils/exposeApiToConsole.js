@@ -3,7 +3,7 @@
  * Pour l'utiliser : window.crunchyAPI.getContinueWatching(10)
  */
 
-import crunchyrollAPI from '../services/crunchyrollApi.js';
+import crunchyrollAPI from '../services/crunchyrollApi';
 import dataCollector from '../services/dataCollector.js';
 
 // Initialiser l'API (elle demandera les credentials au content script)
@@ -97,6 +97,45 @@ const apiHelpers = {
     async series(seriesId) {
         await crunchyrollAPI.initialize();
         return await crunchyrollAPI.getSeries(seriesId);
+    },
+
+    async getSeriesWithSeasons(seriesId) {
+        await crunchyrollAPI.initialize();
+        return await crunchyrollAPI.getSeriesWithSeasons(seriesId);
+    },
+
+    async getSeries(seriesId) {
+        return await this.series(seriesId);
+    },
+
+    async getSeasons(seriesId) {
+        await crunchyrollAPI.initialize();
+        return await crunchyrollAPI.getSeasons(seriesId);
+    },
+
+    async getEpisodes(seasonId) {
+        await crunchyrollAPI.initialize();
+        return await crunchyrollAPI.getEpisodes(seasonId);
+    },
+
+    async getUserRating(contentId, contentType = 'series') {
+        await crunchyrollAPI.initialize();
+        return await crunchyrollAPI.getUserRating(contentId, contentType);
+    },
+
+    async updateUserRating(contentId, rating, contentType = 'series') {
+        await crunchyrollAPI.initialize();
+        return await crunchyrollAPI.updateUserRating(contentId, rating, contentType);
+    },
+
+    async getPlayheads(contentIds) {
+        await crunchyrollAPI.initialize();
+        return await crunchyrollAPI.getPlayheads(contentIds);
+    },
+
+    async getPlayStream(contentId) {
+        await crunchyrollAPI.initialize();
+        return await crunchyrollAPI.getPlayStream(contentId);
     },
 
     async browse(options = {}) {

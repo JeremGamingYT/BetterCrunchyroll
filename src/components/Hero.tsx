@@ -1,324 +1,335 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Play, Plus, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Bookmark, Clock } from 'lucide-react';
 import { cacheService } from '../services/cacheService';
+import { ensureCrunchyApi } from '../utils/apiInstance';
 import './Hero.scss';
 
-interface HeroSlide {
+interface HeroItem {
     id: string;
     title: string;
     description: string;
     image: string;
     tags: string[];
-    releaseDate?: Date;
-    episodeTitle?: string;
-    episodeNumber?: string;
+    type?: 'series' | 'movie_listing';
+    episodeId?: string;
 }
 
 interface HeroProps {
     onLoadComplete?: () => void;
 }
 
-const getCurrentSeasonalTag = (): string => {
-    const now = new Date();
-    const month = now.getMonth() + 1;
-    const year = now.getFullYear();
-
-    let season: string;
-    if (month >= 1 && month <= 3) {
-        season = 'winter';
-    } else if (month >= 4 && month <= 6) {
-        season = 'spring';
-    } else if (month >= 7 && month <= 9) {
-        season = 'summer';
-    } else {
-        season = 'fall';
-    }
-
-    return `${season}-${year}`;
-};
-
-const getTimeUntil = (targetDate: Date): string => {
-    const now = new Date();
-    const diff = targetDate.getTime() - now.getTime();
-
-    if (diff <= 0) return 'Disponible maintenant';
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-    if (days > 0) {
-        return `Dans ${days}j ${hours}h`;
-    } else if (hours > 0) {
-        return `Dans ${hours}h ${minutes}m`;
-    } else {
-        return `Dans ${minutes}m`;
-    }
-};
-
-const isUpcoming = (dateString: string): boolean => {
-    const releaseDate = new Date(dateString);
-    const now = new Date();
-    const in7Days = new Date(now.getTime() + (7 * 24 * 60 * 60 * 1000));
-
-    return releaseDate > now && releaseDate <= in7Days;
-};
-
-// Fonction pour attendre (throttling)
-const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-
 const Hero = ({ onLoadComplete }: HeroProps) => {
-    const [current, setCurrent] = useState(0);
-    const [slides, setSlides] = useState<HeroSlide[]>([]);
-    const [loading, setLoading] = useState(true);
-    const [, setTick] = useState(0);
+    const navigate = useNavigate();
+    const [heroItems, setHeroItems] = useState<HeroItem[]>([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isLoading, setIsLoading] = useState(true);
+    const [watchlistStatus, setWatchlistStatus] = useState<Record<string, boolean>>({});
+    const [watchlistLoading, setWatchlistLoading] = useState<Record<string, boolean>>({});
+    const autoplayRef = useRef<ReturnType<typeof setInterval> | null>(null);
+    const progressRef = useRef<number>(0);
+    const [progress, setProgress] = useState(0);
+    const AUTOPLAY_DURATION = 8000; // 8 seconds per slide
 
-    useEffect(() => {
-        loadUpcomingReleases();
-    }, []);
-
-    useEffect(() => {
-        if (slides.length === 0) return;
-
-        const timer = setInterval(() => {
-            setCurrent((prev) => (prev + 1) % slides.length);
-        }, 8000);
-        return () => clearInterval(timer);
-    }, [slides.length]);
-
-    useEffect(() => {
-        const ticker = setInterval(() => {
-            setTick(prev => prev + 1);
-        }, 60000);
-        return () => clearInterval(ticker);
-    }, []);
-
-    const loadUpcomingReleases = async () => {
+    // Load hero items from API
+    const loadHeroItems = useCallback(async () => {
         try {
-            // 1. Vérifier le cache d'abord
-            const cachedSlides = cacheService.get<HeroSlide[]>('heroSlides');
-            if (cachedSlides && cachedSlides.length > 0) {
-                console.log('[Hero] ✅ Using cached slides');
-                setSlides(cachedSlides);
-                setLoading(false);
+            // Check cache first
+            const cached = cacheService.get<HeroItem[]>('heroItems');
+            if (cached && cached.length > 0) {
+                console.log('[Hero] ✅ Using cached hero items');
+                setHeroItems(cached);
+                setIsLoading(false);
                 onLoadComplete?.();
+                // Check watchlist status in background
+                checkAllWatchlistStatus(cached);
                 return;
             }
 
-            const api = (window as any).crunchyAPI;
-            if (!api) {
-                console.error('[Hero] window.crunchyAPI not available');
-                setLoading(false);
-                onLoadComplete?.();
-                return;
-            }
+            // Initialize API
+            const api = await ensureCrunchyApi();
 
-            const currentSeason = getCurrentSeasonalTag();
-            console.log(`[Hero] Loading upcoming releases for ${currentSeason}`);
-
-            const seasonalData = await api.browse({
+            // Fetch popular/trending series for the carousel
+            const browseData = await api.browse({
                 type: 'series',
-                seasonal_tag: currentSeason,
-                limit: 20  // Réduit de 50 à 20
+                limit: 10
             });
 
-            if (!seasonalData?.data) {
-                console.warn('[Hero] No seasonal data');
-                setLoading(false);
-                onLoadComplete?.();
-                return;
-            }
-
-            const upcomingReleases: HeroSlide[] = [];
-            let requestCount = 0;
-            const MAX_REQUESTS = 10; // Limite stricte de requêtes
-
-            // Parcourir seulement les 10 premières séries au lieu de 30
-            for (const series of seasonalData.data.slice(0, 10)) {
-                try {
-                    // Limite de sécurité
-                    if (requestCount >= MAX_REQUESTS) {
-                        console.log('[Hero] ⚠️ Max requests reached, stopping');
-                        break;
-                    }
-
-                    // Throttling : 100ms entre chaque requête
-                    if (requestCount > 0) {
-                        await delay(100);
-                    }
-
-                    requestCount++;
-                    const seasonsData = await api.api.getSeasons(series.id);
-                    if (!seasonsData || seasonsData.length === 0) continue;
-
-                    const latestSeason = seasonsData[0];
-
-                    // Throttling avant la prochaine requête
-                    await delay(100);
-                    requestCount++;
-
-                    const episodesData = await api.api.getEpisodes(latestSeason.id);
-                    if (!episodesData) continue;
-
-                    const upcomingEpisode = episodesData.find((ep: any) =>
-                        ep.episode_metadata?.premium_available_date &&
-                        isUpcoming(ep.episode_metadata.premium_available_date)
-                    );
-
-                    if (upcomingEpisode) {
-                        const categories = series.series_metadata?.tenant_categories || [];
-                        const poster = series.images?.poster_wide?.[0]?.[0]?.source || '';
-                        const releaseDate = new Date(upcomingEpisode.episode_metadata.premium_available_date);
-
-                        upcomingReleases.push({
-                            id: series.id,
-                            title: series.title,
-                            description: series.description || 'Prochain épisode bientôt disponible !',
-                            image: poster,
-                            tags: categories.slice(0, 3),
-                            releaseDate: releaseDate,
-                            episodeTitle: upcomingEpisode.title || '',
-                            episodeNumber: upcomingEpisode.episode_metadata?.episode_number?.toString() || ''
-                        });
-
-                        console.log(`[Hero] ✅ Found upcoming: ${series.title} - Ep ${upcomingEpisode.episode_metadata?.episode_number}`);
-                    }
-
-                    // Arrêter dès qu'on a 5 slides
-                    if (upcomingReleases.length >= 5) break;
-                } catch (error) {
-                    console.warn(`[Hero] Error checking series ${series.id}:`, error);
-                }
-            }
-
-            console.log(`[Hero] 📊 Made ${requestCount} API requests`);
-
-            upcomingReleases.sort((a, b) => {
-                const dateA = a.releaseDate?.getTime() || 0;
-                const dateB = b.releaseDate?.getTime() || 0;
-                return dateA - dateB;
-            });
-
-            let finalSlides: HeroSlide[] = [];
-
-            if (upcomingReleases.length > 0) {
-                finalSlides = upcomingReleases;
-                console.log(`[Hero] 🎯 Loaded ${upcomingReleases.length} upcoming releases`);
-            } else {
-                console.log('[Hero] No upcoming releases, using seasonal series');
-                finalSlides = seasonalData.data.slice(0, 5).map((series: any) => ({
+            if (browseData?.data && browseData.data.length > 0) {
+                const formatted: HeroItem[] = browseData.data.slice(0, 5).map((series: any) => ({
                     id: series.id,
                     title: series.title,
                     description: series.description || '',
-                    image: series.images?.poster_wide?.[0]?.[0]?.source || '',
-                    tags: (series.series_metadata?.tenant_categories || []).slice(0, 3)
+                    image: series.images?.poster_wide?.[0]?.[series.images.poster_wide[0].length - 1]?.source
+                        || series.images?.poster_wide?.[0]?.[0]?.source
+                        || series.images?.poster_tall?.[0]?.[0]?.source
+                        || '',
+                    tags: [
+                        series.series_metadata?.is_simulcast ? 'Simulcast' : null,
+                        series.series_metadata?.is_dubbed && series.series_metadata?.is_subbed
+                            ? 'Sub & Dub'
+                            : series.series_metadata?.is_dubbed
+                                ? 'Dub'
+                                : 'Sub',
+                        series.series_metadata?.maturity_ratings?.[0] || null
+                    ].filter(Boolean) as string[],
+                    type: 'series'
                 }));
-            }
 
-            // Mettre en cache pour 60 minutes
-            cacheService.set('heroSlides', finalSlides, 60);
-            setSlides(finalSlides);
-            setLoading(false);
-            onLoadComplete?.();
+                setHeroItems(formatted);
+                cacheService.set('heroItems', formatted, 30); // Cache for 30 minutes
+                console.log('[Hero] ✅ Loaded', formatted.length, 'hero items');
+
+                // Check watchlist status
+                checkAllWatchlistStatus(formatted, api);
+            }
         } catch (error) {
-            console.error('[Hero] Error loading upcoming releases:', error);
-            setLoading(false);
+            console.error('[Hero] Error loading hero items:', error);
+            // Use fallback items if API fails
+            setHeroItems([{
+                id: 'fallback',
+                title: 'Welcome to BetterCrunchyroll',
+                description: 'Discover your next favorite anime with our redesigned experience.',
+                image: 'https://images3.alphacoders.com/133/1332803.jpeg',
+                tags: ['Premium', 'Exclusive'],
+                type: 'series'
+            }]);
+        } finally {
+            setIsLoading(false);
             onLoadComplete?.();
+        }
+    }, [onLoadComplete]);
+
+    // Check watchlist status for all items
+    const checkAllWatchlistStatus = async (items: HeroItem[], apiInstance?: any) => {
+        try {
+            const api = apiInstance || await ensureCrunchyApi();
+            const statusMap: Record<string, boolean> = {};
+            for (const item of items) {
+                if (item.id && item.id !== 'fallback') {
+                    try {
+                        const inWatchlist = await api.isInWatchlist(item.id);
+                        statusMap[item.id] = inWatchlist;
+                    } catch {
+                        statusMap[item.id] = false;
+                    }
+                }
+            }
+            setWatchlistStatus(statusMap);
+        } catch (error) {
+            console.error('[Hero] Error checking watchlist status:', error);
         }
     };
 
-    if (loading || slides.length === 0) {
+    // Autoplay logic
+    useEffect(() => {
+        if (heroItems.length <= 1) return;
+
+        const startAutoplay = () => {
+            progressRef.current = 0;
+            setProgress(0);
+
+            const interval = 50; // Update every 50ms for smooth progress
+            const increment = (interval / AUTOPLAY_DURATION) * 100;
+
+            autoplayRef.current = setInterval(() => {
+                progressRef.current += increment;
+                setProgress(progressRef.current);
+
+                if (progressRef.current >= 100) {
+                    setCurrentIndex(prev => (prev + 1) % heroItems.length);
+                    progressRef.current = 0;
+                    setProgress(0);
+                }
+            }, interval);
+        };
+
+        startAutoplay();
+
+        return () => {
+            if (autoplayRef.current) {
+                clearInterval(autoplayRef.current);
+            }
+        };
+    }, [heroItems.length, currentIndex]);
+
+    // Load items on mount
+    useEffect(() => {
+        loadHeroItems();
+    }, [loadHeroItems]);
+
+    // Handle slide change
+    const goToSlide = (index: number) => {
+        setCurrentIndex(index);
+        progressRef.current = 0;
+        setProgress(0);
+    };
+
+    // Handle Watch Now button
+    const handleWatchNow = async () => {
+        const currentItem = heroItems[currentIndex];
+        if (!currentItem || currentItem.id === 'fallback') return;
+
+        try {
+            // Get the up next episode for this series
+            const api = await ensureCrunchyApi();
+            const upNext = await api.getUpNext(currentItem.id);
+            if (upNext?.panel?.id) {
+                // Navigate to the episode watch page
+                window.location.href = `https://www.crunchyroll.com/watch/${upNext.panel.id}`;
+            } else {
+                // If no up next, go to series page
+                navigate(`/series/${currentItem.id}`);
+            }
+        } catch (error) {
+            console.error('[Hero] Error getting up next:', error);
+            // Fallback to series page
+            navigate(`/series/${currentItem.id}`);
+        }
+    };
+
+    // Handle Add to Watchlist button
+    const handleAddToWatchlist = async () => {
+        const currentItem = heroItems[currentIndex];
+        if (!currentItem || currentItem.id === 'fallback') return;
+
+        const seriesId = currentItem.id;
+        const isCurrentlyInWatchlist = watchlistStatus[seriesId];
+
+        try {
+            setWatchlistLoading(prev => ({ ...prev, [seriesId]: true }));
+
+            const api = await ensureCrunchyApi();
+
+            if (isCurrentlyInWatchlist) {
+                // Remove from watchlist
+                const result = await api.removeFromWatchlist(seriesId);
+                if (result.success) {
+                    setWatchlistStatus(prev => ({ ...prev, [seriesId]: false }));
+                    console.log('[Hero] ✅ Removed from watchlist');
+                }
+            } else {
+                // Add to watchlist
+                const result = await api.addToWatchlist(seriesId);
+                if (result.success) {
+                    setWatchlistStatus(prev => ({ ...prev, [seriesId]: true }));
+                    console.log('[Hero] ✅ Added to watchlist');
+                }
+            }
+        } catch (error) {
+            console.error('[Hero] Error updating watchlist:', error);
+        } finally {
+            setWatchlistLoading(prev => ({ ...prev, [seriesId]: false }));
+        }
+    };
+
+    if (isLoading || heroItems.length === 0) {
         return (
-            <div className="hero" style={{ minHeight: '600px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <p style={{ color: '#888' }}>Chargement du carousel...</p>
+            <div className="hero">
+                <div className="hero-background">
+                    <div className="gradient-overlay"></div>
+                    <div className="gradient-overlay-bottom"></div>
+                </div>
             </div>
         );
     }
 
+    const currentItem = heroItems[currentIndex];
+    const isInWatchlist = watchlistStatus[currentItem.id] || false;
+    const isWatchlistUpdating = watchlistLoading[currentItem.id] || false;
+
     return (
         <div className="hero">
-            <AnimatePresence mode='wait'>
+            <AnimatePresence mode="wait">
                 <motion.div
-                    key={current}
+                    key={currentIndex}
                     className="hero-background"
-                    initial={{ opacity: 0, scale: 1.1 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.5 }}
                 >
-                    <img src={slides[current].image} alt={slides[current].title} />
+                    <img
+                        src={currentItem.image}
+                        alt={currentItem.title}
+                        onLoad={() => onLoadComplete?.()}
+                    />
                     <div className="gradient-overlay"></div>
                     <div className="gradient-overlay-bottom"></div>
                 </motion.div>
             </AnimatePresence>
 
             <div className="hero-content bc-container">
-                <AnimatePresence mode='wait'>
+                <AnimatePresence mode="wait">
                     <motion.div
-                        key={current}
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: 50 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
+                        key={currentIndex}
                         className="slide-info"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -30 }}
+                        transition={{ duration: 0.5 }}
                     >
-                        {slides[current].releaseDate && (
-                            <div className="release-countdown">
-                                <Clock size={16} />
-                                <span className="countdown-time">
-                                    {getTimeUntil(slides[current].releaseDate!)}
-                                </span>
-                                <span className="separator">|</span>
-                                <span className="episode-info">
-                                    {slides[current].episodeNumber && `Épisode ${slides[current].episodeNumber}`}
-                                    {slides[current].episodeTitle && slides[current].episodeNumber && ' - '}
-                                    {slides[current].episodeTitle}
-                                </span>
-                            </div>
-                        )}
-
-                        <h1 className="title">{slides[current].title}</h1>
+                        <h1 className="title">{currentItem.title}</h1>
 
                         <div className="tags">
-                            {slides[current].tags.map(tag => (
-                                <span key={tag} className="tag">{tag}</span>
+                            {currentItem.tags.map((tag, idx) => (
+                                <span key={idx} className="tag">{tag}</span>
                             ))}
                         </div>
 
-                        <p className="description">{slides[current].description}</p>
+                        <p className="description">{currentItem.description}</p>
 
                         <div className="actions">
-                            <button className="btn-primary">
-                                <Play fill="currentColor" size={20} /> Watch Now
+                            <button
+                                className="btn-primary"
+                                onClick={handleWatchNow}
+                            >
+                                <Play fill="currentColor" size={20} />
+                                Watch Now
                             </button>
-                            <button className="btn-secondary">
-                                <Bookmark size={20} /> Add to Watchlist
+                            <button
+                                className="btn-secondary"
+                                onClick={handleAddToWatchlist}
+                                disabled={isWatchlistUpdating}
+                            >
+                                {isInWatchlist ? (
+                                    <>
+                                        <Check size={20} />
+                                        In My List
+                                    </>
+                                ) : (
+                                    <>
+                                        <Plus size={20} />
+                                        Add to List
+                                    </>
+                                )}
                             </button>
                         </div>
                     </motion.div>
                 </AnimatePresence>
 
-                <div className="indicators">
-                    {slides.map((_, index) => (
-                        <div
-                            key={index}
-                            className={`indicator ${index === current ? 'active' : ''}`}
-                            onClick={() => setCurrent(index)}
-                        >
-                            <div className="progress-bar">
-                                {index === current && (
-                                    <motion.div
-                                        className="progress-fill"
-                                        initial={{ width: "0%" }}
-                                        animate={{ width: "100%" }}
-                                        transition={{ duration: 8, ease: "linear" }}
-                                    />
-                                )}
+                {/* Carousel Indicators */}
+                {heroItems.length > 1 && (
+                    <div className="indicators">
+                        {heroItems.map((_, idx) => (
+                            <div
+                                key={idx}
+                                className={`indicator ${idx === currentIndex ? 'active' : ''}`}
+                                onClick={() => goToSlide(idx)}
+                            >
+                                <div className="progress-bar">
+                                    {idx === currentIndex && (
+                                        <motion.div
+                                            className="progress-fill"
+                                            style={{ width: `${progress}%` }}
+                                        />
+                                    )}
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );

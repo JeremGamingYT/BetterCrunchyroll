@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import AnimeCard, { type Anime } from '../components/AnimeCard';
 import PageLoader from '../components/PageLoader';
 import { cacheService } from '../services/cacheService';
+import { ensureCrunchyApi } from '../utils/apiInstance';
 import './Simulcast.scss';
 
 // Génère les 7 prochains jours
@@ -58,14 +59,8 @@ const Simulcast = () => {
                 return;
             }
 
-            const api = (window as any).crunchyAPI;
-            if (!api) {
-                console.error('[Simulcast] window.crunchyAPI not available');
-                setLoading(false);
-                return;
-            }
-
             console.log('[Simulcast] Loading simulcast calendar...');
+            const api = await ensureCrunchyApi();
             const currentSeason = getCurrentSeasonalTag();
             console.log('[Simulcast] Current season tag:', currentSeason);
 
