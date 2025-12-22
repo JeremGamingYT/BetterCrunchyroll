@@ -1,0 +1,617 @@
+// Crunchyroll API service with localStorage caching
+// Uses postMessage to communicate with content script when on Crunchyroll
+// Falls back to API proxy route for local development
+
+const API_PROXY = "/api/crunchyroll"
+const CACHE_DURATION = 1000 * 60 * 60 // 1 hour cache
+
+interface CacheEntry<T> {
+    data: T
+    timestamp: number
+}
+
+// ===============================
+// Cache Helpers
+// ===============================
+
+function getCache<T>(key: string): T | null {
+    if (typeof window === "undefined") return null
+
+    try {
+        const cached = localStorage.getItem(`crunchyroll_${key}`)
+        if (!cached) return null
+
+        const entry: CacheEntry<T> = JSON.parse(cached)
+        if (Date.now() - entry.timestamp > CACHE_DURATION) {
+            localStorage.removeItem(`crunchyroll_${key}`)
+            return null
+        }
+
+        return entry.data
+    } catch {
+        return null
+    }
+}
+
+function setCache<T>(key: string, data: T): void {
+    if (typeof window === "undefined") return
+
+    try {
+        const entry: CacheEntry<T> = {
+            data,
+            timestamp: Date.now(),
+        }
+        localStorage.setItem(`crunchyroll_${key}`, JSON.stringify(entry))
+    } catch {
+        // Storage full or unavailable
+    }
+}
+
+function clearCache(key: string): void {
+    if (typeof window === "undefined") return
+    localStorage.removeItem(`crunchyroll_${key}`)
+}
+
+// ===============================
+// Check if running in extension iframe on Crunchyroll
+// ===============================
+
+let _isInIframe: boolean | null = null
+let _parentResponded = false
+
+function isInCrunchyrollIframe(): boolean {
+    if (typeof window === "undefined") return false
+
+    // Cache the result
+    if (_isInIframe !== null) return _isInIframe
+
+    try {
+        // Check if we're in an iframe
+        const inIframe = window.self !== window.top
+
+        // If we're in an iframe, assume it's the extension iframe
+        // The extension is the only thing that would load our app in an iframe on Crunchyroll
+        _isInIframe = inIframe
+
+        console.log('[Crunchyroll] Iframe detection:', { inIframe, result: _isInIframe })
+
+        return _isInIframe
+    } catch (e) {
+        console.log('[Crunchyroll] Iframe detection error:', e)
+        // If we can't access window.top, we're definitely in a cross-origin iframe
+        _isInIframe = true
+        return true
+    }
+}
+
+// ===============================
+// Message-based API Request (via content script)
+// ===============================
+
+let requestId = 0
+const pendingRequests = new Map<number, { resolve: (data: unknown) => void; reject: (error: Error) => void }>()
+
+// Listen for responses from content script
+if (typeof window !== "undefined") {
+    window.addEventListener('message', (event) => {
+        if (event.data?.type === 'CRUNCHYROLL_API_RESPONSE') {
+            const { id, success, data, error } = event.data
+            const pending = pendingRequests.get(id)
+
+            if (pending) {
+                pendingRequests.delete(id)
+                if (success) {
+                    pending.resolve(data)
+                } else {
+                    pending.reject(new Error(error || 'API request failed'))
+                }
+            }
+        }
+    })
+}
+
+async function fetchViaContentScript<T>(endpoint: string, params: Record<string, string>): Promise<T> {
+    return new Promise((resolve, reject) => {
+        const id = ++requestId
+
+        pendingRequests.set(id, {
+            resolve: resolve as (data: unknown) => void,
+            reject
+        })
+
+        // Send request to parent (content script)
+        window.parent.postMessage({
+            type: 'CRUNCHYROLL_API_REQUEST',
+            id,
+            endpoint,
+            params,
+        }, '*')
+
+        // Timeout after 30 seconds
+        setTimeout(() => {
+            if (pendingRequests.has(id)) {
+                pendingRequests.delete(id)
+                reject(new Error('Request timeout'))
+            }
+        }, 30000)
+    })
+}
+
+// ===============================
+// API Proxy Fallback (for local dev without extension)
+// ===============================
+
+async function fetchViaProxy<T>(endpoint: string, params: Record<string, string>): Promise<T> {
+    const url = new URL(API_PROXY, window.location.origin)
+    url.searchParams.append('endpoint', endpoint)
+
+    Object.entries(params).forEach(([key, value]) => {
+        url.searchParams.append(key, value)
+    })
+
+    const response = await fetch(url.toString(), {
+        method: "GET",
+        headers: { "Accept": "application/json" },
+    })
+
+    if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}))
+        throw new Error(errorData.error || `API error: ${response.status}`)
+    }
+
+    return response.json()
+}
+
+// ===============================
+// Main API Request Function
+// ===============================
+
+async function crunchyrollFetch<T>(endpoint: string, params: Record<string, string> = {}): Promise<T> {
+    // If running in Crunchyroll iframe, use postMessage to content script
+    if (isInCrunchyrollIframe()) {
+        console.log('[Crunchyroll] Using content script proxy for:', endpoint)
+        return fetchViaContentScript<T>(endpoint, params)
+    }
+
+    // Otherwise, use API proxy
+    console.log('[Crunchyroll] Using API proxy for:', endpoint)
+    return fetchViaProxy<T>(endpoint, params)
+}
+
+// ===============================
+// Types
+// ===============================
+
+export interface CrunchyrollSeries {
+    id: string
+    title: string
+    slug_title: string
+    description: string
+    images: {
+        poster_tall?: Array<Array<{ width: number; height: number; source: string }>>
+        poster_wide?: Array<Array<{ width: number; height: number; source: string }>>
+    }
+    series_metadata?: {
+        episode_count: number
+        season_count: number
+        is_dubbed: boolean
+        is_subbed: boolean
+        audio_locales: string[]
+        subtitle_locales: string[]
+        maturity_ratings: string[]
+    }
+}
+
+export interface CrunchyrollSeason {
+    id: string
+    title: string
+    season_number: number
+    is_dubbed: boolean
+    is_subbed: boolean
+    audio_locale: string
+    subtitle_locales: string[]
+}
+
+export interface CrunchyrollEpisode {
+    id: string
+    title: string
+    slug_title: string
+    episode: string
+    episode_number: number | null
+    sequence_number: number
+    description: string
+    duration_ms: number
+    is_premium_only: boolean
+    is_clip: boolean
+    is_dubbed: boolean
+    is_subbed: boolean
+    audio_locale: string
+    subtitle_locales: string[]
+    images: {
+        thumbnail?: Array<Array<{ width: number; height: number; source: string }>>
+    }
+    season_id: string
+    season_title: string
+    season_number: number
+    series_id: string
+    series_title: string
+    availability_starts?: string
+    availability_ends?: string
+}
+
+export interface CrunchyrollSearchResult {
+    type: string
+    count: number
+    items: Array<{
+        id: string
+        type: string
+        title: string
+        slug_title: string
+        description: string
+        images: {
+            poster_tall?: Array<Array<{ width: number; height: number; source: string }>>
+            poster_wide?: Array<Array<{ width: number; height: number; source: string }>>
+        }
+    }>
+}
+
+export interface TransformedCrunchyrollAnime {
+    crunchyrollId: string
+    title: string
+    slug: string
+    episodeCount: number
+    seasonCount: number
+    isDubbed: boolean
+    isSubbed: boolean
+}
+
+export interface TransformedCrunchyrollEpisode {
+    id: string
+    title: string
+    episodeNumber: number | null
+    sequenceNumber: number
+    description: string
+    duration: number // in minutes
+    thumbnail: string | null
+    isPremium: boolean
+    isDubbed: boolean
+    isSubbed: boolean
+    audioLocale: string
+    seasonId: string
+    seasonTitle: string
+    seasonNumber: number
+    seriesId: string
+    seriesTitle: string
+    availableFrom: string | null
+}
+
+// ===============================
+// Transform Helpers
+// ===============================
+
+function getBestImage(images: Array<Array<{ width: number; height: number; source: string }>> | undefined): string | null {
+    if (!images || images.length === 0 || images[0].length === 0) return null
+    // Get the highest resolution image
+    const sorted = [...images[0]].sort((a, b) => b.width - a.width)
+    return sorted[0]?.source || null
+}
+
+function transformEpisode(episode: CrunchyrollEpisode): TransformedCrunchyrollEpisode {
+    return {
+        id: episode.id,
+        title: episode.title,
+        episodeNumber: episode.episode_number,
+        sequenceNumber: episode.sequence_number,
+        description: episode.description,
+        duration: Math.round(episode.duration_ms / 60000), // Convert ms to minutes
+        thumbnail: getBestImage(episode.images?.thumbnail),
+        isPremium: episode.is_premium_only,
+        isDubbed: episode.is_dubbed,
+        isSubbed: episode.is_subbed,
+        audioLocale: episode.audio_locale,
+        seasonId: episode.season_id,
+        seasonTitle: episode.season_title,
+        seasonNumber: episode.season_number,
+        seriesId: episode.series_id,
+        seriesTitle: episode.series_title,
+        availableFrom: episode.availability_starts || null,
+    }
+}
+
+// ===============================
+// API Functions
+// ===============================
+
+/**
+ * Search for anime on Crunchyroll by title
+ * Returns the search results with basic info
+ */
+export async function searchCrunchyroll(query: string, limit = 10): Promise<CrunchyrollSearchResult | null> {
+    const cacheKey = `search_${query}_${limit}`
+    const cached = getCache<CrunchyrollSearchResult>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollSearchResult[] }>(
+            "/content/v2/discover/search",
+            {
+                q: query,
+                n: String(limit),
+                type: "series",
+            }
+        )
+
+        // Find the series results
+        const seriesResult = data.data?.find(r => r.type === "series") || null
+
+        if (seriesResult) {
+            setCache(cacheKey, seriesResult)
+        }
+
+        return seriesResult
+    } catch (error) {
+        console.error("[Crunchyroll] Search failed:", error)
+        return null
+    }
+}
+
+/**
+ * Check if an anime title exists on Crunchyroll
+ * Returns the Crunchyroll series info if found, null otherwise
+ */
+export async function checkAnimeAvailability(title: string): Promise<TransformedCrunchyrollAnime | null> {
+    const cacheKey = `availability_${title.toLowerCase().replace(/\s+/g, '_')}`
+    const cached = getCache<TransformedCrunchyrollAnime | null>(cacheKey)
+    if (cached !== null) return cached
+
+    try {
+        const searchResult = await searchCrunchyroll(title, 5)
+
+        if (!searchResult || searchResult.items.length === 0) {
+            // Cache the negative result too (but for shorter time)
+            setCache(cacheKey, null)
+            return null
+        }
+
+        // Try to find an exact or close match
+        const normalizedQuery = title.toLowerCase().replace(/[^a-z0-9]/g, '')
+
+        const match = searchResult.items.find(item => {
+            const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '')
+            return normalizedTitle === normalizedQuery ||
+                normalizedTitle.includes(normalizedQuery) ||
+                normalizedQuery.includes(normalizedTitle)
+        })
+
+        if (!match) {
+            setCache(cacheKey, null)
+            return null
+        }
+
+        // Get full series info
+        const seriesInfo = await getSeries(match.id)
+
+        const result: TransformedCrunchyrollAnime = {
+            crunchyrollId: match.id,
+            title: match.title,
+            slug: match.slug_title,
+            episodeCount: seriesInfo?.series_metadata?.episode_count || 0,
+            seasonCount: seriesInfo?.series_metadata?.season_count || 0,
+            isDubbed: seriesInfo?.series_metadata?.is_dubbed || false,
+            isSubbed: seriesInfo?.series_metadata?.is_subbed || true,
+        }
+
+        setCache(cacheKey, result)
+        return result
+    } catch (error) {
+        console.error("[Crunchyroll] Availability check failed:", error)
+        return null
+    }
+}
+
+/**
+ * Get series information by Crunchyroll ID
+ */
+export async function getSeries(seriesId: string): Promise<CrunchyrollSeries | null> {
+    const cacheKey = `series_${seriesId}`
+    const cached = getCache<CrunchyrollSeries>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollSeries[] }>(
+            `/content/v2/cms/series/${seriesId}`
+        )
+
+        const series = data.data?.[0] || null
+
+        if (series) {
+            setCache(cacheKey, series)
+        }
+
+        return series
+    } catch (error) {
+        console.error("[Crunchyroll] Get series failed:", error)
+        return null
+    }
+}
+
+/**
+ * Get all seasons for a series
+ */
+export async function getSeasons(seriesId: string): Promise<CrunchyrollSeason[]> {
+    const cacheKey = `seasons_${seriesId}`
+    const cached = getCache<CrunchyrollSeason[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollSeason[] }>(
+            `/content/v2/cms/series/${seriesId}/seasons`
+        )
+
+        const seasons = data.data || []
+        setCache(cacheKey, seasons)
+
+        return seasons
+    } catch (error) {
+        console.error("[Crunchyroll] Get seasons failed:", error)
+        return []
+    }
+}
+
+/**
+ * Get episodes for a specific season
+ */
+export async function getSeasonEpisodes(seasonId: string): Promise<TransformedCrunchyrollEpisode[]> {
+    const cacheKey = `episodes_${seasonId}`
+    const cached = getCache<TransformedCrunchyrollEpisode[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollEpisode[] }>(
+            `/content/v2/cms/seasons/${seasonId}/episodes`
+        )
+
+        const episodes = (data.data || [])
+            .filter(ep => !ep.is_clip)
+            .map(transformEpisode)
+
+        setCache(cacheKey, episodes)
+
+        return episodes
+    } catch (error) {
+        console.error("[Crunchyroll] Get episodes failed:", error)
+        return []
+    }
+}
+
+/**
+ * Get all episodes for a series (across all seasons)
+ */
+export async function getAllSeriesEpisodes(seriesId: string): Promise<TransformedCrunchyrollEpisode[]> {
+    const cacheKey = `all_episodes_${seriesId}`
+    const cached = getCache<TransformedCrunchyrollEpisode[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const seasons = await getSeasons(seriesId)
+
+        // Get episodes for each season in parallel
+        const episodePromises = seasons.map(season => getSeasonEpisodes(season.id))
+        const episodesArrays = await Promise.all(episodePromises)
+
+        // Flatten and sort by sequence number
+        const allEpisodes = episodesArrays
+            .flat()
+            .sort((a, b) => a.sequenceNumber - b.sequenceNumber)
+
+        setCache(cacheKey, allEpisodes)
+
+        return allEpisodes
+    } catch (error) {
+        console.error("[Crunchyroll] Get all episodes failed:", error)
+        return []
+    }
+}
+
+/**
+ * Browse Crunchyroll catalog
+ */
+export async function browseCrunchyroll(options: {
+    n?: number
+    start?: number
+    sort_by?: 'popularity' | 'newly_added' | 'alphabetical'
+    is_dubbed?: boolean
+    is_subbed?: boolean
+} = {}): Promise<CrunchyrollSeries[]> {
+    const params: Record<string, string> = {
+        n: String(options.n || 50),
+        start: String(options.start || 0),
+        type: 'series',
+    }
+
+    if (options.sort_by) params.sort_by = options.sort_by
+    if (options.is_dubbed !== undefined) params.is_dubbed = String(options.is_dubbed)
+    if (options.is_subbed !== undefined) params.is_subbed = String(options.is_subbed)
+
+    const cacheKey = `browse_${JSON.stringify(params)}`
+    const cached = getCache<CrunchyrollSeries[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollSeries[] }>(
+            "/content/v2/discover/browse",
+            params
+        )
+
+        const series = data.data || []
+        setCache(cacheKey, series)
+
+        return series
+    } catch (error) {
+        console.error("[Crunchyroll] Browse failed:", error)
+        return []
+    }
+}
+
+/**
+ * Get a mapping of available anime on Crunchyroll
+ * This is used to filter AniList results
+ */
+export async function getCrunchyrollCatalog(limit = 100): Promise<Map<string, TransformedCrunchyrollAnime>> {
+    const cacheKey = `catalog_${limit}`
+
+    // Try to get from localStorage
+    const cachedArray = getCache<TransformedCrunchyrollAnime[]>(cacheKey)
+    if (cachedArray) {
+        const map = new Map<string, TransformedCrunchyrollAnime>()
+        cachedArray.forEach(item => {
+            // Index by normalized title for matching
+            const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '')
+            map.set(normalizedTitle, item)
+        })
+        return map
+    }
+
+    try {
+        const series = await browseCrunchyroll({ n: limit, sort_by: 'popularity' })
+
+        const catalog: TransformedCrunchyrollAnime[] = series.map(s => ({
+            crunchyrollId: s.id,
+            title: s.title,
+            slug: s.slug_title,
+            episodeCount: s.series_metadata?.episode_count || 0,
+            seasonCount: s.series_metadata?.season_count || 0,
+            isDubbed: s.series_metadata?.is_dubbed || false,
+            isSubbed: s.series_metadata?.is_subbed || true,
+        }))
+
+        setCache(cacheKey, catalog)
+
+        const map = new Map<string, TransformedCrunchyrollAnime>()
+        catalog.forEach(item => {
+            const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '')
+            map.set(normalizedTitle, item)
+        })
+
+        return map
+    } catch (error) {
+        console.error("[Crunchyroll] Get catalog failed:", error)
+        return new Map()
+    }
+}
+
+/**
+ * Clear all Crunchyroll cache
+ */
+export function clearAllCrunchyrollCache(): void {
+    if (typeof window === "undefined") return
+
+    const keys = Object.keys(localStorage)
+    keys.forEach(key => {
+        if (key.startsWith("crunchyroll_")) {
+            localStorage.removeItem(key)
+        }
+    })
+
+    console.log("[Crunchyroll] Cache cleared")
+}

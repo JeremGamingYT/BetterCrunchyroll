@@ -1,15 +1,17 @@
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
-import { ChevronLeft, ChevronRight, Play, Bookmark, Info } from "lucide-react"
+import { ChevronLeft, ChevronRight, Play, Bookmark, Info, X, Star, Calendar, Clock } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useTrendingAnime } from "@/hooks/use-anilist"
+import Link from "next/link"
 
 export function HeroCarousel() {
   const { data: trendingAnimes, isLoading } = useTrendingAnime(1, 4)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
+  const [showInfoPopup, setShowInfoPopup] = useState(false)
 
   const animes = trendingAnimes || []
   const hasAnimes = animes.length > 0
@@ -46,6 +48,7 @@ export function HeroCarousel() {
 
   // Fallback data for loading state
   const fallbackAnime = {
+    id: 0,
     title: "Chargement...",
     description: "Découvrez les meilleurs anime en streaming sur Crunchyroll.",
     image: "/placeholder.svg?height=800&width=1600",
@@ -53,6 +56,9 @@ export function HeroCarousel() {
     genres: ["Action", "Fantasy"],
     nextEpisode: { episode: 1 },
     year: 2024,
+    score: null,
+    episodes: null,
+    status: "RELEASING",
   }
 
   const displayAnime = currentAnime || fallbackAnime
@@ -92,8 +98,8 @@ export function HeroCarousel() {
         </div>
       )}
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex items-center px-4 md:px-8 lg:px-12">
+      {/* Content - Added max-w and padding to avoid arrow overlap */}
+      <div className="relative z-10 h-full flex items-center px-4 md:px-8 lg:px-16 xl:px-24">
         <div className="max-w-2xl space-y-6">
           <h1
             className={cn(
@@ -140,39 +146,44 @@ export function HeroCarousel() {
             {displayAnime.description || "Découvrez cet anime passionnant sur Crunchyroll."}
           </p>
 
-          {/* Actions */}
+          {/* Actions - Made buttons functional */}
           <div
             className={cn(
               "flex items-center gap-3 pt-2 transition-all duration-700 ease-out delay-200",
               isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0",
             )}
           >
-            <button className="group flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold text-sm hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25">
+            <Link
+              href={`/anime/${displayAnime.id}`}
+              onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
+              className="group flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold text-sm hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
+            >
               <Play className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="currentColor" />
               <span>À SUIVRE E{displayAnime.nextEpisode?.episode || 1}</span>
-            </button>
+            </Link>
             <button className="p-3 bg-secondary/80 hover:bg-secondary text-foreground rounded-lg transition-all duration-300 hover:scale-105 border border-border/50">
               <Bookmark className="w-5 h-5" />
             </button>
-            <button className="p-3 bg-secondary/80 hover:bg-secondary text-foreground rounded-lg transition-all duration-300 hover:scale-105 border border-border/50">
+            <button
+              onClick={() => setShowInfoPopup(true)}
+              className="p-3 bg-secondary/80 hover:bg-secondary text-foreground rounded-lg transition-all duration-300 hover:scale-105 border border-border/50"
+            >
               <Info className="w-5 h-5" />
             </button>
           </div>
         </div>
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Navigation Arrows - Moved arrows to edges and increased z-index */}
       {hasAnimes && (
         <>
           <button
             onClick={goToPrevious}
             className={cn(
-              "absolute left-4 top-1/2 -translate-y-1/2 z-20",
-              "p-3 rounded-full bg-background/30 backdrop-blur-sm border border-border/30",
-              "text-foreground/70 hover:text-foreground hover:bg-background/50",
+              "absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-30",
+              "p-3 rounded-full bg-background/50 backdrop-blur-sm border border-border/30",
+              "text-foreground/70 hover:text-foreground hover:bg-background/80",
               "transition-all duration-300 hover:scale-110",
-              "opacity-0 hover:opacity-100 group-hover:opacity-100",
-              "md:opacity-70",
             )}
           >
             <ChevronLeft className="w-6 h-6" />
@@ -180,12 +191,10 @@ export function HeroCarousel() {
           <button
             onClick={goToNext}
             className={cn(
-              "absolute right-4 top-1/2 -translate-y-1/2 z-20",
-              "p-3 rounded-full bg-background/30 backdrop-blur-sm border border-border/30",
-              "text-foreground/70 hover:text-foreground hover:bg-background/50",
+              "absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-30",
+              "p-3 rounded-full bg-background/50 backdrop-blur-sm border border-border/30",
+              "text-foreground/70 hover:text-foreground hover:bg-background/80",
               "transition-all duration-300 hover:scale-110",
-              "opacity-0 hover:opacity-100 group-hover:opacity-100",
-              "md:opacity-70",
             )}
           >
             <ChevronRight className="w-6 h-6" />
@@ -195,7 +204,7 @@ export function HeroCarousel() {
 
       {/* Dots Indicator */}
       {hasAnimes && (
-        <div className="absolute bottom-8 left-4 md:left-8 lg:left-12 z-20 flex items-center gap-2">
+        <div className="absolute bottom-8 left-4 md:left-8 lg:left-16 xl:left-24 z-20 flex items-center gap-2">
           {animes.map((_, index) => (
             <button
               key={index}
@@ -218,6 +227,111 @@ export function HeroCarousel() {
               width: `${((currentIndex + 1) / animes.length) * 100}%`,
             }}
           />
+        </div>
+      )}
+
+      {showInfoPopup && currentAnime && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm"
+          onClick={() => setShowInfoPopup(false)}
+        >
+          <div
+            className="relative bg-card border border-border rounded-2xl max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Header Image */}
+            <div className="relative h-48 overflow-hidden rounded-t-2xl">
+              <img
+                src={currentAnime.bannerImage || currentAnime.image}
+                alt={currentAnime.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+              <button
+                onClick={() => setShowInfoPopup(false)}
+                className="absolute top-4 right-4 p-2 bg-background/50 backdrop-blur-sm rounded-full hover:bg-background/80 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="p-6 space-y-4">
+              <h2 className="text-2xl font-bold text-foreground">{currentAnime.title}</h2>
+
+              {/* Meta info */}
+              <div className="flex flex-wrap items-center gap-3">
+                {currentAnime.score && (
+                  <div className="flex items-center gap-1 text-primary">
+                    <Star className="w-4 h-4" fill="currentColor" />
+                    <span className="font-semibold">{currentAnime.score.toFixed(1)}</span>
+                  </div>
+                )}
+                <span className="px-2 py-0.5 bg-primary/20 border border-primary/50 rounded text-xs font-semibold text-primary">
+                  {currentAnime.rating}
+                </span>
+                <div className="flex items-center gap-1 text-muted-foreground text-sm">
+                  <Calendar className="w-4 h-4" />
+                  <span>{currentAnime.year}</span>
+                </div>
+                {currentAnime.episodes && (
+                  <div className="flex items-center gap-1 text-muted-foreground text-sm">
+                    <Clock className="w-4 h-4" />
+                    <span>{currentAnime.episodes} épisodes</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Genres */}
+              <div className="flex flex-wrap gap-2">
+                {currentAnime.genres.map((genre) => (
+                  <span key={genre} className="px-3 py-1 bg-secondary rounded-full text-sm text-muted-foreground">
+                    {genre}
+                  </span>
+                ))}
+              </div>
+
+              {/* Description */}
+              <p className="text-muted-foreground leading-relaxed">
+                {currentAnime.description || "Aucune description disponible."}
+              </p>
+
+              {/* Studio */}
+              {currentAnime.studio && (
+                <div className="text-sm">
+                  <span className="text-muted-foreground">Studio : </span>
+                  <span className="text-foreground font-medium">{currentAnime.studio}</span>
+                </div>
+              )}
+
+              {/* Status */}
+              <div className="text-sm">
+                <span className="text-muted-foreground">Statut : </span>
+                <span className="text-foreground font-medium">
+                  {currentAnime.status === "RELEASING"
+                    ? "En cours"
+                    : currentAnime.status === "FINISHED"
+                      ? "Terminé"
+                      : currentAnime.status === "NOT_YET_RELEASED"
+                        ? "À venir"
+                        : currentAnime.status}
+                </span>
+              </div>
+
+              {/* Action button */}
+              <Link
+                href={`/anime/${currentAnime.id}`}
+                onClick={() => {
+                  setShowInfoPopup(false)
+                  window.scrollTo({ top: 0, behavior: "instant" })
+                }}
+                className="flex items-center justify-center gap-2 w-full py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+              >
+                <Play className="w-5 h-5" fill="currentColor" />
+                Voir l'anime
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </section>

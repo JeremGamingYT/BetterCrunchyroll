@@ -159,7 +159,12 @@ export function Header() {
               {/* Menu Items */}
               <div className="py-2">
                 <ProfileMenuItem icon={Users} label="Changer de profil" onClick={() => setIsProfileOpen(false)} />
-                <ProfileMenuItem icon={Settings} label="Paramètres" onClick={() => setIsProfileOpen(false)} />
+                <ProfileMenuItem
+                  icon={Settings}
+                  label="Paramètres"
+                  href="/parametres"
+                  onClick={() => setIsProfileOpen(false)}
+                />
 
                 <div className="h-px bg-border my-2" />
 
@@ -256,6 +261,7 @@ function ProfileMenuItem({
   onClick?: () => void
   variant?: "default" | "destructive"
 }) {
+  const router = useRouter()
   const className = cn(
     "flex items-center gap-3 w-full px-4 py-2.5 text-sm font-medium transition-colors",
     variant === "default" && "text-foreground hover:bg-secondary/50",

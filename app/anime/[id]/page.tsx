@@ -1,7 +1,7 @@
 "use client"
 
 import { useParams } from "next/navigation"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import {
   Star,
   Clock,
@@ -12,16 +12,14 @@ import {
   TrendingUp,
   Film,
   Globe,
-  ChevronLeft,
-  ChevronRight,
 } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimeCard } from "@/components/anime-card"
-import { EpisodeCard } from "@/components/episode-card"
-import { useAnimeDetails } from "@/hooks/use-anilist"
+import { EpisodeGrid, FallbackEpisodeGrid } from "@/components/episode-grid"
+import { LoadingScreen } from "@/components/loading-screen"
+import { useAnimeDetails } from "@/hooks/use-combined-anime"
 import { cn } from "@/lib/utils"
-import { useRef } from "react"
 
 export default function AnimePage() {
   const params = useParams()
@@ -41,26 +39,7 @@ export default function AnimePage() {
     window.scrollTo({ top: 0, behavior: "instant" })
   }, [id])
 
-  // Episodes scroll state
-  const episodesScrollRef = useRef<HTMLDivElement>(null)
-  const [canScrollEpisodesLeft, setCanScrollEpisodesLeft] = useState(false)
-  const [canScrollEpisodesRight, setCanScrollEpisodesRight] = useState(true)
 
-  const checkEpisodesScroll = () => {
-    if (episodesScrollRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = episodesScrollRef.current
-      setCanScrollEpisodesLeft(scrollLeft > 0)
-      setCanScrollEpisodesRight(scrollLeft < scrollWidth - clientWidth - 10)
-    }
-  }
-
-  const scrollEpisodes = (direction: "left" | "right") => {
-    if (episodesScrollRef.current) {
-      const scrollAmount = direction === "left" ? -400 : 400
-      episodesScrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" })
-      setTimeout(checkEpisodesScroll, 300)
-    }
-  }
 
   if (!id) {
     return (
@@ -77,17 +56,7 @@ export default function AnimePage() {
   }
 
   if (isLoading) {
-    return (
-      <main className="min-h-screen bg-background">
-        <Header />
-        <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin" />
-            <p className="text-muted-foreground">Chargement...</p>
-          </div>
-        </div>
-      </main>
-    )
+    return <LoadingScreen isLoading={true} message="Chargement des détails..." />
   }
 
   if (error || !anime) {
@@ -492,57 +461,54 @@ export default function AnimePage() {
             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
               <div className="w-1 h-6 rounded-full" style={{ backgroundColor: accentColor }} />
               Épisodes
-              {anime.episodes && (
+              {anime.crunchyrollEpisodes && anime.crunchyrollEpisodes.length > 0 ? (
+                <span className="text-base font-normal text-muted-foreground ml-2">
+                  ({anime.crunchyrollEpisodes.length} épisodes)
+                </span>
+              ) : anime.episodes && (
                 <span className="text-base font-normal text-muted-foreground ml-2">({anime.episodes} épisodes)</span>
               )}
             </h2>
 
-            {/* Episodes Carousel */}
-            <div className="relative">
-              {/* Scroll Buttons */}
-              {canScrollEpisodesLeft && (
-                <button
-                  onClick={() => scrollEpisodes("left")}
-                  className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-secondary transition-colors"
-                >
-                  <ChevronLeft className="w-5 h-5" />
-                </button>
-              )}
-              {canScrollEpisodesRight && (
-                <button
-                  onClick={() => scrollEpisodes("right")}
-                  className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-secondary transition-colors"
-                >
-                  <ChevronRight className="w-5 h-5" />
-                </button>
-              )}
-
-              {/* Episodes Container */}
-              <div
-                ref={episodesScrollRef}
-                onScroll={checkEpisodesScroll}
-                className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide"
-              >
-                {anime.episodes ? (
-                  Array.from({ length: Math.min(anime.episodes, 24) }, (_, i) => (
-                    <EpisodeCard
-                      key={i + 1}
-                      episodeNumber={i + 1}
-                      title={`Épisode ${i + 1}`}
-                      thumbnail={anime.bannerImage || anime.image}
-                      duration={anime.duration || 24}
-                      accentColor={accentColor}
-                    />
-                  ))
-                ) : (
-                  <p className="text-muted-foreground">Aucun épisode disponible.</p>
-                )}
+            {/* Episodes Grid */}
+            {anime.crunchyrollEpisodes && anime.crunchyrollEpisodes.length > 0 ? (
+              <EpisodeGrid
+                episodes={anime.crunchyrollEpisodes.map(ep => ({
+                  id: ep.id,
+                  title: ep.title,
+                  episodeNumber: ep.episodeNumber,
+                  sequenceNumber: ep.sequenceNumber,
+                  description: '',
+                  duration: ep.duration || 24,
+                  thumbnail: ep.thumbnail || anime.bannerImage || anime.image,
+                  isPremium: ep.isPremium,
+                  isDubbed: ep.isDubbed,
+                  isSubbed: ep.isSubbed,
+                  seasonNumber: ep.seasonNumber,
+                  seasonTitle: ep.seasonTitle,
+                }))}
+                accentColor={accentColor}
+                animeTitle={anime.title}
+                animeImage={anime.bannerImage || anime.image}
+              />
+            ) : anime.episodes ? (
+              <FallbackEpisodeGrid
+                totalEpisodes={anime.episodes}
+                accentColor={accentColor}
+                animeImage={anime.bannerImage || anime.image}
+                duration={anime.duration || 24}
+              />
+            ) : (
+              <div className="flex flex-col items-center justify-center py-16 text-center">
+                <Film className="w-16 h-16 text-muted-foreground mb-4" />
+                <p className="text-muted-foreground">Aucun épisode disponible.</p>
               </div>
-            </div>
+            )}
 
-            {anime.episodes && anime.episodes > 24 && (
-              <p className="text-center text-muted-foreground mt-4">
-                Affichage des 24 premiers épisodes sur {anime.episodes}
+            {/* Show Crunchyroll availability message */}
+            {!anime.isOnCrunchyroll && (
+              <p className="text-center text-yellow-500/80 mt-6">
+                ⚠️ Cet anime n'est pas disponible sur Crunchyroll
               </p>
             )}
           </div>

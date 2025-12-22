@@ -4,26 +4,29 @@ import { useRef, useState } from "react"
 import { ChevronLeft, ChevronRight, Loader2 } from "lucide-react"
 import { AnimeCard } from "./anime-card"
 import { cn } from "@/lib/utils"
-import type { TransformedAnime } from "@/lib/anilist"
+import Link from "next/link"
+import type { CombinedAnime } from "@/hooks/use-combined-anime"
 
 interface AnimeSectionProps {
   title: string
   animes?:
-    | TransformedAnime[]
-    | Array<{
-        id: number
-        title: string
-        image: string
-        rating: string
-        genres: string[]
-        color?: string | null
-      }>
+  | CombinedAnime[]
+  | Array<{
+    id: number
+    title: string
+    image: string
+    rating: string
+    genres: string[]
+    color?: string | null
+    crunchyrollId?: string | null
+  }>
   isLoading?: boolean
   error?: Error | null
   showAiring?: boolean
+  sectionSlug?: string
 }
 
-export function AnimeSection({ title, animes, isLoading, error, showAiring }: AnimeSectionProps) {
+export function AnimeSection({ title, animes, isLoading, error, showAiring, sectionSlug }: AnimeSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
@@ -44,18 +47,28 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring }: An
     }
   }
 
+  const getSectionHref = () => {
+    if (sectionSlug) return sectionSlug
+    const titleLower = title.toLowerCase()
+    if (titleLower.includes("nouveauté") || titleLower.includes("nouveau")) return "/nouveau"
+    if (titleLower.includes("populaire")) return "/populaire"
+    if (titleLower.includes("simulcast")) return "/simulcast"
+    if (titleLower.includes("sélection") || titleLower.includes("tendance")) return "/populaire"
+    return "#"
+  }
+
   return (
     <section className="relative isolate group/section" style={{ zIndex: 1 }}>
       {/* Header */}
       <div className="flex items-center justify-between mb-5">
         <h2 className="text-xl md:text-2xl font-bold text-foreground">{title}</h2>
-        <a
-          href="#"
+        <Link
+          href={getSectionHref()}
           className="text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-300 flex items-center gap-1"
         >
           Voir tout
           <ChevronRight className="w-4 h-4" />
-        </a>
+        </Link>
       </div>
 
       {/* Scroll Container */}

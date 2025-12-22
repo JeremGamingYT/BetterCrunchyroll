@@ -3,7 +3,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimeCard } from "@/components/anime-card"
-import { useNewAnime } from "@/hooks/use-anilist"
+import { useNewAnime } from "@/hooks/use-combined-anime"
 import { Loader2 } from "lucide-react"
 import { useEffect } from "react"
 

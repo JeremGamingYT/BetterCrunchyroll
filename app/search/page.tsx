@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimeCard } from "@/components/anime-card"
-import { useSearchAnime } from "@/hooks/use-anilist"
+import { useSearchAnime } from "@/hooks/use-combined-anime"
 import { cn } from "@/lib/utils"
 import { Search, Loader2, X, SlidersHorizontal } from "lucide-react"
 

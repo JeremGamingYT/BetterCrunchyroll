@@ -4,27 +4,31 @@ import { useState } from "react"
 import Link from "next/link"
 import { Play, Bookmark, Star, Clock } from "lucide-react"
 import { cn } from "@/lib/utils"
-import type { TransformedAnime } from "@/lib/anilist"
+import type { CombinedAnime } from "@/hooks/use-combined-anime"
 
 interface AnimeCardProps {
   anime:
-    | TransformedAnime
-    | {
-        id: number
-        title: string
-        image: string
-        rating?: string
-        genres?: string[]
-        score?: number | null
-        color?: string | null
-        nextEpisode?: {
-          episode: number
-          airingAt: number
-          timeUntilAiring: number
-        } | null
-        type?: string
-        popularity?: number
-      }
+  | CombinedAnime
+  | {
+    id: number
+    title: string
+    image: string
+    rating?: string
+    genres?: string[]
+    score?: number | null
+    color?: string | null
+    nextEpisode?: {
+      episode: number
+      airingAt: number
+      timeUntilAiring: number
+    } | null
+    type?: string
+    popularity?: number
+    episodes?: number | null
+    crunchyrollId?: string | null
+    crunchyrollSlug?: string | null
+    isOnCrunchyroll?: boolean
+  }
   index?: number
   showAiring?: boolean
   compact?: boolean
@@ -42,8 +46,16 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
   const rating = "rating" in anime && anime.rating ? anime.rating : null
   const relationType = "type" in anime ? anime.type : null
   const popularity = "popularity" in anime ? anime.popularity : 0
+  const totalEpisodes = "episodes" in anime ? anime.episodes : null
+  const crunchyrollId = "crunchyrollId" in anime ? anime.crunchyrollId : null
+  const crunchyrollSlug = "crunchyrollSlug" in anime ? anime.crunchyrollSlug : null
+  const isOnCrunchyroll = "isOnCrunchyroll" in anime ? anime.isOnCrunchyroll : false
 
-  const hasSubDub = popularity > 50000 || (score && score > 7.5)
+  // Use Crunchyroll info for sub/dub when available
+  const crunchyrollInfo = "crunchyrollInfo" in anime ? anime.crunchyrollInfo : null
+  const hasSubDub = crunchyrollInfo
+    ? (crunchyrollInfo.isDubbed && crunchyrollInfo.isSubbed)
+    : ((popularity || 0) > 50000 || (score && score > 7.5))
   const audioLabel = hasSubDub ? "Sub | Dub" : "Sub"
 
   // Format time until airing
@@ -57,12 +69,24 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
     return `${minutes}m`
   }
 
+  const getEpisodeText = () => {
+    if (nextEpisode) return `Ep ${nextEpisode.episode}`
+    if (totalEpisodes) return `${totalEpisodes} eps`
+    return null
+  }
+
+  const episodeText = getEpisodeText()
+
+  // Build the link URL - use Crunchyroll ID when available for better compatibility
+  const animeUrl = crunchyrollId
+    ? `/anime/${anime.id}?cr=${crunchyrollId}`
+    : `/anime/${anime.id}`
+
   return (
     <Link
-      href={`/anime/${anime.id}`}
+      href={animeUrl}
       scroll={false}
       onClick={() => {
-        // Scroll to top when clicking the link
         window.scrollTo({ top: 0, behavior: "instant" })
       }}
       className={cn(
@@ -199,20 +223,34 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             </button>
           </div>
 
-          {/* Bottom Info */}
-          {genres.length > 0 && (
-            <div
-              className={cn(
-                "absolute bottom-0 left-0 right-0 p-4",
-                "transition-all duration-500",
-                isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+          {/* Bottom Info - Always show score/episode when available */}
+          <div
+            className={cn(
+              "absolute bottom-0 left-0 right-0 p-4",
+              "transition-all duration-500",
+              isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+            )}
+          >
+            <div className="flex items-center gap-2 mb-2">
+              {score && (
+                <>
+                  <Star
+                    className="w-4 h-4"
+                    fill="currentColor"
+                    style={{ color: animeColor || "hsl(var(--primary))" }}
+                  />
+                  <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
+                </>
               )}
-            >
-              <div className="flex items-center gap-2 mb-2">
-                <Star className="w-4 h-4" fill="currentColor" style={{ color: animeColor || "hsl(var(--primary))" }} />
-                <span className="text-sm font-medium text-foreground">{score ? score.toFixed(1) : "N/A"}</span>
-                {nextEpisode && <span className="text-xs text-muted-foreground ml-auto">Ep {nextEpisode.episode}</span>}
-              </div>
+              {!score && (
+                <>
+                  <Star className="w-4 h-4 text-muted-foreground" />
+                  <span className="text-sm font-medium text-muted-foreground">N/A</span>
+                </>
+              )}
+              {episodeText && <span className="text-xs text-muted-foreground ml-auto">{episodeText}</span>}
+            </div>
+            {genres.length > 0 && (
               <div className="flex flex-wrap gap-1">
                 {genres.slice(0, 2).map((genre) => (
                   <span key={genre} className="text-xs px-2 py-0.5 rounded-full bg-secondary/80 text-muted-foreground">
@@ -220,8 +258,8 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                   </span>
                 ))}
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
 
         {/* Border Glow - Dynamic color */}

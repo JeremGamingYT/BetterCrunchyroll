@@ -3,7 +3,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimeCard } from "@/components/anime-card"
-import { usePopularAnime } from "@/hooks/use-anilist"
+import { usePopularAnime } from "@/hooks/use-combined-anime"
 import { Loader2, Star, Users } from "lucide-react"
 import { useEffect } from "react"
 
@@ -19,11 +19,11 @@ export default function PopulairePage() {
   // Sort by score and popularity (combined)
   const sortedAnimes = popularAnimes
     ? [...popularAnimes].sort((a, b) => {
-        // Combine score and popularity for ranking
-        const aScore = (a.score || 0) * 10 + (a.popularity ? Math.log10(a.popularity) : 0)
-        const bScore = (b.score || 0) * 10 + (b.popularity ? Math.log10(b.popularity) : 0)
-        return bScore - aScore
-      })
+      // Combine score and popularity for ranking
+      const aScore = (a.score || 0) * 10 + (a.popularity ? Math.log10(a.popularity) : 0)
+      const bScore = (b.score || 0) * 10 + (b.popularity ? Math.log10(b.popularity) : 0)
+      return bScore - aScore
+    })
     : []
 
   return (

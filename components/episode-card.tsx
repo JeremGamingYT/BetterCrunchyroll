@@ -1,21 +1,23 @@
 "use client"
 
 import { useState } from "react"
-import { Play, Clock } from "lucide-react"
+import { Play, Clock, Crown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface EpisodeCardProps {
-  episodeNumber: number
+  episodeNumber: number | null
   title?: string
   duration: number
-  thumbnail?: string
+  thumbnail?: string | null
   accentColor?: string
+  episodeId?: string
+  isPremium?: boolean
 }
 
-export function EpisodeCard({ episodeNumber, title, duration, thumbnail, accentColor }: EpisodeCardProps) {
+export function EpisodeCard({ episodeNumber, title, duration, thumbnail, accentColor, episodeId, isPremium }: EpisodeCardProps) {
   const [isHovered, setIsHovered] = useState(false)
 
-  const episodeTitle = title || `Épisode ${episodeNumber}`
+  const episodeTitle = title || `Épisode ${episodeNumber || '?'}`
   const thumbnailUrl = thumbnail || `/placeholder.svg?height=180&width=320&query=anime episode ${episodeNumber} scene`
 
   return (
@@ -65,6 +67,14 @@ export function EpisodeCard({ episodeNumber, title, duration, thumbnail, accentC
           <Clock className="w-3 h-3 text-muted-foreground" />
           <span className="text-xs font-medium text-foreground">{duration} min</span>
         </div>
+
+        {/* Premium Badge */}
+        {isPremium && (
+          <div className="absolute top-12 right-3 px-2 py-1 rounded bg-amber-500/90 backdrop-blur-sm flex items-center gap-1">
+            <Crown className="w-3 h-3 text-white" />
+            <span className="text-xs font-bold text-white">Premium</span>
+          </div>
+        )}
 
         {/* Play Button */}
         <div className={cn("absolute inset-0 flex items-center justify-center", "transition-all duration-300")}>
