@@ -307,10 +307,10 @@ function transformAnime(anime: AnilistAnime): TransformedAnime {
     color: anime.coverImage.color,
     nextEpisode: anime.nextAiringEpisode
       ? {
-          episode: anime.nextAiringEpisode.episode,
-          airingAt: anime.nextAiringEpisode.airingAt * 1000,
-          timeUntilAiring: anime.nextAiringEpisode.timeUntilAiring,
-        }
+        episode: anime.nextAiringEpisode.episode,
+        airingAt: anime.nextAiringEpisode.airingAt * 1000,
+        timeUntilAiring: anime.nextAiringEpisode.timeUntilAiring,
+      }
       : null,
     isCrunchyroll,
     studio: mainStudio,
@@ -606,11 +606,11 @@ export async function getAnimeDetails(id: number): Promise<AnimeDetails | null> 
           role: edge.role,
           voiceActor: edge.voiceActors[0]
             ? {
-                id: edge.voiceActors[0].id,
-                name: edge.voiceActors[0].name.full,
-                image: edge.voiceActors[0].image.medium,
-                language: edge.voiceActors[0].language,
-              }
+              id: edge.voiceActors[0].id,
+              name: edge.voiceActors[0].name.full,
+              image: edge.voiceActors[0].image.medium,
+              language: edge.voiceActors[0].language,
+            }
             : null,
         })) || [],
       relations:
@@ -657,4 +657,61 @@ export async function searchAnime(searchQuery: string, page = 1, perPage = 20): 
 
   const data = await queryAnilist<{ Page: { media: AnilistAnime[] } }>(query, { page, perPage, search: searchQuery })
   return data.Page.media.map(transformAnime)
+}
+
+// Basic info for enriching watchlist items (color, score)
+export interface AnimeBasicInfo {
+  id: number
+  title: string
+  color: string | null
+  score: number | null
+  image: string
+  genres: string[]
+}
+
+// Search anime and return basic info (for watchlist enrichment)
+export async function searchAnimeBasicInfo(searchQuery: string): Promise<AnimeBasicInfo | null> {
+  const cacheKey = `anime_basic_${searchQuery.toLowerCase().replace(/\s+/g, '_')}`
+  const cached = getCache<AnimeBasicInfo>(cacheKey)
+  if (cached) return cached
+
+  const query = `
+    query ($search: String) {
+      Media(type: ANIME, search: $search, isAdult: false) {
+        id
+        title { romaji english }
+        coverImage { large color }
+        averageScore
+        genres
+      }
+    }
+  `
+
+  try {
+    const data = await queryAnilist<{
+      Media: {
+        id: number
+        title: { romaji: string; english: string | null }
+        coverImage: { large: string; color: string | null }
+        averageScore: number | null
+        genres: string[]
+      }
+    }>(query, { search: searchQuery })
+
+    if (!data.Media) return null
+
+    const result: AnimeBasicInfo = {
+      id: data.Media.id,
+      title: data.Media.title.english || data.Media.title.romaji,
+      color: data.Media.coverImage.color,
+      score: data.Media.averageScore ? data.Media.averageScore / 10 : null,
+      image: data.Media.coverImage.large,
+      genres: data.Media.genres || [],
+    }
+
+    setCache(cacheKey, result)
+    return result
+  } catch {
+    return null
+  }
 }

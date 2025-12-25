@@ -9,9 +9,16 @@ import {
     getSeasonEpisodes,
     getAllSeriesEpisodes,
     getCrunchyrollCatalog,
+    getAccount,
+    getProfile,
+    getProfiles,
+    getWatchlist,
     type TransformedCrunchyrollAnime,
     type TransformedCrunchyrollEpisode,
     type CrunchyrollSeason,
+    type CrunchyrollAccount,
+    type CrunchyrollProfile,
+    type TransformedWatchlistItem,
 } from "@/lib/crunchyroll"
 
 // Hook for checking if an anime is available on Crunchyroll
@@ -100,6 +107,63 @@ export function useCrunchyrollSearch(query: string, limit = 10) {
         {
             revalidateOnFocus: false,
             dedupingInterval: 30000,
+        }
+    )
+}
+
+// Hook for getting account info
+export function useCrunchyrollAccount() {
+    return useSWR<CrunchyrollAccount | null>(
+        'cr-account-me',
+        () => getAccount(),
+        {
+            revalidateOnFocus: false,
+            revalidateOnReconnect: false,
+            dedupingInterval: 300000, // 5 minutes
+        }
+    )
+}
+
+// Hook for getting current profile info
+export function useCrunchyrollProfile() {
+    return useSWR<CrunchyrollProfile | null>(
+        'cr-profile-me',
+        () => getProfile(),
+        {
+            revalidateOnFocus: false,
+            revalidateOnReconnect: false,
+            dedupingInterval: 300000, // 5 minutes
+        }
+    )
+}
+
+// Hook for getting all profiles
+export function useCrunchyrollProfiles() {
+    return useSWR<CrunchyrollProfile[]>(
+        'cr-profiles-me',
+        () => getProfiles(),
+        {
+            revalidateOnFocus: false,
+            revalidateOnReconnect: false,
+            dedupingInterval: 300000, // 5 minutes
+        }
+    )
+}
+
+// Hook for getting user's Crunchyroll watchlist
+export function useCrunchyrollWatchlist(accountId: string | null, options?: {
+    n?: number
+    order?: 'desc' | 'asc'
+    sort_by?: 'date_updated' | 'date_watched' | 'date_added' | 'alphabetical'
+    is_favorite?: boolean
+}) {
+    return useSWR<TransformedWatchlistItem[]>(
+        accountId ? `cr-watchlist-${accountId}-${JSON.stringify(options || {})}` : null,
+        () => accountId ? getWatchlist({ accountId, ...options }) : [],
+        {
+            revalidateOnFocus: false,
+            revalidateOnReconnect: false,
+            dedupingInterval: 60000, // 1 minute
         }
     )
 }

@@ -600,6 +600,439 @@ export async function getCrunchyrollCatalog(limit = 100): Promise<Map<string, Tr
     }
 }
 
+// ===============================
+// Account & Profile Types
+// ===============================
+
+export interface CrunchyrollAccount {
+    account_id: string
+    external_id: string
+    email: string
+    email_verified: boolean
+    created: string
+}
+
+export interface CrunchyrollProfile {
+    profile_id: string
+    username: string
+    avatar: string // Transformed from { assets: [...] } to string in getProfile()
+    wallpaper?: string
+    profile_name?: string
+    is_primary?: boolean
+    preferred_content_audio_language?: string
+    preferred_content_subtitle_language?: string
+    cr_beta_opt_in?: boolean
+}
+
+// Watchlist item as returned by Crunchyroll API
+// The API returns episodes/movies with their panel data
+export interface CrunchyrollWatchlistItem {
+    panel: {
+        id: string
+        type: string // 'episode' or 'movie'
+        title: string
+        slug_title: string
+        slug: string
+        description: string
+        promo_title?: string
+        promo_description?: string
+        channel_id: string
+        external_id?: string
+        linked_resource_key?: string
+        streams_link?: string
+        recent_audio_locale?: string
+        recent_variant?: string
+        images?: {
+            thumbnail?: Array<Array<{ width: number; height: number; source: string; type: string }>>
+            poster_tall?: Array<Array<{ width: number; height: number; source: string }>>
+            poster_wide?: Array<Array<{ width: number; height: number; source: string }>>
+        }
+        episode_metadata?: {
+            audio_locale: string
+            availability_ends: string
+            availability_notes: string
+            availability_starts: string
+            availability_status: string
+            available_date: string | null
+            available_offline: boolean
+            closed_captions_available: boolean
+            content_descriptors?: string[]
+            duration_ms: number
+            eligible_region: string
+            episode: string
+            episode_air_date: string
+            episode_number: number
+            extended_maturity_rating?: {
+                level: string
+                rating: string
+                system: string
+            }
+            free_available_date: string
+            identifier: string
+            is_clip: boolean
+            is_dubbed: boolean
+            is_mature: boolean
+            is_premium_only: boolean
+            is_subbed: boolean
+            mature_blocked: boolean
+            maturity_ratings: string[]
+            premium_available_date: string
+            premium_date: string | null
+            roles?: string[]
+            season_display_number: string
+            season_id: string
+            season_number: number
+            season_sequence_number: number
+            season_slug_title: string
+            season_title: string
+            sequence_number: number
+            series_id: string
+            series_slug_title: string
+            series_title: string
+            subtitle_locales: string[]
+            tenant_categories?: string[]
+            upload_date: string
+            versions?: Array<{
+                audio_locale: string
+                guid: string
+                is_premium_only: boolean
+                media_guid: string
+                original: boolean
+                roles: string[]
+                season_guid: string
+                variant: string
+            }>
+        }
+        movie_metadata?: {
+            audio_locale: string
+            availability_ends: string
+            availability_starts: string
+            duration_ms: number
+            is_dubbed: boolean
+            is_subbed: boolean
+            maturity_ratings: string[]
+            movie_listing_id: string
+            movie_listing_title: string
+        }
+        series_metadata?: {
+            episode_count: number
+            season_count: number
+            is_dubbed: boolean
+            is_subbed: boolean
+            maturity_ratings: string[]
+        }
+    }
+    new: boolean
+    is_favorite: boolean
+    fully_watched: boolean
+    never_watched: boolean
+    playhead: number
+}
+
+export interface TransformedWatchlistItem {
+    id: string
+    title: string
+    image: string
+    description?: string
+    crunchyrollId: string
+    crunchyrollSlug: string
+    seriesId: string
+    seriesTitle: string
+    seriesSlug: string
+    isOnCrunchyroll: boolean
+    episodes: number
+    episodeCount: number
+    seasonCount: number
+    type: string
+    rating?: string
+    isDubbed: boolean
+    isSubbed: boolean
+    isFavorite: boolean
+    isNew: boolean
+    fullyWatched: boolean
+    neverWatched: boolean
+    playhead: number
+    dateAdded?: string
+    nextEpisode?: {
+        episode: number
+        airingAt: number
+        timeUntilAiring: number
+    }
+    score?: number
+    color?: string
+    categories?: string[]
+}
+
+// ===============================
+// Account & Profile API Functions
+// ===============================
+
+/**
+ * Get current account information
+ */
+export async function getAccount(): Promise<CrunchyrollAccount | null> {
+    const cacheKey = 'account_me'
+    const cached = getCache<CrunchyrollAccount>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<CrunchyrollAccount>(
+            '/accounts/v1/me'
+        )
+
+        if (data) {
+            setCache(cacheKey, data)
+        }
+
+        return data
+    } catch (error) {
+        console.error("[Crunchyroll] Get account failed:", error)
+        return null
+    }
+}
+
+/**
+ * Get current profile information
+ */
+export async function getProfile(): Promise<CrunchyrollProfile | null> {
+    const cacheKey = 'profile_me'
+    const cached = getCache<CrunchyrollProfile>(cacheKey)
+    if (cached) return cached
+
+    try {
+        // API response type (avatar can be object or string)
+        interface APIProfileResponse extends Omit<CrunchyrollProfile, 'avatar'> {
+            avatar: string | { assets: Array<{ size: string; source: string }> }
+        }
+
+        const rawData = await crunchyrollFetch<APIProfileResponse>(
+            '/accounts/v1/me/profile'
+        )
+
+        if (rawData) {
+            // Transform avatar if it's an object
+            let avatarUrl = ''
+            if (typeof rawData.avatar === 'string') {
+                avatarUrl = rawData.avatar
+            } else if (rawData.avatar && typeof rawData.avatar === 'object' && 'assets' in rawData.avatar) {
+                const assets = rawData.avatar.assets
+                if (Array.isArray(assets) && assets.length > 0) {
+                    // Get the largest image (last in array)
+                    avatarUrl = assets[assets.length - 1].source
+                }
+            }
+
+            const data: CrunchyrollProfile = {
+                ...rawData,
+                avatar: avatarUrl
+            }
+
+            setCache(cacheKey, data)
+            return data
+        }
+
+        return null
+    } catch (error) {
+        console.error("[Crunchyroll] Get profile failed:", error)
+        return null
+    }
+}
+
+/**
+ * Get all profiles for the account
+ */
+export async function getProfiles(): Promise<CrunchyrollProfile[]> {
+    const cacheKey = 'profiles_me'
+    const cached = getCache<CrunchyrollProfile[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        // API response type (avatar can be object or string)
+        interface APIProfileResponse extends Omit<CrunchyrollProfile, 'avatar'> {
+            avatar: string | { assets: Array<{ size: string; source: string }> }
+        }
+
+        const data = await crunchyrollFetch<{ profiles: APIProfileResponse[] }>(
+            '/accounts/v1/me/multiprofile'
+        )
+
+        const rawProfiles = data.profiles || []
+
+        // Transform avatars
+        const profiles: CrunchyrollProfile[] = rawProfiles.map(rawProfile => {
+            let avatarUrl = ''
+            if (typeof rawProfile.avatar === 'string') {
+                avatarUrl = rawProfile.avatar
+            } else if (rawProfile.avatar && typeof rawProfile.avatar === 'object' && 'assets' in rawProfile.avatar) {
+                const assets = rawProfile.avatar.assets
+                if (Array.isArray(assets) && assets.length > 0) {
+                    avatarUrl = assets[assets.length - 1].source
+                }
+            }
+
+            return {
+                ...rawProfile,
+                avatar: avatarUrl
+            }
+        })
+
+        setCache(cacheKey, profiles)
+
+        return profiles
+    } catch (error) {
+        console.error("[Crunchyroll] Get profiles failed:", error)
+        return []
+    }
+}
+
+/**
+ * Get user's watchlist from Crunchyroll
+ */
+export async function getWatchlist(options: {
+    accountId: string
+    n?: number
+    start?: number
+    order?: 'desc' | 'asc'
+    type?: 'series' | 'movie_listing'
+    sort_by?: 'date_updated' | 'date_watched' | 'date_added' | 'alphabetical'
+    is_favorite?: boolean
+} = { accountId: '' }): Promise<TransformedWatchlistItem[]> {
+    if (!options.accountId) {
+        console.error("[Crunchyroll] getWatchlist: accountId is required")
+        return []
+    }
+
+    const params: Record<string, string> = {
+        n: String(options.n || 100),
+        start: String(options.start || 0),
+    }
+
+    if (options.order) params.order = options.order
+    if (options.type) params.type = options.type
+    if (options.sort_by) params.sort_by = options.sort_by
+    if (options.is_favorite !== undefined) params.is_favorite = String(options.is_favorite)
+
+    const cacheKey = `watchlist_${options.accountId}_${JSON.stringify(params)}`
+    const cached = getCache<TransformedWatchlistItem[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollWatchlistItem[], total: number }>(
+            `/content/v2/discover/${options.accountId}/watchlist`,
+            params
+        )
+
+        // The API returns episodes/movies, we need to extract series info
+        // and group by series to avoid duplicates
+        const seriesMap = new Map<string, TransformedWatchlistItem>()
+
+        for (const item of data.data || []) {
+            const panel = item.panel
+            const episodeMeta = panel.episode_metadata
+            const movieMeta = panel.movie_metadata
+            const seriesMeta = panel.series_metadata
+
+            // Determine if this is an episode or movie
+            const isEpisode = panel.type === 'episode' && episodeMeta
+            const isMovie = panel.type === 'movie' && movieMeta
+
+            // Get series info
+            const seriesId = isEpisode ? episodeMeta.series_id :
+                isMovie && movieMeta ? movieMeta.movie_listing_id :
+                    panel.id
+            const seriesTitle = isEpisode ? episodeMeta.series_title :
+                isMovie && movieMeta ? movieMeta.movie_listing_title :
+                    panel.title
+            const seriesSlug = isEpisode ? episodeMeta.series_slug_title :
+                panel.slug_title
+
+            // Skip if we already have this series (keep the first/most recent)
+            if (seriesMap.has(seriesId)) {
+                continue
+            }
+
+            // Get the best image - prefer thumbnail from the panel
+            const thumbnail = panel.images?.thumbnail?.[0]
+            const posterTall = panel.images?.poster_tall?.[0]
+            const posterWide = panel.images?.poster_wide?.[0]
+
+            let image = ''
+            if (thumbnail && thumbnail.length > 0) {
+                // Get highest resolution thumbnail
+                const sorted = [...thumbnail].sort((a, b) => b.width - a.width)
+                image = sorted[0]?.source || ''
+            } else if (posterTall && posterTall.length > 0) {
+                const sorted = [...posterTall].sort((a, b) => b.width - a.width)
+                image = sorted[0]?.source || ''
+            } else if (posterWide && posterWide.length > 0) {
+                const sorted = [...posterWide].sort((a, b) => b.width - a.width)
+                image = sorted[0]?.source || ''
+            }
+
+            // Get ratings
+            const ratings = episodeMeta?.maturity_ratings ||
+                movieMeta?.maturity_ratings ||
+                seriesMeta?.maturity_ratings || []
+            const rating = ratings.length > 0 ? ratings[0] : null
+
+            // Determine dubbed/subbed status
+            const isDubbed = episodeMeta?.is_dubbed ??
+                movieMeta?.is_dubbed ??
+                seriesMeta?.is_dubbed ?? false
+            const isSubbed = episodeMeta?.is_subbed ??
+                movieMeta?.is_subbed ??
+                seriesMeta?.is_subbed ?? true
+
+            // Get categories
+            const categories = episodeMeta?.tenant_categories || []
+
+            // Episode/season counts
+            const episodeCount = seriesMeta?.episode_count || 0
+            const seasonCount = seriesMeta?.season_count || (isEpisode ? 1 : 0)
+
+            const transformed: TransformedWatchlistItem = {
+                id: seriesId,
+                title: seriesTitle,
+                image,
+                description: panel.description,
+                crunchyrollId: panel.id,
+                crunchyrollSlug: panel.slug_title,
+                seriesId,
+                seriesTitle,
+                seriesSlug,
+                isOnCrunchyroll: true,
+                episodes: episodeCount,
+                episodeCount,
+                seasonCount,
+                type: isMovie ? 'Movie' : 'TV',
+                rating: rating || undefined,
+                isDubbed,
+                isSubbed,
+                isFavorite: item.is_favorite,
+                isNew: item.new,
+                fullyWatched: item.fully_watched,
+                neverWatched: item.never_watched,
+                playhead: item.playhead,
+                // These fields are not provided by this API - leave as undefined
+                dateAdded: undefined,
+                nextEpisode: undefined,
+                score: undefined,
+                color: undefined,
+                categories,
+            }
+
+            seriesMap.set(seriesId, transformed)
+        }
+
+        const items = Array.from(seriesMap.values())
+        setCache(cacheKey, items)
+        return items
+    } catch (error) {
+        console.error("[Crunchyroll] Get watchlist failed:", error)
+        return []
+    }
+}
+
 /**
  * Clear all Crunchyroll cache
  */

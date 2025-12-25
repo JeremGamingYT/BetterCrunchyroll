@@ -195,15 +195,48 @@
     // Message Handler (from iframe)
     // ===============================
 
-    // ===============================
-    // Message Handler (from iframe)
-    // ===============================
-
     window.addEventListener('message', async (event) => {
         // Accept messages from localhost
         if (!event.origin.includes('localhost')) return;
 
-        const { type, id, endpoint, params, scrollY } = event.data || {};
+        const { type, id, endpoint, params, scrollY, path } = event.data || {};
+
+        // Handle navigation request from iframe
+        if (type === 'BCR_NAVIGATE') {
+            console.log('[BetterCrunchyroll] Navigation request to:', path);
+
+            // Stop any playing video when navigating away from watch page
+            const currentPath = window.location.pathname;
+            const isLeavingWatchPage = /\/watch\//.test(currentPath);
+
+            if (isLeavingWatchPage) {
+                console.log('[BetterCrunchyroll] Leaving watch page, stopping video');
+                const video = document.querySelector('video');
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            }
+
+            // Map our app path back to Crunchyroll path
+            const crunchyrollPath = mapToCrunchyrollUrl(path);
+
+            // Update the browser URL using history API
+            if (crunchyrollPath !== window.location.pathname) {
+                console.log('[BetterCrunchyroll] Updating URL to:', crunchyrollPath);
+                window.history.pushState({}, '', crunchyrollPath);
+
+                // Update iframe path
+                const iframe = document.getElementById('bcr-frame');
+                if (iframe) {
+                    const newAppUrl = CONFIG.appUrl + path;
+                    if (iframe.src !== newAppUrl) {
+                        iframe.src = newAppUrl;
+                    }
+                }
+            }
+            return;
+        }
 
         if (type === 'BCR_SCROLL_SYNC') {
             // Move the native player containers to mimic scrolling
@@ -279,8 +312,33 @@
 
         if (/^\/search/.test(clean)) return '/search';
         if (/^\/simulcast|\/seasonal/.test(clean)) return '/simulcast';
+        if (/^\/watchlist/.test(clean)) return '/watchlist';
 
         return '/';
+    }
+
+    // Map app URL back to Crunchyroll URL
+    function mapToCrunchyrollUrl(path) {
+        // Get current locale from URL
+        const localeMatch = window.location.pathname.match(/^\/([a-z]{2})\//);
+        const locale = localeMatch ? localeMatch[1] : 'fr';
+
+        if (path === '/' || path === '') return `/${locale}`;
+
+        const animeMatch = path.match(/^\/anime\/([A-Z0-9]+)/);
+        if (animeMatch) return `/${locale}/series/${animeMatch[1]}`;
+
+        const watchMatch = path.match(/^\/watch\/([A-Za-z0-9\-_]+)/);
+        if (watchMatch) return `/${locale}/watch/${watchMatch[1]}`;
+
+        if (/^\/search/.test(path)) return `/${locale}/search`;
+        if (/^\/simulcast/.test(path)) return `/${locale}/simulcast`;
+        if (/^\/watchlist/.test(path)) return `/${locale}/watchlist`;
+        if (/^\/populaire/.test(path)) return `/${locale}`;
+        if (/^\/nouveau/.test(path)) return `/${locale}`;
+        if (/^\/parametres/.test(path)) return `/${locale}`;
+
+        return `/${locale}`;
     }
 
     // ===============================
@@ -351,6 +409,18 @@
     }
 
     // ===============================
+    // Video Control - Stop video when leaving watch page
+    // ===============================
+
+    function stopVideo() {
+        const video = document.querySelector('video');
+        if (video) {
+            video.pause();
+            console.log('[BetterCrunchyroll] Video paused');
+        }
+    }
+
+    // ===============================
     // UI Injection
     // ===============================
 
@@ -362,6 +432,9 @@
         if (isWatchPage) {
             console.log('[BetterCrunchyroll] Watch page detected - Injecting UI with transparency');
             cleanWatchPage();
+        } else {
+            // If not on watch page, make sure video is stopped
+            stopVideo();
         }
 
 
@@ -428,6 +501,12 @@
                 if (video && typeof event.data.time === 'number') {
                     video.currentTime = event.data.time;
                 }
+            } else if (type === 'BCR_STOP') {
+                const video = document.querySelector('video');
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
             }
         } catch (e) {
             console.error('[BetterCrunchyroll] Control error', e);
@@ -483,24 +562,62 @@
 
     // Handle navigation
     let lastUrl = location.href;
+    let wasOnWatchPage = /\/watch\//.test(location.pathname);
+
     new MutationObserver(() => {
         // Always attempt cleanup on mutations (in case header is re-injected by React)
         cleanWatchPage();
 
         if (location.href !== lastUrl) {
+            const isNowOnWatchPage = /\/watch\//.test(location.pathname);
+
+            // If we're leaving a watch page, stop the video
+            if (wasOnWatchPage && !isNowOnWatchPage) {
+                console.log('[BetterCrunchyroll] Detected navigation away from watch page');
+                stopVideo();
+            }
+
             lastUrl = location.href;
+            wasOnWatchPage = isNowOnWatchPage;
+
             console.log('[BetterCrunchyroll] Native URL changed:', lastUrl);
 
             // Update transparency based on new route - simply toggle the style
             const iframe = document.getElementById('bcr-frame');
             if (iframe) {
-                const isWatchPage = /\/watch\//.test(location.pathname);
-                iframe.style.background = isWatchPage ? 'transparent' : '#0a0a0a';
+                iframe.style.background = isNowOnWatchPage ? 'transparent' : '#0a0a0a';
+
+                // Update iframe src if needed
+                const newAppPath = mapToAppUrl(location.pathname);
+                const expectedSrc = CONFIG.appUrl + newAppPath;
+                if (!iframe.src.endsWith(newAppPath)) {
+                    console.log('[BetterCrunchyroll] Updating iframe to:', newAppPath);
+                    iframe.src = expectedSrc;
+                }
 
                 // If we moved to a watch page, ensure cleanup runs immediately
-                if (isWatchPage) cleanWatchPage();
+                if (isNowOnWatchPage) cleanWatchPage();
             }
         }
     }).observe(document.body || document.documentElement, { childList: true, subtree: true });
+
+    // Also listen for popstate (back/forward navigation)
+    window.addEventListener('popstate', () => {
+        const isNowOnWatchPage = /\/watch\//.test(location.pathname);
+
+        if (wasOnWatchPage && !isNowOnWatchPage) {
+            console.log('[BetterCrunchyroll] Popstate: leaving watch page');
+            stopVideo();
+        }
+
+        wasOnWatchPage = isNowOnWatchPage;
+
+        const iframe = document.getElementById('bcr-frame');
+        if (iframe) {
+            const newAppPath = mapToAppUrl(location.pathname);
+            iframe.src = CONFIG.appUrl + newAppPath;
+            iframe.style.background = isNowOnWatchPage ? 'transparent' : '#0a0a0a';
+        }
+    });
 
 })();

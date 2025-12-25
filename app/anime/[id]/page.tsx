@@ -1,7 +1,7 @@
 "use client"
 
 import { useParams } from "next/navigation"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import {
   Star,
   Clock,
@@ -19,14 +19,29 @@ import { AnimeCard } from "@/components/anime-card"
 import { EpisodeGrid, FallbackEpisodeGrid } from "@/components/episode-grid"
 import { LoadingScreen } from "@/components/loading-screen"
 import { useAnimeDetails } from "@/hooks/use-combined-anime"
+import { useWatchlistOptional } from "@/hooks/use-watchlist"
 import { cn } from "@/lib/utils"
 
 export default function AnimePage() {
   const params = useParams()
   const id = params?.id ? Number(params.id) : null
   const { anime, isLoading, error } = useAnimeDetails(id)
-  const [isBookmarked, setIsBookmarked] = useState(false)
+
+  // Use watchlist context to check if this anime is bookmarked
+  const watchlistContext = useWatchlistOptional()
+
+  const isInWatchlist = watchlistContext && anime
+    ? watchlistContext.isInWatchlistByTitle(anime.title) ||
+    (anime.crunchyrollId && watchlistContext.isInWatchlist(anime.crunchyrollId))
+    : false
+
+  const [isBookmarked, setIsBookmarked] = useState(isInWatchlist)
   const [activeTab, setActiveTab] = useState<"overview" | "characters" | "related" | "episodes">("overview")
+
+  // Sync bookmark state with watchlist context
+  useEffect(() => {
+    setIsBookmarked(isInWatchlist)
+  }, [isInWatchlist])
 
   useEffect(() => {
     console.log("[v0] AnimePage - id:", id)
@@ -220,7 +235,7 @@ export default function AnimePage() {
       </div>
 
       {/* Tabs Navigation */}
-      <div className="sticky top-16 z-40 bg-background/95 backdrop-blur-md border-b border-border">
+      <div className="sticky top-24 z-40 bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4">
           <div className="flex gap-1 py-2">
             {tabs.map((tab) => (

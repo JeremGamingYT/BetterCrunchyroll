@@ -220,7 +220,7 @@ export default function WatchPage() {
             </div>
 
             {/* Video Player Section */}
-            <section className="relative pt-16 bg-background/0">
+            <section className="relative pt-24 bg-background/0">
                 {/* Video Container - Transparent hole for underlying player */}
                 {/* Added explicit min-height and slightly taller aspect ratio to prevent clipping */}
                 <div

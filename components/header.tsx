@@ -20,8 +20,10 @@ import {
   ListVideo,
   Users,
   Crown,
+  Loader2,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useCrunchyrollProfile, useCrunchyrollAccount } from "@/hooks/use-crunchyroll"
 
 const navItems = [
   { label: "Accueil", href: "/" },
@@ -43,6 +45,12 @@ export function Header() {
   const pathname = usePathname()
   const router = useRouter()
 
+  // Get profile and account data from Crunchyroll API
+  const { data: profile, isLoading: profileLoading } = useCrunchyrollProfile()
+  const { data: account, isLoading: accountLoading } = useCrunchyrollAccount()
+
+  const isUserLoading = profileLoading || accountLoading
+
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (profileRef.current && !profileRef.current.contains(event.target as Node)) {
@@ -57,12 +65,27 @@ export function Header() {
     router.push("/search")
   }
 
+  // Handle navigation clicks to update parent URL
+  const handleNavigation = (href: string) => {
+    // Send message to parent window to update URL
+    if (typeof window !== 'undefined' && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'BCR_NAVIGATE',
+        path: href,
+      }, '*')
+    }
+  }
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-[100] bg-background/80 backdrop-blur-xl border-b border-border/50">
+    <header className="fixed top-4 left-4 right-4 z-[100] bg-background/85 backdrop-blur-2xl border border-border/40 rounded-2xl shadow-lg shadow-black/20">
       <div className="flex items-center justify-between h-16 px-4 md:px-8 lg:px-12">
         {/* Logo */}
         <div className="flex items-center gap-8">
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link
+            href="/"
+            className="flex items-center gap-2 group"
+            onClick={() => handleNavigation('/')}
+          >
             <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
               <span className="text-primary-foreground font-bold text-sm">C</span>
             </div>
@@ -77,7 +100,13 @@ export function Header() {
               <Link
                 key={item.label}
                 href={item.disabled ? "#" : item.href}
-                onClick={(e) => item.disabled && e.preventDefault()}
+                onClick={(e) => {
+                  if (item.disabled) {
+                    e.preventDefault()
+                  } else {
+                    handleNavigation(item.href)
+                  }
+                }}
                 className={cn(
                   "flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground",
                   "hover:text-foreground transition-all duration-300 rounded-lg hover:bg-secondary/50",
@@ -85,11 +114,11 @@ export function Header() {
                   "after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300",
                   "hover:after:w-full",
                   pathname === item.href &&
-                    item.href !== "#categories" &&
-                    !item.disabled &&
-                    "text-primary after:w-full",
+                  item.href !== "#categories" &&
+                  !item.disabled &&
+                  "text-primary after:w-full",
                   item.disabled &&
-                    "opacity-50 cursor-not-allowed hover:text-muted-foreground hover:bg-transparent hover:after:w-0",
+                  "opacity-50 cursor-not-allowed hover:text-muted-foreground hover:bg-transparent hover:after:w-0",
                 )}
               >
                 {item.label}
@@ -112,6 +141,7 @@ export function Header() {
 
           <Link
             href="/watchlist"
+            onClick={() => handleNavigation('/watchlist')}
             className="p-2 rounded-full hover:bg-secondary/50 text-muted-foreground hover:text-foreground transition-all duration-300 hidden sm:flex"
           >
             <Bookmark className="w-5 h-5" />
@@ -123,7 +153,17 @@ export function Header() {
               className="flex items-center gap-2 p-1 pr-3 rounded-full bg-secondary/50 hover:bg-secondary transition-all duration-300 group"
             >
               <div className="w-8 h-8 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center overflow-hidden">
-                <User className="w-4 h-4 text-primary" />
+                {isUserLoading ? (
+                  <Loader2 className="w-4 h-4 text-primary animate-spin" />
+                ) : profile?.avatar ? (
+                  <img
+                    src={profile.avatar}
+                    alt={profile.username || 'Profile'}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <User className="w-4 h-4 text-primary" />
+                )}
               </div>
               <ChevronDown
                 className={cn(
@@ -143,15 +183,36 @@ export function Header() {
               {/* Profile Header */}
               <div className="p-4 bg-secondary/30 border-b border-border">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-                    <User className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center overflow-hidden">
+                    {isUserLoading ? (
+                      <Loader2 className="w-6 h-6 text-primary animate-spin" />
+                    ) : profile?.avatar ? (
+                      <img
+                        src={profile.avatar}
+                        alt={profile.username || 'Profile'}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <User className="w-6 h-6 text-primary" />
+                    )}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-foreground truncate">Utilisateur</h3>
+                    <h3 className="font-semibold text-foreground truncate">
+                      {isUserLoading ? (
+                        <span className="text-muted-foreground">Chargement...</span>
+                      ) : (
+                        profile?.username || profile?.profile_name || 'Utilisateur'
+                      )}
+                    </h3>
                     <div className="flex items-center gap-1 text-sm text-primary">
                       <Crown className="w-3.5 h-3.5" />
                       <span>Premium</span>
                     </div>
+                    {account?.email && (
+                      <p className="text-xs text-muted-foreground truncate mt-0.5">
+                        {account.email}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -163,7 +224,10 @@ export function Header() {
                   icon={Settings}
                   label="Paramètres"
                   href="/parametres"
-                  onClick={() => setIsProfileOpen(false)}
+                  onClick={() => {
+                    setIsProfileOpen(false)
+                    handleNavigation('/parametres')
+                  }}
                 />
 
                 <div className="h-px bg-border my-2" />
@@ -172,7 +236,10 @@ export function Header() {
                   icon={Bookmark}
                   label="Watchlist"
                   href="/watchlist"
-                  onClick={() => setIsProfileOpen(false)}
+                  onClick={() => {
+                    setIsProfileOpen(false)
+                    handleNavigation('/watchlist')
+                  }}
                 />
                 <ProfileMenuItem icon={ListVideo} label="CrunchyLists" onClick={() => setIsProfileOpen(false)} />
                 <ProfileMenuItem icon={History} label="Historique" onClick={() => setIsProfileOpen(false)} />
@@ -207,7 +274,7 @@ export function Header() {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "lg:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border/50",
+          "lg:hidden absolute top-full left-0 right-0 mt-2 bg-background/95 backdrop-blur-2xl border border-border/40 rounded-xl shadow-lg shadow-black/20",
           "transition-all duration-500 ease-out overflow-hidden",
           isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
         )}
@@ -222,6 +289,7 @@ export function Header() {
                   e.preventDefault()
                 } else {
                   setIsMobileMenuOpen(false)
+                  handleNavigation(item.href)
                 }
               }}
               className={cn(

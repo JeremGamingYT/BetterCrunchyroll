@@ -1,16 +1,17 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Play, Bookmark, Star, Clock } from "lucide-react"
 import { cn } from "@/lib/utils"
 import type { CombinedAnime } from "@/hooks/use-combined-anime"
+import { useWatchlistOptional } from "@/hooks/use-watchlist"
 
 interface AnimeCardProps {
   anime:
   | CombinedAnime
   | {
-    id: number
+    id: number | string
     title: string
     image: string
     rating?: string
@@ -28,6 +29,9 @@ interface AnimeCardProps {
     crunchyrollId?: string | null
     crunchyrollSlug?: string | null
     isOnCrunchyroll?: boolean
+    // For watchlist items
+    seriesId?: string
+    seriesTitle?: string
   }
   index?: number
   showAiring?: boolean
@@ -36,8 +40,27 @@ interface AnimeCardProps {
 
 export function AnimeCard({ anime, index = 0, showAiring = false, compact = false }: AnimeCardProps) {
   const [isHovered, setIsHovered] = useState(false)
-  const [isBookmarked, setIsBookmarked] = useState(false)
   const [imageError, setImageError] = useState(false)
+
+  // Use watchlist context to check if anime is bookmarked
+  const watchlistContext = useWatchlistOptional()
+
+  // Determine if this anime is in the watchlist
+  const crunchyrollId = "crunchyrollId" in anime ? anime.crunchyrollId : null
+  const seriesId = "seriesId" in anime ? anime.seriesId : null
+
+  const isInWatchlist = watchlistContext
+    ? (crunchyrollId && watchlistContext.isInWatchlist(crunchyrollId)) ||
+    (seriesId && watchlistContext.isInWatchlistBySeriesId(seriesId)) ||
+    watchlistContext.isInWatchlistByTitle(anime.title)
+    : false
+
+  const [isBookmarked, setIsBookmarked] = useState(isInWatchlist)
+
+  // Sync with watchlist context
+  useEffect(() => {
+    setIsBookmarked(isInWatchlist)
+  }, [isInWatchlist])
 
   const score = "score" in anime ? anime.score : null
   const nextEpisode = "nextEpisode" in anime ? anime.nextEpisode : null
@@ -47,7 +70,6 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
   const relationType = "type" in anime ? anime.type : null
   const popularity = "popularity" in anime ? anime.popularity : 0
   const totalEpisodes = "episodes" in anime ? anime.episodes : null
-  const crunchyrollId = "crunchyrollId" in anime ? anime.crunchyrollId : null
   const crunchyrollSlug = "crunchyrollSlug" in anime ? anime.crunchyrollSlug : null
   const isOnCrunchyroll = "isOnCrunchyroll" in anime ? anime.isOnCrunchyroll : false
 
