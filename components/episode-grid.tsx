@@ -1,8 +1,8 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Play, Clock, Crown, ChevronDown } from "lucide-react"
+import { Play, Clock, Crown, ChevronDown, CheckCircle2, Lock } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface EpisodeData {
@@ -18,6 +18,8 @@ interface EpisodeData {
     isSubbed?: boolean
     seasonNumber?: number
     seasonTitle?: string
+    availableFrom?: string | null
+    isWatched?: boolean
 }
 
 interface EpisodeGridProps {
@@ -101,32 +103,62 @@ interface EpisodeGridCardProps {
 }
 
 function EpisodeGridCard({ episode, accentColor, animeImage, isHovered, onHover, onLeave }: EpisodeGridCardProps) {
+    const [timeLeft, setTimeLeft] = useState("")
     const thumbnail = episode.thumbnail || animeImage || "/placeholder.svg?height=180&width=320"
     const displayNumber = episode.episodeNumber || episode.sequenceNumber
+    const isAvailable = !episode.availableFrom || new Date(episode.availableFrom) <= new Date()
+
+    useEffect(() => {
+        if (!isAvailable && episode.availableFrom) {
+            const updateTime = () => {
+                const now = new Date().getTime()
+                const available = new Date(episode.availableFrom!).getTime()
+                const diff = available - now
+
+                if (diff <= 0) {
+                    setTimeLeft("")
+                } else {
+                    const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+                    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+                    if (days > 0) setTimeLeft(`${days}j ${hours}h`)
+                    else if (hours > 0) setTimeLeft(`${hours}h ${minutes}m`)
+                    else setTimeLeft(`${minutes}m`)
+                }
+            }
+            updateTime()
+            const timer = setInterval(updateTime, 60000)
+            return () => clearInterval(timer)
+        }
+    }, [episode.availableFrom, isAvailable])
 
     // Navigate to the real Crunchyroll watch page
     const handleClick = (e: React.MouseEvent) => {
+        if (!isAvailable) {
+            e.preventDefault()
+            return
+        }
         e.preventDefault()
         const crunchyrollUrl = `https://www.crunchyroll.com/fr/watch/${episode.id}`
         // If we're in an iframe, navigate the parent window
-        if (window.parent !== window) {
+        if (typeof window !== 'undefined' && window.parent !== window) {
             window.parent.location.href = crunchyrollUrl
-        } else {
+        } else if (typeof window !== 'undefined') {
             window.location.href = crunchyrollUrl
         }
     }
 
     return (
         <a
-            href={`https://www.crunchyroll.com/fr/watch/${episode.id}`}
+            href={isAvailable ? `https://www.crunchyroll.com/fr/watch/${episode.id}` : '#'}
             onClick={handleClick}
-            className="group block"
+            className={cn("group block", !isAvailable && "cursor-default")}
             onMouseEnter={onHover}
             onMouseLeave={onLeave}
         >
             <div className={cn(
                 "relative rounded-xl overflow-hidden transition-all duration-300",
-                isHovered && "scale-105 z-20"
+                isHovered && isAvailable && "scale-105 z-20"
             )}>
                 {/* Thumbnail */}
                 <div className="relative aspect-video">
@@ -135,16 +167,44 @@ function EpisodeGridCard({ episode, accentColor, animeImage, isHovered, onHover,
                         alt={episode.title}
                         className={cn(
                             "w-full h-full object-cover transition-transform duration-500",
-                            isHovered && "scale-110"
+                            isHovered && isAvailable && "scale-110",
+                            !isAvailable && "blur-[2px] opacity-70"
                         )}
                     />
 
                     {/* Gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
+                    {/* Coming Soon Overlay */}
+                    {!isAvailable && (
+                        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 backdrop-blur-[1px]">
+                            <Lock className="w-8 h-8 text-white mb-2" />
+                            <p className="text-white font-bold text-sm drop-shadow-md">Bientôt disponible</p>
+                            <p className="text-white/80 text-xs font-medium mt-1 drop-shadow-md">{timeLeft}</p>
+                        </div>
+                    )}
+
+                    {/* Watched Overlay */}
+                    {isAvailable && episode.isWatched && (
+                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div className="flex flex-col items-center">
+                                <span className="text-white font-medium text-xs bg-black/60 px-2 py-1 rounded-full mb-2">Déjà vu</span>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Watched Badge (Always visible if watched) */}
+                    {isAvailable && episode.isWatched && (
+                        <div className="absolute top-2 right-2 z-10">
+                            <div className="bg-primary/90 text-primary-foreground p-1 rounded-full shadow-lg">
+                                <CheckCircle2 className="w-3 h-3" />
+                            </div>
+                        </div>
+                    )}
+
                     {/* Episode Number Badge */}
                     <div
-                        className="absolute top-2 left-2 px-2 py-0.5 rounded text-xs font-bold text-white"
+                        className="absolute top-2 left-2 px-2 py-0.5 rounded text-xs font-bold text-white z-10"
                         style={{ backgroundColor: accentColor }}
                     >
                         E{displayNumber}
@@ -158,32 +218,38 @@ function EpisodeGridCard({ episode, accentColor, animeImage, isHovered, onHover,
                     )}
 
                     {/* Duration */}
-                    <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/70 backdrop-blur-sm flex items-center gap-1">
-                        <Clock className="w-3 h-3 text-white/70" />
-                        <span className="text-xs text-white">{episode.duration}m</span>
-                    </div>
+                    {isAvailable && (
+                        <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/70 backdrop-blur-sm flex items-center gap-1">
+                            <Clock className="w-3 h-3 text-white/70" />
+                            <span className="text-xs text-white">{episode.duration}m</span>
+                        </div>
+                    )}
 
                     {/* Play button on hover */}
-                    <div className={cn(
-                        "absolute inset-0 flex items-center justify-center transition-all duration-300",
-                        isHovered ? "opacity-100" : "opacity-0"
-                    )}>
-                        <div
-                            className="p-3 rounded-full text-white shadow-lg transition-transform duration-300 hover:scale-110"
-                            style={{ backgroundColor: accentColor }}
-                        >
-                            <Play className="w-5 h-5" fill="currentColor" />
+                    {isAvailable && (
+                        <div className={cn(
+                            "absolute inset-0 flex items-center justify-center transition-all duration-300",
+                            isHovered && !episode.isWatched ? "opacity-100" : "opacity-0"
+                        )}>
+                            <div
+                                className="p-3 rounded-full text-white shadow-lg transition-transform duration-300 hover:scale-110"
+                                style={{ backgroundColor: accentColor }}
+                            >
+                                <Play className="w-5 h-5" fill="currentColor" />
+                            </div>
                         </div>
-                    </div>
+                    )}
 
                     {/* Border glow */}
-                    <div
-                        className={cn(
-                            "absolute inset-0 rounded-xl border-2 transition-all duration-300",
-                            isHovered ? "opacity-100" : "opacity-0"
-                        )}
-                        style={{ borderColor: accentColor }}
-                    />
+                    {isAvailable && (
+                        <div
+                            className={cn(
+                                "absolute inset-0 rounded-xl border-2 transition-all duration-300",
+                                isHovered ? "opacity-100" : "opacity-0"
+                            )}
+                            style={{ borderColor: accentColor }}
+                        />
+                    )}
                 </div>
             </div>
 
@@ -192,9 +258,9 @@ function EpisodeGridCard({ episode, accentColor, animeImage, isHovered, onHover,
                 <h4
                     className={cn(
                         "text-sm font-medium line-clamp-1 transition-colors duration-300",
-                        isHovered && "text-primary"
+                        isHovered && isAvailable && "text-primary"
                     )}
-                    style={{ color: isHovered ? accentColor : undefined }}
+                    style={{ color: isHovered && isAvailable ? accentColor : undefined }}
                 >
                     {episode.title || `Épisode ${displayNumber}`}
                 </h4>

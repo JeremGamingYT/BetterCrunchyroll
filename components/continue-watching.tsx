@@ -1,65 +1,27 @@
 "use client"
 
-import { useRef, useState } from "react"
-import { ChevronLeft, ChevronRight, Play, X } from "lucide-react"
+import { useRef, useState, useEffect } from "react"
+import { ChevronLeft, ChevronRight, Play, X, Loader2 } from "lucide-react"
 import { cn } from "@/lib/utils"
-
-const continueWatchingItems = [
-  {
-    id: 1,
-    title: "Solo Leveling",
-    episode: "E12",
-    progress: 75,
-    remaining: "19m",
-    image: "/placeholder.svg?height=200&width=350",
-  },
-  {
-    id: 2,
-    title: "Frieren",
-    episode: "E24",
-    progress: 45,
-    remaining: "21m",
-    image: "/placeholder.svg?height=200&width=350",
-  },
-  {
-    id: 3,
-    title: "Demon Slayer",
-    episode: "E8",
-    progress: 90,
-    remaining: "3m",
-    image: "/placeholder.svg?height=200&width=350",
-  },
-  {
-    id: 4,
-    title: "Jujutsu Kaisen",
-    episode: "E47",
-    progress: 30,
-    remaining: "23m",
-    image: "/placeholder.svg?height=200&width=350",
-  },
-  {
-    id: 5,
-    title: "My Hero Academia",
-    episode: "E138",
-    progress: 60,
-    remaining: "12m",
-    image: "/placeholder.svg?height=200&width=350",
-  },
-  {
-    id: 6,
-    title: "One Piece",
-    episode: "E1102",
-    progress: 25,
-    remaining: "20m",
-    image: "/placeholder.svg?height=200&width=350",
-  },
-]
+import { useWatchHistory, useCrunchyrollAccount } from "@/hooks/use-crunchyroll"
+import type { TransformedWatchlistItem } from "@/lib/crunchyroll"
+import Link from "next/link"
 
 export function ContinueWatching() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
-  const [canScrollRight, setCanScrollRight] = useState(true)
+  const [canScrollRight, setCanScrollRight] = useState(false)
 
+  const { data: account } = useCrunchyrollAccount()
+  const { data: historyItems, isLoading } = useWatchHistory(account?.account_id || null, {
+    page_size: 20
+  })
+
+  // Filter out items that are fully watched or have very little progress if desired
+  // For now, just show what API returns but ensuring meaningful playhead
+  const items = historyItems?.filter(item => item.playhead > 0) || []
+
+  // Update scroll buttons
   const checkScroll = () => {
     if (scrollRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current
@@ -67,6 +29,12 @@ export function ContinueWatching() {
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10)
     }
   }
+
+  useEffect(() => {
+    checkScroll()
+    window.addEventListener("resize", checkScroll)
+    return () => window.removeEventListener("resize", checkScroll)
+  }, [items])
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
@@ -76,18 +44,35 @@ export function ContinueWatching() {
     }
   }
 
+  if (isLoading) {
+    return (
+      <section className="mt-8 pt-8">
+        <div className="h-8 w-48 bg-secondary/50 rounded-lg animate-pulse mb-5" />
+        <div className="flex gap-4 overflow-hidden">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="w-[280px] md:w-[320px] aspect-video bg-secondary/30 rounded-xl animate-pulse flex-shrink-0" />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  if (items.length === 0) {
+    return null
+  }
+
   return (
     <section className="relative isolate group/section mt-8 pt-8">
       {/* Header */}
       <div className="flex items-center justify-between mb-5">
         <h2 className="text-xl md:text-2xl font-bold text-foreground">Reprendre</h2>
-        <a
-          href="#"
+        <Link
+          href="/historique"
           className="text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-300 flex items-center gap-1"
         >
           Voir l'historique
           <ChevronRight className="w-4 h-4" />
-        </a>
+        </Link>
       </div>
 
       {/* Scroll Container */}
@@ -114,8 +99,8 @@ export function ContinueWatching() {
           className="flex gap-4 overflow-x-auto overflow-y-visible scrollbar-hide pb-12 pt-2 -mx-4 px-4"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {continueWatchingItems.map((item, index) => (
-            <ContinueWatchingCard key={item.id} item={item} index={index} />
+          {items.map((item, index) => (
+            <ContinueWatchingCard key={item.crunchyrollId || index} item={item} index={index} />
           ))}
         </div>
 
@@ -139,22 +124,28 @@ export function ContinueWatching() {
 }
 
 interface ContinueWatchingCardProps {
-  item: {
-    id: number
-    title: string
-    episode: string
-    progress: number
-    remaining: string
-    image: string
-  }
+  item: TransformedWatchlistItem
   index: number
 }
 
 function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
   const [isHovered, setIsHovered] = useState(false)
+  const [imageError, setImageError] = useState(false)
+
+  // Calculate progress
+  const durationSec = (item.durationMs || 0) / 1000
+  const progress = durationSec > 0 ? (item.playhead / durationSec) * 100 : 0
+  const remainingSec = Math.max(0, durationSec - item.playhead)
+  const remainingMin = Math.ceil(remainingSec / 60)
+
+  // Episode label
+  const episodeLabel = item.currentEpisode
+    ? `E${item.currentEpisode}`
+    : (item.type === 'Movie' ? 'Film' : '')
 
   return (
-    <div
+    <Link
+      href={`/watch/${item.crunchyrollId}`}
       className={cn(
         "group relative flex-shrink-0 w-[280px] md:w-[320px] transition-all duration-300",
         isHovered ? "z-50" : "z-10",
@@ -172,13 +163,14 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
       >
         {/* Image */}
         <img
-          src={item.image || "/placeholder.svg"}
+          src={imageError ? "/placeholder.svg?height=180&width=320&query=anime" : (item.image || "/placeholder.svg")}
           alt={item.title}
           className={cn(
             "w-full h-full object-cover",
             "transition-transform duration-700 ease-out",
             isHovered && "scale-110",
           )}
+          onError={() => setImageError(true)}
         />
 
         {/* Overlay */}
@@ -186,40 +178,30 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
 
         {/* Play Button */}
         <div className={cn("absolute inset-0 flex items-center justify-center", "transition-all duration-300")}>
-          <button
+          <div
             className={cn(
               "p-4 rounded-full bg-background/80 backdrop-blur-sm text-foreground",
               "transition-all duration-300",
-              "hover:bg-primary hover:text-primary-foreground hover:scale-110",
+              "group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110",
               "border border-border/50",
               isHovered ? "scale-100 opacity-100" : "scale-90 opacity-70",
             )}
           >
             <Play className="w-6 h-6" fill="currentColor" />
-          </button>
+          </div>
         </div>
-
-        {/* Remove Button */}
-        <button
-          className={cn(
-            "absolute top-2 right-2 p-1.5 rounded-full",
-            "bg-background/60 backdrop-blur-sm text-muted-foreground",
-            "hover:bg-destructive hover:text-destructive-foreground",
-            "transition-all duration-300",
-            isHovered ? "opacity-100" : "opacity-0",
-          )}
-        >
-          <X className="w-4 h-4" />
-        </button>
 
         {/* Remaining Time */}
         <div className="absolute bottom-12 right-3 px-2 py-1 rounded bg-background/80 backdrop-blur-sm">
-          <span className="text-xs font-medium text-foreground">{item.remaining} restantes</span>
+          <span className="text-xs font-medium text-foreground">{remainingMin}m restantes</span>
         </div>
 
         {/* Progress Bar */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-muted">
-          <div className="h-full bg-primary transition-all duration-300" style={{ width: `${item.progress}%` }} />
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-muted/30">
+          <div
+            className="h-full bg-primary transition-all duration-300 ease-out"
+            style={{ width: `${Math.min(100, Math.max(0, progress))}%` }}
+          />
         </div>
       </div>
 
@@ -227,15 +209,17 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
       <div className="mt-3 px-1">
         <h3
           className={cn(
-            "font-semibold text-sm text-foreground",
+            "font-semibold text-sm text-foreground line-clamp-1",
             "transition-colors duration-300",
             isHovered && "text-primary",
           )}
         >
-          {item.title}
+          {item.seriesTitle || item.title}
         </h3>
-        <p className="text-xs text-muted-foreground mt-0.5">{item.episode}</p>
+        <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">
+          {episodeLabel ? `${episodeLabel} - ` : ''}{item.currentEpisodeTitle || item.title}
+        </p>
       </div>
-    </div>
+    </Link>
   )
 }

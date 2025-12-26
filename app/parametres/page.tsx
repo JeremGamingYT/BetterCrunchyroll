@@ -175,60 +175,90 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return <h2 className="text-xl font-semibold text-foreground mb-6">{children}</h2>
 }
 
+import { useCrunchyrollProfile, useCrunchyrollAccount, useCrunchyrollSubscription } from "@/hooks/use-crunchyroll"
+import { Loader2 } from "lucide-react"
+
 function AbonnementSection() {
+  const { data: account } = useCrunchyrollAccount()
+  const { data: subscription, isLoading } = useCrunchyrollSubscription(account?.account_id || null)
+
+  // Normalize subscription data
+  const hasSubscription = subscription && Array.isArray(subscription) && subscription.length > 0
+  const planName = hasSubscription ? (subscription[0].local_name || subscription[0].name || "Premium") : "Gratuit"
+  const planPrice = hasSubscription ? `${subscription[0].recurring_price?.amount} ${subscription[0].recurring_price?.currency_code} / ${subscription[0].recurring_interval_unit}` : "0 €"
+  const nextBilling = hasSubscription && subscription[0].date_next_billing ? new Date(subscription[0].date_next_billing).toLocaleDateString("fr-FR", { day: 'numeric', month: 'long', year: 'numeric' }) : "-"
+
+  if (isLoading) {
+    return <div className="flex justify-center p-8"><Loader2 className="w-8 h-8 animate-spin text-primary" /></div>
+  }
+
   return (
     <div>
       <SectionTitle>Infos d'abonnement</SectionTitle>
 
-      <div className="bg-gradient-to-r from-primary/20 to-primary/5 rounded-xl p-6 mb-6 border border-primary/30">
+      <div className={cn(
+        "rounded-xl p-6 mb-6 border",
+        hasSubscription
+          ? "bg-gradient-to-r from-primary/20 to-primary/5 border-primary/30"
+          : "bg-secondary/50 border-border"
+      )}>
         <div className="flex items-center gap-3 mb-4">
-          <Crown className="w-8 h-8 text-primary" />
+          <Crown className={cn("w-8 h-8", hasSubscription ? "text-primary" : "text-muted-foreground")} />
           <div>
-            <h3 className="text-lg font-bold text-foreground">Mega Fan</h3>
-            <p className="text-sm text-muted-foreground">Abonnement annuel</p>
+            <h3 className="text-lg font-bold text-foreground">{planName}</h3>
+            <p className="text-sm text-muted-foreground">{hasSubscription ? "Abonnement actif" : "Compte standard"}</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-          <div>
-            <span className="text-muted-foreground">Prochaine facturation :</span>
-            <p className="font-medium text-foreground">15 janvier 2025</p>
+
+        {hasSubscription && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+            <div>
+              <span className="text-muted-foreground">Prochaine facturation :</span>
+              <p className="font-medium text-foreground">{nextBilling}</p>
+            </div>
+            <div>
+              <span className="text-muted-foreground">Montant :</span>
+              <p className="font-medium text-foreground">{planPrice}</p>
+            </div>
           </div>
-          <div>
-            <span className="text-muted-foreground">Montant :</span>
-            <p className="font-medium text-foreground">79,99 € / an</p>
-          </div>
-        </div>
+        )}
       </div>
 
       <div className="space-y-4">
         <h4 className="font-medium text-foreground">Avantages inclus</h4>
         <ul className="space-y-2 text-sm text-muted-foreground">
           <li className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-primary" />
-            Streaming sans publicité
+            <Check className={cn("w-4 h-4", hasSubscription ? "text-primary" : "text-muted-foreground")} />
+            Accès au catalogue gratuit
           </li>
           <li className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-primary" />
-            Accès à tout le catalogue
+            <Check className={cn("w-4 h-4", hasSubscription ? "text-primary" : "text-muted-foreground")} />
+            {hasSubscription ? "Streaming sans publicité" : "Publicités incluses"}
           </li>
           <li className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-primary" />
-            Téléchargement hors ligne
+            <Check className={cn("w-4 h-4", hasSubscription ? "text-primary" : "text-muted-foreground")} />
+            {hasSubscription ? "Accès à tout le catalogue" : "Catalogue limité"}
           </li>
           <li className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-primary" />
-            Streaming simultané sur 4 appareils
+            <Check className={cn("w-4 h-4", hasSubscription ? "text-primary" : "text-muted-foreground")} />
+            {hasSubscription ? "Téléchargement hors ligne" : "Streaming uniquement"}
+          </li>
+          <li className="flex items-center gap-2">
+            <Check className={cn("w-4 h-4", hasSubscription ? "text-primary" : "text-muted-foreground")} />
+            {hasSubscription ? "Simulcast (1h après Japon)" : "Simulcast (1 semaine après)"}
           </li>
         </ul>
       </div>
 
       <div className="mt-6 pt-6 border-t border-border flex flex-wrap gap-3">
         <button className="px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
-          Changer d'abonnement
+          {hasSubscription ? "Changer d'abonnement" : "Passer Premium"}
         </button>
-        <button className="px-4 py-2 bg-secondary text-foreground rounded-lg font-medium hover:bg-secondary/80 transition-colors">
-          Annuler l'abonnement
-        </button>
+        {hasSubscription && (
+          <button className="px-4 py-2 bg-secondary text-foreground rounded-lg font-medium hover:bg-secondary/80 transition-colors">
+            Annuler l'abonnement
+          </button>
+        )}
       </div>
     </div>
   )

@@ -761,6 +761,10 @@ export interface TransformedWatchlistItem {
     score?: number
     color?: string
     categories?: string[]
+    currentEpisode?: number
+    currentEpisodeId?: string
+    currentEpisodeTitle?: string
+    durationMs?: number
 }
 
 // ===============================
@@ -820,6 +824,11 @@ export async function getProfile(): Promise<CrunchyrollProfile | null> {
                     // Get the largest image (last in array)
                     avatarUrl = assets[assets.length - 1].source
                 }
+            }
+
+            // Fix relative URLs
+            if (avatarUrl && avatarUrl.startsWith('/')) {
+                avatarUrl = `https://www.crunchyroll.com${avatarUrl}`
             }
 
             const data: CrunchyrollProfile = {
@@ -1019,6 +1028,10 @@ export async function getWatchlist(options: {
                 score: undefined,
                 color: undefined,
                 categories,
+                // Current episode info
+                currentEpisode: isEpisode && episodeMeta ? episodeMeta.episode_number : undefined,
+                currentEpisodeId: isEpisode ? panel.id : undefined,
+                currentEpisodeTitle: panel.title,
             }
 
             seriesMap.set(seriesId, transformed)
@@ -1029,6 +1042,138 @@ export async function getWatchlist(options: {
         return items
     } catch (error) {
         console.error("[Crunchyroll] Get watchlist failed:", error)
+        return []
+    }
+}
+
+/**
+ * Get user benefits/subscription
+ */
+export async function getSubscription(accountId: string): Promise<any> {
+    const cacheKey = `subscription_${accountId}`
+    const cached = getCache<any>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<any>(
+            `/subs/v1/subscriptions/${accountId}/products`
+        )
+
+        if (data) {
+            setCache(cacheKey, data)
+        }
+
+        return data
+    } catch (error) {
+        console.error("[Crunchyroll] Get subscription failed:", error)
+        return null
+    }
+}
+
+/**
+ * Get user watch history (Continue Watching)
+ */
+export async function getWatchHistory(accountId: string, options: {
+    page?: number
+    page_size?: number
+} = {}): Promise<TransformedWatchlistItem[]> {
+    const params: Record<string, string> = {
+        page: String(options.page || 1),
+        page_size: String(options.page_size || 10),
+    }
+
+    const cacheKey = `history_${accountId}_${JSON.stringify(params)}`
+    const cached = getCache<TransformedWatchlistItem[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollWatchlistItem[], total: number }>(
+            `/content/v2/${accountId}/watch-history`,
+            params
+        )
+
+        // Reuse the logic from getWatchlist to transform items
+        // Since the structure is the same (CrunchyrollWatchlistItem)
+        const items = data.data?.map(item => {
+            const panel = item.panel
+            const episodeMeta = panel.episode_metadata
+            const movieMeta = panel.movie_metadata
+            const seriesMeta = panel.series_metadata
+
+            // Determine if this is an episode or movie
+            const isEpisode = panel.type === 'episode' && !!episodeMeta
+            const isMovie = panel.type === 'movie' && !!movieMeta
+
+            // Get series info
+            const seriesId = isEpisode && episodeMeta ? episodeMeta.series_id :
+                isMovie && movieMeta ? movieMeta.movie_listing_id :
+                    panel.id
+            const seriesTitle = isEpisode && episodeMeta ? episodeMeta.series_title :
+                isMovie && movieMeta ? movieMeta.movie_listing_title :
+                    panel.title
+            const seriesSlug = isEpisode && episodeMeta ? episodeMeta.series_slug_title :
+                panel.slug_title
+
+            // Get the best image
+            const thumbnail = panel.images?.thumbnail?.[0]
+
+            let image = ''
+            if (thumbnail && thumbnail.length > 0) {
+                const sorted = [...thumbnail].sort((a, b) => b.width - a.width)
+                image = sorted[0]?.source || ''
+            }
+
+            // Get ratings
+            const ratings = episodeMeta?.maturity_ratings ||
+                movieMeta?.maturity_ratings ||
+                seriesMeta?.maturity_ratings || []
+            const rating = ratings.length > 0 ? ratings[0] : null
+
+            const episodeCount = seriesMeta?.episode_count || 0
+            const seasonCount = seriesMeta?.season_count || (isEpisode ? 1 : 0)
+
+            return {
+                id: seriesId, // Use series ID for grouping/linking usually, but for history we might want specific episode?
+                // Actually for history, each item IS a specific watch event.
+                // But TransformedWatchlistItem uses 'id' which might be expected to be series ID by some components.
+                // Let's stick to seriesID for ID, but provide currentEpisodeId.
+
+                title: seriesTitle, // Display Series Title
+                image: image,
+                description: panel.description,
+                crunchyrollId: panel.id, // This is the Episode ID for episodes
+                crunchyrollSlug: panel.slug_title,
+                seriesId,
+                seriesTitle,
+                seriesSlug,
+                isOnCrunchyroll: true,
+                episodes: episodeCount,
+                episodeCount,
+                seasonCount,
+                type: isMovie ? 'Movie' : 'TV',
+                rating: rating || undefined,
+                isDubbed: episodeMeta?.is_dubbed ?? false,
+                isSubbed: episodeMeta?.is_subbed ?? true,
+                isFavorite: item.is_favorite,
+                isNew: item.new,
+                fullyWatched: item.fully_watched,
+                neverWatched: item.never_watched,
+                playhead: item.playhead,
+
+                // Specific for history/continue watching
+                currentEpisode: isEpisode && episodeMeta ? episodeMeta.episode_number : undefined,
+                currentEpisodeId: isEpisode ? panel.id : undefined, // Redirect to this episode
+                currentEpisodeTitle: panel.title,
+
+                // Remaining time calc
+                durationMs: episodeMeta?.duration_ms || movieMeta?.duration_ms || 0,
+            } as TransformedWatchlistItem & { durationMs: number }
+        }) || []
+
+        setCache(cacheKey, items)
+        return items
+    } catch (error) {
+        console.error("[Crunchyroll] Get history failed:", error)
         return []
     }
 }

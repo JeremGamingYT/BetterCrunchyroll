@@ -205,13 +205,22 @@ export default function AnimePage() {
                     Regarder sur Crunchyroll
                   </a>
                 ) : (
-                  <button
+                  <a
+                    href={watchlistContext?.getWatchlistItem(anime.crunchyrollId || "")?.currentEpisodeId
+                      ? `/watch/${watchlistContext.getWatchlistItem(anime.crunchyrollId || "")?.currentEpisodeId}`
+                      : `/watch/${anime.crunchyrollEpisodes?.[0]?.id || ""}`
+                    }
                     className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white transition-all hover:scale-105"
-                    style={{ backgroundColor: accentColor }}
+                    style={{ backgroundColor: accentColor, pointerEvents: !anime.crunchyrollEpisodes?.length ? 'none' : 'auto', opacity: !anime.crunchyrollEpisodes?.length ? 0.5 : 1 }}
                   >
                     <Play className="w-5 h-5" fill="currentColor" />
-                    Commencer à regarder
-                  </button>
+                    {watchlistContext?.isInWatchlist(anime.crunchyrollId || "")
+                      ? (watchlistContext.getWatchlistItem(anime.crunchyrollId || "")?.playhead
+                        ? `Reprendre E${watchlistContext.getWatchlistItem(anime.crunchyrollId || "")?.currentEpisode || 1}`
+                        : "Commencer")
+                      : "Commencer à regarder"
+                    }
+                  </a>
                 )}
                 <button
                   onClick={() => setIsBookmarked(!isBookmarked)}
@@ -488,20 +497,31 @@ export default function AnimePage() {
             {/* Episodes Grid */}
             {anime.crunchyrollEpisodes && anime.crunchyrollEpisodes.length > 0 ? (
               <EpisodeGrid
-                episodes={anime.crunchyrollEpisodes.map(ep => ({
-                  id: ep.id,
-                  title: ep.title,
-                  episodeNumber: ep.episodeNumber,
-                  sequenceNumber: ep.sequenceNumber,
-                  description: '',
-                  duration: ep.duration || 24,
-                  thumbnail: ep.thumbnail || anime.bannerImage || anime.image,
-                  isPremium: ep.isPremium,
-                  isDubbed: ep.isDubbed,
-                  isSubbed: ep.isSubbed,
-                  seasonNumber: ep.seasonNumber,
-                  seasonTitle: ep.seasonTitle,
-                }))}
+                episodes={anime.crunchyrollEpisodes.map(ep => {
+                  const watchlistItem = watchlistContext?.getWatchlistItem(anime.crunchyrollId || "")
+                  const currentEpNum = watchlistItem?.currentEpisode || 0
+                  const epNum = ep.episodeNumber || ep.sequenceNumber
+                  // Simple heuristic: if we are on a later episode, previous ones are watched.
+                  // This isn't perfect but works for standard watching.
+                  const isWatched = currentEpNum > epNum || (currentEpNum === epNum && (watchlistItem?.playhead || 0) > (ep.duration * 60 * 0.9)) // > 90% watched
+
+                  return {
+                    id: ep.id,
+                    title: ep.title,
+                    episodeNumber: ep.episodeNumber,
+                    sequenceNumber: ep.sequenceNumber,
+                    description: '',
+                    duration: ep.duration || 24,
+                    thumbnail: ep.thumbnail || anime.bannerImage || anime.image,
+                    isPremium: ep.isPremium,
+                    isDubbed: ep.isDubbed,
+                    isSubbed: ep.isSubbed,
+                    seasonNumber: ep.seasonNumber,
+                    seasonTitle: ep.seasonTitle,
+                    availableFrom: ep.availableFrom,
+                    isWatched
+                  }
+                })}
                 accentColor={accentColor}
                 animeTitle={anime.title}
                 animeImage={anime.bannerImage || anime.image}

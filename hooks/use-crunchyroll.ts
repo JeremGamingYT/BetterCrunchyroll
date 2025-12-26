@@ -13,6 +13,8 @@ import {
     getProfile,
     getProfiles,
     getWatchlist,
+    getSubscription,
+    getWatchHistory,
     type TransformedCrunchyrollAnime,
     type TransformedCrunchyrollEpisode,
     type CrunchyrollSeason,
@@ -150,6 +152,20 @@ export function useCrunchyrollProfiles() {
     )
 }
 
+// Hook for getting user subscription
+export function useCrunchyrollSubscription(accountId: string | null) {
+    return useSWR(
+        accountId ? `cr-subscription-${accountId}` : null,
+        () => accountId ? getSubscription(accountId) : null,
+        {
+            revalidateOnFocus: false,
+            revalidateOnReconnect: false,
+            dedupingInterval: 300000, // 5 minutes
+        }
+    )
+}
+
+
 // Hook for getting user's Crunchyroll watchlist
 export function useCrunchyrollWatchlist(accountId: string | null, options?: {
     n?: number
@@ -160,6 +176,22 @@ export function useCrunchyrollWatchlist(accountId: string | null, options?: {
     return useSWR<TransformedWatchlistItem[]>(
         accountId ? `cr-watchlist-${accountId}-${JSON.stringify(options || {})}` : null,
         () => accountId ? getWatchlist({ accountId, ...options }) : [],
+        {
+            revalidateOnFocus: false,
+            revalidateOnReconnect: false,
+            dedupingInterval: 60000, // 1 minute
+        }
+    )
+}
+
+// Hook for getting user's watch history (Continue Watching)
+export function useWatchHistory(accountId: string | null, options?: {
+    page?: number
+    page_size?: number
+}) {
+    return useSWR<TransformedWatchlistItem[]>(
+        accountId ? `cr-history-${accountId}-${JSON.stringify(options || {})}` : null,
+        () => accountId ? getWatchHistory(accountId, options) : [],
         {
             revalidateOnFocus: false,
             revalidateOnReconnect: false,

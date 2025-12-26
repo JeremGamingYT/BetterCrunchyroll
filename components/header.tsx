@@ -23,7 +23,7 @@ import {
   Loader2,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { useCrunchyrollProfile, useCrunchyrollAccount } from "@/hooks/use-crunchyroll"
+import { useCrunchyrollProfile, useCrunchyrollAccount, useCrunchyrollSubscription } from "@/hooks/use-crunchyroll"
 
 const navItems = [
   { label: "Accueil", href: "/" },
@@ -48,8 +48,9 @@ export function Header() {
   // Get profile and account data from Crunchyroll API
   const { data: profile, isLoading: profileLoading } = useCrunchyrollProfile()
   const { data: account, isLoading: accountLoading } = useCrunchyrollAccount()
+  const { data: subscription, isLoading: subscriptionLoading } = useCrunchyrollSubscription(account?.account_id || null)
 
-  const isUserLoading = profileLoading || accountLoading
+  const isUserLoading = profileLoading || accountLoading || subscriptionLoading
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -204,10 +205,12 @@ export function Header() {
                         profile?.username || profile?.profile_name || 'Utilisateur'
                       )}
                     </h3>
-                    <div className="flex items-center gap-1 text-sm text-primary">
-                      <Crown className="w-3.5 h-3.5" />
-                      <span>Premium</span>
-                    </div>
+                    {subscription && Array.isArray(subscription) && subscription.length > 0 && (
+                      <div className="flex items-center gap-1 text-sm text-primary">
+                        <Crown className="w-3.5 h-3.5" />
+                        <span>Premium</span>
+                      </div>
+                    )}
                     {account?.email && (
                       <p className="text-xs text-muted-foreground truncate mt-0.5">
                         {account.email}

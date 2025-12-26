@@ -73,12 +73,21 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
   const crunchyrollSlug = "crunchyrollSlug" in anime ? anime.crunchyrollSlug : null
   const isOnCrunchyroll = "isOnCrunchyroll" in anime ? anime.isOnCrunchyroll : false
 
+  // Watchlist specific properties
+  const currentEpisode = "currentEpisode" in anime ? anime.currentEpisode : null
+  const currentEpisodeId = "currentEpisodeId" in anime ? anime.currentEpisodeId : null
+  const isDubbed = "isDubbed" in anime ? anime.isDubbed : false
+  const isSubbed = "isSubbed" in anime ? anime.isSubbed : true
+  const isWatchlistItem = !!currentEpisodeId
+
   // Use Crunchyroll info for sub/dub when available
   const crunchyrollInfo = "crunchyrollInfo" in anime ? anime.crunchyrollInfo : null
   const hasSubDub = crunchyrollInfo
     ? (crunchyrollInfo.isDubbed && crunchyrollInfo.isSubbed)
-    : ((popularity || 0) > 50000 || (score && score > 7.5))
-  const audioLabel = hasSubDub ? "Sub | Dub" : "Sub"
+    : isWatchlistItem
+      ? (isDubbed && isSubbed)
+      : ((popularity || 0) > 50000 || (score && score > 7.5))
+  const audioLabel = hasSubDub ? "Sub | Dub" : (isDubbed ? "Dub" : "Sub")
 
   // Format time until airing
   const formatTimeUntil = (seconds: number) => {
@@ -92,6 +101,8 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
   }
 
   const getEpisodeText = () => {
+    // For watchlist items, show current episode being watched
+    if (currentEpisode) return `Ep ${currentEpisode}`
     if (nextEpisode) return `Ep ${nextEpisode.episode}`
     if (totalEpisodes) return `${totalEpisodes} eps`
     return null
@@ -99,10 +110,14 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
 
   const episodeText = getEpisodeText()
 
-  // Build the link URL - use Crunchyroll ID when available for better compatibility
-  const animeUrl = crunchyrollId
-    ? `/anime/${anime.id}?cr=${crunchyrollId}`
-    : `/anime/${anime.id}`
+  // Build the link URL
+  // For watchlist items with current episode, go directly to watch page
+  // Otherwise go to anime details page
+  const animeUrl = isWatchlistItem && currentEpisodeId
+    ? `/watch/${currentEpisodeId}`
+    : crunchyrollId
+      ? `/anime/${anime.id}?cr=${crunchyrollId}`
+      : `/anime/${anime.id}`
 
   return (
     <Link
@@ -146,25 +161,44 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           onError={() => setImageError(true)}
         />
 
-        {(rating || !relationType) && (
-          <div className="absolute top-3 left-3 flex flex-col items-start gap-1">
-            {rating && (
-              <div
-                className={cn(
-                  "px-2 py-0.5 rounded text-xs font-bold",
-                  "bg-background/80 backdrop-blur-sm border border-primary/30",
-                  "transition-all duration-300",
-                )}
-                style={{
-                  backgroundColor: isHovered && animeColor ? animeColor : undefined,
-                  color: isHovered && animeColor ? "#fff" : undefined,
-                  borderColor: isHovered && animeColor ? animeColor : undefined,
-                }}
-              >
-                {rating}
-              </div>
-            )}
-            {/* Sub/Dub badge */}
+        {/* Top Left Badges Stack */}
+        <div className="absolute top-3 left-3 flex flex-col items-start gap-1">
+          {/* Type badge (TV, Movie, etc.) at the top */}
+          {(relationType || isWatchlistItem) && (
+            <div
+              className={cn(
+                "px-2 py-0.5 rounded text-xs font-bold",
+                "bg-primary/90 text-white",
+                "transition-all duration-300",
+              )}
+              style={{
+                backgroundColor: animeColor || undefined,
+              }}
+            >
+              {relationType?.replace(/_/g, " ") || "TV"}
+            </div>
+          )}
+
+          {/* Age rating below type */}
+          {rating && (
+            <div
+              className={cn(
+                "px-2 py-0.5 rounded text-xs font-bold",
+                "bg-background/80 backdrop-blur-sm border border-primary/30",
+                "transition-all duration-300",
+              )}
+              style={{
+                backgroundColor: isHovered && animeColor ? animeColor : undefined,
+                color: isHovered && animeColor ? "#fff" : undefined,
+                borderColor: isHovered && animeColor ? animeColor : undefined,
+              }}
+            >
+              {rating}
+            </div>
+          )}
+
+          {/* Sub/Dub badge below age - only show if available */}
+          {audioLabel && (
             <div
               className={cn(
                 "px-2 py-0.5 rounded text-xs font-medium",
@@ -174,17 +208,8 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             >
               {audioLabel}
             </div>
-          </div>
-        )}
-
-        {relationType && (
-          <div
-            className="absolute top-3 left-3 px-2 py-0.5 rounded text-xs font-bold text-white"
-            style={{ backgroundColor: animeColor || "hsl(var(--primary))" }}
-          >
-            {relationType.replace(/_/g, " ")}
-          </div>
-        )}
+          )}
+        </div>
 
         {/* Airing Badge */}
         {showAiring && nextEpisode && (
@@ -253,6 +278,18 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
               isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
             )}
           >
+            {/* Current Episode for watchlist items - displayed prominently */}
+            {currentEpisode && (
+              <div
+                className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
+                style={{
+                  backgroundColor: animeColor || "hsl(var(--primary))",
+                  color: "#fff"
+                }}
+              >
+                Ep {currentEpisode}
+              </div>
+            )}
             <div className="flex items-center gap-2 mb-2">
               {score && (
                 <>
@@ -270,7 +307,8 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                   <span className="text-sm font-medium text-muted-foreground">N/A</span>
                 </>
               )}
-              {episodeText && <span className="text-xs text-muted-foreground ml-auto">{episodeText}</span>}
+              {/* For non-watchlist items, show episode info on the right */}
+              {!currentEpisode && episodeText && <span className="text-xs text-muted-foreground ml-auto">{episodeText}</span>}
             </div>
             {genres.length > 0 && (
               <div className="flex flex-wrap gap-1">
