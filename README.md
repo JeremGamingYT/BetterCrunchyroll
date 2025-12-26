@@ -15,6 +15,49 @@ Designed to feel faster, cleaner, smoother and more immersive.
 
 </div>
 
+## 🔥 Features — Project Status
+
+### Currently Implemented
+
+- [x] **COMPLETE Crunchyroll Redesign**  
+  A fully rebuilt platform with a brand-new UI, independent from the original Crunchyroll interface.
+
+- [x] **All anime properly displayed**  
+  Series, episodes, images, metadata and schedules are fully supported.
+
+- [x] **Removal of unnecessary Crunchyroll sections**  
+  Clean and focused home page without redundant or outdated blocks.
+
+- [x] **Modern, fluid and premium UI**  
+  Rounded design, smooth animations, refined transitions and a new typography system.
+
+- [x] **Dynamic visual identity per anime**  
+  Colors, borders, buttons, titles and glow effects adapt to each show.
+
+- [x] **Enriched anime pages**  
+  Characters, cast, detailed descriptions, images, episode lists,  
+  upcoming episodes with **release dates displayed directly**.
+
+---
+
+### ⏳ In Progress / Planned
+
+- [ ] **Comments system powered by AniList**  
+  Community features reintroduced through native AniList integration.
+
+- [ ] **Native notifications (Desktop & Mobile)**  
+  New episodes, upcoming releases and community activity alerts.
+
+- [ ] **Full mobile compatibility**  
+  Responsive layout with future PWA support.
+
+- [ ] **Advanced user profiles**  
+  Avatars, banners, identity linked to AniList and comment history.
+
+- [ ] **Automatic subtitle translation**  
+  Google Translate by default  
+  Optional AI-based translation via API key (advanced models).
+
 ---
 
 ## ⚠️ Important Notice
