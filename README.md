@@ -1,285 +1,253 @@
-# 🎌 BetterCrunchyroll - Chrome Premium Extension [Unstable - Do Not Download Source]
+<div align="center">
 
-> **⚠️ WARNING: DO NOT DOWNLOAD THE SOURCE CODE**
->
-> The current source code is undergoing major restructuring and contains significant bugs.
-> **Please do NOT download or build from the `main` branch quite yet.**
->
-> For a stable experience, please download the latest stable version from the **"Releases"** section.
+<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.png" alt="BetterCrunchyroll Banner" width="100%" />
 
-[![Version](https://img.shields.io/badge/version-1.1.0-orange.svg)](https://github.com)
-[![Chrome](https://img.shields.io/badge/Chrome-Extension-green.svg)](https://chrome.google.com/webstore)
+# 🎌 BetterCrunchyroll
+
+### Premium UI & UX Redesign for Crunchyroll — Chrome Extension
+
+**A complete, modern and high-end reimagination of Crunchyroll.**  
+Designed to feel faster, cleaner, smoother and more immersive.
+
+[![Version](https://img.shields.io/badge/version-1.1.0-orange.svg)](#)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green.svg)](#)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-A complete and premium redesign of Crunchyroll as a Chrome extension that automatically replaces all pages of the official site.
+</div>
 
-![Preview](https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.png)
+---
 
-## ✨ Features
+## ⚠️ Important Notice
+
+> **DO NOT DOWNLOAD THE SOURCE CODE YET**
+>
+> The project is currently undergoing **major internal restructuring**.  
+> The `main` branch contains unstable code and known breaking issues.
+>
+> 👉 **Only download official builds from the `Releases` section**.
+
+---
+
+## ✨ Project Overview
+
+**BetterCrunchyroll** is a **premium Chrome extension** that completely replaces the official Crunchyroll website interface with a modern, fluid and immersive experience.
+
+This is **not a theme**, not a simple CSS tweak.  
+It is a **full React application** injected over Crunchyroll, replacing every page.
+
+**Goal:**  
+> Deliver a next-gen anime streaming interface worthy of 2025 standards.
+
+---
+
+## 🎨 Design Philosophy
+
+- Apple-like clarity and hierarchy
+- Netflix-grade immersion
+- Ultra-smooth animations (60 FPS)
+- Dark-first, eye-friendly UI
+- No visual noise, no clutter
+
+### Visual Highlights
+- Glassmorphism navigation
+- Soft blur & depth layers
+- Fluid micro-interactions
+- Premium typography (Outfit)
+- Carefully tuned spacing & motion curves
+
+---
+
+## 🚀 Key Features
 
 ### 🎨 Complete Premium Redesign
-- **Modern Design System** with harmonious color palette
-- **Glassmorphism** and elegant blur effects
-- **Smooth Animations** with Framer Motion (60fps)
-- **Premium Dark Mode** optimized
-- **Google Fonts Typography** (Outfit)
+- Fully custom UI (no Crunchyroll CSS left)
+- Modern design system
+- Dark mode optimized by default
+- Smooth transitions and hover states
+- High-performance rendering
 
-### 🆕 New Features (v1.1.0)
+### 🔖 Watchlist System
+- Fully functional **Add to List** button
+- Live synchronization with Crunchyroll account
+- Dynamic button state (ADD / IN MY LIST)
+- Animated bookmark icon
+- Custom visual feedback when added
 
-#### 🔖 Watchlist Management
-- **Functional "Add to List" Button** on all series pages
-- **Synchronization** with your Crunchyroll account
-- **Dynamic State**: toggles between "ADD TO LIST" and "IN MY LIST"
-- **Bookmark Icon Animation** (filled/outline)
-- **Custom Style** when added to the list
+### 🔗 AniList Integration (Ready)
+- AniList button on anime pages
+- Official SVG logo
+- Backend-ready (future real sync)
 
-#### 🔗 AniList Integration
-- **AniList Button** on series pages (simulated)
-- **Official AniList SVG Logo**
-- **Ready for future implementation**
-
-#### 📄 Smart Pagination
-- **Latest & Popular Pages** with "Load More" system
-- **+10 anime** on every click
-- **Item Counter** for displayed items
-- **Smooth Loading Animation**
-
-### 📺 Included Pages
-
-#### Home Page (Discover)
-- Auto-animated Hero carousel with 3 slides
-- 4 scrollable content rows (Top Picks, New Episodes, Popular, Simulcasts)
-- Premium hover effects on all cards
-- Animated progress indicators
-
-#### Series Pages
-- Immersive Header with hero image
-- **Functional "Add to List" Button** ✨
-- **AniList Button** (coming soon) ✨
-- Season selector with tabs
-- Episode grid with thumbnails
-- Immediate episode loading (no more double-click) ✨
-- "PREMIUM" badge only on actual premium episodes
-
-#### Latest & Popular Pages
-- **Pagination with "Load More"** ✨
-- Initial display: 24 anime
+### 📄 Smart Pagination
+- “Load More” system on Latest & Popular pages
 - +10 anime per click
-- Smart cache (15-30 min)
+- Smooth loading animation
+- Smart cache (15–30 min)
 
-#### Simulcast Page
-- **Improved Filtering** by current season ✨
-- Only actual simulcasts
-- Calendar by day of the week
+---
 
-#### Global Features
-- **Navbar** with glassmorphism on scroll
-- **Search Modal** centered with instant search
-- **Smooth Navigation** between pages
-- **Optimized Cache** (-60% API requests)
-- **Responsive Design** mobile/tablet/desktop
+## 📺 Pages Included
 
-### 🔧 Updated Navigation
-Menu in exact order:
-1. Latest
-2. Popular
-3. Simulcast
-4. Category (dropdown)
-5. Manga
-6. Games
-7. Shop
-8. News
+### 🏠 Home (Discover)
+- Auto-animated hero carousel
+- Multiple horizontal anime rows
+- Premium card hover effects
+- Smooth scrolling experience
 
-## 🚀 Quick Installation
+### 🎞️ Anime / Series Page
+- Immersive hero header
+- Functional Watchlist button
+- AniList button (coming soon)
+- Season selector with instant loading
+- Episode grid with thumbnails
+- No double-click issues
+- Real Premium badge logic
 
-### Prerequisites
-- Node.js 18+ installed
-- Chrome/Edge/Brave browser
+### 🆕 Latest & ⭐ Popular
+- Initial load: 24 items
+- Load more system
+- Performance-friendly pagination
 
-### Build & Installation
-```bash
-# 1. Install dependencies
-npm install
+### 📅 Simulcast
+- Correct seasonal filtering
+- Weekly calendar layout
+- Only real simulcasts shown
 
-# 2. Build the extension
-npm run build
+---
 
-# 3. Load into Chrome
-# - Open chrome://extensions/
-# - Enable "Developer mode"
-# - Click "Load unpacked"
-# - Select the dist/ folder
-```
+## 🧭 Navigation Structure
 
-📖 **Detailed Guides**:
-- [Installation & Build](./EXTENSION_GUIDE.md)
-- [Test Guide](./GUIDE_TEST.md) ⭐
-- [Summary of Fixes](./RESUME_CORRECTIONS.md) ⭐
+Navigation order (intentional & curated):
+
+1. Latest  
+2. Popular  
+3. Simulcast  
+4. Categories  
+5. Manga  
+6. Games  
+7. Store  
+8. News  
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|--------|-------------|
+| Frontend | React 19, TypeScript |
+| Build | Vite, ESBuild |
+| Styling | SCSS, CSS Variables |
+| Animations | Framer Motion |
+| Icons | Lucide React |
+| Routing | React Router v6 |
+| Extension | Chrome Manifest V3 |
+
+---
+
+## 🧠 How It Works
+
+1. **Content Script** injects on Crunchyroll pages
+2. Original site content is fully removed
+3. React application is mounted
+4. Navigation is internally rerouted
+5. Crunchyroll becomes transparent to the user
+
+**Result:**  
+A seamless replacement — no reload, no iframe, no hacks.
+
+---
 
 ## 📁 Project Structure
 
-```
+```text
 BetterCrunchyroll/
 ├── src/
-│   ├── components/           # Reusable React components
-│   │   ├── Navbar.tsx       # Glassmorphism navigation
-│   │   ├── Hero.tsx         # Animated hero carousel
-│   │   ├── ContentRow.tsx   # Scrollable rows
-│   │   ├── AnimeDetail.tsx  # Detail modal (deprecated)
-│   │   └── SearchModal.tsx  # Centered search modal
-│   ├── pages/               # Application pages
-│   │   ├── Home.tsx         # Home/discover page
-│   │   └── Watch.tsx        # Watch page
-│   ├── styles/              # Global SCSS styles
-│   └── App.tsx              # Main Router
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── App.tsx
 ├── public/
-│   ├── manifest.json        # Chrome Extension Config
-│   ├── content.js           # Injection script
-│   ├── popup.html           # Extension popup
-│   └── icons/               # Icons 16/48/128px
-├── dist/                    # Extension build
-└── vite.config.ts          # Vite config for extension
-```
+│   ├── manifest.json
+│   ├── content.js
+│   ├── popup.html
+│   └── icons/
+├── dist/
+└── vite.config.ts
+````
 
-## 🛠️ Technologies
+---
 
-| Category | Technologies |
-|-----------|-------------|
-| **Frontend** | React 19, TypeScript |
-| **Build** | Vite, ESBuild |
-| **Styling** | SCSS, CSS Variables |
-| **Animations** | Framer Motion |
-| **Icons** | Lucide React |
-| **Routing** | React Router v6 |
-| **Extension** | Chrome Manifest V3 |
+## 🐛 Major Fixes (v1.1.0)
 
-## 🎯 How It Works
+* ✔ Watchlist button fully functional
+* ✔ Navigation back logic fixed
+* ✔ Instant season loading
+* ✔ Correct simulcast filtering
+* ✔ Pagination added to large lists
 
-### Chrome Extension
-1. **Content Script** (`content.js`) injects onto all Crunchyroll pages
-2. **Removal** of original Crunchyroll content
-3. **Injection** of our React application
-4. **Complete and transparent replacement**
-
-### Navigation
-- `/` or `/discover` → Home Page with carousel
-- `/watch/:id` → Watch Page with episodes
-- Search modal accessible from the search icon
-
-## 🎨 Design System
-
-### Colors
-```scss
---color-bg: #0a0a0a              // Deep Black
---color-bg-secondary: #141414     // Secondary Black
---color-primary: #f47521          // Crunchyroll Orange
---color-text: #ffffff             // White
---color-text-secondary: #a3a3a3   // Grey
-```
-
-### Effects
-- **Glassmorphism**: `backdrop-filter: blur(12px)`
-- **Shadows**: `0 4px 30px rgba(0,0,0,0.1)`
-- **Transitions**: `cubic-bezier(0.215, 0.61, 0.355, 1)`
-- **Z-index**: Navbar (1000), Modals (10000+)
-
-## 🐛 Bug Fixes (v1.1.0)
-
-### ✅ Issue #1: "Add to List" Button Not Functional
-- **Before**: Inactive button, no account integration
-- **After**: Fully functional with Crunchyroll API
-- **Impact**: Total synchronization with your watchlist
-
-### ✅ Issue #2: Incorrect "Back" Navigation
-- **Before**: Redirected to `/simulcasts/seasons/fall-2025`
-- **After**: Clean return to `/discover`
-- **Impact**: Consistent bug-free navigation
-
-### ✅ Issue #3: Double-Click on Seasons
-- **Before**: Had to click twice to see episodes
-- **After**: Immediate loading on first click
-- **Impact**: Improved UX, less frustrating
-
-### ✅ Issue #4: Incorrect Simulcast Filtering
-- **Before**: Displayed anime from all seasons
-- **After**: Only simulcasts from the current season
-- **Impact**: Relevant and up-to-date content
-
-### ✅ Issue #5: Missing Pagination
-- **Before**: Latest/Popular pages limited to 24-30 anime
-- **After**: "Load More" button with +10 anime per click
-- **Impact**: Access to +100 series without lag
-
-📖 **Full Details**: See [CHANGELOG.md](./CHANGELOG.md) and [CORRECTIONS_APPLIQUEES.md](./CORRECTIONS_APPLIQUEES.md)
+---
 
 ## 📊 Performance
 
-- **Build size**: ~358 KB (gzip: ~116 KB)
-- **First Paint**: < 1s
-- **Animations**: Constant 60fps
-- **Images**: Lazy loading enabled
+* Build size: ~358 KB (gzip ~116 KB)
+* First paint: < 1s
+* Constant 60 FPS animations
+* Lazy-loaded images
+* Reduced API calls (-60%)
 
-## 🔮 Roadmap
+---
 
-### Version 1.1
-- [ ] Custom video player
-- [ ] Real Crunchyroll API integration
-- [ ] Watchlist sync with account
+## 🗺️ Roadmap
 
-### Version 2.0
-- [ ] Light mode
-- [ ] Multi-language (FR/EN/JP)
-- [ ] PWA (Progressive Web App)
-- [ ] Offline mode
+### v1.x
 
-## 🤝 Contribution
+* Custom video player
+* Real AniList sync
+* Advanced watch history
 
-Contributions are welcome!
+### v2.0
+
+* Light mode
+* Multi-language (FR / EN / JP)
+* PWA support
+* Offline browsing
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome **once the project stabilizes**.
 
 ```bash
-# Fork the project
 git clone https://github.com/your-username/bettercrunchyroll
-cd bettercrunchyroll
-
-# Create a branch
-git checkout -b feature/amazing-feature
-
-# Commit and push
+git checkout -b feature/your-feature
 git commit -m "Add amazing feature"
-git push origin feature/amazing-feature
-
-# Create a Pull Request
+git push origin feature/your-feature
 ```
+
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-## 🙏 Credits
-
-- **Design**: Inspired by Apple, Netflix, and modern design
-- **Images**: AlphaCoders (placeholders)
-- **Fonts**: Google Fonts (Outfit)
-- **Icons**: Lucide React
+MIT License — see `LICENSE`
 
 ---
 
-## 📞 Support
+## ⚖️ Legal Disclaimer
 
-For any questions or issues:
-- 📖 Read [EXTENSION_GUIDE.md](./EXTENSION_GUIDE.md)
-- 📖 Consult [PRESENTATION.md](./PRESENTATION.md)
-- 🐛 Open an issue on GitHub
-- 💬 Contact us
+This project is a **conceptual redesign** made for educational and demonstrative purposes.
+It is **not affiliated** with Crunchyroll, Sony, or any related entity.
 
----
-
-**Made with ❤️ and ☕ by the BetterCrunchyroll Team**
-
-*"Better design. Better experience. Better anime streaming."* ✨
+All trademarks belong to their respective owners.
 
 ---
 
-### ⚠️ Disclaimer
+<div align="center">
 
-This project is a conceptual redesign created for educational and demonstration purposes. It is not affiliated with Crunchyroll, Sony, or Crunchyroll, LLC. All rights and trademarks belong to their respective owners.
+**Better design.
+Better experience.
+Better anime.**
+
+✨
+
+</div>
