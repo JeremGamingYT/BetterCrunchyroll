@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useParams } from "next/navigation"
 import { useState, useEffect } from "react"
 import {
@@ -12,7 +13,19 @@ import {
   TrendingUp,
   Film,
   Globe,
+  Home,
+  Search,
+  Copy,
+  Check,
+  MoreVertical,
 } from "lucide-react"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { toast } from "sonner"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimeCard } from "@/components/anime-card"
@@ -37,6 +50,16 @@ export default function AnimePage() {
 
   const [isBookmarked, setIsBookmarked] = useState(isInWatchlist)
   const [activeTab, setActiveTab] = useState<"overview" | "characters" | "related" | "episodes">("overview")
+  const [copied, setCopied] = useState(false)
+
+  const copyToClipboard = () => {
+    if (typeof window !== "undefined") {
+      navigator.clipboard.writeText(window.location.href)
+      setCopied(true)
+      toast.success("Lien copié dans le presse-papier !")
+      setTimeout(() => setCopied(false), 2000)
+    }
+  }
 
   // Sync bookmark state with watchlist context
   useEffect(() => {
@@ -60,10 +83,24 @@ export default function AnimePage() {
     return (
       <main className="min-h-screen bg-background">
         <Header />
-        <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold mb-2">Anime non trouvé</h1>
-            <p className="text-muted-foreground">ID d'anime invalide.</p>
+        <div className="flex flex-col items-center justify-center min-h-[60vh] px-4">
+          <div className="text-center space-y-4">
+            <Film className="w-16 h-16 text-muted-foreground mx-auto opacity-50" />
+            <div className="space-y-2">
+              <h1 className="text-2xl font-bold">Anime non trouvé</h1>
+              <p className="text-muted-foreground max-w-md mx-auto">
+                L'identifiant de l'anime est invalide ou manquant.
+              </p>
+            </div>
+            <div className="flex items-center justify-center gap-4 pt-4">
+              <Link
+                href="/"
+                className="flex items-center gap-2 px-6 py-2.5 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-colors font-medium"
+              >
+                <Home className="w-4 h-4" />
+                Retour à l'accueil
+              </Link>
+            </div>
           </div>
         </div>
       </main>
@@ -78,11 +115,32 @@ export default function AnimePage() {
     return (
       <main className="min-h-screen bg-background">
         <Header />
-        <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold mb-2">Anime non trouvé</h1>
-            <p className="text-muted-foreground">Impossible de charger les détails de cet anime.</p>
-            {error && <p className="text-sm text-muted-foreground mt-2">Détail: {error?.message || String(error)}</p>}
+        <div className="flex flex-col items-center justify-center min-h-[60vh] px-4">
+          <div className="text-center space-y-4">
+            <Film className="w-16 h-16 text-muted-foreground mx-auto opacity-50" />
+            <div className="space-y-2">
+              <h1 className="text-2xl font-bold">Anime introuvable</h1>
+              <p className="text-muted-foreground max-w-md mx-auto">
+                Impossible de charger les détails de cet anime. Il se peut qu'il ne soit pas disponible dans notre base de données ou qu'il y ait une erreur de connexion.
+              </p>
+              {error && <p className="text-xs text-red-400 font-mono mt-2 bg-red-950/30 p-2 rounded">Erreur: {error?.message || String(error)}</p>}
+            </div>
+            <div className="flex items-center justify-center gap-4 pt-4">
+              <Link
+                href="/"
+                className="flex items-center gap-2 px-6 py-2.5 bg-secondary hover:bg-secondary/80 text-foreground rounded-xl transition-colors font-medium"
+              >
+                <Home className="w-4 h-4" />
+                Accueil
+              </Link>
+              <Link
+                href="/search"
+                className="flex items-center gap-2 px-6 py-2.5 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-colors font-medium"
+              >
+                <Search className="w-4 h-4" />
+                Rechercher un anime
+              </Link>
+            </div>
           </div>
         </div>
       </main>
@@ -193,50 +251,82 @@ export default function AnimePage() {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-3">
-                {crunchyrollLink ? (
+                {/* Primary Action Button: Prioritize Local Data for "Commencer/Reprendre" */}
+                {anime.crunchyrollEpisodes && anime.crunchyrollEpisodes.length > 0 ? (
+                  <Link
+                    href={watchlistContext?.getWatchlistItem(anime.crunchyrollId || "")?.currentEpisodeId
+                      ? `/watch/${watchlistContext.getWatchlistItem(anime.crunchyrollId || "")?.currentEpisodeId}`
+                      : `/watch/${anime.crunchyrollEpisodes[0].id}`
+                    }
+                    className="flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-white transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/25"
+                    style={{ backgroundColor: accentColor }}
+                  >
+                    <Play className="w-5 h-5" fill="currentColor" />
+                    {watchlistContext?.isInWatchlist(anime.crunchyrollId || "")
+                      ? (watchlistContext.getWatchlistItem(anime.crunchyrollId || "")?.playhead
+                        ? `REPRENDRE E${watchlistContext.getWatchlistItem(anime.crunchyrollId || "")?.currentEpisode || 1}`
+                        : "COMMENCER")
+                      : "COMMENCER À REGARDER"
+                    }
+                  </Link>
+                ) : crunchyrollLink ? (
                   <a
                     href={crunchyrollLink.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white transition-all hover:scale-105"
+                    className="flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-white transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/25"
                     style={{ backgroundColor: accentColor }}
                   >
                     <Play className="w-5 h-5" fill="currentColor" />
                     Regarder sur Crunchyroll
                   </a>
                 ) : (
-                  <a
-                    href={watchlistContext?.getWatchlistItem(anime.crunchyrollId || "")?.currentEpisodeId
-                      ? `/watch/${watchlistContext.getWatchlistItem(anime.crunchyrollId || "")?.currentEpisodeId}`
-                      : `/watch/${anime.crunchyrollEpisodes?.[0]?.id || ""}`
-                    }
-                    className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white transition-all hover:scale-105"
-                    style={{ backgroundColor: accentColor, pointerEvents: !anime.crunchyrollEpisodes?.length ? 'none' : 'auto', opacity: !anime.crunchyrollEpisodes?.length ? 0.5 : 1 }}
+                  <button
+                    disabled
+                    className="flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-white opacity-50 cursor-not-allowed transition-all"
+                    style={{ backgroundColor: accentColor }}
                   >
                     <Play className="w-5 h-5" fill="currentColor" />
-                    {watchlistContext?.isInWatchlist(anime.crunchyrollId || "")
-                      ? (watchlistContext.getWatchlistItem(anime.crunchyrollId || "")?.playhead
-                        ? `Reprendre E${watchlistContext.getWatchlistItem(anime.crunchyrollId || "")?.currentEpisode || 1}`
-                        : "Commencer")
-                      : "Commencer à regarder"
-                    }
-                  </a>
+                    Indisponible
+                  </button>
                 )}
+
+                {/* Bookmark Button */}
                 <button
                   onClick={() => setIsBookmarked(!isBookmarked)}
                   className={cn(
-                    "flex items-center gap-2 px-4 py-3 rounded-xl font-medium transition-all",
-                    "bg-secondary hover:bg-secondary/80",
-                    isBookmarked && "bg-primary/20 text-primary",
+                    "flex items-center gap-2 px-5 py-3.5 rounded-xl font-semibold transition-all duration-300",
+                    "bg-secondary/80 hover:bg-secondary border border-border/50",
+                    isBookmarked && "bg-primary/10 text-primary border-primary/30",
                   )}
                 >
                   <Bookmark className="w-5 h-5" fill={isBookmarked ? "currentColor" : "none"} />
-                  {isBookmarked ? "Sauvegardé" : "Ma Liste"}
+                  <span>{isBookmarked ? "Dans ma liste" : "Ajouter à ma liste"}</span>
                 </button>
-                <button className="flex items-center gap-2 px-4 py-3 rounded-xl font-medium bg-secondary hover:bg-secondary/80 transition-all">
-                  <Share2 className="w-5 h-5" />
-                  Partager
-                </button>
+
+                {/* Share Dropdown Menu */}
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <button className="flex items-center justify-center w-14 h-auto rounded-xl bg-secondary/80 hover:bg-secondary border border-border/50 transition-all active:scale-95">
+                      <Share2 className="w-5 h-5" />
+                    </button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" className="w-56 p-2 bg-card/95 backdrop-blur-xl border-border rounded-xl shadow-2xl">
+                    <DropdownMenuItem
+                      onClick={copyToClipboard}
+                      className="flex items-center gap-2 p-3 rounded-lg cursor-pointer hover:bg-primary/10 hover:text-primary transition-colors"
+                    >
+                      {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                      <span className="font-medium">Copier le lien</span>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem
+                      className="flex items-center gap-2 p-3 rounded-lg cursor-pointer hover:bg-primary/10 hover:text-primary transition-colors"
+                    >
+                      <Globe className="w-4 h-4" />
+                      <span className="font-medium">Ouvrir dans le navigateur</span>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </div>
           </div>
@@ -272,70 +362,73 @@ export default function AnimePage() {
       <div className="container mx-auto px-4 py-8">
         {/* Overview Tab */}
         {activeTab === "overview" && (
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-12">
             {/* Synopsis */}
-            <div className="md:col-span-2">
-              <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <div className="w-1 h-6 rounded-full" style={{ backgroundColor: accentColor }} />
-                Synopsis
-              </h2>
-              <p className="text-muted-foreground leading-relaxed text-pretty">
-                {anime.description || "Aucune description disponible."}
-              </p>
+            <div className="md:col-span-2 space-y-8">
+              <section>
+                <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                  <div className="w-1.5 h-8 rounded-full" style={{ backgroundColor: accentColor }} />
+                  Synopsis
+                </h2>
+                <div className="relative group">
+                  <p className="text-muted-foreground leading-relaxed text-lg text-pretty whitespace-pre-line">
+                    {anime.description || "Aucune description disponible."}
+                  </p>
+                  <div className="absolute -left-4 top-0 bottom-0 w-1 bg-primary/5 rounded-full" />
+                </div>
+              </section>
 
               {/* Staff */}
               {anime.staff && anime.staff.length > 0 && (
-                <div className="mt-8">
-                  <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                    <div className="w-1 h-6 rounded-full" style={{ backgroundColor: accentColor }} />
-                    Staff
+                <section>
+                  <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <div className="w-1.5 h-8 rounded-full" style={{ backgroundColor: accentColor }} />
+                    Staff Principal
                   </h2>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {anime.staff.slice(0, 6).map((person) => (
-                      <div key={person.id} className="flex items-center gap-3 p-3 rounded-xl bg-secondary/50">
-                        <img
-                          src={person.image || "/placeholder.svg?height=50&width=50&query=person"}
-                          alt={person.name}
-                          className="w-12 h-12 rounded-full object-cover"
-                        />
+                      <div
+                        key={person.id}
+                        className="flex items-center gap-4 p-4 rounded-2xl bg-secondary/30 border border-border/40 transition-all hover:bg-secondary/50 hover:scale-[1.02] hover:shadow-lg group"
+                      >
+                        <div className="relative flex-shrink-0">
+                          <img
+                            src={person.image || "/placeholder.svg?height=60&width=60&query=person"}
+                            alt={person.name}
+                            className="w-14 h-14 rounded-full object-cover border-2 border-border/50 group-hover:border-primary/50 transition-colors"
+                          />
+                        </div>
                         <div className="min-w-0">
-                          <p className="font-medium truncate">{person.name}</p>
-                          <p className="text-xs text-muted-foreground truncate">{person.role}</p>
+                          <p className="font-bold truncate group-hover:text-primary transition-colors">{person.name}</p>
+                          <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">{person.role}</p>
                         </div>
                       </div>
                     ))}
                   </div>
-                </div>
+                </section>
               )}
             </div>
 
             {/* Side Info */}
-            <div className="space-y-6">
-              <div className="p-4 rounded-xl bg-secondary/30 space-y-4">
-                <h3 className="font-bold text-lg">Informations</h3>
-                <div className="space-y-3 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Format</span>
-                    <span className="font-medium">{anime.format || "N/A"}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Statut</span>
-                    <span className="font-medium">{anime.status}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Source</span>
-                    <span className="font-medium">{anime.source || "N/A"}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Saison</span>
-                    <span className="font-medium">
-                      {anime.season} {anime.year}
-                    </span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Date de début</span>
-                    <span className="font-medium">{anime.startDate || "N/A"}</span>
-                  </div>
+            <div className="space-y-8">
+              <div className="p-6 rounded-2xl bg-secondary/30 border border-border/40 shadow-sm space-y-6">
+                <h3 className="font-bold text-xl flex items-center gap-2">
+                  Détails
+                </h3>
+                <div className="space-y-4">
+                  {[
+                    { label: "Format", value: anime.format },
+                    { label: "Statut", value: anime.status === "RELEASING" ? "En cours" : anime.status === "FINISHED" ? "Terminé" : anime.status },
+                    { label: "Source", value: anime.source },
+                    { label: "Saison", value: `${anime.season} ${anime.year || ""}` },
+                    { label: "Score", value: anime.score ? `${anime.score}/10` : "N/A" },
+                    { label: "Début", value: anime.startDate },
+                  ].map((item, idx) => (
+                    <div key={idx} className="flex flex-col gap-1 pb-3 border-b border-border/20 last:border-0 last:pb-0">
+                      <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground/60">{item.label}</span>
+                      <span className="font-semibold text-foreground/90">{item.value || "N/A"}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
 

@@ -12,9 +12,10 @@ interface EpisodeCardProps {
   accentColor?: string
   episodeId?: string
   isPremium?: boolean
+  isWatched?: boolean
 }
 
-export function EpisodeCard({ episodeNumber, title, duration, thumbnail, accentColor, episodeId, isPremium }: EpisodeCardProps) {
+export function EpisodeCard({ episodeNumber, title, duration, thumbnail, accentColor, episodeId, isPremium, isWatched }: EpisodeCardProps) {
   const [isHovered, setIsHovered] = useState(false)
 
   const episodeTitle = title || `Épisode ${episodeNumber || '?'}`
@@ -62,10 +63,17 @@ export function EpisodeCard({ episodeNumber, title, duration, thumbnail, accentC
           E{episodeNumber}
         </div>
 
-        {/* Duration Badge */}
-        <div className="absolute top-3 right-3 px-2 py-1 rounded bg-background/80 backdrop-blur-sm flex items-center gap-1">
-          <Clock className="w-3 h-3 text-muted-foreground" />
-          <span className="text-xs font-medium text-foreground">{duration} min</span>
+        {/* Duration Badge & Watched Label */}
+        <div className="absolute top-3 right-3 flex items-center gap-1">
+          {isWatched && (
+            <span className="bg-black/70 backdrop-blur-sm text-white px-1.5 py-1 rounded text-xs font-medium">
+              Regardé
+            </span>
+          )}
+          <div className="px-2 py-1 rounded bg-background/80 backdrop-blur-sm flex items-center gap-1">
+            <Clock className="w-3 h-3 text-muted-foreground" />
+            <span className="text-xs font-medium text-foreground">{duration} min</span>
+          </div>
         </div>
 
         {/* Premium Badge */}

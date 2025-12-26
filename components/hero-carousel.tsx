@@ -39,6 +39,17 @@ export function HeroCarousel() {
   }, [currentIndex, goToSlide, hasAnimes, animes.length])
 
   useEffect(() => {
+    if (showInfoPopup) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
+    return () => {
+      document.body.style.overflow = "unset"
+    }
+  }, [showInfoPopup])
+
+  useEffect(() => {
     if (isPaused || !hasAnimes) return
     const interval = setInterval(goToNext, 6000)
     return () => clearInterval(interval)
@@ -156,17 +167,17 @@ export function HeroCarousel() {
             <Link
               href={`/anime/${displayAnime.id}`}
               onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
-              className="group flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold text-sm hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
+              className="group flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-xl font-bold text-sm shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <Play className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="currentColor" />
               <span>À SUIVRE E{displayAnime.nextEpisode?.episode || 1}</span>
             </Link>
-            <button className="p-3 bg-secondary/80 hover:bg-secondary text-foreground rounded-lg transition-all duration-300 hover:scale-105 border border-border/50">
+            <button className="p-4 bg-secondary/80 hover:bg-secondary text-foreground rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 border border-border/50 shadow-lg backdrop-blur-sm">
               <Bookmark className="w-5 h-5" />
             </button>
             <button
               onClick={() => setShowInfoPopup(true)}
-              className="p-3 bg-secondary/80 hover:bg-secondary text-foreground rounded-lg transition-all duration-300 hover:scale-105 border border-border/50"
+              className="p-4 bg-secondary/80 hover:bg-secondary text-foreground rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 border border-border/50 shadow-lg backdrop-blur-sm"
             >
               <Info className="w-5 h-5" />
             </button>
@@ -232,31 +243,31 @@ export function HeroCarousel() {
 
       {showInfoPopup && currentAnime && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm"
+          className="fixed inset-0 z-[200] flex items-center justify-center bg-background/90 backdrop-blur-md transition-all duration-300 animate-in fade-in"
           onClick={() => setShowInfoPopup(false)}
         >
           <div
-            className="relative bg-card border border-border rounded-2xl max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto shadow-2xl"
+            className="relative bg-card border border-border rounded-2xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-hidden shadow-2xl flex flex-col scale-100 animate-in zoom-in-95 duration-300"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header Image */}
-            <div className="relative h-48 overflow-hidden rounded-t-2xl">
+            <div className="relative h-64 flex-shrink-0">
               <img
                 src={currentAnime.bannerImage || currentAnime.image}
                 alt={currentAnime.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
               <button
                 onClick={() => setShowInfoPopup(false)}
-                className="absolute top-4 right-4 p-2 bg-background/50 backdrop-blur-sm rounded-full hover:bg-background/80 transition-colors"
+                className="absolute top-4 right-4 p-2 bg-background/50 backdrop-blur-sm rounded-full hover:bg-background/80 transition-all hover:scale-110 z-10"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
-            {/* Content */}
-            <div className="p-6 space-y-4">
+            {/* Scrollable Content Area */}
+            <div className="p-8 space-y-6 overflow-y-auto custom-scrollbar">
               <h2 className="text-2xl font-bold text-foreground">{currentAnime.title}</h2>
 
               {/* Meta info */}

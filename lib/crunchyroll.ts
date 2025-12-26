@@ -289,11 +289,30 @@ export interface TransformedCrunchyrollEpisode {
 // Transform Helpers
 // ===============================
 
-function getBestImage(images: Array<Array<{ width: number; height: number; source: string }>> | undefined): string | null {
-    if (!images || images.length === 0 || images[0].length === 0) return null
-    // Get the highest resolution image
-    const sorted = [...images[0]].sort((a, b) => b.width - a.width)
-    return sorted[0]?.source || null
+function getBestImage(images: any): string | null {
+    if (!images) return null
+
+    // Structure 1: Array of arrays (used in content-v2)
+    if (Array.isArray(images) && images.length > 0) {
+        const firstLayer = images[0]
+        if (Array.isArray(firstLayer) && firstLayer.length > 0) {
+            const sorted = [...firstLayer].sort((a, b) => (b.width || 0) - (a.width || 0))
+            return sorted[0]?.source || null
+        }
+        // Structure 2: Simple array
+        const sorted = [...images].sort((a: any, b: any) => (b.width || 0) - (a.width || 0))
+        return sorted[0]?.source || sorted[0]?.url || null
+    }
+
+    // Structure 3: Object with named resolutions
+    if (typeof images === 'object') {
+        const resolutions = Object.values(images)
+        if (resolutions.length > 0) {
+            return (resolutions[resolutions.length - 1] as any).source || null
+        }
+    }
+
+    return null
 }
 
 function transformEpisode(episode: CrunchyrollEpisode): TransformedCrunchyrollEpisode {
@@ -376,12 +395,27 @@ export async function checkAnimeAvailability(title: string): Promise<Transformed
         // Try to find an exact or close match
         const normalizedQuery = title.toLowerCase().replace(/[^a-z0-9]/g, '')
 
-        const match = searchResult.items.find(item => {
+        // Priority 1: Exact matches for series
+        let match = searchResult.items.find(item => {
             const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '')
-            return normalizedTitle === normalizedQuery ||
-                normalizedTitle.includes(normalizedQuery) ||
-                normalizedQuery.includes(normalizedTitle)
+            return item.type === "series" && normalizedTitle === normalizedQuery
         })
+
+        // Priority 2: Contains matches for series
+        if (!match) {
+            match = searchResult.items.find(item => {
+                const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '')
+                return item.type === "series" && (normalizedTitle.includes(normalizedQuery) || normalizedQuery.includes(normalizedTitle))
+            })
+        }
+
+        // Priority 3: Fallback to non-series if necessary (but usually not for anime series)
+        if (!match) {
+            match = searchResult.items.find(item => {
+                const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '')
+                return normalizedTitle === normalizedQuery || normalizedTitle.includes(normalizedQuery)
+            })
+        }
 
         if (!match) {
             setCache(cacheKey, null)
