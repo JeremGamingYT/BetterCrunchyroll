@@ -80,7 +80,8 @@ function titlesMatch(title1: string, title2: string): boolean {
 
 async function filterWithCrunchyroll(
     animes: TransformedAnime[],
-    catalog: Map<string, TransformedCrunchyrollAnime>
+    catalog: Map<string, TransformedCrunchyrollAnime>,
+    options: { filterUnavailable?: boolean } = {}
 ): Promise<CombinedAnime[]> {
     const results: CombinedAnime[] = []
 
@@ -99,77 +100,110 @@ async function filterWithCrunchyroll(
             }
         }
 
-        // If no match found in catalog, do a live search
-        if (!crunchyrollMatch) {
-            crunchyrollMatch = await checkAnimeAvailability(anime.title)
-
-            // Try with romaji title if English title didn't work
-            if (!crunchyrollMatch && anime.titleRomaji !== anime.title) {
-                crunchyrollMatch = await checkAnimeAvailability(anime.titleRomaji)
-            }
+        // Apply filtering if requested
+        if (options.filterUnavailable && !crunchyrollMatch) {
+            continue
         }
 
-        if (crunchyrollMatch) {
-            results.push({
-                ...anime,
-                crunchyrollId: crunchyrollMatch.crunchyrollId,
-                crunchyrollSlug: crunchyrollMatch.slug,
-                isOnCrunchyroll: true,
-                crunchyrollInfo: crunchyrollMatch,
-            })
-        }
+        results.push({
+            ...anime,
+            crunchyrollId: crunchyrollMatch?.crunchyrollId || null,
+            crunchyrollSlug: crunchyrollMatch?.slug || null,
+            isOnCrunchyroll: !!crunchyrollMatch,
+            crunchyrollInfo: crunchyrollMatch,
+        })
     }
 
     return results
 }
 
 // ===============================
-// Combined fetcher functions
+// Main Hook
 // ===============================
 
-async function fetchTrendingWithCrunchyroll(page: number, perPage: number): Promise<CombinedAnime[]> {
-    const anilistData = await getTrendingAnime(page, perPage * 2)
-    const catalog = await getCrunchyrollCatalog(200)
-    const filtered = await filterWithCrunchyroll(anilistData, catalog)
-    return filtered.slice(0, perPage)
+export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'simulcast', page = 1, perPage = 20) {
+    // 1. Fetch from AniList
+    const { data: anilistData, isLoading: isAnilistLoading, error: anilistError } = useSWR(
+        `anilist-${category}-${page}-${perPage}`,
+        async () => {
+            switch (category) {
+                case 'trending': return getTrendingAnime(page, perPage)
+                case 'popular': return getPopularAnime(page, perPage)
+                case 'new': return getNewAnime(page, perPage)
+                case 'simulcast': return getSimulcastAnime(page, perPage)
+                default: return []
+            }
+        }
+    )
+
+    // 2. Fetch Crunchyroll Catalog (cached)
+    const { data: catalog, isLoading: isCatalogLoading } = useCrunchyrollCatalog(1000)
+
+    // 3. Combine
+    const { data: combinedData, isLoading: isCombining, error: combineError } = useSWR(
+        anilistData && catalog ? `combined-${category}-${page}-${perPage}` : null,
+        () => anilistData && catalog ? filterWithCrunchyroll(anilistData, catalog, { filterUnavailable: false }) : [],
+        {
+            keepPreviousData: true,
+            fallbackData: []
+        }
+    )
+
+    return {
+        data: combinedData,
+        isLoading: isAnilistLoading || isCatalogLoading || isCombining,
+        error: anilistError || combineError
+    }
 }
 
-async function fetchPopularWithCrunchyroll(page: number, perPage: number): Promise<CombinedAnime[]> {
-    const anilistData = await getPopularAnime(page, perPage * 2)
-    const catalog = await getCrunchyrollCatalog(200)
-    const filtered = await filterWithCrunchyroll(anilistData, catalog)
-    return filtered.slice(0, perPage)
+// ===============================
+// New hooks for availability filtering
+// ===============================
+
+export function useAvailableAnime(category: 'trending' | 'popular' | 'new' | 'simulcast', page = 1, perPage = 20) {
+    // Reuse filter logic but with filterUnavailable: true
+    const { data: anilistData, isLoading: isAnilistLoading } = useSWR(
+        `anilist-${category}-${page}-${perPage}`,
+        async () => {
+            switch (category) {
+                case 'trending': return getTrendingAnime(page, perPage)
+                case 'popular': return getPopularAnime(page, perPage)
+                case 'new': return getNewAnime(page, perPage)
+                case 'simulcast': return getSimulcastAnime(page, perPage)
+                default: return []
+            }
+        }
+    )
+
+    const { data: catalog, isLoading: isCatalogLoading } = useCrunchyrollCatalog(1000)
+
+    const { data: combinedData, isLoading: isCombining } = useSWR(
+        anilistData && catalog ? `combined-available-${category}-${page}-${perPage}` : null,
+        () => anilistData && catalog ? filterWithCrunchyroll(anilistData, catalog, { filterUnavailable: true }) : [],
+        {
+            keepPreviousData: true,
+            fallbackData: []
+        }
+    )
+
+    return {
+        data: combinedData,
+        isLoading: isAnilistLoading || isCatalogLoading || isCombining
+    }
 }
 
-async function fetchNewWithCrunchyroll(page: number, perPage: number): Promise<CombinedAnime[]> {
-    const anilistData = await getNewAnime(page, perPage * 2)
-    const catalog = await getCrunchyrollCatalog(200)
-    const filtered = await filterWithCrunchyroll(anilistData, catalog)
-    return filtered.slice(0, perPage)
-}
+// ===============================
+// Other Helper Functions
+// ===============================
 
-async function fetchSimulcastWithCrunchyroll(page: number, perPage: number): Promise<CombinedAnime[]> {
-    const anilistData = await getSimulcastAnime(page, perPage * 2)
-    const catalog = await getCrunchyrollCatalog(200)
-    const filtered = await filterWithCrunchyroll(anilistData, catalog)
-    return filtered.slice(0, perPage)
-}
-
-async function fetchAiringWithCrunchyroll(page: number, perPage: number): Promise<CombinedAnime[]> {
-    const anilistData = await getAiringSchedule(page, perPage * 2)
-    const catalog = await getCrunchyrollCatalog(200)
-    const filtered = await filterWithCrunchyroll(anilistData, catalog)
-    return filtered.slice(0, perPage)
-}
-
-async function searchWithCrunchyroll(query: string, page: number, perPage: number): Promise<CombinedAnime[]> {
+export async function searchWithCrunchyroll(query: string, page: number, perPage: number): Promise<CombinedAnime[]> {
     const anilistData = await searchAnime(query, page, perPage * 2)
     const catalog = await getCrunchyrollCatalog(200)
     const filtered = await filterWithCrunchyroll(anilistData, catalog)
     return filtered.slice(0, perPage)
 }
 
-async function fetchAnimeDetailsWithCrunchyroll(anilistId: number): Promise<CombinedAnimeDetails | null> {
+export async function fetchAnimeDetailsWithCrunchyroll(anilistId: number): Promise<CombinedAnimeDetails | null> {
     const anilistDetails = await getAnimeDetails(anilistId)
     if (!anilistDetails) return null
 
@@ -205,194 +239,93 @@ async function fetchAnimeDetailsWithCrunchyroll(anilistId: number): Promise<Comb
     }
 }
 
-async function fetchAnimeDetailsFromCrunchyrollId(crunchyrollId: string): Promise<CombinedAnimeDetails | null> {
-    // 1. Get Series Info from CR
-    const series = await getSeries(crunchyrollId)
-    if (!series) return null
-
-    // 2. Search AniList for metadata to enrich
-    const searchResults = await searchAnime(series.title, 1, 1)
-    let anilistDetails: AnimeDetails | null = null
-
-    if (searchResults && searchResults.length > 0) {
-        // We found a match, get full details
-        anilistDetails = await getAnimeDetails(searchResults[0].id)
-    }
-
-    // 3. Get Episodes
-    const episodes = await getAllSeriesEpisodes(crunchyrollId)
-
-    // 4. Construct response
-    if (anilistDetails) {
-        return {
-            ...anilistDetails,
-            crunchyrollId: series.id,
-            crunchyrollSlug: series.slug_title,
-            isOnCrunchyroll: true,
-            crunchyrollInfo: {
-                crunchyrollId: series.id,
-                title: series.title,
-                slug: series.slug_title,
-                episodeCount: series.series_metadata?.episode_count || 0,
-                seasonCount: series.series_metadata?.season_count || 0,
-                isDubbed: series.series_metadata?.is_dubbed || false,
-                isSubbed: series.series_metadata?.is_subbed || true
-            },
-            crunchyrollEpisodes: episodes
-        }
-    }
-
-    // Fallback: Construct minimal details from Crunchyroll data if AniList fails
-    const image = series.images.poster_tall?.[0]?.[0]?.source || series.images.poster_wide?.[0]?.[0]?.source || ""
-    const banner = series.images.poster_wide?.[0]?.[0]?.source || null
-
-    return {
-        id: -1, // Dummy ID indicating no AniList match
-        title: series.title,
-        titleNative: null,
-        titleRomaji: series.title,
-        image,
-        bannerImage: banner,
-        description: series.description,
-        rating: "12+",
-        genres: [],
-        score: null,
-        popularity: 0,
-        episodes: series.series_metadata?.episode_count || 0,
-        duration: 24,
-        status: "RELEASING", // Guess
-        season: "UNKNOWN",
-        year: null,
-        format: "TV",
-        source: "ORIGINAL",
-        color: "#f47521",
-        nextEpisode: null,
-        isCrunchyroll: true,
-        studio: null,
-        studios: [],
-        externalLinks: [],
-        trailer: null,
-        startDate: null,
-        endDate: null,
-
-        staff: [],
-        characters: [],
-        relations: [],
-        recommendations: [],
-
-        crunchyrollId: series.id,
-        crunchyrollSlug: series.slug_title,
-        isOnCrunchyroll: true,
-        crunchyrollInfo: {
-            crunchyrollId: series.id,
-            title: series.title,
-            slug: series.slug_title,
-            episodeCount: series.series_metadata?.episode_count || 0,
-            seasonCount: series.series_metadata?.season_count || 0,
-            isDubbed: series.series_metadata?.is_dubbed || false,
-            isSubbed: series.series_metadata?.is_subbed || true
-        },
-        crunchyrollEpisodes: episodes
-    }
-}
-
 // ===============================
-// Hooks
+// Category-specific hooks (used by pages)
 // ===============================
 
-export function useTrendingAnime(page = 1, perPage = 12) {
-    return useSWR<CombinedAnime[]>(
-        `combined-trending-${page}-${perPage}`,
-        () => fetchTrendingWithCrunchyroll(page, perPage),
-        {
-            revalidateOnFocus: false,
-            revalidateOnReconnect: false,
-            dedupingInterval: 60000,
-        }
+export function useTrendingAnime(page = 1, perPage = 20) {
+    return useCombinedAnime('trending', page, perPage)
+}
+
+export function usePopularAnime(page = 1, perPage = 20) {
+    return useCombinedAnime('popular', page, perPage)
+}
+
+export function useNewAnime(page = 1, perPage = 20) {
+    return useCombinedAnime('new', page, perPage)
+}
+
+export function useSimulcastAnime(page = 1, perPage = 20) {
+    return useCombinedAnime('simulcast', page, perPage)
+}
+
+// Hook to use Crunchyroll catalog
+function useCrunchyrollCatalog(limit: number) {
+    return useSWR(
+        `crunchyroll-catalog-${limit}`,
+        () => getCrunchyrollCatalog(limit),
+        { revalidateOnFocus: false }
     )
 }
 
-export function usePopularAnime(page = 1, perPage = 12) {
-    return useSWR<CombinedAnime[]>(
-        `combined-popular-${page}-${perPage}`,
-        () => fetchPopularWithCrunchyroll(page, perPage),
+// Hook for anime details page
+export function useAnimeDetails(anilistId: number | null) {
+    const { data, isLoading, error } = useSWR(
+        anilistId ? `anime-details-${anilistId}` : null,
+        () => anilistId ? fetchAnimeDetailsWithCrunchyroll(anilistId) : null,
         {
             revalidateOnFocus: false,
-            revalidateOnReconnect: false,
-            dedupingInterval: 60000,
-        }
-    )
-}
-
-export function useNewAnime(page = 1, perPage = 12) {
-    return useSWR<CombinedAnime[]>(
-        `combined-new-${page}-${perPage}`,
-        () => fetchNewWithCrunchyroll(page, perPage),
-        {
-            revalidateOnFocus: false,
-            revalidateOnReconnect: false,
-            dedupingInterval: 60000,
-        }
-    )
-}
-
-export function useSimulcastAnime(page = 1, perPage = 50) {
-    return useSWR<CombinedAnime[]>(
-        `combined-simulcast-${page}-${perPage}`,
-        () => fetchSimulcastWithCrunchyroll(page, perPage),
-        {
-            revalidateOnFocus: false,
-            revalidateOnReconnect: false,
-            dedupingInterval: 60000,
-        }
-    )
-}
-
-export function useAiringSchedule(page = 1, perPage = 50) {
-    return useSWR<CombinedAnime[]>(
-        `combined-airing-${page}-${perPage}`,
-        () => fetchAiringWithCrunchyroll(page, perPage),
-        {
-            revalidateOnFocus: false,
-            revalidateOnReconnect: false,
-            dedupingInterval: 60000,
-        }
-    )
-}
-
-export function useAnimeDetails(id: number | string | null) {
-    const { data, error, isLoading } = useSWR<CombinedAnimeDetails | null>(
-        id ? `combined-anime-details-${id}` : null,
-        () => {
-            if (!id) return null
-            if (typeof id === 'number') return fetchAnimeDetailsWithCrunchyroll(id)
-            return fetchAnimeDetailsFromCrunchyrollId(id as string)
-        },
-        {
-            revalidateOnFocus: false,
-            revalidateOnReconnect: false,
-            dedupingInterval: 300000,
+            dedupingInterval: 300000
         }
     )
 
     return {
         anime: data,
         isLoading,
-        error,
+        error
     }
 }
 
-export function useSearchAnime(query: string, page = 1, perPage = 20) {
-    return useSWR<CombinedAnime[]>(
+// Hook for airing schedule (combined with Crunchyroll data)
+export function useAiringSchedule(page = 1, perPage = 20) {
+    // 1. Fetch from AniList
+    const { data: anilistData, isLoading: isAnilistLoading, error: anilistError } = useSWR(
+        `anilist-airing-${page}-${perPage}`,
+        () => getAiringSchedule(page, perPage),
+        { revalidateOnFocus: false }
+    )
+
+    // 2. Fetch Crunchyroll Catalog
+    const { data: catalog, isLoading: isCatalogLoading } = useCrunchyrollCatalog(1000)
+
+    // 3. Combine
+    const { data: combinedData, isLoading: isCombining, error: combineError } = useSWR(
+        anilistData && catalog ? `combined-airing-${page}-${perPage}` : null,
+        () => anilistData && catalog ? filterWithCrunchyroll(anilistData, catalog, { filterUnavailable: false }) : [],
+        {
+            keepPreviousData: true,
+            fallbackData: []
+        }
+    )
+
+    return {
+        data: combinedData,
+        isLoading: isAnilistLoading || isCatalogLoading || isCombining,
+        error: anilistError || combineError
+    }
+}
+
+// Hook for combined search
+export function useCombinedSearch(query: string, page = 1, perPage = 20) {
+    return useSWR(
         query.length >= 2 ? `combined-search-${query}-${page}-${perPage}` : null,
         () => searchWithCrunchyroll(query, page, perPage),
-        {
-            revalidateOnFocus: false,
-            dedupingInterval: 30000,
-        }
+        { revalidateOnFocus: false }
     )
 }
 
-// Re-export types for convenience
-export type { TransformedAnime, AnimeDetails } from "@/lib/anilist"
-export type { TransformedCrunchyrollAnime, TransformedCrunchyrollEpisode } from "@/lib/crunchyroll"
+// Alias for search (used by search page)
+export const useSearchAnime = useCombinedSearch
+
+
+

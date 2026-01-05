@@ -11,6 +11,7 @@ import {
     getCrunchyrollCatalog,
     getAccount,
     getProfile,
+    updateLocalAvatar,
     getProfiles,
     getWatchlist,
     getSubscription,

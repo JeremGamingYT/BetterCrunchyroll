@@ -835,7 +835,23 @@ export async function getAccount(): Promise<CrunchyrollAccount | null> {
 export async function getProfile(): Promise<CrunchyrollProfile | null> {
     const cacheKey = 'profile_me'
     const cached = getCache<CrunchyrollProfile>(cacheKey)
-    if (cached) return cached
+
+    // Check for local avatar override
+    let localAvatar: string | null = null
+    if (typeof window !== "undefined") {
+        localAvatar = localStorage.getItem('crunchyroll_avatar_override')
+    }
+
+    if (cached) {
+        // Apply local avatar if exists
+        if (localAvatar) {
+            return {
+                ...cached,
+                avatar: localAvatar
+            }
+        }
+        return cached
+    }
 
     try {
         // API response type (avatar can be object or string)
@@ -871,6 +887,15 @@ export async function getProfile(): Promise<CrunchyrollProfile | null> {
             }
 
             setCache(cacheKey, data)
+
+            // Apply local avatar override for the return value
+            if (localAvatar) {
+                return {
+                    ...data,
+                    avatar: localAvatar
+                }
+            }
+
             return data
         }
 
@@ -878,6 +903,24 @@ export async function getProfile(): Promise<CrunchyrollProfile | null> {
     } catch (error) {
         console.error("[Crunchyroll] Get profile failed:", error)
         return null
+    }
+}
+
+/**
+ * Update local avatar override
+ */
+export function updateLocalAvatar(avatarUrl: string): void {
+    if (typeof window === "undefined") return
+    localStorage.setItem('crunchyroll_avatar_override', avatarUrl)
+
+    // Update cache if it exists
+    const cacheKey = 'profile_me'
+    const cached = getCache<CrunchyrollProfile>(cacheKey)
+    if (cached) {
+        setCache(cacheKey, {
+            ...cached,
+            avatar: avatarUrl
+        })
     }
 }
 
@@ -1077,6 +1120,45 @@ export async function getWatchlist(options: {
     } catch (error) {
         console.error("[Crunchyroll] Get watchlist failed:", error)
         return []
+    }
+}
+
+/**
+ * Add item to watchlist
+ */
+export async function addToWatchlist(accountId: string, contentId: string): Promise<boolean> {
+    try {
+        const response = await crunchyrollFetch<any>(
+            `/content/v2/${accountId}/watchlist`,
+            {
+                method: "POST",
+                body: JSON.stringify({
+                    content_id: contentId,
+                }),
+            }
+        )
+        return !!response
+    } catch (error) {
+        console.error("[Crunchyroll] Add to watchlist failed:", error)
+        return false
+    }
+}
+
+/**
+ * Remove item from watchlist
+ */
+export async function removeFromWatchlist(accountId: string, contentId: string): Promise<boolean> {
+    try {
+        await crunchyrollFetch<any>(
+            `/content/v2/${accountId}/watchlist/${contentId}`,
+            {
+                method: "DELETE",
+            }
+        )
+        return true
+    } catch (error) {
+        console.error("[Crunchyroll] Remove from watchlist failed:", error)
+        return false
     }
 }
 

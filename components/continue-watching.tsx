@@ -191,8 +191,8 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
           </div>
         </div>
 
-        {/* Remaining Time */}
-        <div className="absolute bottom-12 right-3 px-2 py-1 rounded bg-background/80 backdrop-blur-sm">
+        {/* Remaining Time - positioned above progress bar in bottom-right */}
+        <div className="absolute bottom-3 right-3 px-2 py-1 rounded bg-background/80 backdrop-blur-sm">
           <span className="text-xs font-medium text-foreground">{remainingMin}m restantes</span>
         </div>
 

@@ -34,6 +34,10 @@ interface WatchlistContextValue {
     // Refresh
     refresh: () => void
 
+    // Mutations
+    addToWatchlist: (contentId: string) => Promise<boolean>
+    removeFromWatchlist: (contentId: string) => Promise<boolean>
+
     // Stats
     totalCount: number
     favoritesCount: number
@@ -181,6 +185,21 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
         refreshWatchlist()
     }, [refreshWatchlist])
 
+    // Mutation methods
+    const addToWatchlist = useCallback(async (contentId: string) => {
+        if (!account?.account_id) return false
+        const success = await import("@/lib/crunchyroll").then(mod => mod.addToWatchlist(account.account_id, contentId))
+        if (success) refresh()
+        return success
+    }, [account, refresh])
+
+    const removeFromWatchlist = useCallback(async (contentId: string) => {
+        if (!account?.account_id) return false
+        const success = await import("@/lib/crunchyroll").then(mod => mod.removeFromWatchlist(account.account_id, contentId))
+        if (success) refresh()
+        return success
+    }, [account, refresh])
+
     // Stats
     const totalCount = enrichedWatchlist.length
     const favoritesCount = enrichedWatchlist.filter(item => item.isFavorite).length
@@ -194,9 +213,12 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
         getWatchlistItem,
         getWatchlistItemBySeriesId,
         refresh,
+        addToWatchlist,
+        removeFromWatchlist,
         totalCount,
         favoritesCount,
     }
+
 
     return (
         <WatchlistContext.Provider value={value}>

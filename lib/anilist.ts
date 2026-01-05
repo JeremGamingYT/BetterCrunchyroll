@@ -1,7 +1,13 @@
 // Anilist API service with localStorage caching
 
 const ANILIST_API = "https://graphql.anilist.co"
-const CACHE_DURATION = 1000 * 60 * 60 // 1 hour cache
+const CACHE_DURATION = 1000 * 60 * 60 * 24 // 24 hour cache (reduced API calls)
+
+// Rate limiter state for AniList
+let isRateLimited = false
+let rateLimitedUntil = 0
+let consecutiveErrors = 0
+const MAX_ERRORS_BEFORE_BACKOFF = 3
 
 interface CacheEntry<T> {
   data: T
@@ -42,12 +48,29 @@ function setCache<T>(key: string, data: T): void {
   }
 }
 
-// GraphQL query helper
+/**
+ * Check if we're rate limited and should use cache only
+ */
+function shouldSkipApiCall(): boolean {
+  if (!isRateLimited) return false
+  if (Date.now() >= rateLimitedUntil) {
+    isRateLimited = false
+    consecutiveErrors = 0
+    return false
+  }
+  return true
+}
+
+// GraphQL query helper - uses local proxy to bypass CORS in iframe context
 async function queryAnilist<T>(query: string, variables: Record<string, unknown> = {}): Promise<T> {
-  console.log("[v0] queryAnilist called with variables:", variables)
+  // Use local proxy to avoid CORS issues when running in iframe
+  const isLocalhost = typeof window !== 'undefined' &&
+    (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+
+  const apiUrl = isLocalhost ? '/api/anilist' : ANILIST_API
 
   try {
-    const response = await fetch(ANILIST_API, {
+    const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,23 +79,37 @@ async function queryAnilist<T>(query: string, variables: Record<string, unknown>
       body: JSON.stringify({ query, variables }),
     })
 
-    console.log("[v0] Response status:", response.status)
+    // Handle rate limiting
+    if (response.status === 429) {
+      isRateLimited = true
+      rateLimitedUntil = Date.now() + 60000 // 1 minute cooldown
+      consecutiveErrors++
+      console.warn("[AniList] Rate limited (429). Backing off for 60s.")
+      throw new Error("Rate limited")
+    }
 
     if (!response.ok) {
-      console.log("[v0] Response not ok:", response.statusText)
+      consecutiveErrors++
+      if (consecutiveErrors >= MAX_ERRORS_BEFORE_BACKOFF) {
+        const backoff = Math.min(1000 * Math.pow(2, consecutiveErrors - MAX_ERRORS_BEFORE_BACKOFF), 60000)
+        isRateLimited = true
+        rateLimitedUntil = Date.now() + backoff
+        console.warn(`[AniList] ${consecutiveErrors} errors. Backing off for ${backoff}ms.`)
+      }
       throw new Error(`HTTP error: ${response.status}`)
     }
 
     const json = await response.json()
-    console.log("[v0] Response JSON:", json)
 
     if (json.errors) {
-      console.log("[v0] API errors:", json.errors)
       throw new Error(json.errors[0]?.message || "Anilist API error")
     }
+
+    // Success - reset error counter
+    consecutiveErrors = 0
     return json.data
   } catch (error) {
-    console.log("[v0] Fetch error:", error)
+    console.error("[AniList] Query failed:", error)
     throw error
   }
 }

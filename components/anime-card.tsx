@@ -32,6 +32,10 @@ interface AnimeCardProps {
     // For watchlist items
     seriesId?: string
     seriesTitle?: string
+    currentEpisode?: number | null
+    currentEpisodeId?: string | null
+    isDubbed?: boolean
+    isSubbed?: boolean
   }
   index?: number
   showAiring?: boolean
@@ -221,10 +225,30 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
 
         {/* Bookmark Button */}
         <button
-          onClick={(e) => {
+          onClick={async (e) => {
             e.preventDefault()
             e.stopPropagation()
-            setIsBookmarked(!isBookmarked)
+
+            // Optimistic update
+            const newState = !isBookmarked
+            setIsBookmarked(newState)
+
+            if (watchlistContext && (crunchyrollId || seriesId)) {
+              try {
+                const idToUse = crunchyrollId || seriesId
+                if (!idToUse) return
+
+                if (newState) {
+                  await watchlistContext.addToWatchlist(idToUse)
+                } else {
+                  // If we have a watchlist item, use that ID, otherwise use available IDs
+                  await watchlistContext.removeFromWatchlist(idToUse)
+                }
+              } catch (error) {
+                console.error("Failed to update watchlist", error)
+                setIsBookmarked(!newState) // Revert on failure
+              }
+            }
           }}
           className={cn(
             "absolute top-3 right-3 p-1.5 rounded-full",

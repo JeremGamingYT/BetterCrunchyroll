@@ -1,17 +1,21 @@
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
+import { createPortal } from "react-dom"
 import { ChevronLeft, ChevronRight, Play, Bookmark, Info, X, Star, Calendar, Clock } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useTrendingAnime } from "@/hooks/use-anilist"
+import { useWatchlistOptional } from "@/hooks/use-watchlist"
 import Link from "next/link"
 
 export function HeroCarousel() {
   const { data: trendingAnimes, isLoading } = useTrendingAnime(1, 4)
+  const watchlistContext = useWatchlistOptional()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
   const [showInfoPopup, setShowInfoPopup] = useState(false)
+  const [isBookmarked, setIsBookmarked] = useState(false)
 
   const animes = trendingAnimes || []
   const hasAnimes = animes.length > 0
@@ -57,6 +61,17 @@ export function HeroCarousel() {
 
   const currentAnime = hasAnimes ? animes[currentIndex] : null
 
+  // Sync bookmark state with watchlist on anime change
+  useEffect(() => {
+    if (currentAnime && watchlistContext) {
+      const crId = 'crunchyrollId' in currentAnime ? currentAnime.crunchyrollId : null
+      const inWatchlist = (typeof crId === 'string' && crId)
+        ? watchlistContext.isInWatchlist(crId)
+        : watchlistContext.isInWatchlistByTitle(currentAnime.title)
+      setIsBookmarked(inWatchlist)
+    }
+  }, [currentAnime, watchlistContext])
+
   // Fallback data for loading state
   const fallbackAnime = {
     id: 0,
@@ -76,7 +91,7 @@ export function HeroCarousel() {
 
   return (
     <section
-      className="relative h-[85vh] min-h-[600px] max-h-[900px] overflow-hidden pt-16 z-10"
+      className="relative h-[65vh] min-h-[500px] max-h-[700px] overflow-hidden pt-0 z-0 bg-background"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -86,32 +101,30 @@ export function HeroCarousel() {
           <div
             key={anime.id}
             className={cn(
-              "absolute inset-0 transition-all duration-700 ease-out",
-              index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-105",
+              "absolute inset-0 transition-opacity duration-1000 bg-black/90",
+              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0",
             )}
           >
             <img
               src={anime.bannerImage || anime.image}
               alt={anime.title}
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-contain"
             />
             {/* Gradients */}
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30" />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background" />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-transparent" />
           </div>
         ))
       ) : (
         <div className="absolute inset-0">
           <div className="w-full h-full bg-gradient-to-br from-secondary to-background" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30" />
         </div>
       )}
 
-      {/* Content - Added max-w and padding to avoid arrow overlap */}
-      <div className="relative z-10 h-full flex items-center px-4 md:px-8 lg:px-16 xl:px-24">
-        <div className="max-w-2xl space-y-6">
+      {/* Content */}
+      <div className="relative z-20 h-full flex items-center px-4 md:px-8 lg:px-16 xl:px-24">
+        <div className="max-w-2xl space-y-6 pt-12 md:pt-0">
           <h1
             className={cn(
               "text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight line-clamp-2",
@@ -157,7 +170,7 @@ export function HeroCarousel() {
             {displayAnime.description || "Découvrez cet anime passionnant sur Crunchyroll."}
           </p>
 
-          {/* Actions - Made buttons functional */}
+          {/* Actions */}
           <div
             className={cn(
               "flex items-center gap-3 pt-2 transition-all duration-700 ease-out delay-200",
@@ -172,8 +185,33 @@ export function HeroCarousel() {
               <Play className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="currentColor" />
               <span>À SUIVRE E{displayAnime.nextEpisode?.episode || 1}</span>
             </Link>
-            <button className="p-4 bg-secondary/80 hover:bg-secondary text-foreground rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 border border-border/50 shadow-lg backdrop-blur-sm">
-              <Bookmark className="w-5 h-5" />
+            <button
+              onClick={async () => {
+                if (!currentAnime || !watchlistContext) return
+                const crId = 'crunchyrollId' in currentAnime ? currentAnime.crunchyrollId : null
+                const newState = !isBookmarked
+                setIsBookmarked(newState)
+                try {
+                  if (typeof crId === 'string' && crId) {
+                    if (newState) {
+                      await watchlistContext.addToWatchlist(crId)
+                    } else {
+                      await watchlistContext.removeFromWatchlist(crId)
+                    }
+                  }
+                } catch (error) {
+                  console.error('Failed to update watchlist:', error)
+                  setIsBookmarked(!newState) // Revert on failure
+                }
+              }}
+              className={cn(
+                "p-4 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 border border-border/50 shadow-lg backdrop-blur-sm",
+                isBookmarked
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-secondary/80 hover:bg-secondary text-foreground"
+              )}
+            >
+              <Bookmark className="w-5 h-5" fill={isBookmarked ? "currentColor" : "none"} />
             </button>
             <button
               onClick={() => setShowInfoPopup(true)}
@@ -185,7 +223,7 @@ export function HeroCarousel() {
         </div>
       </div>
 
-      {/* Navigation Arrows - Moved arrows to edges and increased z-index */}
+      {/* Navigation Arrows */}
       {hasAnimes && (
         <>
           <button
@@ -195,6 +233,7 @@ export function HeroCarousel() {
               "p-3 rounded-full bg-background/50 backdrop-blur-sm border border-border/30",
               "text-foreground/70 hover:text-foreground hover:bg-background/80",
               "transition-all duration-300 hover:scale-110",
+              "opacity-0 hover:opacity-100 md:opacity-100", // Hide on mobile unless hovering
             )}
           >
             <ChevronLeft className="w-6 h-6" />
@@ -206,6 +245,7 @@ export function HeroCarousel() {
               "p-3 rounded-full bg-background/50 backdrop-blur-sm border border-border/30",
               "text-foreground/70 hover:text-foreground hover:bg-background/80",
               "transition-all duration-300 hover:scale-110",
+              "opacity-0 hover:opacity-100 md:opacity-100",
             )}
           >
             <ChevronRight className="w-6 h-6" />
@@ -231,9 +271,9 @@ export function HeroCarousel() {
 
       {/* Progress Bar */}
       {hasAnimes && (
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-border/30">
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-border/20 z-20">
           <div
-            className="h-full bg-primary/50 transition-all duration-300"
+            className="h-full bg-primary/70 transition-all duration-300"
             style={{
               width: `${((currentIndex + 1) / animes.length) * 100}%`,
             }}
@@ -241,9 +281,9 @@ export function HeroCarousel() {
         </div>
       )}
 
-      {showInfoPopup && currentAnime && (
+      {showInfoPopup && currentAnime && typeof document !== 'undefined' && createPortal(
         <div
-          className="fixed inset-0 z-[200] flex items-center justify-center bg-background/90 backdrop-blur-md transition-all duration-300 animate-in fade-in"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-background/90 backdrop-blur-md transition-all duration-300 animate-in fade-in"
           onClick={() => setShowInfoPopup(false)}
         >
           <div
@@ -343,7 +383,8 @@ export function HeroCarousel() {
               </Link>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </section>
   )
