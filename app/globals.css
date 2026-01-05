@@ -175,3 +175,31 @@ h4,
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Glassmorphism panel for watch page */
+.glass-panel {
+  background: oklch(0.14 0.01 250 / 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid oklch(0.25 0.01 250 / 0.5);
+}
+
+/* Smooth fade-in animation */
+.animate-in {
+  animation: animate-in 0.3s ease-out forwards;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

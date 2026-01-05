@@ -47,6 +47,7 @@
         {
             "resources": [
                 "injected-script.js",
+                "watch-ui.js",
                 "app/*",
                 "*.js",
                 "*.css",

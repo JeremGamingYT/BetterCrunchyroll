@@ -89,8 +89,14 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
             const enriched: EnrichedWatchlistItem[] = []
 
             // Process in batches to avoid rate limiting
-            for (const item of rawWatchlist) {
+            for (let i = 0; i < rawWatchlist.length; i++) {
+                const item = rawWatchlist[i]
                 try {
+                    // Add delay between API calls to prevent rate limiting (100ms minimum)
+                    if (i > 0) {
+                        await new Promise(resolve => setTimeout(resolve, 150))
+                    }
+
                     // Try to find matching anime on AniList
                     const anilistData = await searchAnimeBasicInfo(item.seriesTitle || item.title)
 
@@ -109,8 +115,8 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
                     } else {
                         enriched.push(item)
                     }
-                } catch (error) {
-                    console.error(`[Watchlist] Failed to enrich ${item.title}:`, error)
+                } catch {
+                    // Silently fallback to Crunchyroll data only (no console spam)
                     enriched.push(item)
                 }
             }

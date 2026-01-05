@@ -101,19 +101,25 @@ export function HeroCarousel() {
           <div
             key={anime.id}
             className={cn(
-              "absolute inset-0 transition-opacity duration-1000 bg-black/90",
+              "absolute inset-0 transition-opacity duration-1000",
               index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0",
             )}
           >
+            {/* 
+              Carousel images: bannerImage is the correct choice (wide format).
+              We use object-cover with center-top to show the most important part.
+              The gradients overlay provide text readability.
+            */}
             <img
               src={anime.bannerImage || anime.image}
               alt={anime.title}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
+              style={{ objectPosition: 'center 25%' }}
             />
-            {/* Gradients */}
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30" />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-transparent" />
+            {/* Gradients for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/20" />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-transparent" />
           </div>
         ))
       ) : (

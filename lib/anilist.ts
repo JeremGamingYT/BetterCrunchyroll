@@ -63,6 +63,12 @@ function shouldSkipApiCall(): boolean {
 
 // GraphQL query helper - uses local proxy to bypass CORS in iframe context
 async function queryAnilist<T>(query: string, variables: Record<string, unknown> = {}): Promise<T> {
+  // CHECK RATE LIMIT FIRST - Do not make API calls if we're rate limited
+  if (shouldSkipApiCall()) {
+    console.warn("[AniList] Skipping API call - rate limited. Using cache only.")
+    throw new Error("Rate limited - using cache")
+  }
+
   // Use local proxy to avoid CORS issues when running in iframe
   const isLocalhost = typeof window !== 'undefined' &&
     (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')

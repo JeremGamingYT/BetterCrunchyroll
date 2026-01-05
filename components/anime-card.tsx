@@ -40,9 +40,14 @@ interface AnimeCardProps {
   index?: number
   showAiring?: boolean
   compact?: boolean
+  /** If true, this is a relation/recommendation card - links to AniList if no Crunchyroll */
+  isRelation?: boolean
 }
 
-export function AnimeCard({ anime, index = 0, showAiring = false, compact = false }: AnimeCardProps) {
+// Relation types that indicate this is a related work
+const RELATION_TYPES = ['PREQUEL', 'SEQUEL', 'PARENT', 'SIDE_STORY', 'SPIN_OFF', 'ADAPTATION', 'ALTERNATIVE', 'SOURCE', 'CHARACTER', 'OTHER']
+
+export function AnimeCard({ anime, index = 0, showAiring = false, compact = false, isRelation = false }: AnimeCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const [imageError, setImageError] = useState(false)
 
@@ -116,18 +121,31 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
 
   // Build the link URL
   // For watchlist items with current episode, go directly to watch page
+  // For relations without Crunchyroll ID, link to AniList (external)
   // Otherwise go to anime details page
-  const animeUrl = isWatchlistItem && currentEpisodeId
-    ? `/watch/${currentEpisodeId}`
-    : crunchyrollId
-      ? `/anime/${anime.id}?cr=${crunchyrollId}`
-      : `/anime/${anime.id}`
+  const isRelatedWork = isRelation || (relationType && RELATION_TYPES.includes(relationType.toUpperCase()))
+  const shouldLinkToAniList = isRelatedWork && !crunchyrollId && !isOnCrunchyroll
+
+  const animeUrl = shouldLinkToAniList
+    ? `https://anilist.co/anime/${anime.id}`
+    : isWatchlistItem && currentEpisodeId
+      ? `/watch/${currentEpisodeId}`
+      : crunchyrollId
+        ? `/anime/${anime.id}?cr=${crunchyrollId}`
+        : `/anime/${anime.id}`
+
+  const isExternalLink = shouldLinkToAniList
+
+  // For external links, use anchor tag; for internal, use Next.js Link
+  const linkProps = isExternalLink
+    ? { target: "_blank" as const, rel: "noopener noreferrer" }
+    : { scroll: false }
 
   return (
     <Link
       href={animeUrl}
-      scroll={false}
-      onClick={() => {
+      {...linkProps}
+      onClick={isExternalLink ? undefined : () => {
         window.scrollTo({ top: 0, behavior: "instant" })
       }}
       className={cn(

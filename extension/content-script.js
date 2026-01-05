@@ -1,8 +1,22 @@
 // BetterCrunchyroll - Content Script
 // Injects into page context to intercept Crunchyroll's token
+// Watch pages: Direct DOM injection
+// Other pages: iframe overlay
 
 (function () {
     'use strict';
+
+    // Guard: Don't run in iframes or if already initialized
+    if (window.self !== window.top) {
+        console.log('[BetterCrunchyroll] Skipping - running in iframe');
+        return;
+    }
+
+    if (window.__BCR_INITIALIZED__) {
+        console.log('[BetterCrunchyroll] Skipping - already initialized');
+        return;
+    }
+    window.__BCR_INITIALIZED__ = true;
 
     console.log('[BetterCrunchyroll] Content script starting...');
 
@@ -15,29 +29,24 @@
     // ===============================
 
     function injectInterceptor() {
-        // Use web_accessible_resources to inject a real script file
-        // This bypasses CSP because the script is loaded from our extension
         const script = document.createElement('script');
         script.src = chrome.runtime.getURL('injected-script.js');
         script.onload = function () {
             console.log('[BetterCrunchyroll] Interceptor script loaded successfully');
-            this.remove(); // Clean up after load
+            this.remove();
         };
         script.onerror = function () {
             console.error('[BetterCrunchyroll] Failed to load interceptor script');
         };
-
-        // Inject at the very beginning of the page
         (document.head || document.documentElement).appendChild(script);
-
         console.log('[BetterCrunchyroll] Interceptor script injection initiated');
     }
 
-    // Inject IMMEDIATELY (before any Crunchyroll code runs)
+    // Inject IMMEDIATELY
     injectInterceptor();
 
     // ===============================
-    // Token Storage (in content script context)
+    // Token Storage
     // ===============================
 
     let accessToken = null;
@@ -45,7 +54,6 @@
     let accountId = null;
     let profileId = null;
 
-    // Listen for token events from injected script
     window.addEventListener('bcr-token', (event) => {
         const { token, expiresIn, accountId: accId, profileId: profId } = event.detail;
         accessToken = token;
@@ -53,17 +61,9 @@
         accountId = accId;
         profileId = profId;
 
-        console.log('[BetterCrunchyroll] ✅ Token received in content script!');
-        console.log('[BetterCrunchyroll] Account ID:', accountId);
-        console.log('[BetterCrunchyroll] Profile ID:', profileId);
+        console.log('[BetterCrunchyroll] ✅ Token received!');
 
-        // Save to storage
-        const tokenData = {
-            token: accessToken,
-            expiry: tokenExpiry,
-            accountId: accountId,
-            profileId: profileId
-        };
+        const tokenData = { token: accessToken, expiry: tokenExpiry, accountId, profileId };
 
         try {
             localStorage.setItem('bcr_token', JSON.stringify(tokenData));
@@ -73,23 +73,11 @@
 
         if (typeof chrome !== 'undefined' && chrome.storage) {
             chrome.storage.local.set({ bcr_token: tokenData });
-            console.log('[BetterCrunchyroll] Token saved to chrome.storage');
-        }
-
-        // Notify iframe if it exists
-        const iframe = document.getElementById('bcr-frame');
-        if (iframe && iframe.contentWindow) {
-            iframe.contentWindow.postMessage({
-                type: 'CRUNCHYROLL_TOKEN_READY',
-                hasToken: true,
-            }, CONFIG.appUrl);
         }
     });
 
-    // Load from storage on startup
     async function loadStoredToken() {
         try {
-            // Try localStorage first
             const cached = localStorage.getItem('bcr_token');
             if (cached) {
                 const data = JSON.parse(cached);
@@ -103,7 +91,6 @@
                 }
             }
 
-            // Try chrome.storage
             if (typeof chrome !== 'undefined' && chrome.storage) {
                 const result = await new Promise(resolve => {
                     chrome.storage.local.get('bcr_token', resolve);
@@ -125,25 +112,10 @@
     }
 
     // ===============================
-    // API Proxy (uses intercepted token)
+    // API Functions
     // ===============================
 
     async function makeApiRequest(endpoint, params = {}) {
-        // Try to get token from page context if not available
-        if (!accessToken || Date.now() >= tokenExpiry) {
-            // Inject a quick check script
-            const checkScript = document.createElement('script');
-            checkScript.src = chrome.runtime.getURL('injected-script.js');
-            checkScript.dataset.action = 'check';
-
-            // Dispatch an event to get current token status
-            window.dispatchEvent(new CustomEvent('bcr-check-token'));
-
-            // Wait a tick for the event
-            await new Promise(r => setTimeout(r, 50));
-        }
-
-        // If still no token, try to reload from storage
         if (!accessToken || Date.now() >= tokenExpiry) {
             await loadStoredToken();
         }
@@ -153,8 +125,6 @@
         }
 
         const url = new URL(`https://www.crunchyroll.com${endpoint}`);
-
-        // Add locale params
         if (!params.locale) params.locale = 'fr-FR';
         if (!params.preferred_audio_language) params.preferred_audio_language = 'fr-FR';
 
@@ -180,91 +150,360 @@
         return await response.json();
     }
 
-    // Listen for token check responses from page context
-    window.addEventListener('bcr-token-check', (event) => {
-        const { token, expiry, accountId: accId, profileId: profId } = event.detail || {};
-        if (token && expiry > Date.now()) {
-            accessToken = token;
-            tokenExpiry = expiry;
-            accountId = accId;
-            profileId = profId;
+    // ===============================
+    // Watch Page: Direct DOM Injection
+    // ===============================
+
+    function isWatchPage() {
+        return /\/watch\//.test(window.location.pathname);
+    }
+
+    function getEpisodeIdFromUrl() {
+        const match = window.location.pathname.match(/\/watch\/([A-Z0-9]+)/i);
+        return match ? match[1] : null;
+    }
+
+    // Wait for player container to exist in DOM
+    function waitForPlayerContainer(timeout = 10000) {
+        return new Promise((resolve) => {
+            const selectors = [
+                '#vilos',
+                '#vilosRoot',
+                '#velocity-player-package',
+                '[data-testid="vilos-player"]',
+                '.video-player-wrapper',
+                '.erc-video-container',
+                '[class*="player"]',
+                'video'
+            ];
+
+            const check = () => {
+                for (const selector of selectors) {
+                    const el = document.querySelector(selector);
+                    if (el) {
+                        console.log('[BetterCrunchyroll] Found player container:', selector);
+                        return el;
+                    }
+                }
+                return null;
+            };
+
+            // Check immediately
+            const found = check();
+            if (found) {
+                resolve(found);
+                return;
+            }
+
+            // Set up observer
+            const startTime = Date.now();
+            const observer = new MutationObserver(() => {
+                const found = check();
+                if (found) {
+                    observer.disconnect();
+                    resolve(found);
+                } else if (Date.now() - startTime > timeout) {
+                    observer.disconnect();
+                    console.warn('[BetterCrunchyroll] Timeout waiting for player container');
+                    resolve(null);
+                }
+            });
+
+            observer.observe(document.body || document.documentElement, {
+                childList: true,
+                subtree: true
+            });
+
+            // Also set a timeout fallback
+            setTimeout(() => {
+                observer.disconnect();
+                resolve(check());
+            }, timeout);
+        });
+    }
+
+    // Track injection state
+    let isInjecting = false;
+    let lastInjectionTime = 0;
+
+    async function fetchEpisodeData(episodeId) {
+        try {
+            // Fetch episode info
+            const episodeResponse = await makeApiRequest(`/content/v2/cms/objects/${episodeId}`, {
+                ratings: 'true'
+            });
+            const episode = episodeResponse.data?.[0];
+
+            if (!episode) {
+                throw new Error('Episode not found');
+            }
+
+            // Fetch series info
+            const seriesId = episode.episode_metadata?.series_id || episode.series_id;
+            let series = { id: seriesId, title: episode.episode_metadata?.series_title || 'Série' };
+            let episodes = [episode];
+
+            if (seriesId) {
+                try {
+                    const seriesResponse = await makeApiRequest(`/content/v2/cms/series/${seriesId}`, {});
+                    if (seriesResponse.data?.[0]) {
+                        series = seriesResponse.data[0];
+                    }
+
+                    // Fetch all episodes of the season
+                    const seasonId = episode.episode_metadata?.season_id;
+                    if (seasonId) {
+                        const episodesResponse = await makeApiRequest(`/content/v2/cms/seasons/${seasonId}/episodes`, {});
+                        if (episodesResponse.data) {
+                            episodes = episodesResponse.data;
+                        }
+                    }
+                } catch (e) {
+                    console.warn('[BetterCrunchyroll] Failed to fetch series/episodes:', e);
+                }
+            }
+
+            return { episode, series, episodes };
+        } catch (error) {
+            console.error('[BetterCrunchyroll] Error fetching episode data:', error);
+            return null;
         }
-    });
+    }
+
+    function cleanWatchPageForDOMInjection() {
+        // Add marker class
+        document.body.classList.add('bcr-watch-page');
+
+        // Remove Crunchyroll UI elements (keep player)
+        const selectorsToRemove = [
+            '.app-layout__header--ywueY',
+            '.erc-large-header',
+            '.content-wrapper--MF5LS',
+            '.content-wrapper',
+            '.app-layout__footer--jgOfu',
+            '.footer--NNXrc',
+            'footer:not(.bcr-footer)',
+            // Additional selectors for content below player
+            '.erc-watch-page-body',
+            '.watch-page-content',
+            '[data-t="content-playback-info"]'
+        ];
+
+        selectorsToRemove.forEach(selector => {
+            document.querySelectorAll(selector).forEach(el => {
+                // Don't remove if it's our injected UI
+                if (!el.id?.startsWith('bcr') && !el.classList?.contains('bcr-ui')) {
+                    el.remove();
+                }
+            });
+        });
+
+        console.log('[BetterCrunchyroll] Watch page cleaned for DOM injection');
+    }
+
+    async function injectWatchPageUI() {
+        // Prevent concurrent injections
+        if (isInjecting) {
+            console.log('[BetterCrunchyroll] Injection already in progress, skipping');
+            return;
+        }
+
+        // Debounce rapid calls
+        const now = Date.now();
+        if (now - lastInjectionTime < 500) {
+            console.log('[BetterCrunchyroll] Debouncing injection');
+            return;
+        }
+        lastInjectionTime = now;
+        isInjecting = true;
+
+        console.log('[BetterCrunchyroll] Injecting Watch Page UI via DOM...');
+
+        try {
+            // Load the UI module
+            if (!window.WatchPageUI) {
+                await new Promise((resolve, reject) => {
+                    const existingScript = document.querySelector('script[src*="watch-ui.js"]');
+                    if (existingScript) {
+                        // Wait a bit for it to load
+                        setTimeout(resolve, 200);
+                        return;
+                    }
+                    const script = document.createElement('script');
+                    script.src = chrome.runtime.getURL('watch-ui.js');
+                    script.onload = () => {
+                        console.log('[BetterCrunchyroll] Watch UI module loaded');
+                        setTimeout(resolve, 100); // Small delay for script execution
+                    };
+                    script.onerror = reject;
+                    document.head.appendChild(script);
+                });
+            }
+
+            // Clean up existing injected UI
+            const existingUI = document.getElementById('bcr-ui');
+            if (existingUI) existingUI.remove();
+
+            // Clean Crunchyroll UI
+            cleanWatchPageForDOMInjection();
+
+            // Get episode ID
+            const episodeId = getEpisodeIdFromUrl();
+            if (!episodeId) {
+                console.error('[BetterCrunchyroll] Could not get episode ID from URL');
+                return;
+            }
+
+            // Wait for player container
+            const playerContainer = await waitForPlayerContainer(8000);
+
+            // Show loading state
+            const loadingDiv = document.createElement('div');
+            loadingDiv.id = 'bcr-ui';
+            loadingDiv.innerHTML = `
+                <div style="background:#0a0a0a;padding:40px;text-align:center;">
+                    <div style="width:40px;height:40px;border:3px solid rgba(249,115,22,0.3);border-top-color:#f97316;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto;"></div>
+                    <p style="color:#a1a1a1;margin-top:16px;">Chargement des informations...</p>
+                </div>
+            `;
+
+            if (playerContainer) {
+                // Insert after player
+                playerContainer.after(loadingDiv);
+            } else {
+                // Fallback: append to body
+                document.body.appendChild(loadingDiv);
+            }
+
+            // Fetch data
+            const data = await fetchEpisodeData(episodeId);
+
+            if (!data) {
+                loadingDiv.innerHTML = `
+                    <div style="background:#0a0a0a;padding:40px;text-align:center;">
+                        <p style="color:#f97316;font-size:18px;font-weight:bold;">Erreur de chargement</p>
+                        <p style="color:#a1a1a1;margin-top:8px;">Impossible de charger les informations de l'épisode.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const { episode, series, episodes } = data;
+
+            // Render UI
+            if (window.WatchPageUI) {
+                loadingDiv.outerHTML = window.WatchPageUI.render(episode, series, episodes, episodeId);
+
+                // Setup event listeners
+                const uiContainer = document.getElementById('bcr-ui');
+                if (uiContainer) {
+                    window.WatchPageUI.setupEventListeners(uiContainer);
+                    window.WatchPageUI.updateDetails(episode);
+                }
+
+                console.log('[BetterCrunchyroll] Watch page UI injected successfully');
+            }
+        } catch (error) {
+            console.error('[BetterCrunchyroll] Error injecting UI:', error);
+        } finally {
+            isInjecting = false;
+        }
+    }
+
+    // ===============================
+    // Other Pages: Iframe Injection
+    // ===============================
+
+    function mapToAppUrl(path) {
+        const clean = path.replace(/^\/[a-z]{2}(?=\/|$)/, '');
+
+        if (/^\/?$/.test(clean) || /^\/discover/.test(clean)) return '/';
+
+        const seriesMatch = clean.match(/^\/series\/([A-Z0-9]+)/);
+        if (seriesMatch) return `/anime/${seriesMatch[1]}`;
+
+        const watchMatch = clean.match(/^\/watch\/([A-Za-z0-9\-_]+)/);
+        if (watchMatch) return `/watch/${watchMatch[1]}`;
+
+        if (/^\/search/.test(clean)) return '/search';
+        if (/^\/simulcast|\/seasonal/.test(clean)) return '/simulcast';
+        if (/^\/watchlist/.test(clean)) return '/watchlist';
+
+        return '/';
+    }
+
+    function injectIframeUI(appPath) {
+        console.log('[BetterCrunchyroll] Injecting iframe UI for path:', appPath);
+
+        // Remove any existing injection
+        const existing = document.getElementById('bettercrunchyroll-root');
+        if (existing) existing.remove();
+
+        // Container
+        const root = document.createElement('div');
+        root.id = 'bettercrunchyroll-root';
+        root.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 2147483647; pointer-events: none;';
+        document.body.appendChild(root);
+
+        // Iframe
+        const iframe = document.createElement('iframe');
+        iframe.id = 'bcr-frame';
+        iframe.src = CONFIG.appUrl + appPath;
+        iframe.style.cssText = 'width:100%;height:100%;border:none;background:#0a0a0a;pointer-events: auto;';
+        iframe.allow = 'fullscreen; autoplay; encrypted-media; picture-in-picture';
+
+        iframe.onload = () => console.log('[BetterCrunchyroll] ✅ App loaded');
+        iframe.onerror = () => {
+            root.style.pointerEvents = 'auto';
+            root.innerHTML = `
+                <div style="background:black;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#fff;font-family:sans-serif;text-align:center;">
+                    <h1>BetterCrunchyroll Error</h1>
+                    <p>Check console / npm run dev</p>
+                </div>
+            `;
+        };
+
+        root.appendChild(iframe);
+        console.log('[BetterCrunchyroll] Iframe UI injected');
+    }
 
     // ===============================
     // Message Handler (from iframe)
     // ===============================
 
     window.addEventListener('message', async (event) => {
-        // Accept messages from localhost
         if (!event.origin.includes('localhost')) return;
 
-        const { type, id, endpoint, params, scrollY, path } = event.data || {};
+        const { type, id, endpoint, params, path } = event.data || {};
 
-        // Handle navigation request from iframe
         if (type === 'BCR_NAVIGATE') {
             console.log('[BetterCrunchyroll] Navigation request to:', path);
 
-            // Stop any playing video when navigating away from watch page
-            const currentPath = window.location.pathname;
-            const isLeavingWatchPage = /\/watch\//.test(currentPath);
+            const localeMatch = window.location.pathname.match(/^\/([a-z]{2})\//);
+            const locale = localeMatch ? localeMatch[1] : 'fr';
 
-            if (isLeavingWatchPage) {
-                console.log('[BetterCrunchyroll] Leaving watch page, stopping video');
-                const video = document.querySelector('video');
-                if (video) {
-                    video.pause();
-                    video.currentTime = 0;
-                }
+            let crunchyrollPath = `/${locale}`;
+
+            const animeMatch = path.match(/^\/anime\/([A-Z0-9]+)/);
+            if (animeMatch) crunchyrollPath = `/${locale}/series/${animeMatch[1]}`;
+
+            const watchMatch = path.match(/^\/watch\/([A-Za-z0-9\-_]+)/);
+            if (watchMatch) crunchyrollPath = `/${locale}/watch/${watchMatch[1]}`;
+
+            // CRITICAL FIX: Only navigate if URL actually changed to prevent infinite loop
+            if (crunchyrollPath === window.location.pathname) {
+                console.log('[BetterCrunchyroll] URL unchanged, skipping navigation');
+                return;
             }
 
-            // Map our app path back to Crunchyroll path
-            const crunchyrollPath = mapToCrunchyrollUrl(path);
-
-            // Update the browser URL using history API
-            if (crunchyrollPath !== window.location.pathname) {
-                console.log('[BetterCrunchyroll] Updating URL to:', crunchyrollPath);
-                window.history.pushState({}, '', crunchyrollPath);
-
-                // Update iframe path
-                const iframe = document.getElementById('bcr-frame');
-                if (iframe) {
-                    const newAppUrl = CONFIG.appUrl + path;
-                    if (iframe.src !== newAppUrl) {
-                        iframe.src = newAppUrl;
-                    }
-                }
-            }
-            return;
-        }
-
-        if (type === 'BCR_SCROLL_SYNC') {
-            // Move the native player containers to mimic scrolling
-            const offset = -(scrollY || 0);
-            const contentTop = 64; // Header height
-            const visualTop = contentTop + offset;
-
-            ['vilos', 'vilosRoot', 'velocity-player-package'].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) {
-                    el.style.transform = `translateY(${visualTop}px)`;
-                    // Ensure it stays fixed/absolute at 0 initially so transform works from top
-                    if (el.style.position !== 'fixed') { // changing to fixed for better performance
-                        el.style.position = 'fixed';
-                        el.style.top = '0';
-                        el.style.left = '0';
-                        el.style.width = '100%';
-                        el.style.height = 'auto';
-                        el.style.aspectRatio = '16/9';
-                    }
-                }
-            });
+            // Use pushState to update URL without reload (prevents infinite loop)
+            console.log('[BetterCrunchyroll] Updating URL via pushState:', crunchyrollPath);
+            window.history.pushState({}, '', crunchyrollPath);
+            lastUrl = crunchyrollPath; // Sync navigation watcher
             return;
         }
 
         if (type === 'CRUNCHYROLL_API_REQUEST') {
-            console.log('[BetterCrunchyroll] API request from iframe:', endpoint);
-
             try {
                 const data = await makeApiRequest(endpoint, params || {});
                 event.source.postMessage({
@@ -274,7 +513,6 @@
                     data,
                 }, event.origin);
             } catch (error) {
-                console.error('[BetterCrunchyroll] API error:', error);
                 event.source.postMessage({
                     type: 'CRUNCHYROLL_API_RESPONSE',
                     id,
@@ -295,240 +533,19 @@
     });
 
     // ===============================
-    // URL Mapping
-    // ===============================
-
-    function mapToAppUrl(path) {
-        const clean = path.replace(/^\/[a-z]{2}(?=\/|$)/, '');
-
-        if (/^\/?$/.test(clean) || /^\/discover/.test(clean)) return '/';
-
-        const seriesMatch = clean.match(/^\/series\/([A-Z0-9]+)/);
-        if (seriesMatch) return `/anime/${seriesMatch[1]}`;
-
-        // Allow alphanumeric, dashes, underscores. Be more permissive.
-        const watchMatch = clean.match(/^\/watch\/([A-Za-z0-9\-_]+)/);
-        if (watchMatch) return `/watch/${watchMatch[1]}`;
-
-        if (/^\/search/.test(clean)) return '/search';
-        if (/^\/simulcast|\/seasonal/.test(clean)) return '/simulcast';
-        if (/^\/watchlist/.test(clean)) return '/watchlist';
-
-        return '/';
-    }
-
-    // Map app URL back to Crunchyroll URL
-    function mapToCrunchyrollUrl(path) {
-        // Get current locale from URL
-        const localeMatch = window.location.pathname.match(/^\/([a-z]{2})\//);
-        const locale = localeMatch ? localeMatch[1] : 'fr';
-
-        if (path === '/' || path === '') return `/${locale}`;
-
-        const animeMatch = path.match(/^\/anime\/([A-Z0-9]+)/);
-        if (animeMatch) return `/${locale}/series/${animeMatch[1]}`;
-
-        const watchMatch = path.match(/^\/watch\/([A-Za-z0-9\-_]+)/);
-        if (watchMatch) return `/${locale}/watch/${watchMatch[1]}`;
-
-        if (/^\/search/.test(path)) return `/${locale}/search`;
-        if (/^\/simulcast/.test(path)) return `/${locale}/simulcast`;
-        if (/^\/watchlist/.test(path)) return `/${locale}/watchlist`;
-        if (/^\/populaire/.test(path)) return `/${locale}`;
-        if (/^\/nouveau/.test(path)) return `/${locale}`;
-        if (/^\/parametres/.test(path)) return `/${locale}`;
-
-        return `/${locale}`;
-    }
-
-    // ===============================
-    // Cleanup Logic
-    // ===============================
-
-    function cleanWatchPage() {
-        // Only run on watch pages
-        if (!/\/watch\//.test(window.location.pathname)) return;
-
-        // Target the specific header element described
-        const header = document.querySelector('.app-layout__header--ywueY');
-        if (header) {
-            header.remove();
-        }
-
-        // Fallback: generic class
-        const genericHeader = document.querySelector('.erc-large-header');
-        if (genericHeader && document.body.contains(genericHeader)) {
-            genericHeader.remove();
-        }
-
-        // Target the content wrapper (title, description, comments, etc.)
-        const contentWrapper = document.querySelector('.content-wrapper--MF5LS');
-        if (contentWrapper) {
-            contentWrapper.remove();
-        }
-
-        // FORCE Z-INDEX on Player Containers to be LOWER than our iframe
-        // And setup layout for Scroll Sync
-        ['vilos', 'vilosRoot', 'velocity-player-package'].forEach(id => {
-            const el = document.getElementById(id);
-            if (el) {
-                el.style.zIndex = '1';
-                el.style.position = 'fixed'; // Important for smooth scrolling/transform
-                el.style.top = '0';
-                el.style.left = '0';
-                el.style.width = '100%';
-                el.style.height = 'auto'; // Let aspect-ratio handle it
-                el.style.aspectRatio = '16/9';
-                // Initial transform to account for header
-                if (!el.style.transform) {
-                    el.style.transform = 'translateY(64px)';
-                }
-            }
-        });
-
-        // Fallback for content wrapper
-        const genericContentWrapper = document.querySelector('.content-wrapper'); // generic guess based on pattern
-        if (genericContentWrapper && document.body.contains(genericContentWrapper)) {
-            // Verify it's not the main app wrapper if that shares the name
-            if (genericContentWrapper.querySelector('.body-wrapper')) {
-                genericContentWrapper.remove();
-            }
-        }
-
-        // Target the specific footer element described
-        const footer = document.querySelector('.app-layout__footer--jgOfu');
-        if (footer) {
-            footer.remove();
-        }
-
-        // Fallback: generic footer
-        const genericFooter = document.querySelector('.footer--NNXrc') || document.querySelector('footer');
-        if (genericFooter && document.body.contains(genericFooter)) {
-            genericFooter.remove();
-        }
-    }
-
-    // ===============================
-    // Video Control - Stop video when leaving watch page
-    // ===============================
-
-    function stopVideo() {
-        const video = document.querySelector('video');
-        if (video) {
-            video.pause();
-            console.log('[BetterCrunchyroll] Video paused');
-        }
-    }
-
-    // ===============================
-    // UI Injection
-    // ===============================
-
-    function injectUI() {
-        const currentPath = window.location.pathname;
-        const isWatchPage = /\/watch\//.test(currentPath);
-
-        // Check if watch page for specific transparency handling logic later
-        if (isWatchPage) {
-            console.log('[BetterCrunchyroll] Watch page detected - Injecting UI with transparency');
-            cleanWatchPage();
-        } else {
-            // If not on watch page, make sure video is stopped
-            stopVideo();
-        }
-
-
-        // Remove any existing injection
-        const existing = document.getElementById('bettercrunchyroll-root');
-        if (existing) existing.remove();
-
-        // For other pages: use the full iframe approach
-        const appPath = mapToAppUrl(currentPath);
-        injectIframeUI(appPath);
-    }
-
-    function injectIframeUI(appPath) {
-        console.log('[BetterCrunchyroll] Injecting iframe UI for path:', appPath);
-
-        // Container
-        const root = document.createElement('div');
-        root.id = 'bettercrunchyroll-root';
-        root.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 2147483647; pointer-events: none;';
-        document.body.appendChild(root);
-
-        // Iframe
-        const iframe = document.createElement('iframe');
-        iframe.id = 'bcr-frame';
-        iframe.src = CONFIG.appUrl + appPath;
-        const isWatchPage = /\/watch\//.test(window.location.pathname);
-        const bgColor = isWatchPage ? 'transparent' : '#0a0a0a';
-        iframe.style.cssText = `width:100%;height:100%;border:none;background:${bgColor};transition:background 0.3s ease; pointer-events: auto;`;
-        iframe.allow = 'fullscreen; autoplay; encrypted-media; picture-in-picture';
-
-        iframe.onload = () => console.log('[BetterCrunchyroll] ✅ App loaded');
-        iframe.onerror = () => {
-            root.style.pointerEvents = 'auto';
-            root.innerHTML = `
-                <div style="background:black;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#fff;font-family:sans-serif;text-align:center;">
-                  <h1>BetterCrunchyroll Error</h1>
-                  <p>Check console / npm run dev</p>
-                </div>
-            `;
-        };
-
-        root.appendChild(iframe);
-        console.log('[BetterCrunchyroll] Iframe UI injected');
-    }
-
-    // Controls Proxy
-    window.addEventListener('message', (event) => {
-        const { type } = event.data || {};
-        try {
-            if (type === 'BCR_PLAY') {
-                const video = document.querySelector('video');
-                if (video) video.play();
-            } else if (type === 'BCR_PAUSE') {
-                const video = document.querySelector('video');
-                if (video) video.pause();
-            } else if (type === 'BCR_TOGGLE_PLAY') {
-                const video = document.querySelector('video');
-                if (video) {
-                    if (video.paused) video.play();
-                    else video.pause();
-                }
-            } else if (type === 'BCR_SEEK') {
-                const video = document.querySelector('video');
-                if (video && typeof event.data.time === 'number') {
-                    video.currentTime = event.data.time;
-                }
-            } else if (type === 'BCR_STOP') {
-                const video = document.querySelector('video');
-                if (video) {
-                    video.pause();
-                    video.currentTime = 0;
-                }
-            }
-        } catch (e) {
-            console.error('[BetterCrunchyroll] Control error', e);
-        }
-    });
-
-    // ===============================
     // Initialization
     // ===============================
 
     async function init() {
         console.log('[BetterCrunchyroll] Waiting for page to load and token...');
 
-        // Load any stored token first
         await loadStoredToken();
 
-        // Wait for DOM
         if (document.readyState === 'loading') {
             await new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve));
         }
 
-        // Wait for token (max 5 seconds)
+        // Wait for token
         let waited = 0;
         while (!accessToken && waited < 5000) {
             await new Promise(r => setTimeout(r, 100));
@@ -536,88 +553,102 @@
         }
 
         if (accessToken) {
-            console.log('[BetterCrunchyroll] ✅ Token ready, injecting UI');
+            console.log('[BetterCrunchyroll] ✅ Token ready');
         } else {
-            console.log('[BetterCrunchyroll] ⚠️ No token yet, but proceeding with UI injection');
-            console.log('[BetterCrunchyroll] Token will be captured on next API call');
+            console.log('[BetterCrunchyroll] ⚠️ No token yet, proceeding anyway');
         }
 
-        // Check server
-        try {
-            await fetch(CONFIG.appUrl, { method: 'HEAD', mode: 'no-cors' });
-        } catch (e) {
-            console.error('[BetterCrunchyroll] Dev server not available');
-            return;
-        }
+        // Check if watch page
+        if (isWatchPage()) {
+            console.log('[BetterCrunchyroll] Watch page detected - using DOM injection');
 
-        injectUI();
+            // Wait for DOM to be stable and player to initialize
+            await new Promise(r => setTimeout(r, 500));
+
+            // Wait for body to exist
+            while (!document.body) {
+                await new Promise(r => setTimeout(r, 100));
+            }
+
+            await injectWatchPageUI();
+
+            // Note: Removed re-injection observer - it caused infinite loops
+            // UI is injected once and stays until navigation
+        } else {
+            // Check server
+            try {
+                await fetch(CONFIG.appUrl, { method: 'HEAD', mode: 'no-cors' });
+            } catch (e) {
+                console.error('[BetterCrunchyroll] Dev server not available');
+                return;
+            }
+
+            const appPath = mapToAppUrl(window.location.pathname);
+            injectIframeUI(appPath);
+        }
     }
 
-    // Start initialization when DOM is ready enough
+    // Start initialization
     if (document.readyState !== 'loading') {
         init();
     } else {
         document.addEventListener('DOMContentLoaded', init);
     }
 
-    // Handle navigation
+    // Handle SPA navigation (URL changes without page reload)
     let lastUrl = location.href;
-    let wasOnWatchPage = /\/watch\//.test(location.pathname);
+    let navigationCheckInterval = null;
 
-    new MutationObserver(() => {
-        // Always attempt cleanup on mutations (in case header is re-injected by React)
-        cleanWatchPage();
+    // Use interval instead of MutationObserver to avoid infinite loops
+    function startNavigationWatcher() {
+        if (navigationCheckInterval) return;
 
-        if (location.href !== lastUrl) {
-            const isNowOnWatchPage = /\/watch\//.test(location.pathname);
+        navigationCheckInterval = setInterval(() => {
+            if (location.href !== lastUrl) {
+                const previousUrl = lastUrl;
+                lastUrl = location.href;
+                console.log('[BetterCrunchyroll] URL changed:', previousUrl, '->', lastUrl);
 
-            // If we're leaving a watch page, stop the video
-            if (wasOnWatchPage && !isNowOnWatchPage) {
-                console.log('[BetterCrunchyroll] Detected navigation away from watch page');
-                stopVideo();
+                // Only handle if page type changed
+                const wasWatchPage = /\/watch\//.test(previousUrl);
+                const isNowWatchPage = isWatchPage();
+
+                if (isNowWatchPage && !wasWatchPage) {
+                    // Navigated TO watch page
+                    setTimeout(() => injectWatchPageUI(), 500);
+                } else if (!isNowWatchPage && wasWatchPage) {
+                    // Navigated AWAY from watch page
+                    const bcrUI = document.getElementById('bcr-ui');
+                    if (bcrUI) bcrUI.remove();
+                    document.body.classList.remove('bcr-watch-page');
+
+                    const appPath = mapToAppUrl(location.pathname);
+                    injectIframeUI(appPath);
+                } else if (isNowWatchPage && wasWatchPage) {
+                    // Different watch page - re-inject
+                    setTimeout(() => injectWatchPageUI(), 500);
+                }
             }
+        }, 500);
+    }
 
-            lastUrl = location.href;
-            wasOnWatchPage = isNowOnWatchPage;
+    startNavigationWatcher();
 
-            console.log('[BetterCrunchyroll] Native URL changed:', lastUrl);
+    // Handle popstate (back/forward navigation)
+    window.addEventListener('popstate', () => {
+        console.log('[BetterCrunchyroll] Popstate event');
+        lastUrl = location.href; // Sync to prevent double handling
 
-            // Update transparency based on new route - simply toggle the style
+        if (isWatchPage()) {
+            setTimeout(() => injectWatchPageUI(), 300);
+        } else {
             const iframe = document.getElementById('bcr-frame');
             if (iframe) {
-                iframe.style.background = isNowOnWatchPage ? 'transparent' : '#0a0a0a';
-
-                // Update iframe src if needed
                 const newAppPath = mapToAppUrl(location.pathname);
-                const expectedSrc = CONFIG.appUrl + newAppPath;
-                if (!iframe.src.endsWith(newAppPath)) {
-                    console.log('[BetterCrunchyroll] Updating iframe to:', newAppPath);
-                    iframe.src = expectedSrc;
-                }
-
-                // If we moved to a watch page, ensure cleanup runs immediately
-                if (isNowOnWatchPage) cleanWatchPage();
+                iframe.src = CONFIG.appUrl + newAppPath;
             }
-        }
-    }).observe(document.body || document.documentElement, { childList: true, subtree: true });
-
-    // Also listen for popstate (back/forward navigation)
-    window.addEventListener('popstate', () => {
-        const isNowOnWatchPage = /\/watch\//.test(location.pathname);
-
-        if (wasOnWatchPage && !isNowOnWatchPage) {
-            console.log('[BetterCrunchyroll] Popstate: leaving watch page');
-            stopVideo();
-        }
-
-        wasOnWatchPage = isNowOnWatchPage;
-
-        const iframe = document.getElementById('bcr-frame');
-        if (iframe) {
-            const newAppPath = mapToAppUrl(location.pathname);
-            iframe.src = CONFIG.appUrl + newAppPath;
-            iframe.style.background = isNowOnWatchPage ? 'transparent' : '#0a0a0a';
         }
     });
 
 })();
+

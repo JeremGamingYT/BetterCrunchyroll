@@ -4,30 +4,21 @@ import { useParams, useRouter } from "next/navigation"
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import {
-    Play,
-    Pause,
-    SkipBack,
-    SkipForward,
-    Volume2,
-    VolumeX,
-    Maximize,
-    Settings,
     ChevronLeft,
     ChevronRight,
-    Clock,
     Crown,
     Star,
-    Film,
     List,
     Info,
     MessageSquare,
+    Play,
+    ExternalLink,
 } from "lucide-react"
-import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { LoadingScreen } from "@/components/loading-screen"
 import { cn } from "@/lib/utils"
 
-// Simulated episode data - in production this would come from Crunchyroll API
+// Episode data interface
 interface Episode {
     id: string
     title: string
@@ -39,6 +30,8 @@ interface Episode {
     isPremium: boolean
     seriesId: string
     seriesTitle: string
+    isWatched?: boolean
+    progress?: number
 }
 
 interface Series {
@@ -53,6 +46,143 @@ interface Series {
     score: number
 }
 
+// Navigation Button Component
+function NavigationButton({
+    direction,
+    episode,
+    accentColor
+}: {
+    direction: "prev" | "next"
+    episode: Episode | null
+    accentColor: string
+}) {
+    if (!episode) {
+        return (
+            <div className="px-4 py-2 text-muted-foreground text-sm">
+                {direction === "prev" ? "Premier épisode" : "Dernier épisode"}
+            </div>
+        )
+    }
+
+    const isPrev = direction === "prev"
+
+    return (
+        <Link
+            href={`/watch/${episode.id}`}
+            className={cn(
+                "group flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium transition-all duration-300",
+                "hover:scale-105 active:scale-95",
+                isPrev
+                    ? "bg-secondary/80 hover:bg-secondary text-foreground"
+                    : "text-white shadow-lg hover:shadow-xl"
+            )}
+            style={!isPrev ? {
+                background: `linear-gradient(135deg, ${accentColor}, ${accentColor}cc)`,
+            } : undefined}
+        >
+            {isPrev && <ChevronLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />}
+            <span className="hidden sm:inline">
+                {isPrev ? "Épisode précédent" : "Épisode suivant"}
+            </span>
+            <span className="sm:hidden">
+                {isPrev ? "Préc." : "Suiv."}
+            </span>
+            {!isPrev && <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />}
+        </Link>
+    )
+}
+
+// Episode Card Component
+function EpisodeCard({
+    episode,
+    isCurrent,
+    accentColor,
+    bannerImage
+}: {
+    episode: Episode
+    isCurrent: boolean
+    accentColor: string
+    bannerImage: string
+}) {
+    return (
+        <Link
+            href={`/watch/${episode.id}`}
+            className={cn(
+                "group block rounded-xl overflow-hidden transition-all duration-300",
+                "hover:scale-[1.03] hover:z-10"
+            )}
+            style={isCurrent ? {
+                outline: `2px solid ${accentColor}`,
+                outlineOffset: '2px'
+            } : undefined}
+        >
+            <div className="relative aspect-video bg-secondary overflow-hidden">
+                <img
+                    src={episode.thumbnail || bannerImage}
+                    alt={episode.title}
+                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+                <div
+                    className="absolute top-2 left-2 px-2.5 py-1 rounded-lg text-xs font-bold text-white backdrop-blur-sm transition-all"
+                    style={{
+                        backgroundColor: isCurrent ? accentColor : "rgba(0,0,0,0.7)",
+                        boxShadow: isCurrent ? `0 0 20px ${accentColor}50` : undefined
+                    }}
+                >
+                    E{episode.episodeNumber}
+                </div>
+
+                {episode.isPremium && (
+                    <div className="absolute top-2 right-2 p-1.5 rounded-lg bg-gradient-to-br from-amber-400 to-amber-600 shadow-lg">
+                        <Crown className="w-3 h-3 text-white" />
+                    </div>
+                )}
+
+                <div className="absolute bottom-2 right-2 px-2 py-1 rounded-lg bg-black/70 backdrop-blur-sm text-xs text-white font-medium">
+                    {episode.duration}m
+                </div>
+
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <div
+                        className="p-3 rounded-full text-white shadow-2xl transform scale-75 group-hover:scale-100 transition-transform duration-300"
+                        style={{
+                            background: `linear-gradient(135deg, ${accentColor}, ${accentColor}cc)`,
+                            boxShadow: `0 4px 30px ${accentColor}60`
+                        }}
+                    >
+                        <Play className="w-5 h-5" fill="currentColor" />
+                    </div>
+                </div>
+
+                {episode.progress !== undefined && episode.progress > 0 && (
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-black/50">
+                        <div
+                            className="h-full transition-all"
+                            style={{ width: `${episode.progress}%`, backgroundColor: accentColor }}
+                        />
+                    </div>
+                )}
+
+                {isCurrent && (
+                    <div className="absolute bottom-0 left-0 right-0 h-1" style={{ backgroundColor: accentColor }} />
+                )}
+            </div>
+
+            <div className="p-3 bg-card/50">
+                <p className={cn(
+                    "text-sm font-medium line-clamp-1 transition-colors",
+                    isCurrent ? "text-primary" : "group-hover:text-primary"
+                )}>
+                    {episode.title}
+                </p>
+            </div>
+        </Link>
+    )
+}
+
 export default function WatchPage() {
     const params = useParams()
     const router = useRouter()
@@ -63,28 +193,19 @@ export default function WatchPage() {
     const [series, setSeries] = useState<Series | null>(null)
     const [activeTab, setActiveTab] = useState<"episodes" | "details" | "comments">("episodes")
 
-    // Video player state
-    const [isPlaying, setIsPlaying] = useState(false)
-    const [isMuted, setIsMuted] = useState(false)
-    const [progress, setProgress] = useState(0)
-    const [showControls, setShowControls] = useState(true)
-    const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null)
-
-    // Simulated data loading
+    // Data loading
     useEffect(() => {
         const loadData = async () => {
             setIsLoading(true)
+            await new Promise(resolve => setTimeout(resolve, 800))
 
-            // Simulate API call delay
-            await new Promise(resolve => setTimeout(resolve, 1000))
-
-            // Mock episode data
+            // Mock data - TODO: Replace with real Crunchyroll API
             const mockEpisode: Episode = {
                 id: episodeId,
                 title: "Le Début d'une Nouvelle Aventure",
                 episodeNumber: 1,
                 seasonNumber: 1,
-                description: "L'histoire commence alors que notre héros découvre un monde extraordinaire rempli de défis et de mystères. Une aventure épique l'attend au-delà de tout ce qu'il aurait pu imaginer. Chaque pas le rapproche de son destin, tandis que de nouveaux alliés et ennemis se révèlent.",
+                description: "L'histoire commence alors que notre héros découvre un monde extraordinaire rempli de défis et de mystères. Une aventure épique l'attend au-delà de tout ce qu'il aurait pu imaginer.",
                 duration: 24,
                 thumbnail: null,
                 isPremium: false,
@@ -99,11 +220,11 @@ export default function WatchPage() {
                 image: "/placeholder.svg?height=400&width=300",
                 bannerImage: "/placeholder.svg?height=600&width=1200",
                 color: "#f97316",
-                genres: ["Action", "Aventure", "Fantasy"],
-                score: 8.5,
-                episodes: Array.from({ length: 12 }, (_, i) => ({
+                genres: ["Action", "Aventure", "Fantasy", "Shōnen"],
+                score: 8.7,
+                episodes: Array.from({ length: 24 }, (_, i) => ({
                     id: `ep-${i + 1}`,
-                    title: `Épisode ${i + 1}`,
+                    title: i === 0 ? "Le Début d'une Nouvelle Aventure" : `Épisode ${i + 1}`,
                     episodeNumber: i + 1,
                     seasonNumber: 1,
                     description: `Description de l'épisode ${i + 1}`,
@@ -111,7 +232,8 @@ export default function WatchPage() {
                     thumbnail: null,
                     isPremium: i > 2,
                     seriesId: "12345",
-                    seriesTitle: "Mon Anime Préféré"
+                    seriesTitle: "Mon Anime Préféré",
+                    progress: i < 3 ? (i === 0 ? 100 : i === 1 ? 65 : 0) : undefined
                 }))
             }
 
@@ -125,68 +247,36 @@ export default function WatchPage() {
         }
     }, [episodeId])
 
-    // Hide controls after inactivity
+    // ============================================
+    // CRITICAL: Make the page transparent so the 
+    // native Crunchyroll player is visible underneath
+    // ============================================
     useEffect(() => {
-        const handleMouseMove = () => {
-            setShowControls(true)
-            if (controlsTimeoutRef.current) {
-                clearTimeout(controlsTimeoutRef.current)
-            }
-            controlsTimeoutRef.current = setTimeout(() => {
-                if (isPlaying) {
-                    setShowControls(false)
-                }
-            }, 3000)
-        }
-
-        document.addEventListener("mousemove", handleMouseMove)
-        return () => {
-            document.removeEventListener("mousemove", handleMouseMove)
-            if (controlsTimeoutRef.current) {
-                clearTimeout(controlsTimeoutRef.current)
-            }
-        }
-    }, [isPlaying])
-
-    // Handle transparency for video player visibility and Scroll Sync
-    useEffect(() => {
-        // Save original styles
+        // Save original backgrounds
         const originalHtmlBg = document.documentElement.style.background
         const originalBodyBg = document.body.style.background
 
-        // Set transparent
+        // Make transparent
         document.documentElement.style.background = 'transparent'
         document.body.style.background = 'transparent'
 
-        // Handle scroll sync with native player
-        const handleScroll = () => {
-            const scrollY = window.scrollY
-            window.parent.postMessage({ type: 'BCR_SCROLL_SYNC', scrollY }, '*')
-        }
-
-        window.addEventListener('scroll', handleScroll, { passive: true })
-        // Initial sync
-        handleScroll()
-
         return () => {
-            // Restore
+            // Restore on unmount
             document.documentElement.style.background = originalHtmlBg
             document.body.style.background = originalBodyBg
-            window.removeEventListener('scroll', handleScroll)
         }
     }, [])
 
-    // Sync Play/Pause with Native Player
-    useEffect(() => {
-        const type = isPlaying ? 'BCR_PLAY' : 'BCR_PAUSE'
-        window.parent.postMessage({ type }, '*')
-    }, [isPlaying])
-
     const accentColor = series?.color || "#f97316"
-
     const currentEpisodeIndex = series?.episodes.findIndex(ep => ep.id === episodeId) ?? -1
     const prevEpisode = currentEpisodeIndex > 0 ? series?.episodes[currentEpisodeIndex - 1] : null
     const nextEpisode = currentEpisodeIndex < (series?.episodes.length ?? 0) - 1 ? series?.episodes[currentEpisodeIndex + 1] : null
+
+    const tabs = [
+        { id: "episodes", label: "Épisodes", icon: List },
+        { id: "details", label: "Détails", icon: Info },
+        { id: "comments", label: "Commentaires", icon: MessageSquare },
+    ] as const
 
     if (isLoading) {
         return <LoadingScreen isLoading={true} message="Chargement de l'épisode..." />
@@ -195,14 +285,13 @@ export default function WatchPage() {
     if (!episode || !series) {
         return (
             <main className="min-h-screen bg-background">
-                <Header />
-                <div className="flex items-center justify-center min-h-[60vh]">
-                    <div className="text-center">
+                <div className="flex items-center justify-center min-h-screen">
+                    <div className="text-center p-8">
                         <h1 className="text-2xl font-bold mb-2">Épisode non trouvé</h1>
-                        <p className="text-muted-foreground">Impossible de charger cet épisode.</p>
+                        <p className="text-muted-foreground mb-4">Impossible de charger cet épisode.</p>
                         <button
                             onClick={() => router.back()}
-                            className="mt-4 px-4 py-2 rounded-lg bg-primary text-white"
+                            className="px-6 py-2.5 rounded-xl bg-primary text-white font-medium hover:opacity-90 transition-opacity"
                         >
                             Retour
                         </button>
@@ -213,181 +302,141 @@ export default function WatchPage() {
     }
 
     return (
-        <main className="min-h-screen bg-transparent">
-            {/* Header with opaque background */}
-            <div className="bg-background">
-                <Header />
-            </div>
+        <main
+            className="min-h-screen"
+            style={{ background: 'transparent' }}
+        >
+            {/* ============================================
+                VIDEO PLAYER SPACER
+                This transparent zone allows the native 
+                Crunchyroll player (running underneath the 
+                extension iframe) to be visible.
+                
+                The content script positions the player here:
+                - position: fixed
+                - top: 0
+                - width: 100%
+                - aspectRatio: 16/9
+                ============================================ */}
+            <div
+                className="w-full"
+                style={{
+                    aspectRatio: '16/9',
+                    background: 'transparent',
+                    pointerEvents: 'none', // Allow clicks to pass through to native player
+                    maxHeight: 'calc(100vh - 100px)'
+                }}
+                aria-hidden="true"
+            />
 
-            {/* Video Player Section */}
-            <section className="relative pt-24 bg-background/0">
-                {/* Video Container - Transparent hole for underlying player */}
-                {/* Added explicit min-height and slightly taller aspect ratio to prevent clipping */}
-                <div
-                    className="relative w-full aspect-video bg-transparent mb-16"
-                    style={{
-                        pointerEvents: 'none',
-                        // Ensuring we don't clip the bottom of the native player controls
-                        minHeight: 'calc(100vw * 9 / 16)'
-                    }}
-                >
-                </div>
-            </section>
+            {/* ============================================
+                UI CONTENT - Opaque background from here
+                ============================================ */}
 
-            {/* Episode Navigation - Opaque background */}
-            <section className="px-4 md:px-8 lg:px-12 py-4 border-b border-border bg-background">
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-4">
-                        {prevEpisode ? (
+            {/* Episode Info Bar */}
+            <section
+                className="relative border-b border-border bg-background"
+                style={{
+                    background: `linear-gradient(180deg, rgba(10,10,10,0.95) 0%, hsl(var(--background)) 100%)`
+                }}
+            >
+                <div className="px-4 md:px-8 lg:px-12 py-4">
+                    <div className="flex items-center justify-between gap-4">
+                        <div className="flex-shrink-0">
+                            <NavigationButton
+                                direction="prev"
+                                episode={prevEpisode ?? null}
+                                accentColor={accentColor}
+                            />
+                        </div>
+
+                        <div className="flex-1 text-center min-w-0">
                             <Link
-                                href={`/watch/${prevEpisode.id}`}
-                                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
+                                href={`/anime/${series.id}`}
+                                className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
                             >
-                                <ChevronLeft className="w-4 h-4" />
-                                Épisode précédent
+                                {series.title}
+                                <ExternalLink className="w-3 h-3" />
                             </Link>
-                        ) : (
-                            <div className="px-4 py-2 text-muted-foreground">Premier épisode</div>
-                        )}
-                    </div>
-
-                    <div className="text-center">
-                        <Link
-                            href={`/anime/${series.id}`}
-                            className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                        >
-                            {series.title}
-                        </Link>
-                        <h2 className="font-bold" style={{ color: accentColor }}>
-                            Épisode {episode.episodeNumber}: {episode.title}
-                        </h2>
-                    </div>
-
-                    <div className="flex items-center gap-4">
-                        {nextEpisode ? (
-                            <Link
-                                href={`/watch/${nextEpisode.id}`}
-                                className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-colors hover:opacity-90"
-                                style={{ backgroundColor: accentColor }}
+                            <h1
+                                className="text-lg md:text-xl font-bold truncate"
+                                style={{ color: accentColor }}
                             >
-                                Épisode suivant
-                                <ChevronRight className="w-4 h-4" />
-                            </Link>
-                        ) : (
-                            <div className="px-4 py-2 text-muted-foreground">Dernier épisode</div>
-                        )}
+                                Épisode {episode.episodeNumber}: {episode.title}
+                            </h1>
+                        </div>
+
+                        <div className="flex-shrink-0">
+                            <NavigationButton
+                                direction="next"
+                                episode={nextEpisode ?? null}
+                                accentColor={accentColor}
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* Tabs - Opaque background */}
-            <section className="px-4 md:px-8 lg:px-12 border-b border-border bg-background">
-                <div className="flex gap-1 py-2">
-                    {[
-                        { id: "episodes", label: "Épisodes", icon: List },
-                        { id: "details", label: "Détails", icon: Info },
-                        { id: "comments", label: "Commentaires", icon: MessageSquare },
-                    ].map((tab) => (
-                        <button
-                            key={tab.id}
-                            onClick={() => setActiveTab(tab.id as typeof activeTab)}
-                            className={cn(
-                                "flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all",
-                                activeTab === tab.id
-                                    ? "text-white"
-                                    : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-                            )}
-                            style={{
-                                backgroundColor: activeTab === tab.id ? accentColor : undefined,
-                            }}
-                        >
-                            <tab.icon className="w-4 h-4" />
-                            {tab.label}
-                        </button>
-                    ))}
+            {/* Tabs Section */}
+            <section className="sticky top-0 z-20 bg-card/95 backdrop-blur-md border-b border-border">
+                <div className="px-4 md:px-8 lg:px-12">
+                    <div className="flex gap-2 py-3 overflow-x-auto scrollbar-hide">
+                        {tabs.map((tab) => (
+                            <button
+                                key={tab.id}
+                                onClick={() => setActiveTab(tab.id)}
+                                className={cn(
+                                    "flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium transition-all duration-300 whitespace-nowrap",
+                                    "hover:scale-105 active:scale-95",
+                                    activeTab === tab.id
+                                        ? "text-white shadow-lg"
+                                        : "text-muted-foreground hover:text-foreground hover:bg-secondary/80"
+                                )}
+                                style={activeTab === tab.id ? {
+                                    background: `linear-gradient(135deg, ${accentColor}, ${accentColor}cc)`,
+                                    boxShadow: `0 4px 20px ${accentColor}40`
+                                } : undefined}
+                            >
+                                <tab.icon className="w-4 h-4" />
+                                {tab.label}
+                                {tab.id === "episodes" && (
+                                    <span className={cn(
+                                        "text-xs px-1.5 py-0.5 rounded-full",
+                                        activeTab === tab.id ? "bg-white/20" : "bg-secondary"
+                                    )}>
+                                        {series.episodes.length}
+                                    </span>
+                                )}
+                            </button>
+                        ))}
+                    </div>
                 </div>
             </section>
 
-            {/* Tab Content - Opaque background */}
-            <section className="px-4 md:px-8 lg:px-12 py-8 bg-background">
+            {/* Tab Content */}
+            <section className="px-4 md:px-8 lg:px-12 py-8 bg-background min-h-[50vh]">
                 {/* Episodes Tab */}
                 {activeTab === "episodes" && (
-                    <div className="space-y-6">
-                        <h3 className="text-xl font-bold flex items-center gap-2">
-                            <div className="w-1 h-5 rounded-full" style={{ backgroundColor: accentColor }} />
-                            Tous les épisodes
-                            <span className="text-sm font-normal text-muted-foreground">
-                                ({series.episodes.length} épisodes)
+                    <div className="space-y-6 animate-in fade-in duration-300">
+                        <div className="flex items-center justify-between">
+                            <h2 className="text-xl font-bold flex items-center gap-3">
+                                <div className="w-1 h-6 rounded-full" style={{ backgroundColor: accentColor }} />
+                                Tous les épisodes
+                            </h2>
+                            <span className="text-sm text-muted-foreground">
+                                Saison {episode.seasonNumber} • {series.episodes.length} épisodes
                             </span>
-                        </h3>
+                        </div>
 
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                             {series.episodes.map((ep) => (
-                                <Link
+                                <EpisodeCard
                                     key={ep.id}
-                                    href={`/watch/${ep.id}`}
-                                    className={cn(
-                                        "group block rounded-xl overflow-hidden transition-all duration-300",
-                                        "hover:scale-105 hover:z-10"
-                                    )}
-                                    style={{
-                                        outline: ep.id === episodeId ? `2px solid ${accentColor}` : undefined,
-                                        outlineOffset: '-2px'
-                                    }}
-                                >
-                                    <div className="relative aspect-video bg-secondary">
-                                        <img
-                                            src={ep.thumbnail || series.bannerImage}
-                                            alt={ep.title}
-                                            className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-
-                                        {/* Episode number */}
-                                        <div
-                                            className="absolute top-2 left-2 px-2 py-0.5 rounded text-xs font-bold text-white"
-                                            style={{ backgroundColor: ep.id === episodeId ? accentColor : "rgba(0,0,0,0.7)" }}
-                                        >
-                                            E{ep.episodeNumber}
-                                        </div>
-
-                                        {/* Premium badge */}
-                                        {ep.isPremium && (
-                                            <div className="absolute top-2 right-2 p-1 rounded bg-amber-500">
-                                                <Crown className="w-3 h-3 text-white" />
-                                            </div>
-                                        )}
-
-                                        {/* Duration */}
-                                        <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/70 text-xs text-white">
-                                            {ep.duration}m
-                                        </div>
-
-                                        {/* Play icon on hover */}
-                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                            <div
-                                                className="p-2 rounded-full text-white"
-                                                style={{ backgroundColor: accentColor }}
-                                            >
-                                                <Play className="w-4 h-4" fill="currentColor" />
-                                            </div>
-                                        </div>
-
-                                        {/* Currently watching indicator */}
-                                        {ep.id === episodeId && (
-                                            <div className="absolute bottom-0 left-0 right-0 h-1" style={{ backgroundColor: accentColor }} />
-                                        )}
-                                    </div>
-
-                                    <div className="p-2">
-                                        <p className={cn(
-                                            "text-sm font-medium line-clamp-1",
-                                            ep.id === episodeId && "text-primary"
-                                        )}>
-                                            {ep.title}
-                                        </p>
-                                    </div>
-                                </Link>
+                                    episode={ep}
+                                    isCurrent={ep.id === episodeId}
+                                    accentColor={accentColor}
+                                    bannerImage={series.bannerImage}
+                                />
                             ))}
                         </div>
                     </div>
@@ -395,65 +444,62 @@ export default function WatchPage() {
 
                 {/* Details Tab */}
                 {activeTab === "details" && (
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <div className="md:col-span-2 space-y-6">
-                            <h3 className="text-xl font-bold flex items-center gap-2">
-                                <div className="w-1 h-5 rounded-full" style={{ backgroundColor: accentColor }} />
-                                Description de l'épisode
-                            </h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                                {episode.description}
-                            </p>
+                    <div className="grid md:grid-cols-3 gap-8 animate-in fade-in duration-300">
+                        <div className="md:col-span-2 space-y-8">
+                            <div>
+                                <h2 className="text-xl font-bold flex items-center gap-3 mb-4">
+                                    <div className="w-1 h-6 rounded-full" style={{ backgroundColor: accentColor }} />
+                                    Description de l'épisode
+                                </h2>
+                                <p className="text-muted-foreground leading-relaxed text-lg">
+                                    {episode.description}
+                                </p>
+                            </div>
 
-                            <div className="pt-4">
-                                <h3 className="text-xl font-bold flex items-center gap-2 mb-4">
-                                    <div className="w-1 h-5 rounded-full" style={{ backgroundColor: accentColor }} />
+                            <div>
+                                <h2 className="text-xl font-bold flex items-center gap-3 mb-4">
+                                    <div className="w-1 h-6 rounded-full" style={{ backgroundColor: accentColor }} />
                                     À propos de {series.title}
-                                </h3>
+                                </h2>
                                 <p className="text-muted-foreground leading-relaxed">
                                     {series.description}
                                 </p>
                             </div>
                         </div>
 
-                        <div className="space-y-4">
-                            <div className="p-4 rounded-xl bg-secondary/30 space-y-3">
-                                <h4 className="font-bold">Informations</h4>
-                                <div className="space-y-2 text-sm">
-                                    <div className="flex justify-between">
-                                        <span className="text-muted-foreground">Épisode</span>
-                                        <span className="font-medium">{episode.episodeNumber}</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span className="text-muted-foreground">Saison</span>
-                                        <span className="font-medium">{episode.seasonNumber}</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span className="text-muted-foreground">Durée</span>
-                                        <span className="font-medium">{episode.duration} min</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span className="text-muted-foreground">Type</span>
-                                        <span className="font-medium">{episode.isPremium ? "Premium" : "Gratuit"}</span>
-                                    </div>
+                        <div className="space-y-6">
+                            <div className="p-5 rounded-2xl bg-card border border-border space-y-4">
+                                <h3 className="font-bold text-lg">Informations</h3>
+                                <div className="space-y-3">
+                                    {[
+                                        { label: "Épisode", value: episode.episodeNumber },
+                                        { label: "Saison", value: episode.seasonNumber },
+                                        { label: "Durée", value: `${episode.duration} min` },
+                                        { label: "Type", value: episode.isPremium ? "Premium" : "Gratuit" },
+                                    ].map((item) => (
+                                        <div key={item.label} className="flex justify-between items-center">
+                                            <span className="text-muted-foreground">{item.label}</span>
+                                            <span className="font-medium">{item.value}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
 
-                            <div className="p-4 rounded-xl bg-secondary/30 space-y-3">
-                                <h4 className="font-bold">Série</h4>
+                            <div className="p-5 rounded-2xl bg-card border border-border space-y-4">
+                                <h3 className="font-bold text-lg">Série</h3>
                                 <Link
                                     href={`/anime/${series.id}`}
-                                    className="flex items-center gap-3 p-2 rounded-lg hover:bg-secondary transition-colors"
+                                    className="flex items-center gap-4 p-3 -m-3 rounded-xl hover:bg-secondary/50 transition-colors"
                                 >
                                     <img
                                         src={series.image}
                                         alt={series.title}
-                                        className="w-12 h-16 rounded object-cover"
+                                        className="w-14 h-20 rounded-lg object-cover"
                                     />
-                                    <div>
-                                        <p className="font-medium">{series.title}</p>
-                                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                            <Star className="w-3 h-3 text-primary" fill="currentColor" />
+                                    <div className="flex-1 min-w-0">
+                                        <p className="font-semibold truncate">{series.title}</p>
+                                        <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
+                                            <Star className="w-4 h-4" fill={accentColor} style={{ color: accentColor }} />
                                             <span>{series.score}</span>
                                             <span>•</span>
                                             <span>{series.episodes.length} épisodes</span>
@@ -466,10 +512,11 @@ export default function WatchPage() {
                                 {series.genres.map((genre) => (
                                     <span
                                         key={genre}
-                                        className="px-3 py-1 rounded-full text-xs font-medium"
+                                        className="px-4 py-1.5 rounded-full text-sm font-medium transition-transform hover:scale-105"
                                         style={{
                                             backgroundColor: `${accentColor}20`,
                                             color: accentColor,
+                                            border: `1px solid ${accentColor}40`
                                         }}
                                     >
                                         {genre}
@@ -482,11 +529,16 @@ export default function WatchPage() {
 
                 {/* Comments Tab */}
                 {activeTab === "comments" && (
-                    <div className="text-center py-16">
-                        <MessageSquare className="w-12 h-12 mx-auto text-muted-foreground mb-4" />
-                        <h3 className="text-lg font-bold mb-2">Commentaires à venir</h3>
-                        <p className="text-muted-foreground">
-                            Les commentaires seront bientôt disponibles.
+                    <div className="text-center py-20 animate-in fade-in duration-300">
+                        <div
+                            className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-6"
+                            style={{ backgroundColor: `${accentColor}20` }}
+                        >
+                            <MessageSquare className="w-10 h-10" style={{ color: accentColor }} />
+                        </div>
+                        <h3 className="text-2xl font-bold mb-3">Commentaires à venir</h3>
+                        <p className="text-muted-foreground max-w-md mx-auto">
+                            Les commentaires et discussions de la communauté seront bientôt disponibles.
                         </p>
                     </div>
                 )}
