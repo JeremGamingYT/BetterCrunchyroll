@@ -437,9 +437,9 @@ export default function AnimePage() {
                 <div className="p-4 rounded-xl bg-secondary/30">
                   <h3 className="font-bold text-lg mb-3">Studios</h3>
                   <div className="flex flex-wrap gap-2">
-                    {anime.studios.map((studio) => (
+                    {anime.studios.map((studio, idx) => (
                       <span
-                        key={studio.id}
+                        key={`${studio.id}-${idx}`}
                         className={cn(
                           "px-3 py-1.5 rounded-lg text-sm font-medium",
                           studio.isAnimationStudio ? "bg-primary/20 text-primary" : "bg-secondary",

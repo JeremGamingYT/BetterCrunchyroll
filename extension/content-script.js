@@ -116,8 +116,21 @@
     // ===============================
 
     async function makeApiRequest(endpoint, params = {}) {
+        // Retry logic for token availability
         if (!accessToken || Date.now() >= tokenExpiry) {
             await loadStoredToken();
+        }
+
+        // If still no token, wait up to 5 seconds
+        if (!accessToken || Date.now() >= tokenExpiry) {
+            console.log('[BetterCrunchyroll] Waiting for token before API request...');
+            let attempts = 0;
+            while ((!accessToken || Date.now() >= tokenExpiry) && attempts < 50) {
+                await new Promise(r => setTimeout(r, 100));
+                attempts++;
+                // Try reloading from storage periodically (in case another tab refreshed it)
+                if (attempts % 10 === 0) await loadStoredToken();
+            }
         }
 
         if (!accessToken || Date.now() >= tokenExpiry) {

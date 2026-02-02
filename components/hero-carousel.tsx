@@ -9,7 +9,7 @@ import { useWatchlistOptional } from "@/hooks/use-watchlist"
 import Link from "next/link"
 
 export function HeroCarousel() {
-  const { data: trendingAnimes, isLoading } = useTrendingAnime(1, 4)
+  const { data: trendingAnimes, isLoading } = useTrendingAnime(1, 6) // Fetch a few more items for better rotation
   const watchlistContext = useWatchlistOptional()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
@@ -25,7 +25,7 @@ export function HeroCarousel() {
       if (isAnimating || !hasAnimes) return
       setIsAnimating(true)
       setCurrentIndex(index)
-      setTimeout(() => setIsAnimating(false), 700)
+      setTimeout(() => setIsAnimating(false), 800)
     },
     [isAnimating, hasAnimes],
   )
@@ -54,10 +54,10 @@ export function HeroCarousel() {
   }, [showInfoPopup])
 
   useEffect(() => {
-    if (isPaused || !hasAnimes) return
-    const interval = setInterval(goToNext, 6000)
+    if (isPaused || !hasAnimes || showInfoPopup) return
+    const interval = setInterval(goToNext, 8000) // Slightly longer duration for cinematic feel
     return () => clearInterval(interval)
-  }, [goToNext, isPaused, hasAnimes])
+  }, [goToNext, isPaused, hasAnimes, showInfoPopup])
 
   const currentAnime = hasAnimes ? animes[currentIndex] : null
 
@@ -77,7 +77,7 @@ export function HeroCarousel() {
     id: 0,
     title: "Chargement...",
     description: "Découvrez les meilleurs anime en streaming sur Crunchyroll.",
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/placeholder.svg?height=1080&width=1920",
     rating: "14+",
     genres: ["Action", "Fantasy"],
     nextEpisode: { episode: 1 },
@@ -91,106 +91,118 @@ export function HeroCarousel() {
 
   return (
     <section
-      className="relative h-[65vh] min-h-[500px] max-h-[700px] overflow-hidden pt-0 z-0 bg-background"
+      className="relative w-full h-[90vh] overflow-hidden bg-background"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      {/* Background Images */}
+      {/* Background Images with Parallax-like effect */}
       {hasAnimes ? (
         animes.map((anime, index) => (
           <div
             key={anime.id}
             className={cn(
-              "absolute inset-0 transition-opacity duration-1000",
-              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0",
+              "absolute inset-0 transition-all duration-1000 ease-in-out",
+              index === currentIndex ? "opacity-100 scale-105 z-10" : "opacity-0 scale-100 z-0",
             )}
           >
             {/* 
-              Carousel images: bannerImage is the correct choice (wide format).
-              We use object-cover with center-top to show the most important part.
-              The gradients overlay provide text readability.
+              High-quality banner image. 
+              Using object-cover to fill the screen.
             */}
+            <div className="absolute inset-0 bg-black/40 z-10" /> {/* General dimming */}
             <img
               src={anime.bannerImage || anime.image}
               alt={anime.title}
               className="w-full h-full object-cover"
-              style={{ objectPosition: 'center 25%' }}
+              style={{ objectPosition: 'center 20%' }}
             />
-            {/* Gradients for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/20" />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-transparent" />
+
+            {/* Cinematic Gradient Overlays */}
+            <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent z-20" />
+            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent z-20" />
+            <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/60 to-transparent z-20" />
           </div>
         ))
       ) : (
-        <div className="absolute inset-0">
-          <div className="w-full h-full bg-gradient-to-br from-secondary to-background" />
+        <div className="absolute inset-0 z-0">
+          <div className="w-full h-full bg-secondary animate-pulse" />
         </div>
       )}
 
-      {/* Content */}
-      <div className="relative z-20 h-full flex items-center px-4 md:px-8 lg:px-16 xl:px-24">
-        <div className="max-w-2xl space-y-6 pt-12 md:pt-0">
+      {/* Main Content Area */}
+      <div className="absolute inset-0 z-30 flex items-center px-6 md:px-12 lg:px-20 xl:px-32">
+        <div className="w-full max-w-4xl space-y-8 mt-16 md:mt-0">
+
+          {/* Title with premium typography */}
           <h1
             className={cn(
-              "text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight line-clamp-2",
-              "transition-all duration-700 ease-out",
-              isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0",
+              "text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none tracking-tight",
+              "drop-shadow-2xl",
+              "transition-all duration-700 ease-out transform",
+              isAnimating ? "opacity-0 translate-y-12" : "opacity-100 translate-y-0",
             )}
-            style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
           >
             {displayAnime.title}
           </h1>
 
-          {/* Meta */}
+          {/* Meta Tags - Clean and Minimal */}
           <div
             className={cn(
-              "flex items-center gap-3 flex-wrap transition-all duration-700 ease-out delay-100",
+              "flex items-center gap-4 text-sm md:text-base text-gray-200 font-medium",
+              "transition-all duration-700 ease-out delay-100 transform",
               isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0",
             )}
           >
-            <span className="px-2 py-1 bg-primary/20 border border-primary/50 rounded text-xs font-semibold text-primary">
+            <span className="px-2.5 py-1 bg-white/20 backdrop-blur-md rounded border border-white/10 text-white">
               {displayAnime.rating}
             </span>
-            <span className="text-muted-foreground text-sm">•</span>
-            <span className="text-muted-foreground text-sm">
+            <span>
               {"year" in displayAnime ? displayAnime.year : new Date().getFullYear()}
             </span>
-            <span className="text-muted-foreground text-sm">•</span>
-            {displayAnime.genres.map((genre, i) => (
-              <span key={genre} className="text-muted-foreground text-sm">
-                {genre}
-                {i < displayAnime.genres.length - 1 && ", "}
-              </span>
-            ))}
+            <div className="w-1 h-1 rounded-full bg-gray-400" />
+            <span className="uppercase tracking-wider">
+              {displayAnime.genres.slice(0, 3).join(" • ")}
+            </span>
+            {displayAnime.score && (
+              <>
+                <div className="w-1 h-1 rounded-full bg-gray-400" />
+                <div className="flex items-center gap-1 text-yellow-400">
+                  <Star className="w-4 h-4 fill-current" />
+                  <span>{displayAnime.score.toFixed(1)}</span>
+                </div>
+              </>
+            )}
           </div>
 
-          {/* Description */}
+          {/* Description - Clamped for elegance */}
           <p
             className={cn(
-              "text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl line-clamp-3",
-              "transition-all duration-700 ease-out delay-150",
+              "text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl line-clamp-3 md:line-clamp-4",
+              "drop-shadow-md",
+              "transition-all duration-700 ease-out delay-200 transform",
               isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0",
             )}
           >
             {displayAnime.description || "Découvrez cet anime passionnant sur Crunchyroll."}
           </p>
 
-          {/* Actions */}
+          {/* Action Buttons - Glassmorphism */}
           <div
             className={cn(
-              "flex items-center gap-3 pt-2 transition-all duration-700 ease-out delay-200",
+              "flex flex-wrap items-center gap-4 pt-4",
+              "transition-all duration-700 ease-out delay-300 transform",
               isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0",
             )}
           >
             <Link
               href={`/anime/${displayAnime.id}`}
               onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
-              className="group flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-xl font-bold text-sm shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-95"
+              className="group flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-full font-bold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_40px_-10px_rgba(var(--primary),0.5)]"
             >
-              <Play className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="currentColor" />
-              <span>À SUIVRE E{displayAnime.nextEpisode?.episode || 1}</span>
+              <Play className="w-6 h-6 fill-current transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
+              <span>Regarder</span>
             </Link>
+
             <button
               onClick={async () => {
                 if (!currentAnime || !watchlistContext) return
@@ -207,186 +219,154 @@ export function HeroCarousel() {
                   }
                 } catch (error) {
                   console.error('Failed to update watchlist:', error)
-                  setIsBookmarked(!newState) // Revert on failure
+                  setIsBookmarked(!newState)
                 }
               }}
               className={cn(
-                "p-4 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 border border-border/50 shadow-lg backdrop-blur-sm",
+                "p-4 rounded-full border border-white/20 backdrop-blur-md transition-all duration-300 hover:scale-110 active:scale-95",
                 isBookmarked
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/80 hover:bg-secondary text-foreground"
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-white/10 text-white hover:bg-white/20"
               )}
+              title={isBookmarked ? "Retirer de la watchlist" : "Ajouter à la watchlist"}
             >
-              <Bookmark className="w-5 h-5" fill={isBookmarked ? "currentColor" : "none"} />
+              <Bookmark className="w-6 h-6" fill={isBookmarked ? "currentColor" : "none"} />
             </button>
+
             <button
               onClick={() => setShowInfoPopup(true)}
-              className="p-4 bg-secondary/80 hover:bg-secondary text-foreground rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 border border-border/50 shadow-lg backdrop-blur-sm"
+              className="flex items-center gap-2 px-6 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 font-semibold"
             >
-              <Info className="w-5 h-5" />
+              <Info className="w-6 h-6" />
+              <span>Détails</span>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Navigation Controls */}
       {hasAnimes && (
-        <>
+        <div className="absolute right-8 bottom-12 z-30 flex items-center gap-4 hidden lg:flex">
           <button
             onClick={goToPrevious}
-            className={cn(
-              "absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-30",
-              "p-3 rounded-full bg-background/50 backdrop-blur-sm border border-border/30",
-              "text-foreground/70 hover:text-foreground hover:bg-background/80",
-              "transition-all duration-300 hover:scale-110",
-              "opacity-0 hover:opacity-100 md:opacity-100", // Hide on mobile unless hovering
-            )}
+            className="p-4 rounded-full bg-black/20 hover:bg-black/40 text-white border border-white/10 backdrop-blur-md transition-all duration-300 hover:scale-110 active:scale-95"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
+          <div className="flex gap-3">
+            {animes.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={cn(
+                  "h-1.5 rounded-full transition-all duration-500",
+                  index === currentIndex
+                    ? "w-12 bg-primary shadow-[0_0_10px_rgba(var(--primary),0.8)]"
+                    : "w-3 bg-white/30 hover:bg-white/60"
+                )}
+              />
+            ))}
+          </div>
           <button
             onClick={goToNext}
-            className={cn(
-              "absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-30",
-              "p-3 rounded-full bg-background/50 backdrop-blur-sm border border-border/30",
-              "text-foreground/70 hover:text-foreground hover:bg-background/80",
-              "transition-all duration-300 hover:scale-110",
-              "opacity-0 hover:opacity-100 md:opacity-100",
-            )}
+            className="p-4 rounded-full bg-black/20 hover:bg-black/40 text-white border border-white/10 backdrop-blur-md transition-all duration-300 hover:scale-110 active:scale-95"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
-        </>
-      )}
-
-      {/* Dots Indicator */}
-      {hasAnimes && (
-        <div className="absolute bottom-8 left-4 md:left-8 lg:left-16 xl:left-24 z-20 flex items-center gap-2">
-          {animes.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={cn(
-                "h-1.5 rounded-full transition-all duration-500",
-                index === currentIndex ? "w-8 bg-primary" : "w-3 bg-foreground/30 hover:bg-foreground/50",
-              )}
-            />
-          ))}
         </div>
       )}
 
-      {/* Progress Bar */}
-      {hasAnimes && (
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-border/20 z-20">
-          <div
-            className="h-full bg-primary/70 transition-all duration-300"
-            style={{
-              width: `${((currentIndex + 1) / animes.length) * 100}%`,
-            }}
-          />
-        </div>
-      )}
-
+      {/* Info Popup - Premium Modular */}
       {showInfoPopup && currentAnime && typeof document !== 'undefined' && createPortal(
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-background/90 backdrop-blur-md transition-all duration-300 animate-in fade-in"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-xl transition-all duration-300 animate-in fade-in"
           onClick={() => setShowInfoPopup(false)}
         >
           <div
-            className="relative bg-card border border-border rounded-2xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-hidden shadow-2xl flex flex-col scale-100 animate-in zoom-in-95 duration-300"
+            className="relative bg-[#0a0a0a] border border-white/10 rounded-3xl max-w-4xl w-full mx-6 shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[85vh] animate-in zoom-in-95 duration-300"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Header Image */}
-            <div className="relative h-64 flex-shrink-0">
+            {/* Visual Side */}
+            <div className="relative w-full md:w-2/5 h-64 md:h-auto overflow-hidden">
               <img
-                src={currentAnime.bannerImage || currentAnime.image}
+                src={currentAnime.image} // Use large cover image here
                 alt={currentAnime.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
-              <button
-                onClick={() => setShowInfoPopup(false)}
-                className="absolute top-4 right-4 p-2 bg-background/50 backdrop-blur-sm rounded-full hover:bg-background/80 transition-all hover:scale-110 z-10"
-              >
-                <X className="w-5 h-5" />
-              </button>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent md:bg-gradient-to-r" />
             </div>
 
-            {/* Scrollable Content Area */}
-            <div className="p-8 space-y-6 overflow-y-auto custom-scrollbar">
-              <h2 className="text-2xl font-bold text-foreground">{currentAnime.title}</h2>
+            {/* Info Side */}
+            <div className="flex-1 p-8 md:p-12 overflow-y-auto custom-scrollbar bg-gradient-to-br from-[#0a0a0a] to-[#121212]">
+              <button
+                onClick={() => setShowInfoPopup(false)}
+                className="absolute top-4 right-4 p-2 bg-white/5 hover:bg-white/10 rounded-full text-white/70 hover:text-white transition-all z-10"
+              >
+                <X className="w-6 h-6" />
+              </button>
 
-              {/* Meta info */}
-              <div className="flex flex-wrap items-center gap-3">
-                {currentAnime.score && (
-                  <div className="flex items-center gap-1 text-primary">
-                    <Star className="w-4 h-4" fill="currentColor" />
-                    <span className="font-semibold">{currentAnime.score.toFixed(1)}</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                {currentAnime.title}
+              </h2>
+
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
+                  <div className="flex items-center gap-2 text-primary mb-1">
+                    <Star className="w-5 h-5 fill-current" />
+                    <span className="font-bold text-lg">{currentAnime.score ? currentAnime.score.toFixed(1) : "N/A"}</span>
                   </div>
-                )}
-                <span className="px-2 py-0.5 bg-primary/20 border border-primary/50 rounded text-xs font-semibold text-primary">
-                  {currentAnime.rating}
-                </span>
-                <div className="flex items-center gap-1 text-muted-foreground text-sm">
-                  <Calendar className="w-4 h-4" />
-                  <span>{currentAnime.year}</span>
+                  <span className="text-xs text-zinc-400 uppercase tracking-wider">Score moyen</span>
                 </div>
-                {currentAnime.episodes && (
-                  <div className="flex items-center gap-1 text-muted-foreground text-sm">
-                    <Clock className="w-4 h-4" />
-                    <span>{currentAnime.episodes} épisodes</span>
+                <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
+                  <div className="flex items-center gap-2 text-white mb-1">
+                    <Calendar className="w-5 h-5" />
+                    <span className="font-bold text-lg">{currentAnime.year || "N/A"}</span>
                   </div>
-                )}
-              </div>
-
-              {/* Genres */}
-              <div className="flex flex-wrap gap-2">
-                {currentAnime.genres.map((genre) => (
-                  <span key={genre} className="px-3 py-1 bg-secondary rounded-full text-sm text-muted-foreground">
-                    {genre}
-                  </span>
-                ))}
-              </div>
-
-              {/* Description */}
-              <p className="text-muted-foreground leading-relaxed">
-                {currentAnime.description || "Aucune description disponible."}
-              </p>
-
-              {/* Studio */}
-              {currentAnime.studio && (
-                <div className="text-sm">
-                  <span className="text-muted-foreground">Studio : </span>
-                  <span className="text-foreground font-medium">{currentAnime.studio}</span>
+                  <span className="text-xs text-zinc-400 uppercase tracking-wider">Année</span>
                 </div>
-              )}
-
-              {/* Status */}
-              <div className="text-sm">
-                <span className="text-muted-foreground">Statut : </span>
-                <span className="text-foreground font-medium">
-                  {currentAnime.status === "RELEASING"
-                    ? "En cours"
-                    : currentAnime.status === "FINISHED"
-                      ? "Terminé"
-                      : currentAnime.status === "NOT_YET_RELEASED"
-                        ? "À venir"
-                        : currentAnime.status}
-                </span>
+                <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
+                  <div className="flex items-center gap-2 text-white mb-1">
+                    <Clock className="w-5 h-5" />
+                    <span className="font-bold text-lg">{currentAnime.episodes || "?"}</span>
+                  </div>
+                  <span className="text-xs text-zinc-400 uppercase tracking-wider">Épisodes</span>
+                </div>
+                <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
+                  <div className="text-white font-bold text-lg mb-1">{currentAnime.rating}</div>
+                  <span className="text-xs text-zinc-400 uppercase tracking-wider">Classification</span>
+                </div>
               </div>
 
-              {/* Action button */}
+              <div className="space-y-4 mb-8">
+                <h3 className="text-white font-semibold">Genres</h3>
+                <div className="flex flex-wrap gap-2">
+                  {currentAnime.genres.map((genre) => (
+                    <span key={genre} className="px-4 py-1.5 bg-white/5 hover:bg-white/10 border border-white/5 rounded-full text-sm text-zinc-300 transition-colors cursor-default">
+                      {genre}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <h3 className="text-white font-semibold">Synopsis</h3>
+                <p className="text-zinc-400 leading-relaxed text-sm md:text-base">
+                  {currentAnime.description || "Aucune description disponible pour cet anime."}
+                </p>
+              </div>
+
               <Link
                 href={`/anime/${currentAnime.id}`}
                 onClick={() => {
                   setShowInfoPopup(false)
                   window.scrollTo({ top: 0, behavior: "instant" })
                 }}
-                className="flex items-center justify-center gap-2 w-full py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                className="flex items-center justify-center gap-2 w-full py-4 bg-primary text-primary-foreground rounded-xl font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
               >
-                <Play className="w-5 h-5" fill="currentColor" />
-                Voir l'anime
+                <Play className="w-5 h-5 fill-current" />
+                Regarder maintenant
               </Link>
+
             </div>
           </div>
         </div>,

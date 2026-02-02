@@ -84,6 +84,7 @@ async function filterWithCrunchyroll(
     options: { filterUnavailable?: boolean } = {}
 ): Promise<CombinedAnime[]> {
     const results: CombinedAnime[] = []
+    const seenCrunchyrollIds = new Set<string>()
 
     for (const anime of animes) {
         // Try to find a match in the Crunchyroll catalog
@@ -100,9 +101,19 @@ async function filterWithCrunchyroll(
             }
         }
 
-        // Apply filtering if requested
+        // Strict Filtering: If requested, skip if no match
         if (options.filterUnavailable && !crunchyrollMatch) {
             continue
+        }
+
+        // Deduplication: If we already have this valid Crunchyroll ID, skip it
+        // This merges "Season 2", "Season 3" etc. into the first occurrence (usually the most popular/trending one)
+        if (crunchyrollMatch && seenCrunchyrollIds.has(crunchyrollMatch.crunchyrollId)) {
+            continue
+        }
+
+        if (crunchyrollMatch) {
+            seenCrunchyrollIds.add(crunchyrollMatch.crunchyrollId)
         }
 
         results.push({
@@ -142,7 +153,13 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
     // 3. Combine
     const { data: combinedData, isLoading: isCombining, error: combineError } = useSWR(
         anilistData && catalog ? `combined-${category}-${page}-${perPage}` : null,
-        () => anilistData && catalog ? filterWithCrunchyroll(anilistData, catalog, { filterUnavailable: false }) : [],
+        () => {
+            if (!anilistData || !catalog) return []
+            // Safety: Only enable strict filtering if we actually have a catalog to filter against
+            // This prevents showing "nothing" if the CR catalog API fails or is empty
+            const shouldFilter = catalog.size > 0
+            return filterWithCrunchyroll(anilistData, catalog, { filterUnavailable: shouldFilter })
+        },
         {
             keepPreviousData: true,
             fallbackData: []

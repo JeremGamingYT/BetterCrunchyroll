@@ -92,13 +92,22 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
             for (let i = 0; i < rawWatchlist.length; i++) {
                 const item = rawWatchlist[i]
                 try {
-                    // Add delay between API calls to prevent rate limiting (100ms minimum)
+                    // Add delay between API calls to prevent rate limiting (1000ms minimum)
+                    // AniList limit is ~90 req/min, so ~666ms per request.
+                    // We use 1000ms to be safe and allow other app requests to pass through.
                     if (i > 0) {
-                        await new Promise(resolve => setTimeout(resolve, 150))
+                        await new Promise(resolve => setTimeout(resolve, 1000))
                     }
 
                     // Try to find matching anime on AniList
-                    const anilistData = await searchAnimeBasicInfo(item.seriesTitle || item.title)
+                    // If AniList fails (rate limit/network), it checks expired cache or returns null
+                    let anilistData = await searchAnimeBasicInfo(item.seriesTitle || item.title)
+
+                    // Fallback to Jikan (MyAnimeList) if AniList has no data
+                    if (!anilistData) {
+                        const { searchJikanBasicInfo } = await import("@/lib/jikan")
+                        anilistData = await searchJikanBasicInfo(item.seriesTitle || item.title)
+                    }
 
                     if (anilistData) {
                         enriched.push({
@@ -108,7 +117,7 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
                             anilistScore: anilistData.score || undefined,
                             anilistGenres: anilistData.genres,
                             anilistImage: anilistData.image,
-                            // Override with AniList data if available
+                            // Override with AniList/Jikan data if available
                             color: anilistData.color || undefined,
                             score: anilistData.score || undefined,
                         })

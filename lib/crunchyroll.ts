@@ -103,7 +103,7 @@ if (typeof window !== "undefined") {
                 if (success) {
                     pending.resolve(data)
                 } else {
-                    pending.reject(new Error(error || 'API request failed'))
+                    pending.reject(new Error(error || 'API request failed (No token?)'))
                 }
             }
         }
@@ -379,7 +379,7 @@ export async function searchCrunchyroll(query: string, limit = 10): Promise<Crun
  * Returns the Crunchyroll series info if found, null otherwise
  */
 export async function checkAnimeAvailability(title: string): Promise<TransformedCrunchyrollAnime | null> {
-    const cacheKey = `availability_${title.toLowerCase().replace(/\s+/g, '_')}`
+    const cacheKey = `availability_v2_${title.toLowerCase().replace(/\s+/g, '_')}`
     const cached = getCache<TransformedCrunchyrollAnime | null>(cacheKey)
     if (cached !== null) return cached
 
@@ -387,33 +387,48 @@ export async function checkAnimeAvailability(title: string): Promise<Transformed
         const searchResult = await searchCrunchyroll(title, 5)
 
         if (!searchResult || searchResult.items.length === 0) {
-            // Cache the negative result too (but for shorter time)
             setCache(cacheKey, null)
             return null
         }
 
-        // Try to find an exact or close match
-        const normalizedQuery = title.toLowerCase().replace(/[^a-z0-9]/g, '')
-
-        // Priority 1: Exact matches for series
-        let match = searchResult.items.find(item => {
-            const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '')
-            return item.type === "series" && normalizedTitle === normalizedQuery
-        })
-
-        // Priority 2: Contains matches for series
-        if (!match) {
-            match = searchResult.items.find(item => {
-                const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '')
-                return item.type === "series" && (normalizedTitle.includes(normalizedQuery) || normalizedQuery.includes(normalizedTitle))
-            })
+        // Helper to normalize titles for comparison
+        // Removes subtitles (after :), seasons, special chars, etc.
+        const cleanTitle = (t: string) => {
+            return t.toLowerCase()
+                // Remove content after a colon (often subtitles/arc names like ": The Culling Game")
+                // but only if the part before colon is substantial (>3 chars) to avoid breaking short titles
+                .replace(/^(.{3,}):.+$/, '$1')
+                .replace(/\s*season\s*\d+/g, '') // Remove "Season X"
+                .replace(/\s*s\d+/g, '') // Remove "S2"
+                .replace(/[^a-z0-9]/g, '') // Allow only alphanumeric
         }
 
-        // Priority 3: Fallback to non-series if necessary (but usually not for anime series)
+        const targetTitle = cleanTitle(title)
+
+        // Find best match
+        let match = searchResult.items.find(item => {
+            if (item.type !== "series") return false
+            const itemTitle = cleanTitle(item.title)
+
+            // Check exact match after cleaning
+            if (itemTitle === targetTitle) return true
+
+            // Check if one contains the other (for cases like "Jujutsu Kaisen" matching "Jujutsu Kaisen 2nd Season")
+            if (itemTitle.includes(targetTitle) || targetTitle.includes(itemTitle)) return true
+
+            return false
+        })
+
         if (!match) {
+            // Last ditch effort: Check original titles for inclusion without aggressive cleaning
+            // This handles cases where the colon logic might have been too aggressive or not applicable
+            const simpleNorm = (t: string) => t.toLowerCase().replace(/[^a-z0-9]/g, '')
+            const simpleTarget = simpleNorm(title)
+
             match = searchResult.items.find(item => {
-                const normalizedTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '')
-                return normalizedTitle === normalizedQuery || normalizedTitle.includes(normalizedQuery)
+                if (item.type !== "series") return false
+                const simpleItem = simpleNorm(item.title)
+                return simpleItem.includes(simpleTarget) || simpleTarget.includes(simpleItem)
             })
         }
 
