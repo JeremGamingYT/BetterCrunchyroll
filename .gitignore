@@ -19,3 +19,14 @@ node_modules
 *.sln
 *.sw?
 .next
+
+# Test files
+test.py
+
+# HTML files
+crunchy-logo-svg.html
+crunchyroll-videopage-without-headeretc.html
+crunchyroll-watchpage.html
+video-player.html
+vilo.html
+watch.html
