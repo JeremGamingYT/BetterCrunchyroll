@@ -141,13 +141,10 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
     ? { target: "_blank" as const, rel: "noopener noreferrer" }
     : { scroll: false }
 
+  // We wrap the card in a div, and use the Link for the inner content (Image + Text)
+  // The Bookmark button is placed OUTSIDE the Link to prevent event bubbling/nesting issues
   return (
-    <Link
-      href={animeUrl}
-      {...linkProps}
-      onClick={isExternalLink ? undefined : () => {
-        window.scrollTo({ top: 0, behavior: "instant" })
-      }}
+    <div
       className={cn(
         "group/card relative flex-shrink-0 transition-all duration-300 block",
         compact ? "w-[160px] md:w-[180px]" : "w-[180px] md:w-[200px] lg:w-[220px]",
@@ -159,7 +156,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
         animationDelay: `${index * 50}ms`,
       }}
     >
-      {/* Card Container */}
+      {/* Container Logic */}
       <div
         className={cn(
           "relative aspect-[2/3] rounded-xl overflow-hidden",
@@ -171,21 +168,111 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           boxShadow: isHovered && animeColor ? `0 25px 50px -12px ${animeColor}40` : undefined,
         }}
       >
-        {/* Image */}
-        <img
-          src={imageError ? "/placeholder.svg?height=400&width=280&query=anime" : anime.image}
-          alt={anime.title}
-          className={cn(
-            "w-full h-full object-cover",
-            "transition-transform duration-700 ease-out",
-            isHovered && "scale-110",
-          )}
-          onError={() => setImageError(true)}
-        />
+        {/* Main Link Area (Image + Overlay) */}
+        <Link
+          href={animeUrl}
+          {...linkProps}
+          onClick={isExternalLink ? undefined : () => {
+            window.scrollTo({ top: 0, behavior: "instant" })
+          }}
+          className="block w-full h-full"
+        >
+          {/* Image */}
+          <img
+            src={imageError ? "/placeholder.svg?height=400&width=280&query=anime" : anime.image}
+            alt={anime.title}
+            className={cn(
+              "w-full h-full object-cover",
+              "transition-transform duration-700 ease-out",
+              isHovered && "scale-110",
+            )}
+            onError={() => setImageError(true)}
+          />
 
-        {/* Top Left Badges Stack */}
-        <div className="absolute top-3 left-3 flex flex-col items-start gap-1">
-          {/* Type badge (TV, Movie, etc.) at the top */}
+          {/* Hover Overlay */}
+          <div
+            className={cn(
+              "absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent",
+              "transition-opacity duration-500",
+              isHovered ? "opacity-100" : "opacity-0",
+            )}
+          >
+            {/* Play Button */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <button
+                className={cn(
+                  "rounded-full text-white",
+                  "transition-all duration-500",
+                  "hover:scale-110",
+                  "shadow-lg",
+                  compact ? "p-3" : "p-4",
+                  isHovered ? "scale-100 opacity-100" : "scale-75 opacity-0",
+                )}
+                style={{
+                  backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
+                  boxShadow: animeColor ? `0 10px 25px ${animeColor}50` : undefined,
+                }}
+              >
+                <Play className={cn(compact ? "w-4 h-4" : "w-6 h-6")} fill="currentColor" />
+              </button>
+            </div>
+
+            {/* Bottom Info */}
+            <div
+              className={cn(
+                "absolute bottom-0 left-0 right-0 p-4",
+                "transition-all duration-500",
+                isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+              )}
+            >
+              {/* Info Content ... */}
+              {currentEpisode && (
+                <div
+                  className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
+                  style={{
+                    backgroundColor: animeColor || "hsl(var(--primary))",
+                    color: "#fff"
+                  }}
+                >
+                  Ep {currentEpisode}
+                </div>
+              )}
+              <div className="flex items-center gap-2 mb-2">
+                {score && (
+                  <>
+                    <Star
+                      className="w-4 h-4"
+                      fill="currentColor"
+                      style={{ color: animeColor || "hsl(var(--primary))" }}
+                    />
+                    <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
+                  </>
+                )}
+                {!score && (
+                  <>
+                    <Star className="w-4 h-4 text-muted-foreground" />
+                    <span className="text-sm font-medium text-muted-foreground">N/A</span>
+                  </>
+                )}
+                {!currentEpisode && episodeText && <span className="text-xs text-muted-foreground ml-auto">{episodeText}</span>}
+              </div>
+              {genres.length > 0 && (
+                <div className="flex flex-wrap gap-1">
+                  {genres.slice(0, 2).map((genre) => (
+                    <span key={genre} className="text-xs px-2 py-0.5 rounded-full bg-secondary/80 text-muted-foreground">
+                      {genre}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </Link>
+
+        {/* Top Left Badges - Pointer events none so clicks go through to link if needed, 
+            but usually these are just visual. If they were clickable they'd need to be outside too. */}
+        <div className="absolute top-3 left-3 flex flex-col items-start gap-1 pointer-events-none">
+          {/* ... Badges code ... */}
           {(relationType || isWatchlistItem) && (
             <div
               className={cn(
@@ -200,8 +287,6 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
               {relationType?.replace(/_/g, " ") || "TV"}
             </div>
           )}
-
-          {/* Age rating below type */}
           {rating && (
             <div
               className={cn(
@@ -218,8 +303,6 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
               {rating}
             </div>
           )}
-
-          {/* Sub/Dub badge below age - only show if available */}
           {audioLabel && (
             <div
               className={cn(
@@ -235,13 +318,13 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
 
         {/* Airing Badge */}
         {showAiring && nextEpisode && (
-          <div className="absolute top-3 left-20 px-2 py-0.5 rounded text-xs font-bold bg-green-500/90 text-white flex items-center gap-1">
+          <div className="absolute top-3 left-20 px-2 py-0.5 rounded text-xs font-bold bg-green-500/90 text-white flex items-center gap-1 pointer-events-none">
             <Clock className="w-3 h-3" />
             {formatTimeUntil(nextEpisode.timeUntilAiring)}
           </div>
         )}
 
-        {/* Bookmark Button */}
+        {/* Bookmark Button - NOW OUTSIDE LINK */}
         <button
           onClick={async (e) => {
             e.preventDefault()
@@ -259,17 +342,16 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                 if (newState) {
                   await watchlistContext.addToWatchlist(idToUse)
                 } else {
-                  // If we have a watchlist item, use that ID, otherwise use available IDs
                   await watchlistContext.removeFromWatchlist(idToUse)
                 }
               } catch (error) {
                 console.error("Failed to update watchlist", error)
-                setIsBookmarked(!newState) // Revert on failure
+                setIsBookmarked(!newState)
               }
             }
           }}
           className={cn(
-            "absolute top-3 right-3 p-1.5 rounded-full",
+            "absolute top-3 right-3 p-1.5 rounded-full z-20 cursor-pointer", // Ensure z-index and cursor
             "transition-all duration-300",
             isBookmarked
               ? "bg-primary text-primary-foreground"
@@ -284,87 +366,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           <Bookmark className="w-4 h-4" fill={isBookmarked ? "currentColor" : "none"} />
         </button>
 
-        {/* Hover Overlay */}
-        <div
-          className={cn(
-            "absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent",
-            "transition-opacity duration-500",
-            isHovered ? "opacity-100" : "opacity-0",
-          )}
-        >
-          {/* Play Button */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <button
-              className={cn(
-                "rounded-full text-white",
-                "transition-all duration-500",
-                "hover:scale-110",
-                "shadow-lg",
-                compact ? "p-3" : "p-4",
-                isHovered ? "scale-100 opacity-100" : "scale-75 opacity-0",
-              )}
-              style={{
-                backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
-                boxShadow: animeColor ? `0 10px 25px ${animeColor}50` : undefined,
-              }}
-            >
-              <Play className={cn(compact ? "w-4 h-4" : "w-6 h-6")} fill="currentColor" />
-            </button>
-          </div>
-
-          {/* Bottom Info - Always show score/episode when available */}
-          <div
-            className={cn(
-              "absolute bottom-0 left-0 right-0 p-4",
-              "transition-all duration-500",
-              isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
-            )}
-          >
-            {/* Current Episode for watchlist items - displayed prominently */}
-            {currentEpisode && (
-              <div
-                className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
-                style={{
-                  backgroundColor: animeColor || "hsl(var(--primary))",
-                  color: "#fff"
-                }}
-              >
-                Ep {currentEpisode}
-              </div>
-            )}
-            <div className="flex items-center gap-2 mb-2">
-              {score && (
-                <>
-                  <Star
-                    className="w-4 h-4"
-                    fill="currentColor"
-                    style={{ color: animeColor || "hsl(var(--primary))" }}
-                  />
-                  <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
-                </>
-              )}
-              {!score && (
-                <>
-                  <Star className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-sm font-medium text-muted-foreground">N/A</span>
-                </>
-              )}
-              {/* For non-watchlist items, show episode info on the right */}
-              {!currentEpisode && episodeText && <span className="text-xs text-muted-foreground ml-auto">{episodeText}</span>}
-            </div>
-            {genres.length > 0 && (
-              <div className="flex flex-wrap gap-1">
-                {genres.slice(0, 2).map((genre) => (
-                  <span key={genre} className="text-xs px-2 py-0.5 rounded-full bg-secondary/80 text-muted-foreground">
-                    {genre}
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Border Glow - Dynamic color */}
+        {/* Border Glow */}
         <div
           className={cn(
             "absolute inset-0 rounded-xl border-2 transition-all duration-500 pointer-events-none",
@@ -377,7 +379,12 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
         />
       </div>
 
-      <div className={cn("mt-3 px-1", compact && "mt-2")}>
+      {/* Title Below */}
+      <Link
+        href={animeUrl}
+        {...linkProps}
+        className={cn("block mt-3 px-1", compact && "mt-2")}
+      >
         <h3
           className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
           style={{
@@ -391,7 +398,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             {"studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
           </p>
         )}
-      </div>
-    </Link>
+      </Link>
+    </div>
   )
 }

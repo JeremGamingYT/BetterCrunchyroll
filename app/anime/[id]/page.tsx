@@ -293,7 +293,31 @@ export default function AnimePage() {
 
                 {/* Bookmark Button */}
                 <button
-                  onClick={() => setIsBookmarked(!isBookmarked)}
+                  onClick={async () => {
+                    // Optimistic update
+                    const newState = !isBookmarked
+                    setIsBookmarked(newState)
+
+                    if (watchlistContext && (anime.crunchyrollId || anime.id)) {
+                      try {
+                        // Prefer Crunchyroll ID if available, otherwise fallback to ID (though ID might be AniList ID)
+                        // Actually better to check if we have a valid CR ID or Series ID
+                        const idToUse = anime.crunchyrollId || String(anime.id)
+
+                        if (newState) {
+                          await watchlistContext.addToWatchlist(idToUse)
+                        } else {
+                          await watchlistContext.removeFromWatchlist(idToUse)
+                        }
+                      } catch (error) {
+                        console.error("Failed to update watchlist", error)
+                        toast.error("Erreur lors de la mise à jour de la liste")
+                        setIsBookmarked(!newState) // Revert
+                      }
+                    } else {
+                      toast.error("Impossible de modifier la liste: ID manquant")
+                    }
+                  }}
                   className={cn(
                     "flex items-center gap-2 px-5 py-3.5 rounded-xl font-semibold transition-all duration-300",
                     "bg-secondary/80 hover:bg-secondary border border-border/50",

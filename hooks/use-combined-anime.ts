@@ -71,7 +71,9 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
                         crData = await browseCrunchyroll({ n: perPage, start, sort_by: 'newly_added' })
                         break
                     case 'simulcast':
-                        crData = await browseCrunchyroll({ n: perPage, start, sort_by: 'newly_added' })
+                        // Import locally to avoid circular dependencies
+                        const { getSimulcastSeries } = await import("@/lib/crunchyroll")
+                        crData = await getSimulcastSeries(perPage)
                         break
                     default:
                         crData = []
@@ -97,24 +99,10 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
                 })
             }
 
-            // 3. If CR Failed, Fallback to AniList
+            // 3. Fallback REMOVED to ensure strict CR availability
             if (crError) {
-                console.warn(`[CombinedAnime] Falling back to AniList for ${category}`)
-                let fallbackData: TransformedAnime[] = []
-                switch (category) {
-                    case 'trending': fallbackData = await getTrendingAnime(page, perPage); break;
-                    case 'popular': fallbackData = await getPopularAnime(page, perPage); break;
-                    case 'new': fallbackData = await getNewAnime(page, perPage); break;
-                    case 'simulcast': fallbackData = await getSimulcastAnime(page, perPage); break;
-                    default: fallbackData = []
-                }
-                return fallbackData.map(anime => ({
-                    ...anime,
-                    crunchyrollId: null,
-                    crunchyrollSlug: null,
-                    isOnCrunchyroll: false,
-                    crunchyrollInfo: null
-                }))
+                console.warn(`[CombinedAnime] CR failed for ${category}, returning empty list to avoid non-CR content.`)
+                return []
             }
 
             return []
@@ -138,41 +126,43 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
 // ===============================
 
 export async function searchWithCrunchyroll(query: string, page: number, perPage: number): Promise<CombinedAnime[]> {
-    // 1. Search AniList (reliable search)
-    const anilistData = await searchAnime(query, page, perPage * 2)
+    // 1. Search Crunchyroll DIRECTLY (No AniList search first)
+    // We import locally to avoid circular deps if any, though imports seem fine.
+    const { searchCrunchyroll } = await import("@/lib/crunchyroll")
 
-    // 2. Try to fetch CR catalog for matching (best effort)
     try {
-        const catalog = await getCrunchyrollCatalog(1000)
+        const crResults = await searchCrunchyroll(query, perPage)
 
-        const results: CombinedAnime[] = []
-        const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
-
-        for (const anime of anilistData) {
-            let match: TransformedCrunchyrollAnime | undefined
-            for (const [id, cr] of catalog) {
-                if (norm(cr.title) === norm(anime.title) || norm(cr.title) === norm(anime.titleRomaji)) {
-                    match = cr; break;
-                }
-            }
-            results.push({
-                ...anime,
-                crunchyrollId: match?.crunchyrollId || null,
-                crunchyrollSlug: match?.slug || null,
-                isOnCrunchyroll: !!match,
-                crunchyrollInfo: match || null
-            })
+        if (!crResults || !crResults.items || crResults.items.length === 0) {
+            return []
         }
-        return results
+
+        // Filter for series
+        const seriesItems = crResults.items.filter(i => i.type === 'series')
+
+        if (seriesItems.length === 0) return []
+
+        // Cast to CrunchyrollSeries for enrichment (structures are compatible enough for enrichment needs)
+        const crSeries = seriesItems as unknown as CrunchyrollSeries[]
+
+        // 2. Enrich with AniList
+        const enriched = await enrichAnimeList(crSeries)
+
+        // 3. Map to CombinedAnime
+        return enriched.map((item, index) => {
+            const original = crSeries[index]
+            return {
+                ...item,
+                crunchyrollId: original.id,
+                crunchyrollSlug: original.slug_title,
+                isOnCrunchyroll: true,
+                crunchyrollInfo: original as unknown as TransformedCrunchyrollAnime
+            }
+        })
+
     } catch (e) {
-        console.warn("[Search] CR Catalog fetch failed, returning AniList only", e)
-        return anilistData.map(anime => ({
-            ...anime,
-            crunchyrollId: null,
-            crunchyrollSlug: null,
-            isOnCrunchyroll: false,
-            crunchyrollInfo: null
-        }))
+        console.warn("[Search] CR Search failed", e)
+        return []
     }
 }
 

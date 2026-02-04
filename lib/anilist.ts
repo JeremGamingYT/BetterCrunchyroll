@@ -109,7 +109,15 @@ export async function enrichAnimeList(crItems: CrunchyrollSeries[]): Promise<Tra
 
       if (!anilistData) {
         // Only if NOT in cache, request from API (which handles rate limits)
-        anilistData = await searchAnimeBasicInfo(crItem.title)
+        // Add a timeout to prevent blocking the UI for too long (e.g. 2s)
+        // The background queue will eventually populate the cache for next time.
+        const fetchPromise = searchAnimeBasicInfo(crItem.title)
+
+        // Race: Fetch vs Timeout
+        // If timeout wins, we return null (no enrichment this time)
+        const timeoutPromise = new Promise<null>(resolve => setTimeout(() => resolve(null), 2000))
+
+        anilistData = await Promise.race([fetchPromise, timeoutPromise])
       }
 
       if (anilistData) {
@@ -749,7 +757,7 @@ query($page: Int, $perPage: Int) {
     setCache(cacheKey, transformed)
     return transformed
   } catch (error) {
-    const expired = getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION, true);
+    const expired = await getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION, true);
     if (expired) return expired;
     throw error;
   }
@@ -779,7 +787,7 @@ query($page: Int, $perPage: Int, $year: Int) {
     setCache(cacheKey, transformed)
     return transformed
   } catch (error) {
-    const expired = getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION, true);
+    const expired = await getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION, true);
     if (expired) return expired;
     throw error;
   }
@@ -901,7 +909,7 @@ query($page: Int, $perPage: Int, $airingAtGreater: Int, $airingAtLesser: Int) {
 // Get detailed anime info including characters, staff, relations
 export async function getAnimeDetails(id: number): Promise<AnimeDetails | null> {
   const cacheKey = `anime_details_${id} `
-  const cached = getCache<AnimeDetails>(cacheKey)
+  const cached = await getCache<AnimeDetails>(cacheKey)
   if (cached) return cached
 
   const query = `

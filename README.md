@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="50%" />
+<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="25%" />
 
 # 🎌 BetterCrunchyroll
 
@@ -23,6 +23,17 @@ Designed to feel faster, cleaner, smoother and more immersive.
 > The `main` branch contains unstable code and known breaking issues.
 >
 > 👉 **Only download official builds from the `Releases` section**.
+
+---
+
+> Spoiler images of the project :
+
+<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
+<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
+<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
+<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
+<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
+
 
 ---
 
