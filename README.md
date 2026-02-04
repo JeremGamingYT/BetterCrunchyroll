@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.png" alt="BetterCrunchyroll Banner" width="100%" />
+<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="100%" />
 
 # 🎌 BetterCrunchyroll
 
@@ -14,6 +14,17 @@ Designed to feel faster, cleaner, smoother and more immersive.
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 </div>
+
+## ⚠️ Important Notice
+
+> **DO NOT DOWNLOAD THE SOURCE CODE YET**
+>
+> The project is currently undergoing **major internal restructuring**.  
+> The `main` branch contains unstable code and known breaking issues.
+>
+> 👉 **Only download official builds from the `Releases` section**.
+
+---
 
 ## 🔥 Features — Project Status
 
@@ -57,17 +68,6 @@ Designed to feel faster, cleaner, smoother and more immersive.
 - [ ] **Automatic subtitle translation**  
   Google Translate by default  
   Optional AI-based translation via API key (advanced models).
-
----
-
-## ⚠️ Important Notice
-
-> **DO NOT DOWNLOAD THE SOURCE CODE YET**
->
-> The project is currently undergoing **major internal restructuring**.  
-> The `main` branch contains unstable code and known breaking issues.
->
-> 👉 **Only download official builds from the `Releases` section**.
 
 ---
 
