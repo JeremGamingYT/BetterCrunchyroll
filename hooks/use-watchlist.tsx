@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useState, useCallback, useMemo } from "react"
 import { useCrunchyrollAccount, useCrunchyrollWatchlist } from "./use-crunchyroll"
-import { searchAnimeBasicInfo, type AnimeBasicInfo } from "@/lib/anilist"
+import { searchAnimeBasicInfo, type TransformedAnime } from "@/lib/anilist"
 import type { TransformedWatchlistItem } from "@/lib/crunchyroll"
 
 // ===============================
@@ -74,7 +74,9 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
         }
     )
 
-    const isLoading = accountLoading || watchlistLoading || isEnriching
+    // Display data immediately, do not wait for enrichment
+    const isLoading = accountLoading || watchlistLoading
+    // Note: isEnriching is used only for background indicator if needed, but shouldn't block UI
 
     // Enrich watchlist with AniList data
     useEffect(() => {
@@ -83,54 +85,88 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
             return
         }
 
+        // Initialize with raw data immediately so user sees something
+        setEnrichedWatchlist(prev => {
+            // If we already have enriched items that match the new raw list, keep them (to prevent flashing)
+            // But if rawList changed significantly, we might want to reset. 
+            // For now, map raw items to EnrichedWatchlistItem structure
+            if (prev.length > 0 && prev[0].crunchyrollId === rawWatchlist[0].crunchyrollId) return prev;
+            return rawWatchlist.map(item => ({ ...item }))
+        })
+
         const enrichWatchlist = async () => {
             setIsEnriching(true)
+            const enrichedMap = new Map<string, EnrichedWatchlistItem>();
 
-            const enriched: EnrichedWatchlistItem[] = []
+            // Pre-fill with raw data
+            rawWatchlist.forEach(item => {
+                if (item.crunchyrollId) enrichedMap.set(item.crunchyrollId, { ...item });
+            });
 
-            // Process in batches to avoid rate limiting
+            // Process in batches
+            // optimization: Check cache first to avoid delays
+            const { getCache, sanitizeKey } = await import("@/lib/anilist");
+
             for (let i = 0; i < rawWatchlist.length; i++) {
                 const item = rawWatchlist[i]
+                if (!item.crunchyrollId) continue;
+
                 try {
-                    // Add delay between API calls to prevent rate limiting (1000ms minimum)
-                    // AniList limit is ~90 req/min, so ~666ms per request.
-                    // We use 1000ms to be safe and allow other app requests to pass through.
-                    if (i > 0) {
-                        await new Promise(resolve => setTimeout(resolve, 1000))
-                    }
+                    const cacheKey = `basic_info_${sanitizeKey(item.seriesTitle || item.title)}`
+                    // @ts-ignore - Dynamic import typing issue
+                    const cached = await getCache(cacheKey) as TransformedAnime | null
 
-                    // Try to find matching anime on AniList
-                    // If AniList fails (rate limit/network), it checks expired cache or returns null
-                    let anilistData = await searchAnimeBasicInfo(item.seriesTitle || item.title)
-
-                    // Fallback to Jikan (MyAnimeList) if AniList has no data
-                    if (!anilistData) {
-                        const { searchJikanBasicInfo } = await import("@/lib/jikan")
-                        anilistData = await searchJikanBasicInfo(item.seriesTitle || item.title)
-                    }
-
-                    if (anilistData) {
-                        enriched.push({
+                    if (cached) {
+                        // Immediate update from cache
+                        const updated: EnrichedWatchlistItem = {
                             ...item,
-                            anilistId: anilistData.id,
-                            anilistColor: anilistData.color || undefined,
-                            anilistScore: anilistData.score || undefined,
-                            anilistGenres: anilistData.genres,
-                            anilistImage: anilistData.image,
-                            // Override with AniList/Jikan data if available
-                            color: anilistData.color || undefined,
-                            score: anilistData.score || undefined,
-                        })
+                            anilistId: cached.id,
+                            anilistColor: cached.color || undefined,
+                            anilistScore: cached.score || undefined,
+                            anilistGenres: cached.genres,
+                            anilistImage: cached.image,
+                            color: cached.color || undefined,
+                            score: cached.score || undefined,
+                        }
+                        enrichedMap.set(item.crunchyrollId, updated)
+                        // Trigger update periodically or at end? 
+                        // Updating state inside loop can cause too many rerenders.
+                        // Let's batch updates or just do it at the end?
+                        // For a long list, we want *some* progress.
+                        // But React state updates are batched usually.
                     } else {
-                        enriched.push(item)
+                        // Needs API fetch
+                        // Add delay only if we are actually fetching
+                        if (i > 0) await new Promise(resolve => setTimeout(resolve, 800))
+
+                        let anilistData = await searchAnimeBasicInfo(item.seriesTitle || item.title)
+
+                        if (!anilistData) {
+                            const { searchJikanBasicInfo } = await import("@/lib/jikan")
+                            anilistData = await searchJikanBasicInfo(item.seriesTitle || item.title)
+                        }
+
+                        if (anilistData) {
+                            const updated = {
+                                ...item,
+                                anilistId: anilistData.id,
+                                anilistColor: anilistData.color || undefined,
+                                anilistScore: anilistData.score || undefined,
+                                anilistGenres: anilistData.genres,
+                                anilistImage: anilistData.image,
+                                color: anilistData.color || undefined,
+                                score: anilistData.score || undefined,
+                            }
+                            enrichedMap.set(item.crunchyrollId, updated)
+                        }
                     }
                 } catch {
-                    // Silently fallback to Crunchyroll data only (no console spam)
-                    enriched.push(item)
+                    // Ignore errors
                 }
             }
 
-            setEnrichedWatchlist(enriched)
+            // Final update after all processed
+            setEnrichedWatchlist(Array.from(enrichedMap.values()))
             setIsEnriching(false)
         }
 

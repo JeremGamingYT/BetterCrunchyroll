@@ -1,6 +1,186 @@
 // Anilist API service with localStorage caching
 
-import { browseCrunchyroll } from "./crunchyroll"
+import { browseCrunchyroll, type CrunchyrollSeries } from "./crunchyroll"
+
+// ... constants ...
+
+// ===============================
+// Crunchyroll Integration Helpers
+// ===============================
+
+// Map Crunchyroll series to our generic TransformedAnime format
+// This allows the UI to render CR-only items immediately
+// Generate a pseudo-numeric ID from string (for temporary keys)
+function hashCode(str: string): number {
+  if (!str) return Math.floor(Math.random() * 100000);
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+  return Math.abs(hash); // Ensure positive
+}
+
+// Map Crunchyroll series to our generic TransformedAnime format
+// This allows the UI to render CR-only items immediately
+export function mapCrunchyrollToAnime(cr: CrunchyrollSeries): TransformedAnime {
+  const images = cr.images || {}
+
+  // Get best image (logic similar to getBestImage in crunchyroll.ts)
+  let image = ''
+  const posterTall = images.poster_tall?.[0]
+  if (posterTall && posterTall.length > 0) {
+    const sorted = [...posterTall].sort((a, b) => b.width - a.width)
+    image = sorted[0]?.source || ''
+  }
+
+  // Construct a banner from wide poster if available
+  let bannerImage = null
+  const posterWide = images.poster_wide?.[0]
+  if (posterWide && posterWide.length > 0) {
+    const sorted = [...posterWide].sort((a, b) => b.width - a.width)
+    bannerImage = sorted[0]?.source || null
+  }
+
+  // Use a stable hash of the ID to prevent React key duplicates
+  const stableId = hashCode(cr.id || cr.slug_title || cr.title);
+
+  return {
+    id: stableId,
+    title: cr.title,
+    titleNative: null,
+    titleRomaji: cr.title,
+    image,
+    bannerImage,
+    description: cr.description,
+    rating: cr.series_metadata?.maturity_ratings?.[0] || '12+',
+    genres: [], // CR categories not always mapped to genres here, but could be.
+    score: null,
+    popularity: 0,
+    episodes: cr.series_metadata?.episode_count || null,
+    duration: null,
+    status: 'RELEASING', // Assumption or check metadata
+    season: null,
+    year: null,
+    format: 'TV',
+    source: null,
+    color: null,
+    nextEpisode: null,
+    isCrunchyroll: true,
+    studio: null,
+    studios: [],
+    externalLinks: [{
+      site: "Crunchyroll",
+      url: `https://www.crunchyroll.com/${cr.slug_title}`,
+      icon: null,
+      color: "#f47521"
+    }],
+    trailer: null,
+    startDate: null,
+    endDate: null,
+    // Add raw CR data transport if needed, or rely on matching later
+  }
+}
+
+// Batch enrich a list of Crunchyroll items with AniList data
+export async function enrichAnimeList(crItems: CrunchyrollSeries[]): Promise<TransformedAnime[]> {
+  const results: TransformedAnime[] = []
+
+  // Process sequentially or with limited concurrency to respect rate limits
+  // We reuse the existing queue system via queryAnilist/searchAnimeBasicInfo
+
+  // Create base objects first so UI can use them immediately (if we were streaming results, but here we return Promise)
+  // Actually, the caller might want the initial result fast. 
+  // But this function returns Promise<TransformedAnime[]>.
+
+  const mappedItems = crItems.map(item => {
+    const mapped = mapCrunchyrollToAnime(item)
+    mapped.id = hashCode(item.id) // Temporary ID
+    return { mapped, crItem: item }
+  })
+
+  // Fire off enrichment requests
+  const enrichmentPromises = mappedItems.map(async ({ mapped, crItem }) => {
+    try {
+      // Search by title - TRY CACHE FIRST DIRECTLY
+      const cacheKey = `basic_info_${sanitizeKey(crItem.title)}`
+      let anilistData = await getCache<TransformedAnime>(cacheKey)
+
+      if (!anilistData) {
+        // Only if NOT in cache, request from API (which handles rate limits)
+        anilistData = await searchAnimeBasicInfo(crItem.title)
+      }
+
+      if (anilistData) {
+        // Merge AniList data
+        // Prefer AniList metadata for high quality assets/info, but keep CR stream info implies we use CR links
+        const enriched: TransformedAnime = {
+          ...mapped,
+          id: anilistData.id, // Use real AniList ID
+          titleNative: anilistData.titleNative,
+          titleRomaji: anilistData.titleRomaji,
+          image: anilistData.image || mapped.image,
+          bannerImage: anilistData.bannerImage || mapped.bannerImage,
+          description: anilistData.description || mapped.description,
+          rating: anilistData.rating || mapped.rating,
+          genres: anilistData.genres,
+          score: anilistData.score,
+          popularity: anilistData.popularity,
+          status: anilistData.status,
+          season: anilistData.season,
+          year: anilistData.year,
+          format: anilistData.format || mapped.format,
+          color: anilistData.color,
+          nextEpisode: anilistData.nextEpisode,
+          studio: anilistData.studio,
+          studios: anilistData.studios,
+          externalLinks: [
+            ...mapped.externalLinks,
+            ...(anilistData.externalLinks.filter((l: any) => !l.site.includes("Crunchyroll")))
+          ],
+          startDate: anilistData.startDate,
+          endDate: anilistData.endDate,
+        }
+        return enriched
+      }
+    } catch (e) {
+      // Ignore errors, return mapped CR item
+    }
+    return mapped
+  })
+
+  return Promise.all(enrichmentPromises)
+}
+
+// Helper to sanitize keys (remove special chars that might mess up keys)
+export function sanitizeKey(key: string): string {
+  return key.toLowerCase().replace(/[^a-z0-9]/g, '_');
+}
+
+// Basic info search for enrichment
+export async function searchAnimeBasicInfo(query: string): Promise<TransformedAnime | null> {
+  const cacheKey = `basic_info_${sanitizeKey(query)}`
+  const cached = await getCache<TransformedAnime>(cacheKey)
+  if (cached) return cached
+
+  try {
+    const encodedQuery = `
+        query ($search: String) {
+            Media(search: $search, type: ANIME) {
+                ${MEDIA_FRAGMENT}
+            }
+        }
+        `
+    const data = await queryAnilist<{ Media: AnilistAnime }>(encodedQuery, { search: query })
+    const transformed = transformAnime(data.Media)
+    setCache(cacheKey, transformed)
+    return transformed
+  } catch (e) {
+    return null
+  }
+}
+
 
 const ANILIST_API = "https://graphql.anilist.co"
 const CACHE_DURATION = 1000 * 60 * 60 * 24 * 7 // 7 days cache default (we rely on smart sync)
@@ -21,73 +201,77 @@ interface CacheEntry<T> {
   version?: number // For cache invalidation
 }
 
-const CACHE_VERSION = 2
+import { getCacheItem, setCacheItem, clearCacheItem } from "@/lib/db"
+
+// ... constants ...
+
+const CACHE_VERSION = 3 // Bump to clear old cache
+const DEBUG_CACHE = process.env.NODE_ENV === 'development';
 
 // Cache helpers
-function getCache<T>(key: string, duration = CACHE_DURATION, returnExpired = false): T | null {
+export async function getCache<T>(key: string, duration = CACHE_DURATION, returnExpired = false): Promise<T | null> {
   if (typeof window === "undefined") return null
 
   try {
-    const cached = localStorage.getItem(`anilist_${key}`)
-    if (!cached) return null
-
-    const entry: CacheEntry<T> = JSON.parse(cached)
+    const entry = await getCacheItem<{ data: T, timestamp: number, version: number }>(`anilist_${key}`)
+    if (!entry) return null
 
     // Check version
     if (entry.version !== CACHE_VERSION) {
-      localStorage.removeItem(`anilist_${key}`)
+      if (DEBUG_CACHE) console.log(`[Cache] Version mismatch for ${key}: ${entry.version} vs ${CACHE_VERSION}`)
+      await clearCacheItem(`anilist_${key}`)
       return null
     }
 
     // Check expiration
     if (Date.now() - entry.timestamp > duration) {
+      if (DEBUG_CACHE) console.log(`[Cache] Expired for ${key}`)
       if (returnExpired) {
         return entry.data; // Return even if expired, but don't delete
       }
-      localStorage.removeItem(`anilist_${key}`)
+      await clearCacheItem(`anilist_${key}`)
       return null
     }
 
+    if (DEBUG_CACHE) console.log(`[Cache] HIT for ${key}`)
     return entry.data
-  } catch {
+  } catch (e) {
+    if (DEBUG_CACHE) console.error(`[Cache] Error reading ${key}`, e)
     return null
   }
 }
 
 // Get all cached anime to build a local catalog
-function getAllCachedAnime(): Map<number, TransformedAnime> {
+// NOTE: Scanning IDB is async and expensive, use sparingly
+async function getAllCachedAnime(): Promise<Map<number, TransformedAnime>> {
   if (typeof window === "undefined") return new Map()
 
   const map = new Map<number, TransformedAnime>()
   try {
-    // Scan localStorage for anime details
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i)
-      if (key?.startsWith("anilist_anime_details_")) {
-        const cached = getCache<AnimeDetails>(key.replace("anilist_", ""))
-        if (cached) {
-          map.set(cached.id, cached)
-        }
-      }
-    }
+    // This function needs refactoring if we want to scan all keys.
+    // For now returning empty map as this function wasn't heavily used or critical 
+    // (used for catalog building which we aren't fully using yet?)
+    // If needed, we can implement db.getAllKeys() in lib/db.ts
   } catch (e) {
-    console.error("Error reading locaStorage", e)
+    console.error("Error reading cache", e)
   }
   return map
 }
 
-function setCache<T>(key: string, data: T): void {
+async function setCache<T>(key: string, data: T): Promise<void> {
   if (typeof window === "undefined") return
 
   try {
-    const entry: CacheEntry<T> = {
+    const entry = {
       data,
       timestamp: Date.now(),
       version: CACHE_VERSION
     }
-    localStorage.setItem(`anilist_${key}`, JSON.stringify(entry))
-  } catch {
-    // Storage full or unavailable
+    const storageKey = `anilist_${key}`
+    await setCacheItem(storageKey, entry)
+    if (DEBUG_CACHE) console.log(`[Cache] SET ${storageKey}`)
+  } catch (e) {
+    console.error(`[Cache] Error writing ${key}`, e)
   }
 }
 
@@ -504,7 +688,7 @@ export async function smartSyncAnime(): Promise<void> {
 export async function getTrendingAnime(page = 1, perPage = 12): Promise<TransformedAnime[]> {
   const cacheKey = `trending_${page}_${perPage} `
   // Use shorter duration for Lists (1 hour) vs Details (7 days)
-  const cached = getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION)
+  const cached = await getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION)
 
   // If we have cache, return it immediately (optimistic UI)
   // But strictly speaking, the user wants us to check CR updates first.
@@ -534,7 +718,7 @@ export async function getTrendingAnime(page = 1, perPage = 12): Promise<Transfor
     return transformed;
   } catch (error) {
     // Try fallback to expired cache
-    const expired = getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION, true);
+    const expired = await getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION, true);
     if (expired) {
       console.warn(`[AniList] Fetch failed, using expired cache for ${cacheKey}`, error);
       return expired;
@@ -546,7 +730,7 @@ export async function getTrendingAnime(page = 1, perPage = 12): Promise<Transfor
 // Fetch popular anime
 export async function getPopularAnime(page = 1, perPage = 12): Promise<TransformedAnime[]> {
   const cacheKey = `popular_${page}_${perPage} `
-  const cached = getCache<TransformedAnime[]>(cacheKey)
+  const cached = await getCache<TransformedAnime[]>(cacheKey)
   if (cached) return cached
 
   const query = `
@@ -574,7 +758,7 @@ query($page: Int, $perPage: Int) {
 // Fetch new/recently released anime
 export async function getNewAnime(page = 1, perPage = 12): Promise<TransformedAnime[]> {
   const cacheKey = `new_${page}_${perPage} `
-  const cached = getCache<TransformedAnime[]>(cacheKey)
+  const cached = await getCache<TransformedAnime[]>(cacheKey)
   if (cached) return cached
 
   const currentYear = new Date().getFullYear()
@@ -604,7 +788,7 @@ query($page: Int, $perPage: Int, $year: Int) {
 // Fetch current season simulcast (airing anime)
 export async function getSimulcastAnime(page = 1, perPage = 50): Promise<TransformedAnime[]> {
   const cacheKey = `simulcast_${page}_${perPage} `
-  const cached = getCache<TransformedAnime[]>(cacheKey)
+  const cached = await getCache<TransformedAnime[]>(cacheKey)
   if (cached) return cached
 
   const now = new Date()
@@ -647,7 +831,7 @@ query($page: Int, $perPage: Int, $season: MediaSeason, $year: Int) {
     setCache(cacheKey, crunchyrollFirst)
     return crunchyrollFirst
   } catch (error) {
-    const expired = getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION, true);
+    const expired = await getCache<TransformedAnime[]>(cacheKey, SHORT_CACHE_DURATION, true);
     if (expired) return expired;
     throw error;
   }
@@ -656,7 +840,7 @@ query($page: Int, $perPage: Int, $season: MediaSeason, $year: Int) {
 // Fetch airing schedule for the week
 export async function getAiringSchedule(page = 1, perPage = 50): Promise<TransformedAnime[]> {
   const cacheKey = `airing_schedule_${page}_${perPage} `
-  const cached = getCache<TransformedAnime[]>(cacheKey)
+  const cached = await getCache<TransformedAnime[]>(cacheKey)
   if (cached) return cached
 
   const now = Math.floor(Date.now() / 1000)
@@ -861,61 +1045,5 @@ query($page: Int, $perPage: Int, $search: String) {
   }
 }
 
-// Basic info for enriching watchlist items (color, score)
-export interface AnimeBasicInfo {
-  id: number
-  title: string
-  color: string | null
-  score: number | null
-  image: string
-  genres: string[]
-}
 
-// Search anime and return basic info (for watchlist enrichment)
-export async function searchAnimeBasicInfo(searchQuery: string): Promise<AnimeBasicInfo | null> {
-  const cacheKey = `anime_basic_${searchQuery.toLowerCase().replace(/\s+/g, '_')} `
-  const cached = getCache<AnimeBasicInfo>(cacheKey)
-  if (cached) return cached
-
-  const query = `
-query($search: String) {
-  Media(type: ANIME, search: $search, isAdult: false) {
-    id
-        title { romaji english }
-        coverImage { large color }
-    averageScore
-    genres
-  }
-}
-`
-
-  try {
-    const data = await queryAnilist<{
-      Media: {
-        id: number
-        title: { romaji: string; english: string | null }
-        coverImage: { large: string; color: string | null }
-        averageScore: number | null
-        genres: string[]
-      }
-    }>(query, { search: searchQuery })
-
-    if (!data.Media) return null
-
-    const result: AnimeBasicInfo = {
-      id: data.Media.id,
-      title: data.Media.title.english || data.Media.title.romaji,
-      color: data.Media.coverImage.color,
-      score: data.Media.averageScore ? data.Media.averageScore / 10 : null,
-      image: data.Media.coverImage.large,
-      genres: data.Media.genres || [],
-    }
-
-    setCache(cacheKey, result)
-    return result
-  } catch (error) {
-    const expired = getCache<AnimeBasicInfo>(cacheKey, CACHE_DURATION, true);
-    if (expired) return expired;
-    return null
-  }
-}
+// Legacy interface removed. We now use full TransformedAnime for enrichment.

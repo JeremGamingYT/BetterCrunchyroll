@@ -506,15 +506,58 @@
 }
 
 /* ===============================
-   Hide Crunchyroll UI on Watch Pages
+   Hide Crunchyroll UI on Watch Pages (CSS-based, non-destructive)
    =============================== */
+
+/* Hide headers, footers, and non-player content */
 body.bcr-watch-page .app-layout__header--ywueY,
 body.bcr-watch-page .erc-large-header,
-body.bcr-watch-page .content-wrapper--MF5LS,
+body.bcr-watch-page [class*="header"]:not(#bcr-ui *):not([class*="player"]),
 body.bcr-watch-page .app-layout__footer--jgOfu,
 body.bcr-watch-page .footer--NNXrc,
-body.bcr-watch-page footer:not(.bcr-footer) {
+body.bcr-watch-page footer:not(.bcr-footer),
+body.bcr-watch-page [data-t="content-playback-info"],
+body.bcr-watch-page [class*="playback-info"]:not([class*="player"]),
+body.bcr-watch-page [class*="episode-info-container"]:not(#bcr-ui *),
+body.bcr-watch-page [class*="meta-tags"],
+body.bcr-watch-page [class*="series-link"]:not(#bcr-ui *),
+body.bcr-watch-page [class*="erc-recommendation"],
+body.bcr-watch-page [class*="up-next"],
+body.bcr-watch-page [class*="related-content"] {
   display: none !important;
+}
+
+/* CRITICAL: NEVER hide the player - explicit whitelist */
+body.bcr-watch-page #vilosRoot,
+body.bcr-watch-page #vilos,
+body.bcr-watch-page [id*="vilos"],
+body.bcr-watch-page [id*="player"],
+body.bcr-watch-page [class*="vilos"],
+body.bcr-watch-page [class*="video-player"],
+body.bcr-watch-page video,
+body.bcr-watch-page iframe[src*="player"],
+body.bcr-watch-page [data-testid*="player"],
+body.bcr-watch-page .velocity-player-package,
+body.bcr-watch-page #velocity-player-package {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Watch page layout when BCR is active */
+body.bcr-watch-page {
+  background: var(--bcr-bg, #0a0a0a) !important;
+  overflow-x: hidden;
+}
+
+/* Our UI container positioning */
+body.bcr-watch-page #bcr-ui {
+  position: relative;
+  z-index: 1;
+  /* Low z-index so player controls stay on top */
+  width: 100%;
+  background: var(--bcr-bg);
 }
 
 /* ===============================

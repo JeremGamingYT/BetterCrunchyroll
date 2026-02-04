@@ -1,0 +1,61 @@
+{
+    "manifest_version": 3,
+    "name": "BetterCrunchyroll",
+    "version": "1.0.0",
+    "description": "Une interface améliorée pour Crunchyroll avec des informations enrichies d'AniList",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "https://www.crunchyroll.com/*",
+        "https://beta-api.crunchyroll.com/*",
+        "https://graphql.anilist.co/*",
+        "https://cr-play-service.prd.crunchyrollsvc.com/*",
+        "http://localhost:3000/*"
+    ],
+    "action": {
+        "default_title": "BetterCrunchyroll",
+        "default_icon": "icons/logo.png"
+    },
+    "icons": {
+        "16": "icons/logo.png",
+        "32": "icons/logo.png",
+        "48": "icons/logo.png",
+        "128": "icons/logo.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.crunchyroll.com/*"
+            ],
+            "js": [
+                "content-script.js"
+            ],
+            "css": [
+                "content-style.css"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "injected-script.js",
+                "watch-ui.js",
+                "app/*",
+                "*.js",
+                "*.css",
+                "*.html"
+            ],
+            "matches": [
+                "https://www.crunchyroll.com/*"
+            ]
+        }
+    ]
+}

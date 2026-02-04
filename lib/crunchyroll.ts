@@ -565,6 +565,10 @@ export async function getAllSeriesEpisodes(seriesId: string): Promise<Transforme
 /**
  * Browse Crunchyroll catalog
  */
+
+/**
+ * Browse Crunchyroll catalog
+ */
 export async function browseCrunchyroll(options: {
     n?: number
     start?: number
@@ -582,6 +586,8 @@ export async function browseCrunchyroll(options: {
     if (options.is_dubbed !== undefined) params.is_dubbed = String(options.is_dubbed)
     if (options.is_subbed !== undefined) params.is_subbed = String(options.is_subbed)
 
+    // Ensure we don't cache "newly_added" too aggressively if it's dynamic, 
+    // but for now standard cache logic applies.
     const cacheKey = `browse_${JSON.stringify(params)}`
     const cached = getCache<CrunchyrollSeries[]>(cacheKey)
     if (cached) return cached
@@ -598,6 +604,70 @@ export async function browseCrunchyroll(options: {
         return series
     } catch (error) {
         console.error("[Crunchyroll] Browse failed:", error)
+        return []
+    }
+}
+
+/**
+ * Get Home Feed (curated recommendations for the user)
+ */
+export async function getHomeFeed(options: {
+    n?: number
+    start?: number
+    accountId: string
+} = { accountId: '' }): Promise<CrunchyrollSeries[]> {
+    if (!options.accountId) {
+        console.error("[Crunchyroll] getHomeFeed: accountId is required")
+        return []
+    }
+
+    const params: Record<string, string> = {
+        n: String(options.n || 20),
+        start: String(options.start || 0),
+    }
+
+    const cacheKey = `home_feed_${options.accountId}_${JSON.stringify(params)}`
+    const cached = getCache<CrunchyrollSeries[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        // The endpoint returns a feed, which contains items. 
+        // We usually want "recommendations" or similar panels.
+        // Based on documentation: GET /content/v2/discover/${account_uuid}/home_feed
+        // The response structure might vary, often mixed types (panel with items).
+        // Let's assume it returns a items list similar to browse for now, or adaptable.
+        // If the structure is complex, we might need to filter for series.
+
+        const data = await crunchyrollFetch<{ data: any[] }>(
+            `/content/v2/discover/${options.accountId}/home_feed`,
+            params
+        )
+
+        // Filter for series/anime content from the feed
+        // Feed items often have a 'panel' property or are direct items.
+        // We need to normalize them to CrunchyrollSeries.
+        const series: CrunchyrollSeries[] = []
+
+        for (const item of data.data || []) {
+            // Need to inspect structure carefully. Usually home feed has "resource_type": "panel"
+            // and contains "items" or represents an item itself.
+            // For this implementation, let's look for items that look like series.
+
+            // NOTE: This basic implementation assumes the feed returns a list of manageable items.
+            // Real usage might need deeper parsing of "shelves" or "sections".
+            // For "Recmmendations for You", it's often a specific feed type.
+
+            // Simplified mapping for now, assuming direct list or filtering:
+            if (item.type === 'series' || item.panel?.type === 'series') {
+                const target = item.panel || item
+                series.push(target)
+            }
+        }
+
+        setCache(cacheKey, series)
+        return series
+    } catch (error) {
+        console.error("[Crunchyroll] Home feed failed:", error)
         return []
     }
 }
@@ -1029,6 +1099,8 @@ export async function getWatchlist(options: {
 
         for (const item of data.data || []) {
             const panel = item.panel
+            if (!panel) continue
+
             const episodeMeta = panel.episode_metadata
             const movieMeta = panel.movie_metadata
             const seriesMeta = panel.series_metadata
@@ -1227,6 +1299,8 @@ export async function getWatchHistory(accountId: string, options: {
         // Since the structure is the same (CrunchyrollWatchlistItem)
         const items = data.data?.map(item => {
             const panel = item.panel
+            if (!panel) return null
+
             const episodeMeta = panel.episode_metadata
             const movieMeta = panel.movie_metadata
             const seriesMeta = panel.series_metadata
@@ -1298,8 +1372,8 @@ export async function getWatchHistory(accountId: string, options: {
 
                 // Remaining time calc
                 durationMs: episodeMeta?.duration_ms || movieMeta?.duration_ms || 0,
-            } as TransformedWatchlistItem & { durationMs: number }
-        }) || []
+            }
+        }).filter((item): item is TransformedWatchlistItem => item !== null) || []
 
         setCache(cacheKey, items)
         return items

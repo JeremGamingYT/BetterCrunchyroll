@@ -116,21 +116,8 @@
     // ===============================
 
     async function makeApiRequest(endpoint, params = {}) {
-        // Retry logic for token availability
         if (!accessToken || Date.now() >= tokenExpiry) {
             await loadStoredToken();
-        }
-
-        // If still no token, wait up to 5 seconds
-        if (!accessToken || Date.now() >= tokenExpiry) {
-            console.log('[BetterCrunchyroll] Waiting for token before API request...');
-            let attempts = 0;
-            while ((!accessToken || Date.now() >= tokenExpiry) && attempts < 50) {
-                await new Promise(r => setTimeout(r, 100));
-                attempts++;
-                // Try reloading from storage periodically (in case another tab refreshed it)
-                if (attempts % 10 === 0) await loadStoredToken();
-            }
         }
 
         if (!accessToken || Date.now() >= tokenExpiry) {
@@ -284,34 +271,10 @@
     }
 
     function cleanWatchPageForDOMInjection() {
-        // Add marker class
+        // Add marker class - CSS will handle hiding elements
+        // CRITICAL: We do NOT remove any elements to preserve player functionality
         document.body.classList.add('bcr-watch-page');
-
-        // Remove Crunchyroll UI elements (keep player)
-        const selectorsToRemove = [
-            '.app-layout__header--ywueY',
-            '.erc-large-header',
-            '.content-wrapper--MF5LS',
-            '.content-wrapper',
-            '.app-layout__footer--jgOfu',
-            '.footer--NNXrc',
-            'footer:not(.bcr-footer)',
-            // Additional selectors for content below player
-            '.erc-watch-page-body',
-            '.watch-page-content',
-            '[data-t="content-playback-info"]'
-        ];
-
-        selectorsToRemove.forEach(selector => {
-            document.querySelectorAll(selector).forEach(el => {
-                // Don't remove if it's our injected UI
-                if (!el.id?.startsWith('bcr') && !el.classList?.contains('bcr-ui')) {
-                    el.remove();
-                }
-            });
-        });
-
-        console.log('[BetterCrunchyroll] Watch page cleaned for DOM injection');
+        console.log('[BetterCrunchyroll] Watch page marked for BCR mode (CSS will hide elements)');
     }
 
     async function injectWatchPageUI() {

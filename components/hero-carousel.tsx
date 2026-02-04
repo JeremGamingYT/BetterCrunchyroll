@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react"
 import { createPortal } from "react-dom"
 import { ChevronLeft, ChevronRight, Play, Bookmark, Info, X, Star, Calendar, Clock } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { useTrendingAnime } from "@/hooks/use-anilist"
+import { useTrendingAnime } from "@/hooks/use-combined-anime"
 import { useWatchlistOptional } from "@/hooks/use-watchlist"
 import Link from "next/link"
 
