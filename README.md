@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="100%" />
+<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="80%" />
 
 # 🎌 BetterCrunchyroll
 
