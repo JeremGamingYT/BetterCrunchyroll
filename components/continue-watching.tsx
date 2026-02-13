@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, Play, X, Loader2 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useWatchHistory, useCrunchyrollAccount } from "@/hooks/use-crunchyroll"
 import type { TransformedWatchlistItem } from "@/lib/crunchyroll"
+import { FastAverageColor } from "fast-average-color"
 import Link from "next/link"
 
 export function ContinueWatching() {
@@ -131,6 +132,23 @@ interface ContinueWatchingCardProps {
 function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const [imageError, setImageError] = useState(false)
+  const [accentColor, setAccentColor] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (item.image) {
+      const fac = new FastAverageColor()
+      // Use a cross-origin friendly image if possible, or try directly
+      // Note: This might fail if CORS is strict on the image server, 
+      // but CR images usually allow it or are proxied.
+      fac.getColorAsync(item.image)
+        .then(color => {
+          setAccentColor(color.hex)
+        })
+        .catch(() => {
+          // If it fails, we fall back to default (null)
+        })
+    }
+  }, [item.image])
 
   // Calculate progress
   const durationSec = (item.durationMs || 0) / 1000
@@ -182,10 +200,15 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
             className={cn(
               "p-4 rounded-full bg-background/80 backdrop-blur-sm text-foreground",
               "transition-all duration-300",
-              "group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110",
+              "group-hover:scale-110",
               "border border-border/50",
               isHovered ? "scale-100 opacity-100" : "scale-90 opacity-70",
             )}
+            style={
+              isHovered && accentColor
+                ? { backgroundColor: accentColor, color: "#ffffff", borderColor: accentColor }
+                : {}
+            }
           >
             <Play className="w-6 h-6" fill="currentColor" />
           </div>
@@ -193,7 +216,9 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
 
         {/* Remaining Time - positioned above progress bar in bottom-right */}
         <div className="absolute bottom-3 right-3 px-2 py-1 rounded bg-background/80 backdrop-blur-sm">
-          <span className="text-xs font-medium text-foreground">{remainingMin}m restantes</span>
+          <span className="text-xs font-medium text-foreground">
+            {remainingMin > 0 ? `${remainingMin}m restantes` : "Terminé"}
+          </span>
         </div>
 
         {/* Progress Bar */}
@@ -211,8 +236,8 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
           className={cn(
             "font-semibold text-sm text-foreground line-clamp-1",
             "transition-colors duration-300",
-            isHovered && "text-primary",
           )}
+          style={isHovered && accentColor ? { color: accentColor } : {}}
         >
           {item.seriesTitle || item.title}
         </h3>

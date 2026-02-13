@@ -83,7 +83,7 @@ export function Header() {
   return (
     <>
       <AvatarSelector isOpen={isAvatarOpen} onClose={() => setIsAvatarOpen(false)} />
-      <header className="fixed top-4 left-4 right-4 z-[100] bg-background/85 backdrop-blur-2xl border border-border/40 rounded-2xl shadow-lg shadow-black/20">
+      <header className="fixed top-4 left-4 right-4 z-[100] bg-background/60 backdrop-blur-3xl border border-white/10 rounded-2xl shadow-lg shadow-black/20 transition-all duration-300 hover:bg-background/80">
         <div className="flex items-center justify-between h-16 px-4 md:px-8 lg:px-12">
           {/* Logo */}
           <div className="flex items-center gap-8">

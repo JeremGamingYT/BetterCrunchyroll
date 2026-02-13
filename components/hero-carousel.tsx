@@ -136,8 +136,8 @@ export function HeroCarousel() {
           {/* Title with premium typography */}
           <h1
             className={cn(
-              "text-4xl md:text-5xl lg:text-7xl font-black text-white leading-none tracking-tight",
-              "drop-shadow-2xl",
+              "text-5xl md:text-6xl lg:text-8xl font-black text-white leading-none tracking-wide font-bangers",
+              "drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]",
               "transition-all duration-700 ease-out transform",
               isAnimating ? "opacity-0 translate-y-12" : "opacity-100 translate-y-0",
             )}

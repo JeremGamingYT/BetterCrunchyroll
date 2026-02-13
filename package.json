@@ -45,6 +45,7 @@
     "cmdk": "1.0.4",
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
+    "fast-average-color": "^9.5.0",
     "idb": "^8.0.3",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",

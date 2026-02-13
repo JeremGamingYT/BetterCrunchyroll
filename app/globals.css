@@ -121,12 +121,26 @@
     @apply border-border outline-ring/50;
   }
 
+  html {
+    overflow-x: hidden;
+    /* Hide default scrollbar but keep functionality if needed, though usually on body */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: -0.01em;
+    overflow-x: hidden;
   }
 }
 
@@ -137,6 +151,12 @@
 
 .text-pretty {
   text-wrap: pretty;
+}
+
+.font-bangers {
+  font-family: var(--font-bangers);
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 h1,
