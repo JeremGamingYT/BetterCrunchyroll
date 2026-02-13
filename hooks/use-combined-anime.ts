@@ -86,8 +86,7 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
             // 2. If CR succeeded, Enrich with AniList (CACHE VISIBLE HERE due to async lookups)
             if (crData && crData.length > 0) {
                 const enriched = await enrichAnimeList(crData)
-                // Map to CombinedAnime format
-                return enriched.map((item, index) => {
+                let results = enriched.map((item, index) => {
                     const original = crData[index]
                     return {
                         ...item,
@@ -97,6 +96,16 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
                         crunchyrollInfo: original as unknown as TransformedCrunchyrollAnime
                     }
                 })
+
+                // Filter 'new' category to only show current/recent years (2025-2026+)
+                if (category === 'new') {
+                    const currentYear = new Date().getFullYear()
+                    results = results.filter(anime =>
+                        (anime.year && (anime.year >= currentYear || anime.year >= 2025))
+                    )
+                }
+
+                return results
             }
 
             // 3. Fallback REMOVED to ensure strict CR availability
@@ -110,7 +119,10 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
         {
             revalidateOnFocus: false,
             keepPreviousData: true,
-            shouldRetryOnError: false
+            shouldRetryOnError: true,
+            errorRetryCount: 3,
+            errorRetryInterval: 2000,
+            dedupingInterval: 60000
         }
     )
 

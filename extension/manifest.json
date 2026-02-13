@@ -33,9 +33,6 @@
             "js": [
                 "content-script.js"
             ],
-            "css": [
-                "content-style.css"
-            ],
             "run_at": "document_start"
         }
     ],

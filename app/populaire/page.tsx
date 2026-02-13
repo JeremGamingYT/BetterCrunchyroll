@@ -17,54 +17,68 @@ export default function PopulairePage() {
   }, [isLoading, error, popularAnimes])
 
   // Sort by score and popularity (combined)
+  // Sort by score and popularity (combined)
   const sortedAnimes = popularAnimes
     ? [...popularAnimes].sort((a, b) => {
-      // Combine score and popularity for ranking
-      const aScore = (a.score || 0) * 10 + (a.popularity ? Math.log10(a.popularity) : 0)
-      const bScore = (b.score || 0) * 10 + (b.popularity ? Math.log10(b.popularity) : 0)
-      return bScore - aScore
+      const scoreA = (a.score || 0)
+      const scoreB = (b.score || 0)
+      const popA = (a.popularity || 0)
+      const popB = (b.popularity || 0)
+
+      // Weighted Calculation:
+      // Score (0-10) is the primary factor.
+      // Popularity (Log10) is a secondary bonus.
+      // Factor 0.2 means: 10x popularity difference (Log diff = 1) is worth 0.2 score points.
+      // Checks:
+      // 9.0 (10k) vs 8.5 (1M). 9.0+(4*0.2)=9.8. 8.5+(6*0.2)=9.7. 9.0 wins.
+      // 8.3 (1m) vs 9.1 (10k). 8.3+(6*0.2)=9.5. 9.1+(4*0.2)=9.9. 9.1 wins.
+
+      const weightedA = scoreA + (Math.log10(popA + 1) * 0.2)
+      const weightedB = scoreB + (Math.log10(popB + 1) * 0.2)
+
+      return weightedB - weightedA
     })
     : []
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       <Header />
 
-      <div className="pt-24 pb-16 px-4 md:px-8 lg:px-12">
+      <div className="pt-36 pb-16 px-6 md:px-12 lg:px-20 max-w-[2000px] mx-auto">
         {/* Hero Section */}
-        <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">Populaires</h1>
-          <p className="text-muted-foreground flex items-center gap-2">
-            <Star className="w-4 h-4 text-primary" fill="currentColor" />
-            Classé par note et popularité
-            <Users className="w-4 h-4 text-muted-foreground ml-2" />
+        <div className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-black font-bangers tracking-wide mb-3">Populaires</h1>
+          <p className="text-lg text-muted-foreground flex items-center gap-2 font-medium">
+            <Star className="w-5 h-5 text-primary" fill="currentColor" />
+            Top Anime (Note + Popularité)
+            <Users className="w-5 h-5 text-muted-foreground ml-2" />
           </p>
         </div>
 
         {/* Loading State */}
         {isLoading && (
-          <div className="flex items-center justify-center py-20">
-            <Loader2 className="w-8 h-8 animate-spin text-primary" />
+          <div className="flex items-center justify-center py-32">
+            <Loader2 className="w-10 h-10 animate-spin text-primary" />
           </div>
         )}
 
         {/* Error State */}
         {error && !isLoading && (
-          <div className="flex flex-col items-center justify-center py-20 text-muted-foreground">
-            <p>Erreur lors du chargement. Veuillez réessayer.</p>
-            <p className="text-sm mt-2">Détail: {error?.message || String(error)}</p>
+          <div className="flex flex-col items-center justify-center py-32 text-muted-foreground">
+            <p className="text-lg font-medium">Erreur lors du chargement.</p>
+            <button onClick={() => window.location.reload()} className="mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+              Réessayer
+            </button>
+            <p className="text-sm mt-4 opacity-50">Détail: {error?.message || String(error)}</p>
           </div>
         )}
 
-        {/* Grid of Anime Cards with ranking */}
+        {/* Grid of Anime Cards */}
         {!isLoading && !error && sortedAnimes.length > 0 && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-6 gap-y-10 md:gap-x-8 md:gap-y-12">
             {sortedAnimes.map((anime, index) => (
-              <div key={anime.id} className="relative">
-                {/* Ranking Badge */}
-                <div className="absolute -top-2 -left-2 z-10 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm shadow-lg">
-                  {index + 1}
-                </div>
+              <div key={anime.id} className="relative group">
+                {/* No Rank Badge - Clean Design */}
                 <AnimeCard anime={anime} index={index} />
               </div>
             ))}

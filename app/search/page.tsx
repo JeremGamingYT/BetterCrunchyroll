@@ -75,33 +75,30 @@ export default function SearchPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-24">
-        <div className="h-[280px] bg-gradient-to-br from-primary/20 via-background to-background relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Rechercher</h1>
+      <section className="relative pt-32 pb-8">
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black font-bangers tracking-wide text-foreground mb-8">Rechercher</h1>
 
-            {/* Search Input */}
-            <div className="w-full max-w-2xl relative">
-              <div className="flex items-center gap-3 bg-card border border-border rounded-2xl px-5 py-4 shadow-lg">
-                <Search className="w-6 h-6 text-muted-foreground flex-shrink-0" />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Rechercher un anime, un genre, un studio..."
-                  className="flex-1 bg-transparent text-lg text-foreground placeholder:text-muted-foreground focus:outline-none"
-                  autoFocus
-                />
-                {searchQuery && (
-                  <button
-                    onClick={() => setSearchQuery("")}
-                    className="p-1.5 rounded-full hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <X className="w-5 h-5" />
-                  </button>
-                )}
-              </div>
+          {/* Search Input */}
+          <div className="w-full max-w-2xl relative">
+            <div className="flex items-center gap-3 bg-card border border-border rounded-2xl px-5 py-4 shadow-lg focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+              <Search className="w-6 h-6 text-muted-foreground flex-shrink-0" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Rechercher un anime, un genre, un studio..."
+                className="flex-1 bg-transparent text-lg text-foreground placeholder:text-muted-foreground focus:outline-none font-medium"
+                autoFocus
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="p-1.5 rounded-full hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              )}
             </div>
           </div>
         </div>
