@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils"
+import { Facebook, Twitter, Instagram, Youtube, Share2 } from "lucide-react"
 
 const footerLinks = [
   {
@@ -72,18 +73,24 @@ export function Footer() {
         {/* Social Links */}
         <div className="flex flex-wrap items-center justify-between gap-4 pt-8 border-t border-border">
           <div className="flex items-center gap-4">
-            {["Facebook", "Twitter", "Instagram", "YouTube", "TikTok"].map((social) => (
+            {[
+              { label: "Facebook", icon: Facebook, href: "#" },
+              { label: "Twitter", icon: Twitter, href: "#" },
+              { label: "Instagram", icon: Instagram, href: "#" },
+              { label: "YouTube", icon: Youtube, href: "#" },
+              { label: "TikTok", icon: Share2, href: "#" } // Using Share2 as placeholder for TikTok if not available in this version
+            ].map((social) => (
               <a
-                key={social}
-                href="#"
+                key={social.label}
+                href={social.href}
                 className={cn(
                   "w-10 h-10 rounded-full bg-secondary flex items-center justify-center",
                   "text-muted-foreground hover:text-primary hover:bg-primary/10",
                   "transition-all duration-300 hover:scale-110",
                 )}
               >
-                <span className="sr-only">{social}</span>
-                <span className="text-xs font-bold">{social[0]}</span>
+                <span className="sr-only">{social.label}</span>
+                <social.icon className="w-5 h-5" />
               </a>
             ))}
           </div>

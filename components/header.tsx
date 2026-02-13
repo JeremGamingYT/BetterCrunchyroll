@@ -107,35 +107,59 @@ export function Header() {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1">
               {navItems.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.disabled ? "#" : item.href}
-                  onClick={(e) => {
-                    if (item.disabled) {
-                      e.preventDefault()
-                    } else {
-                      handleNavigation(item.href)
-                    }
-                  }}
-                  className={cn(
-                    "flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground",
-                    "hover:text-foreground transition-all duration-300 rounded-lg hover:bg-secondary/50",
-                    "relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2",
-                    "after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300",
-                    "hover:after:w-full",
-                    pathname === item.href &&
-                    item.href !== "#categories" &&
-                    !item.disabled &&
-                    "text-primary after:w-full",
-                    item.disabled &&
-                    "opacity-50 cursor-not-allowed hover:text-muted-foreground hover:bg-transparent hover:after:w-0",
+                <div key={item.label} className="relative group/nav">
+                  <Link
+                    href={item.disabled ? "#" : item.href}
+                    onClick={(e) => {
+                      if (item.disabled) {
+                        e.preventDefault()
+                      } else {
+                        handleNavigation(item.href)
+                      }
+                    }}
+                    className={cn(
+                      "flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground",
+                      "hover:text-foreground transition-all duration-300 rounded-lg hover:bg-secondary/50",
+                      "relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2",
+                      "after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300",
+                      "hover:after:w-full",
+                      pathname === item.href &&
+                      item.href !== "#categories" &&
+                      !item.disabled &&
+                      "text-primary after:w-full",
+                      item.disabled &&
+                      "opacity-50 cursor-not-allowed hover:text-muted-foreground hover:bg-transparent hover:after:w-0",
+                    )}
+                  >
+                    {item.label}
+                    {item.hasDropdown && (
+                      <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover/nav:rotate-180" />
+                    )}
+                  </Link>
+
+                  {/* Categories Dropdown */}
+                  {item.label === "Catégories" && (
+                    <div className="absolute top-full left-0 pt-2 w-64 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-300 z-50">
+                      <div className="bg-card/95 backdrop-blur-3xl border border-white/10 rounded-xl shadow-xl p-2 grid grid-cols-2 gap-1">
+                        {[
+                          "Action", "Aventure", "Comédie", "Drame",
+                          "Fantasy", "Romance", "Sci-Fi", "Seinen",
+                          "Shonen", "Shojo", "Slice of Life", "Sports",
+                          "Thriller", "Surnaturel"
+                        ].map((genre) => (
+                          <Link
+                            key={genre}
+                            href={`/search?q=${genre}`}
+                            onClick={() => handleNavigation(`/search?q=${genre}`)}
+                            className="px-3 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-secondary/50 rounded-lg transition-colors text-center"
+                          >
+                            {genre}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
                   )}
-                >
-                  {item.label}
-                  {item.hasDropdown && (
-                    <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
-                  )}
-                </Link>
+                </div>
               ))}
             </nav>
           </div>

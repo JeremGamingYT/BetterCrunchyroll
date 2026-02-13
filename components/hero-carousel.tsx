@@ -136,9 +136,13 @@ export function HeroCarousel() {
           {/* Title with premium typography */}
           <h1
             className={cn(
-              "text-5xl md:text-6xl lg:text-8xl font-black text-white leading-none tracking-wide font-bangers",
+              "font-black text-white leading-none tracking-wide font-bangers",
               "drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]",
               "transition-all duration-700 ease-out transform",
+              // Dynamic sizing based on title length
+              displayAnime.title.length > 30 ? "text-4xl md:text-5xl lg:text-6xl" :
+                displayAnime.title.length > 20 ? "text-5xl md:text-6xl lg:text-7xl" :
+                  "text-5xl md:text-6xl lg:text-8xl",
               isAnimating ? "opacity-0 translate-y-12" : "opacity-100 translate-y-0",
             )}
           >

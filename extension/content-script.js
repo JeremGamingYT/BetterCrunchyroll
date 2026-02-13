@@ -1,6 +1,6 @@
 // BetterCrunchyroll - Content Script
 // Injects into page context to intercept Crunchyroll's token
-// Watch pages: Direct DOM injection
+// Watch pages: Direct DOM injection (DISABLED)
 // Other pages: iframe overlay
 
 (function () {
@@ -164,263 +164,16 @@
     }
 
     // ===============================
-    // Watch Page: Direct DOM Injection
+    // Watch Page: Direct DOM Injection - DISABLED
     // ===============================
 
     function isWatchPage() {
         return /\/watch\//.test(window.location.pathname);
     }
 
-    function getEpisodeIdFromUrl() {
-        const match = window.location.pathname.match(/\/watch\/([A-Z0-9]+)/i);
-        return match ? match[1] : null;
-    }
-
-    // Wait for player container to exist in DOM
-    function waitForPlayerContainer(timeout = 10000) {
-        return new Promise((resolve) => {
-            const selectors = [
-                '#vilos',
-                '#vilosRoot',
-                '#velocity-player-package',
-                '[data-testid="vilos-player"]',
-                '.video-player-wrapper',
-                '.erc-video-container',
-                '[class*="player"]',
-                'video'
-            ];
-
-            const check = () => {
-                for (const selector of selectors) {
-                    const el = document.querySelector(selector);
-                    if (el) {
-                        console.log('[BetterCrunchyroll] Found player container:', selector);
-                        return el;
-                    }
-                }
-                return null;
-            };
-
-            // Check immediately
-            const found = check();
-            if (found) {
-                resolve(found);
-                return;
-            }
-
-            // Set up observer
-            const startTime = Date.now();
-            const observer = new MutationObserver(() => {
-                const found = check();
-                if (found) {
-                    observer.disconnect();
-                    resolve(found);
-                } else if (Date.now() - startTime > timeout) {
-                    observer.disconnect();
-                    console.warn('[BetterCrunchyroll] Timeout waiting for player container');
-                    resolve(null);
-                }
-            });
-
-            observer.observe(document.body || document.documentElement, {
-                childList: true,
-                subtree: true
-            });
-
-            // Also set a timeout fallback
-            setTimeout(() => {
-                observer.disconnect();
-                resolve(check());
-            }, timeout);
-        });
-    }
-
-    // Track injection state
-    let isInjecting = false;
-    let lastInjectionTime = 0;
-
-    async function fetchEpisodeData(episodeId) {
-        try {
-            // Fetch episode info
-            const episodeResponse = await makeApiRequest(`/content/v2/cms/objects/${episodeId}`, {
-                ratings: 'true'
-            });
-            const episode = episodeResponse.data?.[0];
-
-            if (!episode) {
-                throw new Error('Episode not found');
-            }
-
-            // Fetch series info
-            const seriesId = episode.episode_metadata?.series_id || episode.series_id;
-            let series = { id: seriesId, title: episode.episode_metadata?.series_title || 'Série' };
-            let episodes = [episode];
-
-            if (seriesId) {
-                try {
-                    const seriesResponse = await makeApiRequest(`/content/v2/cms/series/${seriesId}`, {});
-                    if (seriesResponse.data?.[0]) {
-                        series = seriesResponse.data[0];
-                    }
-
-                    // Fetch all episodes of the season
-                    const seasonId = episode.episode_metadata?.season_id;
-                    if (seasonId) {
-                        const episodesResponse = await makeApiRequest(`/content/v2/cms/seasons/${seasonId}/episodes`, {});
-                        if (episodesResponse.data) {
-                            episodes = episodesResponse.data;
-                        }
-                    }
-                } catch (e) {
-                    console.warn('[BetterCrunchyroll] Failed to fetch series/episodes:', e);
-                }
-            }
-
-            return { episode, series, episodes };
-        } catch (error) {
-            console.error('[BetterCrunchyroll] Error fetching episode data:', error);
-            return null;
-        }
-    }
-
-    function cleanWatchPageForDOMInjection() {
-        // Add marker class
-        document.body.classList.add('bcr-watch-page');
-
-        // Remove Crunchyroll UI elements (keep player)
-        const selectorsToRemove = [
-            '.app-layout__header--ywueY',
-            '.erc-large-header',
-            '.content-wrapper--MF5LS',
-            '.content-wrapper',
-            '.app-layout__footer--jgOfu',
-            '.footer--NNXrc',
-            'footer:not(.bcr-footer)',
-            // Additional selectors for content below player
-            '.erc-watch-page-body',
-            '.watch-page-content',
-            '[data-t="content-playback-info"]'
-        ];
-
-        selectorsToRemove.forEach(selector => {
-            document.querySelectorAll(selector).forEach(el => {
-                // Don't remove if it's our injected UI
-                if (!el.id?.startsWith('bcr') && !el.classList?.contains('bcr-ui')) {
-                    el.remove();
-                }
-            });
-        });
-
-        console.log('[BetterCrunchyroll] Watch page cleaned for DOM injection');
-    }
-
     async function injectWatchPageUI() {
-        // Prevent concurrent injections
-        if (isInjecting) {
-            console.log('[BetterCrunchyroll] Injection already in progress, skipping');
-            return;
-        }
-
-        // Debounce rapid calls
-        const now = Date.now();
-        if (now - lastInjectionTime < 500) {
-            console.log('[BetterCrunchyroll] Debouncing injection');
-            return;
-        }
-        lastInjectionTime = now;
-        isInjecting = true;
-
-        console.log('[BetterCrunchyroll] Injecting Watch Page UI via DOM...');
-
-        try {
-            // Load the UI module
-            if (!window.WatchPageUI) {
-                await new Promise((resolve, reject) => {
-                    const existingScript = document.querySelector('script[src*="watch-ui.js"]');
-                    if (existingScript) {
-                        // Wait a bit for it to load
-                        setTimeout(resolve, 200);
-                        return;
-                    }
-                    const script = document.createElement('script');
-                    script.src = chrome.runtime.getURL('watch-ui.js');
-                    script.onload = () => {
-                        console.log('[BetterCrunchyroll] Watch UI module loaded');
-                        setTimeout(resolve, 100); // Small delay for script execution
-                    };
-                    script.onerror = reject;
-                    document.head.appendChild(script);
-                });
-            }
-
-            // Clean up existing injected UI
-            const existingUI = document.getElementById('bcr-ui');
-            if (existingUI) existingUI.remove();
-
-            // Clean Crunchyroll UI
-            cleanWatchPageForDOMInjection();
-
-            // Get episode ID
-            const episodeId = getEpisodeIdFromUrl();
-            if (!episodeId) {
-                console.error('[BetterCrunchyroll] Could not get episode ID from URL');
-                return;
-            }
-
-            // Wait for player container
-            const playerContainer = await waitForPlayerContainer(8000);
-
-            // Show loading state
-            const loadingDiv = document.createElement('div');
-            loadingDiv.id = 'bcr-ui';
-            loadingDiv.innerHTML = `
-                <div style="background:#0a0a0a;padding:40px;text-align:center;">
-                    <div style="width:40px;height:40px;border:3px solid rgba(249,115,22,0.3);border-top-color:#f97316;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto;"></div>
-                    <p style="color:#a1a1a1;margin-top:16px;">Chargement des informations...</p>
-                </div>
-            `;
-
-            if (playerContainer) {
-                // Insert after player
-                playerContainer.after(loadingDiv);
-            } else {
-                // Fallback: append to body
-                document.body.appendChild(loadingDiv);
-            }
-
-            // Fetch data
-            const data = await fetchEpisodeData(episodeId);
-
-            if (!data) {
-                loadingDiv.innerHTML = `
-                    <div style="background:#0a0a0a;padding:40px;text-align:center;">
-                        <p style="color:#f97316;font-size:18px;font-weight:bold;">Erreur de chargement</p>
-                        <p style="color:#a1a1a1;margin-top:8px;">Impossible de charger les informations de l'épisode.</p>
-                    </div>
-                `;
-                return;
-            }
-
-            const { episode, series, episodes } = data;
-
-            // Render UI
-            if (window.WatchPageUI) {
-                loadingDiv.outerHTML = window.WatchPageUI.render(episode, series, episodes, episodeId);
-
-                // Setup event listeners
-                const uiContainer = document.getElementById('bcr-ui');
-                if (uiContainer) {
-                    window.WatchPageUI.setupEventListeners(uiContainer);
-                    window.WatchPageUI.updateDetails(episode);
-                }
-
-                console.log('[BetterCrunchyroll] Watch page UI injected successfully');
-            }
-        } catch (error) {
-            console.error('[BetterCrunchyroll] Error injecting UI:', error);
-        } finally {
-            isInjecting = false;
-        }
+        console.log('[BetterCrunchyroll] Custom Watch UI is DISABLED. Using official player.');
+        return;
     }
 
     // ===============================
@@ -501,7 +254,13 @@
             if (animeMatch) crunchyrollPath = `/${locale}/series/${animeMatch[1]}`;
 
             const watchMatch = path.match(/^\/watch\/([A-Za-z0-9\-_]+)/);
-            if (watchMatch) crunchyrollPath = `/${locale}/watch/${watchMatch[1]}`;
+            if (watchMatch) {
+                crunchyrollPath = `/${locale}/watch/${watchMatch[1]}`;
+                // CRITICAL FIX: Force full page load for watch page to ensure official player loads
+                console.log('[BetterCrunchyroll] Navigating to Watch Page (Full Redirect):', crunchyrollPath);
+                window.location.href = crunchyrollPath;
+                return;
+            }
 
             // CRITICAL FIX: Only navigate if URL actually changed to prevent infinite loop
             if (crunchyrollPath === window.location.pathname) {
@@ -573,20 +332,8 @@
 
         // Check if watch page
         if (isWatchPage()) {
-            console.log('[BetterCrunchyroll] Watch page detected - using DOM injection');
-
-            // Wait for DOM to be stable and player to initialize
-            await new Promise(r => setTimeout(r, 500));
-
-            // Wait for body to exist
-            while (!document.body) {
-                await new Promise(r => setTimeout(r, 100));
-            }
-
-            await injectWatchPageUI();
-
-            // Note: Removed re-injection observer - it caused infinite loops
-            // UI is injected once and stays until navigation
+            console.log('[BetterCrunchyroll] Watch page detected - Leaving official player intact.');
+            // Do NOT inject UI. Do NOT clean page.
         } else {
             // Check server
             try {
@@ -627,8 +374,9 @@
                 const isNowWatchPage = isWatchPage();
 
                 if (isNowWatchPage && !wasWatchPage) {
-                    // Navigated TO watch page
-                    setTimeout(() => injectWatchPageUI(), 500);
+                    // Navigated TO watch page, reload to ensure official player loads clean
+                    console.log('[BetterCrunchyroll] Navigated to Watch Page - Reloading...');
+                    window.location.reload();
                 } else if (!isNowWatchPage && wasWatchPage) {
                     // Navigated AWAY from watch page
                     const bcrUI = document.getElementById('bcr-ui');
@@ -638,8 +386,9 @@
                     const appPath = mapToAppUrl(location.pathname);
                     injectIframeUI(appPath);
                 } else if (isNowWatchPage && wasWatchPage) {
-                    // Different watch page - re-inject
-                    setTimeout(() => injectWatchPageUI(), 500);
+                    // Watch page internal navigation
+                    console.log('[BetterCrunchyroll] Watch Page internal nav - Reloading...');
+                    window.location.reload();
                 }
             }
         }, 500);
@@ -653,7 +402,8 @@
         lastUrl = location.href; // Sync to prevent double handling
 
         if (isWatchPage()) {
-            setTimeout(() => injectWatchPageUI(), 300);
+            // Reload to clear iframe overlay if present and load official player
+            window.location.reload();
         } else {
             const iframe = document.getElementById('bcr-frame');
             if (iframe) {
@@ -664,4 +414,3 @@
     });
 
 })();
-
