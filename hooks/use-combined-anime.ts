@@ -260,67 +260,102 @@ export function useTrendingAnime(page = 1, perPage = 20) {
 }
 
 export function usePopularAnime(page = 1, perPage = 20) {
-    const { data: apiData, isLoading, error } = useSWR(
-        `api-popular-${page}-${perPage}`,
+    // On récupère toujours la liste complète des populaires côté API,
+    // puis on fait la pagination côté client (20 par 20, etc.)
+    const { data: allData, isLoading, error } = useSWR(
+        `api-popular-all`,
         async () => {
             try {
-                // Fetch fresh data from API with pagination - NO CACHE for pagination
-                const limit = perPage
-                const total = perPage
-                const response = await fetch(`/api/populaire?limit=${limit}&total=${total}&offset=${(page - 1) * perPage}&sortBy=combined`)
+                // On demande un gros lot à l'API (max 500 défini côté route)
+                const limit = 500
+                const response = await fetch(`/api/populaire?limit=${limit}&offset=0&sortBy=combined`)
                 
                 if (!response.ok) {
                     throw new Error('Failed to fetch popular anime')
                 }
                 
                 const json = await response.json()
-                
-                // Transform API response to CombinedAnime format
-                const transformed = (json.data || []).map((item: any) => {
-                    // Calculate popularity score (0-100) à partir du score combiné (0-5)
-                    const popularityScore = Math.round(((item.combined?.score || 0) * 20) * 10) / 10
-                    // Note Crunchyroll brute (0-10)
-                    const crAverage = parseFloat(item.crunchyroll?.rating?.average || "0")
 
-                    return {
-                        id: item.id,
-                        anilistId: item.anilist?.id || null,
-                        title: item.title,
-                        titleRomaji: item.title,
-                        titleEnglish: item.title,
-                        description: item.description || '',
-                        image: item.images?.poster_tall?.[0]?.[item.images.poster_tall[0].length - 1]?.source || '/placeholder.png',
-                        bannerImage: item.images?.banner?.[0]?.[item.images.banner[0].length - 1]?.source || null,
-                        genres: [],
-                        // Badge sous "TV" : véritable note Crunchyroll sur 10
-                        rating: crAverage > 0 ? `${crAverage.toFixed(1)}/10` : null,
-                        // Ligne "Popularité" dans la carte : score 0-100
-                        score: popularityScore,
-                        // Couleur AniList si dispo
-                        color: item.color || null,
-                        type: 'TV',
-                        episodes: item.anilist?.episodes || null,
-                        popularity: item.anilist?.popularity || parseInt(item.crunchyroll.rating?.total || '0'),
-                        year: new Date().getFullYear(),
-                        studio: item.studio || null,
-                        crunchyrollId: item.id,
-                        crunchyrollSlug: item.id,
-                        isOnCrunchyroll: true,
-                        crunchyrollInfo: {
-                            id: item.id,
-                            title: item.title,
-                            slug_title: item.id,
-                            description: item.description || '',
-                            images: item.images,
-                            rating: item.crunchyroll.rating?.average ? parseFloat(item.crunchyroll.rating.average) / 2 : 0,  // normalisé 0-5
-                            crRating: crAverage,
-                            crVoteCount: parseInt(String(item.crunchyroll.rating?.total || '0'))
-                        },
-                        // Métadonnées pour le scoring combiné
-                        combinedScore: item.combined?.score || 0,
-                        popularityScore: item.combined?.popularityScore || 0
-                    }
-                }) as CombinedAnime[]
+                // Transform & enrich avec AniList (couleurs, genres, etc. en cache IDB)
+                const transformed = await Promise.all(
+                    (json.data || []).map(async (item: any) => {
+                        // Score de popularité 0-100 (basé sur combined.score 0-5)
+                        const popularityScore = Math.round(((item.combined?.score || 0) * 20) * 10) / 10
+                        // Note Crunchyroll brute (0-10) pour le badge sous "TV"
+                        const crAverage = parseFloat(item.crunchyroll?.rating?.average || "0")
+
+                        // Métadonnées AniList (couleur, genres, etc.) – stockées en IndexedDB
+                        let anilistInfo: TransformedAnime | null = null
+                        try {
+                            anilistInfo = await searchAnimeBasicInfo(item.title)
+                        } catch {
+                            anilistInfo = null
+                        }
+
+                        // Fallback ID numérique si AniList n'a rien renvoyé
+                        const fallbackId = parseInt(item.id, 36) || Math.floor(Math.random() * 1_000_000)
+
+                        return {
+                            // Base AniList si dispo, sinon fallback basique
+                            id: anilistInfo?.id ?? fallbackId,
+                            anilistId: anilistInfo?.id ?? item.anilist?.id ?? null,
+                            title: anilistInfo?.title ?? item.title,
+                            titleRomaji: anilistInfo?.titleRomaji ?? item.title,
+                            titleEnglish: anilistInfo?.titleEnglish ?? item.title,
+                            titleNative: anilistInfo?.titleNative ?? null,
+                            description: anilistInfo?.description ?? item.description ?? '',
+                            image: anilistInfo?.image
+                                || item.images?.poster_tall?.[0]?.[item.images.poster_tall[0].length - 1]?.source
+                                || '/placeholder.png',
+                            bannerImage: anilistInfo?.bannerImage
+                                || item.images?.banner?.[0]?.[item.images.banner[0].length - 1]?.source
+                                || null,
+                            genres: anilistInfo?.genres ?? [],
+                            // Badge étoile = vraie note Crunchyroll /10
+                            rating: crAverage > 0 ? `${crAverage.toFixed(1)}/10` : (anilistInfo?.rating ?? '12+'),
+                            // Ligne "Popularité" = 0-100
+                            score: popularityScore,
+                            popularity: anilistInfo?.popularity
+                                ?? parseInt(String(item.crunchyroll?.rating?.total || '0')),
+                            duration: anilistInfo?.duration ?? null,
+                            status: anilistInfo?.status ?? 'RELEASING',
+                            season: anilistInfo?.season ?? null,
+                            year: anilistInfo?.year ?? new Date().getFullYear(),
+                            format: anilistInfo?.format ?? 'TV',
+                            source: anilistInfo?.source ?? null,
+                            color: anilistInfo?.color ?? null,
+                            nextEpisode: anilistInfo?.nextEpisode ?? null,
+                            isCrunchyroll: anilistInfo?.isCrunchyroll ?? true,
+                            studio: anilistInfo?.studio ?? item.studio ?? null,
+                            studios: anilistInfo?.studios ?? [],
+                            externalLinks: anilistInfo?.externalLinks ?? [],
+                            trailer: anilistInfo?.trailer ?? null,
+                            startDate: anilistInfo?.startDate ?? null,
+                            endDate: anilistInfo?.endDate ?? null,
+
+                            // Champs Crunchyroll spécifiques
+                            crunchyrollId: item.id,
+                            crunchyrollSlug: item.id,
+                            isOnCrunchyroll: true,
+                            crunchyrollInfo: {
+                                id: item.id,
+                                title: item.title,
+                                slug_title: item.id,
+                                description: item.description || '',
+                                images: item.images,
+                                rating: item.crunchyroll.rating?.average
+                                    ? parseFloat(item.crunchyroll.rating.average) / 2
+                                    : 0, // normalisé 0-5
+                                crRating: crAverage,
+                                crVoteCount: parseInt(String(item.crunchyroll.rating?.total || '0'))
+                            },
+
+                            // Métadonnées pour le scoring combiné
+                            combinedScore: item.combined?.score || 0,
+                            popularityScore: item.combined?.popularityScore || 0
+                        } as CombinedAnime
+                    })
+                )
                 
                 return transformed
             } catch (err) {
@@ -330,12 +365,17 @@ export function usePopularAnime(page = 1, perPage = 20) {
         },
         {
             revalidateOnFocus: false,
-            dedupingInterval: 0, // No deduping for pagination - always fetch fresh
+            dedupingInterval: 0,
         }
     )
 
+    // Pagination côté client : on renvoie seulement le "page" demandé
+    const start = (page - 1) * perPage
+    const end = start + perPage
+    const pageSlice = allData ? allData.slice(start, end) : []
+
     return {
-        data: apiData || [],
+        data: pageSlice,
         isLoading,
         error
     }
