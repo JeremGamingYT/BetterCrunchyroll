@@ -42,8 +42,23 @@
         console.log('[BetterCrunchyroll] Interceptor script injection initiated');
     }
 
+    function injectDataSyncScript() {
+        const script = document.createElement('script');
+        script.src = chrome.runtime.getURL('data-sync.js');
+        script.onload = function () {
+            console.log('[BetterCrunchyroll] Data Sync script loaded successfully');
+            this.remove();
+        };
+        script.onerror = function () {
+            console.error('[BetterCrunchyroll] Failed to load Data Sync script');
+        };
+        (document.head || document.documentElement).appendChild(script);
+        console.log('[BetterCrunchyroll] Data Sync script injection initiated');
+    }
+
     // Inject IMMEDIATELY
     injectInterceptor();
+    injectDataSyncScript();
 
     // ===============================
     // Token Storage

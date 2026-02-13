@@ -259,8 +259,62 @@ export function useTrendingAnime(page = 1, perPage = 20) {
     return useCombinedAnime('trending', page, perPage)
 }
 
-export function usePopularAnime(page = 1, perPage = 20) {
-    return useCombinedAnime('popular', page, perPage)
+export function usePopularAnime(page = 1, perPage = 500) {
+    const { data: apiData, isLoading, error } = useSWR(
+        `api-popular-${page}-${perPage}`,
+        async () => {
+            try {
+                const response = await fetch(`/api/populaire?limit=${Math.min(perPage, 500)}&offset=${(page - 1) * perPage}&sortBy=combined`)
+                if (!response.ok) {
+                    throw new Error('Failed to fetch popular anime')
+                }
+                const json = await response.json()
+                
+                // Transform API response to CombinedAnime format
+                return (json.data || []).map((item: any) => ({
+                    id: item.id,
+                    anilistId: item.anilist?.id || null,
+                    title: item.title,
+                    titleRomaji: item.title,
+                    titleEnglish: item.title,
+                    description: item.description || '',
+                    image: item.images?.poster_tall?.[0]?.[item.images.poster_tall[0].length - 1]?.source || '/placeholder.png',
+                    genres: [],
+                    rating: item.crunchyroll.rating?.average ? `${item.crunchyroll.rating.average}/10` : null,
+                    score: item.anilist?.meanScore || null,
+                    type: 'TV',
+                    episodes: item.anilist?.episodes || null,
+                    popularity: item.anilist?.popularity || parseInt(item.crunchyroll.rating?.total || '0'),
+                    year: new Date().getFullYear(),
+                    crunchyrollId: item.id,
+                    crunchyrollSlug: item.id,
+                    isOnCrunchyroll: true,
+                    crunchyrollInfo: {
+                        id: item.id,
+                        title: item.title,
+                        slug_title: item.id,
+                        description: item.description || '',
+                        images: item.images,
+                        rating: item.crunchyroll.rating?.average ? parseFloat(item.crunchyroll.rating.average) / 2 : 0,  // normalized to 0-5
+                        crRating: parseFloat(item.crunchyroll.rating?.average || '0'),
+                        crVoteCount: parseInt(String(item.crunchyroll.rating?.total || '0'))
+                    },
+                    // Add metadata for combined scoring
+                    combinedScore: item.combined?.score || 0,
+                    popularityScore: item.combined?.popularityScore || 0
+                })) as CombinedAnime[]
+            } catch (err) {
+                console.error('[usePopularAnime] Error:', err)
+                throw err
+            }
+        }
+    )
+
+    return {
+        data: apiData || [],
+        isLoading,
+        error
+    }
 }
 
 export function useNewAnime(page = 1, perPage = 20) {
