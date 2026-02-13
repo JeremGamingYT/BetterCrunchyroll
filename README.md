@@ -26,14 +26,40 @@ Designed to feel faster, cleaner, smoother and more immersive.
 
 ---
 
-> Spoiler images of the project :
+---
 
-<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
-<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
-<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
-<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
-<img src="https://raw.githubusercontent.com/JeremGamingYT/BetterCrunchyroll/refs/heads/main/Images/betterCrunchyroll-banner.jpg" alt="BetterCrunchyroll Banner" width="10%" />
+## 📸 Visual Comparison — Before / After
 
+This section illustrates the interface transformation introduced by **BetterCrunchyroll**.
+
+Each comparison highlights structural clarity, visual hierarchy improvements, spacing refinement, and immersion upgrades.
+
+---
+
+### 🏠 Home — Discover Page
+
+| Before (Official Crunchyroll) | After (BetterCrunchyroll) |
+|--------------------------------|----------------------------|
+| ![Home Before](./Images/before-after/Crunchyroll-Before.png) | ![Home After](./Images/before-after/BetterCrunchyroll-After-2026-02-12%20-%201.png)|
+
+### 🎞️ Anime / Series Page
+
+| Before | After |
+|--------|--------|
+| ![Anime Page Before](./Images/before/anime-before.jpg) | ![Anime Page After](./Images/after/anime-after.jpg) |
+
+
+### 🆕 Latest / Popular Listing
+
+| Before | After |
+|--------|--------|
+| ![Listing Before](./Images/before/listing-before.jpg) | ![Listing After](./Images/after/listing-after.jpg) |
+
+### 📅 Simulcast Page
+
+| Before | After |
+|--------|--------|
+| ![Simulcast Before](./Images/before/simulcast-before.jpg) | ![Simulcast After](./Images/after/simulcast-after.jpg) |
 
 ---
 
@@ -41,22 +67,22 @@ Designed to feel faster, cleaner, smoother and more immersive.
 
 ### Currently Implemented
 
-- [x] **COMPLETE Crunchyroll Redesign**  
+- [V] **COMPLETE Crunchyroll Redesign**  
   A fully rebuilt platform with a brand-new UI, independent from the original Crunchyroll interface.
 
-- [x] **All anime properly displayed**  
+- [V] **All anime properly displayed**  
   Series, episodes, images, metadata and schedules are fully supported.
 
-- [x] **Removal of unnecessary Crunchyroll sections**  
+- [V] **Removal of unnecessary Crunchyroll sections**  
   Clean and focused home page without redundant or outdated blocks.
 
-- [x] **Modern, fluid and premium UI**  
+- [V] **Modern, fluid and premium UI**  
   Rounded design, smooth animations, refined transitions and a new typography system.
 
-- [x] **Dynamic visual identity per anime**  
+- [V] **Dynamic visual identity per anime**  
   Colors, borders, buttons, titles and glow effects adapt to each show.
 
-- [x] **Enriched anime pages**  
+- [V] **Enriched anime pages**  
   Characters, cast, detailed descriptions, images, episode lists,  
   upcoming episodes with **release dates displayed directly**.
 
@@ -64,19 +90,19 @@ Designed to feel faster, cleaner, smoother and more immersive.
 
 ### ⏳ In Progress / Planned
 
-- [ ] **Comments system powered by AniList**  
+- [X] **Comments system powered by AniList**  
   Community features reintroduced through native AniList integration.
 
-- [ ] **Native notifications (Desktop & Mobile)**  
+- [X] **Native notifications (Desktop & Mobile)**  
   New episodes, upcoming releases and community activity alerts.
 
-- [ ] **Full mobile compatibility**  
+- [X] **Full mobile compatibility**  
   Responsive layout with future PWA support.
 
-- [ ] **Advanced user profiles**  
+- [X] **Advanced user profiles**  
   Avatars, banners, identity linked to AniList and comment history.
 
-- [ ] **Automatic subtitle translation**  
+- [X] **Automatic subtitle translation**  
   Google Translate by default  
   Optional AI-based translation via API key (advanced models).
 
@@ -98,7 +124,7 @@ It is a **full React application** injected over Crunchyroll, replacing every pa
 
 - Apple-like clarity and hierarchy
 - Netflix-grade immersion
-- Ultra-smooth animations (60 FPS)
+- Smooth animations
 - Dark-first, eye-friendly UI
 - No visual noise, no clutter
 

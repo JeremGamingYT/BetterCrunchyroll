@@ -152,6 +152,8 @@ export default function AnimePage() {
     (link) => link.site.toLowerCase() === "crunchyroll" || link.url.includes("crunchyroll"),
   )
 
+  const isPopularityScore = typeof anime.rating === "string" && anime.rating.endsWith("/100")
+
   const tabs = [
     { id: "overview", label: "Aperçu" },
     { id: "characters", label: "Personnages" },
@@ -197,10 +199,19 @@ export default function AnimePage() {
             <div className="flex-1 flex flex-col justify-end">
               {/* Stats Row */}
               <div className="flex flex-wrap items-center gap-4 mb-4">
-                {anime.score && (
+                {anime.score !== null && anime.score !== undefined && (
                   <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-background/60 backdrop-blur-sm">
-                    <Star className="w-4 h-4" style={{ color: accentColor }} fill={accentColor} />
-                    <span className="font-bold">{anime.score.toFixed(1)}</span>
+                    {isPopularityScore ? (
+                      <>
+                        <TrendingUp className="w-4 h-4" style={{ color: accentColor }} />
+                        <span className="font-bold">{anime.score.toFixed(1)}/100</span>
+                      </>
+                    ) : (
+                      <>
+                        <Star className="w-4 h-4" style={{ color: accentColor }} fill={accentColor} />
+                        <span className="font-bold">{anime.score.toFixed(1)}</span>
+                      </>
+                    )}
                   </div>
                 )}
                 {anime.episodes && (
@@ -445,7 +456,12 @@ export default function AnimePage() {
                     { label: "Statut", value: anime.status === "RELEASING" ? "En cours" : anime.status === "FINISHED" ? "Terminé" : anime.status },
                     { label: "Source", value: anime.source },
                     { label: "Saison", value: `${anime.season} ${anime.year || ""}` },
-                    { label: "Score", value: anime.score ? `${anime.score}/10` : "N/A" },
+                    {
+                      label: isPopularityScore ? "Popularité" : "Score",
+                      value: anime.score
+                        ? `${anime.score}${isPopularityScore ? "/100" : "/10"}`
+                        : "N/A"
+                    },
                     { label: "Début", value: anime.startDate },
                   ].map((item, idx) => (
                     <div key={idx} className="flex flex-col gap-1 pb-3 border-b border-border/20 last:border-0 last:pb-0">

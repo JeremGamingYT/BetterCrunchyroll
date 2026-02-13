@@ -78,6 +78,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
   const rating = "rating" in anime && anime.rating ? anime.rating : null
   const relationType = "type" in anime ? anime.type : null
   const popularity = "popularity" in anime ? anime.popularity : 0
+  const isPopularityScore = "combinedScore" in anime || "popularityScore" in anime
   const totalEpisodes = "episodes" in anime ? anime.episodes : null
   const crunchyrollSlug = "crunchyrollSlug" in anime ? anime.crunchyrollSlug : null
   const isOnCrunchyroll = "isOnCrunchyroll" in anime ? anime.isOnCrunchyroll : false
@@ -238,17 +239,30 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                 </div>
               )}
               <div className="flex items-center gap-2 mb-2">
-                {score && (
+                {score !== null && score !== undefined && (
                   <>
-                    <Star
-                      className="w-4 h-4"
-                      fill="currentColor"
-                      style={{ color: animeColor || "hsl(var(--primary))" }}
-                    />
-                    <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
+                    {isPopularityScore ? (
+                      <>
+                        <span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                          Popularité
+                        </span>
+                        <span className="text-sm font-medium text-foreground">
+                          {score.toFixed(1)}/100
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <Star
+                          className="w-4 h-4"
+                          fill="currentColor"
+                          style={{ color: animeColor || "hsl(var(--primary))" }}
+                        />
+                        <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
+                      </>
+                    )}
                   </>
                 )}
-                {!score && (
+                {(score === null || score === undefined) && (
                   <>
                     <Star className="w-4 h-4 text-muted-foreground" />
                     <span className="text-sm font-medium text-muted-foreground">N/A</span>
