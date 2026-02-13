@@ -1,6 +1,23 @@
 // Anilist API service with localStorage caching
 
 import { browseCrunchyroll, type CrunchyrollSeries } from "./crunchyroll"
+import { searchJikanBasicInfo } from "@/lib/jikan"
+
+// ========================================
+// Types
+// ========================================
+
+/**
+ * Basic anime info interface for search/fallback
+ */
+export interface AnimeBasicInfo {
+  id: number
+  title: string
+  color: string | null
+  score: number | null
+  image: string
+  genres: string[]
+}
 
 // ... constants ...
 
@@ -187,6 +204,133 @@ export async function searchAnimeBasicInfo(query: string): Promise<TransformedAn
   } catch (e) {
     return null
   }
+}
+
+// ========================================
+// Enhanced search with automatic fallback
+// ========================================
+
+// Throttle queue for AniList to avoid rate limits
+let enrichmentQueue: Array<() => Promise<TransformedAnime | null>> = []
+let isProcessingEnrichment = false
+const ENRICHMENT_DELAY = 500 // 500ms between requests to avoid rate limit
+let lastEnrichmentTime = 0
+
+/**
+ * Process enrichment queue with throttling
+ */
+async function processEnrichmentQueue() {
+  if (isProcessingEnrichment || enrichmentQueue.length === 0) return
+
+  isProcessingEnrichment = true
+  while (enrichmentQueue.length > 0) {
+    const fn = enrichmentQueue.shift()
+    if (fn) {
+      const timeSinceLast = Date.now() - lastEnrichmentTime
+      if (timeSinceLast < ENRICHMENT_DELAY) {
+        await new Promise(r => setTimeout(r, ENRICHMENT_DELAY - timeSinceLast))
+      }
+      try {
+        await fn()
+        lastEnrichmentTime = Date.now()
+      } catch (e) {
+        console.warn("[EnrichmentQueue] Error processing item:", e)
+        lastEnrichmentTime = Date.now()
+      }
+    }
+  }
+  isProcessingEnrichment = false
+}
+
+/**
+ * Search anime with automatic fallback to Jikan when AniList is unavailable
+ * Priority: Cache > AniList > Jikan > Fallback to Crunchyroll data
+ */
+export async function searchAnimeBasicInfoWithFallback(
+  query: string,
+  crunchyrollFallback: TransformedAnime | null = null
+): Promise<TransformedAnime | null> {
+  const cacheKey = `basic_info_fallback_${sanitizeKey(query)}`
+  const cached = await getCache<TransformedAnime>(cacheKey, CACHE_DURATION, false)
+  if (cached) return cached
+
+  // Try AniList first
+  try {
+    const anilistResult = await searchAnimeBasicInfo(query)
+    if (anilistResult) {
+      await setCache(cacheKey, anilistResult)
+      return anilistResult
+    }
+  } catch (e) {
+    console.warn(`[Fallback] AniList failed for "${query}":`, e instanceof Error ? e.message : String(e))
+  }
+
+  // Fallback to Jikan
+  try {
+    const jikanResult = await searchJikanBasicInfo(query)
+    if (jikanResult) {
+      // Convert Jikan result to TransformedAnime
+      const fallbackAnime: TransformedAnime = {
+        id: jikanResult.id,
+        title: jikanResult.title,
+        titleRomaji: jikanResult.title,
+        titleNative: null,
+        description: null,
+        image: jikanResult.image,
+        bannerImage: null,
+        genres: jikanResult.genres || [],
+        rating: jikanResult.score ? `${jikanResult.score}/10` : '12+',
+        score: jikanResult.score ? jikanResult.score / 10 : null,
+        popularity: 0,
+        episodes: null,
+        duration: null,
+        status: 'UNKNOWN',
+        season: null,
+        year: null,
+        format: 'TV',
+        source: null,
+        color: null,
+        nextEpisode: null,
+        isCrunchyroll: crunchyrollFallback?.isCrunchyroll ?? false,
+        studio: null,
+        studios: [],
+        externalLinks: crunchyrollFallback?.externalLinks ?? [],
+        trailer: null,
+        startDate: null,
+        endDate: null
+      }
+      await setCache(cacheKey, fallbackAnime)
+      return fallbackAnime
+    }
+  } catch (e) {
+    console.warn(`[Fallback] Jikan failed for "${query}":`, e instanceof Error ? e.message : String(e))
+  }
+
+  // Final fallback: use Crunchyroll data if provided
+  if (crunchyrollFallback) {
+    await setCache(cacheKey, crunchyrollFallback)
+    return crunchyrollFallback
+  }
+
+  return null
+}
+
+/**
+ * Throttled version for batch enrichment
+ * Queues requests to avoid rate limiting
+ */
+export function throttledSearchAnimeBasicInfoWithFallback(
+  query: string,
+  crunchyrollFallback?: TransformedAnime | null
+): Promise<TransformedAnime | null> {
+  return new Promise((resolve) => {
+    enrichmentQueue.push(async () => {
+      const result = await searchAnimeBasicInfoWithFallback(query, crunchyrollFallback || null)
+      resolve(result)
+      return result
+    })
+    processEnrichmentQueue()
+  })
 }
 
 
@@ -1053,5 +1197,74 @@ query($page: Int, $perPage: Int, $search: String) {
   }
 }
 
+// ===============================
+// Rate Limit Fallback Handlers
+// ===============================
+
+/**
+ * Enhanced enrichment function with better rate limit handling
+ * Uses cache fallback when AniList is rate limited
+ */
+export async function enrichAnimeListWithFallback(
+  crItems: CrunchyrollSeries[],
+): Promise<TransformedAnime[]> {
+  try {
+    // Try normal enrichment first
+    return await enrichAnimeList(crItems)
+  } catch (error) {
+    // If we get rate limited, try again with timeout and cache fallback
+    if ((error as Error)?.message?.includes("Rate limited")) {
+      console.warn("[AniList] Rate limited during enrichment, using cache fallback...")
+      
+      // Return cached enriched data if available
+      const enriched = await Promise.all(
+        crItems.map(async (crItem) => {
+          // Try to get cached enriched data for this anime
+          const cacheKey = `basic_info_${sanitizeKey(crItem.title)}`
+          const cached = await getCache<TransformedAnime>(cacheKey, CACHE_DURATION, true)
+          
+          if (cached) {
+            console.log(`[AniList] Using cached enrichment for: ${crItem.title}`)
+            return cached
+          }
+
+          // Fallback to raw Crunchyroll mapping
+          return mapCrunchyrollToAnime(crItem)
+        }),
+      )
+
+      return enriched
+    }
+
+    // Re-throw other errors
+    throw error
+  }
+}
+
+/**
+ * Get recommendations with smart caching and fallback
+ * Returns a random anime from trending list
+ */
+export async function getRandomAnimeFallback(): Promise<TransformedAnime | null> {
+  try {
+    // Try to get trending anime with fallback
+    const trending = await getTrendingAnime(1, 12)
+    if (trending && trending.length > 0) {
+      const randomIndex = Math.floor(Math.random() * trending.length)
+      return trending[randomIndex]
+    }
+  } catch (error) {
+    console.warn("[AniList] Failed to fetch random anime:", error)
+    
+    // Try cache as fallback
+    const cached = await getCache<TransformedAnime[]>('trending_1_12', CACHE_DURATION, true)
+    if (cached && cached.length > 0) {
+      const randomIndex = Math.floor(Math.random() * cached.length)
+      return cached[randomIndex]
+    }
+  }
+
+  return null
+}
 
 // Legacy interface removed. We now use full TransformedAnime for enrichment.

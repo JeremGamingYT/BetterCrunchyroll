@@ -4,31 +4,11 @@ import { useState } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimeCard } from "@/components/anime-card"
-import { usePopularAnime } from "@/hooks/use-combined-anime"
+import { usePopularAnimeInfinite } from "@/hooks/use-combined-anime"
 import { Loader2, ChevronDown } from "lucide-react"
-import { useEffect } from "react"
 
 export default function PopulairePage() {
-  const [page, setPage] = useState(1)
-  const [allAnimes, setAllAnimes] = useState<any[]>([])
-  
-  const { data: pageAnimes, isLoading, error } = usePopularAnime(page, 20)
-
-  // Accumulate anime as pages load
-  useEffect(() => {
-    if (pageAnimes && pageAnimes.length > 0) {
-      setAllAnimes(prev => {
-        // Remove duplicates based on ID
-        const existingIds = new Set(prev.map(a => a.id))
-        const newAnimes = pageAnimes.filter(a => !existingIds.has(a.id))
-        return [...prev, ...newAnimes]
-      })
-    }
-  }, [pageAnimes])
-
-  const handleLoadMore = () => {
-    setPage(prev => prev + 1)
-  }
+  const { data: allAnimes, isLoading, isLoadingMore, hasMore, error, enrichmentProgress, loadMore } = usePopularAnimeInfinite(20)
 
   return (
     <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
@@ -41,6 +21,17 @@ export default function PopulairePage() {
           <p className="text-lg text-muted-foreground font-medium">
             Combinaison Crunchyroll + AniList pour les vrais populaires
           </p>
+          {enrichmentProgress > 0 && enrichmentProgress < 100 && (
+            <div className="mt-4 text-sm text-muted-foreground">
+              <p className="mb-2">Enrichissement en cours: {enrichmentProgress}%</p>
+              <div className="w-full max-w-xs h-2 bg-muted rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-primary transition-all duration-300"
+                  style={{ width: `${enrichmentProgress}%` }}
+                />
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Error State */}
@@ -69,14 +60,14 @@ export default function PopulairePage() {
             </div>
 
             {/* Load More Button */}
-            {pageAnimes && pageAnimes.length > 0 && (
+            {hasMore && (
               <div className="flex justify-center mt-16">
                 <button
-                  onClick={handleLoadMore}
-                  disabled={isLoading}
+                  onClick={loadMore}
+                  disabled={isLoading || isLoadingMore}
                   className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium"
                 >
-                  {isLoading ? (
+                  {isLoading || isLoadingMore ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin" />
                       Chargement...
@@ -84,10 +75,19 @@ export default function PopulairePage() {
                   ) : (
                     <>
                       <ChevronDown className="w-4 h-4" />
-                      Charger plus
+                      Charger plus ({allAnimes.length} animés chargés)
                     </>
                   )}
                 </button>
+              </div>
+            )}
+
+            {/* End of list message */}
+            {!hasMore && allAnimes.length > 0 && (
+              <div className="flex justify-center mt-16 text-muted-foreground">
+                <p className="text-center">
+                  Tous les {allAnimes.length} animés disponibles ont été chargés ! 🎉
+                </p>
               </div>
             )}
           </>
@@ -95,8 +95,9 @@ export default function PopulairePage() {
 
         {/* Initial Loading State */}
         {isLoading && allAnimes.length === 0 && (
-          <div className="flex items-center justify-center py-32">
-            <Loader2 className="w-10 h-10 animate-spin text-primary" />
+          <div className="flex flex-col items-center justify-center py-32">
+            <Loader2 className="w-10 h-10 animate-spin text-primary mb-4" />
+            <p className="text-muted-foreground">Chargement des animés et enrichissement...</p>
           </div>
         )}
       </div>

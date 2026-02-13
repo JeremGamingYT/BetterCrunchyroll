@@ -71,8 +71,9 @@ async function getAccessToken(): Promise<string> {
 async function getCrunchyrollPopular(token: string, limit: number = 50, offset: number = 0) {
     const url = new URL(`${CRUNCHYROLL_API}/content/v2/discover/browse`)
     url.searchParams.append('sort_by', 'popularity')
-    url.searchParams.append('limit', limit.toString())
-    url.searchParams.append('offset', offset.toString())
+    url.searchParams.append('n', limit.toString())
+    url.searchParams.append('start', offset.toString())
+    url.searchParams.append('type', 'series')
     url.searchParams.append('locale', 'en-US')
     url.searchParams.append('ratings', 'true')
 
@@ -171,12 +172,12 @@ function calculatePopularityScore(crunchyrollRating: CrunchyrollRating | undefin
 
 export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url)
-    let limit = parseInt(searchParams.get('limit') || '500') // Increased to fetch more
+    let limit = parseInt(searchParams.get('limit') || '50') // Default to 50 per batch
     let offset = parseInt(searchParams.get('offset') || '0')
     const sortBy = searchParams.get('sortBy') || 'combined' // 'combined', 'crunchyroll', 'anilist', 'popularity'
 
-    // Cap limit at 500 to avoid too much data
-    limit = Math.min(limit, 500)
+    // Cap limit at 100 per request to avoid timeouts
+    limit = Math.min(Math.max(limit, 10), 100)
 
     try {
         // Step 1: Get token from Crunchyroll
@@ -196,8 +197,8 @@ export async function GET(request: NextRequest) {
 
         if (!crunchyrollSeries.length) {
             return NextResponse.json(
-                { error: 'No series found on Crunchyroll' },
-                { status: 404 }
+                { data: [], total: 0, sortBy, error: offset === 0 ? 'No series found on Crunchyroll' : 'No more series available' },
+                { status: 200 }
             )
         }
 
@@ -293,6 +294,8 @@ export async function GET(request: NextRequest) {
                 timestamp: new Date().toISOString(),
                 source: ['crunchyroll', 'anilist'],
                 apiVersion: '1.0',
+                offset,
+                limit,
             },
         })
 
