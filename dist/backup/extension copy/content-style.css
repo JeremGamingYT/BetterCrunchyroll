@@ -1,0 +1,613 @@
+/* BetterCrunchyroll - Content Styles */
+/* Styles for injected UI on Crunchyroll pages */
+
+/* ===============================
+   Variables
+   =============================== */
+:root {
+  --bcr-bg: #0a0a0a;
+  --bcr-bg-card: #141414;
+  --bcr-bg-secondary: #1a1a1a;
+  --bcr-text: #fafafa;
+  --bcr-text-muted: #a1a1a1;
+  --bcr-border: #2a2a2a;
+  --bcr-accent: #f97316;
+  --bcr-radius: 12px;
+  --bcr-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ===============================
+   Base UI Container
+   =============================== */
+#bcr-ui {
+  font-family: var(--bcr-font);
+  background: var(--bcr-bg);
+  color: var(--bcr-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+#bcr-ui * {
+  box-sizing: border-box;
+}
+
+/* ===============================
+   Episode Info Bar
+   =============================== */
+.bcr-episode-info {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, var(--bcr-bg) 100%);
+  border-bottom: 1px solid var(--bcr-border);
+  padding: 16px 32px;
+}
+
+.bcr-episode-info-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.bcr-nav-btn-container {
+  flex-shrink: 0;
+  min-width: 180px;
+}
+
+.bcr-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--bcr-radius);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.bcr-nav-prev {
+  background: var(--bcr-bg-secondary);
+  color: var(--bcr-text);
+}
+
+.bcr-nav-prev:hover {
+  background: var(--bcr-bg-card);
+  transform: translateX(-4px);
+}
+
+.bcr-nav-next {
+  background: linear-gradient(135deg, var(--bcr-accent), #ea580c);
+  color: white;
+  box-shadow: 0 4px 20px rgba(249, 115, 22, 0.4);
+}
+
+.bcr-nav-next:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 30px rgba(249, 115, 22, 0.5);
+}
+
+.bcr-nav-placeholder {
+  color: var(--bcr-text-muted);
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.bcr-episode-center {
+  flex: 1;
+  text-align: center;
+  min-width: 0;
+}
+
+.bcr-series-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--bcr-text-muted);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bcr-series-link:hover {
+  color: var(--bcr-accent);
+}
+
+.bcr-episode-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bcr-accent);
+  margin: 4px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+}
+
+/* ===============================
+   Tabs Section
+   =============================== */
+.bcr-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--bcr-border);
+  padding: 12px 32px;
+}
+
+.bcr-tabs-inner {
+  display: flex;
+  gap: 8px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.bcr-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--bcr-radius);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--bcr-text-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bcr-tab:hover {
+  background: var(--bcr-bg-secondary);
+  color: var(--bcr-text);
+}
+
+.bcr-tab-active {
+  background: linear-gradient(135deg, var(--bcr-accent), #ea580c) !important;
+  color: white !important;
+  box-shadow: 0 4px 20px rgba(249, 115, 22, 0.4);
+}
+
+.bcr-tab-badge {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.bcr-tab:not(.bcr-tab-active) .bcr-tab-badge {
+  background: var(--bcr-bg-secondary);
+}
+
+/* ===============================
+   Content Section
+   =============================== */
+.bcr-content {
+  padding: 32px;
+  min-height: 50vh;
+  background: var(--bcr-bg);
+}
+
+.bcr-tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.bcr-tab-content-active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bcr-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bcr-section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.bcr-title-accent {
+  width: 4px;
+  height: 24px;
+  border-radius: 2px;
+  background: var(--bcr-accent);
+}
+
+.bcr-episode-count {
+  color: var(--bcr-text-muted);
+  font-size: 14px;
+}
+
+/* ===============================
+   Episode Grid
+   =============================== */
+.bcr-episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.bcr-episode-card {
+  display: block;
+  border-radius: var(--bcr-radius);
+  overflow: hidden;
+  background: var(--bcr-bg-card);
+  text-decoration: none;
+  color: var(--bcr-text);
+  transition: all 0.3s ease;
+}
+
+.bcr-episode-card:hover {
+  transform: scale(1.03);
+  z-index: 10;
+}
+
+.bcr-episode-card-current {
+  outline: 2px solid var(--bcr-accent);
+  outline-offset: 2px;
+}
+
+.bcr-episode-thumb {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--bcr-bg-secondary);
+}
+
+.bcr-episode-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.bcr-episode-card:hover .bcr-episode-thumb img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.bcr-episode-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.9) 100%);
+  pointer-events: none;
+}
+
+.bcr-episode-number {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.bcr-episode-number-current {
+  background: var(--bcr-accent);
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
+}
+
+.bcr-premium-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fbbf24, #d97706);
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.4);
+}
+
+.bcr-premium-badge svg {
+  display: block;
+}
+
+.bcr-episode-duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.bcr-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.75);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--bcr-accent), #ea580c);
+  box-shadow: 0 4px 30px rgba(249, 115, 22, 0.6);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.bcr-episode-card:hover .bcr-play-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.bcr-current-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--bcr-accent);
+}
+
+.bcr-episode-meta {
+  padding: 12px;
+  background: rgba(20, 20, 20, 0.5);
+}
+
+.bcr-episode-card-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bcr-episode-card:hover .bcr-episode-card-title {
+  color: var(--bcr-accent);
+}
+
+/* ===============================
+   Details Tab
+   =============================== */
+.bcr-details-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.bcr-details-section {
+  margin-bottom: 32px;
+}
+
+.bcr-description {
+  color: var(--bcr-text-muted);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+.bcr-info-card {
+  background: var(--bcr-bg-card);
+  border: 1px solid var(--bcr-border);
+  border-radius: var(--bcr-radius);
+  padding: 20px;
+}
+
+.bcr-info-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.bcr-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.bcr-info-row:not(:last-child) {
+  border-bottom: 1px solid var(--bcr-border);
+}
+
+.bcr-info-label {
+  color: var(--bcr-text-muted);
+}
+
+.bcr-info-value {
+  font-weight: 500;
+}
+
+/* ===============================
+   Comments Placeholder
+   =============================== */
+.bcr-comments-placeholder {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.bcr-placeholder-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(249, 115, 22, 0.2);
+  color: var(--bcr-accent);
+  margin-bottom: 24px;
+}
+
+.bcr-placeholder-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.bcr-placeholder-text {
+  color: var(--bcr-text-muted);
+  margin: 0;
+}
+
+/* ===============================
+   Footer
+   =============================== */
+.bcr-footer {
+  background: var(--bcr-bg);
+  border-top: 1px solid var(--bcr-border);
+  padding: 24px 32px;
+}
+
+.bcr-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.bcr-footer-text {
+  color: var(--bcr-text-muted);
+  font-size: 14px;
+}
+
+.bcr-footer-separator {
+  color: var(--bcr-border);
+}
+
+/* ===============================
+   Hide Crunchyroll UI on Watch Pages
+   =============================== */
+body.bcr-watch-page .app-layout__header--ywueY,
+body.bcr-watch-page .erc-large-header,
+body.bcr-watch-page .content-wrapper--MF5LS,
+body.bcr-watch-page .app-layout__footer--jgOfu,
+body.bcr-watch-page .footer--NNXrc,
+body.bcr-watch-page footer:not(.bcr-footer) {
+  display: none !important;
+}
+
+/* ===============================
+   Legacy iframe styles (for non-watch pages)
+   =============================== */
+#bettercrunchyroll-root {
+  font-family: var(--bcr-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bettercrunchyroll-frame {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.bettercrunchyroll-loading {
+  overflow: hidden !important;
+}
+
+#bettercrunchyroll-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999;
+}
+
+#bettercrunchyroll-loading .spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(249, 115, 22, 0.3);
+  border-top-color: #f97316;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===============================
+   Responsive
+   =============================== */
+@media (max-width: 768px) {
+  .bcr-episode-info {
+    padding: 12px 16px;
+  }
+
+  .bcr-episode-info-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bcr-nav-btn-container {
+    min-width: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bcr-nav-text {
+    display: none;
+  }
+
+  .bcr-episode-title {
+    font-size: 16px;
+  }
+
+  .bcr-tabs {
+    padding: 8px 16px;
+  }
+
+  .bcr-content {
+    padding: 16px;
+  }
+
+  .bcr-episode-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .bcr-details-container {
+    grid-template-columns: 1fr;
+  }
+}

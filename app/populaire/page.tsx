@@ -20,23 +20,44 @@ export default function PopulairePage() {
   // Sort by score and popularity (combined)
   const sortedAnimes = popularAnimes
     ? [...popularAnimes].sort((a, b) => {
-      const scoreA = (a.score || 0)
-      const scoreB = (b.score || 0)
-      const popA = (a.popularity || 0)
-      const popB = (b.popularity || 0)
+      const crRatingA = (a as any).crRating || 0
+      const crRatingB = (b as any).crRating || 0
+      const crCountA = (a as any).crVoteCount || 0
+      const crCountB = (b as any).crVoteCount || 0
 
-      // Weighted Calculation:
-      // Score (0-10) is the primary factor.
-      // Popularity (Log10) is a secondary bonus.
-      // Factor 0.2 means: 10x popularity difference (Log diff = 1) is worth 0.2 score points.
-      // Checks:
-      // 9.0 (10k) vs 8.5 (1M). 9.0+(4*0.2)=9.8. 8.5+(6*0.2)=9.7. 9.0 wins.
-      // 8.3 (1m) vs 9.1 (10k). 8.3+(6*0.2)=9.5. 9.1+(4*0.2)=9.9. 9.1 wins.
+      // Weighted Calculation: AGGRESSIVE CR BIAS
+      // The user wants efficient popularity sorting based on CR votes.
+      // We assume CR votes are the most important metric for "Populaire".
 
-      const weightedA = scoreA + (Math.log10(popA + 1) * 0.2)
-      const weightedB = scoreB + (Math.log10(popB + 1) * 0.2)
+      // Normalize scores
+      // AL Score (0-10) -> 0-100
+      const scoreA_AL = (a.score || 0) * 10
+      const scoreB_AL = (b.score || 0) * 10
 
-      return weightedB - weightedA
+      // CR Score (0-5) -> 0-100
+      const scoreA_CR = crRatingA * 20
+      const scoreB_CR = crRatingB * 20
+
+      // If CR data is missing, we penalty heavily if comparing against one that has it?
+      // No, just treat as 0.
+
+      // Weights: 
+      // If we have CR data, it dominates.
+      // Formula: (AL * 0.2) + (CR * 0.8) + (Log10(Votes) * 25)
+      // Log10(100k) = 5. Log10(500k) = 5.7. Diff = 0.7 * 25 = 17.5 points.
+      // AL Score Diff (9.5 vs 8.5) = 10 points. 
+      // So 5x votes beats 1.0 score diff.
+
+      const baseScoreA = (scoreA_AL * 0.2) + (scoreA_CR * 0.8)
+      const baseScoreB = (scoreB_AL * 0.2) + (scoreB_CR * 0.8)
+
+      const boostA = Math.log10(crCountA + 1) * 25
+      const boostB = Math.log10(crCountB + 1) * 25
+
+      const totalA = baseScoreA + boostA
+      const totalB = baseScoreB + boostB
+
+      return totalB - totalA
     })
     : []
 

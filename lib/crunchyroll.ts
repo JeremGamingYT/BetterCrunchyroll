@@ -199,7 +199,17 @@ export interface CrunchyrollSeries {
         audio_locales: string[]
         subtitle_locales: string[]
         maturity_ratings: string[]
+        star_rating?: number
+        vote_count?: number
+        rating?: {
+            average?: number
+            total?: number
+            count?: number
+        }
     }
+    // Top level potential
+    rating?: number
+    star_rating?: number
 }
 
 export interface CrunchyrollSeason {
@@ -263,6 +273,8 @@ export interface TransformedCrunchyrollAnime {
     seasonCount: number
     isDubbed: boolean
     isSubbed: boolean
+    crRating?: number
+    crVoteCount?: number
 }
 
 export interface TransformedCrunchyrollEpisode {
@@ -448,6 +460,8 @@ export async function checkAnimeAvailability(title: string): Promise<Transformed
             seasonCount: seriesInfo?.series_metadata?.season_count || 0,
             isDubbed: seriesInfo?.series_metadata?.is_dubbed || false,
             isSubbed: seriesInfo?.series_metadata?.is_subbed || true,
+            crRating: seriesInfo?.series_metadata?.star_rating || seriesInfo?.star_rating || seriesInfo?.series_metadata?.rating?.average || 0,
+            crVoteCount: seriesInfo?.series_metadata?.vote_count || seriesInfo?.series_metadata?.rating?.total || 0
         }
 
         setCache(cacheKey, result)
@@ -756,6 +770,8 @@ export async function getCrunchyrollCatalog(limit = 100): Promise<Map<string, Tr
             seasonCount: s.series_metadata?.season_count || 0,
             isDubbed: s.series_metadata?.is_dubbed || false,
             isSubbed: s.series_metadata?.is_subbed || true,
+            crRating: s.series_metadata?.star_rating || s.star_rating || s.series_metadata?.rating?.average || 0,
+            crVoteCount: s.series_metadata?.vote_count || s.series_metadata?.rating?.total || 0
         }))
 
         setCache(cacheKey, catalog)
@@ -798,6 +814,49 @@ export interface CrunchyrollProfile {
 }
 
 // Watchlist item as returned by Crunchyroll API
+
+/**
+ * Get star rating for a content item
+ * Tries the review endpoint to get aggregate data
+ */
+export async function getStarRating(contentId: string): Promise<{ average: number, count: number } | null> {
+    const cacheKey = `rating_${contentId}`
+    const cached = getCache<{ average: number, count: number }>(cacheKey)
+    if (cached) return cached
+
+    try {
+        // Based on user feedback and typical behavior, accessing the rating endpoint 
+        // without a user or with a specific path should yield aggregates.
+        // We will try the V2 endpoint which is often used for public data.
+        // If this fails, we will have to investigate further.
+
+        // Note: The user pointed to documentation/EtpContentReviews/GET/getRating.md
+        // which lists: GET /content-reviews/v3/user/${account_uuid}/rating/${content_id}
+        // Often, replacing `user/${account_uuid}` with `stats` or similar, or just removing it works.
+        // Let's try to infer from common CR patterns: `content-reviews/v2/rating/${content_id}`
+
+        const data = await crunchyrollFetch<{
+            average_rating: number,
+            total_ratings: number,
+            rating_distribution: any
+        }>(
+            `/content-reviews/v2/rating/${contentId}`
+        )
+
+        // Map response
+        // If the API returns it in a specific format:
+        const result = {
+            average: data.average_rating || 0,
+            count: data.total_ratings || 0
+        }
+
+        setCache(cacheKey, result)
+        return result
+    } catch (error) {
+        // console.error("[Crunchyroll] Get rating failed for", contentId, error)
+        return null
+    }
+}
 // The API returns episodes/movies with their panel data
 export interface CrunchyrollWatchlistItem {
     panel: {

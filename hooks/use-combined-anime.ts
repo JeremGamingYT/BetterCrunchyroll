@@ -17,6 +17,7 @@ import {
 } from "@/lib/anilist"
 import {
     checkAnimeAvailability,
+    getStarRating,
     getCrunchyrollCatalog,
     getAllSeriesEpisodes,
     getSeries,
@@ -80,7 +81,49 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
                 }
             } catch (e) {
                 console.warn(`[CombinedAnime] CR Fetch failed for ${category}`, e)
-                crError = e
+                // Fallback: Fetch from AniList and match with CR
+                // 1. Get Top Anime from AniList (this gives us the base "Popular" list from AL perspective)
+                const alAnimes = await getPopularAnime(page, perPage)
+
+                // 2. Identify which ones are on Crunchyroll
+                // We need to check availability for each
+                const results = await Promise.all(
+                    alAnimes.map(async (anime) => {
+                        // anime.title is already a string (cleaned) in TransformedAnime
+                        const title = anime.title || anime.titleRomaji
+                        const crInfo = await checkAnimeAvailability(title)
+
+                        if (crInfo) {
+                            let crRating = crInfo.crRating || 0
+                            let crVoteCount = crInfo.crVoteCount || 0
+
+                            // If no rating from series metadata, try explicit fetch
+                            if (crRating === 0) {
+                                try {
+                                    const ratingData = await getStarRating(crInfo.crunchyrollId)
+                                    if (ratingData) {
+                                        crRating = ratingData.average
+                                        crVoteCount = ratingData.count
+                                    }
+                                } catch (e) {
+                                    // ignore
+                                }
+                            }
+
+                            return {
+                                ...anime,
+                                isOnCrunchyroll: true,
+                                crunchyrollInfo: crInfo,
+                                crRating,
+                                crVoteCount
+                            }
+                        }
+                        return { ...anime, isOnCrunchyroll: false }
+                    })
+                )
+
+                // Filter valid
+                return results.filter(a => a.isOnCrunchyroll)
             }
 
             // 2. If CR succeeded, Enrich with AniList (CACHE VISIBLE HERE due to async lookups)
@@ -93,7 +136,10 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
                         crunchyrollId: original.id,
                         crunchyrollSlug: original.slug_title,
                         isOnCrunchyroll: true,
-                        crunchyrollInfo: original as unknown as TransformedCrunchyrollAnime
+                        crunchyrollInfo: original as unknown as TransformedCrunchyrollAnime, // This cast is getting messy, but original is CrunchyrollSeries
+                        // We need to map the CR rating here if we want to sort by it
+                        crRating: (original as any).series_metadata?.star_rating || (original as any).star_rating || (original as any).series_metadata?.rating?.average || 0,
+                        crVoteCount: (original as any).series_metadata?.vote_count || (original as any).series_metadata?.rating?.total || 0
                     }
                 })
 

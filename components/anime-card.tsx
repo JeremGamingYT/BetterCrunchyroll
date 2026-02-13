@@ -287,6 +287,13 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
               {relationType?.replace(/_/g, " ") || "TV"}
             </div>
           )}
+          {/* CR Stats Badge (Visible for verification) */}
+          {"crRating" in anime && ((anime as any).crVoteCount > 0) && (
+            <div className="px-2 py-0.5 mt-1 rounded text-[10px] font-bold bg-black/60 text-white/90 backdrop-blur-sm border border-white/10 flex items-center gap-1">
+              <span>★ {Number((anime as any).crRating).toFixed(1)}</span>
+              <span className="text-white/60">({(anime as any).crVoteCount})</span>
+            </div>
+          )}
           {rating && (
             <div
               className={cn(
