@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className="scrollbar-hide">
+    <html lang="fr">
       <body className={`${jakarta.variable} ${bangers.variable} font-sans antialiased overflow-x-hidden`}>
         <Providers>
           <NavigationSync />

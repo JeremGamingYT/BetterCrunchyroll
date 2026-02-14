@@ -38,8 +38,12 @@ export default function Home() {
               sectionSlug="/populaire"
             />
             
-            {/* AniList Connection Banner - Above Nouveautés */}
-            <AniListBanner />
+            {/* AniList Connection Banner - Centered between sections */}
+            <div className="w-full flex justify-center py-4">
+              <div className="w-full max-w-7xl">
+                <AniListBanner />
+              </div>
+            </div>
             
             <AnimeSection
               title="Nouveautés"
@@ -49,8 +53,12 @@ export default function Home() {
               sectionSlug="/nouveau"
             />
             
-            {/* Random Recommendation Banner - Below Nouveautés */}
-            <RandomRecommendationBanner />
+            {/* Random Recommendation Banner - Centered between sections */}
+            <div className="w-full flex justify-center py-4">
+              <div className="w-full max-w-7xl">
+                <RandomRecommendationBanner />
+              </div>
+            </div>
             
             <AnimeSection
               title="Populaires"

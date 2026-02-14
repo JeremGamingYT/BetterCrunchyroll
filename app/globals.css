@@ -123,15 +123,6 @@
 
   html {
     overflow-x: hidden;
-    /* Hide default scrollbar but keep functionality if needed, though usually on body */
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-  }
-
-  html::-webkit-scrollbar {
-    display: none;
   }
 
   body {
@@ -165,25 +156,6 @@ h3,
 h4,
 .font-bold {
   letter-spacing: -0.02em;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: oklch(0.14 0.01 250);
-}
-
-::-webkit-scrollbar-thumb {
-  background: oklch(0.3 0.01 250);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.7 0.18 45);
 }
 
 /* Hide scrollbar utility class */
@@ -222,4 +194,74 @@ h4,
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Blob animation for banners */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(20px, -50px) scale(1.1);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  75% {
+    transform: translate(50px, 50px) scale(1.05);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: oklch(0.16 0.01 250);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #FFB81C 0%, #FF6B35 100%);
+  border-radius: 20px;
+  border: 2px solid oklch(0.16 0.01 250);
+  background-clip: padding-box;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #FFC93C 0%, #FF8C42 100%);
+  background-clip: padding-box;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(135deg, #FFD84D 0%, #FF6341 100%);
+  background-clip: padding-box;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+  background: oklch(0.16 0.01 250);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-color: linear-gradient(135deg, #FFB81C 0%, #FF6B35 100%) oklch(0.16 0.01 250);
+  scrollbar-width: thin;
 }

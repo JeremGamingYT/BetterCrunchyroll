@@ -120,147 +120,231 @@ export default function SimulcastPage() {
       <main className="min-h-screen bg-background">
         <Header />
 
-        {/* Hero Section */}
-        <section className="relative pt-24">
-          <div className="h-[300px] bg-gradient-to-br from-primary/20 via-background to-background relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
-            <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-                Simulcast {seasonInfo.season} {seasonInfo.year}
-              </h1>
-              <p className="text-lg text-muted-foreground max-w-2xl">
-                Découvrez tous les anime diffusés cette saison. Nouveaux épisodes disponibles peu après leur diffusion au
-                Japon.
-              </p>
+        {/* Hero Section - Enhanced with Premium Design */}
+        <section className="relative pt-32 pb-16 overflow-hidden">
+          {/* Dynamic Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background to-background" />
+          
+          {/* Animated blob effects */}
+          <div className="absolute -top-64 -right-64 w-96 h-96 bg-primary rounded-full mix-blend-soft-light filter blur-3xl opacity-20 animate-blob" />
+          <div className="absolute -bottom-64 -left-64 w-96 h-96 bg-blue-600 rounded-full mix-blend-soft-light filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
+          <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-overlay filter blur-3xl opacity-10 animate-blob animation-delay-4000" />
+
+          {/* Content */}
+          <div className="relative z-10 px-4 md:px-8 lg:px-12 text-center">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-3 mb-6 px-4 py-2 bg-primary/20 border border-primary/50 rounded-full backdrop-blur-sm">
+              <Calendar className="w-5 h-5 text-primary" />
+              <span className="text-xs md:text-sm font-black text-primary uppercase tracking-widest">
+                Saison en Direct
+              </span>
+            </div>
+
+            {/* Main Title */}
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground mb-4 font-bangers tracking-wider drop-shadow-lg">
+              {seasonInfo.season} {seasonInfo.year}
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8 font-medium">
+              Découvrez tous les anime en simulcast cette saison. Nouveaux épisodes disponibles peu après leur diffusion au Japon directement sur Crunchyroll.
+            </p>
+
+            {/* Stats Row */}
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8">
+              <div className="px-6 py-3 bg-card/50 backdrop-blur-sm border border-primary/30 rounded-xl">
+                <div className="text-2xl md:text-3xl font-black text-primary">{filteredAnimes.length}</div>
+                <div className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">Anime à venir</div>
+              </div>
+              <div className="px-6 py-3 bg-card/50 backdrop-blur-sm border border-primary/30 rounded-xl">
+                <div className="text-2xl md:text-3xl font-black text-primary">
+                  {filteredAnimes.filter((a) => a.isCrunchyroll).length}
+                </div>
+                <div className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">Sur Crunchyroll</div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Filters */}
-        <section className="px-4 md:px-8 lg:px-12 py-8 border-b border-border">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            {/* Left Filters */}
-            <div className="flex flex-wrap items-center gap-3">
-              {/* View Mode */}
-              <div className="flex items-center bg-secondary rounded-lg p-1">
-                <button
-                  onClick={() => setViewMode("grid")}
-                  className={cn(
-                    "flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-all",
-                    viewMode === "grid"
-                      ? "bg-primary text-primary-foreground"
-                      : "text-muted-foreground hover:text-foreground",
-                  )}
-                >
-                  <Grid className="w-4 h-4" />
-                  Grille
-                </button>
-                <button
-                  onClick={() => setViewMode("schedule")}
-                  className={cn(
-                    "flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-all",
-                    viewMode === "schedule"
-                      ? "bg-primary text-primary-foreground"
-                      : "text-muted-foreground hover:text-foreground",
-                  )}
-                >
-                  <Calendar className="w-4 h-4" />
-                  Calendrier
-                </button>
+        {/* Filters Section - Premium Design */}
+        <section className="px-4 md:px-8 lg:px-12 py-8 border-b border-border/50 relative z-20">
+          <div className="max-w-7xl mx-auto">
+            {/* Filters Row */}
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-6">
+              {/* Left - View & Day Filters */}
+              <div className="flex flex-wrap items-center gap-4">
+                {/* View Mode Toggle - Premium Style */}
+                <div className="flex items-center bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-1.5 shadow-sm hover:shadow-md transition-all duration-300">
+                  <button
+                    onClick={() => setViewMode("grid")}
+                    className={cn(
+                      "flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 uppercase tracking-wider",
+                      viewMode === "grid"
+                        ? "bg-gradient-to-r from-primary to-orange-500 text-primary-foreground shadow-lg scale-105"
+                        : "text-muted-foreground hover:text-foreground",
+                    )}
+                  >
+                    <Grid className="w-4 h-4" />
+                    Grille
+                  </button>
+                  <button
+                    onClick={() => setViewMode("schedule")}
+                    className={cn(
+                      "flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 uppercase tracking-wider",
+                      viewMode === "schedule"
+                        ? "bg-gradient-to-r from-primary to-orange-500 text-primary-foreground shadow-lg scale-105"
+                        : "text-muted-foreground hover:text-foreground",
+                    )}
+                  >
+                    <Calendar className="w-4 h-4" />
+                    Calendrier
+                  </button>
+                </div>
+
+                {/* Day Filter - Only for schedule view */}
+                {viewMode === "schedule" && (
+                  <div className="flex items-center gap-2">
+                    {(["all", "today", "tomorrow", "week"] as DayFilter[]).map((filter) => (
+                      <button
+                        key={filter}
+                        onClick={() => setDayFilter(filter)}
+                        className={cn(
+                          "px-4 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 uppercase tracking-wider",
+                          dayFilter === filter
+                            ? "bg-gradient-to-r from-primary/30 to-primary/20 text-primary border border-primary/50 shadow-md scale-105"
+                            : "bg-card/50 backdrop-blur-sm border border-border/50 text-muted-foreground hover:text-foreground hover:bg-card/70",
+                        )}
+                      >
+                        {filter === "all" && "Tous"}
+                        {filter === "today" && "Auj."}
+                        {filter === "tomorrow" && "Dem."}
+                        {filter === "week" && "Semaine"}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              {/* Day Filter (only for schedule view) */}
-              {viewMode === "schedule" && (
-                <div className="flex items-center gap-2">
-                  {(["all", "today", "tomorrow", "week"] as DayFilter[]).map((filter) => (
-                    <button
-                      key={filter}
-                      onClick={() => setDayFilter(filter)}
-                      className={cn(
-                        "px-3 py-1.5 rounded-lg text-sm font-medium transition-all",
-                        dayFilter === filter
-                          ? "bg-primary/20 text-primary border border-primary/50"
-                          : "bg-secondary text-muted-foreground hover:text-foreground",
-                      )}
-                    >
-                      {filter === "all" && "Tous"}
-                      {filter === "today" && "Aujourd'hui"}
-                      {filter === "tomorrow" && "Demain"}
-                      {filter === "week" && "Cette semaine"}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Right Filters */}
-            <div className="flex items-center gap-3">
+              {/* Right - Filter Button */}
               <button
                 onClick={() => setShowCrunchyrollOnly(!showCrunchyrollOnly)}
                 className={cn(
-                  "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all",
+                  "flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 border uppercase tracking-wider shadow-sm hover:shadow-md",
                   showCrunchyrollOnly
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-secondary text-muted-foreground hover:text-foreground",
+                    ? "bg-gradient-to-r from-primary/20 to-primary/10 text-primary border-primary/50 shadow-md"
+                    : "bg-card/50 backdrop-blur-sm border-border/50 text-muted-foreground hover:text-foreground hover:bg-card/70",
                 )}
               >
                 <Filter className="w-4 h-4" />
                 Crunchyroll uniquement
               </button>
             </div>
-          </div>
 
-          {/* Stats */}
-          <div className="flex items-center gap-4 mt-4 text-sm text-muted-foreground">
-            <span>
-              {filteredAnimes.length} anime{filteredAnimes.length > 1 ? "s" : ""}
-            </span>
-            {showCrunchyrollOnly && <span className="text-primary">• Filtre Crunchyroll actif</span>}
+            {/* Info Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Stats Card */}
+              <div className="flex items-center gap-3 p-4 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl hover:border-primary/40 transition-all duration-300">
+                <div className="p-3 bg-primary/20 rounded-lg">
+                  <Clock className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-foreground">
+                    {filteredAnimes.length} anime{filteredAnimes.length > 1 ? "s" : ""} trouvé{filteredAnimes.length > 1 ? "s" : ""}
+                  </div>
+                  <div className="text-xs text-muted-foreground">Anime en simulcast</div>
+                </div>
+              </div>
+
+              {/* Filter Info Card */}
+              {showCrunchyrollOnly && (
+                <div className="flex items-center gap-3 p-4 bg-green-500/10 backdrop-blur-sm border border-green-500/30 rounded-xl hover:border-green-500/50 transition-all duration-300">
+                  <div className="p-3 bg-green-500/20 rounded-lg">
+                    <Filter className="w-5 h-5 text-green-500" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-green-500">
+                      🎯 Crunchyroll uniquement
+                    </div>
+                    <div className="text-xs text-green-500/70">Filtre actif</div>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </section>
 
         {/* Content */}
-        <section className="px-4 md:px-8 lg:px-12 py-8 pb-16">
-          {viewMode === "grid" ? (
-            /* Grid View - Added relative and proper spacing for hover */
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 gap-y-8">
-              {filteredAnimes.map((anime, index) => (
-                <AnimeCard key={anime.id} anime={anime} index={index} showAiring />
-              ))}
+        <section className="px-4 md:px-8 lg:px-12 py-12 pb-16">
+          {isLoading ? (
+            <div className="flex items-center justify-center py-20">
+              <div className="text-center">
+                <div className="w-12 h-12 border-4 border-primary/20 border-t-primary rounded-full animate-spin mb-4 mx-auto" />
+                <p className="text-muted-foreground">Chargement des anime du simulcast...</p>
+              </div>
+            </div>
+          ) : viewMode === "grid" ? (
+            /* Grid View - Enhanced with better spacing */
+            <div className="space-y-8">
+              {filteredAnimes.length > 0 ? (
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 gap-y-8">
+                  {filteredAnimes.map((anime, index) => (
+                    <AnimeCard key={anime.id} anime={anime} index={index} showAiring />
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-20">
+                  <div className="mb-4 text-5xl">🔍</div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">Aucun anime trouvé</h3>
+                  <p className="text-muted-foreground">Essayez d'ajuster vos filtres</p>
+                </div>
+              )}
             </div>
           ) : (
-            /* Schedule View */
+            /* Schedule View - Enhanced */
             <div className="space-y-8">
-              {orderedDays.map((dayIndex) => {
-                const dayAnimes = animesByDay?.[dayIndex]
-                if (!dayAnimes || dayAnimes.length === 0) return null
+              {filteredAnimes.length > 0 ? (
+                orderedDays.map((dayIndex) => {
+                  const dayAnimes = animesByDay?.[dayIndex]
+                  if (!dayAnimes || dayAnimes.length === 0) return null
 
-                const isToday = dayIndex === new Date().getDay()
+                  const isToday = dayIndex === new Date().getDay()
 
-                return (
-                  <div key={dayIndex} className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <h2 className={cn("text-xl font-bold", isToday ? "text-primary" : "text-foreground")}>
-                        {DAYS[dayIndex]}
-                        {isToday && <span className="ml-2 text-sm font-normal text-primary">(Aujourd'hui)</span>}
-                      </h2>
-                      <div className="flex-1 h-px bg-border" />
-                      <span className="text-sm text-muted-foreground">
-                        {dayAnimes.length} anime{dayAnimes.length > 1 ? "s" : ""}
-                      </span>
+                  return (
+                    <div key={dayIndex} className="space-y-4">
+                      <div className="flex items-center gap-3 px-4 py-3 bg-card border border-border/50 rounded-lg">
+                        <h2
+                          className={cn(
+                            "text-lg font-bold",
+                            isToday ? "text-primary" : "text-foreground"
+                          )}
+                        >
+                          {DAYS[dayIndex]}
+                          {isToday && (
+                            <span className="ml-2 text-xs font-normal text-primary bg-primary/10 px-2 py-1 rounded">
+                              Aujourd'hui
+                            </span>
+                          )}
+                        </h2>
+                        <div className="flex-1 h-px bg-border" />
+                        <span className="text-xs font-medium text-muted-foreground bg-muted/30 px-3 py-1 rounded-full">
+                          {dayAnimes.length} anime{dayAnimes.length > 1 ? "s" : ""}
+                        </span>
+                      </div>
+
+                      <div className="grid gap-3">
+                        {dayAnimes.map((anime) => (
+                          <ScheduleCard key={anime.id} anime={anime} />
+                        ))}
+                      </div>
                     </div>
-
-                    <div className="grid gap-3">
-                      {dayAnimes.map((anime) => (
-                        <ScheduleCard key={anime.id} anime={anime} />
-                      ))}
-                    </div>
-                  </div>
-                )
-              })}
-
-              {filteredAnimes.length === 0 && (
-                <div className="text-center py-20 text-muted-foreground">Aucun anime trouvé avec ces filtres.</div>
+                  )
+                })
+              ) : (
+                <div className="text-center py-20">
+                  <div className="mb-4 text-5xl">📅</div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">Aucun anime trouvé</h3>
+                  <p className="text-muted-foreground">Essayez d'ajuster vos filtres</p>
+                </div>
               )}
             </div>
           )}
