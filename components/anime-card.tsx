@@ -40,6 +40,7 @@ interface AnimeCardProps {
   index?: number
   showAiring?: boolean
   compact?: boolean
+  layout?: "poster" | "landscape"
   /** If true, this is a relation/recommendation card - links to AniList if no Crunchyroll */
   isRelation?: boolean
 }
@@ -47,9 +48,10 @@ interface AnimeCardProps {
 // Relation types that indicate this is a related work
 const RELATION_TYPES = ['PREQUEL', 'SEQUEL', 'PARENT', 'SIDE_STORY', 'SPIN_OFF', 'ADAPTATION', 'ALTERNATIVE', 'SOURCE', 'CHARACTER', 'OTHER']
 
-export function AnimeCard({ anime, index = 0, showAiring = false, compact = false, isRelation = false }: AnimeCardProps) {
+export function AnimeCard({ anime, index = 0, showAiring = false, compact = false, layout = "poster", isRelation = false }: AnimeCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const [imageError, setImageError] = useState(false)
+  const isLandscape = layout === "landscape"
 
   // Use watchlist context to check if anime is bookmarked
   const watchlistContext = useWatchlistOptional()
@@ -136,6 +138,10 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
         : `/anime/${anime.id}`
 
   const isExternalLink = shouldLinkToAniList
+  const bannerImage = "bannerImage" in anime && typeof anime.bannerImage === "string" ? anime.bannerImage : null
+  const imageSource = imageError
+    ? `/placeholder.svg?height=${isLandscape ? 320 : 400}&width=${isLandscape ? 560 : 280}&query=anime`
+    : (isLandscape && bannerImage ? bannerImage : anime.image)
 
   // For external links, use anchor tag; for internal, use Next.js Link
   const linkProps = isExternalLink
@@ -148,7 +154,9 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
     <div
       className={cn(
         "group/card relative flex-shrink-0 transition-all duration-300 block",
-        compact ? "w-[160px] md:w-[180px]" : "w-[180px] md:w-[200px] lg:w-[220px]",
+        isLandscape
+          ? "w-[240px] sm:w-[260px] md:w-[280px] lg:w-[300px]"
+          : compact ? "w-[160px] md:w-[180px]" : "w-[180px] md:w-[200px] lg:w-[220px]",
         isHovered ? "z-50 transform-gpu" : "z-10",
       )}
       onMouseEnter={() => setIsHovered(true)}
@@ -160,10 +168,9 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
       {/* Container Logic */}
       <div
         className={cn(
-          "relative aspect-[2/3] rounded-xl overflow-hidden",
-          "transition-all duration-500 ease-out",
-          "shadow-lg shadow-black/20",
-          isHovered && "scale-105 shadow-2xl",
+          "relative overflow-hidden transition-all duration-300 ease-out shadow-lg shadow-black/30",
+          isLandscape ? "aspect-video rounded-[4px]" : "aspect-[2/3] rounded-xl",
+          isHovered && (isLandscape ? "scale-[1.08] shadow-2xl" : "scale-105 shadow-2xl"),
         )}
         style={{
           boxShadow: isHovered && animeColor ? `0 25px 50px -12px ${animeColor}40` : undefined,
@@ -174,59 +181,62 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           href={animeUrl}
           {...linkProps}
           onClick={isExternalLink ? undefined : () => {
-            window.scrollTo({ top: 0, behavior: "instant" })
+            window.scrollTo({ top: 0, behavior: "auto" })
           }}
           className="block w-full h-full"
         >
-          {/* Image */}
           <img
-            src={imageError ? "/placeholder.svg?height=400&width=280&query=anime" : anime.image}
+            src={imageSource}
             alt={anime.title}
             className={cn(
               "w-full h-full object-cover",
-              "transition-transform duration-700 ease-out",
+              "transition-transform duration-500 ease-out",
               isHovered && "scale-110",
             )}
             onError={() => setImageError(true)}
           />
 
-          {/* Hover Overlay */}
           <div
             className={cn(
-              "absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent",
-              "transition-opacity duration-500",
-              isHovered ? "opacity-100" : "opacity-0",
+              "absolute inset-0 transition-opacity duration-300",
+              isLandscape
+                ? "bg-gradient-to-t from-black/95 via-black/38 to-transparent opacity-100"
+                : cn(
+                    "bg-gradient-to-t from-background via-background/40 to-transparent",
+                    isHovered ? "opacity-100" : "opacity-0",
+                  ),
             )}
           >
-            {/* Play Button */}
             <div className="absolute inset-0 flex items-center justify-center">
               <button
                 className={cn(
                   "rounded-full text-white",
-                  "transition-all duration-500",
+                  "transition-all duration-300",
                   "hover:scale-110",
                   "shadow-lg",
-                  compact ? "p-3" : "p-4",
-                  isHovered ? "scale-100 opacity-100" : "scale-75 opacity-0",
+                  compact ? "p-3" : isLandscape ? "p-3.5" : "p-4",
+                  isHovered ? "scale-100 opacity-100" : isLandscape ? "scale-90 opacity-0" : "scale-75 opacity-0",
                 )}
                 style={{
                   backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
                   boxShadow: animeColor ? `0 10px 25px ${animeColor}50` : undefined,
                 }}
               >
-                <Play className={cn(compact ? "w-4 h-4" : "w-6 h-6")} fill="currentColor" />
+                <Play className={cn(compact ? "w-4 h-4" : isLandscape ? "w-5 h-5" : "w-6 h-6")} fill="currentColor" />
               </button>
             </div>
 
-            {/* Bottom Info */}
             <div
               className={cn(
-                "absolute bottom-0 left-0 right-0 p-4",
-                "transition-all duration-500",
-                isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+                "absolute bottom-0 left-0 right-0",
+                isLandscape
+                  ? "p-3 md:p-3.5"
+                  : cn(
+                      "p-4 transition-all duration-500",
+                      isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+                    ),
               )}
             >
-              {/* Info Content ... */}
               {currentEpisode && (
                 <div
                   className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
@@ -238,7 +248,10 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                   Ep {currentEpisode}
                 </div>
               )}
-              <div className="flex items-center gap-2 mb-2">
+              <h3 className={cn("font-semibold text-white leading-tight line-clamp-2", isLandscape ? "text-sm md:text-[0.95rem] mb-1.5" : "hidden")}>
+                {anime.title}
+              </h3>
+              <div className="flex items-center gap-2 mb-1.5">
                 {score !== null && score !== undefined && (
                   <>
                     {isPopularityScore ? (
@@ -257,7 +270,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                           fill="currentColor"
                           style={{ color: animeColor || "hsl(var(--primary))" }}
                         />
-                        <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
+                        <span className={cn("font-medium", isLandscape ? "text-xs text-white/90" : "text-sm text-foreground")}>{score.toFixed(1)}</span>
                       </>
                     )}
                   </>
@@ -265,15 +278,18 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                 {(score === null || score === undefined) && (
                   <>
                     <Star className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-sm font-medium text-muted-foreground">N/A</span>
+                    <span className={cn("font-medium text-muted-foreground", isLandscape ? "text-xs" : "text-sm")}>N/A</span>
                   </>
                 )}
-                {!currentEpisode && episodeText && <span className="text-xs text-muted-foreground ml-auto">{episodeText}</span>}
+                {!currentEpisode && episodeText && <span className={cn("ml-auto", isLandscape ? "text-[11px] text-white/72" : "text-xs text-muted-foreground")}>{episodeText}</span>}
               </div>
               {genres.length > 0 && (
-                <div className="flex flex-wrap gap-1">
-                  {genres.slice(0, 2).map((genre) => (
-                    <span key={genre} className="text-xs px-2 py-0.5 rounded-full bg-secondary/80 text-muted-foreground">
+                <div className={cn("flex flex-wrap gap-1", isLandscape && !isHovered && "opacity-90")}>
+                  {genres.slice(0, isLandscape ? 3 : 2).map((genre) => (
+                    <span key={genre} className={cn(
+                      "text-xs px-2 py-0.5 rounded-full",
+                      isLandscape ? "bg-black/45 text-white/75 border border-white/10" : "bg-secondary/80 text-muted-foreground",
+                    )}>
                       {genre}
                     </span>
                   ))}
@@ -283,10 +299,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           </div>
         </Link>
 
-        {/* Top Left Badges - Pointer events none so clicks go through to link if needed, 
-            but usually these are just visual. If they were clickable they'd need to be outside too. */}
         <div className="absolute top-3 left-3 flex flex-col items-start gap-1 pointer-events-none">
-          {/* ... Badges code ... */}
           {(relationType || isWatchlistItem) && (
             <div
               className={cn(
@@ -372,12 +385,13 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             }
           }}
           className={cn(
-            "absolute top-3 right-3 p-1.5 rounded-full z-20 cursor-pointer", // Ensure z-index and cursor
-            "transition-all duration-300",
+            "absolute top-3 right-3 p-1.5 rounded-full z-20 cursor-pointer transition-all duration-300",
             isBookmarked
               ? "bg-primary text-primary-foreground"
-              : "bg-background/80 backdrop-blur-sm text-foreground hover:bg-primary hover:text-primary-foreground",
-            !isHovered && !isBookmarked && "opacity-0",
+              : isLandscape
+                ? "bg-black/62 backdrop-blur-sm text-white hover:bg-primary hover:text-primary-foreground"
+                : "bg-background/80 backdrop-blur-sm text-foreground hover:bg-primary hover:text-primary-foreground",
+            !isHovered && !isBookmarked && (isLandscape ? "opacity-0" : "opacity-0"),
             isHovered && "opacity-100",
           )}
           style={{
@@ -400,26 +414,27 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
         />
       </div>
 
-      {/* Title Below */}
-      <Link
-        href={animeUrl}
-        {...linkProps}
-        className={cn("block mt-3 px-1", compact && "mt-2")}
-      >
-        <h3
-          className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
-          style={{
-            color: animeColor || undefined,
-          }}
+      {!isLandscape && (
+        <Link
+          href={animeUrl}
+          {...linkProps}
+          className={cn("block mt-3 px-1", compact && "mt-2")}
         >
-          {anime.title}
-        </h3>
-        {!compact && (
-          <p className="text-xs text-muted-foreground mt-1">
-            {"studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
-          </p>
-        )}
-      </Link>
+          <h3
+            className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
+            style={{
+              color: animeColor || undefined,
+            }}
+          >
+            {anime.title}
+          </h3>
+          {!compact && (
+            <p className="text-xs text-muted-foreground mt-1">
+              {"studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
+            </p>
+          )}
+        </Link>
+      )}
     </div>
   )
 }

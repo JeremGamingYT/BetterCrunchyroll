@@ -78,7 +78,6 @@ export function ContinueWatching() {
 
       {/* Scroll Container */}
       <div className="relative">
-        {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
           className={cn(
@@ -93,7 +92,6 @@ export function ContinueWatching() {
           <ChevronLeft className="w-5 h-5" />
         </button>
 
-        {/* Cards */}
         <div
           ref={scrollRef}
           onScroll={checkScroll}
@@ -105,7 +103,6 @@ export function ContinueWatching() {
           ))}
         </div>
 
-        {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
           className={cn(

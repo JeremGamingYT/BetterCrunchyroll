@@ -123,6 +123,7 @@
 
   html {
     overflow-x: hidden;
+    overflow-y: auto;
   }
 
   body {
@@ -132,6 +133,7 @@
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: -0.01em;
     overflow-x: hidden;
+    overflow-y: visible;
   }
 }
 
@@ -225,17 +227,23 @@ h4,
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar {
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
   width: 12px;
   height: 12px;
 }
 
-::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.custom-scrollbar::-webkit-scrollbar-track {
   background: oklch(0.16 0.01 250);
   border-radius: 20px;
 }
 
-::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb {
   background: linear-gradient(135deg, #FFB81C 0%, #FF6B35 100%);
   border-radius: 20px;
   border: 2px solid oklch(0.16 0.01 250);
@@ -244,24 +252,32 @@ h4,
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-::-webkit-scrollbar-thumb:hover {
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, #FFC93C 0%, #FF8C42 100%);
   background-clip: padding-box;
   box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
-::-webkit-scrollbar-thumb:active {
+html::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active,
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
   background: linear-gradient(135deg, #FFD84D 0%, #FF6341 100%);
   background-clip: padding-box;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-::-webkit-scrollbar-corner {
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+.custom-scrollbar::-webkit-scrollbar-corner {
   background: oklch(0.16 0.01 250);
 }
 
 /* Firefox scrollbar */
-* {
-  scrollbar-color: linear-gradient(135deg, #FFB81C 0%, #FF6B35 100%) oklch(0.16 0.01 250);
+html,
+body,
+.custom-scrollbar {
+  scrollbar-color: #ff9a1f oklch(0.16 0.01 250);
   scrollbar-width: thin;
 }

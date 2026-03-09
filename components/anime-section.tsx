@@ -73,7 +73,6 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, sect
 
       {/* Scroll Container */}
       <div className="relative">
-        {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
           className={cn(
@@ -88,14 +87,12 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, sect
           <ChevronLeft className="w-5 h-5" />
         </button>
 
-        {/* Loading State */}
         {isLoading && (
           <div className="flex items-center justify-center py-20">
             <Loader2 className="w-8 h-8 animate-spin text-primary" />
           </div>
         )}
 
-        {/* Error State */}
         {error && !isLoading && (
           <div className="flex items-center justify-center py-20 text-muted-foreground">
             Erreur lors du chargement. Veuillez réessayer.
@@ -119,7 +116,6 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, sect
           </div>
         )}
 
-        {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
           className={cn(
@@ -134,7 +130,6 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, sect
           <ChevronRight className="w-5 h-5" />
         </button>
 
-        {/* Fade Edges */}
         <div
           className={cn(
             "absolute left-0 top-0 bottom-16 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z-[55]",

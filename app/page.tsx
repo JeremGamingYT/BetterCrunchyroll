@@ -6,8 +6,6 @@ import { AnimeSection } from "@/components/anime-section"
 import { ContinueWatching } from "@/components/continue-watching"
 import { Footer } from "@/components/footer"
 import { LoadingScreen, useInitialLoading } from "@/components/loading-screen"
-import { AniListBanner } from "@/components/anilist-banner"
-import { RandomRecommendationBanner } from "@/components/random-recommendation-banner"
 import { useTrendingAnime, usePopularAnime, useNewAnime, useSimulcastAnime } from "@/hooks/use-combined-anime"
 
 export default function Home() {
@@ -37,14 +35,7 @@ export default function Home() {
               error={errorTrending}
               sectionSlug="/populaire"
             />
-            
-            {/* AniList Connection Banner - Centered between sections */}
-            <div className="w-full flex justify-center py-4">
-              <div className="w-full max-w-7xl">
-                <AniListBanner />
-              </div>
-            </div>
-            
+
             <AnimeSection
               title="Nouveautés"
               animes={newAnimesData}
@@ -52,14 +43,7 @@ export default function Home() {
               error={errorNew}
               sectionSlug="/nouveau"
             />
-            
-            {/* Random Recommendation Banner - Centered between sections */}
-            <div className="w-full flex justify-center py-4">
-              <div className="w-full max-w-7xl">
-                <RandomRecommendationBanner />
-              </div>
-            </div>
-            
+
             <AnimeSection
               title="Populaires"
               animes={popularAnimesData}

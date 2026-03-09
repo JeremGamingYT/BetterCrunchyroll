@@ -143,6 +143,7 @@ export async function enrichAnimeList(crItems: CrunchyrollSeries[]): Promise<Tra
         const enriched: TransformedAnime = {
           ...mapped,
           id: anilistData.id, // Use real AniList ID
+          title: anilistData.title || mapped.title,
           titleNative: anilistData.titleNative,
           titleRomaji: anilistData.titleRomaji,
           image: anilistData.image || mapped.image,
@@ -160,6 +161,7 @@ export async function enrichAnimeList(crItems: CrunchyrollSeries[]): Promise<Tra
           nextEpisode: anilistData.nextEpisode,
           studio: anilistData.studio,
           studios: anilistData.studios,
+          trailer: anilistData.trailer,
           externalLinks: [
             ...mapped.externalLinks,
             ...(anilistData.externalLinks.filter((l: any) => !l.site.includes("Crunchyroll")))
