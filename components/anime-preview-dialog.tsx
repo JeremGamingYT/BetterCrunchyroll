@@ -344,23 +344,23 @@ export function AnimePreviewDialog({ anime, open, onOpenChange, animeUrl }: Anim
             <X className="w-6 h-6" />
           </button>
 
-          {/* Hero Section */}
-          <div className="relative w-full aspect-[4/3] sm:aspect-video lg:aspect-[21/9] bg-[#181818] shrink-0">
-            {/* Static banner image — fades out when trailer is playing */}
+          {/* Hero Section — overflow-hidden clips the scaled-up iframe to the rounded top corners */}
+          <div className="relative w-full aspect-[4/3] sm:aspect-video lg:aspect-[21/9] bg-[#181818] shrink-0 overflow-hidden rounded-t-xl">
+            {/* Static banner image — always in DOM; opacity controlled by trailerState */}
             <img
               src={banner}
               alt={displayAnime.title}
               className={cn(
-                "w-full h-full object-cover transition-opacity duration-700",
+                "absolute inset-0 w-full h-full object-cover transition-opacity duration-700",
                 trailerState === 'showing' ? "opacity-0" : "opacity-100",
               )}
             />
 
-            {/* YouTube trailer overlay — only rendered while not idle */}
+            {/* YouTube trailer overlay — kept in DOM during showing+fading for smooth fade */}
             {trailerState !== 'idle' && trailerEmbedUrl ? (
               <div
                 className={cn(
-                  "absolute inset-0 z-[1] overflow-hidden pointer-events-none bg-black transition-opacity duration-700",
+                  "absolute inset-0 z-[1] pointer-events-none bg-black transition-opacity duration-700",
                   trailerState === 'showing' ? "opacity-100" : "opacity-0",
                 )}
               >

@@ -156,8 +156,8 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
       className={cn(
         "group/card relative flex-shrink-0 transition-all duration-300 block",
         isLandscape
-          ? "w-[240px] sm:w-[260px] md:w-[280px] lg:w-[300px]"
-          : compact ? "w-[160px] md:w-[180px]" : "w-[180px] md:w-[200px] lg:w-[220px]",
+          ? "w-[270px] sm:w-[290px] md:w-[310px] lg:w-[330px]"
+          : compact ? "w-[170px] md:w-[190px]" : "w-[210px] md:w-[230px] lg:w-[260px]",
         isHovered ? "z-50 transform-gpu" : "z-10",
       )}
       onMouseEnter={() => setIsHovered(true)}
@@ -585,7 +585,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             image: anime.image,
             bannerImage,
             description: "description" in anime ? anime.description : null,
-            rating,
+            rating: rating ?? undefined,
             genres,
             score,
             color: animeColor,

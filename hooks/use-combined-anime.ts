@@ -708,21 +708,20 @@ export function useMoviesInfinite(perPage = 50) {
 
             if (movies.length < limit) setHasMore(false)
 
-            return movies.map((m, idx): CombinedAnime => {
+            return movies.map((m, _idx): CombinedAnime => {
                 const bestPoster = m.images?.poster_tall?.[0]?.[
                     (m.images.poster_tall[0].length ?? 1) - 1
-                ]?.source || '/placeholder.png'
+                ]?.source ||
+                    m.images?.poster_wide?.[0]?.[(m.images.poster_wide[0].length ?? 1) - 1]?.source ||
+                    '/placeholder.png'
                 const bestBanner = m.images?.poster_wide?.[0]?.[
                     (m.images.poster_wide[0].length ?? 1) - 1
                 ]?.source || null
 
-                const numId = (() => {
-                    const n = parseInt(m.id, 36)
-                    return Number.isFinite(n) ? n : offset + idx + 2_000_000
-                })()
-
                 return {
-                    id: numId,
+                    // Use the Crunchyroll string ID directly so that AnimePreviewDialog
+                    // receives a non-numeric id → animeId = null → no AniList query
+                    id: m.id as unknown as number,
                     title: m.title,
                     titleRomaji: m.title,
                     titleNative: null,
