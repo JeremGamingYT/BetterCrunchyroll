@@ -30,7 +30,7 @@ import { BetterCrLogo } from "@/components/bettercr-logo"
 const navItems = [
   { label: "Accueil", href: "/" },
   { label: "Séries", href: "/populaire" },
-  { label: "Films", href: "/nouveau" },
+  { label: "Films", href: "/films" },
   { label: "Jeux", href: "#", disabled: true },
   { label: "Nouveau et populaire", href: "/simulcast" },
   { label: "Ma liste", href: "/watchlist" },

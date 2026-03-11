@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useMemo, useRef } from "react"
 import { createPortal } from "react-dom"
 import { ChevronLeft, ChevronRight, Play, Info, X, Star, Calendar, Clock, Check, Plus, Volume2, VolumeX } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -60,10 +60,10 @@ function getYoutubeVideoId(
   return extractYoutubeIdFromUrl(youtubeLink.url)
 }
 
-function getYoutubeEmbedUrl(videoId: string, muted: boolean) {
+function getYoutubeEmbedUrl(videoId: string, origin?: string | null) {
   const params = new URLSearchParams({
     autoplay: "1",
-    mute: muted ? "1" : "0",
+    mute: "1",
     controls: "0",
     rel: "0",
     modestbranding: "1",
@@ -74,7 +74,12 @@ function getYoutubeEmbedUrl(videoId: string, muted: boolean) {
     fs: "0",
     disablekb: "1",
     cc_load_policy: "0",
+    enablejsapi: "1",
   })
+
+  if (origin) {
+    params.set("origin", origin)
+  }
 
   return `https://www.youtube-nocookie.com/embed/${videoId}?${params.toString()}`
 }
@@ -89,9 +94,18 @@ export function HeroCarousel() {
   const [isBookmarked, setIsBookmarked] = useState(false)
   const [showVideoPreview, setShowVideoPreview] = useState(false)
   const [isVideoMuted, setIsVideoMuted] = useState(true)
+  const [playerOrigin, setPlayerOrigin] = useState<string | null>(null)
+  const [isPlayerReady, setIsPlayerReady] = useState(false)
+  const iframeRef = useRef<HTMLIFrameElement | null>(null)
 
   const animes = trendingAnimes || []
   const hasAnimes = animes.length > 0
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setPlayerOrigin(window.location.origin)
+    }
+  }, [])
 
   const goToSlide = useCallback(
     (index: number) => {
@@ -148,6 +162,7 @@ export function HeroCarousel() {
 
   useEffect(() => {
     setShowVideoPreview(false)
+    setIsPlayerReady(false)
 
     if (!isPaused || !currentTrailerId || showInfoPopup) {
       return
@@ -180,7 +195,24 @@ export function HeroCarousel() {
   const matchPercent = displayAnime.score ? Math.min(99, Math.max(82, Math.round(displayAnime.score * 10))) : 96
   const bannerSource = "bannerImage" in displayAnime && displayAnime.bannerImage ? displayAnime.bannerImage : displayAnime.image
   const episodeCount = displayAnime.episodes || (displayAnime.nextEpisode ? displayAnime.nextEpisode.episode : null)
-  const previewEmbedUrl = currentTrailerId ? getYoutubeEmbedUrl(currentTrailerId, isVideoMuted) : null
+  const previewEmbedUrl = useMemo(
+    () => (currentTrailerId ? getYoutubeEmbedUrl(currentTrailerId, playerOrigin) : null),
+    [currentTrailerId, playerOrigin],
+  )
+
+  useEffect(() => {
+    if (!showVideoPreview || !isPlayerReady || !iframeRef.current) {
+      return
+    }
+
+    const targetOrigin = playerOrigin || "https://www.youtube-nocookie.com"
+    const command = isVideoMuted ? "mute" : "unMute"
+
+    iframeRef.current.contentWindow?.postMessage(
+      JSON.stringify({ event: "command", func: command, args: [] }),
+      targetOrigin,
+    )
+  }, [isPlayerReady, isVideoMuted, playerOrigin, showVideoPreview])
 
   return (
     <section
@@ -203,13 +235,15 @@ export function HeroCarousel() {
             {index === currentIndex && showVideoPreview && previewEmbedUrl ? (
               <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none bg-black">
                 <iframe
-                  key={`${currentTrailerId}-${isVideoMuted ? "muted" : "sound"}`}
+                  key={currentTrailerId}
+                  ref={iframeRef}
                   src={previewEmbedUrl}
                   title={`${anime.title} trailer`}
                   className="absolute left-1/2 top-1/2 h-[112%] w-[112%] min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 scale-[1.14]"
                   allow="autoplay; encrypted-media; picture-in-picture"
                   referrerPolicy="strict-origin-when-cross-origin"
                   tabIndex={-1}
+                  onLoad={() => setIsPlayerReady(true)}
                 />
               </div>
             ) : null}

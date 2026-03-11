@@ -6,6 +6,7 @@ import { Play, Bookmark, Star, Clock } from "lucide-react"
 import { cn } from "@/lib/utils"
 import type { CombinedAnime } from "@/hooks/use-combined-anime"
 import { useWatchlistOptional } from "@/hooks/use-watchlist"
+import { AnimePreviewDialog } from "@/components/anime-preview-dialog"
 
 interface AnimeCardProps {
   anime:
@@ -51,6 +52,7 @@ const RELATION_TYPES = ['PREQUEL', 'SEQUEL', 'PARENT', 'SIDE_STORY', 'SPIN_OFF',
 export function AnimeCard({ anime, index = 0, showAiring = false, compact = false, layout = "poster", isRelation = false }: AnimeCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const [imageError, setImageError] = useState(false)
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false)
   const isLandscape = layout === "landscape"
 
   // Use watchlist context to check if anime is bookmarked
@@ -131,11 +133,9 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
 
   const animeUrl = shouldLinkToAniList
     ? `https://anilist.co/anime/${anime.id}`
-    : isWatchlistItem && currentEpisodeId
-      ? `/watch/${currentEpisodeId}`
-      : crunchyrollId
-        ? `/anime/${anime.id}?cr=${crunchyrollId}`
-        : `/anime/${anime.id}`
+    : crunchyrollId
+      ? `/anime/${anime.id}?cr=${crunchyrollId}`
+      : `/anime/${anime.id}`
 
   const isExternalLink = shouldLinkToAniList
   const bannerImage = "bannerImage" in anime && typeof anime.bannerImage === "string" ? anime.bannerImage : null
@@ -143,10 +143,11 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
     ? `/placeholder.svg?height=${isLandscape ? 320 : 400}&width=${isLandscape ? 560 : 280}&query=anime`
     : (isLandscape && bannerImage ? bannerImage : anime.image)
 
-  // For external links, use anchor tag; for internal, use Next.js Link
-  const linkProps = isExternalLink
-    ? { target: "_blank" as const, rel: "noopener noreferrer" }
-    : { scroll: false }
+  const handlePreviewOpen = () => {
+    if (!isExternalLink) {
+      setIsPreviewOpen(true)
+    }
+  }
 
   // We wrap the card in a div, and use the Link for the inner content (Image + Text)
   // The Bookmark button is placed OUTSIDE the Link to prevent event bubbling/nesting issues
@@ -177,127 +178,244 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
         }}
       >
         {/* Main Link Area (Image + Overlay) */}
-        <Link
-          href={animeUrl}
-          {...linkProps}
-          onClick={isExternalLink ? undefined : () => {
-            window.scrollTo({ top: 0, behavior: "auto" })
-          }}
-          className="block w-full h-full"
-        >
-          <img
-            src={imageSource}
-            alt={anime.title}
-            className={cn(
-              "w-full h-full object-cover",
-              "transition-transform duration-500 ease-out",
-              isHovered && "scale-110",
-            )}
-            onError={() => setImageError(true)}
-          />
-
-          <div
-            className={cn(
-              "absolute inset-0 transition-opacity duration-300",
-              isLandscape
-                ? "bg-gradient-to-t from-black/95 via-black/38 to-transparent opacity-100"
-                : cn(
-                    "bg-gradient-to-t from-background via-background/40 to-transparent",
-                    isHovered ? "opacity-100" : "opacity-0",
-                  ),
-            )}
+        {isExternalLink ? (
+          <Link
+            href={animeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full h-full"
           >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button
-                className={cn(
-                  "rounded-full text-white",
-                  "transition-all duration-300",
-                  "hover:scale-110",
-                  "shadow-lg",
-                  compact ? "p-3" : isLandscape ? "p-3.5" : "p-4",
-                  isHovered ? "scale-100 opacity-100" : isLandscape ? "scale-90 opacity-0" : "scale-75 opacity-0",
-                )}
-                style={{
-                  backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
-                  boxShadow: animeColor ? `0 10px 25px ${animeColor}50` : undefined,
-                }}
-              >
-                <Play className={cn(compact ? "w-4 h-4" : isLandscape ? "w-5 h-5" : "w-6 h-6")} fill="currentColor" />
-              </button>
-            </div>
+            <img
+              src={imageSource}
+              alt={anime.title}
+              className={cn(
+                "w-full h-full object-cover",
+                "transition-transform duration-500 ease-out",
+                isHovered && "scale-110",
+              )}
+              onError={() => setImageError(true)}
+            />
 
             <div
               className={cn(
-                "absolute bottom-0 left-0 right-0",
+                "absolute inset-0 transition-opacity duration-300",
                 isLandscape
-                  ? "p-3 md:p-3.5"
+                  ? "bg-gradient-to-t from-black/95 via-black/38 to-transparent opacity-100"
                   : cn(
-                      "p-4 transition-all duration-500",
-                      isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+                      "bg-gradient-to-t from-background via-background/40 to-transparent",
+                      isHovered ? "opacity-100" : "opacity-0",
                     ),
               )}
             >
-              {currentEpisode && (
-                <div
-                  className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span
+                  className={cn(
+                    "rounded-full text-white",
+                    "transition-all duration-300",
+                    "shadow-lg",
+                    compact ? "p-3" : isLandscape ? "p-3.5" : "p-4",
+                    isHovered ? "scale-100 opacity-100" : isLandscape ? "scale-90 opacity-0" : "scale-75 opacity-0",
+                  )}
                   style={{
-                    backgroundColor: animeColor || "hsl(var(--primary))",
-                    color: "#fff"
+                    backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
+                    boxShadow: animeColor ? `0 10px 25px ${animeColor}50` : undefined,
                   }}
                 >
-                  Ep {currentEpisode}
-                </div>
-              )}
-              <h3 className={cn("font-semibold text-white leading-tight line-clamp-2", isLandscape ? "text-sm md:text-[0.95rem] mb-1.5" : "hidden")}>
-                {anime.title}
-              </h3>
-              <div className="flex items-center gap-2 mb-1.5">
-                {score !== null && score !== undefined && (
-                  <>
-                    {isPopularityScore ? (
-                      <>
-                        <span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
-                          Popularité
-                        </span>
-                        <span className="text-sm font-medium text-foreground">
-                          {score.toFixed(1)}/100
-                        </span>
-                      </>
-                    ) : (
-                      <>
-                        <Star
-                          className="w-4 h-4"
-                          fill="currentColor"
-                          style={{ color: animeColor || "hsl(var(--primary))" }}
-                        />
-                        <span className={cn("font-medium", isLandscape ? "text-xs text-white/90" : "text-sm text-foreground")}>{score.toFixed(1)}</span>
-                      </>
-                    )}
-                  </>
-                )}
-                {(score === null || score === undefined) && (
-                  <>
-                    <Star className="w-4 h-4 text-muted-foreground" />
-                    <span className={cn("font-medium text-muted-foreground", isLandscape ? "text-xs" : "text-sm")}>N/A</span>
-                  </>
-                )}
-                {!currentEpisode && episodeText && <span className={cn("ml-auto", isLandscape ? "text-[11px] text-white/72" : "text-xs text-muted-foreground")}>{episodeText}</span>}
+                  <Play className={cn(compact ? "w-4 h-4" : isLandscape ? "w-5 h-5" : "w-6 h-6")} fill="currentColor" />
+                </span>
               </div>
-              {genres.length > 0 && (
-                <div className={cn("flex flex-wrap gap-1", isLandscape && !isHovered && "opacity-90")}>
-                  {genres.slice(0, isLandscape ? 3 : 2).map((genre) => (
-                    <span key={genre} className={cn(
-                      "text-xs px-2 py-0.5 rounded-full",
-                      isLandscape ? "bg-black/45 text-white/75 border border-white/10" : "bg-secondary/80 text-muted-foreground",
-                    )}>
-                      {genre}
-                    </span>
-                  ))}
+
+              <div
+                className={cn(
+                  "absolute bottom-0 left-0 right-0",
+                  isLandscape
+                    ? "p-3 md:p-3.5"
+                    : cn(
+                        "p-4 transition-all duration-500",
+                        isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+                      ),
+                )}
+              >
+                {currentEpisode && (
+                  <div
+                    className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
+                    style={{
+                      backgroundColor: animeColor || "hsl(var(--primary))",
+                      color: "#fff"
+                    }}
+                  >
+                    Ep {currentEpisode}
+                  </div>
+                )}
+                <h3 className={cn("font-semibold text-white leading-tight line-clamp-2", isLandscape ? "text-sm md:text-[0.95rem] mb-1.5" : "hidden")}>
+                  {anime.title}
+                </h3>
+                <div className="flex items-center gap-2 mb-1.5">
+                  {score !== null && score !== undefined && (
+                    <>
+                      {isPopularityScore ? (
+                        <>
+                          <span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                            Popularité
+                          </span>
+                          <span className="text-sm font-medium text-foreground">
+                            {score.toFixed(1)}/100
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <Star
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            style={{ color: animeColor || "hsl(var(--primary))" }}
+                          />
+                          <span className={cn("font-medium", isLandscape ? "text-xs text-white/90" : "text-sm text-foreground")}>{score.toFixed(1)}</span>
+                        </>
+                      )}
+                    </>
+                  )}
+                  {(score === null || score === undefined) && (
+                    <>
+                      <Star className="w-4 h-4 text-muted-foreground" />
+                      <span className={cn("font-medium text-muted-foreground", isLandscape ? "text-xs" : "text-sm")}>N/A</span>
+                    </>
+                  )}
+                  {!currentEpisode && episodeText && <span className={cn("ml-auto", isLandscape ? "text-[11px] text-white/72" : "text-xs text-muted-foreground")}>{episodeText}</span>}
                 </div>
-              )}
+                {genres.length > 0 && (
+                  <div className={cn("flex flex-wrap gap-1", isLandscape && !isHovered && "opacity-90")}>
+                    {genres.slice(0, isLandscape ? 3 : 2).map((genre) => (
+                      <span key={genre} className={cn(
+                        "text-xs px-2 py-0.5 rounded-full",
+                        isLandscape ? "bg-black/45 text-white/75 border border-white/10" : "bg-secondary/80 text-muted-foreground",
+                      )}>
+                        {genre}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        ) : (
+          <button
+            type="button"
+            onClick={handlePreviewOpen}
+            className="block h-full w-full text-left"
+          >
+            <img
+              src={imageSource}
+              alt={anime.title}
+              className={cn(
+                "w-full h-full object-cover",
+                "transition-transform duration-500 ease-out",
+                isHovered && "scale-110",
+              )}
+              onError={() => setImageError(true)}
+            />
+
+            <div
+              className={cn(
+                "absolute inset-0 transition-opacity duration-300",
+                isLandscape
+                  ? "bg-gradient-to-t from-black/95 via-black/38 to-transparent opacity-100"
+                  : cn(
+                      "bg-gradient-to-t from-background via-background/40 to-transparent",
+                      isHovered ? "opacity-100" : "opacity-0",
+                    ),
+              )}
+            >
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span
+                  className={cn(
+                    "rounded-full text-white",
+                    "transition-all duration-300",
+                    "shadow-lg",
+                    compact ? "p-3" : isLandscape ? "p-3.5" : "p-4",
+                    isHovered ? "scale-100 opacity-100" : isLandscape ? "scale-90 opacity-0" : "scale-75 opacity-0",
+                  )}
+                  style={{
+                    backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
+                    boxShadow: animeColor ? `0 10px 25px ${animeColor}50` : undefined,
+                  }}
+                >
+                  <Play className={cn(compact ? "w-4 h-4" : isLandscape ? "w-5 h-5" : "w-6 h-6")} fill="currentColor" />
+                </span>
+              </div>
+
+              <div
+                className={cn(
+                  "absolute bottom-0 left-0 right-0",
+                  isLandscape
+                    ? "p-3 md:p-3.5"
+                    : cn(
+                        "p-4 transition-all duration-500",
+                        isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+                      ),
+                )}
+              >
+                {currentEpisode && (
+                  <div
+                    className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
+                    style={{
+                      backgroundColor: animeColor || "hsl(var(--primary))",
+                      color: "#fff"
+                    }}
+                  >
+                    Ep {currentEpisode}
+                  </div>
+                )}
+                <h3 className={cn("font-semibold text-white leading-tight line-clamp-2", isLandscape ? "text-sm md:text-[0.95rem] mb-1.5" : "hidden")}>
+                  {anime.title}
+                </h3>
+                <div className="flex items-center gap-2 mb-1.5">
+                  {score !== null && score !== undefined && (
+                    <>
+                      {isPopularityScore ? (
+                        <>
+                          <span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                            Popularité
+                          </span>
+                          <span className="text-sm font-medium text-foreground">
+                            {score.toFixed(1)}/100
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <Star
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            style={{ color: animeColor || "hsl(var(--primary))" }}
+                          />
+                          <span className={cn("font-medium", isLandscape ? "text-xs text-white/90" : "text-sm text-foreground")}>{score.toFixed(1)}</span>
+                        </>
+                      )}
+                    </>
+                  )}
+                  {(score === null || score === undefined) && (
+                    <>
+                      <Star className="w-4 h-4 text-muted-foreground" />
+                      <span className={cn("font-medium text-muted-foreground", isLandscape ? "text-xs" : "text-sm")}>N/A</span>
+                    </>
+                  )}
+                  {!currentEpisode && episodeText && <span className={cn("ml-auto", isLandscape ? "text-[11px] text-white/72" : "text-xs text-muted-foreground")}>{episodeText}</span>}
+                </div>
+                {genres.length > 0 && (
+                  <div className={cn("flex flex-wrap gap-1", isLandscape && !isHovered && "opacity-90")}>
+                    {genres.slice(0, isLandscape ? 3 : 2).map((genre) => (
+                      <span key={genre} className={cn(
+                        "text-xs px-2 py-0.5 rounded-full",
+                        isLandscape ? "bg-black/45 text-white/75 border border-white/10" : "bg-secondary/80 text-muted-foreground",
+                      )}>
+                        {genre}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </button>
+        )}
 
         <div className="absolute top-3 left-3 flex flex-col items-start gap-1 pointer-events-none">
           {(relationType || isWatchlistItem) && (
@@ -415,25 +533,70 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
       </div>
 
       {!isLandscape && (
-        <Link
-          href={animeUrl}
-          {...linkProps}
-          className={cn("block mt-3 px-1", compact && "mt-2")}
-        >
-          <h3
-            className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
-            style={{
-              color: animeColor || undefined,
-            }}
+        isExternalLink ? (
+          <Link
+            href={animeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn("block mt-3 px-1", compact && "mt-2")}
           >
-            {anime.title}
-          </h3>
-          {!compact && (
-            <p className="text-xs text-muted-foreground mt-1">
-              {"studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
-            </p>
-          )}
-        </Link>
+            <h3
+              className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
+              style={{
+                color: animeColor || undefined,
+              }}
+            >
+              {anime.title}
+            </h3>
+            {!compact && (
+              <p className="text-xs text-muted-foreground mt-1">
+                {"studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
+              </p>
+            )}
+          </Link>
+        ) : (
+          <button
+            type="button"
+            onClick={handlePreviewOpen}
+            className={cn("mt-3 block px-1 text-left", compact && "mt-2")}
+          >
+            <h3
+              className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
+              style={{
+                color: animeColor || undefined,
+              }}
+            >
+              {anime.title}
+            </h3>
+            {!compact && (
+              <p className="text-xs text-muted-foreground mt-1">
+                {"studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
+              </p>
+            )}
+          </button>
+        )
+      )}
+
+      {!isExternalLink && (
+        <AnimePreviewDialog
+          anime={{
+            id: anime.id,
+            title: anime.title,
+            image: anime.image,
+            bannerImage,
+            description: "description" in anime ? anime.description : null,
+            rating,
+            genres,
+            score,
+            color: animeColor,
+            year: "year" in anime ? anime.year : null,
+            episodes: totalEpisodes,
+            crunchyrollId,
+          }}
+          open={isPreviewOpen}
+          onOpenChange={setIsPreviewOpen}
+          animeUrl={animeUrl}
+        />
       )}
     </div>
   )

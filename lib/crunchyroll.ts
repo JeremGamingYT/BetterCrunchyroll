@@ -504,7 +504,8 @@ export async function getSeries(seriesId: string): Promise<CrunchyrollSeries | n
 export async function getSeasons(seriesId: string): Promise<CrunchyrollSeason[]> {
     const cacheKey = `seasons_${seriesId}`
     const cached = getCache<CrunchyrollSeason[]>(cacheKey)
-    if (cached) return cached
+    // Only use cache if it contains actual data (ignore cached empty arrays)
+    if (cached && cached.length > 0) return cached
 
     try {
         const data = await crunchyrollFetch<{ data: CrunchyrollSeason[] }>(
@@ -512,7 +513,8 @@ export async function getSeasons(seriesId: string): Promise<CrunchyrollSeason[]>
         )
 
         const seasons = data.data || []
-        setCache(cacheKey, seasons)
+        // Only cache non-empty results to avoid blocking future retries
+        if (seasons.length > 0) setCache(cacheKey, seasons)
 
         return seasons
     } catch (error) {
@@ -548,13 +550,43 @@ export async function getSeasonEpisodes(seasonId: string): Promise<TransformedCr
 }
 
 /**
+ * Try to load episodes from the pre-cached local Data/series files via the
+ * /api/series-episodes route (server-side files, no Crunchyroll token needed).
+ * Returns null when data is unavailable so we can transparently fall back.
+ */
+async function fetchLocalEpisodes(seriesId: string): Promise<TransformedCrunchyrollEpisode[] | null> {
+    try {
+        const res = await fetch(`/api/series-episodes?id=${encodeURIComponent(seriesId)}`)
+        if (!res.ok) return null
+        const raw: CrunchyrollEpisode[] = await res.json()
+        if (!Array.isArray(raw) || raw.length === 0) return null
+        return raw.filter(ep => !ep.is_clip).map(transformEpisode)
+    } catch {
+        return null
+    }
+}
+
+/**
  * Get all episodes for a series (across all seasons)
  */
 export async function getAllSeriesEpisodes(seriesId: string): Promise<TransformedCrunchyrollEpisode[]> {
     const cacheKey = `all_episodes_${seriesId}`
     const cached = getCache<TransformedCrunchyrollEpisode[]>(cacheKey)
-    if (cached) return cached
+    // Only use cache if it contains actual episodes (ignore cached empty arrays)
+    if (cached && cached.length > 0) return cached
 
+    // 1. Try locally pre-cached Data/series files (no API token required, instant)
+    try {
+        const local = await fetchLocalEpisodes(seriesId)
+        if (local && local.length > 0) {
+            setCache(cacheKey, local)
+            return local
+        }
+    } catch {
+        // fall through to live API
+    }
+
+    // 2. Fall back to live Crunchyroll API via proxy
     try {
         const seasons = await getSeasons(seriesId)
 
@@ -567,7 +599,8 @@ export async function getAllSeriesEpisodes(seriesId: string): Promise<Transforme
             .flat()
             .sort((a, b) => a.sequenceNumber - b.sequenceNumber)
 
-        setCache(cacheKey, allEpisodes)
+        // Only cache non-empty results to avoid blocking future retries
+        if (allEpisodes.length > 0) setCache(cacheKey, allEpisodes)
 
         return allEpisodes
     } catch (error) {
@@ -618,6 +651,39 @@ export async function browseCrunchyroll(options: {
         return series
     } catch (error) {
         console.error("[Crunchyroll] Browse failed:", error)
+        return []
+    }
+}
+
+/**
+ * Browse movie listings from Crunchyroll
+ */
+export async function browseMovieListings(options: {
+    n?: number
+    start?: number
+    sort_by?: 'popularity' | 'newly_added' | 'alphabetical'
+} = {}): Promise<CrunchyrollSeries[]> {
+    const params: Record<string, string> = {
+        n: String(options.n || 50),
+        start: String(options.start || 0),
+        type: 'movie_listing',
+    }
+    if (options.sort_by) params.sort_by = options.sort_by
+
+    const cacheKey = `browse_movies_${JSON.stringify(params)}`
+    const cached = getCache<CrunchyrollSeries[]>(cacheKey)
+    if (cached && cached.length > 0) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollSeries[] }>(
+            "/content/v2/discover/browse",
+            params
+        )
+        const movies = data.data || []
+        if (movies.length > 0) setCache(cacheKey, movies)
+        return movies
+    } catch (error) {
+        console.error("[Crunchyroll] Browse movie listings failed:", error)
         return []
     }
 }

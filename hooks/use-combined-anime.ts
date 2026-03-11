@@ -230,30 +230,91 @@ export async function searchWithCrunchyroll(query: string, page: number, perPage
     }
 }
 
-export async function fetchAnimeDetailsWithCrunchyroll(anilistId: number): Promise<CombinedAnimeDetails | null> {
-    const anilistDetails = await getAnimeDetails(anilistId)
-    if (!anilistDetails) return null
+export async function fetchAnimeDetailsWithCrunchyroll(
+    anilistId: number | null,
+    knownCrunchyrollId?: string | null
+): Promise<CombinedAnimeDetails | null> {
+    // Fetch AniList details if we have an anilistId
+    const anilistDetails = anilistId ? await getAnimeDetails(anilistId) : null
 
-    let match = undefined
+    // If we have no anilistId and no crunchyrollId, give up
+    if (!anilistDetails && !knownCrunchyrollId) return null
+
+    let match: TransformedCrunchyrollAnime | undefined = undefined
     let episodes: TransformedCrunchyrollEpisode[] = []
 
     try {
-        // Check coverage
-        match = await checkAnimeAvailability(anilistDetails.title)
-        if (match) {
-            episodes = await getAllSeriesEpisodes(match.crunchyrollId)
+        if (knownCrunchyrollId) {
+            // Fast path: we already know the CR ID — skip the unreliable title search
+            const seriesInfo = await getSeries(knownCrunchyrollId)
+            match = {
+                crunchyrollId: knownCrunchyrollId,
+                title: seriesInfo?.title || anilistDetails?.title || '',
+                slug: seriesInfo?.slug_title || '',
+                episodeCount: seriesInfo?.series_metadata?.episode_count || 0,
+                seasonCount: seriesInfo?.series_metadata?.season_count || 0,
+                isDubbed: seriesInfo?.series_metadata?.is_dubbed || false,
+                isSubbed: seriesInfo?.series_metadata?.is_subbed ?? true,
+                crRating: seriesInfo?.series_metadata?.star_rating
+                    || seriesInfo?.series_metadata?.rating?.average || 0,
+                crVoteCount: seriesInfo?.series_metadata?.vote_count
+                    || seriesInfo?.series_metadata?.rating?.total || 0,
+            }
+            episodes = await getAllSeriesEpisodes(knownCrunchyrollId)
+        } else if (anilistDetails) {
+            // Fallback: search by title (less reliable)
+            const found = await checkAnimeAvailability(anilistDetails.title)
+            if (found) {
+                match = found
+                episodes = await getAllSeriesEpisodes(found.crunchyrollId)
+            }
         }
     } catch (e) {
-        console.warn("[Details] CR availability check failed", e)
+        console.warn("[Details] CR fetch failed", e)
+    }
+
+    // Build a minimal base if we don't have AniList data
+    const base = anilistDetails || {
+        id: 0,
+        title: match?.title || '',
+        titleRomaji: match?.title || '',
+        titleNative: null,
+        description: null,
+        image: '/placeholder.svg',
+        bannerImage: null,
+        genres: [],
+        rating: '',
+        score: null,
+        popularity: 0,
+        duration: null,
+        status: '',
+        season: null,
+        year: null,
+        format: null,
+        source: null,
+        color: null,
+        nextEpisode: null,
+        isCrunchyroll: true,
+        studio: null,
+        studios: [],
+        externalLinks: [],
+        trailer: null,
+        startDate: null,
+        endDate: null,
+        episodes: match?.episodeCount || null,
+        staff: [],
+        characters: [],
+        relations: [],
+        recommendations: [],
     }
 
     return {
-        ...anilistDetails,
+        ...base,
         crunchyrollId: match?.crunchyrollId || null,
         crunchyrollSlug: match?.slug || null,
         isOnCrunchyroll: !!match,
         crunchyrollInfo: match || null,
-        crunchyrollEpisodes: episodes
+        crunchyrollEpisodes: episodes,
     }
 }
 
@@ -580,20 +641,27 @@ export function useSimulcastAnime(page = 1, perPage = 20) {
 }
 
 // Hook for anime details page
-export function useAnimeDetails(anilistId: number | null) {
+export function useAnimeDetails(anilistId: number | null, crunchyrollId?: string | null) {
+    // Build a stable cache key that incorporates both identifiers
+    const cacheKey = anilistId
+        ? `anime-details-${anilistId}${crunchyrollId ? `-${crunchyrollId}` : ''}`
+        : crunchyrollId
+            ? `anime-details-cr-${crunchyrollId}`
+            : null
+
     const { data, isLoading, error } = useSWR(
-        anilistId ? `anime-details-${anilistId}` : null,
-        () => anilistId ? fetchAnimeDetailsWithCrunchyroll(anilistId) : null,
+        cacheKey,
+        () => fetchAnimeDetailsWithCrunchyroll(anilistId, crunchyrollId),
         {
             revalidateOnFocus: false,
-            dedupingInterval: 300000
+            dedupingInterval: 300000,
         }
     )
 
     return {
         anime: data,
         isLoading,
-        error
+        error,
     }
 }
 
@@ -620,4 +688,112 @@ export function useAiringSchedule(page = 1, perPage = 20) {
         { revalidateOnFocus: false }
     )
     return { data, isLoading, error }
+}
+
+// ===============================
+// Movies (movie_listing) infinite hook
+// ===============================
+export function useMoviesInfinite(perPage = 50) {
+    const [offset, setOffset] = useState(0)
+    const [allMovies, setAllMovies] = useState<CombinedAnime[]>([])
+    const [hasMore, setHasMore] = useState(true)
+    const [isLoadingMore, setIsLoadingMore] = useState(false)
+
+    const { data: batch, isLoading, error } = useSWR(
+        `cr-movies-batch-${offset}`,
+        async (): Promise<CombinedAnime[]> => {
+            const { browseMovieListings } = await import("@/lib/crunchyroll")
+            const limit = perPage
+            const movies = await browseMovieListings({ n: limit, start: offset, sort_by: 'popularity' })
+
+            if (movies.length < limit) setHasMore(false)
+
+            return movies.map((m, idx): CombinedAnime => {
+                const bestPoster = m.images?.poster_tall?.[0]?.[
+                    (m.images.poster_tall[0].length ?? 1) - 1
+                ]?.source || '/placeholder.png'
+                const bestBanner = m.images?.poster_wide?.[0]?.[
+                    (m.images.poster_wide[0].length ?? 1) - 1
+                ]?.source || null
+
+                const numId = (() => {
+                    const n = parseInt(m.id, 36)
+                    return Number.isFinite(n) ? n : offset + idx + 2_000_000
+                })()
+
+                return {
+                    id: numId,
+                    title: m.title,
+                    titleRomaji: m.title,
+                    titleNative: null,
+                    description: m.description || null,
+                    image: bestPoster,
+                    bannerImage: bestBanner,
+                    genres: [],
+                    rating: '12+',
+                    score: null,
+                    popularity: 0,
+                    duration: null,
+                    status: 'FINISHED',
+                    season: null,
+                    year: null,
+                    format: 'MOVIE',
+                    source: null,
+                    color: null,
+                    nextEpisode: null,
+                    isCrunchyroll: true,
+                    studio: null,
+                    studios: [],
+                    externalLinks: [],
+                    trailer: null,
+                    startDate: null,
+                    endDate: null,
+                    episodes: 1,
+                    crunchyrollId: m.id,
+                    crunchyrollSlug: m.slug_title,
+                    isOnCrunchyroll: true,
+                    crunchyrollInfo: {
+                        crunchyrollId: m.id,
+                        title: m.title,
+                        slug: m.slug_title,
+                        episodeCount: 1,
+                        seasonCount: 1,
+                        isDubbed: m.series_metadata?.is_dubbed || false,
+                        isSubbed: m.series_metadata?.is_subbed ?? true,
+                        crRating: 0,
+                        crVoteCount: 0,
+                    },
+                    combinedScore: 0,
+                    popularityScore: 0,
+                }
+            })
+        },
+        { revalidateOnFocus: false, dedupingInterval: 0 }
+    )
+
+    useEffect(() => {
+        if (batch && batch.length > 0) {
+            setAllMovies(prev => {
+                const existing = new Set(prev.map(m => m.id))
+                return [...prev, ...batch.filter(m => !existing.has(m.id))]
+            })
+        }
+    }, [batch])
+
+    const loadMore = useCallback(() => {
+        if (!isLoadingMore && hasMore) {
+            setIsLoadingMore(true)
+            setOffset(prev => prev + perPage)
+            setTimeout(() => setIsLoadingMore(false), 100)
+        }
+    }, [hasMore, isLoadingMore, perPage])
+
+    return {
+        data: allMovies,
+        isLoading,
+        isLoadingMore,
+        hasMore,
+        error,
+        loadMore,
+    }
 }
