@@ -1,7 +1,7 @@
 "use client"
 
 import useSWR from "swr"
-import { useState, useCallback, useEffect } from "react"
+import { useState, useCallback, useEffect, useMemo } from "react"
 import {
     enrichAnimeList,
     enrichAnimeListWithFallback,
@@ -234,47 +234,48 @@ export async function fetchAnimeDetailsWithCrunchyroll(
     anilistId: number | null,
     knownCrunchyrollId?: string | null
 ): Promise<CombinedAnimeDetails | null> {
-    // Fetch AniList details if we have an anilistId
-    const anilistDetails = anilistId ? await getAnimeDetails(anilistId) : null
-
-    // If we have no anilistId and no crunchyrollId, give up
-    if (!anilistDetails && !knownCrunchyrollId) return null
+    // **CRITICAL: Return Crunchyroll data IMMEDIATELY, don't wait for AniList**
+    // We'll enrich in background via useEffect (in useAnimeDetails hook)
+    
+    // If we have no crunchyrollId and no anilistId, we can't get anything
+    if (!knownCrunchyrollId && !anilistId) return null
 
     let match: TransformedCrunchyrollAnime | undefined = undefined
     let episodes: TransformedCrunchyrollEpisode[] = []
 
     try {
         if (knownCrunchyrollId) {
-            // Fast path: we already know the CR ID — skip the unreliable title search
+            // Fast path: we already know the CR ID — fetch Crunchyroll data immediately
             const seriesInfo = await getSeries(knownCrunchyrollId)
-            match = {
-                crunchyrollId: knownCrunchyrollId,
-                title: seriesInfo?.title || anilistDetails?.title || '',
-                slug: seriesInfo?.slug_title || '',
-                episodeCount: seriesInfo?.series_metadata?.episode_count || 0,
-                seasonCount: seriesInfo?.series_metadata?.season_count || 0,
-                isDubbed: seriesInfo?.series_metadata?.is_dubbed || false,
-                isSubbed: seriesInfo?.series_metadata?.is_subbed ?? true,
-                crRating: seriesInfo?.series_metadata?.star_rating
-                    || seriesInfo?.series_metadata?.rating?.average || 0,
-                crVoteCount: seriesInfo?.series_metadata?.vote_count
-                    || seriesInfo?.series_metadata?.rating?.total || 0,
-            }
-            episodes = await getAllSeriesEpisodes(knownCrunchyrollId)
-        } else if (anilistDetails) {
-            // Fallback: search by title (less reliable)
-            const found = await checkAnimeAvailability(anilistDetails.title)
-            if (found) {
-                match = found
-                episodes = await getAllSeriesEpisodes(found.crunchyrollId)
+            if (seriesInfo) {
+                match = {
+                    crunchyrollId: knownCrunchyrollId,
+                    title: seriesInfo.title || '',
+                    slug: seriesInfo.slug_title || '',
+                    episodeCount: seriesInfo.series_metadata?.episode_count || 0,
+                    seasonCount: seriesInfo.series_metadata?.season_count || 0,
+                    isDubbed: seriesInfo.series_metadata?.is_dubbed || false,
+                    isSubbed: seriesInfo.series_metadata?.is_subbed ?? true,
+                    crRating: seriesInfo.series_metadata?.star_rating
+                        || seriesInfo.series_metadata?.rating?.average || 0,
+                    crVoteCount: seriesInfo.series_metadata?.vote_count
+                        || seriesInfo.series_metadata?.rating?.total || 0,
+                }
+                // Fetch episodes asynchronously (these are usually quick)
+                try {
+                    episodes = await getAllSeriesEpisodes(knownCrunchyrollId)
+                } catch {
+                    episodes = []
+                }
             }
         }
     } catch (e) {
         console.warn("[Details] CR fetch failed", e)
     }
 
-    // Build a minimal base if we don't have AniList data
-    const base = anilistDetails || {
+    // Build minimal base from Crunchyroll data only
+    // AniList enrichment happens in background via useEffect in the hook
+    const base: CombinedAnimeDetails = {
         id: 0,
         title: match?.title || '',
         titleRomaji: match?.title || '',
@@ -287,7 +288,7 @@ export async function fetchAnimeDetailsWithCrunchyroll(
         score: null,
         popularity: 0,
         duration: null,
-        status: '',
+        status: 'UNKNOWN',
         season: null,
         year: null,
         format: null,
@@ -306,16 +307,14 @@ export async function fetchAnimeDetailsWithCrunchyroll(
         characters: [],
         relations: [],
         recommendations: [],
-    }
-
-    return {
-        ...base,
         crunchyrollId: match?.crunchyrollId || null,
         crunchyrollSlug: match?.slug || null,
         isOnCrunchyroll: !!match,
         crunchyrollInfo: match || null,
         crunchyrollEpisodes: episodes,
     }
+
+    return base
 }
 
 // ===============================
@@ -363,16 +362,15 @@ export function usePopularAnimeInfinite(perPage = 20) {
                 }
 
                 // ============================================================
-                // STRATEGY: Return Crunchyroll data first, enrich in background
+                // CRITICAL: Return ONLY Crunchyroll data immediately
+                // Enrichment happens in background (in useEffect)
                 // ============================================================
                 
-                // Step 1: Map to CombinedAnime with Crunchyroll data only
                 const crunchyrollOnlyAnimes = items.map((item: any) => {
                     const popularityScore = Math.round(((item.combined?.score || 0) * 20) * 10) / 10
                     const crAverage = parseFloat(item.crunchyroll?.rating?.average || "0")
                     
-                    // Create base anime from Crunchyroll data
-                    const crBaseAnime: CombinedAnime = {
+                    return {
                         id: parseInt(item.id, 36) || Math.floor(Math.random() * 1_000_000),
                         title: item.title,
                         titleRomaji: item.title,
@@ -416,55 +414,11 @@ export function usePopularAnimeInfinite(perPage = 20) {
                         },
                         combinedScore: item.combined?.score || 0,
                         popularityScore: item.combined?.popularityScore || 0
-                    }
-                    
-                    return crBaseAnime
+                    } as CombinedAnime
                 })
                 
-                // Step 2: Start enrichment in background (async, non-blocking)
-                // Use the new fallback-aware enrichment function with throttling
-                const { throttledSearchAnimeBasicInfoWithFallback } = await import("@/lib/anilist")
-                
-                let enrichedCount = 0
-                const enrichmentPromises = crunchyrollOnlyAnimes.map(async (anime: CombinedAnime, index: number) => {
-                    try {
-                        const enrichedData = await throttledSearchAnimeBasicInfoWithFallback(
-                            anime.title,
-                            anime // Pass Crunchyroll data as fallback
-                        )
-                        
-                        if (enrichedData) {
-                            // Merge enriched data with Crunchyroll base
-                            const merged: CombinedAnime = {
-                                ...anime,
-                                ...enrichedData,
-                                // Keep Crunchyroll-specific fields
-                                crunchyrollId: anime.crunchyrollId,
-                                crunchyrollSlug: anime.crunchyrollSlug,
-                                isOnCrunchyroll: true,
-                                crunchyrollInfo: anime.crunchyrollInfo,
-                                combinedScore: anime.combinedScore,
-                                popularityScore: anime.popularityScore
-                            }
-                            enrichedCount++
-                            setEnrichmentProgress(Math.round((enrichedCount / crunchyrollOnlyAnimes.length) * 100))
-                            return merged
-                        }
-                    } catch (e) {
-                        console.warn(`[Enrichment] Failed for "${anime.title}":`, e)
-                    }
-                    return anime // Return unenriched if fallback fails too
-                })
-                
-                // Return Crunchyroll data immediately while enrichment happens
-                // Use Promise.allSettled to get enriched data when available
-                const enrichedResults = await Promise.allSettled(enrichmentPromises)
-                const finalAnimes = enrichedResults
-                    .map((result) => result.status === 'fulfilled' ? result.value : null)
-                    .filter((anime): anime is CombinedAnime => anime !== null)
-                
-                setEnrichmentProgress(0)
-                return finalAnimes
+                // Return immediately - NO await on enrichment
+                return crunchyrollOnlyAnimes
             } catch (err) {
                 console.error('[usePopularAnimeInfinite] Error:', err)
                 setHasMore(false)
@@ -477,7 +431,7 @@ export function usePopularAnimeInfinite(perPage = 20) {
         }
     )
 
-    // Merge new batch with existing animes, filtering duplicates
+    // Merge new batch with existing animes
     useEffect(() => {
         if (batch && batch.length > 0) {
             setAllAnimes(prev => {
@@ -485,6 +439,61 @@ export function usePopularAnimeInfinite(perPage = 20) {
                 const newItems = batch.filter(anime => !existingIds.has(anime.id))
                 return [...prev, ...newItems]
             })
+        }
+    }, [batch])
+
+    // BACKGROUND enrichment (non-blocking) - progressively updates animes as they enrich
+    useEffect(() => {
+        if (!batch || batch.length === 0) return
+
+        let cancelled = false
+
+        const enrichBatch = async () => {
+            const { throttledSearchAnimeBasicInfoWithFallback } = await import("@/lib/anilist")
+            let enrichedCount = 0
+
+            for (const anime of batch as CombinedAnime[]) {
+                if (cancelled) break
+
+                try {
+                    const enrichedData = await throttledSearchAnimeBasicInfoWithFallback(
+                        anime.title,
+                        anime // Pass Crunchyroll data as fallback if AniList fails
+                    )
+                    
+                    if (enrichedData && !cancelled) {
+                        // Merge enriched data with Crunchyroll base
+                        const merged: CombinedAnime = {
+                            ...anime,
+                            ...enrichedData,
+                            // Preserve Crunchyroll-specific fields
+                            crunchyrollId: anime.crunchyrollId,
+                            crunchyrollSlug: anime.crunchyrollSlug,
+                            isOnCrunchyroll: true,
+                            crunchyrollInfo: anime.crunchyrollInfo,
+                            combinedScore: anime.combinedScore,
+                            popularityScore: anime.popularityScore
+                        }
+                        
+                        // Update individual anime when enriched (progressive update)
+                        setAllAnimes(prev => prev.map(a => a.id === merged.id ? merged : a))
+                        enrichedCount++
+                        setEnrichmentProgress(Math.round((enrichedCount / batch.length) * 100))
+                    }
+                } catch (e) {
+                    console.warn(`[Enrichment] Failed for "${anime.title}":`, e)
+                }
+            }
+            
+            if (!cancelled) {
+                setEnrichmentProgress(0)
+            }
+        }
+
+        enrichBatch()
+
+        return () => {
+            cancelled = true // Cleanup on unmount
         }
     }, [batch])
 
@@ -510,15 +519,16 @@ export function usePopularAnimeInfinite(perPage = 20) {
 
 /**
  * Legacy hook for pagination-based loading (kept for backward compatibility)
+ * Returns Crunchyroll data immediately, enriches in background
  */
 export function usePopularAnime(page = 1, perPage = 20) {
-    // On récupère toujours la liste complète des populaires côté API,
-    // puis on fait la pagination côté client (20 par 20, etc.)
-    const { data: allData, isLoading, error } = useSWR(
+    const [enrichedMap, setEnrichedMap] = useState<Map<string, CombinedAnime>>(new Map())
+    
+    const { data: crunchyrollData, isLoading, error } = useSWR(
         `api-popular-all`,
         async () => {
             try {
-                // On demande un gros lot à l'API (max 500 défini côté route)
+                // Return ONLY Crunchyroll data immediately (max 500)
                 const limit = 500
                 const response = await fetch(`/api/populaire?limit=${limit}&offset=0&sortBy=combined`)
                 
@@ -527,88 +537,62 @@ export function usePopularAnime(page = 1, perPage = 20) {
                 }
                 
                 const json = await response.json()
+                const items = json.data || []
 
-                // Transform & enrich avec AniList (couleurs, genres, etc. en cache IDB)
-                const transformed = await Promise.all(
-                    (json.data || []).map(async (item: any) => {
-                        // Score de popularité 0-100 (basé sur combined.score 0-5)
-                        const popularityScore = Math.round(((item.combined?.score || 0) * 20) * 10) / 10
-                        // Note Crunchyroll brute (0-10) pour le badge sous "TV"
-                        const crAverage = parseFloat(item.crunchyroll?.rating?.average || "0")
+                // Map Crunchyroll data only (no enrichment in SWR)
+                return items.map((item: any) => {
+                    const popularityScore = Math.round(((item.combined?.score || 0) * 20) * 10) / 10
+                    const crAverage = parseFloat(item.crunchyroll?.rating?.average || "0")
+                    const fallbackId = parseInt(item.id, 36) || Math.floor(Math.random() * 1_000_000)
 
-                        // Métadonnées AniList (couleur, genres, etc.) – stockées en IndexedDB
-                        let anilistInfo: TransformedAnime | null = null
-                        try {
-                            anilistInfo = await searchAnimeBasicInfo(item.title)
-                        } catch {
-                            anilistInfo = null
-                        }
-
-                        // Fallback ID numérique si AniList n'a rien renvoyé
-                        const fallbackId = parseInt(item.id, 36) || Math.floor(Math.random() * 1_000_000)
-
-                        return {
-                            // Base AniList si dispo, sinon fallback basique
-                            id: anilistInfo?.id ?? fallbackId,
-                            anilistId: anilistInfo?.id ?? item.anilist?.id ?? null,
-                            title: anilistInfo?.title ?? item.title,
-                            titleRomaji: anilistInfo?.titleRomaji ?? item.title,
-                            titleNative: anilistInfo?.titleNative ?? null,
-                            description: anilistInfo?.description ?? item.description ?? '',
-                            image: anilistInfo?.image
-                                || item.images?.poster_tall?.[0]?.[item.images.poster_tall[0].length - 1]?.source
-                                || '/placeholder.png',
-                            bannerImage: anilistInfo?.bannerImage
-                                || item.images?.banner?.[0]?.[item.images.banner[0].length - 1]?.source
-                                || null,
-                            genres: anilistInfo?.genres ?? [],
-                            // Badge étoile = vraie note Crunchyroll /10
-                            rating: crAverage > 0 ? `${crAverage.toFixed(1)}/10` : (anilistInfo?.rating ?? '12+'),
-                            // Ligne "Popularité" = 0-100
-                            score: popularityScore,
-                            popularity: anilistInfo?.popularity
-                                ?? parseInt(String(item.crunchyroll?.rating?.total || '0')),
-                            duration: anilistInfo?.duration ?? null,
-                            status: anilistInfo?.status ?? 'RELEASING',
-                            season: anilistInfo?.season ?? null,
-                            year: anilistInfo?.year ?? new Date().getFullYear(),
-                            format: anilistInfo?.format ?? 'TV',
-                            source: anilistInfo?.source ?? null,
-                            color: anilistInfo?.color ?? null,
-                            nextEpisode: anilistInfo?.nextEpisode ?? null,
-                            isCrunchyroll: anilistInfo?.isCrunchyroll ?? true,
-                            studio: anilistInfo?.studio ?? item.studio ?? null,
-                            studios: anilistInfo?.studios ?? [],
-                            externalLinks: anilistInfo?.externalLinks ?? [],
-                            trailer: anilistInfo?.trailer ?? null,
-                            startDate: anilistInfo?.startDate ?? null,
-                            endDate: anilistInfo?.endDate ?? null,
-                            episodes: anilistInfo?.episodes ?? null,
-
-                            // Champs Crunchyroll spécifiques
+                    return {
+                        id: fallbackId,
+                        title: item.title,
+                        titleRomaji: item.title,
+                        titleNative: null,
+                        description: item.description ?? '',
+                        image: item.images?.poster_tall?.[0]?.[item.images.poster_tall[0].length - 1]?.source || '/placeholder.png',
+                        bannerImage: item.images?.banner?.[0]?.[item.images.banner[0].length - 1]?.source || null,
+                        genres: [],
+                        rating: crAverage > 0 ? `${crAverage.toFixed(1)}/10` : '12+',
+                        score: popularityScore,
+                        popularity: parseInt(String(item.crunchyroll?.rating?.total || '0')),
+                        duration: null,
+                        status: 'RELEASING',
+                        season: null,
+                        year: new Date().getFullYear(),
+                        format: 'TV',
+                        source: null,
+                        color: null,
+                        nextEpisode: null,
+                        isCrunchyroll: true,
+                        studio: null,
+                        studios: [],
+                        externalLinks: [],
+                        trailer: null,
+                        startDate: null,
+                        endDate: null,
+                        episodes: null,
+                        crunchyrollId: item.id,
+                        crunchyrollSlug: item.id,
+                        isOnCrunchyroll: true,
+                        crunchyrollInfo: {
                             crunchyrollId: item.id,
-                            crunchyrollSlug: item.id,
-                            isOnCrunchyroll: true,
-                            crunchyrollInfo: {
-                                crunchyrollId: item.id,
-                                title: item.title,
-                                slug: item.id,
-                                episodeCount: 0,
-                                seasonCount: 1,
-                                isDubbed: true,
-                                isSubbed: true,
-                                crRating: crAverage,
-                                crVoteCount: parseInt(String(item.crunchyroll.rating?.total || '0'))
-                            },
-
-                            // Métadonnées pour le scoring combiné
-                            combinedScore: item.combined?.score || 0,
-                            popularityScore: item.combined?.popularityScore || 0
-                        } as CombinedAnime
-                    })
-                )
-                
-                return transformed
+                            title: item.title,
+                            slug: item.id,
+                            episodeCount: 0,
+                            seasonCount: 1,
+                            isDubbed: true,
+                            isSubbed: true,
+                            crRating: crAverage,
+                            crVoteCount: parseInt(String(item.crunchyroll.rating?.total || '0'))
+                        },
+                        combinedScore: item.combined?.score || 0,
+                        popularityScore: item.combined?.popularityScore || 0,
+                        // Mark as CR-only until enriched
+                        _sourceId: item.id
+                    } as CombinedAnime
+                })
             } catch (err) {
                 console.error('[usePopularAnime] Error:', err)
                 throw err
@@ -620,10 +604,67 @@ export function usePopularAnime(page = 1, perPage = 20) {
         }
     )
 
-    // Pagination côté client : on renvoie seulement le "page" demandé
+    // Background enrichment for current page slice
+    useEffect(() => {
+        if (!crunchyrollData || crunchyrollData.length === 0) return
+
+        let cancelled = false
+
+        const enrichCurrentPage = async () => {
+            const { throttledSearchAnimeBasicInfoWithFallback } = await import("@/lib/anilist")
+            const start = (page - 1) * perPage
+            const end = start + perPage
+            const pageItems = crunchyrollData.slice(start, end) as CombinedAnime[]
+
+            for (const anime of pageItems) {
+                if (cancelled) break
+
+                try {
+                    const enrichedData = await throttledSearchAnimeBasicInfoWithFallback(
+                        anime.title,
+                        anime
+                    )
+                    
+                    if (enrichedData && !cancelled) {
+                        const merged: CombinedAnime = {
+                            ...anime,
+                            ...enrichedData,
+                            crunchyrollId: anime.crunchyrollId,
+                            crunchyrollSlug: anime.crunchyrollSlug,
+                            isOnCrunchyroll: true,
+                            crunchyrollInfo: anime.crunchyrollInfo,
+                            combinedScore: anime.combinedScore,
+                            popularityScore: anime.popularityScore
+                        }
+                        
+                        setEnrichedMap(prev => {
+                            const newMap = new Map(prev)
+                            newMap.set(anime.id.toString(), merged)
+                            return newMap
+                        })
+                    }
+                } catch (e) {
+                    console.warn(`[PopularAnime Enrichment] Failed for "${anime.title}":`, e)
+                }
+            }
+        }
+
+        enrichCurrentPage()
+
+        return () => {
+            cancelled = true
+        }
+    }, [crunchyrollData, page, perPage])
+
+    // Merge Crunchyroll data with enriched data
+    const allData = crunchyrollData
+        ? crunchyrollData.map(anime => enrichedMap.get(anime.id.toString()) || anime)
+        : []
+
+    // Pagination côté client
     const start = (page - 1) * perPage
     const end = start + perPage
-    const pageSlice = allData ? allData.slice(start, end) : []
+    const pageSlice = allData.slice(start, end)
 
     return {
         data: pageSlice,
@@ -640,16 +681,19 @@ export function useSimulcastAnime(page = 1, perPage = 20) {
     return useCombinedAnime('simulcast', page, perPage)
 }
 
-// Hook for anime details page
+// Hook for anime details page - returns Crunchyroll immediately, enriches AniList in background
 export function useAnimeDetails(anilistId: number | null, crunchyrollId?: string | null) {
-    // Build a stable cache key that incorporates both identifiers
-    const cacheKey = anilistId
-        ? `anime-details-${anilistId}${crunchyrollId ? `-${crunchyrollId}` : ''}`
-        : crunchyrollId
-            ? `anime-details-cr-${crunchyrollId}`
+    const [enrichedAnime, setEnrichedAnime] = useState<CombinedAnimeDetails | null>(null)
+    
+    // Build stable cache key for SWR
+    const cacheKey = crunchyrollId
+        ? `anime-details-cr-${crunchyrollId}`
+        : anilistId
+            ? `anime-details-al-${anilistId}`
             : null
 
-    const { data, isLoading, error } = useSWR(
+    // Fetch Crunchyroll data immediately (no AniList wait)
+    const { data: crunchyrollData, isLoading, error } = useSWR(
         cacheKey,
         () => fetchAnimeDetailsWithCrunchyroll(anilistId, crunchyrollId),
         {
@@ -658,8 +702,49 @@ export function useAnimeDetails(anilistId: number | null, crunchyrollId?: string
         }
     )
 
+    // Background enrichment with AniList if we have an anilistId
+    useEffect(() => {
+        if (!anilistId || !crunchyrollData) return
+
+        let cancelled = false
+
+        const enrichWithAniList = async () => {
+            try {
+                const anilistDetails = await getAnimeDetails(anilistId)
+                
+                if (!cancelled && anilistDetails) {
+                    // Merge AniList enrichment into Crunchyroll data
+                    const enriched: CombinedAnimeDetails = {
+                        ...crunchyrollData,
+                        ...anilistDetails,
+                        // Preserve Crunchyroll-specific fields
+                        crunchyrollId: crunchyrollData.crunchyrollId,
+                        crunchyrollSlug: crunchyrollData.crunchyrollSlug,
+                        isOnCrunchyroll: crunchyrollData.isOnCrunchyroll,
+                        crunchyrollInfo: crunchyrollData.crunchyrollInfo,
+                        crunchyrollEpisodes: crunchyrollData.crunchyrollEpisodes,
+                    }
+                    
+                    setEnrichedAnime(enriched)
+                }
+            } catch (e) {
+                console.warn("[AnimeDetails Enrichment] Failed for AniList ID", anilistId, e)
+                // Keep Crunchyroll-only data if AniList fails
+            }
+        }
+
+        enrichWithAniList()
+
+        return () => {
+            cancelled = true
+        }
+    }, [anilistId, crunchyrollData])
+
+    // Return Crunchyroll data immediately, enriched data if available
+    const anime = enrichedAnime || crunchyrollData
+
     return {
-        anime: data,
+        anime,
         isLoading,
         error,
     }

@@ -1128,21 +1128,18 @@ export async function getProfile(): Promise<CrunchyrollProfile | null> {
         )
 
         if (rawData) {
-            // Transform avatar if it's an object
+            // Transform avatar - concatenate with CDN URL
             let avatarUrl = ''
             if (typeof rawData.avatar === 'string') {
-                avatarUrl = rawData.avatar
+                // rawData.avatar is a filename like "1046-dr-stone-senku.png"
+                // Build full CDN URL with 170x170 size
+                avatarUrl = `https://static.crunchyroll.com/assets/avatar/170x170/${rawData.avatar}`
             } else if (rawData.avatar && typeof rawData.avatar === 'object' && 'assets' in rawData.avatar) {
                 const assets = rawData.avatar.assets
                 if (Array.isArray(assets) && assets.length > 0) {
                     // Get the largest image (last in array)
                     avatarUrl = assets[assets.length - 1].source
                 }
-            }
-
-            // Fix relative URLs
-            if (avatarUrl && avatarUrl.startsWith('/')) {
-                avatarUrl = `https://www.crunchyroll.com${avatarUrl}`
             }
 
             const data: CrunchyrollProfile = {

@@ -43,6 +43,11 @@ export function ProfileAvatar({
     const [primaryFailed, setPrimaryFailed] = useState(false)
     const [fallbackFailed, setFallbackFailed] = useState(false)
 
+    // Debug logging
+    if (typeof window !== 'undefined' && src) {
+        console.log('[ProfileAvatar] src:', src)
+    }
+
     // Size classes
     const sizeClasses = {
         sm: "w-8 h-8",
@@ -84,7 +89,11 @@ export function ProfileAvatar({
                     src={currentSrc}
                     alt={alt}
                     className="w-full h-full object-cover"
-                    onError={() => {
+                    onLoad={() => {
+                        console.log('[ProfileAvatar] Image loaded:', currentSrc)
+                    }}
+                    onError={(e) => {
+                        console.warn('[ProfileAvatar] Image failed to load:', currentSrc, e)
                         if (!primaryFailed && src === currentSrc) {
                             setPrimaryFailed(true)
                         } else if (!fallbackFailed) {
