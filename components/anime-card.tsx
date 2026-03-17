@@ -25,6 +25,9 @@ interface AnimeCardProps {
       timeUntilAiring: number
     } | null
     type?: string
+    format?: string
+    contentType?: "series" | "movie_listing"
+    movieCount?: number
     popularity?: number
     episodes?: number | null
     crunchyrollId?: string | null
@@ -86,6 +89,8 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
   const totalEpisodes = "episodes" in anime ? anime.episodes : null
   const crunchyrollSlug = "crunchyrollSlug" in anime ? anime.crunchyrollSlug : null
   const isOnCrunchyroll = "isOnCrunchyroll" in anime ? anime.isOnCrunchyroll : false
+  const isMovieListing = (("format" in anime ? anime.format : null) === "MOVIE") || (("contentType" in anime ? anime.contentType : null) === "movie_listing")
+  const movieCount = "movieCount" in anime ? anime.movieCount : null
 
   // Watchlist specific properties
   const currentEpisode = "currentEpisode" in anime ? anime.currentEpisode : null
@@ -133,6 +138,8 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
 
   const animeUrl = shouldLinkToAniList
     ? `https://anilist.co/anime/${anime.id}`
+    : isMovieListing
+      ? "/films"
     : crunchyrollId
       ? `/anime/${anime.id}?cr=${crunchyrollId}`
       : `/anime/${anime.id}`
@@ -550,7 +557,9 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             </h3>
             {!compact && (
               <p className="text-xs text-muted-foreground mt-1">
-                {"studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
+                {isMovieListing
+                  ? `${movieCount || 1} film${movieCount && movieCount > 1 ? "s" : ""} Crunchyroll`
+                  : "studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
               </p>
             )}
           </Link>
@@ -570,7 +579,9 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             </h3>
             {!compact && (
               <p className="text-xs text-muted-foreground mt-1">
-                {"studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
+                {isMovieListing
+                  ? `${movieCount || 1} film${movieCount && movieCount > 1 ? "s" : ""} Crunchyroll`
+                  : "studio" in anime && anime.studio ? anime.studio : "Sous-titrage | Doublage"}
               </p>
             )}
           </button>
@@ -591,6 +602,9 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             color: animeColor,
             year: "year" in anime ? anime.year : null,
             episodes: totalEpisodes,
+            format: "format" in anime ? anime.format || undefined : undefined,
+            contentType: "contentType" in anime ? anime.contentType : undefined,
+            movieCount,
             crunchyrollId,
           }}
           open={isPreviewOpen}

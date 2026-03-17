@@ -68,8 +68,7 @@ function getYoutubeEmbedUrl(videoId: string, origin?: string | null) {
     rel: "0",
     modestbranding: "1",
     playsinline: "1",
-    loop: "1",
-    playlist: videoId,
+    loop: "0",
     iv_load_policy: "3",
     fs: "0",
     disablekb: "1",
@@ -85,6 +84,7 @@ function getYoutubeEmbedUrl(videoId: string, origin?: string | null) {
 }
 
 export function HeroCarousel() {
+  const AUTO_ADVANCE_DELAY_MS = 80_000
   const { data: trendingAnimes, isLoading } = useTrendingAnime(1, 6) // Fetch a few more items for better rotation
   const watchlistContext = useWatchlistOptional()
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -142,9 +142,9 @@ export function HeroCarousel() {
 
   useEffect(() => {
     if (isPaused || !hasAnimes || showInfoPopup) return
-    const interval = setInterval(goToNext, 8000) // Slightly longer duration for cinematic feel
-    return () => clearInterval(interval)
-  }, [goToNext, isPaused, hasAnimes, showInfoPopup])
+    const timer = window.setTimeout(goToNext, AUTO_ADVANCE_DELAY_MS)
+    return () => window.clearTimeout(timer)
+  }, [AUTO_ADVANCE_DELAY_MS, goToNext, isPaused, hasAnimes, showInfoPopup])
 
   const currentAnime = hasAnimes ? animes[currentIndex] : null
   const currentTrailerId = getYoutubeVideoId(currentAnime)

@@ -24,9 +24,10 @@ interface AnimeSectionProps {
   error?: Error | null
   showAiring?: boolean
   sectionSlug?: string
+  hideViewAll?: boolean
 }
 
-export function AnimeSection({ title, animes, isLoading, error, showAiring, sectionSlug }: AnimeSectionProps) {
+export function AnimeSection({ title, animes, isLoading, error, showAiring, sectionSlug, hideViewAll = false }: AnimeSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
@@ -62,13 +63,15 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, sect
       {/* Header */}
       <div className="flex items-center justify-between mb-5">
         <h2 className="text-xl md:text-2xl font-bold text-foreground">{title}</h2>
-        <Link
-          href={getSectionHref()}
-          className="text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-300 flex items-center gap-1"
-        >
-          Voir tout
-          <ChevronRight className="w-4 h-4" />
-        </Link>
+        {!hideViewAll && (
+          <Link
+            href={getSectionHref()}
+            className="text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-300 flex items-center gap-1"
+          >
+            Voir tout
+            <ChevronRight className="w-4 h-4" />
+          </Link>
+        )}
       </div>
 
       {/* Scroll Container */}
@@ -132,14 +135,14 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, sect
 
         <div
           className={cn(
-            "absolute left-0 top-0 bottom-16 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z-[55]",
+            "absolute left-0 top-0 bottom-16 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z-[5]",
             "transition-opacity duration-300",
             canScrollLeft ? "opacity-100" : "opacity-0",
           )}
         />
         <div
           className={cn(
-            "absolute right-0 top-0 bottom-16 w-12 bg-gradient-to-l from-background to-transparent pointer-events-none z-[55]",
+            "absolute right-0 top-0 bottom-16 w-12 bg-gradient-to-l from-background to-transparent pointer-events-none z-[5]",
             "transition-opacity duration-300",
             canScrollRight ? "opacity-100" : "opacity-0",
           )}

@@ -304,6 +304,48 @@ export interface TransformedCrunchyrollEpisode {
     availableFrom: string | null
 }
 
+export interface CrunchyrollMovie {
+    id: string
+    title: string
+    slug_title: string
+    description: string
+    images: {
+        thumbnail?: Array<Array<{ width: number; height: number; source: string }>>
+        poster_tall?: Array<Array<{ width: number; height: number; source: string }>>
+        poster_wide?: Array<Array<{ width: number; height: number; source: string }>>
+    }
+    is_premium_only?: boolean
+    movie_metadata?: {
+        audio_locale: string
+        availability_ends: string
+        availability_starts: string
+        duration_ms: number
+        is_dubbed: boolean
+        is_subbed: boolean
+        maturity_ratings: string[]
+        movie_listing_id: string
+        movie_listing_title: string
+    }
+}
+
+export interface TransformedCrunchyrollMovie {
+    id: string
+    title: string
+    description: string
+    duration: number
+    thumbnail: string | null
+    poster: string | null
+    banner: string | null
+    isPremium: boolean
+    isDubbed: boolean
+    isSubbed: boolean
+    audioLocale: string | null
+    availableFrom: string | null
+    movieListingId: string | null
+    movieListingTitle: string | null
+    rating: string | null
+}
+
 // ===============================
 // Transform Helpers
 // ===============================
@@ -353,6 +395,28 @@ function transformEpisode(episode: CrunchyrollEpisode): TransformedCrunchyrollEp
         seriesId: episode.series_id,
         seriesTitle: episode.series_title,
         availableFrom: episode.availability_starts || null,
+    }
+}
+
+function transformMovie(movie: CrunchyrollMovie): TransformedCrunchyrollMovie {
+    const metadata = movie.movie_metadata
+
+    return {
+        id: movie.id,
+        title: movie.title,
+        description: movie.description,
+        duration: Math.round((metadata?.duration_ms || 0) / 60000),
+        thumbnail: getBestImage(movie.images?.thumbnail),
+        poster: getBestImage(movie.images?.poster_tall),
+        banner: getBestImage(movie.images?.poster_wide),
+        isPremium: movie.is_premium_only || false,
+        isDubbed: metadata?.is_dubbed || false,
+        isSubbed: metadata?.is_subbed ?? true,
+        audioLocale: metadata?.audio_locale || null,
+        availableFrom: metadata?.availability_starts || null,
+        movieListingId: metadata?.movie_listing_id || null,
+        movieListingTitle: metadata?.movie_listing_title || null,
+        rating: metadata?.maturity_ratings?.[0] || null,
     }
 }
 
@@ -504,6 +568,57 @@ export async function getSeries(seriesId: string): Promise<CrunchyrollSeries | n
     } catch (error) {
         console.error("[Crunchyroll] Get series failed:", error)
         return null
+    }
+}
+
+/**
+ * Get movie listing information by Crunchyroll ID
+ */
+export async function getMovieListing(movieListingId: string): Promise<CrunchyrollSeries | null> {
+    const cacheKey = `movie_listing_${movieListingId}`
+    const cached = getCache<CrunchyrollSeries>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data?: CrunchyrollSeries[] | CrunchyrollSeries }>(
+            `/content/v2/cms/movie_listings/${movieListingId}`
+        )
+
+        const movieListing = Array.isArray(data.data)
+            ? data.data[0] || null
+            : data.data || null
+
+        if (movieListing) {
+            setCache(cacheKey, movieListing)
+        }
+
+        return movieListing
+    } catch (error) {
+        console.error("[Crunchyroll] Get movie listing failed:", error)
+        return null
+    }
+}
+
+/**
+ * Get all movies for a given movie listing
+ */
+export async function getMovieListingMovies(movieListingId: string): Promise<TransformedCrunchyrollMovie[]> {
+    const cacheKey = `movie_listing_movies_${movieListingId}`
+    const cached = getCache<TransformedCrunchyrollMovie[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollMovie[] }>(
+            `/content/v2/cms/movie_listings/${movieListingId}/movies`
+        )
+
+        const movies = (data.data || []).map(transformMovie)
+        setCache(cacheKey, movies)
+
+        return movies
+    } catch (error) {
+        console.error("[Crunchyroll] Get movie listing movies failed:", error)
+        return []
     }
 }
 

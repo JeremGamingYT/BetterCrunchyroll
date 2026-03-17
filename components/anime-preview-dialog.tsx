@@ -6,7 +6,7 @@ import { Bookmark, Clock3, Loader2, Play, Plus, Star, ThumbsUp, Volume2, VolumeX
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
-import { useAnimeDetails } from "@/hooks/use-combined-anime"
+import { useAnimeDetails, useMovieListingDetails } from "@/hooks/use-combined-anime"
 import { useWatchlistOptional } from "@/hooks/use-watchlist"
 
 // ── YouTube helpers ────────────────────────────────────────────────────────────
@@ -73,6 +73,9 @@ interface PreviewAnime {
   color?: string | null
   year?: number | null
   episodes?: number | null
+  format?: string
+  contentType?: "series" | "movie_listing"
+  movieCount?: number | null
   crunchyrollId?: string | null
 }
 
@@ -146,19 +149,29 @@ function hasWatchedEpisodeLocally(episodeId: string): boolean {
 
 export function AnimePreviewDialog({ anime, open, onOpenChange, animeUrl }: AnimePreviewDialogProps) {
   const watchlistContext = useWatchlistOptional()
+  const isMovieListing = anime.format === "MOVIE" || anime.contentType === "movie_listing"
   const animeId = useMemo(() => {
     const parsed = typeof anime.id === "number" ? anime.id : Number(anime.id)
     return Number.isFinite(parsed) ? parsed : null
   }, [anime.id])
-  const { anime: details, isLoading } = useAnimeDetails(open ? animeId : null, open ? anime.crunchyrollId : null)
+  const { anime: seriesDetails, isLoading: isSeriesLoading } = useAnimeDetails(
+    open && !isMovieListing ? animeId : null,
+    open && !isMovieListing ? anime.crunchyrollId : null,
+  )
+  const { movie: movieDetails, isLoading: isMovieLoading } = useMovieListingDetails(
+    open && isMovieListing ? (anime.crunchyrollId || String(anime.id)) : null,
+  )
 
-  const displayAnime = details || anime
+  const details = isMovieListing ? null : seriesDetails
+  const isLoading = isMovieListing ? isMovieLoading : isSeriesLoading
+  const displayAnime = (isMovieListing ? movieDetails : seriesDetails) || anime
   const genres = displayAnime.genres || []
   const poster = displayAnime.image || "/placeholder.svg"
   const banner = displayAnime.bannerImage || poster
-  const allEpisodes = details?.crunchyrollEpisodes || []
+  const allEpisodes = seriesDetails?.crunchyrollEpisodes || []
+  const allMovies = movieDetails?.crunchyrollMovies || []
   const seasons = useMemo(() => {
-    const eps = details?.crunchyrollEpisodes || []
+    const eps = seriesDetails?.crunchyrollEpisodes || []
     const animeTitle = displayAnime.title || ''
     const map = new Map<number, string>()
     eps.forEach(ep => {
@@ -171,10 +184,15 @@ export function AnimePreviewDialog({ anime, open, onOpenChange, animeUrl }: Anim
     return Array.from(map.entries())
       .map(([number, title]) => ({ number, title }))
       .sort((a, b) => a.number - b.number)
-  }, [details?.crunchyrollEpisodes, displayAnime.title])
+  }, [seriesDetails?.crunchyrollEpisodes, displayAnime.title])
 
   // Dynamic tagline: depends on how many eps are released vs still coming
   const dynamicTagline = useMemo(() => {
+    if (isMovieListing) {
+      if (allMovies.length <= 1) return "Regardez ce film sur Crunchyroll"
+      return `${allMovies.length} versions de ce film disponibles sur Crunchyroll`
+    }
+
     if (allEpisodes.length === 0) return null
     const now = Date.now()
     const releasedEps = allEpisodes.filter(ep => !ep.availableFrom || new Date(ep.availableFrom).getTime() <= now)
@@ -199,19 +217,25 @@ export function AnimePreviewDialog({ anime, open, onOpenChange, animeUrl }: Anim
       return `Nouvel épisode à venir ${day}`
     }
     return 'Prochain épisode bientôt disponible'
-  }, [allEpisodes, details])
-  const primaryHref = details?.crunchyrollEpisodes?.[0]?.id ? `/watch/${details.crunchyrollEpisodes[0].id}` : animeUrl
-  const primaryLabel = details?.crunchyrollEpisodes?.[0]?.id ? "Lecture" : "Voir la fiche"
+  }, [allEpisodes, allMovies, details, isMovieListing])
+  const primaryHref = isMovieListing
+    ? (allMovies[0]?.id ? `/watch/${allMovies[0].id}` : animeUrl)
+    : (details?.crunchyrollEpisodes?.[0]?.id ? `/watch/${details.crunchyrollEpisodes[0].id}` : animeUrl)
+  const primaryLabel = isMovieListing
+    ? (allMovies[0]?.id ? "Regarder" : "Voir le film")
+    : (details?.crunchyrollEpisodes?.[0]?.id ? "Lecture" : "Voir la fiche")
   const yearLabel = displayAnime.year ? String(displayAnime.year) : null
   const ratingLabel = displayAnime.rating || null
-  const episodeCountLabel = displayAnime.episodes ? `${displayAnime.episodes} épisodes` : null
+  const episodeCountLabel = isMovieListing
+    ? `${anime.movieCount || allMovies.length || 1} film${(anime.movieCount || allMovies.length || 1) > 1 ? "s" : ""}`
+    : ("episodes" in displayAnime && displayAnime.episodes) ? `${displayAnime.episodes} épisodes` : null
   const scoreLabel = displayAnime.score !== null && displayAnime.score !== undefined ? displayAnime.score.toFixed(1) : null
   const metaLine = [yearLabel, ratingLabel, episodeCountLabel].filter(Boolean)
   const infoEntries = [
-    { label: "Statut", value: details?.status || null },
-    { label: "Format", value: details?.format || null },
-    { label: "Saison", value: details?.season || null },
-    { label: "Studio", value: details?.studio || null },
+    { label: "Statut", value: isMovieListing ? movieDetails?.status || null : details?.status || null },
+    { label: "Format", value: isMovieListing ? "MOVIE" : details?.format || null },
+    { label: "Saison", value: isMovieListing ? null : details?.season || null },
+    { label: "Studio", value: isMovieListing ? movieDetails?.studio || null : details?.studio || null },
     { label: "Genres", value: genres.length > 0 ? genres.join(", ") : null },
   ].filter((entry) => entry.value)
 
@@ -471,9 +495,9 @@ export function AnimePreviewDialog({ anime, open, onOpenChange, animeUrl }: Anim
                         </span>
                       ) : null}
                       {yearLabel ? <span className="text-[#bcbcbc]">{yearLabel}</span> : null}
-                      {details?.format ? (
+                      {displayAnime.format ? (
                         <span className="text-[#bcbcbc]">
-                          {details.format.replace("TV_SHORT", "Minisérie").replace("TV", "Série")}
+                          {displayAnime.format.replace("TV_SHORT", "Minisérie").replace("TV", "Série")}
                         </span>
                       ) : null}
                       <span className="border border-[#808080] text-[#d2d2d2] rounded-[3px] px-1.5 py-[1px] text-[10px] sm:text-[11px] font-bold uppercase tracking-wider">
@@ -494,7 +518,7 @@ export function AnimePreviewDialog({ anime, open, onOpenChange, animeUrl }: Anim
                     ) : null}
 
                     <p className="text-white text-[14px] sm:text-[15px] leading-relaxed mb-6">
-                      {displayAnime.description || "Aucun synopsis disponible pour cet animé."}
+                      {displayAnime.description || (isMovieListing ? "Aucun synopsis disponible pour ce film." : "Aucun synopsis disponible pour cet animé.")}
                     </p>
                   </div>
 
@@ -512,22 +536,22 @@ export function AnimePreviewDialog({ anime, open, onOpenChange, animeUrl }: Anim
                         <span className="text-white">{genres.join(", ")}</span>
                       </div>
                     )}
-                    {details?.status && (
+                    {(isMovieListing ? movieDetails?.status : details?.status) && (
                       <div>
-                        <span className="text-[#777]">Ce titre télé est : </span>
+                        <span className="text-[#777]">{isMovieListing ? "Disponibilité : " : "Ce titre télé est : "}</span>
                         <span className="text-white">
-                          {details.status === "FINISHED" ? "Terminé" : "En cours"}
+                          {(isMovieListing ? movieDetails?.status : details?.status) === "FINISHED" ? "Disponible" : "En cours"}
                         </span>
                       </div>
                     )}
                   </div>
                 </div>
 
-                {/* Episodes List Block */}
+                {/* Episodes / Movies List Block */}
                 <div className="mt-10 pb-16">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-[22px] font-bold text-white tracking-wide">Épisodes</h3>
-                    {seasons.length > 1 ? (
+                    <h3 className="text-[22px] font-bold text-white tracking-wide">{isMovieListing ? "Films disponibles" : "Épisodes"}</h3>
+                    {!isMovieListing && seasons.length > 1 ? (
                       <Select
                         value={String(activeSeason ?? seasons[0]?.number ?? '')}
                         onValueChange={(v) => setSelectedSeason(Number(v))}
@@ -547,65 +571,107 @@ export function AnimePreviewDialog({ anime, open, onOpenChange, animeUrl }: Anim
                           ))}
                         </SelectContent>
                       </Select>
-                    ) : seasons.length === 1 ? (
+                    ) : !isMovieListing && seasons.length === 1 ? (
                       <span className="text-white/70 text-[14px]">{seasons[0].title}</span>
                     ) : null}
                   </div>
 
-                  {visibleEpisodes.length > 0 ? (
-                    <div className="flex flex-col">
-                      {visibleEpisodes.map((episode, idx) => {
-                        const availableLabel = formatAvailability(episode.availableFrom)
-                        return (
+                  {isMovieListing ? (
+                    allMovies.length > 0 ? (
+                      <div className="flex flex-col">
+                        {allMovies.map((movie, idx) => (
                           <Link
-                            key={episode.id}
-                            href={`/watch/${episode.id}`}
+                            key={movie.id}
+                            href={`/watch/${movie.id}`}
                             onClick={() => { onOpenChange(false); window.scrollTo({ top: 0, behavior: "auto" }) }}
                             className="group flex flex-row items-center gap-4 py-4 px-4 sm:px-6 border-b border-[#404040] hover:bg-[#333333] transition-colors rounded-md"
                           >
-                            {/* Episode Number */}
                             <div className="text-[#d2d2d2] text-[22px] font-normal w-6 sm:w-10 flex justify-center shrink-0">
-                              {episode.episodeNumber || idx + 1}
+                              {idx + 1}
                             </div>
 
-                            {/* Episode Thumbnail */}
                             <div className="relative shrink-0 w-[130px] sm:w-[140px] aspect-[16/9] rounded-md overflow-hidden bg-[#222]">
                               <img
-                                src={episode.thumbnail || poster}
-                                alt={episode.title}
+                                src={movie.banner || movie.thumbnail || movie.poster || poster}
+                                alt={movie.title}
                                 className="w-full h-full object-cover"
                               />
                               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors flex items-center justify-center">
-                                {/* Play icon on hover */}
                                 <div className="hidden group-hover:flex w-10 h-10 border-2 border-white rounded-full items-center justify-center bg-[#181818]/60 transition-opacity">
                                   <Play className="w-5 h-5 text-white fill-white ml-1" />
                                 </div>
                               </div>
                             </div>
 
-                            {/* Content */}
                             <div className="flex-1 flex flex-col min-w-0 pr-4">
                               <div className="flex justify-between items-start mb-1 sm:items-center">
                                 <h4 className="text-white font-bold text-[15px] sm:text-[16px] truncate mr-2">
-                                  {episode.title || `Épisode ${episode.episodeNumber || idx + 1}`}
+                                  {movie.title}
                                 </h4>
                                 <span className="text-white font-medium text-[14px] shrink-0 whitespace-nowrap hidden sm:block">
-                                  {formatDuration(episode.duration) || "24 min"}
+                                  {formatDuration(movie.duration) || "Film"}
                                 </span>
                               </div>
                               <p className="text-[#a3a3a3] text-[13px] sm:text-[14px] line-clamp-2 leading-snug">
-                                {episode.description || "Description indisponible."}
+                                {movie.description || "Description indisponible."}
                               </p>
                               <span className="text-white font-medium text-[14px] shrink-0 whitespace-nowrap sm:hidden mt-2">
-                                {formatDuration(episode.duration) || "24 min"}
+                                {formatDuration(movie.duration) || "Film"}
                               </span>
                             </div>
                           </Link>
-                        )
-                      })}
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="text-[#a3a3a3] py-4">Aucun film Crunchyroll n'est encore remonté pour cette fiche.</div>
+                    )
+                  ) : visibleEpisodes.length > 0 ? (
+                    <div className="flex flex-col">
+                      {visibleEpisodes.map((episode, idx) => (
+                        <Link
+                          key={episode.id}
+                          href={`/watch/${episode.id}`}
+                          onClick={() => { onOpenChange(false); window.scrollTo({ top: 0, behavior: "auto" }) }}
+                          className="group flex flex-row items-center gap-4 py-4 px-4 sm:px-6 border-b border-[#404040] hover:bg-[#333333] transition-colors rounded-md"
+                        >
+                          <div className="text-[#d2d2d2] text-[22px] font-normal w-6 sm:w-10 flex justify-center shrink-0">
+                            {episode.episodeNumber || idx + 1}
+                          </div>
+
+                          <div className="relative shrink-0 w-[130px] sm:w-[140px] aspect-[16/9] rounded-md overflow-hidden bg-[#222]">
+                            <img
+                              src={episode.thumbnail || poster}
+                              alt={episode.title}
+                              className="w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors flex items-center justify-center">
+                              <div className="hidden group-hover:flex w-10 h-10 border-2 border-white rounded-full items-center justify-center bg-[#181818]/60 transition-opacity">
+                                <Play className="w-5 h-5 text-white fill-white ml-1" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="flex-1 flex flex-col min-w-0 pr-4">
+                            <div className="flex justify-between items-start mb-1 sm:items-center">
+                              <h4 className="text-white font-bold text-[15px] sm:text-[16px] truncate mr-2">
+                                {episode.title || `Épisode ${episode.episodeNumber || idx + 1}`}
+                              </h4>
+                              <span className="text-white font-medium text-[14px] shrink-0 whitespace-nowrap hidden sm:block">
+                                {formatDuration(episode.duration) || "24 min"}
+                              </span>
+                            </div>
+                            <p className="text-[#a3a3a3] text-[13px] sm:text-[14px] line-clamp-2 leading-snug">
+                              {episode.description || "Description indisponible."}
+                            </p>
+                            <span className="text-white font-medium text-[14px] shrink-0 whitespace-nowrap sm:hidden mt-2">
+                              {formatDuration(episode.duration) || "24 min"}
+                            </span>
+                          </div>
+                        </Link>
+                      ))}
                     </div>
                   ) : (
-                     <div className="text-[#a3a3a3] py-4">Aucun épisode Crunchyroll n'est disponible pour cet aperçu.</div>
+                    <div className="text-[#a3a3a3] py-4">Aucun épisode Crunchyroll n'est disponible pour cet aperçu.</div>
                   )}
                 </div>
               </>

@@ -6,16 +6,19 @@ import { AnimeSection } from "@/components/anime-section"
 import { ContinueWatching } from "@/components/continue-watching"
 import { Footer } from "@/components/footer"
 import { LoadingScreen, useInitialLoading } from "@/components/loading-screen"
-import { useTrendingAnime, usePopularAnime, useNewAnime, useSimulcastAnime } from "@/hooks/use-combined-anime"
+import { useTrendingAnime, usePopularAnime, useNewAnime, useSimulcastAnime, useDubbedAnime, useSubbedAnime, useMovieListings } from "@/hooks/use-combined-anime"
 
 export default function Home() {
   const { data: trendingAnimes, isLoading: loadingTrending, error: errorTrending } = useTrendingAnime(1, 12)
   const { data: popularAnimesData, isLoading: loadingPopular, error: errorPopular } = usePopularAnime(1, 12)
   const { data: newAnimesData, isLoading: loadingNew, error: errorNew } = useNewAnime(1, 12)
   const { data: simulcastAnimesData, isLoading: loadingSimulcast, error: errorSimulcast } = useSimulcastAnime(1, 12)
+  const { data: dubbedAnimesData, isLoading: loadingDubbed, error: errorDubbed } = useDubbedAnime(1, 12)
+  const { data: subbedAnimesData, isLoading: loadingSubbed, error: errorSubbed } = useSubbedAnime(1, 12)
+  const { data: movieListingsData, isLoading: loadingMovies, error: errorMovies } = useMovieListings(1, 12)
 
   // Show loading screen only on initial load
-  const showInitialLoading = useInitialLoading([loadingTrending, loadingPopular, loadingNew, loadingSimulcast])
+  const showInitialLoading = useInitialLoading([loadingTrending, loadingPopular, loadingNew, loadingSimulcast, loadingDubbed, loadingSubbed, loadingMovies])
 
   return (
     <>
@@ -58,6 +61,27 @@ export default function Home() {
               error={errorSimulcast}
               showAiring
               sectionSlug="/simulcast"
+            />
+            <AnimeSection
+              title="Disponible en VF"
+              animes={dubbedAnimesData}
+              isLoading={loadingDubbed}
+              error={errorDubbed}
+              hideViewAll
+            />
+            <AnimeSection
+              title="Version sous-titrée"
+              animes={subbedAnimesData}
+              isLoading={loadingSubbed}
+              error={errorSubbed}
+              hideViewAll
+            />
+            <AnimeSection
+              title="Films Crunchyroll"
+              animes={movieListingsData}
+              isLoading={loadingMovies}
+              error={errorMovies}
+              sectionSlug="/films"
             />
           </div>
         </div>
