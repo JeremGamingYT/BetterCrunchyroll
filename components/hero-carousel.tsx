@@ -164,7 +164,7 @@ export function HeroCarousel() {
     setShowVideoPreview(false)
     setIsPlayerReady(false)
 
-    if (!isPaused || !currentTrailerId || showInfoPopup) {
+    if (!currentTrailerId || showInfoPopup) {
       return
     }
 
@@ -173,7 +173,7 @@ export function HeroCarousel() {
     }, 900)
 
     return () => window.clearTimeout(timer)
-  }, [currentIndex, currentTrailerId, isPaused, showInfoPopup])
+  }, [currentIndex, currentTrailerId, showInfoPopup])
 
   // Fallback data for loading state
   const fallbackAnime = {
@@ -218,10 +218,7 @@ export function HeroCarousel() {
     <section
       className="relative w-full h-[92vh] min-h-[680px] overflow-hidden bg-background"
       onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => {
-        setIsPaused(false)
-        setShowVideoPreview(false)
-      }}
+      onMouseLeave={() => setIsPaused(false)}
     >
       {hasAnimes ? (
         animes.map((anime, index) => (

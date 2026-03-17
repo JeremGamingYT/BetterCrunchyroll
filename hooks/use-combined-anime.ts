@@ -242,11 +242,21 @@ export async function fetchAnimeDetailsWithCrunchyroll(
 
     let match: TransformedCrunchyrollAnime | undefined = undefined
     let episodes: TransformedCrunchyrollEpisode[] = []
+    let seriesInfo: CrunchyrollSeries | null = null
+
+    const getLastImageSource = (imageGroups?: Array<Array<{ source: string }>> | null) => {
+        if (!imageGroups || imageGroups.length === 0) return null
+        const images = imageGroups[0]
+        if (!images || images.length === 0) return null
+        return images[images.length - 1]?.source || null
+    }
+
+    const fallbackPoster = '/placeholder.svg'
 
     try {
         if (knownCrunchyrollId) {
             // Fast path: we already know the CR ID — fetch Crunchyroll data immediately
-            const seriesInfo = await getSeries(knownCrunchyrollId)
+            seriesInfo = await getSeries(knownCrunchyrollId)
             if (seriesInfo) {
                 match = {
                     crunchyrollId: knownCrunchyrollId,
@@ -276,21 +286,21 @@ export async function fetchAnimeDetailsWithCrunchyroll(
     // Build minimal base from Crunchyroll data only
     // AniList enrichment happens in background via useEffect in the hook
     const base: CombinedAnimeDetails = {
-        id: 0,
-        title: match?.title || '',
-        titleRomaji: match?.title || '',
+        id: anilistId || 0,
+        title: seriesInfo?.title || match?.title || '',
+        titleRomaji: seriesInfo?.title || match?.title || '',
         titleNative: null,
-        description: null,
-        image: '/placeholder.svg',
-        bannerImage: null,
-        genres: [],
-        rating: '',
+        description: seriesInfo?.description || null,
+        image: getLastImageSource(seriesInfo?.images?.poster_tall || null) || fallbackPoster,
+        bannerImage: getLastImageSource(seriesInfo?.images?.poster_wide || null),
+        genres: seriesInfo?.content_descriptors || [],
+        rating: seriesInfo?.series_metadata?.maturity_ratings?.[0] || seriesInfo?.maturity_ratings?.[0] || '',
         score: null,
         popularity: 0,
         duration: null,
-        status: 'UNKNOWN',
+        status: seriesInfo?.availability_status === 'available' ? 'RELEASING' : 'UNKNOWN',
         season: null,
-        year: null,
+        year: seriesInfo?.series_launch_year || null,
         format: null,
         source: null,
         color: null,
@@ -302,7 +312,7 @@ export async function fetchAnimeDetailsWithCrunchyroll(
         trailer: null,
         startDate: null,
         endDate: null,
-        episodes: match?.episodeCount || null,
+        episodes: match?.episodeCount || seriesInfo?.episode_count || null,
         staff: [],
         characters: [],
         relations: [],
@@ -701,6 +711,10 @@ export function useAnimeDetails(anilistId: number | null, crunchyrollId?: string
             dedupingInterval: 300000,
         }
     )
+
+    useEffect(() => {
+        setEnrichedAnime(null)
+    }, [cacheKey])
 
     // Background enrichment with AniList if we have an anilistId
     useEffect(() => {

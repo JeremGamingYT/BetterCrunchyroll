@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useParams } from "next/navigation"
+import { useParams, useSearchParams } from "next/navigation"
 import { useState, useEffect } from "react"
 import {
   Star,
@@ -37,8 +37,10 @@ import { cn } from "@/lib/utils"
 
 export default function AnimePage() {
   const params = useParams()
+  const searchParams = useSearchParams()
   const id = params?.id ? Number(params.id) : null
-  const { anime, isLoading, error } = useAnimeDetails(id)
+  const crunchyrollId = searchParams.get("cr")
+  const { anime, isLoading, error } = useAnimeDetails(id, crunchyrollId)
 
   // Use watchlist context to check if this anime is bookmarked
   const watchlistContext = useWatchlistOptional()

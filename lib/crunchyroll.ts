@@ -187,10 +187,17 @@ export interface CrunchyrollSeries {
     title: string
     slug_title: string
     description: string
+    extended_description?: string
     images: {
         poster_tall?: Array<Array<{ width: number; height: number; source: string }>>
         poster_wide?: Array<Array<{ width: number; height: number; source: string }>>
     }
+    episode_count?: number
+    season_count?: number
+    maturity_ratings?: string[]
+    content_descriptors?: string[]
+    series_launch_year?: number
+    availability_status?: string
     series_metadata?: {
         episode_count: number
         season_count: number
@@ -481,11 +488,13 @@ export async function getSeries(seriesId: string): Promise<CrunchyrollSeries | n
     if (cached) return cached
 
     try {
-        const data = await crunchyrollFetch<{ data: CrunchyrollSeries[] }>(
-            `/content/v2/cms/series/${seriesId}`
+        const data = await crunchyrollFetch<{ data?: CrunchyrollSeries[] | CrunchyrollSeries }>(
+            `/content/v2/cms/series/${seriesId}/`
         )
 
-        const series = data.data?.[0] || null
+        const series = Array.isArray(data.data)
+            ? data.data[0] || null
+            : data.data || null
 
         if (series) {
             setCache(cacheKey, series)

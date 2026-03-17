@@ -157,7 +157,7 @@ export function Header() {
 
                   {item.label === "Parcourir" && (
                     <div className="absolute top-full left-0 pt-4 w-80 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 z-50">
-                      <div className="netflix-panel rounded-md p-4 grid grid-cols-2 gap-2">
+                      <div className="rounded-md border border-white/10 bg-black/72 backdrop-blur-xl shadow-[0_18px_48px_rgba(0,0,0,0.5)] p-4 grid grid-cols-2 gap-2">
                         {browseGenres.map((genre) => (
                           <Link
                             key={genre}
@@ -222,7 +222,7 @@ export function Header() {
               {/* Profile Dropdown */}
               <div
                 className={cn(
-                  "absolute right-0 top-full mt-3 w-72 netflix-panel rounded-md overflow-hidden transition-all duration-200 origin-top-right",
+                  "absolute right-0 top-full mt-3 w-72 rounded-md overflow-hidden border border-white/10 bg-black/72 backdrop-blur-xl shadow-[0_18px_48px_rgba(0,0,0,0.5)] transition-all duration-200 origin-top-right",
                   isProfileOpen ? "opacity-100 scale-100 visible" : "opacity-0 scale-95 invisible",
                 )}
               >
