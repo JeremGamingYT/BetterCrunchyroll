@@ -95,7 +95,7 @@ export function ContinueWatching() {
         <div
           ref={scrollRef}
           onScroll={checkScroll}
-          className="flex gap-4 overflow-x-auto overflow-y-visible scrollbar-hide pb-12 pt-2 -mx-4 px-4"
+          className="flex gap-4 overflow-x-auto scrollbar-hide pb-20 pt-6 -mx-8 px-8"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {items.map((item, index) => (
@@ -131,20 +131,19 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
   const [imageError, setImageError] = useState(false)
   const [accentColor, setAccentColor] = useState<string | null>(null)
 
+  // Always have a visible color: extracted dominant color or primary orange fallback
+  const effectColor = accentColor ?? "#f47521"
+
   useEffect(() => {
-    if (item.image) {
-      const fac = new FastAverageColor()
-      // Use a cross-origin friendly image if possible, or try directly
-      // Note: This might fail if CORS is strict on the image server, 
-      // but CR images usually allow it or are proxied.
-      fac.getColorAsync(item.image)
-        .then(color => {
-          setAccentColor(color.hex)
-        })
-        .catch(() => {
-          // If it fails, we fall back to default (null)
-        })
-    }
+    if (!item.image) return
+    const fac = new FastAverageColor()
+    fac.getColorAsync(item.image, { crossOrigin: "anonymous" })
+      .then(color => {
+        // Reject near-black results that won't produce a visible glow
+        const [r, g, b] = color.value
+        if (r + g + b > 80) setAccentColor(color.hex)
+      })
+      .catch(() => { /* stays null, effectColor fallback handles it */ })
   }, [item.image])
 
   // Calculate progress
@@ -162,79 +161,93 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
     <Link
       href={`/watch/${item.crunchyrollId}`}
       className={cn(
-        "group relative flex-shrink-0 w-[280px] md:w-[320px] transition-all duration-300",
+        "group relative flex-shrink-0 w-[280px] md:w-[320px]",
         isHovered ? "z-50" : "z-10",
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      {/*
+       * Outer div: owns scale + box-shadow — NO overflow-hidden so the glow
+       * is not self-clipped. The parent scroll container's padding provides
+       * the room needed for the shadow to be visible.
+       */}
       <div
-        className={cn(
-          "relative aspect-video rounded-xl overflow-hidden",
-          "transition-all duration-500 ease-out",
-          "shadow-lg shadow-black/20",
-          isHovered && "scale-105 shadow-2xl shadow-primary/20",
-        )}
+        className="relative aspect-video rounded-xl"
+        style={{
+          transition: "transform 0.5s ease-out, box-shadow 0.5s ease-out",
+          transform: isHovered ? "scale(1.05)" : "scale(1)",
+          boxShadow: isHovered
+            ? [
+                `0 0 0 2px ${effectColor}cc`,
+                `0 0 16px 4px ${effectColor}80`,
+                `0 0 36px 8px ${effectColor}42`,
+              ].join(", ")
+            : "0 4px 24px rgba(0,0,0,0.35)",
+        }}
       >
-        {/* Image */}
-        <img
-          src={imageError ? "/placeholder.svg?height=180&width=320&query=anime" : (item.image || "/placeholder.svg")}
-          alt={item.title}
-          className={cn(
-            "w-full h-full object-cover",
-            "transition-transform duration-700 ease-out",
-            isHovered && "scale-110",
-          )}
-          onError={() => setImageError(true)}
-        />
-
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-
-        {/* Play Button */}
-        <div className={cn("absolute inset-0 flex items-center justify-center", "transition-all duration-300")}>
-          <div
+        {/* Inner div: clips image & overlays to the rounded border */}
+        <div className="absolute inset-0 rounded-xl overflow-hidden">
+          {/* Image */}
+          <img
+            src={imageError ? "/placeholder.svg?height=180&width=320&query=anime" : (item.image || "/placeholder.svg")}
+            alt={item.title}
             className={cn(
-              "p-4 rounded-full bg-background/80 backdrop-blur-sm text-foreground",
-              "transition-all duration-300",
-              "group-hover:scale-110",
-              "border border-border/50",
-              isHovered ? "scale-100 opacity-100" : "scale-90 opacity-70",
+              "w-full h-full object-cover",
+              "transition-transform duration-700 ease-out",
+              isHovered && "scale-110",
             )}
-            style={
-              isHovered && accentColor
-                ? { backgroundColor: accentColor, color: "#ffffff", borderColor: accentColor }
-                : {}
-            }
-          >
-            <Play className="w-6 h-6" fill="currentColor" />
-          </div>
-        </div>
-
-        {/* Remaining Time - positioned above progress bar in bottom-right */}
-        <div className="absolute bottom-3 right-3 px-2 py-1 rounded bg-background/80 backdrop-blur-sm">
-          <span className="text-xs font-medium text-foreground">
-            {remainingMin > 0 ? `${remainingMin}m restantes` : "Terminé"}
-          </span>
-        </div>
-
-        {/* Progress Bar */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-muted/30">
-          <div
-            className="h-full bg-primary transition-all duration-300 ease-out"
-            style={{ width: `${Math.min(100, Math.max(0, progress))}%` }}
+            onError={() => setImageError(true)}
           />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+
+          {/* Play Button */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div
+              className={cn(
+                "p-4 rounded-full backdrop-blur-sm",
+                "transition-all duration-300",
+                "border",
+                isHovered ? "scale-100 opacity-100" : "scale-90 opacity-70",
+              )}
+              style={{
+                backgroundColor: isHovered ? `${effectColor}e6` : "rgba(0,0,0,0.75)",
+                borderColor: isHovered ? effectColor : "rgba(255,255,255,0.2)",
+                color: "#ffffff",
+                boxShadow: isHovered ? `0 4px 22px ${effectColor}55` : undefined,
+              }}
+            >
+              <Play className="w-6 h-6" fill="currentColor" />
+            </div>
+          </div>
+
+          {/* Remaining Time */}
+          <div className="absolute bottom-3 right-3 px-2 py-1 rounded bg-background/80 backdrop-blur-sm">
+            <span className="text-xs font-medium text-foreground">
+              {remainingMin > 0 ? `${remainingMin}m restantes` : "Terminé"}
+            </span>
+          </div>
+
+          {/* Progress Bar */}
+          <div className="absolute bottom-0 left-0 right-0 h-1 bg-muted/30">
+            <div
+              className="h-full transition-all duration-300 ease-out"
+              style={{
+                width: `${Math.min(100, Math.max(0, progress))}%`,
+                backgroundColor: isHovered ? effectColor : "hsl(var(--primary))",
+              }}
+            />
+          </div>
         </div>
       </div>
 
       {/* Info */}
       <div className="mt-3 px-1">
         <h3
-          className={cn(
-            "font-semibold text-sm text-foreground line-clamp-1",
-            "transition-colors duration-300",
-          )}
-          style={isHovered && accentColor ? { color: accentColor } : {}}
+          className="font-semibold text-sm line-clamp-1 transition-colors duration-300"
+          style={{ color: isHovered ? effectColor : undefined }}
         >
           {item.seriesTitle || item.title}
         </h3>

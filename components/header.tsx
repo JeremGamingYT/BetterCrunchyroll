@@ -108,12 +108,20 @@ export function Header() {
       <AvatarSelector isOpen={isAvatarOpen} onClose={() => setIsAvatarOpen(false)} />
       <header
         className={cn(
-          "fixed inset-x-0 top-0 z-[100] transition-all duration-300",
+          "fixed inset-x-0 top-0 z-[100] transition-all duration-300 rounded-b-3xl",
           isScrolled
             ? "bg-black/92 shadow-[0_12px_40px_rgba(0,0,0,0.45)]"
             : "bg-gradient-to-b from-black/85 via-black/45 to-transparent",
         )}
       >
+        {/* Subtle ambient glow — barely visible warm halo at the navbar top */}
+        <div
+          className="absolute inset-0 pointer-events-none rounded-b-3xl"
+          style={{
+            background:
+              "radial-gradient(ellipse 75% 120% at 50% -5%, rgba(255,140,10,0.05) 0%, transparent 65%)",
+          }}
+        />
         <div className="flex items-center justify-between h-17 px-4 md:px-8 lg:px-12 xl:px-16">
           {/* Logo */}
           <div className="flex items-center gap-6 xl:gap-10">

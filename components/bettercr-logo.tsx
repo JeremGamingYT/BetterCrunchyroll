@@ -24,10 +24,10 @@ export function BetterCrLogo({ className, compact = false }: BetterCrLogoProps) 
       height={height}
     >
       <defs>
-        <linearGradient id="cr-logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%"  stopColor="#ffcf57" />
-          <stop offset="48%" stopColor="#ff9f1a" />
-          <stop offset="100%" stopColor="#f47521" />
+        <linearGradient id="cr-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"   stopColor="#ffffff" />
+          <stop offset="50%"  stopColor="#d8d8d8" />
+          <stop offset="100%" stopColor="#a0a0a0" />
         </linearGradient>
       </defs>
       <path
