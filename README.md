@@ -22,6 +22,9 @@ Designed to feel faster, cleaner, smoother and more immersive.
 > The project is currently undergoing **major internal restructuring**.  
 > The `main` branch contains unstable code and known breaking issues.
 >
+> **Project update:** the extension has been **massively reworked** over the last few weeks.  
+> It is no longer close to the older builds — it now behaves much more like a complete custom site, powered by **multiple APIs**, while I keep fixing bugs and improving the experience everywhere.
+>
 > 👉 **Only download official builds from the `Releases` section**.
 
 ---
