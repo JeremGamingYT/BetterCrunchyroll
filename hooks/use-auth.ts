@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useCallback, useEffect } from "react"
+import { tokenManager } from "@/lib/token-manager"
 
 export interface AuthToken {
   access_token: string
@@ -28,6 +29,66 @@ export interface AuthState {
 const TOKEN_STORAGE_KEY = "bcr_auth_token"
 const USER_STORAGE_KEY = "bcr_auth_user"
 const TOKEN_REFRESH_BUFFER = 60000 // Refresh 1 minute before expiry
+
+/** True when the app is running inside the extension iframe (parent = crunchyroll.com). */
+function isInExtensionIframe(): boolean {
+  try {
+    return window.self !== window.top
+  } catch {
+    return true // cross-origin access blocked → definitely in an iframe
+  }
+}
+
+/**
+ * Relay the login request through the content-script which runs on crunchyroll.com
+ * and therefore carries the real browser cookies (cf_clearance, __cf_bm, etp_rt…).
+ * Resolves in ~100 ms when the extension is loaded; rejects after 3 s otherwise.
+ */
+function signInViaContentScript(
+  username: string,
+  password: string
+): Promise<{ access_token: string; refresh_token: string; expires_in: number; account_id?: string }> {
+  return new Promise((resolve, reject) => {
+    const id = crypto.randomUUID()
+    const timeout = setTimeout(() => {
+      window.removeEventListener("message", handler)
+      reject(new Error("PROXY_TIMEOUT"))
+    }, 10000) // 10s — auth fetch to crunchyroll.com can take a few seconds
+
+    function handler(event: MessageEvent) {
+      if (event.data?.type !== "CRUNCHYROLL_AUTH_RESPONSE") return
+      if (event.data?.id !== id) return
+      clearTimeout(timeout)
+      window.removeEventListener("message", handler)
+      if (event.data.success) {
+        resolve(event.data.data)
+      } else {
+        reject(new Error(event.data.error || "Identifiants incorrects"))
+      }
+    }
+
+    window.addEventListener("message", handler)
+    window.parent.postMessage(
+      { type: "CRUNCHYROLL_AUTH_REQUEST", id, username, password },
+      "*"
+    )
+  })
+}
+
+/** Server-side proxy fallback (used in standalone mode or when extension is not yet reloaded). */
+async function signInViaServer(
+  username: string,
+  password: string
+): Promise<{ access_token: string; refresh_token: string; expires_in: number; account?: Record<string, string> }> {
+  const response = await fetch("/api/auth", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ method: "sign_in", username, password }),
+  })
+  const json = await response.json()
+  if (!response.ok) throw new Error(json.error || "Identifiants incorrects")
+  return json
+}
 
 export function useAuth() {
   const [state, setState] = useState<AuthState>({
@@ -96,22 +157,36 @@ export function useAuth() {
       setState((prev) => ({ ...prev, isLoading: true, error: null }))
 
       try {
-        const response = await fetch("/api/auth", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            method: "sign_in",
-            username,
-            password,
-          }),
-        })
-
-        if (!response.ok) {
-          const errorData = await response.json()
-          throw new Error(errorData.error || "Sign in failed")
+        let rawData: {
+          access_token: string
+          refresh_token: string
+          expires_in: number
+          account?: Record<string, string>
+          account_id?: string
         }
 
-        const data = await response.json()
+        if (isInExtensionIframe()) {
+          // ONLY the content-script proxy can work here — the server route will always
+          // be blocked by Cloudflare because it has no cf_clearance / etp_rt cookies.
+          try {
+            const proxyData = await signInViaContentScript(username, password)
+            rawData = {
+              access_token: proxyData.access_token,
+              refresh_token: proxyData.refresh_token,
+              expires_in: proxyData.expires_in,
+            }
+          } catch (proxyErr) {
+            if (proxyErr instanceof Error && proxyErr.message === "PROXY_TIMEOUT") {
+              throw new Error("__RELOAD_EXTENSION__")
+            }
+            throw proxyErr // wrong password, network error, etc.
+          }
+        } else {
+          // Standalone localhost:3000 — server route (will fail if Cloudflare blocks)
+          rawData = await signInViaServer(username, password)
+        }
+
+        const data = rawData
 
         const token: AuthToken = {
           access_token: data.access_token,
@@ -128,9 +203,23 @@ export function useAuth() {
           profile_name: data.account?.profile_name || "",
         }
 
-        // Store in localStorage
-        localStorage.setItem(TOKEN_STORAGE_KEY, JSON.stringify(token))
-        localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(user))
+        // Store in localStorage — clear old cache entries on quota exceeded
+        try {
+          localStorage.setItem(TOKEN_STORAGE_KEY, JSON.stringify(token))
+          localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(user))
+        } catch {
+          // Storage full: evict Crunchyroll cache and retry
+          for (const k of Object.keys(localStorage)) {
+            if (k.startsWith("crunchyroll_") || k.startsWith("jikan_") || k.startsWith("cache_")) {
+              localStorage.removeItem(k)
+            }
+          }
+          localStorage.setItem(TOKEN_STORAGE_KEY, JSON.stringify(token))
+          localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(user))
+        }
+
+        // Sync to tokenManager so AuthGuard (useToken) sees the new token immediately
+        tokenManager.setToken(token.access_token, token.refresh_token, token.expires_in)
 
         setState((prev) => ({
           ...prev,
@@ -178,6 +267,9 @@ export function useAuth() {
 
       localStorage.setItem(TOKEN_STORAGE_KEY, JSON.stringify(token))
 
+      // Keep tokenManager in sync
+      tokenManager.setToken(token.access_token, token.refresh_token, token.expires_in)
+
       setState((prev) => ({ ...prev, token, error: null }))
 
       return { success: true, token }
@@ -191,6 +283,8 @@ export function useAuth() {
   const logout = useCallback(() => {
     localStorage.removeItem(TOKEN_STORAGE_KEY)
     localStorage.removeItem(USER_STORAGE_KEY)
+    // Clear tokenManager's slot so AuthGuard immediately redirects
+    tokenManager.clearToken()
 
     setState({
       token: null,

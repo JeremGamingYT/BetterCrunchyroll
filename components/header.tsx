@@ -23,6 +23,7 @@ import {
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useCrunchyrollProfile, useCrunchyrollAccount, useCrunchyrollSubscription } from "@/hooks/use-crunchyroll"
+import { useAuth } from "@/hooks/use-auth"
 import { AvatarSelector } from "@/components/avatar-selector"
 import { ProfileAvatar } from "@/components/profile-avatar"
 import { BetterCrLogo } from "@/components/bettercr-logo"
@@ -62,8 +63,18 @@ export function Header() {
   const { data: profile, isLoading: profileLoading } = useCrunchyrollProfile()
   const { data: account, isLoading: accountLoading } = useCrunchyrollAccount()
   const { data: subscription, isLoading: subscriptionLoading } = useCrunchyrollSubscription(account?.account_id || null)
+  const { user: authUser, logout } = useAuth()
 
   const isUserLoading = profileLoading || accountLoading || subscriptionLoading
+
+  // Derived display values — CR profile is preferred, useAuth is fallback
+  const displayName = profile?.username || profile?.profile_name || authUser?.username || authUser?.profile_name || 'Utilisateur'
+  const displayEmail = account?.email || authUser?.email || ''
+
+  const handleLogout = () => {
+    setIsProfileOpen(false)
+    logout()
+  }
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -248,7 +259,7 @@ export function Header() {
                         {isUserLoading ? (
                           <span className="text-muted-foreground">Chargement...</span>
                         ) : (
-                          profile?.username || profile?.profile_name || 'Utilisateur'
+                          displayName
                         )}
                       </h3>
                       {subscription && Array.isArray(subscription) && subscription.length > 0 && (
@@ -257,9 +268,9 @@ export function Header() {
                           <span>Premium</span>
                         </div>
                       )}
-                      {account?.email && (
+                      {displayEmail && (
                         <p className="text-xs text-muted-foreground truncate mt-0.5">
-                          {account.email}
+                          {displayEmail}
                         </p>
                       )}
                     </div>
@@ -311,7 +322,7 @@ export function Header() {
                   <ProfileMenuItem
                     icon={LogOut}
                     label="Se déconnecter"
-                    onClick={() => setIsProfileOpen(false)}
+                    onClick={handleLogout}
                     variant="destructive"
                   />
                 </div>

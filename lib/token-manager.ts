@@ -63,13 +63,13 @@ class TokenManager {
   getToken(): string | null {
     if (typeof window === "undefined") return null
 
-    // First check extension token
+    // 1. Extension token (injected by content-script into page window)
     const extensionToken = (window as any).__BCR_TOKEN__
     if (extensionToken) {
       return extensionToken
     }
 
-    // Then check localStorage
+    // 2. TokenManager's own localStorage slot (bcr_crunchyroll_token)
     try {
       const stored = localStorage.getItem(TOKEN_KEY)
       if (stored) {
@@ -91,6 +91,19 @@ class TokenManager {
     } catch (error) {
       console.error("[TokenManager] Error reading token:", error)
     }
+
+    // 3. Fallback: read from useAuth's slot (bcr_auth_token) — set on form login
+    try {
+      const authStored = localStorage.getItem("bcr_auth_token")
+      if (authStored) {
+        const authData = JSON.parse(authStored)
+        if (authData.expires_at > Date.now()) {
+          // Promote the token into our own slot so future reads are faster
+          this.setToken(authData.access_token, authData.refresh_token, authData.expires_in)
+          return authData.access_token
+        }
+      }
+    } catch {}
 
     return null
   }
@@ -147,24 +160,35 @@ class TokenManager {
       expires_at: expiresAt,
     }
 
-    try {
+    const writeToken = () => {
       localStorage.setItem(TOKEN_KEY, JSON.stringify(data))
-      if (refreshToken) {
-        localStorage.setItem(REFRESH_TOKEN_KEY, refreshToken)
-      }
+      if (refreshToken) localStorage.setItem(REFRESH_TOKEN_KEY, refreshToken)
       localStorage.setItem(TOKEN_EXPIRY_KEY, expiresAt.toString())
-
-      console.log(
-        "[TokenManager] Token stored. Expires in",
-        Math.round((expiresAt - Date.now()) / 1000),
-        "seconds"
-      )
-
-      this.notifyListeners()
-      this.startRefreshTimer()
-    } catch (error) {
-      console.error("[TokenManager] Error storing token:", error)
     }
+
+    try {
+      writeToken()
+    } catch {
+      // Quota exceeded — evict API response caches and retry
+      for (const k of Object.keys(localStorage)) {
+        if (k.startsWith("crunchyroll_") || k.startsWith("jikan_") || k.startsWith("cache_")) {
+          localStorage.removeItem(k)
+        }
+      }
+      try { writeToken() } catch (e) {
+        console.error("[TokenManager] Error storing token after eviction:", e)
+        return
+      }
+    }
+
+    console.log(
+      "[TokenManager] Token stored. Expires in",
+      Math.round((expiresAt - Date.now()) / 1000),
+      "seconds"
+    )
+
+    this.notifyListeners()
+    this.startRefreshTimer()
   }
 
   /**

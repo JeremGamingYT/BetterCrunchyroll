@@ -23,11 +23,12 @@ interface AnimeSectionProps {
   isLoading?: boolean
   error?: Error | null
   showAiring?: boolean
+  showNewBadge?: boolean
   sectionSlug?: string
   hideViewAll?: boolean
 }
 
-export function AnimeSection({ title, animes, isLoading, error, showAiring, sectionSlug, hideViewAll = false }: AnimeSectionProps) {
+export function AnimeSection({ title, animes, isLoading, error, showAiring, showNewBadge, sectionSlug, hideViewAll = false }: AnimeSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
@@ -114,7 +115,7 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, sect
             }}
           >
             {animes.map((anime, index) => (
-              <AnimeCard key={anime.id} anime={anime} index={index} showAiring={showAiring} />
+              <AnimeCard key={anime.id} anime={anime} index={index} showAiring={showAiring} showNewBadge={showNewBadge} />
             ))}
           </div>
         )}

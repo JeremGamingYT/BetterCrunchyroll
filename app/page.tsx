@@ -6,9 +6,10 @@ import { AnimeSection } from "@/components/anime-section"
 import { ContinueWatching } from "@/components/continue-watching"
 import { Footer } from "@/components/footer"
 import { LoadingScreen, useInitialLoading } from "@/components/loading-screen"
+import { AuthGuard } from "@/components/auth-guard"
 import { useTrendingAnime, usePopularAnime, useNewAnime, useSimulcastAnime, useDubbedAnime, useSubbedAnime, useMovieListings } from "@/hooks/use-combined-anime"
 
-export default function Home() {
+function HomeContent() {
   const { data: trendingAnimes, isLoading: loadingTrending, error: errorTrending } = useTrendingAnime(1, 12)
   const { data: popularAnimesData, isLoading: loadingPopular, error: errorPopular } = usePopularAnime(1, 12)
   const { data: newAnimesData, isLoading: loadingNew, error: errorNew } = useNewAnime(1, 12)
@@ -17,7 +18,6 @@ export default function Home() {
   const { data: subbedAnimesData, isLoading: loadingSubbed, error: errorSubbed } = useSubbedAnime(1, 12)
   const { data: movieListingsData, isLoading: loadingMovies, error: errorMovies } = useMovieListings(1, 12)
 
-  // Show loading screen only on initial load
   const showInitialLoading = useInitialLoading([loadingTrending, loadingPopular, loadingNew, loadingSimulcast, loadingDubbed, loadingSubbed, loadingMovies])
 
   return (
@@ -27,26 +27,30 @@ export default function Home() {
         <Header />
         <HeroCarousel />
         <div className="relative z-10 px-4 md:px-8 lg:px-12 pb-16">
-          <div className="relative -mt-8 z-20 space-y-8">
-            <div className="mt-16">
-              <ContinueWatching />
-            </div>
+          <div className="relative z-20 space-y-8 pt-2">
+            {/* Recommandés pour vous — first section right after hero */}
             <AnimeSection
-              title="Notre sélection pour vous"
+              title="Recommandés pour vous"
               animes={trendingAnimes}
               isLoading={loadingTrending}
               error={errorTrending}
               sectionSlug="/populaire"
             />
 
+            {/* Continuer à regarder */}
+            <ContinueWatching />
+
+            {/* Ajouts récents */}
             <AnimeSection
-              title="Nouveautés"
+              title="Ajouts récents"
               animes={newAnimesData}
               isLoading={loadingNew}
               error={errorNew}
               sectionSlug="/nouveau"
+              showNewBadge
             />
 
+            {/* Populaires */}
             <AnimeSection
               title="Populaires"
               animes={popularAnimesData}
@@ -54,6 +58,8 @@ export default function Home() {
               error={errorPopular}
               sectionSlug="/populaire"
             />
+
+            {/* Simulcast */}
             <AnimeSection
               title="Simulcast de la saison"
               animes={simulcastAnimesData}
@@ -62,6 +68,8 @@ export default function Home() {
               showAiring
               sectionSlug="/simulcast"
             />
+
+            {/* VF */}
             <AnimeSection
               title="Disponible en VF"
               animes={dubbedAnimesData}
@@ -69,6 +77,8 @@ export default function Home() {
               error={errorDubbed}
               hideViewAll
             />
+
+            {/* VOSTFR */}
             <AnimeSection
               title="Version sous-titrée"
               animes={subbedAnimesData}
@@ -76,6 +86,8 @@ export default function Home() {
               error={errorSubbed}
               hideViewAll
             />
+
+            {/* Films */}
             <AnimeSection
               title="Films Crunchyroll"
               animes={movieListingsData}
@@ -88,5 +100,13 @@ export default function Home() {
         <Footer />
       </main>
     </>
+  )
+}
+
+export default function Home() {
+  return (
+    <AuthGuard>
+      <HomeContent />
+    </AuthGuard>
   )
 }

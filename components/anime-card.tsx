@@ -47,12 +47,13 @@ interface AnimeCardProps {
   layout?: "poster" | "landscape"
   /** If true, this is a relation/recommendation card - links to AniList if no Crunchyroll */
   isRelation?: boolean
+  showNewBadge?: boolean
 }
 
 // Relation types that indicate this is a related work
 const RELATION_TYPES = ['PREQUEL', 'SEQUEL', 'PARENT', 'SIDE_STORY', 'SPIN_OFF', 'ADAPTATION', 'ALTERNATIVE', 'SOURCE', 'CHARACTER', 'OTHER']
 
-export function AnimeCard({ anime, index = 0, showAiring = false, compact = false, layout = "poster", isRelation = false }: AnimeCardProps) {
+export function AnimeCard({ anime, index = 0, showAiring = false, compact = false, layout = "poster", isRelation = false, showNewBadge = false }: AnimeCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const [imageError, setImageError] = useState(false)
   const [isPreviewOpen, setIsPreviewOpen] = useState(false)
@@ -480,6 +481,13 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           <div className="absolute top-3 left-20 px-2 py-0.5 rounded text-xs font-bold bg-green-500/90 text-white flex items-center gap-1 pointer-events-none">
             <Clock className="w-3 h-3" />
             {formatTimeUntil(nextEpisode.timeUntilAiring)}
+          </div>
+        )}
+
+        {/* New Badge (Disney+ style) */}
+        {showNewBadge && !isLandscape && (
+          <div className="absolute bottom-3 left-3 px-2 py-0.5 rounded text-xs font-bold bg-white text-black pointer-events-none z-20">
+            Nouveau
           </div>
         )}
 

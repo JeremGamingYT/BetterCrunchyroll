@@ -179,16 +179,32 @@
     }
 
     // ===============================
-    // Watch Page: Direct DOM Injection - DISABLED
+    // Watch Page: Player Enhancements
     // ===============================
 
     function isWatchPage() {
         return /\/watch\//.test(window.location.pathname);
     }
 
+    function injectPlayerEnhancements() {
+        if (document.getElementById('bcr-player-controls')) return; // already injected
+        const script = document.createElement('script');
+        script.src = chrome.runtime.getURL('player-enhancements.js');
+        script.onload = function () {
+            console.log('[BetterCrunchyroll] ✅ Player enhancements loaded');
+            this.remove();
+        };
+        script.onerror = function () {
+            console.error('[BetterCrunchyroll] Failed to load player enhancements');
+        };
+        (document.head || document.documentElement).appendChild(script);
+        console.log('[BetterCrunchyroll] Player enhancements injection initiated');
+    }
+
     async function injectWatchPageUI() {
-        console.log('[BetterCrunchyroll] Custom Watch UI is DISABLED. Using official player.');
-        return;
+        if (isWatchPage()) {
+            injectPlayerEnhancements();
+        }
     }
 
     // ===============================
@@ -316,6 +332,103 @@
                 accountId: accountId,
                 profileId: profileId,
             }, event.origin);
+        }
+
+        // Auth proxy: lets the iframe log in using real browser cookies (bypasses Cloudflare)
+        if (type === 'CRUNCHYROLL_AUTH_REQUEST') {
+            const { username, password } = event.data || {};
+            console.log('[BetterCrunchyroll] 🔑 Auth request received for:', username);
+            // xunihvedbt3mbisuhevt: ETP client – the only CR client that supports grant_type=password.
+            // noaihdevm_6iyg0a8l0q is the web PKCE client and rejects password grant (400 unsupported_grant_type).
+            const BASIC = 'eHVuaWh2ZWRidDNtYmlzdWhldnQ6MWtJUzVkeVR2akUwX3JxYUEzWWVBaDBiVVhVbXhXMTE=';
+            const etpId = crypto.randomUUID();
+            const deviceId = crypto.randomUUID();
+
+            const body = new URLSearchParams();
+            body.append('username', username || '');
+            body.append('password', password || '');
+            body.append('grant_type', 'password');
+            body.append('scope', 'offline_access');
+            body.append('device_id', deviceId);
+            body.append('device_name', 'BetterCrunchyroll');
+            body.append('device_type', 'com.crunchyroll.windows.desktop');
+
+            try {
+                console.log('[BetterCrunchyroll] 🔊 Sending auth fetch to Crunchyroll...');
+                const resp = await fetch('https://www.crunchyroll.com/auth/v1/token', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Basic ${BASIC}`,
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'ETP-Anonymous-ID': etpId,
+                        'Accept': 'application/json, text/plain, */*',
+                        'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8',
+                        'Origin': 'https://www.crunchyroll.com',
+                        'Referer': 'https://www.crunchyroll.com/login',
+                    },
+                    credentials: 'include',
+                    body: body.toString(),
+                });
+
+                console.log('[BetterCrunchyroll] Auth response status:', resp.status);
+
+                if (!resp.ok) {
+                    const errData = await resp.json().catch(() => ({}));
+                    console.error('[BetterCrunchyroll] Auth failed:', errData);
+                    event.source.postMessage({
+                        type: 'CRUNCHYROLL_AUTH_RESPONSE',
+                        id,
+                        success: false,
+                        error: errData.error_description || errData.message || 'Identifiants incorrects',
+                    }, event.origin);
+                    return;
+                }
+
+                const data = await resp.json();
+                console.log('[BetterCrunchyroll] ✅ Auth success, token received');
+
+                // Store in content-script state so subsequent API calls work immediately
+                if (data.access_token) {
+                    accessToken = data.access_token;
+                    tokenExpiry = Date.now() + ((data.expires_in || 300) * 1000) - 30000;
+                    window.__BCR_TOKEN__ = data.access_token;
+                    window.__BCR_TOKEN_EXPIRY__ = tokenExpiry;
+                    window.__BCR_ACCOUNT_ID__ = data.account_id;
+                    window.__BCR_PROFILE_ID__ = data.profile_id;
+                    try {
+                        localStorage.setItem('bcr_token', JSON.stringify({
+                            token: accessToken, expiry: tokenExpiry,
+                            accountId: data.account_id, profileId: data.profile_id
+                        }));
+                    } catch (e) {}
+                    if (typeof chrome !== 'undefined' && chrome.storage) {
+                        chrome.storage.local.set({ bcr_token: {
+                            token: accessToken, expiry: tokenExpiry,
+                            accountId: data.account_id, profileId: data.profile_id
+                        }});
+                    }
+                }
+
+                event.source.postMessage({
+                    type: 'CRUNCHYROLL_AUTH_RESPONSE',
+                    id,
+                    success: true,
+                    data: {
+                        access_token: data.access_token,
+                        refresh_token: data.refresh_token,
+                        expires_in: data.expires_in,
+                        account_id: data.account_id,
+                    },
+                }, event.origin);
+            } catch (err) {
+                console.error('[BetterCrunchyroll] Auth fetch error:', err);
+                event.source.postMessage({
+                    type: 'CRUNCHYROLL_AUTH_RESPONSE',
+                    id,
+                    success: false,
+                    error: 'Impossible de contacter Crunchyroll',
+                }, event.origin);
+            }
         }
     });
 
