@@ -84,6 +84,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
   const animeColor = "color" in anime ? anime.color : null
   const genres = "genres" in anime && anime.genres ? anime.genres : []
   const rating = "rating" in anime && anime.rating ? anime.rating : null
+  const releaseYear = "year" in anime ? (anime as any).year : null
   const relationType = "type" in anime ? anime.type : null
   const popularity = "popularity" in anime ? anime.popularity : 0
   const isPopularityScore = "combinedScore" in anime || "popularityScore" in anime
@@ -164,8 +165,8 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
       className={cn(
         "group/card relative flex-shrink-0 transition-all duration-300 block",
         isLandscape
-          ? "w-[270px] sm:w-[290px] md:w-[310px] lg:w-[330px]"
-          : compact ? "w-[170px] md:w-[190px]" : "w-[210px] md:w-[230px] lg:w-[260px]",
+          ? "w-[300px] sm:w-[320px] md:w-[340px] lg:w-[360px]"
+          : compact ? "w-[170px] md:w-[190px]" : "w-[200px] md:w-[220px] lg:w-[240px]",
         isHovered ? "z-50 transform-gpu" : "z-10",
       )}
       onMouseEnter={() => setIsHovered(true)}
@@ -178,8 +179,8 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
       <div
         className={cn(
           "relative overflow-hidden transition-all duration-300 ease-out shadow-lg shadow-black/30",
-          isLandscape ? "aspect-video rounded-[4px]" : "aspect-[2/3] rounded-xl",
-          isHovered && (isLandscape ? "scale-[1.08] shadow-2xl" : "scale-105 shadow-2xl"),
+          isLandscape ? "aspect-video rounded-[4px]" : "aspect-[2/3] rounded-lg",
+          isHovered && (isLandscape ? "scale-[1.04] shadow-2xl" : "scale-105 shadow-2xl"),
         )}
         style={{
           boxShadow: isHovered && animeColor ? `0 25px 50px -12px ${animeColor}40` : undefined,
@@ -208,7 +209,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
               className={cn(
                 "absolute inset-0 transition-opacity duration-300",
                 isLandscape
-                  ? "bg-gradient-to-t from-black/95 via-black/38 to-transparent opacity-100"
+                  ? cn("bg-gradient-to-t from-black/70 via-transparent to-transparent", isHovered ? "opacity-100" : "opacity-0")
                   : cn(
                       "bg-gradient-to-t from-background via-background/40 to-transparent",
                       isHovered ? "opacity-100" : "opacity-0",
@@ -222,7 +223,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                     "transition-all duration-300",
                     "shadow-lg",
                     compact ? "p-3" : isLandscape ? "p-3.5" : "p-4",
-                    isHovered ? "scale-100 opacity-100" : isLandscape ? "scale-90 opacity-0" : "scale-75 opacity-0",
+                    isHovered ? "scale-100 opacity-100" : "scale-75 opacity-0",
                   )}
                   style={{
                     backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
@@ -233,76 +234,39 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                 </span>
               </div>
 
-              <div
-                className={cn(
-                  "absolute bottom-0 left-0 right-0",
-                  isLandscape
-                    ? "p-3 md:p-3.5"
-                    : cn(
-                        "p-4 transition-all duration-500",
-                        isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
-                      ),
-                )}
-              >
-                {currentEpisode && (
-                  <div
-                    className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
-                    style={{
-                      backgroundColor: animeColor || "hsl(var(--primary))",
-                      color: "#fff"
-                    }}
-                  >
-                    Ep {currentEpisode}
+              {!isLandscape && (
+                <div
+                  className={cn(
+                    "absolute bottom-0 left-0 right-0 p-4 transition-all duration-500",
+                    isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+                  )}
+                >
+                  {currentEpisode && (
+                    <div
+                      className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
+                      style={{ backgroundColor: animeColor || "hsl(var(--primary))", color: "#fff" }}
+                    >
+                      Ep {currentEpisode}
+                    </div>
+                  )}
+                  <div className="flex items-center gap-2 mb-1.5">
+                    {score !== null && score !== undefined && (
+                      <>
+                        <Star className="w-4 h-4" fill="currentColor" style={{ color: animeColor || "hsl(var(--primary))" }} />
+                        <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
+                      </>
+                    )}
+                    {!currentEpisode && episodeText && <span className="ml-auto text-xs text-muted-foreground">{episodeText}</span>}
                   </div>
-                )}
-                <h3 className={cn("font-semibold text-white leading-tight line-clamp-2", isLandscape ? "text-sm md:text-[0.95rem] mb-1.5" : "hidden")}>
-                  {anime.title}
-                </h3>
-                <div className="flex items-center gap-2 mb-1.5">
-                  {score !== null && score !== undefined && (
-                    <>
-                      {isPopularityScore ? (
-                        <>
-                          <span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
-                            Popularité
-                          </span>
-                          <span className="text-sm font-medium text-foreground">
-                            {score.toFixed(1)}/100
-                          </span>
-                        </>
-                      ) : (
-                        <>
-                          <Star
-                            className="w-4 h-4"
-                            fill="currentColor"
-                            style={{ color: animeColor || "hsl(var(--primary))" }}
-                          />
-                          <span className={cn("font-medium", isLandscape ? "text-xs text-white/90" : "text-sm text-foreground")}>{score.toFixed(1)}</span>
-                        </>
-                      )}
-                    </>
+                  {genres.length > 0 && (
+                    <div className="flex flex-wrap gap-1">
+                      {genres.slice(0, 2).map((genre) => (
+                        <span key={genre} className="text-xs px-2 py-0.5 rounded-full bg-secondary/80 text-muted-foreground">{genre}</span>
+                      ))}
+                    </div>
                   )}
-                  {(score === null || score === undefined) && (
-                    <>
-                      <Star className="w-4 h-4 text-muted-foreground" />
-                      <span className={cn("font-medium text-muted-foreground", isLandscape ? "text-xs" : "text-sm")}>N/A</span>
-                    </>
-                  )}
-                  {!currentEpisode && episodeText && <span className={cn("ml-auto", isLandscape ? "text-[11px] text-white/72" : "text-xs text-muted-foreground")}>{episodeText}</span>}
                 </div>
-                {genres.length > 0 && (
-                  <div className={cn("flex flex-wrap gap-1", isLandscape && !isHovered && "opacity-90")}>
-                    {genres.slice(0, isLandscape ? 3 : 2).map((genre) => (
-                      <span key={genre} className={cn(
-                        "text-xs px-2 py-0.5 rounded-full",
-                        isLandscape ? "bg-black/45 text-white/75 border border-white/10" : "bg-secondary/80 text-muted-foreground",
-                      )}>
-                        {genre}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
+              )}
             </div>
           </Link>
         ) : (
@@ -326,7 +290,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
               className={cn(
                 "absolute inset-0 transition-opacity duration-300",
                 isLandscape
-                  ? "bg-gradient-to-t from-black/95 via-black/38 to-transparent opacity-100"
+                  ? cn("bg-gradient-to-t from-black/70 via-transparent to-transparent", isHovered ? "opacity-100" : "opacity-0")
                   : cn(
                       "bg-gradient-to-t from-background via-background/40 to-transparent",
                       isHovered ? "opacity-100" : "opacity-0",
@@ -340,7 +304,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                     "transition-all duration-300",
                     "shadow-lg",
                     compact ? "p-3" : isLandscape ? "p-3.5" : "p-4",
-                    isHovered ? "scale-100 opacity-100" : isLandscape ? "scale-90 opacity-0" : "scale-75 opacity-0",
+                    isHovered ? "scale-100 opacity-100" : "scale-75 opacity-0",
                   )}
                   style={{
                     backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
@@ -351,130 +315,81 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                 </span>
               </div>
 
-              <div
-                className={cn(
-                  "absolute bottom-0 left-0 right-0",
-                  isLandscape
-                    ? "p-3 md:p-3.5"
-                    : cn(
-                        "p-4 transition-all duration-500",
-                        isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
-                      ),
-                )}
-              >
-                {currentEpisode && (
-                  <div
-                    className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
-                    style={{
-                      backgroundColor: animeColor || "hsl(var(--primary))",
-                      color: "#fff"
-                    }}
-                  >
-                    Ep {currentEpisode}
+              {!isLandscape && (
+                <div
+                  className={cn(
+                    "absolute bottom-0 left-0 right-0 p-4 transition-all duration-500",
+                    isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+                  )}
+                >
+                  {currentEpisode && (
+                    <div
+                      className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
+                      style={{ backgroundColor: animeColor || "hsl(var(--primary))", color: "#fff" }}
+                    >
+                      Ep {currentEpisode}
+                    </div>
+                  )}
+                  <div className="flex items-center gap-2 mb-1.5">
+                    {score !== null && score !== undefined && (
+                      <>
+                        <Star className="w-4 h-4" fill="currentColor" style={{ color: animeColor || "hsl(var(--primary))" }} />
+                        <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
+                      </>
+                    )}
+                    {!currentEpisode && episodeText && <span className="ml-auto text-xs text-muted-foreground">{episodeText}</span>}
                   </div>
-                )}
-                <h3 className={cn("font-semibold text-white leading-tight line-clamp-2", isLandscape ? "text-sm md:text-[0.95rem] mb-1.5" : "hidden")}>
-                  {anime.title}
-                </h3>
-                <div className="flex items-center gap-2 mb-1.5">
-                  {score !== null && score !== undefined && (
-                    <>
-                      {isPopularityScore ? (
-                        <>
-                          <span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
-                            Popularité
-                          </span>
-                          <span className="text-sm font-medium text-foreground">
-                            {score.toFixed(1)}/100
-                          </span>
-                        </>
-                      ) : (
-                        <>
-                          <Star
-                            className="w-4 h-4"
-                            fill="currentColor"
-                            style={{ color: animeColor || "hsl(var(--primary))" }}
-                          />
-                          <span className={cn("font-medium", isLandscape ? "text-xs text-white/90" : "text-sm text-foreground")}>{score.toFixed(1)}</span>
-                        </>
-                      )}
-                    </>
+                  {genres.length > 0 && (
+                    <div className="flex flex-wrap gap-1">
+                      {genres.slice(0, 2).map((genre) => (
+                        <span key={genre} className="text-xs px-2 py-0.5 rounded-full bg-secondary/80 text-muted-foreground">{genre}</span>
+                      ))}
+                    </div>
                   )}
-                  {(score === null || score === undefined) && (
-                    <>
-                      <Star className="w-4 h-4 text-muted-foreground" />
-                      <span className={cn("font-medium text-muted-foreground", isLandscape ? "text-xs" : "text-sm")}>N/A</span>
-                    </>
-                  )}
-                  {!currentEpisode && episodeText && <span className={cn("ml-auto", isLandscape ? "text-[11px] text-white/72" : "text-xs text-muted-foreground")}>{episodeText}</span>}
                 </div>
-                {genres.length > 0 && (
-                  <div className={cn("flex flex-wrap gap-1", isLandscape && !isHovered && "opacity-90")}>
-                    {genres.slice(0, isLandscape ? 3 : 2).map((genre) => (
-                      <span key={genre} className={cn(
-                        "text-xs px-2 py-0.5 rounded-full",
-                        isLandscape ? "bg-black/45 text-white/75 border border-white/10" : "bg-secondary/80 text-muted-foreground",
-                      )}>
-                        {genre}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
+              )}
             </div>
           </button>
         )}
 
-        <div className="absolute top-3 left-3 flex flex-col items-start gap-1 pointer-events-none">
-          {(relationType || isWatchlistItem) && (
-            <div
-              className={cn(
-                "px-2 py-0.5 rounded text-xs font-bold",
-                "bg-primary/90 text-white",
-                "transition-all duration-300",
-              )}
-              style={{
-                backgroundColor: animeColor || undefined,
-              }}
-            >
-              {relationType?.replace(/_/g, " ") || "TV"}
-            </div>
-          )}
-          {/* CR Stats Badge (Visible for verification) */}
-          {"crRating" in anime && ((anime as any).crVoteCount > 0) && (
-            <div className="px-2 py-0.5 mt-1 rounded text-[10px] font-bold bg-black/60 text-white/90 backdrop-blur-sm border border-white/10 flex items-center gap-1">
-              <span>★ {Number((anime as any).crRating).toFixed(1)}</span>
-              <span className="text-white/60">({(anime as any).crVoteCount})</span>
-            </div>
-          )}
-          {rating && (
-            <div
-              className={cn(
-                "px-2 py-0.5 rounded text-xs font-bold",
-                "bg-background/80 backdrop-blur-sm border border-primary/30",
-                "transition-all duration-300",
-              )}
-              style={{
-                backgroundColor: isHovered && animeColor ? animeColor : undefined,
-                color: isHovered && animeColor ? "#fff" : undefined,
-                borderColor: isHovered && animeColor ? animeColor : undefined,
-              }}
-            >
-              {rating}
-            </div>
-          )}
-          {audioLabel && (
-            <div
-              className={cn(
-                "px-2 py-0.5 rounded text-xs font-medium",
-                "bg-background/80 backdrop-blur-sm border border-muted-foreground/30",
-                "transition-all duration-300",
-              )}
-            >
-              {audioLabel}
-            </div>
-          )}
-        </div>
+        {/* Badges overlay — only for poster layout */}
+        {!isLandscape && (
+          <div className="absolute top-3 left-3 flex flex-col items-start gap-1 pointer-events-none">
+            {(relationType || isWatchlistItem) && (
+              <div
+                className={cn(
+                  "px-2 py-0.5 rounded text-xs font-bold",
+                  "bg-primary/90 text-white",
+                  "transition-all duration-300",
+                )}
+                style={{ backgroundColor: animeColor || undefined }}
+              >
+                {relationType?.replace(/_/g, " ") || "TV"}
+              </div>
+            )}
+            {rating && (
+              <div
+                className={cn(
+                  "px-2 py-0.5 rounded text-xs font-bold",
+                  "bg-background/80 backdrop-blur-sm border border-primary/30",
+                  "transition-all duration-300",
+                )}
+                style={{
+                  backgroundColor: isHovered && animeColor ? animeColor : undefined,
+                  color: isHovered && animeColor ? "#fff" : undefined,
+                  borderColor: isHovered && animeColor ? animeColor : undefined,
+                }}
+              >
+                {rating}
+              </div>
+            )}
+            {audioLabel && (
+              <div className="px-2 py-0.5 rounded text-xs font-medium bg-background/80 backdrop-blur-sm border border-muted-foreground/30">
+                {audioLabel}
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Airing Badge */}
         {showAiring && nextEpisode && (
@@ -547,7 +462,28 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
         />
       </div>
 
-      {!isLandscape && (
+      {/* Below-card metadata */}
+      {isLandscape ? (
+        /* Disney+ style: rating badge + year + genres below the thumbnail */
+        <div className="mt-2 px-0.5 space-y-0.5">
+          <div className="flex items-center gap-1.5 flex-wrap">
+            {rating && (
+              <span className="text-[10px] font-bold border border-white/40 text-white/70 px-1.5 py-px rounded-sm leading-none">
+                {rating}
+              </span>
+            )}
+            {releaseYear && (
+              <span className="text-[11px] text-white/60 font-medium">{releaseYear}</span>
+            )}
+            {genres.length > 0 && (
+              <span className="text-[11px] text-white/50 truncate max-w-[200px]">
+                {rating || releaseYear ? "• " : ""}{genres.slice(0, 2).join(", ")}
+              </span>
+            )}
+          </div>
+        </div>
+      ) : (
+        /* Poster layout: keep existing title below */
         isExternalLink ? (
           <Link
             href={animeUrl}
@@ -557,9 +493,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           >
             <h3
               className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
-              style={{
-                color: animeColor || undefined,
-              }}
+              style={{ color: animeColor || undefined }}
             >
               {anime.title}
             </h3>
@@ -579,9 +513,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           >
             <h3
               className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
-              style={{
-                color: animeColor || undefined,
-              }}
+              style={{ color: animeColor || undefined }}
             >
               {anime.title}
             </h3>
