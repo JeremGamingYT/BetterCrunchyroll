@@ -24,6 +24,7 @@ import {
   Check,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useI18n } from "@/hooks/use-i18n"
 
 type SettingsSection =
   | "abonnement"
@@ -51,11 +52,6 @@ const settingsSections = [
 const languages = [
   { code: "fr", label: "Français" },
   { code: "en", label: "English" },
-  { code: "ja", label: "日本語" },
-  { code: "es", label: "Español" },
-  { code: "de", label: "Deutsch" },
-  { code: "pt", label: "Português" },
-  { code: "it", label: "Italiano" },
 ]
 
 const audioLanguages = [
@@ -88,9 +84,9 @@ const contentRestrictions = [
 
 export default function ParametresPage() {
   const [activeSection, setActiveSection] = useState<SettingsSection>("abonnement")
+  const { language, setLanguage } = useI18n()
 
   // Preferences state
-  const [displayLanguage, setDisplayLanguage] = useState("fr")
   const [audioLanguage, setAudioLanguage] = useState("ja")
   const [audioDescriptions, setAudioDescriptions] = useState(false)
   const [subtitleLanguage, setSubtitleLanguage] = useState("fr")
@@ -98,10 +94,18 @@ export default function ParametresPage() {
   const [contentRestriction, setContentRestriction] = useState("none")
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="relative min-h-screen bg-transparent">
+      <div aria-hidden="true" className="page-backdrop">
+        <div className="page-backdrop__glow" />
+        <div className="page-backdrop__stripes" />
+        <div className="page-backdrop__streaks" />
+        <div className="page-backdrop__panel" />
+        <div className="page-backdrop__dots" />
+      </div>
+
       <Header />
 
-      <main className="pt-24 pb-16 px-4 md:px-8 lg:px-12">
+      <main className="relative z-10 pt-24 pb-16 px-4 md:px-8 lg:px-12">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl font-bold text-foreground mb-8">Paramètres</h1>
 
@@ -141,8 +145,8 @@ export default function ParametresPage() {
                 {activeSection === "abonnement" && <AbonnementSection />}
                 {activeSection === "preferences" && (
                   <PreferencesSection
-                    displayLanguage={displayLanguage}
-                    setDisplayLanguage={setDisplayLanguage}
+                    displayLanguage={language}
+                    setDisplayLanguage={setLanguage}
                     audioLanguage={audioLanguage}
                     setAudioLanguage={setAudioLanguage}
                     audioDescriptions={audioDescriptions}

@@ -11,10 +11,19 @@ export default function PopulairePage() {
   const { data: allAnimes, isLoading, isLoadingMore, hasMore, error, enrichmentProgress, loadMore } = usePopularAnimeInfinite(20)
 
   return (
-    <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
-      <Header />
+    <main className="relative min-h-screen bg-transparent text-foreground selection:bg-primary/30">
+      <div aria-hidden="true" className="page-backdrop">
+        <div className="page-backdrop__glow" />
+        <div className="page-backdrop__stripes" />
+        <div className="page-backdrop__streaks" />
+        <div className="page-backdrop__panel" />
+        <div className="page-backdrop__dots" />
+      </div>
 
-      <div className="pt-36 pb-16 px-6 md:px-12 lg:px-20 max-w-[2000px] mx-auto">
+      <div className="relative z-10">
+        <Header />
+
+        <div className="pt-36 pb-16 px-6 md:px-12 lg:px-20 max-w-[2000px] mx-auto">
         {/* Hero Section */}
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black font-bangers tracking-wide mb-3">Populaires</h1>
@@ -100,9 +109,10 @@ export default function PopulairePage() {
             <p className="text-muted-foreground">Chargement des animés et enrichissement...</p>
           </div>
         )}
-      </div>
+        </div>
 
-      <Footer />
+        <Footer />
+      </div>
     </main>
   )
 }

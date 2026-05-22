@@ -17,6 +17,8 @@ export interface EnrichedWatchlistItem extends TransformedWatchlistItem {
     anilistImage?: string
 }
 
+type WatchlistEnrichmentInfo = Pick<TransformedAnime, "id" | "color" | "score" | "genres" | "image">
+
 interface WatchlistContextValue {
     // Data
     watchlist: EnrichedWatchlistItem[]
@@ -114,7 +116,7 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
                 try {
                     const cacheKey = `basic_info_${sanitizeKey(item.seriesTitle || item.title)}`
                     // @ts-ignore - Dynamic import typing issue
-                    const cached = await getCache(cacheKey) as TransformedAnime | null
+                    const cached = await getCache(cacheKey) as WatchlistEnrichmentInfo | null
 
                     if (cached) {
                         // Immediate update from cache
@@ -139,7 +141,7 @@ export function WatchlistProvider({ children }: { children: React.ReactNode }) {
                         // Add delay only if we are actually fetching
                         if (i > 0) await new Promise(resolve => setTimeout(resolve, 800))
 
-                        let anilistData = await searchAnimeBasicInfo(item.seriesTitle || item.title)
+                        let anilistData: WatchlistEnrichmentInfo | null = await searchAnimeBasicInfo(item.seriesTitle || item.title)
 
                         if (!anilistData) {
                             const { searchJikanBasicInfo } = await import("@/lib/jikan")

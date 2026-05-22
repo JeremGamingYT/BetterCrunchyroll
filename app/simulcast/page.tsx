@@ -5,7 +5,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimeCard } from "@/components/anime-card"
 import { LoadingScreen, useInitialLoading } from "@/components/loading-screen"
-import { useAiringSchedule, useSimulcastAnime, type CombinedAnime } from "@/hooks/use-combined-anime"
+import { useAiringSchedule, useSimulcastAnime } from "@/hooks/use-combined-anime"
+import type { TransformedAnime } from "@/lib/anilist"
 import { cn } from "@/lib/utils"
 import { Calendar, Clock, Filter, Grid } from "lucide-react"
 
@@ -82,7 +83,7 @@ export default function SimulcastPage() {
   const animesByDay = useMemo(() => {
     if (viewMode !== "schedule") return null
 
-    const grouped: Record<number, CombinedAnime[]> = {}
+    const grouped: Record<number, TransformedAnime[]> = {}
 
     for (const anime of filteredAnimes) {
       if (!anime.nextEpisode) continue
@@ -117,8 +118,17 @@ export default function SimulcastPage() {
   return (
     <>
       <LoadingScreen isLoading={showInitialLoading} message="Chargement du calendrier..." />
-      <main className="min-h-screen bg-background">
-        <Header />
+      <main className="relative min-h-screen bg-transparent">
+        <div aria-hidden="true" className="page-backdrop">
+          <div className="page-backdrop__glow" />
+          <div className="page-backdrop__stripes" />
+          <div className="page-backdrop__streaks" />
+          <div className="page-backdrop__panel" />
+          <div className="page-backdrop__dots" />
+        </div>
+
+        <div className="relative z-10">
+          <Header />
 
         {/* Hero Section - Enhanced with Premium Design */}
         <section className="relative pt-32 pb-16 overflow-hidden">
@@ -350,14 +360,15 @@ export default function SimulcastPage() {
           )}
         </section>
 
-        <Footer />
+          <Footer />
+        </div>
       </main>
     </>
   )
 }
 
 // Schedule Card Component
-function ScheduleCard({ anime }: { anime: CombinedAnime }) {
+function ScheduleCard({ anime }: { anime: TransformedAnime }) {
   const [imageError, setImageError] = useState(false)
 
   const formatTime = (timestamp: number) => {

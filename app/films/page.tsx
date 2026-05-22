@@ -10,10 +10,18 @@ export default function FilmsPage() {
   const { data: movies, isLoading, isLoadingMore, hasMore, error, loadMore } = useMoviesInfinite(50)
 
   return (
-    <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+    <main className="relative min-h-screen bg-transparent text-foreground selection:bg-primary/30">
+      <div aria-hidden="true" className="page-backdrop">
+        <div className="page-backdrop__glow" />
+        <div className="page-backdrop__stripes" />
+        <div className="page-backdrop__streaks" />
+        <div className="page-backdrop__panel" />
+        <div className="page-backdrop__dots" />
+      </div>
+
       <Header />
 
-      <div className="pt-36 pb-16 px-6 md:px-12 lg:px-20 max-w-[2000px] mx-auto">
+      <div className="relative z-10 pt-36 pb-16 px-6 md:px-12 lg:px-20 max-w-[2000px] mx-auto">
         {/* Hero Section */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-3">

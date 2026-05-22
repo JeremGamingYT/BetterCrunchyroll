@@ -36,7 +36,7 @@ export function AuthGuard({ children }: AuthGuardProps) {
   // Still initialising — render spinner to avoid flash of protected content
   if (!isReady) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="min-h-screen bg-[rgba(6,6,8,0.8)] backdrop-blur-xl flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <div className="w-10 h-10 border-2 border-primary border-t-transparent rounded-full animate-spin" />
           <p className="text-muted-foreground text-sm">Vérification de la connexion…</p>

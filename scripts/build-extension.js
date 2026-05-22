@@ -117,7 +117,16 @@ async function build() {
 
     // Copy extension files
     console.log('📋 Copying extension files...');
-    const extensionFiles = ['manifest.json', 'content-script.js', 'injected-script.js', 'background.js', 'content-style.css'];
+    const extensionFiles = [
+        'manifest.json',
+        'content-script.js',
+        'injected-script.js',
+        'data-sync.js',
+        'player-enhancements.js',
+        'watch-ui.js',
+        'background.js',
+        'content-style.css',
+    ];
     extensionFiles.forEach(file => {
         const src = path.join(EXTENSION_SRC, file);
         const dest = path.join(DIST_DIR, file);

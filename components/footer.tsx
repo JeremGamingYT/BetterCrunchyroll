@@ -29,8 +29,8 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="mt-10 bg-black text-white">
-      <div className="px-4 md:px-8 lg:px-12 py-14 md:py-16 max-w-7xl">
+    <footer className="mt-10 border-t border-white/10 bg-gradient-to-b from-[rgba(9,9,12,0.74)] to-[rgba(5,5,7,0.96)] text-white backdrop-blur-xl">
+      <div className="mx-auto max-w-7xl px-4 py-14 md:px-8 md:py-16 lg:px-12">
         <a href="/" className="inline-flex items-center group mb-8">
           <BetterCrLogo className="transition-transform duration-200 group-hover:scale-[1.02]" />
         </a>

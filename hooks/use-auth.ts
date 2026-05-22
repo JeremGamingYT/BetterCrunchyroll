@@ -30,6 +30,31 @@ const TOKEN_STORAGE_KEY = "bcr_auth_token"
 const USER_STORAGE_KEY = "bcr_auth_user"
 const TOKEN_REFRESH_BUFFER = 60000 // Refresh 1 minute before expiry
 
+function isLocalDevApp(): boolean {
+  if (typeof window === "undefined") return false
+  return window.location.hostname === "localhost" && window.location.port === "3000"
+}
+
+function createDevAuthSession(): { token: AuthToken; user: AuthUser } {
+  const expiresIn = 60 * 60 * 24 * 7
+
+  return {
+    token: {
+      access_token: "dev-local-token",
+      refresh_token: "dev-local-refresh",
+      expires_in: expiresIn,
+      expires_at: Date.now() + expiresIn * 1000,
+    },
+    user: {
+      id: "dev-user",
+      email: "dev@localhost",
+      username: "dev-user",
+      profile_name: "Dev User",
+      avatar_url: "",
+    },
+  }
+}
+
 /** True when the app is running inside the extension iframe (parent = crunchyroll.com). */
 function isInExtensionIframe(): boolean {
   try {
@@ -123,6 +148,23 @@ export function useAuth() {
             // Token expired, try to refresh
             refreshToken(token.refresh_token)
           }
+        }
+
+        if (isLocalDevApp()) {
+          const { token, user } = createDevAuthSession()
+
+          localStorage.setItem(TOKEN_STORAGE_KEY, JSON.stringify(token))
+          localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(user))
+          tokenManager.setToken(token.access_token, token.refresh_token, token.expires_in)
+
+          setState((prev) => ({
+            ...prev,
+            token,
+            user,
+            isAuthenticated: true,
+            isLoading: false,
+          }))
+          return
         }
       } catch (error) {
         console.error("[Auth] Initialization error:", error)

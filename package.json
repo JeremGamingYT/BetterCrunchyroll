@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "build:extension": "next build && node scripts/build-extension.js",
-    "lint": "eslint .",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "build:extension": "npm run build && node scripts/build-extension.js",
+    "lint": "tsc --noEmit",
     "start": "next start"
   },
   "dependencies": {

@@ -34,7 +34,7 @@ export function LoadingScreen({ isLoading, message = "Chargement..." }: LoadingS
         <div
             className={cn(
                 "fixed inset-0 z-[9999] flex items-center justify-center",
-                "bg-background transition-all duration-500",
+                "bg-[rgba(6,6,8,0.82)] backdrop-blur-xl transition-all duration-500",
                 fadeOut ? "opacity-0" : "opacity-100"
             )}
         >

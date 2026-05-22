@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { Header } from "@/components/header"
 import { HeroCarousel } from "@/components/hero-carousel"
 import { AnimeSection } from "@/components/anime-section"
@@ -9,18 +8,10 @@ import { Footer } from "@/components/footer"
 import { LoadingScreen, useInitialLoading } from "@/components/loading-screen"
 import { AuthGuard } from "@/components/auth-guard"
 import { useTrendingAnime, usePopularAnime, useNewAnime, useSimulcastAnime, useDubbedAnime, useSubbedAnime, useMovieListings } from "@/hooks/use-combined-anime"
-import { cn } from "@/lib/utils"
-
-const TABS = [
-  { id: "pour-vous", label: "Pour vous" },
-  { id: "simulcast", label: "Simulcast" },
-  { id: "films", label: "Films" },
-  { id: "vf", label: "VF" },
-]
+import { useI18n } from "@/hooks/use-i18n"
 
 function HomeContent() {
-  const [activeTab, setActiveTab] = useState("pour-vous")
-
+  const { t } = useI18n()
   const { data: trendingAnimes, isLoading: loadingTrending, error: errorTrending } = useTrendingAnime(1, 12)
   const { data: popularAnimesData, isLoading: loadingPopular, error: errorPopular } = usePopularAnime(1, 12)
   const { data: newAnimesData, isLoading: loadingNew, error: errorNew } = useNewAnime(1, 12)
@@ -34,38 +25,28 @@ function HomeContent() {
   return (
     <>
       <LoadingScreen isLoading={showInitialLoading} message="Chargement du contenu..." />
-      <main className="min-h-screen bg-[#040404] isolate">
+      <main className="relative min-h-screen overflow-x-hidden bg-black isolate">
+        <div
+          className="netflix-app-shell relative z-10 mx-auto min-h-screen w-full overflow-visible bg-black"
+          onPointerMove={(event) => {
+            const rect = event.currentTarget.getBoundingClientRect()
+            event.currentTarget.style.setProperty("--home-x", `${event.clientX - rect.left}px`)
+            event.currentTarget.style.setProperty("--home-y", `${event.clientY - rect.top}px`)
+          }}
+        >
         <Header />
         <HeroCarousel />
 
-        {/* ── Category tabs ── */}
-        <div className="relative z-20 flex items-center gap-2 px-4 md:px-12 lg:px-16 -mt-6 pb-4">
-          {TABS.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={cn(
-                "px-5 py-1.5 rounded-full text-sm font-semibold border transition-all duration-200",
-                activeTab === tab.id
-                  ? "bg-white text-black border-white"
-                  : "bg-transparent text-white/80 border-white/30 hover:border-white/70 hover:text-white"
-              )}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
         {/* ── Content rows ── */}
-        <div className="relative z-10 px-4 md:px-12 lg:px-16 pb-20">
-          <div className="space-y-10">
+        <div className="home-content-shell relative z-20 -mt-32 w-full px-8 pt-36 pb-20 md:px-10 lg:px-12">
+          <div className="space-y-1 md:space-y-2">
 
             {/* Continuer à regarder */}
             <ContinueWatching />
 
             {/* Recommandés pour vous — poster (affiches verticales comme D+) */}
             <AnimeSection
-              title="Recommandés pour vous"
+              title={t("sections.nextWatch")}
               animes={trendingAnimes}
               isLoading={loadingTrending}
               error={errorTrending}
@@ -75,39 +56,39 @@ function HomeContent() {
 
             {/* Ajouts récents — landscape */}
             <AnimeSection
-              title="Ajouts récents"
+              title={t("sections.recentAdds")}
               animes={newAnimesData}
               isLoading={loadingNew}
               error={errorNew}
               sectionSlug="/nouveau"
               showNewBadge
-              cardLayout="landscape"
+              cardLayout="poster"
             />
 
             {/* Populaires — landscape */}
             <AnimeSection
-              title="Populaires"
+              title={t("sections.popular")}
               animes={popularAnimesData}
               isLoading={loadingPopular}
               error={errorPopular}
               sectionSlug="/populaire"
-              cardLayout="landscape"
+              cardLayout="poster"
             />
 
             {/* Simulcast — landscape */}
             <AnimeSection
-              title="Simulcast de la saison"
+              title={t("sections.seasonSimulcast")}
               animes={simulcastAnimesData}
               isLoading={loadingSimulcast}
               error={errorSimulcast}
               showAiring
               sectionSlug="/simulcast"
-              cardLayout="landscape"
+              cardLayout="poster"
             />
 
             {/* VF — poster */}
             <AnimeSection
-              title="Disponible en VF"
+              title={t("sections.dubbed")}
               animes={dubbedAnimesData}
               isLoading={loadingDubbed}
               error={errorDubbed}
@@ -117,7 +98,7 @@ function HomeContent() {
 
             {/* VOSTFR — poster */}
             <AnimeSection
-              title="Version sous-titrée"
+              title={t("sections.subtitled")}
               animes={subbedAnimesData}
               isLoading={loadingSubbed}
               error={errorSubbed}
@@ -127,7 +108,7 @@ function HomeContent() {
 
             {/* Films — poster (affiches de films) */}
             <AnimeSection
-              title="Films Crunchyroll"
+              title={t("sections.crunchyrollMovies")}
               animes={movieListingsData}
               isLoading={loadingMovies}
               error={errorMovies}
@@ -135,6 +116,7 @@ function HomeContent() {
               cardLayout="poster"
             />
           </div>
+        </div>
         </div>
         <Footer />
       </main>
@@ -149,4 +131,3 @@ export default function Home() {
     </AuthGuard>
   )
 }
-
