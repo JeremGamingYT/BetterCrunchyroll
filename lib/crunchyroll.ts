@@ -2,6 +2,8 @@
 // Uses postMessage to communicate with content script when on Crunchyroll
 // Falls back to API proxy route for local development
 
+import { getCrunchyrollLocale } from "@/lib/i18n"
+
 const API_PROXY = "/api/crunchyroll"
 const CACHE_DURATION = 1000 * 60 * 60 // 1 hour cache
 
@@ -110,7 +112,11 @@ if (typeof window !== "undefined") {
     })
 }
 
-async function fetchViaContentScript<T>(endpoint: string, params: Record<string, string>): Promise<T> {
+async function fetchViaContentScript<T>(
+    endpoint: string,
+    params: Record<string, string>,
+    options: { method?: string; body?: unknown } = {}
+): Promise<T> {
     return new Promise((resolve, reject) => {
         const id = ++requestId
 
@@ -125,6 +131,8 @@ async function fetchViaContentScript<T>(endpoint: string, params: Record<string,
             id,
             endpoint,
             params,
+            method: options.method || 'GET',
+            body: options.body,
         }, '*')
 
         // Timeout after 30 seconds
@@ -141,7 +149,11 @@ async function fetchViaContentScript<T>(endpoint: string, params: Record<string,
 // API Proxy Fallback (for local dev without extension)
 // ===============================
 
-async function fetchViaProxy<T>(endpoint: string, params: Record<string, string>): Promise<T> {
+async function fetchViaProxy<T>(
+    endpoint: string,
+    params: Record<string, string>,
+    options: { method?: string; body?: unknown } = {}
+): Promise<T> {
     const url = new URL(API_PROXY, window.location.origin)
     url.searchParams.append('endpoint', endpoint)
 
@@ -150,8 +162,12 @@ async function fetchViaProxy<T>(endpoint: string, params: Record<string, string>
     })
 
     const response = await fetch(url.toString(), {
-        method: "GET",
-        headers: { "Accept": "application/json" },
+        method: options.method || "GET",
+        headers: {
+            "Accept": "application/json",
+            ...(options.body ? { "Content-Type": "application/json" } : {}),
+        },
+        body: options.body ? JSON.stringify(options.body) : undefined,
     })
 
     if (!response.ok) {
@@ -162,20 +178,68 @@ async function fetchViaProxy<T>(endpoint: string, params: Record<string, string>
     return response.json()
 }
 
+async function fetchLocalMovieListings(limit: number, offset: number): Promise<CrunchyrollSeries[]> {
+    try {
+        const url = new URL('/api/movie-listings', window.location.origin)
+        url.searchParams.set('limit', String(limit))
+        url.searchParams.set('offset', String(offset))
+
+        const response = await fetch(url.toString(), {
+            method: 'GET',
+            headers: { Accept: 'application/json' },
+        })
+
+        if (!response.ok) {
+            return []
+        }
+
+        const json = await response.json()
+        return Array.isArray(json?.data) ? json.data : []
+    } catch {
+        return []
+    }
+}
+
 // ===============================
 // Main API Request Function
 // ===============================
 
-async function crunchyrollFetch<T>(endpoint: string, params: Record<string, string> = {}): Promise<T> {
+async function crunchyrollRequest<T>(
+    endpoint: string,
+    params: Record<string, string> = {},
+    options: { method?: string; body?: unknown } = {}
+): Promise<T> {
+    const requestParams = {
+        locale: getCrunchyrollLocale(),
+        preferred_audio_language: getCrunchyrollLocale(),
+        ...params,
+    }
+
     // If running in Crunchyroll iframe, use postMessage to content script
     if (isInCrunchyrollIframe()) {
         console.log('[Crunchyroll] Using content script proxy for:', endpoint)
-        return fetchViaContentScript<T>(endpoint, params)
+        try {
+            return await fetchViaContentScript<T>(endpoint, requestParams, options)
+        } catch (error) {
+            const message = error instanceof Error ? error.message : String(error)
+            const canFallbackToProxy = (options.method || 'GET') === 'GET'
+
+            if (canFallbackToProxy && /No valid token|Request timeout/i.test(message)) {
+                console.warn('[Crunchyroll] Content script proxy unavailable, falling back to API proxy:', endpoint)
+                return fetchViaProxy<T>(endpoint, requestParams, options)
+            }
+
+            throw error
+        }
     }
 
     // Otherwise, use API proxy
     console.log('[Crunchyroll] Using API proxy for:', endpoint)
-    return fetchViaProxy<T>(endpoint, params)
+    return fetchViaProxy<T>(endpoint, requestParams, options)
+}
+
+async function crunchyrollFetch<T>(endpoint: string, params: Record<string, string> = {}): Promise<T> {
+    return crunchyrollRequest<T>(endpoint, params)
 }
 
 // ===============================
@@ -458,6 +522,72 @@ export async function searchCrunchyroll(query: string, limit = 10): Promise<Crun
 }
 
 /**
+ * Search movie listings on Crunchyroll. Browse can be sparse in some locales,
+ * so the home movie row uses this as a fast fill before local fallback data.
+ */
+async function searchCrunchyrollMovieListings(query: string, limit = 10): Promise<CrunchyrollSeries[]> {
+    const cacheKey = `search_movie_listings_${query}_${limit}`
+    const cached = getCache<CrunchyrollSeries[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data: CrunchyrollSearchResult[] }>(
+            "/content/v2/discover/search",
+            {
+                q: query,
+                n: String(limit),
+                type: "movie_listing",
+            }
+        )
+
+        const movieResult = data.data?.find(result => result.type === "movie_listing")
+        const movies = (movieResult?.items || [])
+            .filter(item => item.type === "movie_listing")
+            .map(item => ({
+                ...item,
+                episode_count: 0,
+                season_count: 0,
+            }))
+
+        setCache(cacheKey, movies)
+        return movies
+    } catch (error) {
+        console.error("[Crunchyroll] Movie listing search failed:", error)
+        return []
+    }
+}
+
+async function searchCrunchyrollMovieSeries(query: string, limit = 10): Promise<CrunchyrollSeries[]> {
+    const cacheKey = `search_movie_series_${query}_${limit}`
+    const cached = getCache<CrunchyrollSeries[]>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const seriesResult = await searchCrunchyroll(query, limit)
+        const movies = (seriesResult?.items || [])
+            .filter(item => {
+                if (item.type !== "series") return false
+                const label = `${item.title || ""} ${item.slug_title || ""}`.toLowerCase()
+                return /\bmovie(s)?\b|\bfilm(s)?\b/.test(label)
+            })
+            .map(item => {
+                const metadata = (item as CrunchyrollSeries).series_metadata
+                return {
+                    ...(item as CrunchyrollSeries),
+                    episode_count: metadata?.episode_count || (item as CrunchyrollSeries).episode_count || 1,
+                    season_count: metadata?.season_count || (item as CrunchyrollSeries).season_count || 1,
+                }
+            })
+
+        setCache(cacheKey, movies)
+        return movies
+    } catch (error) {
+        console.error("[Crunchyroll] Movie series search failed:", error)
+        return []
+    }
+}
+
+/**
  * Check if an anime title exists on Crunchyroll
  * Returns the Crunchyroll series info if found, null otherwise
  */
@@ -600,12 +730,42 @@ export async function getMovieListing(movieListingId: string): Promise<Crunchyro
 }
 
 /**
+ * Get movie information by Crunchyroll movie ID
+ */
+export async function getMovie(movieId: string): Promise<TransformedCrunchyrollMovie | null> {
+    const cacheKey = `movie_${movieId}`
+    const cached = getCache<TransformedCrunchyrollMovie>(cacheKey)
+    if (cached) return cached
+
+    try {
+        const data = await crunchyrollFetch<{ data?: CrunchyrollMovie[] | CrunchyrollMovie }>(
+            `/content/v2/cms/movie/${movieId}`
+        )
+
+        const movie = Array.isArray(data.data)
+            ? data.data[0] || null
+            : data.data || null
+
+        if (!movie) {
+            return null
+        }
+
+        const transformedMovie = transformMovie(movie)
+        setCache(cacheKey, transformedMovie)
+        return transformedMovie
+    } catch (error) {
+        console.error("[Crunchyroll] Get movie failed:", error)
+        return null
+    }
+}
+
+/**
  * Get all movies for a given movie listing
  */
 export async function getMovieListingMovies(movieListingId: string): Promise<TransformedCrunchyrollMovie[]> {
     const cacheKey = `movie_listing_movies_${movieListingId}`
     const cached = getCache<TransformedCrunchyrollMovie[]>(cacheKey)
-    if (cached) return cached
+    if (cached && cached.length > 0) return cached
 
     try {
         const data = await crunchyrollFetch<{ data: CrunchyrollMovie[] }>(
@@ -613,7 +773,7 @@ export async function getMovieListingMovies(movieListingId: string): Promise<Tra
         )
 
         const movies = (data.data || []).map(transformMovie)
-        setCache(cacheKey, movies)
+        if (movies.length > 0) setCache(cacheKey, movies)
 
         return movies
     } catch (error) {
@@ -748,10 +908,14 @@ export async function browseCrunchyroll(options: {
     is_dubbed?: boolean
     is_subbed?: boolean
 } = {}): Promise<CrunchyrollSeries[]> {
+    const locale = getCrunchyrollLocale()
     const params: Record<string, string> = {
         n: String(options.n || 50),
         start: String(options.start || 0),
         type: 'series',
+        locale,
+        preferred_audio_language: locale,
+        ratings: 'true',
     }
 
     if (options.sort_by) params.sort_by = options.sort_by
@@ -787,29 +951,92 @@ export async function browseMovieListings(options: {
     start?: number
     sort_by?: 'popularity' | 'newly_added' | 'alphabetical'
 } = {}): Promise<CrunchyrollSeries[]> {
+    const limit = options.n || 50
+    const offset = options.start || 0
+    const locale = getCrunchyrollLocale()
     const params: Record<string, string> = {
-        n: String(options.n || 50),
-        start: String(options.start || 0),
+        n: String(limit),
+        start: String(offset),
         type: 'movie_listing',
+        locale,
+        preferred_audio_language: locale,
+        ratings: 'true',
     }
     if (options.sort_by) params.sort_by = options.sort_by
 
     const cacheKey = `browse_movies_${JSON.stringify(params)}`
     const cached = getCache<CrunchyrollSeries[]>(cacheKey)
-    if (cached && cached.length > 0) return cached
+    if (cached && cached.length >= Math.min(limit, 6)) return cached
+    const merged = new Map<string, CrunchyrollSeries>()
 
-    try {
+    const fetchBySort = async (sortBy: 'popularity' | 'newly_added' | 'alphabetical') => {
+        const requestParams = { ...params, sort_by: sortBy }
         const data = await crunchyrollFetch<{ data: CrunchyrollSeries[] }>(
             "/content/v2/discover/browse",
-            params
+            requestParams
         )
-        const movies = data.data || []
-        if (movies.length > 0) setCache(cacheKey, movies)
-        return movies
+        return data.data || []
+    }
+
+    try {
+        const primarySort: 'popularity' | 'newly_added' | 'alphabetical' = options.sort_by || 'popularity'
+        const sortOrder = Array.from(new Set<Array<'popularity' | 'newly_added' | 'alphabetical'>[number]>([
+            primarySort,
+            'newly_added',
+            'alphabetical',
+        ]))
+
+        for (const sortBy of sortOrder) {
+            const movies = await fetchBySort(sortBy)
+            for (const movie of movies) {
+                merged.set(movie.id, movie)
+                if (merged.size >= limit) break
+            }
+
+            if (merged.size >= limit) break
+        }
+
+        for (const query of ["movie", "film"]) {
+            const movies = await searchCrunchyrollMovieListings(query, limit)
+            for (const movie of movies) {
+                merged.set(movie.id, movie)
+                if (merged.size >= limit) break
+            }
+
+            if (merged.size >= limit) break
+        }
+
+        for (const query of ["movies", "films", "one piece movies", "dragon ball movies"]) {
+            const movies = await searchCrunchyrollMovieSeries(query, limit)
+            for (const movie of movies) {
+                merged.set(movie.id, movie)
+                if (merged.size >= limit) break
+            }
+
+            if (merged.size >= limit) break
+        }
+
+        const remoteMovies = Array.from(merged.values())
+        if (remoteMovies.length >= Math.min(limit, 6)) {
+            setCache(cacheKey, remoteMovies)
+            return remoteMovies
+        }
     } catch (error) {
         console.error("[Crunchyroll] Browse movie listings failed:", error)
-        return []
     }
+
+    const localFallback = await fetchLocalMovieListings(limit, offset)
+    for (const movie of localFallback) {
+        merged.set(movie.id, movie)
+        if (merged.size >= limit) break
+    }
+
+    const movies = Array.from(merged.values()).slice(0, limit)
+    if (movies.length > 0) {
+        setCache(cacheKey, movies)
+    }
+
+    return movies
 }
 
 /**
@@ -846,22 +1073,31 @@ export async function getSimulcastSeries(limit = 50): Promise<CrunchyrollSeries[
  */
 export async function addToWatchlist(accountId: string, contentId: string): Promise<boolean> {
     try {
-        await crunchyrollFetch(
+        await crunchyrollRequest(
             `/content/v2/discover/${accountId}/watchlist`,
-            {
-                // POST requests usually need body handling in fetchViaProxy/ContentScript 
-                // BUT our current simple fetcher takes params as query string for GET mostly.
-                // We need to support POST bodies. 
-                // For now, let's assume the underlying fetcher needs update OR we pass 'content_id' as param 
-                // and the proxy handles it? 
-                // Actually, `crunchyrollFetch` signature is (endpoint, params).
-                // We need to modify `crunchyrollFetch` to support method and body.
-                // Let's postpone this implementation slightly to fix fetcher first.
-            }
+            {},
+            { method: 'POST', body: { content_id: contentId } }
         )
         return true
     } catch (e) {
         console.error("[Crunchyroll] Add to watchlist failed", e)
+        return false
+    }
+}
+
+/**
+ * Remove item from Watchlist
+ */
+export async function removeFromWatchlist(accountId: string, contentId: string): Promise<boolean> {
+    try {
+        await crunchyrollRequest(
+            `/content/v2/${accountId}/watchlist/${contentId}`,
+            {},
+            { method: 'DELETE' }
+        )
+        return true
+    } catch (e) {
+        console.error("[Crunchyroll] Remove from watchlist failed", e)
         return false
     }
 }
@@ -1532,7 +1768,7 @@ export async function getSubscription(accountId: string): Promise<any> {
 
         return data
     } catch (error) {
-        console.error("[Crunchyroll] Get subscription failed:", error)
+        console.warn("[Crunchyroll] Subscription unavailable:", error)
         return null
     }
 }

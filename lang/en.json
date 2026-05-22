@@ -1,0 +1,50 @@
+{
+  "common": {
+    "anime": "Anime",
+    "show": "Show",
+    "movie": "Movie",
+    "finished": "Finished",
+    "availableNow": "Available now",
+    "coming": "Coming {date}"
+  },
+  "nav": {
+    "home": "Home",
+    "series": "Series",
+    "films": "Movies",
+    "simulcast": "Simulcast",
+    "watchlist": "Watchlist",
+    "search": "Search",
+    "profile": "Open profile",
+    "settings": "Settings",
+    "changeAvatar": "Change avatar",
+    "logout": "Log out"
+  },
+  "hero": {
+    "play": "Play",
+    "moreInfo": "More info",
+    "enableSound": "Turn trailer sound on",
+    "disableSound": "Mute trailer",
+    "volume": "Trailer volume"
+  },
+  "sections": {
+    "continueWatching": "Continue Watching",
+    "viewHistory": "View history",
+    "nextWatch": "Your Next Watch",
+    "recentAdds": "Recent Additions",
+    "popular": "Popular",
+    "seasonSimulcast": "Season Simulcast",
+    "dubbed": "Dubbed",
+    "subtitled": "Subtitled",
+    "crunchyrollMovies": "Crunchyroll Movies",
+    "viewAll": "View all"
+  },
+  "continueWatching": {
+    "remaining": "{minutes}m left"
+  },
+  "settings": {
+    "preferences": "Preferences",
+    "displayLanguage": "Display language",
+    "audioLanguage": "Audio language",
+    "subtitleLanguage": "Subtitle language"
+  }
+}

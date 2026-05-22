@@ -6,8 +6,23 @@ import { ChevronLeft, ChevronRight, Play, Info, X, Star, Calendar, Clock, Check,
 import { cn } from "@/lib/utils"
 import { useTrendingAnime } from "@/hooks/use-combined-anime"
 import { useWatchlistOptional } from "@/hooks/use-watchlist"
+import { useI18n } from "@/hooks/use-i18n"
+import { searchAnimeBasicInfo, type TransformedAnime } from "@/lib/anilist"
 import Link from "next/link"
 import { BetterCrLogo } from "@/components/bettercr-logo"
+
+const YOUTUBE_EMBED_ORIGIN = "https://www.youtube-nocookie.com"
+const TRAILER_VOLUME_STORAGE_KEY = "bcr_trailer_volume"
+const MAIN_TRAILER_QUALITY = "medium"
+const AMBIENT_TRAILER_QUALITY = "tiny"
+
+type HeroPalette = {
+  base: string
+  left: string
+  right: string
+  top: string
+  bottom: string
+}
 
 function extractYoutubeIdFromUrl(url: string) {
   try {
@@ -60,7 +75,7 @@ function getYoutubeVideoId(
   return extractYoutubeIdFromUrl(youtubeLink.url)
 }
 
-function getYoutubeEmbedUrl(videoId: string, origin?: string | null) {
+function getYoutubeEmbedUrl(videoId: string, origin?: string | null, options?: { quality?: string }) {
   const params = new URLSearchParams({
     autoplay: "1",
     mute: "1",
@@ -76,6 +91,10 @@ function getYoutubeEmbedUrl(videoId: string, origin?: string | null) {
     enablejsapi: "1",
   })
 
+  if (options?.quality) {
+    params.set("vq", options.quality)
+  }
+
   if (origin) {
     params.set("origin", origin)
   }
@@ -83,10 +102,82 @@ function getYoutubeEmbedUrl(videoId: string, origin?: string | null) {
   return `https://www.youtube-nocookie.com/embed/${videoId}?${params.toString()}`
 }
 
+function averageRegion(
+  context: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+) {
+  const imageData = context.getImageData(x, y, width, height).data
+  let r = 0
+  let g = 0
+  let b = 0
+  let count = 0
+
+  for (let index = 0; index < imageData.length; index += 16) {
+    const alpha = imageData[index + 3]
+    if (alpha < 48) continue
+    r += imageData[index]
+    g += imageData[index + 1]
+    b += imageData[index + 2]
+    count++
+  }
+
+  if (count === 0) return "#7a3b16"
+  return rgbToHex(Math.round(r / count), Math.round(g / count), Math.round(b / count))
+}
+
+function rgbToHex(r: number, g: number, b: number) {
+  return `#${[r, g, b].map((value) => value.toString(16).padStart(2, "0")).join("")}`
+}
+
+async function sampleImagePalette(source: string, fallback: string): Promise<HeroPalette> {
+  if (typeof window === "undefined" || !source) {
+    return { base: fallback, left: fallback, right: fallback, top: fallback, bottom: fallback }
+  }
+
+  try {
+    const image = await new Promise<HTMLImageElement>((resolve, reject) => {
+      const img = new Image()
+      img.crossOrigin = "anonymous"
+      img.onload = () => resolve(img)
+      img.onerror = reject
+      img.src = source
+    })
+
+    const canvas = document.createElement("canvas")
+    canvas.width = 96
+    canvas.height = 54
+    const context = canvas.getContext("2d", { willReadFrequently: true })
+    if (!context) throw new Error("Canvas context unavailable")
+
+    context.drawImage(image, 0, 0, canvas.width, canvas.height)
+
+    return {
+      base: averageRegion(context, 0, 0, 96, 54),
+      left: averageRegion(context, 0, 8, 30, 38),
+      right: averageRegion(context, 66, 8, 30, 38),
+      top: averageRegion(context, 12, 0, 72, 18),
+      bottom: averageRegion(context, 10, 34, 76, 20),
+    }
+  } catch {
+    return {
+      base: fallback,
+      left: fallback,
+      right: "#315b66",
+      top: fallback,
+      bottom: fallback,
+    }
+  }
+}
+
 export function HeroCarousel() {
   const AUTO_ADVANCE_DELAY_MS = 80_000
   const { data: trendingAnimes, isLoading } = useTrendingAnime(1, 6) // Fetch a few more items for better rotation
   const watchlistContext = useWatchlistOptional()
+  const { t, locale } = useI18n()
+  const [enrichedHeroAnimes, setEnrichedHeroAnimes] = useState<typeof trendingAnimes>(undefined)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
@@ -94,18 +185,83 @@ export function HeroCarousel() {
   const [isBookmarked, setIsBookmarked] = useState(false)
   const [showVideoPreview, setShowVideoPreview] = useState(false)
   const [isVideoMuted, setIsVideoMuted] = useState(true)
+  const [videoVolume, setVideoVolume] = useState(80)
   const [playerOrigin, setPlayerOrigin] = useState<string | null>(null)
   const [isPlayerReady, setIsPlayerReady] = useState(false)
+  const [isAmbientPlayerReady, setIsAmbientPlayerReady] = useState(false)
+  const [heroPalette, setHeroPalette] = useState<HeroPalette>({
+    base: "#7a3b16",
+    left: "#7a3b16",
+    right: "#315b66",
+    top: "#6a7f5a",
+    bottom: "#7a3b16",
+  })
   const iframeRef = useRef<HTMLIFrameElement | null>(null)
+  const ambientIframeRef = useRef<HTMLIFrameElement | null>(null)
+  const sectionRef = useRef<HTMLElement | null>(null)
 
-  const animes = trendingAnimes || []
+  const animes = enrichedHeroAnimes || trendingAnimes || []
   const hasAnimes = animes.length > 0
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       setPlayerOrigin(window.location.origin)
+      const storedVolume = Number(window.localStorage.getItem(TRAILER_VOLUME_STORAGE_KEY))
+      if (Number.isFinite(storedVolume)) {
+        setVideoVolume(Math.min(100, Math.max(0, storedVolume)))
+        setIsVideoMuted(storedVolume <= 0)
+      }
     }
   }, [])
+
+  useEffect(() => {
+    if (trendingAnimes?.length) {
+      setEnrichedHeroAnimes(trendingAnimes)
+    } else {
+      setEnrichedHeroAnimes(undefined)
+    }
+  }, [trendingAnimes])
+
+  useEffect(() => {
+    let cancelled = false
+
+    async function enrichCurrentHeroTrailer() {
+      const anime = trendingAnimes?.[currentIndex]
+      if (!anime || getYoutubeVideoId(anime)) return
+
+      try {
+        const anilist = await searchAnimeBasicInfo(anime.title)
+        if (!anilist || cancelled) return
+
+        setEnrichedHeroAnimes((currentList) => {
+          const source = currentList?.length ? currentList : trendingAnimes
+          if (!source?.length) return currentList
+
+          return source.map((item, index) => {
+            if (index !== currentIndex) return item
+
+            return {
+              ...item,
+              trailer: anilist.trailer,
+              externalLinks: [
+                ...(("externalLinks" in item && item.externalLinks) || []),
+                ...((anilist as TransformedAnime).externalLinks || []),
+              ],
+              color: item.color || anilist.color,
+            }
+          })
+        })
+      } catch {
+        // Keep the Crunchyroll data when AniList is unavailable or rate-limited.
+      }
+    }
+
+    enrichCurrentHeroTrailer()
+
+    return () => {
+      cancelled = true
+    }
+  }, [currentIndex, trendingAnimes])
 
   const goToSlide = useCallback(
     (index: number) => {
@@ -163,6 +319,7 @@ export function HeroCarousel() {
   useEffect(() => {
     setShowVideoPreview(false)
     setIsPlayerReady(false)
+    setIsAmbientPlayerReady(false)
 
     if (!currentTrailerId || showInfoPopup) {
       return
@@ -191,35 +348,231 @@ export function HeroCarousel() {
   }
 
   const displayAnime = currentAnime || fallbackAnime
-  const releaseYear = "year" in displayAnime ? displayAnime.year : new Date().getFullYear()
+  const releaseYear = "year" in displayAnime && displayAnime.year ? displayAnime.year : new Date().getFullYear()
   const matchPercent = displayAnime.score ? Math.min(99, Math.max(82, Math.round(displayAnime.score * 10))) : 96
   const bannerSource = "bannerImage" in displayAnime && displayAnime.bannerImage ? displayAnime.bannerImage : displayAnime.image
   const episodeCount = displayAnime.episodes || (displayAnime.nextEpisode ? displayAnime.nextEpisode.episode : null)
+  const displayRating = displayAnime.rating || "TV-14"
+  const heroGlowColor = "color" in displayAnime && displayAnime.color ? displayAnime.color : "#7a3b16"
+  const nextEpisodeAiringAt =
+    displayAnime.nextEpisode && "airingAt" in displayAnime.nextEpisode
+      ? displayAnime.nextEpisode.airingAt
+      : null
+  const availabilityLabel = nextEpisodeAiringAt
+    ? t("common.coming", {
+      date: new Intl.DateTimeFormat(locale, { month: "long", day: "numeric" }).format(new Date(nextEpisodeAiringAt * 1000)),
+    })
+    : t("common.availableNow")
   const previewEmbedUrl = useMemo(
-    () => (currentTrailerId ? getYoutubeEmbedUrl(currentTrailerId, playerOrigin) : null),
+    () => (currentTrailerId ? getYoutubeEmbedUrl(currentTrailerId, playerOrigin, { quality: MAIN_TRAILER_QUALITY }) : null),
     [currentTrailerId, playerOrigin],
   )
+  const ambientEmbedUrl = useMemo(
+    () => (currentTrailerId ? getYoutubeEmbedUrl(currentTrailerId, playerOrigin, { quality: AMBIENT_TRAILER_QUALITY }) : null),
+    [currentTrailerId, playerOrigin],
+  )
+
+  useEffect(() => {
+    let cancelled = false
+
+    async function updatePalette() {
+      const palette = await sampleImagePalette(bannerSource, heroGlowColor)
+      if (!cancelled) setHeroPalette(palette)
+    }
+
+    updatePalette()
+    return () => {
+      cancelled = true
+    }
+  }, [bannerSource, heroGlowColor])
 
   useEffect(() => {
     if (!showVideoPreview || !isPlayerReady || !iframeRef.current) {
       return
     }
 
-    const targetOrigin = playerOrigin || "https://www.youtube-nocookie.com"
-    const command = isVideoMuted ? "mute" : "unMute"
+    const playerWindow = iframeRef.current.contentWindow
+    if (!playerWindow) return
 
-    iframeRef.current.contentWindow?.postMessage(
-      JSON.stringify({ event: "command", func: command, args: [] }),
-      targetOrigin,
+    const commands = isVideoMuted
+      ? [
+          { func: "mute", args: [] as unknown[] },
+          { func: "setPlaybackQuality", args: [MAIN_TRAILER_QUALITY] },
+        ]
+      : [
+          { func: "unMute", args: [] as unknown[] },
+          { func: "setPlaybackQuality", args: [MAIN_TRAILER_QUALITY] },
+          { func: "setVolume", args: [videoVolume] },
+          { func: "playVideo", args: [] as unknown[] },
+        ]
+
+    commands.forEach(({ func, args }) => {
+      playerWindow.postMessage(
+        JSON.stringify({ event: "command", func, args }),
+        YOUTUBE_EMBED_ORIGIN,
+      )
+    })
+  }, [isPlayerReady, isVideoMuted, showVideoPreview, videoVolume])
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+    window.localStorage.setItem(TRAILER_VOLUME_STORAGE_KEY, String(videoVolume))
+  }, [videoVolume])
+
+  useEffect(() => {
+    if (!showVideoPreview || !isAmbientPlayerReady || !ambientIframeRef.current) {
+      return
+    }
+
+    const playerWindow = ambientIframeRef.current.contentWindow
+    if (!playerWindow) return
+
+    ;[
+      { func: "mute", args: [] as unknown[] },
+      { func: "setPlaybackQuality", args: [AMBIENT_TRAILER_QUALITY] },
+      { func: "playVideo", args: [] as unknown[] },
+    ].forEach(({ func, args }) => {
+      playerWindow.postMessage(
+        JSON.stringify({ event: "command", func, args }),
+        YOUTUBE_EMBED_ORIGIN,
+      )
+    })
+
+    const qualityRetryTimer = window.setTimeout(() => {
+      playerWindow.postMessage(
+        JSON.stringify({
+          event: "command",
+          func: "setPlaybackQuality",
+          args: [AMBIENT_TRAILER_QUALITY],
+        }),
+        YOUTUBE_EMBED_ORIGIN,
+      )
+    }, 1200)
+
+    return () => window.clearTimeout(qualityRetryTimer)
+  }, [isAmbientPlayerReady, showVideoPreview])
+
+  useEffect(() => {
+    if (!showVideoPreview || typeof window === "undefined") {
+      return
+    }
+
+    const section = sectionRef.current
+    if (!section) return
+
+    let isHeroVisible = true
+    const postPlayerCommand = (
+      ref: { current: HTMLIFrameElement | null },
+      func: string,
+      args: unknown[] = [],
+    ) => {
+      ref.current?.contentWindow?.postMessage(
+        JSON.stringify({ event: "command", func, args }),
+        YOUTUBE_EMBED_ORIGIN,
+      )
+    }
+
+    const syncPlayback = () => {
+      const shouldPlay = document.visibilityState === "visible" && isHeroVisible
+      const command = shouldPlay ? "playVideo" : "pauseVideo"
+
+      if (isPlayerReady) postPlayerCommand(iframeRef, command)
+      if (isAmbientPlayerReady) postPlayerCommand(ambientIframeRef, command)
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isHeroVisible = entry.isIntersecting && entry.intersectionRatio > 0.12
+        syncPlayback()
+      },
+      { threshold: [0, 0.12] },
     )
-  }, [isPlayerReady, isVideoMuted, playerOrigin, showVideoPreview])
+
+    observer.observe(section)
+    document.addEventListener("visibilitychange", syncPlayback)
+    syncPlayback()
+
+    return () => {
+      observer.disconnect()
+      document.removeEventListener("visibilitychange", syncPlayback)
+    }
+  }, [isAmbientPlayerReady, isPlayerReady, showVideoPreview])
+
+  useEffect(() => {
+    if (!showVideoPreview || !currentTrailerId) {
+      return
+    }
+
+    const handleMessage = (event: MessageEvent) => {
+      if (event.origin !== YOUTUBE_EMBED_ORIGIN) {
+        return
+      }
+
+      if (event.source !== iframeRef.current?.contentWindow) {
+        return
+      }
+
+      try {
+        const message = typeof event.data === "string" ? JSON.parse(event.data) : event.data
+        const playerState =
+          message?.info?.playerState ??
+          (message?.event === "onStateChange" ? message.info : undefined)
+
+        if (playerState === 0) {
+          goToNext()
+        }
+      } catch {
+        // Ignore unrelated postMessage payloads.
+      }
+    }
+
+    window.addEventListener("message", handleMessage)
+    return () => window.removeEventListener("message", handleMessage)
+  }, [currentTrailerId, goToNext, showVideoPreview])
 
   return (
     <section
-      className="relative w-full h-[92vh] min-h-[680px] overflow-hidden bg-background"
+      ref={sectionRef}
+      className="relative mx-auto mb-0 mt-7 w-[calc(100%-3rem)] overflow-visible rounded-[18px] bg-black md:w-[calc(100%-6rem)]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
+      style={{
+        height: "clamp(360px, 38vw, 560px)",
+        boxShadow: `0 -70px 130px -42px ${heroPalette.top}b8, 0 126px 220px -86px ${heroPalette.bottom}b0, -70px 30px 130px -76px ${heroPalette.left}9c, 70px 26px 130px -76px ${heroPalette.right}9c, 0 24px 70px rgba(0,0,0,0.72)`,
+        ["--hero-glow-left" as string]: heroPalette.left,
+        ["--hero-glow-right" as string]: heroPalette.right,
+        ["--hero-glow-top" as string]: heroPalette.top,
+        ["--hero-glow-bottom" as string]: heroPalette.bottom,
+      }}
     >
+      <div
+        className="pointer-events-none absolute -inset-x-20 -top-24 h-44 rounded-full opacity-75 blur-3xl transition-colors duration-700"
+        style={{
+          background: `radial-gradient(ellipse at 38% 50%, ${heroPalette.top}7a 0%, ${heroPalette.left}32 42%, transparent 74%), radial-gradient(ellipse at 70% 42%, ${heroPalette.right}6a 0%, transparent 68%)`,
+        }}
+      />
+      <div
+        className="pointer-events-none absolute -inset-x-24 -bottom-72 h-[30rem] rounded-full opacity-80 blur-3xl transition-colors duration-700"
+        style={{
+          background: `radial-gradient(ellipse at 50% 4%, ${heroPalette.bottom}76 0%, ${heroPalette.left}38 34%, ${heroPalette.right}30 58%, transparent 82%)`,
+        }}
+      />
+      {showVideoPreview && ambientEmbedUrl ? (
+        <div className="hero-cinematic-light" aria-hidden="true">
+          <iframe
+            key={`${currentTrailerId}-ambient`}
+            ref={ambientIframeRef}
+            src={ambientEmbedUrl}
+            title=""
+            className="hero-cinematic-light__video"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            referrerPolicy="strict-origin-when-cross-origin"
+            tabIndex={-1}
+            onLoad={() => setIsAmbientPlayerReady(true)}
+          />
+        </div>
+      ) : null}
+      <div className="absolute inset-0 overflow-hidden rounded-[16px]">
       {hasAnimes ? (
         animes.map((anime, index) => (
           <div
@@ -253,10 +606,9 @@ export function HeroCarousel() {
               )}
               style={{ objectPosition: "center 22%" }}
             />
-            <div className="absolute inset-0 bg-black/30 z-10" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/55 to-transparent z-20" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/15 to-transparent z-20" />
-            <div className="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/85 to-transparent z-20" />
+            <div className="absolute inset-0 bg-black/18 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/32 to-transparent z-20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/86 via-black/14 to-transparent z-20" />
           </div>
         ))
       ) : (
@@ -265,11 +617,11 @@ export function HeroCarousel() {
         </div>
       )}
 
-      <div className="absolute inset-0 z-30 flex items-center px-6 md:px-10 lg:px-14 xl:px-16">
-        <div className="w-full max-w-[640px] space-y-6 pt-20 md:pt-12">
+      <div className="absolute inset-0 z-30 flex items-end px-5 pb-6 md:px-8 md:pb-8">
+        <div className="w-full max-w-[620px] space-y-3">
           <div
             className={cn(
-              "flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.35em] text-white/70",
+              "hidden items-center gap-3 text-sm font-semibold uppercase tracking-[0.35em] text-white/70",
               "transition-all duration-700 ease-out transform",
               isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0",
             )}
@@ -281,12 +633,12 @@ export function HeroCarousel() {
 
           <h1
             className={cn(
-              "font-black text-white leading-[0.88] tracking-[0.02em] font-bangers uppercase",
-              "drop-shadow-[0_10px_24px_rgba(0,0,0,0.55)]",
+              "max-w-[14ch] font-black text-white leading-[0.95] tracking-normal",
+              "drop-shadow-[0_10px_24px_rgba(0,0,0,0.58)]",
               "transition-all duration-700 ease-out transform",
-              displayAnime.title.length > 30 ? "text-5xl md:text-6xl lg:text-7xl" :
-                displayAnime.title.length > 20 ? "text-6xl md:text-7xl lg:text-8xl" :
-                  "text-7xl md:text-8xl lg:text-[7rem]",
+                  displayAnime.title.length > 30 ? "text-2xl md:text-3xl lg:text-[2.75rem]" :
+                    displayAnime.title.length > 20 ? "text-3xl md:text-4xl lg:text-[3.35rem]" :
+                      "text-4xl md:text-5xl lg:text-[4rem]",
               isAnimating ? "opacity-0 translate-y-12" : "opacity-100 translate-y-0",
             )}
           >
@@ -295,46 +647,46 @@ export function HeroCarousel() {
 
           <div
             className={cn(
-              "flex flex-wrap items-center gap-x-4 gap-y-2 text-sm md:text-base text-white/86 font-medium",
+              "flex flex-wrap items-center gap-x-2 gap-y-2 text-sm md:text-base text-white font-bold",
               "transition-all duration-700 ease-out delay-100 transform",
               isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0",
             )}
           >
-            <span className="font-semibold text-[#46d369]">{matchPercent}% de pertinence</span>
+            <span>{t("common.show")}</span>
+            <span className="text-white/55">•</span>
+            <span>{displayAnime.genres[0] || t("common.anime")}</span>
+            <span className="text-white/55">•</span>
+            <span className="hidden font-semibold text-[#46d369]">{matchPercent}% de pertinence</span>
             <span>{releaseYear}</span>
-            <span className="px-2 py-0.5 border border-white/30 text-white/92 text-xs uppercase tracking-[0.15em]">
-              {displayAnime.rating}
-            </span>
-            {episodeCount && <span>{episodeCount} épisodes</span>}
-            <div className="w-1 h-1 rounded-full bg-white/35" />
-            <span className="uppercase tracking-[0.18em] text-white/72">
-              {displayAnime.genres.slice(0, 3).join(" • ")}
-            </span>
-            {displayAnime.score && (
+            {episodeCount && (
               <>
-                <div className="w-1 h-1 rounded-full bg-white/35" />
-                <div className="flex items-center gap-1 text-white/90">
-                  <Star className="w-4 h-4 fill-current" />
-                  <span>{displayAnime.score.toFixed(1)}</span>
-                </div>
+                <span className="text-white/55">•</span>
+                <span>{episodeCount} épisodes</span>
               </>
             )}
+            <span className="text-white/55">•</span>
+            <span>{displayRating}</span>
+            <div className="hidden w-1 h-1 rounded-full bg-white/35" />
+            <span className="hidden uppercase tracking-[0.18em] text-white/72">
+              {displayAnime.genres.slice(0, 3).join(" • ")}
+            </span>
           </div>
 
           <p
             className={cn(
-              "text-base md:text-xl text-white/76 leading-relaxed max-w-2xl line-clamp-4",
+              "hidden text-base md:text-xl text-white/76 leading-relaxed max-w-2xl line-clamp-4",
               "drop-shadow-md",
               "transition-all duration-700 ease-out delay-200 transform",
               isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0",
             )}
+            style={{ display: "none" }}
           >
             {displayAnime.description || "Découvrez cet anime passionnant sur Crunchyroll."}
           </p>
 
           <div
             className={cn(
-              "flex flex-wrap items-center gap-3 pt-2",
+              "flex flex-wrap items-center gap-3 pt-1",
               "transition-all duration-700 ease-out delay-300 transform",
               isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0",
             )}
@@ -342,10 +694,10 @@ export function HeroCarousel() {
             <Link
               href={`/anime/${displayAnime.id}`}
               onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
-              className="group inline-flex items-center gap-3 px-8 py-3.5 bg-white text-black rounded-md font-bold text-lg hover:bg-white/85 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+              className="hero-play-button group inline-flex items-center gap-3 overflow-hidden rounded-md bg-white px-8 py-3.5 text-lg font-bold text-black transition-all duration-200 hover:bg-white/85 hover:scale-[1.02] active:scale-[0.98]"
             >
               <Play className="w-6 h-6 fill-current transition-transform duration-200 group-hover:scale-110" />
-              <span>Lecture</span>
+              <span>{t("hero.play")}</span>
             </Link>
 
             <button
@@ -368,7 +720,7 @@ export function HeroCarousel() {
                 }
               }}
               className={cn(
-                "inline-flex items-center gap-3 px-6 py-3.5 rounded-md border border-white/18 transition-all duration-200 hover:bg-white/12 active:scale-[0.98]",
+                "hidden items-center gap-3 px-6 py-3.5 rounded-md border border-white/18 transition-all duration-200 hover:bg-white/12 active:scale-[0.98]",
                 isBookmarked
                   ? "bg-white/14 text-white border-white/22"
                   : "bg-white/8 text-white hover:bg-white/14"
@@ -384,14 +736,20 @@ export function HeroCarousel() {
               className="inline-flex items-center gap-3 px-6 py-3.5 rounded-md bg-[#6d6d6eb3] hover:bg-[#808081cc] text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] font-semibold"
             >
               <Info className="w-5 h-5" />
-              <span>Plus d'infos</span>
+              <span>{t("hero.moreInfo")}</span>
             </button>
           </div>
         </div>
       </div>
+      </div>
+
+      <div className="absolute bottom-6 right-6 z-40 hidden items-center gap-2 rounded-md bg-black/32 px-3 py-2 text-sm font-bold text-white shadow-lg backdrop-blur-sm md:flex">
+        <Calendar className="h-4 w-4 text-[#e50914]" />
+        <span>{availabilityLabel}</span>
+      </div>
 
       {hasAnimes && (
-        <div className="absolute right-10 bottom-12 z-30 hidden lg:flex items-center gap-4">
+        <div className="hidden">
           <button
             onClick={goToPrevious}
             className="h-12 w-12 flex items-center justify-center rounded-full bg-black/35 hover:bg-black/55 text-white border border-white/12 transition-all duration-200"
@@ -421,18 +779,35 @@ export function HeroCarousel() {
         </div>
       )}
 
-      <div className="absolute right-8 bottom-24 z-30 hidden lg:flex items-center gap-3">
+      <div className="absolute right-8 bottom-24 z-50 hidden lg:flex items-center gap-3">
         {currentTrailerId ? (
-          <button
-            onClick={() => setIsVideoMuted((value) => !value)}
-            className="h-11 w-11 rounded-full border border-white/35 bg-black/24 text-white flex items-center justify-center transition-colors duration-200 hover:bg-black/42"
-            aria-label={isVideoMuted ? "Activer le son du trailer" : "Couper le son du trailer"}
-            title={isVideoMuted ? "Activer le son" : "Couper le son"}
-          >
-            {isVideoMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
-          </button>
+          <div className="hero-volume-control relative flex items-center justify-end">
+            <div className="hero-volume-panel absolute right-12 flex h-11 items-center rounded-full border border-white/16 bg-black/54 px-4 shadow-[0_16px_40px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value={videoVolume}
+                onChange={(event) => {
+                  const nextVolume = Number(event.target.value)
+                  setVideoVolume(nextVolume)
+                  setIsVideoMuted(nextVolume <= 0)
+                }}
+                className="bcr-volume-slider w-full"
+                aria-label={t("hero.volume")}
+              />
+            </div>
+            <button
+              onClick={() => setIsVideoMuted((value) => !value)}
+              className="h-11 w-11 rounded-full border border-white/35 bg-black/24 text-white flex items-center justify-center transition-colors duration-200 hover:bg-black/42"
+              aria-label={isVideoMuted ? t("hero.enableSound") : t("hero.disableSound")}
+              title={isVideoMuted ? t("hero.enableSound") : t("hero.disableSound")}
+            >
+              {isVideoMuted || videoVolume <= 0 ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+            </button>
+          </div>
         ) : null}
-        <div className="h-10 px-4 flex items-center bg-black/38 border-l-2 border-white/80 text-white text-lg font-medium tracking-wide">
+        <div className="hidden">
           {displayAnime.rating}
         </div>
       </div>

@@ -20,7 +20,7 @@ export interface NewAnimeItem extends TransformedAnime {
   crunchyrollSlug: string | null
 }
 
-export function useNewAnimeCrunchyroll() {
+export function useNewAnimeCrunchyroll(pageSize = 50) {
   const [offset, setOffset] = useState(0)
   const [allAnimes, setAllAnimes] = useState<NewAnimeItem[]>([])
   const [hasMore, setHasMore] = useState(true)
@@ -162,7 +162,7 @@ export function useNewAnimeCrunchyroll() {
     `api-new-crunchyroll-${offset}`,
     async () => {
       try {
-        const limit = 50
+        const limit = pageSize
 
         // Fetch from Crunchyroll with newly_added filter
         const crData = await browseCrunchyroll({
@@ -222,20 +222,20 @@ export function useNewAnimeCrunchyroll() {
       })
 
       // Check if we should load more
-      if (batch.length < 50) {
+      if (batch.length < pageSize) {
         setHasMore(false)
       }
     }
-  }, [batch])
+  }, [batch, pageSize])
 
   // Load more animes
   const loadMore = useCallback(() => {
     if (!isLoadingMore && hasMore) {
       setIsLoadingMore(true)
-      setOffset((prev) => prev + 50)
+      setOffset((prev) => prev + pageSize)
       setTimeout(() => setIsLoadingMore(false), 100)
     }
-  }, [isLoadingMore, hasMore])
+  }, [isLoadingMore, hasMore, pageSize])
 
   // Load from cache on mount
   useEffect(() => {

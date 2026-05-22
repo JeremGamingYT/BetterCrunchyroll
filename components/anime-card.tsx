@@ -15,7 +15,7 @@ interface AnimeCardProps {
     id: number | string
     title: string
     image: string
-    rating?: string
+    rating?: string | null
     genres?: string[]
     score?: number | null
     color?: string | null
@@ -24,8 +24,8 @@ interface AnimeCardProps {
       airingAt: number
       timeUntilAiring: number
     } | null
-    type?: string
-    format?: string
+    type?: string | null
+    format?: string | null
     contentType?: "series" | "movie_listing"
     movieCount?: number
     popularity?: number
@@ -52,6 +52,15 @@ interface AnimeCardProps {
 
 // Relation types that indicate this is a related work
 const RELATION_TYPES = ['PREQUEL', 'SEQUEL', 'PARENT', 'SIDE_STORY', 'SPIN_OFF', 'ADAPTATION', 'ALTERNATIVE', 'SOURCE', 'CHARACTER', 'OTHER']
+const CARD_ACCENTS = ["#f97316", "#22c55e", "#38bdf8", "#f43f5e", "#a78bfa", "#facc15", "#14b8a6", "#fb7185"]
+
+function getStableAccentColor(seed: string) {
+  let hash = 0
+  for (let index = 0; index < seed.length; index++) {
+    hash = (hash * 31 + seed.charCodeAt(index)) >>> 0
+  }
+  return CARD_ACCENTS[hash % CARD_ACCENTS.length]
+}
 
 export function AnimeCard({ anime, index = 0, showAiring = false, compact = false, layout = "poster", isRelation = false, showNewBadge = false }: AnimeCardProps) {
   const [isHovered, setIsHovered] = useState(false)
@@ -82,6 +91,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
   const score = "score" in anime ? anime.score : null
   const nextEpisode = "nextEpisode" in anime ? anime.nextEpisode : null
   const animeColor = "color" in anime ? anime.color : null
+  const accentColor = animeColor || getStableAccentColor(anime.title || String(anime.id))
   const genres = "genres" in anime && anime.genres ? anime.genres : []
   const rating = "rating" in anime && anime.rating ? anime.rating : null
   const releaseYear = "year" in anime ? (anime as any).year : null
@@ -165,25 +175,27 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
       className={cn(
         "group/card relative flex-shrink-0 transition-all duration-300 block",
         isLandscape
-          ? "w-[300px] sm:w-[320px] md:w-[340px] lg:w-[360px]"
+          ? "w-[260px] sm:w-[292px] md:w-[300px] lg:w-[306px] xl:w-[310px]"
           : compact ? "w-[170px] md:w-[190px]" : "w-[200px] md:w-[220px] lg:w-[240px]",
-        isHovered ? "z-50 transform-gpu" : "z-10",
+        isHovered ? "z-[400] transform-gpu" : "z-10",
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
         animationDelay: `${index * 50}ms`,
+        zIndex: isHovered ? 400 : 10,
       }}
     >
       {/* Container Logic */}
       <div
         className={cn(
-          "relative overflow-hidden transition-all duration-300 ease-out shadow-lg shadow-black/30",
-          isLandscape ? "aspect-video rounded-[4px]" : "aspect-[2/3] rounded-lg",
-          isHovered && (isLandscape ? "scale-[1.04] shadow-2xl" : "scale-105 shadow-2xl"),
+          "anime-card-surface relative overflow-hidden transition-all duration-300 ease-out shadow-lg shadow-black/40",
+          isLandscape ? "aspect-video rounded-[3px]" : "aspect-[2/3] rounded-md",
+          isHovered && (isLandscape ? "scale-[1.08] shadow-2xl" : "scale-105 shadow-2xl"),
         )}
         style={{
-          boxShadow: isHovered && animeColor ? `0 25px 50px -12px ${animeColor}40` : undefined,
+          transform: isHovered ? (isLandscape ? "scale(1.08)" : "scale(1.05)") : "scale(1)",
+          boxShadow: isHovered ? `0 30px 70px -14px ${accentColor}70, 0 18px 44px rgba(0,0,0,0.82)` : undefined,
         }}
       >
         {/* Main Link Area (Image + Overlay) */}
@@ -209,7 +221,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
               className={cn(
                 "absolute inset-0 transition-opacity duration-300",
                 isLandscape
-                  ? cn("bg-gradient-to-t from-black/70 via-transparent to-transparent", isHovered ? "opacity-100" : "opacity-0")
+                  ? cn("bg-gradient-to-t from-black/76 via-black/12 to-transparent", isHovered ? "opacity-100" : "opacity-0")
                   : cn(
                       "bg-gradient-to-t from-background via-background/40 to-transparent",
                       isHovered ? "opacity-100" : "opacity-0",
@@ -226,13 +238,29 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                     isHovered ? "scale-100 opacity-100" : "scale-75 opacity-0",
                   )}
                   style={{
-                    backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
-                    boxShadow: animeColor ? `0 10px 25px ${animeColor}50` : undefined,
+                    backgroundColor: `${accentColor}e6`,
+                    boxShadow: `0 10px 25px ${accentColor}50`,
                   }}
                 >
                   <Play className={cn(compact ? "w-4 h-4" : isLandscape ? "w-5 h-5" : "w-6 h-6")} fill="currentColor" />
                 </span>
               </div>
+
+              {isLandscape && (
+                <div
+                  className={cn(
+                    "absolute bottom-0 left-0 right-0 p-3 transition-all duration-300",
+                    isHovered ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0",
+                  )}
+                >
+                  <h3 className="line-clamp-1 text-sm font-bold text-white drop-shadow">
+                    {anime.title}
+                  </h3>
+                  <p className="mt-0.5 text-xs text-white/62 line-clamp-1">
+                    {releaseYear || rating || episodeText || "Crunchyroll"}
+                  </p>
+                </div>
+              )}
 
               {!isLandscape && (
                 <div
@@ -244,7 +272,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                   {currentEpisode && (
                     <div
                       className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
-                      style={{ backgroundColor: animeColor || "hsl(var(--primary))", color: "#fff" }}
+                      style={{ backgroundColor: accentColor, color: "#fff" }}
                     >
                       Ep {currentEpisode}
                     </div>
@@ -252,7 +280,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                   <div className="flex items-center gap-2 mb-1.5">
                     {score !== null && score !== undefined && (
                       <>
-                        <Star className="w-4 h-4" fill="currentColor" style={{ color: animeColor || "hsl(var(--primary))" }} />
+                        <Star className="w-4 h-4" fill="currentColor" style={{ color: accentColor }} />
                         <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
                       </>
                     )}
@@ -290,7 +318,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
               className={cn(
                 "absolute inset-0 transition-opacity duration-300",
                 isLandscape
-                  ? cn("bg-gradient-to-t from-black/70 via-transparent to-transparent", isHovered ? "opacity-100" : "opacity-0")
+                  ? cn("bg-gradient-to-t from-black/76 via-black/12 to-transparent", isHovered ? "opacity-100" : "opacity-0")
                   : cn(
                       "bg-gradient-to-t from-background via-background/40 to-transparent",
                       isHovered ? "opacity-100" : "opacity-0",
@@ -307,13 +335,29 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                     isHovered ? "scale-100 opacity-100" : "scale-75 opacity-0",
                   )}
                   style={{
-                    backgroundColor: animeColor ? `${animeColor}e6` : "hsl(var(--primary) / 0.9)",
-                    boxShadow: animeColor ? `0 10px 25px ${animeColor}50` : undefined,
+                    backgroundColor: `${accentColor}e6`,
+                    boxShadow: `0 10px 25px ${accentColor}50`,
                   }}
                 >
                   <Play className={cn(compact ? "w-4 h-4" : isLandscape ? "w-5 h-5" : "w-6 h-6")} fill="currentColor" />
                 </span>
               </div>
+
+              {isLandscape && (
+                <div
+                  className={cn(
+                    "absolute bottom-0 left-0 right-0 p-3 transition-all duration-300",
+                    isHovered ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0",
+                  )}
+                >
+                  <h3 className="line-clamp-1 text-sm font-bold text-white drop-shadow">
+                    {anime.title}
+                  </h3>
+                  <p className="mt-0.5 text-xs text-white/62 line-clamp-1">
+                    {releaseYear || rating || episodeText || "Crunchyroll"}
+                  </p>
+                </div>
+              )}
 
               {!isLandscape && (
                 <div
@@ -325,7 +369,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                   {currentEpisode && (
                     <div
                       className="text-xs font-bold mb-1 px-2 py-0.5 rounded inline-block"
-                      style={{ backgroundColor: animeColor || "hsl(var(--primary))", color: "#fff" }}
+                      style={{ backgroundColor: accentColor, color: "#fff" }}
                     >
                       Ep {currentEpisode}
                     </div>
@@ -333,7 +377,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                   <div className="flex items-center gap-2 mb-1.5">
                     {score !== null && score !== undefined && (
                       <>
-                        <Star className="w-4 h-4" fill="currentColor" style={{ color: animeColor || "hsl(var(--primary))" }} />
+                        <Star className="w-4 h-4" fill="currentColor" style={{ color: accentColor }} />
                         <span className="text-sm font-medium text-foreground">{score.toFixed(1)}</span>
                       </>
                     )}
@@ -362,7 +406,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                   "bg-primary/90 text-white",
                   "transition-all duration-300",
                 )}
-                style={{ backgroundColor: animeColor || undefined }}
+                style={{ backgroundColor: accentColor }}
               >
                 {relationType?.replace(/_/g, " ") || "TV"}
               </div>
@@ -375,9 +419,9 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
                   "transition-all duration-300",
                 )}
                 style={{
-                  backgroundColor: isHovered && animeColor ? animeColor : undefined,
-                  color: isHovered && animeColor ? "#fff" : undefined,
-                  borderColor: isHovered && animeColor ? animeColor : undefined,
+                  backgroundColor: isHovered ? accentColor : undefined,
+                  color: isHovered ? "#fff" : undefined,
+                  borderColor: isHovered ? accentColor : undefined,
                 }}
               >
                 {rating}
@@ -443,7 +487,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             isHovered && "opacity-100",
           )}
           style={{
-            backgroundColor: isBookmarked && animeColor ? animeColor : undefined,
+            backgroundColor: isBookmarked ? accentColor : undefined,
           }}
         >
           <Bookmark className="w-4 h-4" fill={isBookmarked ? "currentColor" : "none"} />
@@ -452,37 +496,18 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
         {/* Border Glow */}
         <div
           className={cn(
-            "absolute inset-0 rounded-xl border-2 transition-all duration-500 pointer-events-none",
+            "absolute inset-0 rounded-[inherit] border-2 transition-all duration-500 pointer-events-none",
             isHovered ? "border-opacity-50" : "border-transparent",
           )}
           style={{
-            borderColor: isHovered ? animeColor || "hsl(var(--primary))" : "transparent",
-            boxShadow: isHovered && animeColor ? `inset 0 0 20px ${animeColor}20` : undefined,
+            borderColor: isHovered ? accentColor : "transparent",
+            boxShadow: isHovered ? `inset 0 0 20px ${accentColor}20` : undefined,
           }}
         />
       </div>
 
       {/* Below-card metadata */}
-      {isLandscape ? (
-        /* Disney+ style: rating badge + year + genres below the thumbnail */
-        <div className="mt-2 px-0.5 space-y-0.5">
-          <div className="flex items-center gap-1.5 flex-wrap">
-            {rating && (
-              <span className="text-[10px] font-bold border border-white/40 text-white/70 px-1.5 py-px rounded-sm leading-none">
-                {rating}
-              </span>
-            )}
-            {releaseYear && (
-              <span className="text-[11px] text-white/60 font-medium">{releaseYear}</span>
-            )}
-            {genres.length > 0 && (
-              <span className="text-[11px] text-white/50 truncate max-w-[200px]">
-                {rating || releaseYear ? "• " : ""}{genres.slice(0, 2).join(", ")}
-              </span>
-            )}
-          </div>
-        </div>
-      ) : (
+      {isLandscape ? null : (
         /* Poster layout: keep existing title below */
         isExternalLink ? (
           <Link
@@ -493,7 +518,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           >
             <h3
               className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
-              style={{ color: animeColor || undefined }}
+              style={{ color: accentColor }}
             >
               {anime.title}
             </h3>
@@ -513,7 +538,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
           >
             <h3
               className={cn("font-semibold line-clamp-2 transition-colors duration-300", compact ? "text-xs" : "text-sm")}
-              style={{ color: animeColor || undefined }}
+              style={{ color: accentColor }}
             >
               {anime.title}
             </h3>
@@ -539,7 +564,7 @@ export function AnimeCard({ anime, index = 0, showAiring = false, compact = fals
             rating: rating ?? undefined,
             genres,
             score,
-            color: animeColor,
+            color: animeColor || accentColor,
             year: "year" in anime ? anime.year : null,
             episodes: totalEpisodes,
             format: "format" in anime ? anime.format || undefined : undefined,

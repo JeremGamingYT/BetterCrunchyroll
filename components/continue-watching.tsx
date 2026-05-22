@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight, Play, X, Loader2 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useWatchHistory, useCrunchyrollAccount } from "@/hooks/use-crunchyroll"
+import { useI18n } from "@/hooks/use-i18n"
 import type { TransformedWatchlistItem } from "@/lib/crunchyroll"
 import { FastAverageColor } from "fast-average-color"
 import Link from "next/link"
@@ -12,6 +13,7 @@ export function ContinueWatching() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(false)
+  const { t } = useI18n()
 
   const { data: account } = useCrunchyrollAccount()
   const { data: historyItems, isLoading } = useWatchHistory(account?.account_id || null, {
@@ -47,7 +49,7 @@ export function ContinueWatching() {
 
   if (isLoading) {
     return (
-      <section className="mt-8 pt-8">
+      <section className="relative z-30 mt-0 pt-0">
         <div className="h-8 w-48 bg-secondary/50 rounded-lg animate-pulse mb-5" />
         <div className="flex gap-4 overflow-hidden">
           {[1, 2, 3, 4].map((i) => (
@@ -63,21 +65,21 @@ export function ContinueWatching() {
   }
 
   return (
-    <section className="relative isolate group/section mt-8 pt-8">
+    <section className="relative z-30 isolate group/section mt-0 pt-0 pb-2 overflow-visible hover:z-[320]">
       {/* Header */}
-      <div className="flex items-center justify-between mb-5">
-        <h2 className="text-xl md:text-2xl font-bold text-foreground">Reprendre</h2>
+      <div className="flex items-center justify-between mb-3">
+        <h2 className="text-xl md:text-2xl font-bold text-foreground">{t("sections.continueWatching")}</h2>
         <Link
           href="/historique"
           className="text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-300 flex items-center gap-1"
         >
-          Voir l'historique
+          {t("sections.viewHistory")}
           <ChevronRight className="w-4 h-4" />
         </Link>
       </div>
 
       {/* Scroll Container */}
-      <div className="relative">
+      <div className="relative overflow-visible">
         <button
           onClick={() => scroll("left")}
           className={cn(
@@ -95,7 +97,7 @@ export function ContinueWatching() {
         <div
           ref={scrollRef}
           onScroll={checkScroll}
-          className="flex gap-4 overflow-x-auto scrollbar-hide pb-20 pt-6 -mx-8 px-8"
+          className="relative z-20 flex gap-4 overflow-x-auto scrollbar-hide pb-24 pt-6 -mx-8 px-8"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {items.map((item, index) => (
@@ -130,6 +132,7 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const [imageError, setImageError] = useState(false)
   const [accentColor, setAccentColor] = useState<string | null>(null)
+  const { t } = useI18n()
 
   // Always have a visible color: extracted dominant color or primary orange fallback
   const effectColor = accentColor ?? "#f47521"
@@ -155,14 +158,14 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
   // Episode label
   const episodeLabel = item.currentEpisode
     ? `E${item.currentEpisode}`
-    : (item.type === 'Movie' ? 'Film' : '')
+    : (item.type === 'Movie' ? t("common.movie") : '')
 
   return (
     <Link
       href={`/watch/${item.crunchyrollId}`}
       className={cn(
         "group relative flex-shrink-0 w-[280px] md:w-[320px]",
-        isHovered ? "z-50" : "z-10",
+        isHovered ? "z-[420]" : "z-10",
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -226,7 +229,7 @@ function ContinueWatchingCard({ item, index }: ContinueWatchingCardProps) {
           {/* Remaining Time */}
           <div className="absolute bottom-3 right-3 px-2 py-1 rounded bg-background/80 backdrop-blur-sm">
             <span className="text-xs font-medium text-foreground">
-              {remainingMin > 0 ? `${remainingMin}m restantes` : "Terminé"}
+              {remainingMin > 0 ? t("continueWatching.remaining", { minutes: remainingMin }) : t("common.finished")}
             </span>
           </div>
 

@@ -4,7 +4,6 @@ import useSWR from "swr"
 import { useState, useCallback, useEffect, useMemo } from "react"
 import {
     enrichAnimeList,
-    enrichAnimeListWithFallback,
     searchAnimeBasicInfo,
     getAnimeDetails,
     searchAnime,
@@ -25,6 +24,7 @@ import {
     getSeries,
     browseCrunchyroll,
     browseMovieListings,
+    getMovie,
     getMovieListing,
     getMovieListingMovies,
     type TransformedCrunchyrollAnime,
@@ -92,13 +92,23 @@ function mapCrunchyrollSeriesToCombinedAnime(original: CrunchyrollSeries, enrich
     }
 }
 
-function mapMovieListingToCombinedAnime(movieListing: CrunchyrollSeries): CombinedAnime {
-    const bestPoster = movieListing.images?.poster_tall?.[0]?.[
+function mapMovieListingToCombinedAnime(
+    movieListing: CrunchyrollSeries,
+    featuredMovie?: TransformedCrunchyrollMovie | null,
+    movieCount = 1,
+): CombinedAnime {
+    const movieListingMeta = (movieListing as CrunchyrollSeries & {
+        is_dubbed?: boolean
+        is_subbed?: boolean
+        episode_count?: number
+        season_count?: number
+    })
+    const bestPoster = featuredMovie?.poster || movieListing.images?.poster_tall?.[0]?.[
         Math.max((movieListing.images?.poster_tall?.[0]?.length || 1) - 1, 0)
-    ]?.source || movieListing.images?.poster_wide?.[0]?.[
+    ]?.source || featuredMovie?.banner || movieListing.images?.poster_wide?.[0]?.[
         Math.max((movieListing.images?.poster_wide?.[0]?.length || 1) - 1, 0)
     ]?.source || '/placeholder.png'
-    const bestBanner = movieListing.images?.poster_wide?.[0]?.[
+    const bestBanner = featuredMovie?.banner || movieListing.images?.poster_wide?.[0]?.[
         Math.max((movieListing.images?.poster_wide?.[0]?.length || 1) - 1, 0)
     ]?.source || null
 
@@ -107,11 +117,11 @@ function mapMovieListingToCombinedAnime(movieListing: CrunchyrollSeries): Combin
         title: movieListing.title,
         titleRomaji: movieListing.title,
         titleNative: null,
-        description: movieListing.description || null,
+        description: featuredMovie?.description || movieListing.description || null,
         image: bestPoster,
         bannerImage: bestBanner,
         genres: movieListing.content_descriptors || [],
-        rating: movieListing.series_metadata?.maturity_ratings?.[0] || movieListing.maturity_ratings?.[0] || '12+',
+        rating: featuredMovie?.rating || movieListing.series_metadata?.maturity_ratings?.[0] || movieListing.maturity_ratings?.[0] || '12+',
         score: null,
         popularity: 0,
         duration: null,
@@ -129,9 +139,9 @@ function mapMovieListingToCombinedAnime(movieListing: CrunchyrollSeries): Combin
         trailer: null,
         startDate: null,
         endDate: null,
-        episodes: 1,
+        episodes: movieCount,
         contentType: 'movie_listing',
-        movieCount: 1,
+        movieCount: Math.max(movieCount, movieListingMeta.episode_count || 1),
         crunchyrollId: movieListing.id,
         crunchyrollSlug: movieListing.slug_title,
         isOnCrunchyroll: true,
@@ -139,10 +149,10 @@ function mapMovieListingToCombinedAnime(movieListing: CrunchyrollSeries): Combin
             crunchyrollId: movieListing.id,
             title: movieListing.title,
             slug: movieListing.slug_title,
-            episodeCount: 1,
-            seasonCount: 1,
-            isDubbed: movieListing.series_metadata?.is_dubbed || false,
-            isSubbed: movieListing.series_metadata?.is_subbed ?? true,
+            episodeCount: movieListingMeta.episode_count || movieCount || 1,
+            seasonCount: movieListingMeta.season_count || 1,
+            isDubbed: movieListing.series_metadata?.is_dubbed ?? movieListingMeta.is_dubbed ?? false,
+            isSubbed: movieListing.series_metadata?.is_subbed ?? movieListingMeta.is_subbed ?? true,
             crRating: 0,
             crVoteCount: 0,
         },
@@ -165,14 +175,43 @@ async function fetchCuratedCrunchyrollSection(options: {
         return []
     }
 
-    const enriched = await enrichAnimeListWithFallback(series)
-    return enriched.map((item, index) => mapCrunchyrollSeriesToCombinedAnime(series[index], item))
+    return series.map((item) => mapCrunchyrollSeriesToCombinedAnime(item, mapCrunchyrollToAnime(item)))
 }
 
 async function fetchMovieListingsSection(page: number, perPage: number): Promise<CombinedAnime[]> {
     const start = (page - 1) * perPage
-    const movies = await browseMovieListings({ n: perPage, start, sort_by: 'popularity' })
-    return movies.map(mapMovieListingToCombinedAnime)
+    const movieListings = await browseMovieListings({ n: perPage, start, sort_by: 'popularity' })
+
+    if (!movieListings.length) {
+        return []
+    }
+
+    const enrichedListings = await Promise.all(
+        movieListings.map(async (movieListing) => {
+            const listingType = (movieListing as CrunchyrollSeries & { type?: string }).type
+
+            if (listingType === 'series') {
+                return mapMovieListingToCombinedAnime(
+                    movieListing,
+                    null,
+                    movieListing.series_metadata?.episode_count || movieListing.episode_count || 1,
+                )
+            }
+
+            const [listingDetails, listingMovies] = await Promise.all([
+                getMovieListing(movieListing.id),
+                getMovieListingMovies(movieListing.id),
+            ])
+
+            return mapMovieListingToCombinedAnime(
+                listingDetails || movieListing,
+                listingMovies[0] || null,
+                Math.max(listingMovies.length, 1),
+            )
+        })
+    )
+
+    return enrichedListings
 }
 
 async function fetchMovieListingDetails(movieListingId: string): Promise<CombinedMovieListingDetails | null> {
@@ -192,14 +231,18 @@ async function fetchMovieListingDetails(movieListingId: string): Promise<Combine
         Math.max((movieListing.images?.poster_wide?.[0]?.length || 1) - 1, 0)
     ]?.source || null
     const firstMovie = movies[0]
+    const featuredMovie = firstMovie?.id ? await getMovie(firstMovie.id) : null
+    const normalizedMovies = featuredMovie
+        ? [featuredMovie, ...movies.filter((movie) => movie.id !== featuredMovie.id)]
+        : movies
 
     return {
         id: movieListing.id,
         title: movieListing.title,
-        description: movieListing.description || firstMovie?.description || null,
-        image: firstMovie?.poster || fallbackPoster,
-        bannerImage: firstMovie?.banner || fallbackBanner,
-        rating: firstMovie?.rating || movieListing.series_metadata?.maturity_ratings?.[0] || movieListing.maturity_ratings?.[0] || null,
+        description: featuredMovie?.description || movieListing.description || firstMovie?.description || null,
+        image: featuredMovie?.poster || firstMovie?.poster || fallbackPoster,
+        bannerImage: featuredMovie?.banner || firstMovie?.banner || fallbackBanner,
+        rating: featuredMovie?.rating || firstMovie?.rating || movieListing.series_metadata?.maturity_ratings?.[0] || movieListing.maturity_ratings?.[0] || null,
         genres: movieListing.content_descriptors || [],
         score: null,
         year: movieListing.series_launch_year || null,
@@ -220,7 +263,7 @@ async function fetchMovieListingDetails(movieListingId: string): Promise<Combine
             crRating: 0,
             crVoteCount: 0,
         },
-        crunchyrollMovies: movies,
+        crunchyrollMovies: normalizedMovies,
     }
 }
 
@@ -235,7 +278,6 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
             // 1. Fetch CR Data
             const start = (page - 1) * perPage
             let crData: CrunchyrollSeries[] = []
-            let crError = null
 
             try {
                 switch (category) {
@@ -303,27 +345,11 @@ export function useCombinedAnime(category: 'trending' | 'popular' | 'new' | 'sim
                 return results.filter(a => a.isOnCrunchyroll)
             }
 
-            // 2. If CR succeeded, Enrich with AniList (CACHE VISIBLE HERE due to async lookups)
+            // 2. If CR succeeded, render immediately from Crunchyroll data.
+            // AniList enrichment is intentionally skipped here so home rows do not appear empty
+            // while background cache/rate-limit work is still pending.
             if (crData && crData.length > 0) {
-                // Use enrichment with fallback to cache if rate-limited
-                const enriched = await enrichAnimeListWithFallback(crData)
-                let results = enriched.map((item, index) => mapCrunchyrollSeriesToCombinedAnime(crData[index], item))
-
-                // Filter 'new' category to only show current/recent years (2025-2026+)
-                if (category === 'new') {
-                    const currentYear = new Date().getFullYear()
-                    results = results.filter(anime =>
-                        (anime.year && (anime.year >= currentYear || anime.year >= 2025))
-                    )
-                }
-
-                return results
-            }
-
-            // 3. Fallback REMOVED to ensure strict CR availability
-            if (crError) {
-                console.warn(`[CombinedAnime] CR failed for ${category}, returning empty list to avoid non-CR content.`)
-                return []
+                return crData.map((item) => mapCrunchyrollSeriesToCombinedAnime(item, mapCrunchyrollToAnime(item)))
             }
 
             return []
@@ -1019,11 +1045,28 @@ export function useMoviesInfinite(perPage = 50) {
         `cr-movies-batch-${offset}`,
         async (): Promise<CombinedAnime[]> => {
             const limit = perPage
-            const movies = await browseMovieListings({ n: limit, start: offset, sort_by: 'popularity' })
+            const movieListings = await browseMovieListings({ n: limit, start: offset, sort_by: 'popularity' })
 
-            if (movies.length < limit) setHasMore(false)
+            if (movieListings.length < limit) setHasMore(false)
 
-            return movies.map((movie): CombinedAnime => mapMovieListingToCombinedAnime(movie))
+            if (!movieListings.length) {
+                return []
+            }
+
+            return Promise.all(
+                movieListings.map(async (movieListing): Promise<CombinedAnime> => {
+                    const [listingDetails, listingMovies] = await Promise.all([
+                        getMovieListing(movieListing.id),
+                        getMovieListingMovies(movieListing.id),
+                    ])
+
+                    return mapMovieListingToCombinedAnime(
+                        listingDetails || movieListing,
+                        listingMovies[0] || null,
+                        Math.max(listingMovies.length, 1),
+                    )
+                })
+            )
         },
         { revalidateOnFocus: false, dedupingInterval: 0 }
     )

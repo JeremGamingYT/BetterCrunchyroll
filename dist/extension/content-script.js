@@ -24,6 +24,11 @@
         appUrl: 'http://localhost:3000',
     };
 
+    if (window.location.origin === CONFIG.appUrl) {
+        console.log('[BetterCrunchyroll] Local dev page detected - skipping extension injection');
+        return;
+    }
+
     // ===============================
     // Inject script via external file (bypasses CSP)
     // ===============================
@@ -130,7 +135,7 @@
     // API Functions
     // ===============================
 
-    async function makeApiRequest(endpoint, params = {}) {
+    async function makeApiRequest(endpoint, params = {}, options = {}) {
         // Retry logic for token availability
         if (!accessToken || Date.now() >= tokenExpiry) {
             await loadStoredToken();
@@ -163,12 +168,14 @@
         console.log('[BetterCrunchyroll] Making API request:', endpoint);
 
         const response = await fetch(url.toString(), {
-            method: 'GET',
+            method: options.method || 'GET',
             headers: {
                 'Authorization': `Bearer ${accessToken}`,
                 'Accept': 'application/json',
+                ...(options.body ? { 'Content-Type': 'application/json' } : {}),
             },
             credentials: 'include',
+            body: options.body ? JSON.stringify(options.body) : undefined,
         });
 
         if (!response.ok) {
@@ -187,14 +194,25 @@
     }
 
     function injectPlayerEnhancements() {
-        if (document.getElementById('bcr-player-controls')) return; // already injected
+        if (
+            window.__BCR_PLAYER_ENHANCEMENTS_LOADED__ ||
+            window.__BCR_PLAYER_ENHANCEMENTS_LOADING__ ||
+            document.getElementById('bcr-player-controls')
+        ) {
+            return;
+        }
+        window.__BCR_PLAYER_ENHANCEMENTS_LOADING__ = true;
+
         const script = document.createElement('script');
         script.src = chrome.runtime.getURL('player-enhancements.js');
         script.onload = function () {
-            console.log('[BetterCrunchyroll] ✅ Player enhancements loaded');
+            window.__BCR_PLAYER_ENHANCEMENTS_LOADING__ = false;
+            window.__BCR_PLAYER_ENHANCEMENTS_LOADED__ = true;
+            console.log('[BetterCrunchyroll] Player enhancements loaded');
             this.remove();
         };
         script.onerror = function () {
+            window.__BCR_PLAYER_ENHANCEMENTS_LOADING__ = false;
             console.error('[BetterCrunchyroll] Failed to load player enhancements');
         };
         (document.head || document.documentElement).appendChild(script);
@@ -222,46 +240,78 @@
         const watchMatch = clean.match(/^\/watch\/([A-Za-z0-9\-_]+)/);
         if (watchMatch) return `/watch/${watchMatch[1]}`;
 
-        if (/^\/search/.test(clean)) return '/search';
+        if (/^\/search/.test(clean)) return `/search${window.location.search || ''}`;
         if (/^\/simulcast|\/seasonal/.test(clean)) return '/simulcast';
         if (/^\/watchlist/.test(clean)) return '/watchlist';
 
         return '/';
     }
 
-    function injectIframeUI(appPath) {
-        console.log('[BetterCrunchyroll] Injecting iframe UI for path:', appPath);
-
-        // Remove any existing injection
+    function removeIframeUI() {
         const existing = document.getElementById('bettercrunchyroll-root');
         if (existing) existing.remove();
+    }
 
-        // Container
-        const root = document.createElement('div');
-        root.id = 'bettercrunchyroll-root';
-        root.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 2147483647; pointer-events: none;';
-        document.body.appendChild(root);
+    function injectIframeUI(appPath, options = {}) {
+        if (!document.body) return false;
 
-        // Iframe
-        const iframe = document.createElement('iframe');
-        iframe.id = 'bcr-frame';
-        iframe.src = CONFIG.appUrl + appPath;
-        iframe.style.cssText = 'width:100%;height:100%;border:none;background:#0a0a0a;pointer-events: auto;';
-        iframe.allow = 'fullscreen; autoplay; encrypted-media; picture-in-picture';
+        const targetSrc = CONFIG.appUrl + appPath;
+        let root = document.getElementById('bettercrunchyroll-root');
+        let iframe = document.getElementById('bcr-frame');
 
-        iframe.onload = () => console.log('[BetterCrunchyroll] ✅ App loaded');
-        iframe.onerror = () => {
-            root.style.pointerEvents = 'auto';
-            root.innerHTML = `
-                <div style="background:black;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#fff;font-family:sans-serif;text-align:center;">
-                    <h1>BetterCrunchyroll Error</h1>
-                    <p>Check console / npm run dev</p>
-                </div>
-            `;
-        };
+        if (root && iframe && iframe.src === targetSrc && !options.force) {
+            return true;
+        }
 
-        root.appendChild(iframe);
-        console.log('[BetterCrunchyroll] Iframe UI injected');
+        if (!root || root.parentNode !== document.body) {
+            if (root) root.remove();
+            root = document.createElement('div');
+            root.id = 'bettercrunchyroll-root';
+            document.body.appendChild(root);
+        }
+
+        root.style.cssText = [
+            'position: fixed',
+            'inset: 0',
+            'z-index: 2147483647',
+            'width: 100vw',
+            'height: 100vh',
+            'pointer-events: none',
+            'background: #0a0a0a',
+        ].join(';');
+
+        if (!iframe || iframe.parentNode !== root) {
+            if (iframe) iframe.remove();
+            iframe = document.createElement('iframe');
+            iframe.id = 'bcr-frame';
+            iframe.allow = 'fullscreen; autoplay; encrypted-media; picture-in-picture';
+            iframe.onload = () => console.log('[BetterCrunchyroll] App loaded');
+            iframe.onerror = () => {
+                root.style.pointerEvents = 'auto';
+                root.innerHTML = `
+                    <div style="background:#050505;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#fff;font-family:system-ui,sans-serif;text-align:center;">
+                        <h1>BetterCrunchyroll Error</h1>
+                        <p>Check console / npm run dev</p>
+                    </div>
+                `;
+            };
+            root.appendChild(iframe);
+        }
+
+        iframe.src = targetSrc;
+        iframe.style.cssText = 'width:100%;height:100%;border:0;background:#0a0a0a;pointer-events:auto;display:block;';
+        console.log('[BetterCrunchyroll] Iframe UI ready:', appPath);
+        return true;
+    }
+
+    function ensureCurrentPageUI(options = {}) {
+        if (isWatchPage()) {
+            removeIframeUI();
+            injectPlayerEnhancements();
+            return;
+        }
+
+        injectIframeUI(mapToAppUrl(window.location.pathname), options);
     }
 
     // ===============================
@@ -271,7 +321,7 @@
     window.addEventListener('message', async (event) => {
         if (!event.origin.includes('localhost')) return;
 
-        const { type, id, endpoint, params, path } = event.data || {};
+        const { type, id, endpoint, params, path, method, body } = event.data || {};
 
         if (type === 'BCR_NAVIGATE') {
             console.log('[BetterCrunchyroll] Navigation request to:', path);
@@ -308,7 +358,7 @@
 
         if (type === 'CRUNCHYROLL_API_REQUEST') {
             try {
-                const data = await makeApiRequest(endpoint, params || {});
+                const data = await makeApiRequest(endpoint, params || {}, { method, body });
                 event.source.postMessage({
                     type: 'CRUNCHYROLL_API_RESPONSE',
                     id,
@@ -458,22 +508,21 @@
             console.log('[BetterCrunchyroll] ⚠️ No token yet, proceeding anyway');
         }
 
-        // Check if watch page
-        if (isWatchPage()) {
-            console.log('[BetterCrunchyroll] Watch page detected - Leaving official player intact.');
-            // Do NOT inject UI. Do NOT clean page.
-        } else {
-            // Check server
+        // Check server once before showing the local app.
+        if (!isWatchPage()) {
             try {
                 await fetch(CONFIG.appUrl, { method: 'HEAD', mode: 'no-cors' });
             } catch (e) {
                 console.error('[BetterCrunchyroll] Dev server not available');
                 return;
             }
-
-            const appPath = mapToAppUrl(window.location.pathname);
-            injectIframeUI(appPath);
         }
+
+        ensureCurrentPageUI({ force: true });
+        setTimeout(() => ensureCurrentPageUI(), 500);
+        setTimeout(() => ensureCurrentPageUI(), 1500);
+        window.addEventListener('load', () => ensureCurrentPageUI(), { once: true });
+        window.addEventListener('pageshow', () => ensureCurrentPageUI());
     }
 
     // Start initialization
@@ -507,17 +556,18 @@
                     window.location.reload();
                 } else if (!isNowWatchPage && wasWatchPage) {
                     // Navigated AWAY from watch page
-                    const bcrUI = document.getElementById('bcr-ui');
-                    if (bcrUI) bcrUI.remove();
                     document.body.classList.remove('bcr-watch-page');
-
-                    const appPath = mapToAppUrl(location.pathname);
-                    injectIframeUI(appPath);
+                    ensureCurrentPageUI({ force: true });
                 } else if (isNowWatchPage && wasWatchPage) {
                     // Watch page internal navigation
                     console.log('[BetterCrunchyroll] Watch Page internal nav - Reloading...');
                     window.location.reload();
+                } else {
+                    ensureCurrentPageUI({ force: true });
                 }
+            }
+            if (!isWatchPage() && !document.getElementById('bcr-frame')) {
+                ensureCurrentPageUI();
             }
         }, 500);
     }
@@ -533,11 +583,7 @@
             // Reload to clear iframe overlay if present and load official player
             window.location.reload();
         } else {
-            const iframe = document.getElementById('bcr-frame');
-            if (iframe) {
-                const newAppPath = mapToAppUrl(location.pathname);
-                iframe.src = CONFIG.appUrl + newAppPath;
-            }
+            ensureCurrentPageUI({ force: true });
         }
     });
 

@@ -83,9 +83,17 @@ export default function AnimePage() {
 
   if (!id) {
     return (
-      <main className="min-h-screen bg-background">
+      <main className="relative min-h-screen bg-transparent">
+        <div aria-hidden="true" className="page-backdrop">
+          <div className="page-backdrop__glow" />
+          <div className="page-backdrop__stripes" />
+          <div className="page-backdrop__streaks" />
+          <div className="page-backdrop__panel" />
+          <div className="page-backdrop__dots" />
+        </div>
+
         <Header />
-        <div className="flex flex-col items-center justify-center min-h-[60vh] px-4">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-[60vh] px-4">
           <div className="text-center space-y-4">
             <Film className="w-16 h-16 text-muted-foreground mx-auto opacity-50" />
             <div className="space-y-2">
@@ -115,9 +123,17 @@ export default function AnimePage() {
 
   if (error || !anime) {
     return (
-      <main className="min-h-screen bg-background">
+      <main className="relative min-h-screen bg-transparent">
+        <div aria-hidden="true" className="page-backdrop">
+          <div className="page-backdrop__glow" />
+          <div className="page-backdrop__stripes" />
+          <div className="page-backdrop__streaks" />
+          <div className="page-backdrop__panel" />
+          <div className="page-backdrop__dots" />
+        </div>
+
         <Header />
-        <div className="flex flex-col items-center justify-center min-h-[60vh] px-4">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-[60vh] px-4">
           <div className="text-center space-y-4">
             <Film className="w-16 h-16 text-muted-foreground mx-auto opacity-50" />
             <div className="space-y-2">
@@ -164,8 +180,18 @@ export default function AnimePage() {
   ]
 
   return (
-    <main className="min-h-screen bg-background overflow-x-hidden">
+    <main className="relative min-h-screen bg-transparent overflow-x-hidden">
+      <div aria-hidden="true" className="page-backdrop">
+        <div className="page-backdrop__glow" />
+        <div className="page-backdrop__stripes" />
+        <div className="page-backdrop__streaks" />
+        <div className="page-backdrop__panel" />
+        <div className="page-backdrop__dots" />
+      </div>
+
       <Header />
+
+      <div className="relative z-10">
 
       {/* Hero Section with Banner */}
       <div className="relative">
@@ -686,6 +712,7 @@ export default function AnimePage() {
       </div>
 
       <Footer />
+      </div>
     </main>
   )
 }

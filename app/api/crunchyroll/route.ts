@@ -1,7 +1,7 @@
 // API Route: Proxy for Crunchyroll API calls
 // This route bypasses CORS by making requests server-side
 
-const CRUNCHYROLL_API = "https://www.crunchyroll.com"
+const CRUNCHYROLL_API = "https://beta-api.crunchyroll.com"
 const CRUNCHYROLL_BASIC_AUTH = "eHVuaWh2ZWRidDNtYmlzdWhldnQ6MWtJUzVkeVR2akUwX3JxYUEzWWVBaDBiVVhVbXhXMTE="
 
 // Token cache (in-memory for server)
@@ -100,11 +100,73 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
     try {
-        // This endpoint is used to get a fresh token
+        const { searchParams } = new URL(request.url)
+        const endpoint = searchParams.get('endpoint')
+
+        if (endpoint) {
+            return proxyMutation(request, endpoint, "POST")
+        }
+
+        // Without endpoint, this route is used to get a fresh token.
         const token = await getAccessToken()
         return Response.json({ access_token: token })
     } catch (error) {
         console.error('[API] Token request error:', error)
+        return Response.json(
+            { error: error instanceof Error ? error.message : 'Unknown error' },
+            { status: 500 }
+        )
+    }
+}
+
+export async function DELETE(request: Request) {
+    const { searchParams } = new URL(request.url)
+    const endpoint = searchParams.get('endpoint')
+
+    if (!endpoint) {
+        return Response.json({ error: 'Missing endpoint parameter' }, { status: 400 })
+    }
+
+    return proxyMutation(request, endpoint, "DELETE")
+}
+
+async function proxyMutation(request: Request, endpoint: string, method: "POST" | "DELETE") {
+    try {
+        const token = await getAccessToken()
+        const { searchParams } = new URL(request.url)
+        const url = new URL(`${CRUNCHYROLL_API}${endpoint}`)
+
+        searchParams.forEach((value, key) => {
+            if (key !== 'endpoint') {
+                url.searchParams.append(key, value)
+            }
+        })
+
+        const bodyText = method === "POST" ? await request.text() : undefined
+        const response = await fetch(url.toString(), {
+            method,
+            headers: {
+                "Authorization": `Bearer ${token}`,
+                "Accept": "application/json",
+                ...(bodyText ? { "Content-Type": "application/json" } : {}),
+            },
+            body: bodyText || undefined,
+        })
+
+        if (!response.ok) {
+            return Response.json(
+                { error: `Crunchyroll API error: ${response.status}` },
+                { status: response.status }
+            )
+        }
+
+        const text = await response.text()
+        return text ? new Response(text, {
+            status: response.status,
+            headers: { "Content-Type": response.headers.get("Content-Type") || "application/json" },
+        }) : Response.json({ success: true })
+    } catch (error) {
+        console.error('[API] Crunchyroll mutation proxy error:', error)
         return Response.json(
             { error: error instanceof Error ? error.message : 'Unknown error' },
             { status: 500 }

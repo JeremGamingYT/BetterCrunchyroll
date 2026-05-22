@@ -1,0 +1,50 @@
+{
+  "common": {
+    "anime": "Anime",
+    "show": "Show",
+    "movie": "Film",
+    "finished": "Terminé",
+    "availableNow": "Disponible maintenant",
+    "coming": "Disponible le {date}"
+  },
+  "nav": {
+    "home": "Accueil",
+    "series": "Séries",
+    "films": "Films",
+    "simulcast": "Simulcast",
+    "watchlist": "Ma liste",
+    "search": "Rechercher",
+    "profile": "Ouvrir le profil",
+    "settings": "Paramètres",
+    "changeAvatar": "Changer d'avatar",
+    "logout": "Se déconnecter"
+  },
+  "hero": {
+    "play": "Lecture",
+    "moreInfo": "Plus d'infos",
+    "enableSound": "Activer le son du trailer",
+    "disableSound": "Couper le son du trailer",
+    "volume": "Volume du trailer"
+  },
+  "sections": {
+    "continueWatching": "Reprendre",
+    "viewHistory": "Voir l'historique",
+    "nextWatch": "À regarder ensuite",
+    "recentAdds": "Ajouts récents",
+    "popular": "Populaires",
+    "seasonSimulcast": "Simulcast de la saison",
+    "dubbed": "Disponible en VF",
+    "subtitled": "Version sous-titrée",
+    "crunchyrollMovies": "Films Crunchyroll",
+    "viewAll": "Voir tout"
+  },
+  "continueWatching": {
+    "remaining": "{minutes}m restantes"
+  },
+  "settings": {
+    "preferences": "Préférences",
+    "displayLanguage": "Langue d'affichage",
+    "audioLanguage": "Langue audio",
+    "subtitleLanguage": "Langue des sous-titres"
+  }
+}

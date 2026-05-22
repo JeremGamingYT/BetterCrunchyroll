@@ -71,8 +71,17 @@ export default function SearchPage() {
   const hasFilters = selectedGenres.length > 0 || selectedYear !== null
 
   return (
-    <main className="min-h-screen bg-background">
-      <Header />
+    <main className="relative min-h-screen bg-transparent">
+      <div aria-hidden="true" className="page-backdrop">
+        <div className="page-backdrop__glow" />
+        <div className="page-backdrop__stripes" />
+        <div className="page-backdrop__streaks" />
+        <div className="page-backdrop__panel" />
+        <div className="page-backdrop__dots" />
+      </div>
+
+      <div className="relative z-10">
+        <Header />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-8">
@@ -232,7 +241,8 @@ export default function SearchPage() {
         )}
       </section>
 
-      <Footer />
+        <Footer />
+      </div>
     </main>
   )
 }

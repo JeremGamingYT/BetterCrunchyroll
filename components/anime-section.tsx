@@ -6,6 +6,7 @@ import { AnimeCard } from "./anime-card"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import type { CombinedAnime } from "@/hooks/use-combined-anime"
+import { useI18n } from "@/hooks/use-i18n"
 
 interface AnimeSectionProps {
   title: string
@@ -34,6 +35,7 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, show
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
+  const { t } = useI18n()
 
   const checkScroll = () => {
     if (scrollRef.current) {
@@ -63,12 +65,12 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, show
   }
 
   return (
-    <section className="relative isolate group/section" style={{ zIndex: 1 }}>
+    <section className="relative z-10 group/section py-4 md:py-5 overflow-visible hover:z-[300]">
       {/* Header */}
-      <div className="flex items-center gap-3 mb-4 group/title">
+      <div className="flex items-center gap-3 mb-1.5 group/title">
         <h2
           className={cn(
-            "text-base md:text-lg font-semibold text-white/90 tracking-wide",
+            "text-lg md:text-xl font-bold text-white tracking-normal",
             !hideViewAll && "hover:underline underline-offset-2 cursor-default"
           )}
         >
@@ -77,30 +79,32 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, show
         {!hideViewAll && (
           <Link
             href={getSectionHref()}
-            className="flex items-center gap-0.5 text-xs font-semibold text-[#01b4e4] opacity-0 group-hover/title:opacity-100 transition-opacity duration-200 mt-0.5"
+            className="flex items-center gap-0.5 text-xs font-semibold text-white/52 opacity-0 group-hover/title:opacity-100 transition-opacity duration-200 mt-0.5 hover:text-white"
           >
-            Voir tout
+            {t("sections.viewAll")}
             <ChevronRight className="w-3.5 h-3.5" />
           </Link>
         )}
       </div>
 
       {/* Scroll Container */}
-      <div className="relative">
+      <div className="relative z-20 overflow-visible">
         {/* Left fade + button */}
         <div
           className={cn(
-            "absolute left-0 top-0 bottom-4 w-16 bg-gradient-to-r from-[#040404] to-transparent pointer-events-none z-10 transition-opacity duration-200",
+            "absolute left-0 top-0 bottom-16 w-10 bg-gradient-to-r from-black to-transparent pointer-events-none z-10 transition-opacity duration-200",
             canScrollLeft ? "opacity-100" : "opacity-0"
           )}
         />
         <button
+          aria-label="Faire défiler vers la gauche"
           onClick={() => scroll("left")}
           className={cn(
-            "absolute -left-4 top-1/2 -translate-y-1/2 z-20",
-            "h-full max-h-[160px] px-2 rounded-sm",
-            "bg-black/60 backdrop-blur-sm text-white",
-            "hover:bg-black/85 transition-all duration-150",
+            "absolute -left-4 top-[calc(50%-2.5rem)] -translate-y-1/2 z-[320]",
+            "h-full px-3 rounded-sm",
+            cardLayout === "landscape" ? "max-h-[170px]" : "max-h-[330px]",
+            "bg-black/34 text-white",
+            "hover:bg-black/58 transition-all duration-150",
             "opacity-0 group-hover/section:opacity-100",
             !canScrollLeft && "!opacity-0 pointer-events-none",
           )}
@@ -115,7 +119,7 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, show
                 key={i}
                 className={cn(
                   "flex-shrink-0 bg-white/[0.06] rounded-[4px] animate-pulse",
-                  cardLayout === "landscape" ? "w-[280px] aspect-video" : "w-[160px] aspect-[2/3]"
+                  cardLayout === "landscape" ? "w-[300px] aspect-video" : "w-[160px] aspect-[2/3]"
                 )}
               />
             ))}
@@ -132,7 +136,7 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, show
           <div
             ref={scrollRef}
             onScroll={checkScroll}
-            className="flex gap-2 overflow-x-auto pb-2"
+            className="relative z-20 flex gap-3 overflow-x-auto px-8 pt-8 pb-28 -mx-8 -my-6"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {animes.map((anime, index) => (
@@ -151,17 +155,19 @@ export function AnimeSection({ title, animes, isLoading, error, showAiring, show
         {/* Right fade + button */}
         <div
           className={cn(
-            "absolute right-0 top-0 bottom-4 w-16 bg-gradient-to-l from-[#040404] to-transparent pointer-events-none z-10 transition-opacity duration-200",
+            "absolute right-0 top-0 bottom-16 w-10 bg-gradient-to-l from-black to-transparent pointer-events-none z-10 transition-opacity duration-200",
             canScrollRight ? "opacity-100" : "opacity-0"
           )}
         />
         <button
+          aria-label="Faire défiler vers la droite"
           onClick={() => scroll("right")}
           className={cn(
-            "absolute -right-4 top-1/2 -translate-y-1/2 z-20",
-            "h-full max-h-[160px] px-2 rounded-sm",
-            "bg-black/60 backdrop-blur-sm text-white",
-            "hover:bg-black/85 transition-all duration-150",
+            "absolute -right-4 top-[calc(50%-2.5rem)] -translate-y-1/2 z-[320]",
+            "h-full px-3 rounded-sm",
+            cardLayout === "landscape" ? "max-h-[170px]" : "max-h-[330px]",
+            "bg-black/34 text-white",
+            "hover:bg-black/58 transition-all duration-150",
             "opacity-0 group-hover/section:opacity-100",
             !canScrollRight && "!opacity-0 pointer-events-none",
           )}

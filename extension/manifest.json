@@ -28,7 +28,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.crunchyroll.com/*"
+                "https://www.crunchyroll.com/*",
+                "http://localhost:3000/*"
             ],
             "js": [
                 "content-script.js"
@@ -44,6 +45,8 @@
         {
             "resources": [
                 "injected-script.js",
+                "data-sync.js",
+                "player-enhancements.js",
                 "watch-ui.js",
                 "app/*",
                 "*.js",
