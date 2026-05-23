@@ -13,6 +13,7 @@ import { BetterCrLogo } from "@/components/bettercr-logo"
 
 const YOUTUBE_EMBED_ORIGIN = "https://www.youtube-nocookie.com"
 const TRAILER_VOLUME_STORAGE_KEY = "bcr_trailer_volume"
+const LIVE_CINEMATIC_LIGHT_STORAGE_KEY = "bcr_live_cinematic_light"
 const MAIN_TRAILER_QUALITY = "medium"
 const AMBIENT_TRAILER_QUALITY = "tiny"
 
@@ -189,6 +190,7 @@ export function HeroCarousel() {
   const [playerOrigin, setPlayerOrigin] = useState<string | null>(null)
   const [isPlayerReady, setIsPlayerReady] = useState(false)
   const [isAmbientPlayerReady, setIsAmbientPlayerReady] = useState(false)
+  const [useLiveCinematicLight, setUseLiveCinematicLight] = useState(false)
   const [heroPalette, setHeroPalette] = useState<HeroPalette>({
     base: "#7a3b16",
     left: "#7a3b16",
@@ -210,6 +212,18 @@ export function HeroCarousel() {
       if (Number.isFinite(storedVolume)) {
         setVideoVolume(Math.min(100, Math.max(0, storedVolume)))
         setIsVideoMuted(storedVolume <= 0)
+      }
+      setUseLiveCinematicLight(window.localStorage.getItem(LIVE_CINEMATIC_LIGHT_STORAGE_KEY) === "true")
+
+      const handleLiveLightChange = () => {
+        setUseLiveCinematicLight(window.localStorage.getItem(LIVE_CINEMATIC_LIGHT_STORAGE_KEY) === "true")
+      }
+
+      window.addEventListener("bcr-live-cinematic-light-change", handleLiveLightChange)
+      window.addEventListener("storage", handleLiveLightChange)
+      return () => {
+        window.removeEventListener("bcr-live-cinematic-light-change", handleLiveLightChange)
+        window.removeEventListener("storage", handleLiveLightChange)
       }
     }
   }, [])
@@ -557,7 +571,7 @@ export function HeroCarousel() {
           background: `radial-gradient(ellipse at 50% 4%, ${heroPalette.bottom}76 0%, ${heroPalette.left}38 34%, ${heroPalette.right}30 58%, transparent 82%)`,
         }}
       />
-      {showVideoPreview && ambientEmbedUrl ? (
+      {useLiveCinematicLight && showVideoPreview && ambientEmbedUrl ? (
         <div className="hero-cinematic-light" aria-hidden="true">
           <iframe
             key={`${currentTrailerId}-ambient`}

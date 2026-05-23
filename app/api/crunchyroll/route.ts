@@ -1,12 +1,15 @@
 // API Route: Proxy for Crunchyroll API calls
 // This route bypasses CORS by making requests server-side
 
+import { getServerCache, serverCacheKey, setServerCache } from "@/lib/server-cache"
+
 const CRUNCHYROLL_API = "https://beta-api.crunchyroll.com"
 const CRUNCHYROLL_BASIC_AUTH = "eHVuaWh2ZWRidDNtYmlzdWhldnQ6MWtJUzVkeVR2akUwX3JxYUEzWWVBaDBiVVhVbXhXMTE="
 
 // Token cache (in-memory for server)
 let cachedToken: { accessToken: string; timestamp: number } | null = null
 const TOKEN_CACHE_DURATION = 1000 * 60 * 50 // 50 minutes
+const CRUNCHYROLL_SHARED_CACHE_TTL_SECONDS = 60 * 60 * 6
 
 // Generate random ETP ID
 function generateEtpId(): string {
@@ -51,6 +54,20 @@ async function getAccessToken(): Promise<string> {
     return data.access_token
 }
 
+function isSharedCacheableEndpoint(endpoint: string) {
+    const blocked = [
+        "/accounts/",
+        "/user/",
+        "/watchlist",
+        "/history",
+        "/profiles",
+        "/subscription",
+        "/ratings",
+    ]
+
+    return !blocked.some((part) => endpoint.includes(part))
+}
+
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url)
     const endpoint = searchParams.get('endpoint')
@@ -72,6 +89,19 @@ export async function GET(request: Request) {
             }
         })
 
+        const cacheKey = isSharedCacheableEndpoint(endpoint)
+            ? serverCacheKey("crunchyroll", { endpoint, params: url.searchParams.toString() })
+            : null
+
+        if (cacheKey) {
+            const cached = await getServerCache(cacheKey)
+            if (cached) {
+                return Response.json(cached, {
+                    headers: { "X-BetterCrunchyroll-Cache": "HIT" },
+                })
+            }
+        }
+
         const response = await fetch(url.toString(), {
             method: "GET",
             headers: {
@@ -88,7 +118,13 @@ export async function GET(request: Request) {
         }
 
         const data = await response.json()
-        return Response.json(data)
+        if (cacheKey) {
+            await setServerCache(cacheKey, data, CRUNCHYROLL_SHARED_CACHE_TTL_SECONDS)
+        }
+
+        return Response.json(data, {
+            headers: { "X-BetterCrunchyroll-Cache": cacheKey ? "MISS" : "BYPASS" },
+        })
     } catch (error) {
         console.error('[API] Crunchyroll proxy error:', error)
         return Response.json(

@@ -130,7 +130,15 @@ export function Header() {
                   setIsProfileOpen(false)
                   setIsAvatarOpen(true)
                 }} />
-                <ProfileMenuLink icon={Settings} label={t("nav.settings")} href="/parametres" onClick={() => setIsProfileOpen(false)} />
+                <ProfileMenuLink
+                  icon={Settings}
+                  label={t("nav.settings")}
+                  href="/parametres"
+                  onClick={() => {
+                    setIsProfileOpen(false)
+                    handleNavigation("/parametres")
+                  }}
+                />
                 <div className="my-2 h-px bg-white/10" />
                 <ProfileMenuButton icon={LogOut} label={t("nav.logout")} onClick={handleLogout} destructive />
               </div>

@@ -45,6 +45,8 @@
     "preferences": "Preferences",
     "displayLanguage": "Display language",
     "audioLanguage": "Audio language",
-    "subtitleLanguage": "Subtitle language"
+    "subtitleLanguage": "Subtitle language",
+    "cinematicLight": "Live cinematic lighting",
+    "cinematicLightDescription": "Uses a second low-quality trailer player for animated glow. Disable for best performance."
   }
 }
