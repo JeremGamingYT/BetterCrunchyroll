@@ -230,6 +230,16 @@
     // ===============================
 
     function mapToAppUrl(path) {
+        const hashMatch = window.location.hash.match(/^#bcr=(.+)$/);
+        if (hashMatch) {
+            try {
+                const appPath = decodeURIComponent(hashMatch[1]);
+                return appPath.startsWith('/') ? appPath : `/${appPath}`;
+            } catch {
+                return '/';
+            }
+        }
+
         const clean = path.replace(/^\/[a-z]{2}(?=\/|$)/, '');
 
         if (/^\/?$/.test(clean) || /^\/discover/.test(clean)) return '/';
@@ -243,8 +253,21 @@
         if (/^\/search/.test(clean)) return `/search${window.location.search || ''}`;
         if (/^\/simulcast|\/seasonal/.test(clean)) return '/simulcast';
         if (/^\/watchlist/.test(clean)) return '/watchlist';
+        if (/^\/videos\/movies|^\/movies|^\/films/.test(clean)) return '/films';
 
         return '/';
+    }
+
+    function isBetterCrunchyrollAppPath(path) {
+        return [
+            '/parametres',
+            '/populaire',
+            '/films',
+            '/nouveau',
+            '/simulcast',
+            '/watchlist',
+            '/search',
+        ].some((prefix) => path === prefix || path.startsWith(`${prefix}/`) || path.startsWith(`${prefix}?`));
     }
 
     function removeIframeUI() {
@@ -330,6 +353,7 @@
             const locale = localeMatch ? localeMatch[1] : 'fr';
 
             let crunchyrollPath = `/${locale}`;
+            let keepAppRouteInHash = false;
 
             const animeMatch = path.match(/^\/anime\/([A-Z0-9]+)/);
             if (animeMatch) crunchyrollPath = `/${locale}/series/${animeMatch[1]}`;
@@ -343,16 +367,25 @@
                 return;
             }
 
+            if (isBetterCrunchyrollAppPath(path)) {
+                keepAppRouteInHash = true;
+                crunchyrollPath = window.location.pathname;
+            }
+
             // CRITICAL FIX: Only navigate if URL actually changed to prevent infinite loop
-            if (crunchyrollPath === window.location.pathname) {
+            const nextUrl = keepAppRouteInHash
+                ? `${crunchyrollPath}#bcr=${encodeURIComponent(path)}`
+                : crunchyrollPath;
+
+            if (nextUrl === `${window.location.pathname}${window.location.hash || ''}`) {
                 console.log('[BetterCrunchyroll] URL unchanged, skipping navigation');
                 return;
             }
 
             // Use pushState to update URL without reload (prevents infinite loop)
-            console.log('[BetterCrunchyroll] Updating URL via pushState:', crunchyrollPath);
-            window.history.pushState({}, '', crunchyrollPath);
-            lastUrl = crunchyrollPath; // Sync navigation watcher
+            console.log('[BetterCrunchyroll] Updating URL via pushState:', nextUrl);
+            window.history.pushState({}, '', nextUrl);
+            lastUrl = window.location.href; // Sync navigation watcher
             return;
         }
 

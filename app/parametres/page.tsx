@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Header } from "@/components/header"
 import {
   Crown,
@@ -50,9 +50,12 @@ const settingsSections = [
 ] as const
 
 const languages = [
-  { code: "fr", label: "Français" },
-  { code: "en", label: "English" },
+  { code: "fr_ca", label: "Francais (Canada)" },
+  { code: "fr_fr", label: "Francais (France)" },
+  { code: "en_us", label: "English (US)" },
 ]
+
+const LIVE_CINEMATIC_LIGHT_STORAGE_KEY = "bcr_live_cinematic_light"
 
 const audioLanguages = [
   { code: "ja", label: "Japonais" },
@@ -92,6 +95,17 @@ export default function ParametresPage() {
   const [subtitleLanguage, setSubtitleLanguage] = useState("fr")
   const [subtitlesForDeaf, setSubtitlesForDeaf] = useState(false)
   const [contentRestriction, setContentRestriction] = useState("none")
+  const [liveCinematicLight, setLiveCinematicLightState] = useState(false)
+
+  useEffect(() => {
+    setLiveCinematicLightState(window.localStorage.getItem(LIVE_CINEMATIC_LIGHT_STORAGE_KEY) === "true")
+  }, [])
+
+  const setLiveCinematicLight = (enabled: boolean) => {
+    setLiveCinematicLightState(enabled)
+    window.localStorage.setItem(LIVE_CINEMATIC_LIGHT_STORAGE_KEY, String(enabled))
+    window.dispatchEvent(new CustomEvent("bcr-live-cinematic-light-change"))
+  }
 
   return (
     <div className="relative min-h-screen bg-transparent">
@@ -157,6 +171,8 @@ export default function ParametresPage() {
                     setSubtitlesForDeaf={setSubtitlesForDeaf}
                     contentRestriction={contentRestriction}
                     setContentRestriction={setContentRestriction}
+                    liveCinematicLight={liveCinematicLight}
+                    setLiveCinematicLight={setLiveCinematicLight}
                   />
                 )}
                 {activeSection === "notifications" && <NotificationsSection />}
@@ -281,6 +297,8 @@ function PreferencesSection({
   setSubtitlesForDeaf,
   contentRestriction,
   setContentRestriction,
+  liveCinematicLight,
+  setLiveCinematicLight,
 }: {
   displayLanguage: string
   setDisplayLanguage: (v: string) => void
@@ -294,6 +312,8 @@ function PreferencesSection({
   setSubtitlesForDeaf: (v: boolean) => void
   contentRestriction: string
   setContentRestriction: (v: string) => void
+  liveCinematicLight: boolean
+  setLiveCinematicLight: (v: boolean) => void
 }) {
   return (
     <div>
@@ -317,6 +337,19 @@ function PreferencesSection({
               </option>
             ))}
           </select>
+        </div>
+
+        <div className="flex items-center justify-between p-4 bg-secondary/50 rounded-lg">
+          <div className="flex items-center gap-3">
+            <Settings className="w-5 h-5 text-primary" />
+            <div>
+              <p className="font-medium text-foreground">Eclairage cinematographique en direct</p>
+              <p className="text-sm text-muted-foreground">
+                Active le deuxieme lecteur video floute. Plus lourd, desactive par defaut.
+              </p>
+            </div>
+          </div>
+          <ToggleSwitch checked={liveCinematicLight} onChange={setLiveCinematicLight} />
         </div>
 
         {/* Langue audio */}

@@ -11,7 +11,7 @@ import {
 } from "@/lib/i18n"
 
 export function useI18n() {
-  const [language, setLanguageState] = useState<SupportedLanguage>("fr")
+  const [language, setLanguageState] = useState<SupportedLanguage>("fr_ca")
 
   useEffect(() => {
     setLanguageState(getStoredLanguage())
