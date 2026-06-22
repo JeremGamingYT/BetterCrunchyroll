@@ -1,6 +1,8 @@
-# This repository tracks ONLY the BetterCR extension — the improved rewrite
-# of BetterCrunchyroll. Every other file/folder stays on disk locally but is
-# untracked (hidden from git/GitHub).
+# This repository exposes ONLY the BetterCR extension (the improved rewrite of
+# BetterCrunchyroll) plus its landing files. Everything else stays on disk
+# locally but is untracked / hidden from git & GitHub.
 /*
 !/.gitignore
 !/BetterCR/
+!/README.md
+!/README.en.md
