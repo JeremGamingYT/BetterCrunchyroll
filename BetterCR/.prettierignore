@@ -1,0 +1,4 @@
+dist
+legacy
+node_modules
+*.log
