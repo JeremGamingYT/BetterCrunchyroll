@@ -1,0 +1,239 @@
+/* ===================== Vues d'état (chargement / erreur / vide) ===================== */
+.state-view {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  padding: 80px var(--gut);
+}
+.state-mark {
+  font-size: 28px;
+  font-weight: 800;
+  opacity: 0.9;
+}
+.state-icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--srf2);
+  color: var(--acc);
+  border: 1px solid var(--line);
+}
+.state-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.state-detail {
+  color: var(--txt2);
+  max-width: 460px;
+}
+
+/* ===================== Panneau Tweaks ===================== */
+.twk-fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 90;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--srf2);
+  color: var(--txt);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+.twk-fab:hover {
+  transform: rotate(40deg);
+  color: var(--acc);
+}
+.twk-panel {
+  position: fixed;
+  right: 18px;
+  bottom: 74px;
+  z-index: 91;
+  width: 280px;
+  background: var(--srf);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+}
+.twk-hd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+.twk-x {
+  border: 0;
+  background: transparent;
+  color: var(--txt2);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.twk-x:hover {
+  color: var(--txt);
+}
+.twk-body {
+  padding: 6px 16px 18px;
+}
+.twk-sect {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--txt3);
+  margin: 16px 0 10px;
+}
+.twk-colors {
+  display: flex;
+  gap: 10px;
+}
+.twk-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.twk-color.is-on {
+  border-color: var(--txt);
+  transform: scale(1.1);
+}
+.twk-range {
+  width: 100%;
+  accent-color: var(--acc);
+}
+.twk-rowval {
+  font-size: 13px;
+  color: var(--txt2);
+  margin-top: 6px;
+}
+.twk-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--srf2);
+  color: var(--txt);
+  cursor: pointer;
+  font-size: 14px;
+}
+.twk-toggle-dot {
+  width: 38px;
+  height: 22px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.16);
+  position: relative;
+  transition: background 0.2s ease;
+  flex: none;
+}
+.twk-toggle-dot::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+.twk-toggle.is-on .twk-toggle-dot {
+  background: var(--acc);
+}
+.twk-toggle.is-on .twk-toggle-dot::after {
+  transform: translateX(16px);
+}
+
+/* ===================== Anti-spoiler (épisodes non vus) ===================== */
+.ecard-spoiler {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt2);
+  pointer-events: none;
+}
+.spoiler-guard .ecard.is-unseen .ecard-img {
+  filter: blur(16px) brightness(0.5);
+  transform: scale(1.08);
+}
+.spoiler-guard .ecard.is-unseen .ecard-spoiler {
+  display: flex;
+}
+.spoiler-guard .ecard.is-unseen .ccard-play {
+  opacity: 0;
+}
+.spoiler-guard .ecard.is-unseen .ecard-name,
+.spoiler-guard .ecard.is-unseen .ecard-desc {
+  display: none;
+}
+
+/* ===================== Bouton « Charger plus » ===================== */
+.grid-more {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 10px;
+}
+.grid-more .btn {
+  min-width: 200px;
+  justify-content: center;
+}
+
+/* ===================== Avatars réels ===================== */
+.hdr-avatar-img img,
+.menu-avatar img,
+.set-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+.auth-top-end {
+  justify-content: flex-end;
+}
+
+/* ===================== Erreur de connexion ===================== */
+.auth-error {
+  margin: -4px 0 2px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: color-mix(in oklab, #ef4565 16%, transparent);
+  border: 1px solid color-mix(in oklab, #ef4565 40%, transparent);
+  color: #ffd9e0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ===================== Crédit fournisseur (AniList…) ===================== */
+.meta-source {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--txt3);
+}
+.meta-source b {
+  color: var(--acc);
+  font-weight: 700;
+}

@@ -1,0 +1,186 @@
+/**
+ * Content script (isolated world) orchestrator.
+ *
+ * Wires together: page-context token interception, the SPA overlay iframe, the
+ * typed postMessage bridge (API proxy / token status / login), and the
+ * navigation watcher that keeps the overlay and the native /watch player in
+ * sync with Crunchyroll's SPA URL changes.
+ */
+import { BCR_TOKEN_EVENT } from '@shared/page-bridge';
+import { BCR_CHANNEL, isAppEnvelope, type AppEnvelope, type ContentReply } from '@shared/messages';
+import { ok, err } from '@shared/result';
+import { isWatchPath, mapCrPathToRoute } from '@shared/routing';
+import { TokenStore } from './token-store';
+import { performCrRequest } from './cr-api';
+import { passwordLogin } from './auth';
+import { Overlay } from './overlay';
+
+const LOG_PREFIX = '[BetterCR]';
+const NAV_POLL_MS = 500;
+
+/**
+ * Path (relative to the extension root) of the classic token interceptor.
+ * It is a plain IIFE in `public/` so it runs in the page's MAIN world without
+ * needing `chrome.*` (which is undefined there).
+ */
+const INJECTED_SCRIPT_PATH = 'inject/token-interceptor.js';
+
+function toMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
+/** Injects an extension-bundled classic script into the page's own JS realm. */
+function injectPageScript(resourcePath: string): void {
+  const script = document.createElement('script');
+  script.src = chrome.runtime.getURL(resourcePath);
+  script.onload = (): void => script.remove();
+  (document.head ?? document.documentElement).appendChild(script);
+}
+
+/** Current Crunchyroll locale prefix (e.g. `/fr`), or '' if none. */
+function localePrefix(): string {
+  const match = /^\/([a-z]{2})(?=\/|$)/.exec(window.location.pathname);
+  return match ? `/${match[1]}` : '';
+}
+
+class ContentApp {
+  private readonly tokens = new TokenStore();
+  private readonly overlay = new Overlay();
+  private lastHref = '';
+
+  start(): void {
+    if (window.self !== window.top) {
+      return;
+    }
+    injectPageScript(INJECTED_SCRIPT_PATH);
+    void this.tokens.loadFromStorage();
+
+    window.addEventListener(BCR_TOKEN_EVENT, (event) => {
+      this.tokens.ingestDetail(event.detail);
+      console.info(`${LOG_PREFIX} token received by content script`);
+    });
+    window.addEventListener('message', (event) => {
+      this.onBridgeMessage(event);
+    });
+    window.addEventListener('popstate', () => this.syncOverlay());
+
+    this.syncOverlay();
+    document.addEventListener('DOMContentLoaded', () => this.syncOverlay(), { once: true });
+    window.setInterval(() => this.watchNavigation(), NAV_POLL_MS);
+    console.info(`${LOG_PREFIX} content script ready`);
+  }
+
+  /** Mounts the overlay on regular pages; keeps the native player on /watch. */
+  private syncOverlay(): void {
+    if (isWatchPath(window.location.pathname)) {
+      this.overlay.unmount();
+    } else {
+      this.overlay.mount(mapCrPathToRoute(window.location.pathname));
+    }
+    this.lastHref = window.location.href;
+  }
+
+  private watchNavigation(): void {
+    if (window.location.href !== this.lastHref) {
+      this.syncOverlay();
+    } else if (!isWatchPath(window.location.pathname) && !this.overlay.isMounted()) {
+      this.overlay.mount(mapCrPathToRoute(window.location.pathname));
+    }
+  }
+
+  private onBridgeMessage(event: MessageEvent): void {
+    if (event.origin !== this.overlay.appOrigin || !isAppEnvelope(event.data)) {
+      return;
+    }
+    void this.dispatch(event.data, event.source);
+  }
+
+  private reply(source: MessageEventSource | null, message: ContentReply): void {
+    if (source) {
+      (source as Window).postMessage({ channel: BCR_CHANNEL, ...message }, this.overlay.appOrigin);
+    }
+  }
+
+  private async dispatch(envelope: AppEnvelope, source: MessageEventSource | null): Promise<void> {
+    switch (envelope.kind) {
+      case 'API_REQUEST': {
+        const token = await this.tokens.waitForToken();
+        if (!token) {
+          this.reply(source, {
+            kind: 'API_RESPONSE',
+            id: envelope.id,
+            result: err('Aucun jeton de session disponible. Rafraîchissez la page.'),
+          });
+          return;
+        }
+        try {
+          const data = await performCrRequest(envelope.payload, token);
+          this.reply(source, { kind: 'API_RESPONSE', id: envelope.id, result: ok(data) });
+        } catch (error) {
+          this.reply(source, {
+            kind: 'API_RESPONSE',
+            id: envelope.id,
+            result: err(toMessage(error)),
+          });
+        }
+        return;
+      }
+      case 'CHECK_TOKEN':
+        this.reply(source, {
+          kind: 'TOKEN_STATUS',
+          id: envelope.id,
+          status: this.tokens.getStatus(),
+        });
+        return;
+      case 'AUTH_REQUEST':
+        try {
+          const data = await passwordLogin(envelope.username, envelope.password);
+          this.tokens.ingestAuth(data);
+          this.reply(source, { kind: 'AUTH_RESPONSE', id: envelope.id, result: ok(data) });
+        } catch (error) {
+          this.reply(source, {
+            kind: 'AUTH_RESPONSE',
+            id: envelope.id,
+            result: err(toMessage(error)),
+          });
+        }
+        return;
+      case 'NAVIGATE':
+        this.reflectNavigation(envelope.path);
+        return;
+      case 'LOGOUT':
+        this.handleLogout();
+        return;
+    }
+  }
+
+  /** Asks the background worker to clear the Crunchyroll session, then reloads. */
+  private handleLogout(): void {
+    const reload = (): void => {
+      window.location.href = `${localePrefix()}/`;
+    };
+    try {
+      chrome.runtime.sendMessage({ type: 'BCR_LOGOUT' }, reload);
+    } catch {
+      reload();
+    }
+  }
+
+  /**
+   * Mirrors SPA navigation into the address bar. Watch links trigger a real
+   * top-level load so Crunchyroll's native (DRM-capable) player takes over.
+   */
+  private reflectNavigation(path: string): void {
+    const target = `${localePrefix()}${path}`;
+    if (isWatchPath(path)) {
+      window.location.href = target;
+      return;
+    }
+    if (target !== window.location.pathname) {
+      window.history.pushState({}, '', target);
+      this.lastHref = window.location.href;
+    }
+  }
+}
+
+new ContentApp().start();
