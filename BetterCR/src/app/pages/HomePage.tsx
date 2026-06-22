@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import type { Series } from '@core/models/content';
 import { getHomeFeed } from '@core/api/client';
 import { useAsync } from '@app/hooks/useAsync';
@@ -10,7 +10,7 @@ import { Top10Row } from '@app/components/Top10Row';
 import { GenreSection } from '@app/components/GenreSection';
 import { PosterCard } from '@app/components/PosterCard';
 import { SkeletonHero, SkeletonRow } from '@app/components/Skeletons';
-import { EmptyState, ErrorState } from '@app/components/StateViews';
+import { ErrorState } from '@app/components/StateViews';
 
 const TOP10_COUNT = 10;
 const GENRE_BACKDROPS = 8;
@@ -30,21 +30,20 @@ function HomeSkeleton(): React.JSX.Element {
 export function HomePage(): React.JSX.Element {
   const { go } = useRouter();
   const { t, lang } = useI18n();
-  const { data, error, loading } = useAsync(() => getHomeFeed(), [lang]);
+  const [retryKey, setRetryKey] = useState(0);
+  const { data, error, loading } = useAsync(() => getHomeFeed(), [lang, retryKey]);
 
   const openDetail = (series: Series): void => go({ page: 'detail', seriesId: series.id });
+  const retry = (): void => setRetryKey((key) => key + 1);
 
   if (loading) {
     return <HomeSkeleton />;
   }
-  if (error || !data) {
-    return <ErrorState message={error ?? 'Données indisponibles.'} />;
-  }
-  if (data.rows.length === 0) {
+  if (error || !data || data.rows.length === 0) {
     return (
-      <EmptyState
-        title={t('nf.title')}
-        detail="Connecte-toi à Crunchyroll pour charger le catalogue dans BetterCR."
+      <ErrorState
+        message={error ?? 'Catalogue momentanément indisponible. Réessayez.'}
+        onRetry={retry}
       />
     );
   }

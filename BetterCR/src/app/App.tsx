@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { bridge } from '@core/api/transport';
-import { delay } from '@shared/async';
 import { parseRoute, serializeRoute, type AppRoute } from '@shared/routing';
 import { RouterContext, type Router } from '@app/router';
 import { ProfileProvider } from '@app/profile';
@@ -18,8 +17,8 @@ import { SettingsPage } from '@app/pages/SettingsPage';
 import { AuthPage, GoodbyeOverlay } from '@app/pages/AuthPage';
 
 const GOODBYE_DURATION_MS = 2300;
-const TOKEN_WAIT_MS = 6000;
-const TOKEN_POLL_MS = 300;
+/** While shown the login page, keep re-checking so we auto-recover a session. */
+const GUEST_RECHECK_MS = 4000;
 
 type AuthState = 'checking' | 'authed' | 'guest';
 
@@ -121,29 +120,34 @@ export function App(): React.JSX.Element {
   const [auth, setAuth] = useState<AuthState>('checking');
   const [goodbye, setGoodbye] = useState(false);
 
-  // Gate: the user must be signed into Crunchyroll. Wait for the intercepted
-  // token; if none arrives, show the (mandatory) login page.
+  // Gate: the user must be signed into Crunchyroll. `checkToken` makes the
+  // content script proactively acquire a token from the session cookie, so a
+  // valid session is detected reliably (no spurious login screen). If none is
+  // found we show the login, but keep re-checking to auto-recover later.
   useEffect(() => {
     let cancelled = false;
-    const check = async (): Promise<void> => {
-      const deadline = Date.now() + TOKEN_WAIT_MS;
-      while (!cancelled && Date.now() < deadline) {
-        const status = await bridge.checkToken();
-        if (status.hasToken) {
-          if (!cancelled) {
-            setAuth('authed');
-          }
-          return;
-        }
-        await delay(TOKEN_POLL_MS);
+    let timer: number | undefined;
+    const tick = async (): Promise<void> => {
+      if (cancelled) {
+        return;
       }
-      if (!cancelled) {
-        setAuth('guest');
+      const status = await bridge.checkToken();
+      if (cancelled) {
+        return;
       }
+      if (status.hasToken) {
+        setAuth('authed');
+        return; // session found — stop polling
+      }
+      setAuth('guest');
+      timer = window.setTimeout(() => void tick(), GUEST_RECHECK_MS);
     };
-    void check();
+    void tick();
     return () => {
       cancelled = true;
+      if (timer !== undefined) {
+        clearTimeout(timer);
+      }
     };
   }, []);
 

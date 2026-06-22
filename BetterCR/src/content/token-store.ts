@@ -3,15 +3,11 @@
  * mirrors it to `chrome.storage.local` (so other tabs can reuse it), and
  * exposes a bounded wait used before proxied API calls.
  */
-import {
-  TOKEN_EXPIRY_MARGIN_MS,
-  TOKEN_STORAGE_KEY,
-  TOKEN_WAIT_INTERVAL_MS,
-  TOKEN_WAIT_TIMEOUT_MS,
-} from '@shared/config';
+import { TOKEN_EXPIRY_MARGIN_MS, TOKEN_STORAGE_KEY, TOKEN_WAIT_INTERVAL_MS } from '@shared/config';
 import { delay } from '@shared/async';
 import type { BcrTokenDetail } from '@shared/page-bridge';
 import type { AuthData, TokenStatus } from '@shared/messages';
+import { acquireTokenFromCookie } from './cookie-token';
 
 interface StoredToken {
   readonly token: string;
@@ -20,11 +16,18 @@ interface StoredToken {
   readonly profileId?: string;
 }
 
+/** Don't re-hit the cookie grant more often than this after a failure. */
+const ACQUIRE_DEBOUNCE_MS = 4000;
+/** Last-resort wait for passive interception when the cookie grant fails. */
+const PASSIVE_WAIT_MS = 2500;
+
 export class TokenStore {
   private token: string | null = null;
   private expiry = 0;
   private accountId: string | undefined;
   private profileId: string | undefined;
+  private acquiring: Promise<string | null> | null = null;
+  private lastAcquireFail = 0;
 
   /** Stores a token captured by the page interceptor. */
   ingestDetail(detail: BcrTokenDetail): void {
@@ -109,13 +112,50 @@ export class TokenStore {
     };
   }
 
-  /** Waits up to `timeoutMs` for a valid token, polling storage meanwhile. */
-  async waitForToken(timeoutMs: number = TOKEN_WAIT_TIMEOUT_MS): Promise<string | null> {
+  /**
+   * Guarantees a valid token if the user is signed in. Order of resolution:
+   *   1. in-memory token,
+   *   2. token cached in chrome.storage,
+   *   3. proactively acquired from the session cookie (`etp_rt_cookie` grant),
+   *   4. a short wait for a passively-intercepted token.
+   * Concurrent callers share a single acquisition; failures are debounced.
+   */
+  async ensureToken(): Promise<string | null> {
     if (this.isValid()) {
       return this.token;
     }
-    await this.loadFromStorage();
-    const deadline = Date.now() + timeoutMs;
+    if (await this.loadFromStorage()) {
+      return this.token;
+    }
+    if (Date.now() - this.lastAcquireFail < ACQUIRE_DEBOUNCE_MS) {
+      return this.passiveWait();
+    }
+    this.acquiring ??= this.acquire();
+    return this.acquiring;
+  }
+
+  /** Backwards-compatible alias. */
+  waitForToken(): Promise<string | null> {
+    return this.ensureToken();
+  }
+
+  private async acquire(): Promise<string | null> {
+    try {
+      const data = await acquireTokenFromCookie();
+      if (data) {
+        this.ingestAuth(data);
+        return this.token;
+      }
+      this.lastAcquireFail = Date.now();
+      return this.passiveWait();
+    } finally {
+      this.acquiring = null;
+    }
+  }
+
+  /** Waits briefly for a token intercepted from Crunchyroll's own requests. */
+  private async passiveWait(): Promise<string | null> {
+    const deadline = Date.now() + PASSIVE_WAIT_MS;
     while (!this.isValid() && Date.now() < deadline) {
       await delay(TOKEN_WAIT_INTERVAL_MS);
       await this.loadFromStorage();

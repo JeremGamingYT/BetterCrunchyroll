@@ -13,7 +13,7 @@ import {
   profileSchema,
   seasonSchema,
 } from '@core/schemas/crunchyroll';
-import { delay } from '@shared/async';
+import { delay, retryAsync } from '@shared/async';
 import {
   cmsSeriesToDetail,
   episodeToModel,
@@ -140,7 +140,7 @@ export async function getSeasonEpisodes(seasonId: string): Promise<Episode[]> {
  * response shape is stable) keeps the home page robust regardless of the
  * under-documented `home_feed` endpoint, which can be layered in later.
  */
-export async function getHomeFeed(): Promise<HomeFeed> {
+async function loadHomeFeed(): Promise<HomeFeed> {
   const [popular, recent, dubbed] = await Promise.all([
     browseSeries({ sort: 'popularity', n: 24 }).catch(() => []),
     browseSeries({ sort: 'newly_added', n: 24 }).catch(() => []),
@@ -162,6 +162,11 @@ export async function getHomeFeed(): Promise<HomeFeed> {
   if (dubbed.length > 0) rows.push({ id: 'dubbed', titleKey: 'row.vf', items: dubbed });
 
   return { hero: popular.slice(0, HERO_COUNT), rows };
+}
+
+export async function getHomeFeed(): Promise<HomeFeed> {
+  // Retry while empty — usually a transient token/race on first paint.
+  return retryAsync(loadHomeFeed, 3, 800, (feed) => feed.rows.length === 0);
 }
 
 // ───────────────────────── Account-scoped helpers ─────────────────────────

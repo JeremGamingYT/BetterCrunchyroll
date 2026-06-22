@@ -53,7 +53,9 @@ class ContentApp {
       return;
     }
     injectPageScript(INJECTED_SCRIPT_PATH);
-    void this.tokens.loadFromStorage();
+    // Proactively make a session token available (cookie grant) so the app
+    // never queries before authentication is ready.
+    void this.tokens.ensureToken();
 
     window.addEventListener(BCR_TOKEN_EVENT, (event) => {
       this.tokens.ingestDetail(event.detail);
@@ -104,7 +106,7 @@ class ContentApp {
   private async dispatch(envelope: AppEnvelope, source: MessageEventSource | null): Promise<void> {
     switch (envelope.kind) {
       case 'API_REQUEST': {
-        const token = await this.tokens.waitForToken();
+        const token = await this.tokens.ensureToken();
         if (!token) {
           this.reply(source, {
             kind: 'API_RESPONSE',
@@ -126,6 +128,9 @@ class ContentApp {
         return;
       }
       case 'CHECK_TOKEN':
+        // Ensure a token (cookie grant) before reporting, so the auth gate
+        // reliably detects an existing session instead of showing the login.
+        await this.tokens.ensureToken();
         this.reply(source, {
           kind: 'TOKEN_STATUS',
           id: envelope.id,

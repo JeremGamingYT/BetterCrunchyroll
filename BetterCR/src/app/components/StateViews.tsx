@@ -20,10 +20,16 @@ function CenteredState({ title, detail, children }: MessageStateProps): React.JS
   );
 }
 
-export function ErrorState({ message }: { readonly message: string }): React.JSX.Element {
+export function ErrorState({
+  message,
+  onRetry,
+}: {
+  readonly message: string;
+  readonly onRetry?: () => void;
+}): React.JSX.Element {
   return (
     <CenteredState title="Impossible de charger le contenu" detail={message}>
-      <button className="btn btn-glass" onClick={() => window.location.reload()}>
+      <button className="btn btn-glass" onClick={onRetry ?? (() => window.location.reload())}>
         <Icon name="rew" size={16} /> Réessayer
       </button>
     </CenteredState>
