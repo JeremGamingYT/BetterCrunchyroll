@@ -81,6 +81,16 @@ src/
 
 ## Journal des versions
 
+### v1.2.1
+
+- 🔑 **Statistiques & « Continuer à regarder » réparées à la racine.** L'`account_id`
+  nécessaire aux requêtes liées au compte (historique, watchlist, stats) n'était pas
+  toujours résolu : un token chargé sans `account_id` (interception passive / entrée
+  persistée) court-circuitait les appels **sans même les envoyer** (d'où le « 0 partout »).
+  Il est désormais **décodé directement depuis le JWT du token** (`scopes.cr.acc_id`), donc
+  toujours disponible dès qu'une session existe — les requêtes partent enfin et les chiffres
+  réels s'affichent.
+
 ### v1.2.0
 
 - 🔗 **Liens du pied de page réparés** : Open-source/GitHub, FAQ, **État des services**

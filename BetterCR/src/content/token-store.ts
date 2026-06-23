@@ -16,6 +16,46 @@ interface StoredToken {
   readonly profileId?: string;
 }
 
+interface JwtPayload {
+  readonly account_id?: string;
+  readonly etp_user_id?: string;
+  readonly profile_id?: string;
+  readonly sub?: string;
+  readonly scopes?: { readonly cr?: { readonly acc_id?: string } };
+}
+
+/** Decodes a base64url JWT segment to its JSON payload. */
+function decodeJwtPayload(token: string): JwtPayload | null {
+  const segment = token.split('.')[1];
+  if (!segment) {
+    return null;
+  }
+  try {
+    const b64 = segment.replace(/-/g, '+').replace(/_/g, '/');
+    const padded = b64 + '==='.slice((b64.length + 3) % 4);
+    return JSON.parse(atob(padded)) as JwtPayload;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Extracts the account UUID from a Crunchyroll access token. The grant response
+ * usually carries `account_id`, but if it doesn't (passive interception, a
+ * persisted legacy token, …) the JWT itself always does — so account-scoped
+ * calls (watch-history, stats, watchlist) never silently no-op.
+ */
+function accountFromJwt(token: string): string | undefined {
+  const payload = decodeJwtPayload(token);
+  return (
+    payload?.scopes?.cr?.acc_id ??
+    payload?.account_id ??
+    payload?.etp_user_id ??
+    payload?.sub ??
+    undefined
+  );
+}
+
 /** Don't re-hit the cookie grant more often than this after a failure. */
 const ACQUIRE_DEBOUNCE_MS = 4000;
 /** Last-resort wait for passive interception when the cookie grant fails. */
@@ -57,7 +97,8 @@ export class TokenStore {
   ): void {
     this.token = token;
     this.expiry = expiry;
-    this.accountId = accountId;
+    // Fall back to the id embedded in the JWT when the grant omits it.
+    this.accountId = accountId ?? accountFromJwt(token);
     this.profileId = profileId;
     void this.persist();
   }
@@ -86,7 +127,8 @@ export class TokenStore {
       if (stored && Date.now() < stored.expiry) {
         this.token = stored.token;
         this.expiry = stored.expiry;
-        this.accountId = stored.accountId;
+        // Heal legacy/poisoned entries that were persisted without an account id.
+        this.accountId = stored.accountId ?? accountFromJwt(stored.token);
         this.profileId = stored.profileId;
         return true;
       }
