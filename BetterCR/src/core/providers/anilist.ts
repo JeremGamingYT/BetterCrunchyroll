@@ -54,6 +54,11 @@ async function request(
     headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify({ query, variables }),
   });
+  // Signal unavailability (rate-limit / server error) so the provider registry
+  // can fail over to MAL/Kitsu instead of treating it as "no match".
+  if (response.status === 429 || response.status >= 500) {
+    throw new Error(`anilist_${String(response.status)}`);
+  }
   if (!response.ok) {
     return null;
   }
@@ -80,15 +85,12 @@ function toMeta(media: AniListMedia): ExternalMeta {
 }
 
 export const fetchAniListMeta: MetaProvider = async (title, year) => {
-  try {
-    // Prefer a year-scoped match for accuracy, then fall back to title-only.
-    const media =
-      (year ? await request(QUERY, { search: title, year }) : null) ??
-      (await request(FALLBACK_QUERY, { search: title }));
-    return media ? toMeta(media) : null;
-  } catch {
-    return null;
-  }
+  // Prefer a year-scoped match for accuracy, then fall back to title-only.
+  // Transport errors (rate-limit/5xx) propagate so the registry fails over.
+  const media =
+    (year ? await request(QUERY, { search: title, year }) : null) ??
+    (await request(FALLBACK_QUERY, { search: title }));
+  return media ? toMeta(media) : null;
 };
 
 const TRENDING_QUERY = `query ($n: Int) {

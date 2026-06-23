@@ -81,7 +81,7 @@ src/
 │  ├─ hooks/ · lib/ · styles/  (CSS extrait verbatim du design d'origine)
 ├─ core/       Couche API (sans dépendance au DOM)
 │  ├─ api/          transport postMessage · client CR typé · comments · notifications · erreurs
-│  ├─ providers/    AniList (méta, trending, sorties à venir)
+│  ├─ providers/    Enrichissement avec bascule auto : AniList → MyAnimeList (Jikan) → Kitsu
 │  ├─ schemas/      validation zod des réponses CR (tolérante)
 │  ├─ mappers/ · models/   DTO → modèles de vue
 ├─ content/    content-script (overlay, pont, token store, proxy API, auth, watch-skin)
@@ -101,6 +101,16 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 - ESLint (typescript-eslint) + Prettier, alias de chemins (`@app`, `@core`, `@shared`…).
 
 ## Journal des versions
+
+### v1.7.0
+
+- 📊 **Statistiques enrichies** (Profil) : **heures regardées ce mois-ci**, **genres préférés**
+  (calculés depuis tes séries les plus vues), **série de jours d'affilée** (*streak*) et
+  **Top 10 de tes séries** (cliquables).
+- 🌐 **Secours multi-API intelligent** : si **AniList** est indisponible ou limité (429), BetterCR
+  bascule automatiquement vers **MyAnimeList (Jikan)** puis **Kitsu** pour l'enrichissement (méta,
+  jaquettes, scores, genres), les tendances et les sorties à venir. Un fournisseur en échec est
+  **mis au banc** quelques instants (puis re-testé), et les échecs ne sont jamais mis en cache.
 
 ### v1.6.0
 

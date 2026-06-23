@@ -1,5 +1,11 @@
 import type { CSSProperties } from 'react';
-import { getWatchHistory, getWatchlist, getWatchlistTotal, getWatchStats } from '@core/api/client';
+import {
+  getDetailedStats,
+  getWatchHistory,
+  getWatchlist,
+  getWatchlistTotal,
+} from '@core/api/client';
+import { fetchExternalMeta } from '@core/providers';
 import { retryAsync } from '@shared/async';
 import { useAsync } from '@app/hooks/useAsync';
 import { useRouter } from '@app/router';
@@ -22,7 +28,7 @@ export function SettingsPage(): React.JSX.Element {
   const statsState = useAsync(
     () =>
       retryAsync(
-        () => getWatchStats(),
+        () => getDetailedStats(),
         STATS_RETRIES,
         STATS_RETRY_MS,
         (s) => s.episodes === 0,
@@ -38,6 +44,30 @@ export function SettingsPage(): React.JSX.Element {
   const favorites = favoritesState.data ?? [];
   const favoritesTotal = favoritesTotalState.data ?? 0;
   const recent = recentState.data ?? [];
+  const topSeries = watch?.topSeries ?? [];
+
+  // Favourite genres: enrich the most-watched series (via the multi-API
+  // provider chain) and tally their genres.
+  const topKey = topSeries.map((series) => series.id).join(',');
+  const genresState = useAsync(async () => {
+    if (topSeries.length === 0) {
+      return [] as ReadonlyArray<{ name: string; count: number }>;
+    }
+    const metas = await Promise.all(
+      topSeries.slice(0, 8).map((series) => fetchExternalMeta(series.title).catch(() => null)),
+    );
+    const tally = new Map<string, number>();
+    for (const meta of metas) {
+      for (const genre of meta?.genres ?? []) {
+        tally.set(genre, (tally.get(genre) ?? 0) + 1);
+      }
+    }
+    return [...tally.entries()]
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 6);
+  }, [topKey]);
+  const genres = genresState.data ?? [];
 
   const vf = favorites.filter((series) => series.dub).length;
   const vostfr = favorites.filter((series) => series.sub && !series.dub).length;
@@ -64,6 +94,18 @@ export function SettingsPage(): React.JSX.Element {
       icon: 'clock',
       value: watch?.hours ?? 0,
       label: t('set.stat.hours'),
+      loading: statsState.loading,
+    },
+    {
+      icon: 'chart',
+      value: watch?.hoursThisMonth ?? 0,
+      label: t('set.stat.month'),
+      loading: statsState.loading,
+    },
+    {
+      icon: 'flame',
+      value: watch?.streak ?? 0,
+      label: t('set.stat.streak'),
       loading: statsState.loading,
     },
     {
@@ -155,6 +197,45 @@ export function SettingsPage(): React.JSX.Element {
                 {t('set.vostfr')} · {fmt(vostfr)} ({100 - vfPct}%)
               </span>
             </div>
+          </div>
+        </section>
+      )}
+
+      {genres.length > 0 && (
+        <section className="set-section">
+          <h2 className="set-h2">
+            <span className="set-h2-tick" />
+            {t('set.genresTitle')}
+          </h2>
+          <div className="set-genres">
+            {genres.map((genre) => (
+              <span key={genre.name} className="set-genre">
+                {genre.name}
+                <i>{genre.count}</i>
+              </span>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {topSeries.length > 0 && (
+        <section className="set-section">
+          <h2 className="set-h2">
+            <span className="set-h2-tick" />
+            {t('set.topTitle')}
+          </h2>
+          <div className="set-top">
+            {topSeries.map((series, index) => (
+              <button
+                key={series.id}
+                className="set-top-row"
+                onClick={() => go({ page: 'detail', seriesId: series.id })}
+              >
+                <span className="set-top-rank">{index + 1}</span>
+                <span className="set-top-title">{series.title}</span>
+                <span className="set-top-count">{t('common.epShort', { n: series.count })}</span>
+              </button>
+            ))}
           </div>
         </section>
       )}

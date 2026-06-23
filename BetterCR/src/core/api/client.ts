@@ -804,3 +804,146 @@ export async function getWatchStats(): Promise<WatchStats> {
     return EMPTY_STATS;
   }
 }
+
+export interface TopSeries {
+  readonly id: string;
+  readonly title: string;
+  readonly count: number;
+}
+
+export interface DetailedStats extends WatchStats {
+  /** Hours watched within the current calendar month. */
+  readonly hoursThisMonth: number;
+  /** Consecutive days (up to today/yesterday) with at least one episode watched. */
+  readonly streak: number;
+  /** Most-watched series by episode count (from recent history), top first. */
+  readonly topSeries: readonly TopSeries[];
+}
+
+const EMPTY_DETAILED: DetailedStats = {
+  ...EMPTY_STATS,
+  hoursThisMonth: 0,
+  streak: 0,
+  topSeries: [],
+};
+/** History depth scanned for the rich stats (bounded; recent activity). */
+const STATS_DETAIL_PAGES = 8;
+const TOP_SERIES_COUNT = 10;
+
+/** Local day key (YYYY-MM-DD) for streak grouping. */
+function dayKey(date: Date): string {
+  return `${String(date.getFullYear())}-${String(date.getMonth())}-${String(date.getDate())}`;
+}
+
+/** Length of the consecutive-day streak ending today (or yesterday) in `days`. */
+function streakLength(days: ReadonlySet<string>): number {
+  if (days.size === 0) {
+    return 0;
+  }
+  const cursor = new Date();
+  cursor.setHours(0, 0, 0, 0);
+  if (!days.has(dayKey(cursor))) {
+    // Allow the streak to still count if the user simply hasn't watched yet today.
+    cursor.setDate(cursor.getDate() - 1);
+    if (!days.has(dayKey(cursor))) {
+      return 0;
+    }
+  }
+  let count = 0;
+  while (days.has(dayKey(cursor))) {
+    count += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return count;
+}
+
+/**
+ * Rich watch statistics computed from a bounded scan of recent history:
+ * hours this month, the current day-streak, and the most-watched series.
+ * Base totals (episodes/hours/series) mirror {@link getWatchStats}.
+ */
+export async function getDetailedStats(): Promise<DetailedStats> {
+  const account = await getAccountId();
+  if (!account) {
+    return EMPTY_DETAILED;
+  }
+  try {
+    const firstRaw = await getJson(`/content/v2/${account}/watch-history`, {
+      page_size: WATCH_HISTORY_PAGE,
+    });
+    const firstItems = parseEach(watchHistoryItemSchema, firstRaw);
+    const episodes = readTotal(firstRaw) ?? firstItems.length;
+    if (episodes === 0) {
+      return EMPTY_DETAILED;
+    }
+
+    const pages = Math.min(STATS_DETAIL_PAGES, Math.ceil(episodes / WATCH_HISTORY_PAGE));
+    const rest =
+      pages > 1
+        ? await Promise.all(
+            Array.from({ length: pages - 1 }, (_, index) =>
+              fetchWatchHistoryItems(WATCH_HISTORY_PAGE, index + 1),
+            ),
+          )
+        : [];
+    const all = [firstItems, ...rest].flat();
+
+    const now = new Date();
+    const seriesIds = new Set<string>();
+    const days = new Set<string>();
+    const perSeries = new Map<string, { title: string; count: number }>();
+    let durationMs = 0;
+    let durationCount = 0;
+    let monthMs = 0;
+
+    for (const item of all) {
+      const meta = item.panel?.episode_metadata;
+      const seriesId = item.parent_id ?? meta?.series_id;
+      const ms = typeof meta?.duration_ms === 'number' ? meta.duration_ms : 0;
+      if (ms > 0) {
+        durationMs += ms;
+        durationCount += 1;
+      }
+      if (seriesId) {
+        seriesIds.add(seriesId);
+        const title = meta?.series_title ?? item.panel?.series_title ?? '';
+        const entry = perSeries.get(seriesId) ?? { title, count: 0 };
+        entry.count += 1;
+        if (!entry.title && title) {
+          entry.title = title;
+        }
+        perSeries.set(seriesId, entry);
+      }
+      if (item.date_played) {
+        const when = new Date(item.date_played);
+        if (!Number.isNaN(when.getTime())) {
+          days.add(dayKey(when));
+          if (when.getFullYear() === now.getFullYear() && when.getMonth() === now.getMonth()) {
+            monthMs += ms > 0 ? ms : MINUTES_PER_EPISODE * 60_000;
+          }
+        }
+      }
+    }
+
+    const avgMinutes =
+      durationCount > 0 && durationMs > 0
+        ? durationMs / durationCount / 60_000
+        : MINUTES_PER_EPISODE;
+    const topSeries = [...perSeries.entries()]
+      .map(([id, value]) => ({ id, title: value.title, count: value.count }))
+      .filter((entry) => entry.title.length > 0)
+      .sort((a, b) => b.count - a.count)
+      .slice(0, TOP_SERIES_COUNT);
+
+    return {
+      episodes,
+      hours: Math.round((episodes * avgMinutes) / 60),
+      series: seriesIds.size,
+      hoursThisMonth: Math.round(monthMs / 3_600_000),
+      streak: streakLength(days),
+      topSeries,
+    };
+  } catch {
+    return EMPTY_DETAILED;
+  }
+}

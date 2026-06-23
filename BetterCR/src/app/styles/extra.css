@@ -896,3 +896,83 @@ button.notif-item:hover {
   padding: 30px 0;
   text-align: center;
 }
+
+/* ── Stats: favourite genres + top series ── */
+.set-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.set-genre {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--txt, #f4f4f6);
+}
+.set-genre i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--acc, #f47521) 22%, transparent);
+  color: var(--acc, #f47521);
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 800;
+}
+.set-top {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.set-top-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.07));
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--txt, #f4f4f6);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+.set-top-row:hover {
+  border-color: color-mix(in srgb, var(--acc, #f47521) 45%, transparent);
+  background: rgba(255, 255, 255, 0.05);
+}
+.set-top-rank {
+  flex: none;
+  width: 26px;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--acc, #f47521);
+  text-align: center;
+}
+.set-top-title {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.set-top-count {
+  flex: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--mut, #9aa0ac);
+}
