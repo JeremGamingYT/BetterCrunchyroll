@@ -115,11 +115,14 @@ appels vont **directement** à Crunchyroll (avec vos cookies) et à AniList.
 - [x] Anti-spoiler · Simulcast trié · Enrichissement AniList
 - [x] Continuer à regarder · Parcourir par genre · Connexion/déconnexion réelles
 - [x] **Page Lecteur BetterCR** autour du lecteur natif (infos · épisodes · *À suivre*)
-- [x] **Commentaires** par animé (avatars · réponses · édition/suppression · temps réel · filtre FR/EN)
+- [x] **Commentaires par épisode** (avatars · réponses · édition/suppression · temps réel · filtre FR/EN)
+- [x] **Anti-spoiler des commentaires** · expiration 30 j · **éviction intelligente**
+- [x] **Modération communautaire** (signalement · score de confiance · auto-hide · shadow-ban · cooldown · mots masqués)
 - [x] **Centre de notifications** (réponses + nouveaux épisodes du jour) · **Sorties à venir** (AniList)
 - [x] **Découvertes** (recommandations personnalisées) · **Recherche avancée** (genre · saison · format · VF/VOSTFR)
+- [x] **Stats enrichies** (heures/mois · genres · streak · Top 10) · **Secours multi-API** (AniList → MAL → Kitsu)
 - [ ] Contrôles custom du lecteur (skip intro/outro · sync playhead)
-- [ ] Autres fournisseurs (MAL, Kitsu) · Publication sur le Chrome Web Store
+- [ ] Publication sur le Chrome Web Store
 
 ## ⚠️ Avertissement
 
