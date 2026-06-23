@@ -32,4 +32,4 @@ export const TOKEN_STORAGE_KEY = 'bcr_token' as const;
  * hide the watch-page comments. After deploying `server/` to Vercel, set this
  * to e.g. `https://bettercr-comments.vercel.app/api/comments`.
  */
-export const COMMENTS_API: string = '';
+export const COMMENTS_API: string = 'https://better-crunchyroll.vercel.app/api/comments';

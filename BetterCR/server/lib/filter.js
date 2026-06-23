@@ -1,0 +1,64 @@
+/**
+ * Bilingual (FR/EN) profanity masker for BetterCR comments.
+ *
+ * Matching is whole-token after aggressive normalization — lowercased,
+ * accent-stripped, leetspeak folded (4→a, 3→e, 0→o, …), and repeated letters
+ * collapsed (fuuuck→fuck) — so common spelling tricks and abbreviations are
+ * caught without the false positives of naive substring matching.
+ */
+
+// FR + EN insults, slurs, vulgarities and common chat abbreviations.
+const WORDS = [
+  // ── Français ──
+  'merde', 'merdique', 'putain', 'putin', 'ptn', 'pute', 'putes', 'putain de',
+  'con', 'cons', 'conne', 'connes', 'connard', 'connards', 'connasse', 'connards',
+  'salaud', 'salauds', 'salop', 'salope', 'salopes', 'salopard', 'pétasse', 'petasse',
+  'garce', 'grognasse', 'enculé', 'encule', 'encules', 'enculer', 'enculés', 'encule',
+  'niquer', 'nique', 'niqué', 'niquer ta mère', 'ntm', 'fdp', 'filsdepute', 'filsdeput',
+  'batard', 'batards', 'bordel', 'chier', 'chiant', 'chiante', 'chiotte', 'chiottes',
+  'couille', 'couilles', 'bite', 'bites', 'burne', 'burnes', 'cul', 'foutre', 'foutu',
+  'pédé', 'pede', 'pd', 'tapette', 'tarlouze', 'gouine', 'pétasse',
+  'négro', 'negro', 'bougnoule', 'bougnoul', 'youpin', 'bicot', 'bamboula',
+  'abruti', 'abrutie', 'débile', 'debile', 'crétin', 'cretin', 'cretine', 'imbécile',
+  'imbecile', 'ducon', 'trouduc', 'enfoiré', 'enfoire', 'enfoirés', 'branleur', 'branler',
+  'branlette', 'branle', 'tg', 'tagueule', 'tagle', 'ftg', 'mongol', 'mongolien',
+  'attardé', 'attarde', 'retardé', 'retarde', 'pisser', 'chiasse', 'merdeux', 'tafiole',
+  'pouffiasse', 'pouffe', 'salopette de',
+  // ── English ──
+  'fuck', 'fucking', 'fucked', 'fucker', 'fuckers', 'fck', 'fk', 'fuk', 'fuckin',
+  'motherfucker', 'motherfucking', 'mf', 'shit', 'shite', 'shitty', 'bullshit',
+  'bitch', 'bitches', 'bitching', 'asshole', 'ass', 'asses', 'arse', 'arsehole',
+  'bastard', 'bastards', 'cunt', 'cunts', 'dick', 'dickhead', 'dicks', 'pussy', 'pussies',
+  'slut', 'sluts', 'whore', 'whores', 'hoe', 'nigger', 'nigga', 'niggas', 'niggers',
+  'faggot', 'faggots', 'fag', 'fags', 'retard', 'retarded', 'retards', 'wanker', 'wank',
+  'twat', 'twats', 'bollocks', 'bugger', 'prick', 'pricks', 'cock', 'cocks', 'cocksucker',
+  'jackass', 'douche', 'douchebag', 'jerkoff', 'dumbass', 'dumbfuck', 'goddamn', 'damn',
+  'spastic', 'spaz', 'chink', 'spic', 'kike', 'wetback', 'tranny',
+  // ── Abréviations / chat ──
+  'wtf', 'stfu', 'gtfo', 'fu', 'fck', 'omfg', 'ffs', 'lmfao', 'pmsl', 'stff',
+  'vtff', 'ntr', 'vdm', 'jpp',
+];
+
+const LEET = { '4': 'a', '@': 'a', '3': 'e', '0': 'o', '1': 'i', '!': 'i', '|': 'i', '5': 's', '$': 's', '7': 't', '8': 'b', '9': 'g' };
+
+const normalize = (word) =>
+  word
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[4@30 1!|5$789]/g, (c) => LEET[c] ?? c)
+    .replace(/[^a-z]/g, '')
+    .replace(/(.)\1+/g, '$1');
+
+const BANNED = new Set(WORDS.map(normalize).filter(Boolean));
+
+/** Replaces every banned word (token-wise) with bullets, preserving length. */
+export function maskProfanity(text) {
+  return String(text ?? '').replace(/\S+/g, (token) => {
+    const normalized = normalize(token);
+    if (normalized && BANNED.has(normalized)) {
+      return token.replace(/\S/g, '•');
+    }
+    return token;
+  });
+}
