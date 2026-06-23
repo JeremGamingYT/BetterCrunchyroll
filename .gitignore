@@ -6,3 +6,7 @@
 !/BetterCR/
 !/README.md
 !/README.en.md
+# Docs: expose only the README screenshots, hide the private API notes.
+!/docs/
+/docs/*
+!/docs/screenshots/

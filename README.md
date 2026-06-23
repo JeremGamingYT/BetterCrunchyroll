@@ -30,6 +30,18 @@ Crunchyroll** et enrichie par **AniList**.
 
 ---
 
+## 🖼️ Aperçu
+
+<div align="center">
+
+<img src="docs/screenshots/home-hero.png" width="100%" alt="Accueil BetterCR — héro et rangées" />
+
+<img src="docs/screenshots/home-genres.png" width="100%" alt="Top 10 de la semaine et parcourir par genre" />
+
+</div>
+
+---
+
 ## 🎬 C'est quoi ?
 
 **BetterCR** prend le contrôle de l'interface de Crunchyroll et la remplace par un design

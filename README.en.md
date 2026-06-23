@@ -30,6 +30,18 @@ and enriched with **AniList**.
 
 ---
 
+## 🖼️ Preview
+
+<div align="center">
+
+<img src="docs/screenshots/home-hero.png" width="100%" alt="BetterCR home — hero and rows" />
+
+<img src="docs/screenshots/home-genres.png" width="100%" alt="Weekly Top 10 and browse by genre" />
+
+</div>
+
+---
+
 ## 🎬 What is it?
 
 **BetterCR** takes over Crunchyroll's UI and replaces it with a rethought design — without
