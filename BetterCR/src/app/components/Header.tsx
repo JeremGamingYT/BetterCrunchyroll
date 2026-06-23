@@ -17,6 +17,7 @@ interface NavItem {
 
 const NAV: readonly NavItem[] = [
   { key: 'nav.home', page: 'home' },
+  { key: 'nav.discover', page: 'discover' },
   { key: 'nav.series', page: 'series' },
   { key: 'nav.films', page: 'films' },
   { key: 'nav.simulcast', page: 'simulcast' },
@@ -27,11 +28,10 @@ const NAV: readonly NavItem[] = [
 const SCROLL_THRESHOLD_PX = 30;
 
 export interface HeaderProps {
-  readonly onSearch: () => void;
   readonly onLogout: () => void;
 }
 
-export function Header({ onSearch, onLogout }: HeaderProps): React.JSX.Element {
+export function Header({ onLogout }: HeaderProps): React.JSX.Element {
   const { route, go } = useRouter();
   const { t } = useI18n();
   const { profile } = useProfile();
@@ -169,7 +169,11 @@ export function Header({ onSearch, onLogout }: HeaderProps): React.JSX.Element {
           ))}
         </nav>
         <div className="hdr-right" ref={menuRef}>
-          <button className="hdr-icon" onClick={onSearch} aria-label={t('search.placeholder')}>
+          <button
+            className="hdr-icon"
+            onClick={() => go({ page: 'search' })}
+            aria-label={t('search.title')}
+          >
             <Icon name="search" size={19} />
           </button>
           <div className="hdr-notif" ref={notifRef}>

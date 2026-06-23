@@ -117,6 +117,7 @@ appels vont **directement** à Crunchyroll (avec vos cookies) et à AniList.
 - [x] **Page Lecteur BetterCR** autour du lecteur natif (infos · épisodes · *À suivre*)
 - [x] **Commentaires** par animé (avatars · réponses · édition/suppression · temps réel · filtre FR/EN)
 - [x] **Centre de notifications** (réponses + nouveaux épisodes du jour) · **Sorties à venir** (AniList)
+- [x] **Découvertes** (recommandations personnalisées) · **Recherche avancée** (genre · saison · format · VF/VOSTFR)
 - [ ] Contrôles custom du lecteur (skip intro/outro · sync playhead)
 - [ ] Autres fournisseurs (MAL, Kitsu) · Publication sur le Chrome Web Store
 

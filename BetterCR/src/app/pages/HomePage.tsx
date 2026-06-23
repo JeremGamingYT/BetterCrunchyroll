@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
 import type { ContinueItem, Series } from '@core/models/content';
-import { getContinueWatching, getHomeFeed } from '@core/api/client';
+import { browseSeries, getContinueWatching, getHomeFeed } from '@core/api/client';
 import { bridge } from '@core/api/transport';
 import { retryAsync } from '@shared/async';
 import { useAsync } from '@app/hooks/useAsync';
@@ -16,6 +16,25 @@ import { SkeletonHero, SkeletonRow } from '@app/components/Skeletons';
 import { ErrorState } from '@app/components/StateViews';
 
 const TOP10_COUNT = 10;
+
+/** Home teaser for the Découverte page (a "voir plus" row of off-the-beaten-path titles). */
+function DiscoverTeaser(): React.JSX.Element | null {
+  const { go } = useRouter();
+  const { t } = useI18n();
+  const { data } = useAsync(() => browseSeries({ sort: 'popularity', n: 20, start: 70 }), []);
+  const items = data ?? [];
+  if (items.length === 0) {
+    return null;
+  }
+  const open = (series: Series): void => go({ page: 'detail', seriesId: series.id });
+  return (
+    <Row title={t('disc.teaser')} sub={t('disc.teaser.sub')} onAll={() => go({ page: 'discover' })}>
+      {items.map((series, index) => (
+        <PosterCard key={series.id} anime={series} index={index} onOpen={open} onPlay={open} />
+      ))}
+    </Row>
+  );
+}
 
 function HomeSkeleton(): React.JSX.Element {
   return (
@@ -97,6 +116,7 @@ export function HomePage(): React.JSX.Element {
             </Row>
             {index === 0 && top10.length >= 5 && <Top10Row items={top10} onOpen={openDetail} />}
             {index === 0 && <GenreSection />}
+            {index === 0 && <DiscoverTeaser />}
           </Fragment>
         ))}
       </div>

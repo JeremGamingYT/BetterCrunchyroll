@@ -108,6 +108,8 @@ export interface BrowseOptions {
   readonly isSubbed?: boolean;
   /** Genre/category slug(s), e.g. `romance`. */
   readonly categories?: string;
+  /** Season tag, e.g. `fall-2024`. */
+  readonly seasonalTag?: string;
 }
 
 export async function browseSeries(options: BrowseOptions = {}): Promise<Series[]> {
@@ -121,9 +123,24 @@ export async function browseSeries(options: BrowseOptions = {}): Promise<Series[
   if (options.isDubbed !== undefined) query.is_dubbed = options.isDubbed;
   if (options.isSubbed !== undefined) query.is_subbed = options.isSubbed;
   if (options.categories !== undefined) query.categories = options.categories;
+  if (options.seasonalTag !== undefined) query.seasonal_tag = options.seasonalTag;
 
   const raw = await getJson('/content/v2/discover/browse', query);
   return parseEach(panelSchema, raw).map(panelToSeries);
+}
+
+/** Series similar to the given one (account-scoped recommendation). */
+export async function getSimilar(seriesId: string, n = 20): Promise<Series[]> {
+  const account = await getAccountId();
+  if (!account || !seriesId) {
+    return [];
+  }
+  try {
+    const raw = await getJson(`/content/v2/discover/${account}/similar_to/${seriesId}`, { n });
+    return parseEach(panelSchema, raw).map(panelToSeries);
+  } catch {
+    return [];
+  }
 }
 
 /** Discover genres/categories with real artwork (cached briefly). */

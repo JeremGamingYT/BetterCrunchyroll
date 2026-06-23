@@ -5,7 +5,6 @@ import { RouterContext, type Router } from '@app/router';
 import { ProfileProvider } from '@app/profile';
 import { Header } from '@app/components/Header';
 import { Footer } from '@app/components/Footer';
-import { SearchOverlay } from '@app/components/SearchOverlay';
 import { TweaksPanel } from '@app/tweaks/TweaksPanel';
 import { useTweaks, type TweaksController } from '@app/tweaks/useTweaks';
 import { HomePage } from '@app/pages/HomePage';
@@ -17,6 +16,8 @@ import { SettingsPage } from '@app/pages/SettingsPage';
 import { CategoryPage } from '@app/pages/CategoryPage';
 import { WatchPage } from '@app/pages/WatchPage';
 import { UpcomingPage } from '@app/pages/UpcomingPage';
+import { DiscoverPage } from '@app/pages/DiscoverPage';
+import { SearchPage } from '@app/pages/SearchPage';
 import { AuthPage, GoodbyeOverlay } from '@app/pages/AuthPage';
 
 const GOODBYE_DURATION_MS = 2300;
@@ -48,6 +49,10 @@ function renderPage(route: AppRoute): React.JSX.Element {
       return <WatchlistPage />;
     case 'upcoming':
       return <UpcomingPage />;
+    case 'discover':
+      return <DiscoverPage />;
+    case 'search':
+      return <SearchPage />;
     case 'settings':
       return <SettingsPage />;
     case 'category':
@@ -84,7 +89,6 @@ interface AuthedAppProps {
 
 function AuthedApp({ tweaks, goodbye, onLogout }: AuthedAppProps): React.JSX.Element {
   const [route, setRoute] = useState<AppRoute>(() => parseRoute(window.location.hash));
-  const [searchOpen, setSearchOpen] = useState(false);
   const [transitionKey, setTransitionKey] = useState(0);
 
   const go = useCallback((next: AppRoute) => {
@@ -109,12 +113,11 @@ function AuthedApp({ tweaks, goodbye, onLogout }: AuthedAppProps): React.JSX.Ele
   return (
     <ProfileProvider>
       <RouterContext.Provider value={router}>
-        <Header onSearch={() => setSearchOpen(true)} onLogout={onLogout} />
+        <Header onLogout={onLogout} />
         <div className="page-wrap" key={transitionKey}>
           {renderPage(route)}
           <Footer />
         </div>
-        <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
         <TweaksPanel tweaks={tweaks.tweaks} setTweak={tweaks.setTweak} />
         <GoodbyeOverlay show={goodbye} />
       </RouterContext.Provider>

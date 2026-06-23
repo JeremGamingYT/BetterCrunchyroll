@@ -711,3 +711,100 @@ button.notif-item:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+/* ── Advanced search ── */
+.srch-bar {
+  display: flex;
+  gap: 12px;
+  margin: 4px 0 16px;
+  max-width: 720px;
+}
+.srch-input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
+  border-radius: 12px;
+  color: var(--mut, #9aa0ac);
+}
+.srch-input input {
+  flex: 1;
+  background: none;
+  border: 0;
+  outline: none;
+  color: var(--txt, #f4f4f6);
+  font: inherit;
+  font-size: 15px;
+}
+.srch-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+.sf {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--mut, #9aa0ac);
+}
+.sf select {
+  height: 38px;
+  padding: 0 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
+  border-radius: 10px;
+  color: var(--txt, #f4f4f6);
+  font: inherit;
+  font-size: 14px;
+  min-width: 130px;
+  cursor: pointer;
+}
+.sf select:focus {
+  outline: none;
+  border-color: var(--acc, #f47521);
+}
+.srch-chip {
+  height: 38px;
+  align-self: flex-end;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.12));
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--mut, #9aa0ac);
+  font-weight: 800;
+  font-size: 13px;
+  cursor: pointer;
+}
+.srch-chip.is-on {
+  background: var(--acc, #f47521);
+  color: #160a02;
+  border-color: transparent;
+}
+.srch-reset {
+  height: 38px;
+  align-self: flex-end;
+  padding: 0 12px;
+  background: none;
+  border: 0;
+  color: var(--mut, #9aa0ac);
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.srch-reset:hover {
+  color: var(--txt, #f4f4f6);
+}
+.srch-none {
+  color: var(--mut, #9aa0ac);
+  padding: 30px 0;
+  text-align: center;
+}

@@ -102,6 +102,15 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.5.0
+
+- 🧭 **Page « Découvertes »** (+ section « voir plus » sur l'accueil et bouton **Découvrir** dans
+  le header) avec des rangées **personnalisées** : *Parce que tu regardes …* (séries similaires à
+  ta dernière vue), *Animes courts à finir ce soir*, *Pépites sous-cotées*, *Simulcasts populaires*,
+  *Films anime*.
+- 🔎 **Vraie page de Recherche avancée** (l'icône loupe y mène) avec filtres **genre · saison ·
+  année · format (séries/films) · VF · VOSTFR · tri** + pagination « charger plus ».
+
 ### v1.4.0
 
 - 💬 **Commentaires sur la page Lecteur** (par animé, signés de ton pseudo Crunchyroll, **sans
