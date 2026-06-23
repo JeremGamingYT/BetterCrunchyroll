@@ -49,6 +49,7 @@ export type AppRequest =
       readonly password: string;
     }
   | { readonly kind: 'NAVIGATE'; readonly path: string }
+  | { readonly kind: 'OPEN_EXTERNAL'; readonly url: string }
   | { readonly kind: 'LOGOUT' };
 
 /** Messages sent from the content script back to the SPA. */

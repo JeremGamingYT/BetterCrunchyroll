@@ -116,6 +116,19 @@ class Bridge {
     window.parent.postMessage({ channel: BCR_CHANNEL, kind: 'NAVIGATE', path }, PARENT_ORIGIN);
   }
 
+  /**
+   * Opens an external URL in a new top-level browser tab. Links inside the
+   * `chrome-extension://` overlay iframe can't reliably open new tabs, so the
+   * open is delegated to the content script (which runs in the page context).
+   */
+  openExternal(url: string): void {
+    if (!this.isEmbedded()) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    window.parent.postMessage({ channel: BCR_CHANNEL, kind: 'OPEN_EXTERNAL', url }, PARENT_ORIGIN);
+  }
+
   /** Fire-and-forget: real logout — clears the CR session, then reloads. */
   logout(): void {
     if (!this.isEmbedded()) {

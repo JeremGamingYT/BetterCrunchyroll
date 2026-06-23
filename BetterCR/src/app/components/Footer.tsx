@@ -1,5 +1,6 @@
 import type { MouseEvent } from 'react';
 import type { AppRoute, PageId } from '@shared/routing';
+import { bridge } from '@core/api/transport';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
 import { Icon } from './Icon';
@@ -64,11 +65,23 @@ export function Footer(): React.JSX.Element {
   const { go } = useRouter();
   const { t } = useI18n();
 
+  const openExternal =
+    (url: string) =>
+    (event: MouseEvent): void => {
+      event.preventDefault();
+      bridge.openExternal(url);
+    };
+
   const renderLink = (link: FooterLink): React.JSX.Element => {
     const label = t(link.key);
     if (link.url) {
       return (
-        <a href={link.url} target="_blank" rel="noreferrer noopener">
+        <a
+          href={link.url}
+          onClick={openExternal(link.url)}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           {label}
         </a>
       );
@@ -104,6 +117,7 @@ export function Footer(): React.JSX.Element {
             <a
               className="ftr-oss"
               href={GITHUB_URL}
+              onClick={openExternal(GITHUB_URL)}
               target="_blank"
               rel="noreferrer noopener"
               title="GitHub"
@@ -132,7 +146,13 @@ export function Footer(): React.JSX.Element {
         </div>
         <div className="ftr-legal">
           {LEGAL.map((link) => (
-            <a key={link.key} href={link.url} target="_blank" rel="noreferrer noopener">
+            <a
+              key={link.key}
+              href={link.url}
+              onClick={link.url ? openExternal(link.url) : undefined}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               {t(link.key)}
             </a>
           ))}

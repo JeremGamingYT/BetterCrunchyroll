@@ -79,6 +79,30 @@ src/
 - Modules à responsabilité unique, fonctions courtes, attentes bornées (timeouts).
 - ESLint (typescript-eslint) + Prettier, alias de chemins (`@app`, `@core`, `@shared`…).
 
+## Journal des versions
+
+### v1.2.0
+
+- 🔗 **Liens du pied de page réparés** : Open-source/GitHub, FAQ, **État des services**
+  (`status.crunchyroll.com`), À propos, Communauté, Abonnement, Conditions, Confidentialité,
+  Cookies — tous ouverts dans un nouvel onglet via le content-script (les `<a target="_blank">`
+  ne s'ouvraient pas depuis l'iframe `chrome-extension://`). Toutes ces destinations pointent
+  vers les **vraies pages Crunchyroll**.
+- 🎭 **« Parcourir par genre »** : chaque carte affiche désormais une affiche **réellement issue
+  du genre** (titre le plus populaire de la catégorie) au lieu de l'artwork éditorial générique
+  de Crunchyroll, souvent hors-sujet. Le clic ouvre le catalogue filtré par ce genre.
+- ▶️ **« Continuer à regarder »** fiabilisé sur l'accueil (retris pour absorber la course au
+  token au premier affichage).
+- 📊 **Statistiques du profil fiabilisées** : fini le « 0 partout ». Elles sont récupérées à
+  l'ouverture des **Paramètres** (token déjà chaud) avec retris et un état de chargement `…`.
+- 🧹 **Pied de page nettoyé** : sans « Recrutement » ni « Appareils ».
+
+### v1.1.0
+
+- Accueil : rangée **Continuer à regarder** + section **Parcourir par genre** (catégories réelles).
+- Pied de page avec vrais liens Crunchyroll ; lien open-source vers le dépôt GitHub.
+- **Statistiques** reconstruites depuis l'historique de visionnage du compte.
+
 ## Feuille de route
 
 - **Phase 1 (faite)** : fondation, pipeline sans serveur, Accueil, Catalogue, Fiche série, Tweaks.

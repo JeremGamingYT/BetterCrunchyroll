@@ -1,20 +1,20 @@
 import { createContext, useContext, type ReactNode } from 'react';
-import { getProfile, getWatchStats, type Profile, type WatchStats } from '@core/api/client';
+import { getProfile, type Profile } from '@core/api/client';
 import { retryAsync } from '@shared/async';
 import { useAsync } from '@app/hooks/useAsync';
 
 interface ProfileState {
   readonly profile: Profile | null;
-  readonly stats: WatchStats | null;
 }
 
-const ProfileContext = createContext<ProfileState>({ profile: null, stats: null });
+const ProfileContext = createContext<ProfileState>({ profile: null });
 
 const RETRY_ATTEMPTS = 5;
 
 export function ProfileProvider({ children }: { readonly children: ReactNode }): React.JSX.Element {
-  // Retry while the result looks like a token/race failure (null profile, or
-  // zero stats) so the profile and statistics aren't stuck empty.
+  // Retry while the result looks like a token/race failure (null profile) so the
+  // name/avatar aren't stuck empty on first paint. Watch statistics are fetched
+  // lazily on the settings page (by then the token is reliably warm).
   const profile = useAsync(
     () =>
       retryAsync(
@@ -25,20 +25,8 @@ export function ProfileProvider({ children }: { readonly children: ReactNode }):
       ),
     [],
   );
-  const stats = useAsync(
-    () =>
-      retryAsync(
-        () => getWatchStats(),
-        RETRY_ATTEMPTS,
-        1200,
-        (result) => result.episodes === 0,
-      ),
-    [],
-  );
   return (
-    <ProfileContext.Provider value={{ profile: profile.data, stats: stats.data }}>
-      {children}
-    </ProfileContext.Provider>
+    <ProfileContext.Provider value={{ profile: profile.data }}>{children}</ProfileContext.Provider>
   );
 }
 

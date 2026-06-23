@@ -153,9 +153,25 @@ class ContentApp {
       case 'NAVIGATE':
         this.reflectNavigation(envelope.path);
         return;
+      case 'OPEN_EXTERNAL':
+        this.openExternal(envelope.url);
+        return;
       case 'LOGOUT':
         this.handleLogout();
         return;
+    }
+  }
+
+  /** Opens an http(s) URL in a new browser tab from the page context. */
+  private openExternal(url: string): void {
+    try {
+      const parsed = new URL(url);
+      if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') {
+        return;
+      }
+      window.open(parsed.href, '_blank', 'noopener,noreferrer');
+    } catch {
+      // Malformed URL — ignore.
     }
   }
 

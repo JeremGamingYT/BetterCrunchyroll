@@ -5,10 +5,8 @@ import { useEffect, useRef, useState, type RefObject } from 'react';
  * safety fallback so content still appears if the observer never fires (e.g. in
  * an initially-hidden iframe).
  */
-export function useInView<T extends Element>(
-  margin = '0px 0px -8% 0px',
-): [RefObject<T | null>, boolean] {
-  const ref = useRef<T | null>(null);
+export function useInView<T extends Element>(margin = '0px 0px -8% 0px'): [RefObject<T>, boolean] {
+  const ref = useRef<T>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {

@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react';
 import type { ContinueItem, Series } from '@core/models/content';
 import { getContinueWatching, getHomeFeed } from '@core/api/client';
 import { bridge } from '@core/api/transport';
+import { retryAsync } from '@shared/async';
 import { useAsync } from '@app/hooks/useAsync';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
@@ -33,7 +34,18 @@ export function HomePage(): React.JSX.Element {
   const { t, lang } = useI18n();
   const [retryKey, setRetryKey] = useState(0);
   const { data, error, loading } = useAsync(() => getHomeFeed(), [lang, retryKey]);
-  const continueState = useAsync(() => getContinueWatching(20), [lang]);
+  // Retry while empty to absorb a cold token/account race on first paint (the
+  // row simply stays hidden if the user genuinely has nothing in progress).
+  const continueState = useAsync(
+    () =>
+      retryAsync(
+        () => getContinueWatching(20),
+        4,
+        1200,
+        (items) => items.length === 0,
+      ),
+    [lang],
+  );
 
   const openDetail = (series: Series): void => go({ page: 'detail', seriesId: series.id });
   const playContinue = (item: ContinueItem): void => bridge.navigate(item.watchPath);

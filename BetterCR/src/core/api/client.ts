@@ -17,6 +17,7 @@ import {
   type WatchHistoryItemDto,
 } from '@core/schemas/crunchyroll';
 import { delay, retryAsync } from '@shared/async';
+import { cached, DAY_MS } from '@core/cache';
 import {
   categoryToGenre,
   cmsSeriesToDetail,
@@ -138,6 +139,28 @@ export async function getCategories(): Promise<Genre[]> {
   } catch {
     return [];
   }
+}
+
+/**
+ * A representative poster for a genre: the most popular title actually tagged
+ * with that category slug. This guarantees the artwork matches the genre
+ * (Crunchyroll's own category background art is editorial and often unrelated).
+ * Cached for a day; empty results are not cached.
+ */
+export async function getCategoryPoster(slug: string): Promise<string> {
+  return cached(
+    `genrePoster_${slug}`,
+    DAY_MS,
+    async () => {
+      try {
+        const series = await browseSeries({ categories: slug, sort: 'popularity', n: 1 });
+        return series[0]?.poster || series[0]?.wide || '';
+      } catch {
+        return '';
+      }
+    },
+    (url) => url.length > 0,
+  );
 }
 
 export async function getSeriesDetail(seriesId: string): Promise<SeriesDetail> {
