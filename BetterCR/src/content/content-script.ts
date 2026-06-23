@@ -14,6 +14,7 @@ import { TokenStore } from './token-store';
 import { performCrRequest } from './cr-api';
 import { passwordLogin } from './auth';
 import { Overlay } from './overlay';
+import { WatchSkin } from './watch-skin';
 
 const LOG_PREFIX = '[BetterCR]';
 const NAV_POLL_MS = 500;
@@ -46,6 +47,7 @@ function localePrefix(): string {
 class ContentApp {
   private readonly tokens = new TokenStore();
   private readonly overlay = new Overlay();
+  private readonly watch = new WatchSkin();
   private lastHref = '';
 
   start(): void {
@@ -72,12 +74,18 @@ class ContentApp {
     console.info(`${LOG_PREFIX} content script ready`);
   }
 
-  /** Mounts the overlay on regular pages; keeps the native player on /watch. */
+  /**
+   * Mounts the overlay everywhere. On `/watch` the overlay shows the BetterCR
+   * watch page and the native player is relocated on top of it (watch skin);
+   * elsewhere the watch skin is disabled.
+   */
   private syncOverlay(): void {
-    if (isWatchPath(window.location.pathname)) {
-      this.overlay.unmount();
+    const watch = isWatchPath(window.location.pathname);
+    this.overlay.mount(mapCrPathToRoute(window.location.pathname));
+    if (watch) {
+      this.watch.enable();
     } else {
-      this.overlay.mount(mapCrPathToRoute(window.location.pathname));
+      this.watch.disable();
     }
     this.lastHref = window.location.href;
   }
@@ -85,7 +93,7 @@ class ContentApp {
   private watchNavigation(): void {
     if (window.location.href !== this.lastHref) {
       this.syncOverlay();
-    } else if (!isWatchPath(window.location.pathname) && !this.overlay.isMounted()) {
+    } else if (!this.overlay.isMounted()) {
       this.overlay.mount(mapCrPathToRoute(window.location.pathname));
     }
   }
@@ -155,6 +163,9 @@ class ContentApp {
         return;
       case 'OPEN_EXTERNAL':
         this.openExternal(envelope.url);
+        return;
+      case 'WATCH_SLOT':
+        this.watch.setRect(envelope.rect);
         return;
       case 'LOGOUT':
         this.handleLogout();

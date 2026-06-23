@@ -81,6 +81,16 @@ src/
 
 ## Journal des versions
 
+### v1.3.0
+
+- ▶️ **Page « Lecteur » (`/watch`) repensée.** Le DOM Crunchyroll est remplacé par la
+  vraie page BetterCR (Header, thème, **infos d'épisode**, liste **« À suivre »** avec les
+  vrais épisodes de la saison, Footer) — tout en **conservant le lecteur natif Bitmovin**
+  (Widevine/DRM intact). Le `<video>` natif n'est jamais remplacé : il est positionné
+  par-dessus le slot `.player` de la page (`src/content/watch-skin.ts`), avec ses
+  contrôles natifs. Nouvelle `WatchPage` (`src/app/pages/WatchPage.tsx`) + route `watch`
+  câblée ; données via `getEpisodeInfo` + `getSeasonEpisodes`.
+
 ### v1.2.3
 
 - 📃 **Watchlist complète.** La page n'affichait que ~48 favoris : elle est désormais

@@ -28,6 +28,7 @@ import {
   watchHistoryToContinue,
   watchHistoryToSeries,
 } from '@core/mappers/content';
+import { thumbUrl } from '@core/mappers/images';
 import type {
   ContinueItem,
   Episode,
@@ -171,6 +172,47 @@ export async function getSeriesDetail(seriesId: string): Promise<SeriesDetail> {
     throw new ApiError(`Série introuvable : ${seriesId}`);
   }
   return cmsSeriesToDetail(dto);
+}
+
+export interface EpisodeInfo {
+  readonly id: string;
+  readonly seriesId: string;
+  readonly seasonId: string;
+  readonly seriesTitle: string;
+  readonly seasonNumber: number;
+  readonly number: number;
+  readonly title: string;
+  readonly thumb: string;
+  readonly durationMs: number;
+}
+
+/** Resolves a single episode (by id) to its series/season + metadata. */
+export async function getEpisodeInfo(episodeId: string): Promise<EpisodeInfo | null> {
+  const account = await getAccountId();
+  if (!account) {
+    return null;
+  }
+  try {
+    const raw = await getJson(`/content/v2/cms/${account}/objects/${episodeId}`);
+    const [panel] = parseEach(episodePanelSchema, raw);
+    if (!panel) {
+      return null;
+    }
+    const meta = panel.episode_metadata;
+    return {
+      id: panel.id,
+      seriesId: meta?.series_id ?? panel.series_id ?? '',
+      seasonId: meta?.season_id ?? '',
+      seriesTitle: meta?.series_title ?? panel.series_title ?? panel.title ?? '',
+      seasonNumber: meta?.season_number ?? 1,
+      number: meta?.episode_number ?? 0,
+      title: panel.title ?? '',
+      thumb: thumbUrl(panel.images),
+      durationMs: meta?.duration_ms ?? 0,
+    };
+  } catch {
+    return null;
+  }
 }
 
 export async function getSeasons(seriesId: string): Promise<Season[]> {

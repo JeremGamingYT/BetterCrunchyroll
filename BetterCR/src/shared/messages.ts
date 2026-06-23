@@ -50,7 +50,16 @@ export type AppRequest =
     }
   | { readonly kind: 'NAVIGATE'; readonly path: string }
   | { readonly kind: 'OPEN_EXTERNAL'; readonly url: string }
+  | { readonly kind: 'WATCH_SLOT'; readonly rect: PlayerRect | null }
   | { readonly kind: 'LOGOUT' };
+
+/** Viewport rectangle (CSS px) where the native player should be placed. */
+export interface PlayerRect {
+  readonly x: number;
+  readonly y: number;
+  readonly width: number;
+  readonly height: number;
+}
 
 /** Messages sent from the content script back to the SPA. */
 export type ContentReply =

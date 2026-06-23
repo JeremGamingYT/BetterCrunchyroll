@@ -41,7 +41,7 @@ export function serializeRoute(route: AppRoute): string {
       return `#/detail/${route.seriesId}`;
     case 'watch':
       return route.episodeId
-        ? `#/watch/${route.seriesId}/${route.episodeId}`
+        ? `#/watch/${route.seriesId || '_'}/${route.episodeId}`
         : `#/watch/${route.seriesId}`;
     default:
       return `#/${route.page}`;
@@ -70,9 +70,10 @@ export function parseRoute(hash: string): AppRoute {
       return seriesId ? { page: 'detail', seriesId } : HOME_ROUTE;
     }
     case 'watch': {
-      const seriesId = segments[1];
+      const rawSeries = segments[1];
       const episodeId = segments[2];
-      if (!seriesId) {
+      const seriesId = rawSeries === '_' ? '' : (rawSeries ?? '');
+      if (!seriesId && !episodeId) {
         return HOME_ROUTE;
       }
       return episodeId ? { page: 'watch', seriesId, episodeId } : { page: 'watch', seriesId };
@@ -93,6 +94,11 @@ export function isWatchPath(pathname: string): boolean {
  */
 export function mapCrPathToRoute(pathname: string): AppRoute {
   const clean = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, '');
+
+  const watchMatch = /^\/watch\/([A-Za-z0-9]+)/.exec(clean);
+  if (watchMatch?.[1]) {
+    return { page: 'watch', seriesId: '', episodeId: watchMatch[1] };
+  }
 
   const seriesMatch = /^\/series\/([A-Z0-9]+)/.exec(clean);
   if (seriesMatch?.[1]) {

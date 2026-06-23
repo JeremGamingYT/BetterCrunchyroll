@@ -256,3 +256,37 @@
   color: var(--acc);
   font-weight: 700;
 }
+
+/* ── Watch page: native player slot (the real CR player is laid over it) ── */
+.bcr-watch {
+  padding-top: 60px;
+  min-height: 100vh;
+}
+.bcr-player-stage {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 18px 28px 0;
+}
+.bcr-player-slot {
+  width: 100%;
+  max-width: 1264px;
+  aspect-ratio: 16 / 9;
+  max-height: calc(100vh - 150px);
+  margin: 0 auto;
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.55);
+}
+.bcr-watch .watch-below {
+  max-width: 1320px;
+  margin: 26px auto 70px;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 34px;
+}
+@media (max-width: 900px) {
+  .bcr-watch .watch-below {
+    grid-template-columns: 1fr;
+  }
+}

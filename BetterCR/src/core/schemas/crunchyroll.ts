@@ -121,6 +121,7 @@ export const episodePanelSchema = z
       .object({
         series_id: z.string().optional(),
         series_title: z.string().optional(),
+        season_id: z.string().optional(),
         season_number: z.number().optional(),
         episode_number: z.number().nullable().optional(),
         episode_air_date: z.string().optional(),

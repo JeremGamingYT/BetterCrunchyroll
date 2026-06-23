@@ -13,6 +13,7 @@ import {
   type AppRequest,
   type AuthData,
   type ContentEnvelope,
+  type PlayerRect,
   type TokenStatus,
 } from '@shared/messages';
 import type { Result } from '@shared/result';
@@ -127,6 +128,18 @@ class Bridge {
       return;
     }
     window.parent.postMessage({ channel: BCR_CHANNEL, kind: 'OPEN_EXTERNAL', url }, PARENT_ORIGIN);
+  }
+
+  /**
+   * Fire-and-forget: tells the content script where (in viewport CSS px) to lay
+   * the native Crunchyroll player over the iframe — the WatchPage's player slot.
+   * Pass `null` to release the player (e.g. on leaving the watch page).
+   */
+  watchSlot(rect: PlayerRect | null): void {
+    if (!this.isEmbedded()) {
+      return;
+    }
+    window.parent.postMessage({ channel: BCR_CHANNEL, kind: 'WATCH_SLOT', rect }, PARENT_ORIGIN);
   }
 
   /** Fire-and-forget: real logout — clears the CR session, then reloads. */

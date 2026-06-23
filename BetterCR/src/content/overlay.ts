@@ -8,8 +8,10 @@ import { serializeRoute, type AppRoute } from '@shared/routing';
 
 const ROOT_ID = 'bettercr-root';
 const FRAME_ID = 'bcr-frame';
+// Just below the relocated native player (2147483600) so the player shows over
+// the watch page's slot, while the overlay still covers all of Crunchyroll.
 const COVER_STYLE =
-  'position:fixed;inset:0;z-index:2147483647;width:100vw;height:100vh;background:#0a0a0d;';
+  'position:fixed;inset:0;z-index:2147483000;width:100vw;height:100vh;background:#0a0a0d;';
 const FRAME_STYLE = 'width:100%;height:100%;border:0;display:block;background:#0a0a0d;';
 
 export class Overlay {
