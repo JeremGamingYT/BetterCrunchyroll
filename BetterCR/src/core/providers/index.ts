@@ -9,12 +9,14 @@ import type { ExternalMeta, MetaProvider } from './external-meta';
 import {
   fetchAniListMeta,
   fetchAniListTrending as rawTrending,
+  fetchUpcomingAnime as rawUpcoming,
   type TrendingItem,
+  type UpcomingItem,
 } from './anilist';
 import { cached, DAY_MS, HOUR_MS } from '@core/cache';
 
 export type { ExternalMeta } from './external-meta';
-export type { TrendingItem } from './anilist';
+export type { TrendingItem, UpcomingItem } from './anilist';
 
 const PROVIDERS: readonly MetaProvider[] = [fetchAniListMeta];
 
@@ -45,6 +47,15 @@ export async function fetchAniListTrending(count = 30): Promise<TrendingItem[]> 
     `trending:${String(count)}`,
     TRENDING_TTL,
     () => rawTrending(count),
+    (items) => items.length > 0,
+  );
+}
+
+export async function fetchUpcomingAnime(count = 50): Promise<UpcomingItem[]> {
+  return cached(
+    `upcoming:${String(count)}`,
+    TRENDING_TTL,
+    () => rawUpcoming(count),
     (items) => items.length > 0,
   );
 }

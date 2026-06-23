@@ -16,6 +16,7 @@ import { NotFoundPage } from '@app/pages/NotFoundPage';
 import { SettingsPage } from '@app/pages/SettingsPage';
 import { CategoryPage } from '@app/pages/CategoryPage';
 import { WatchPage } from '@app/pages/WatchPage';
+import { UpcomingPage } from '@app/pages/UpcomingPage';
 import { AuthPage, GoodbyeOverlay } from '@app/pages/AuthPage';
 
 const GOODBYE_DURATION_MS = 2300;
@@ -45,6 +46,8 @@ function renderPage(route: AppRoute): React.JSX.Element {
       return <GridPage variant="simulcast" />;
     case 'watchlist':
       return <WatchlistPage />;
+    case 'upcoming':
+      return <UpcomingPage />;
     case 'settings':
       return <SettingsPage />;
     case 'category':

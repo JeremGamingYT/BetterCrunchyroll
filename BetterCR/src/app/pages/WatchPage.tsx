@@ -160,7 +160,11 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
         )}
       </div>
 
-      <CommentsSection seriesId={data?.info?.seriesId || seriesId} />
+      <CommentsSection
+        seriesId={data?.info?.seriesId || seriesId}
+        seriesTitle={data?.seriesTitle}
+        watchPath={episodeId ? `/watch/${episodeId}` : undefined}
+      />
     </div>
   );
 }

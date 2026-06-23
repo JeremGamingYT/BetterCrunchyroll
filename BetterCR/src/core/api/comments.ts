@@ -25,6 +25,9 @@ export interface NewComment {
   readonly avatar?: string;
   readonly text: string;
   readonly parentId?: string | null;
+  /** Context attached to reply notifications (so the recipient can jump back). */
+  readonly seriesTitle?: string;
+  readonly watchPath?: string;
 }
 
 const UID_KEY = 'bcr_uid';
@@ -83,6 +86,8 @@ export async function postComment(seriesId: string, input: NewComment): Promise<
         avatar: input.avatar ?? '',
         text: input.text,
         parentId: input.parentId ?? null,
+        seriesTitle: input.seriesTitle ?? '',
+        watchPath: input.watchPath ?? '',
       }),
     });
     if (!response.ok) {

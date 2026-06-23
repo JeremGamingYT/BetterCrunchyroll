@@ -10,6 +10,7 @@ export type PageId =
   | 'films'
   | 'simulcast'
   | 'watchlist'
+  | 'upcoming'
   | 'detail'
   | 'watch'
   | 'notfound'
@@ -23,6 +24,7 @@ export type AppRoute =
   | { readonly page: 'films' }
   | { readonly page: 'simulcast' }
   | { readonly page: 'watchlist' }
+  | { readonly page: 'upcoming' }
   | { readonly page: 'notfound' }
   | { readonly page: 'auth' }
   | { readonly page: 'settings' }
@@ -57,6 +59,7 @@ export function parseRoute(hash: string): AppRoute {
     case 'films':
     case 'simulcast':
     case 'watchlist':
+    case 'upcoming':
     case 'notfound':
     case 'auth':
     case 'settings':

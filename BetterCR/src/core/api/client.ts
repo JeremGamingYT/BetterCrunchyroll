@@ -350,6 +350,69 @@ export async function getSimulcast(limit = 30): Promise<Series[]> {
   return series.length > 0 ? series : browseSeries({ sort: 'newly_added', n: limit });
 }
 
+export interface NewEpisode {
+  readonly seriesId: string;
+  readonly seriesTitle: string;
+  readonly episodeNumber: number;
+  readonly thumb: string;
+  readonly watchPath: string;
+  readonly airDate: string;
+}
+
+function isToday(iso: string | undefined): boolean {
+  if (!iso) {
+    return false;
+  }
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) {
+    return false;
+  }
+  const now = new Date();
+  return (
+    date.getFullYear() === now.getFullYear() &&
+    date.getMonth() === now.getMonth() &&
+    date.getDate() === now.getDate()
+  );
+}
+
+/** Episodes aired today (Crunchyroll newly-added), deduped by series. */
+export async function getNewEpisodesToday(limit = 15): Promise<NewEpisode[]> {
+  try {
+    const raw = await getJson('/content/v2/discover/browse', {
+      type: 'episode',
+      sort_by: 'newly_added',
+      n: 100,
+    });
+    const out: NewEpisode[] = [];
+    const seen = new Set<string>();
+    for (const episode of parseEach(episodePanelSchema, raw)) {
+      const meta = episode.episode_metadata;
+      if (!isToday(meta?.episode_air_date)) {
+        continue;
+      }
+      const seriesId = meta?.series_id ?? episode.series_id ?? '';
+      if (!seriesId || seen.has(seriesId)) {
+        continue;
+      }
+      seen.add(seriesId);
+      out.push({
+        seriesId,
+        seriesTitle: meta?.series_title ?? episode.series_title ?? episode.title ?? '',
+        episodeNumber: meta?.episode_number ?? 0,
+        thumb: thumbUrl(episode.images),
+        watchPath: `/watch/${episode.id}`,
+        airDate: meta?.episode_air_date ?? '',
+      });
+      if (out.length >= limit) {
+        break;
+      }
+    }
+    return out;
+  } catch {
+    return [];
+  }
+}
+
 export interface PlayheadInfo {
   readonly playhead: number;
   readonly fullyWatched: boolean;

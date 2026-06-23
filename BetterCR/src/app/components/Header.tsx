@@ -1,9 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import type { AppRoute, PageId } from '@shared/routing';
+import { getNewEpisodesToday, type NewEpisode } from '@core/api/client';
+import { getReplyNotifications, type ReplyNotif } from '@core/api/notifications';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
 import { useProfile } from '@app/profile';
 import { Icon } from './Icon';
+import { NotificationsPanel } from './NotificationsPanel';
+
+const NOTIF_SEEN_KEY = 'bcr_notif_seen';
 
 interface NavItem {
   readonly key: string;
@@ -15,6 +20,7 @@ const NAV: readonly NavItem[] = [
   { key: 'nav.series', page: 'series' },
   { key: 'nav.films', page: 'films' },
   { key: 'nav.simulcast', page: 'simulcast' },
+  { key: 'nav.upcoming', page: 'upcoming' },
   { key: 'nav.watchlist', page: 'watchlist' },
 ];
 
@@ -34,7 +40,20 @@ export function Header({ onSearch, onLogout }: HeaderProps): React.JSX.Element {
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef<HTMLElement | null>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const notifRef = useRef<HTMLDivElement | null>(null);
   const [indicator, setIndicator] = useState({ left: 0, width: 0, on: false });
+
+  const avatarUrl = profile?.avatarUrl || '';
+  const [notifOpen, setNotifOpen] = useState(false);
+  const [replies, setReplies] = useState<readonly ReplyNotif[]>([]);
+  const [episodes, setEpisodes] = useState<readonly NewEpisode[]>([]);
+  const [lastSeen, setLastSeen] = useState<number>(() => {
+    try {
+      return Number(localStorage.getItem(NOTIF_SEEN_KEY)) || 0;
+    } catch {
+      return 0;
+    }
+  });
 
   useEffect(() => {
     const onScroll = (): void => setScrolled(window.scrollY > SCROLL_THRESHOLD_PX);
@@ -71,6 +90,55 @@ export function Header({ onSearch, onLogout }: HeaderProps): React.JSX.Element {
     return () => document.removeEventListener('mousedown', close);
   }, []);
 
+  // Poll notifications (replies to my comments) + today's new episodes.
+  useEffect(() => {
+    let alive = true;
+    const load = (): void => {
+      void getReplyNotifications().then((items) => {
+        if (alive) setReplies(items);
+      });
+      void getNewEpisodesToday(12).then((items) => {
+        if (alive) setEpisodes(items);
+      });
+    };
+    load();
+    const timer = window.setInterval(load, 60_000);
+    return () => {
+      alive = false;
+      clearInterval(timer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const close = (event: MouseEvent): void => {
+      if (notifRef.current && !notifRef.current.contains(event.target as Node)) {
+        setNotifOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', close);
+    return () => document.removeEventListener('mousedown', close);
+  }, []);
+
+  const startOfToday = new Date();
+  startOfToday.setHours(0, 0, 0, 0);
+  const unread =
+    replies.filter((notif) => notif.ts > lastSeen).length +
+    (lastSeen < startOfToday.getTime() ? episodes.length : 0);
+
+  const toggleNotifs = (): void => {
+    const willOpen = !notifOpen;
+    setNotifOpen(willOpen);
+    if (willOpen) {
+      const now = Date.now();
+      setLastSeen(now);
+      try {
+        localStorage.setItem(NOTIF_SEEN_KEY, String(now));
+      } catch {
+        /* ignore */
+      }
+    }
+  };
+
   const activePage: PageId | null = NAV.some((item) => item.page === route.page)
     ? route.page
     : null;
@@ -104,6 +172,26 @@ export function Header({ onSearch, onLogout }: HeaderProps): React.JSX.Element {
           <button className="hdr-icon" onClick={onSearch} aria-label={t('search.placeholder')}>
             <Icon name="search" size={19} />
           </button>
+          <div className="hdr-notif" ref={notifRef}>
+            <button
+              className={`hdr-icon${unread > 0 ? ' has-unread' : ''}`}
+              onClick={toggleNotifs}
+              aria-label={t('notif.title')}
+            >
+              <Icon name="bell" size={19} />
+              {unread > 0 && (
+                <span className="hdr-badge">{unread > 9 ? '9+' : String(unread)}</span>
+              )}
+            </button>
+            <NotificationsPanel
+              open={notifOpen}
+              replies={replies}
+              episodes={episodes}
+              name={displayName}
+              avatar={avatarUrl}
+              onClose={() => setNotifOpen(false)}
+            />
+          </div>
           <button
             className={`hdr-avatar${menuOpen ? ' is-open' : ''}`}
             onClick={() => setMenuOpen((value) => !value)}

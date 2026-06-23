@@ -122,6 +122,93 @@ export interface TrendingItem {
   readonly title: string;
 }
 
+const UPCOMING_QUERY = `query ($n: Int) {
+  Page(perPage: $n) {
+    media(type: ANIME, status: NOT_YET_RELEASED, sort: POPULARITY_DESC) {
+      id
+      title { english romaji }
+      coverImage { extraLarge large color }
+      bannerImage
+      format
+      episodes
+      genres
+      description(asHtml: false)
+      startDate { year month day }
+      siteUrl
+    }
+  }
+}`;
+
+export interface UpcomingItem {
+  readonly id: number;
+  readonly title: string;
+  readonly image: string;
+  readonly color?: string;
+  readonly format?: string;
+  readonly episodes?: number;
+  readonly genres: readonly string[];
+  readonly description?: string;
+  readonly year?: number;
+  readonly month?: number;
+  readonly day?: number;
+  readonly siteUrl?: string;
+}
+
+interface UpcomingMedia {
+  readonly id: number;
+  readonly title?: { readonly english?: string | null; readonly romaji?: string | null } | null;
+  readonly coverImage?: {
+    readonly extraLarge?: string | null;
+    readonly large?: string | null;
+    readonly color?: string | null;
+  } | null;
+  readonly format?: string | null;
+  readonly episodes?: number | null;
+  readonly genres?: readonly string[] | null;
+  readonly description?: string | null;
+  readonly startDate?: {
+    readonly year?: number | null;
+    readonly month?: number | null;
+    readonly day?: number | null;
+  } | null;
+  readonly siteUrl?: string | null;
+}
+
+/** Announced (not-yet-released) anime, most popular first, with start dates. */
+export async function fetchUpcomingAnime(count = 50): Promise<UpcomingItem[]> {
+  try {
+    const response = await fetch(ANILIST_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({ query: UPCOMING_QUERY, variables: { n: count } }),
+    });
+    if (!response.ok) {
+      return [];
+    }
+    const json = (await response.json()) as {
+      data?: { Page?: { media?: readonly UpcomingMedia[] | null } | null } | null;
+    };
+    return (json.data?.Page?.media ?? [])
+      .map((media) => ({
+        id: media.id,
+        title: media.title?.english ?? media.title?.romaji ?? '',
+        image: media.coverImage?.extraLarge ?? media.coverImage?.large ?? '',
+        color: media.coverImage?.color ?? undefined,
+        format: media.format ?? undefined,
+        episodes: media.episodes ?? undefined,
+        genres: media.genres ?? [],
+        description: media.description ? stripHtml(media.description) : undefined,
+        year: media.startDate?.year ?? undefined,
+        month: media.startDate?.month ?? undefined,
+        day: media.startDate?.day ?? undefined,
+        siteUrl: media.siteUrl ?? undefined,
+      }))
+      .filter((item) => item.title.length > 0 && item.image.length > 0);
+  } catch {
+    return [];
+  }
+}
+
 /**
  * Trending anime (no auth) — used for the login poster wall, which renders
  * before the user's Crunchyroll token is available.

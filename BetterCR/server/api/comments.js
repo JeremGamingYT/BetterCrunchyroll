@@ -5,11 +5,12 @@
  * GET    /api/comments?series=__diag                → { ok, env }
  * POST   /api/comments  { series, uid, name, avatar, text, parentId? } → { comment }
  * PATCH  /api/comments  { series, id, uid, text }   → { comment }   (author only)
- * DELETE /api/comments  { series, id, uid }         → { ok }        (author only, soft)
+ * DELETE /api/comments  { series, id, uid }         → { ok }        (author only, hard)
  *
  * One capped Redis list per series (`bcr:cmt:<id>`). No accounts: ownership is
- * proven by a client-generated `uid` (a local secret) stored on each comment.
- * Profanity is masked server-side; light per-IP rate limiting curbs spam.
+ * proven by a client-generated `uid` (a local secret). Replies push a
+ * notification to the parent author's list (`bcr:notif:<uid>`). Profanity is
+ * masked server-side; light per-IP rate limiting curbs spam.
  */
 import { Redis } from '@upstash/redis';
 import { maskProfanity } from '../lib/filter.js';
@@ -30,6 +31,7 @@ const MAX_NAME = 40;
 const READ_LIMIT = 120;
 const KEEP = 400;
 const RATE_MAX = 8;
+const NOTIF_KEEP = 50;
 
 const clean = (value, max) => {
   let out = '';
@@ -45,6 +47,7 @@ const cleanAvatar = (value) => {
   return s.startsWith('https://') ? s : '';
 };
 const keyFor = (id) => `bcr:cmt:${cleanId(id).slice(0, 64)}`;
+const notifKey = (uid) => `bcr:notif:${cleanId(uid)}`;
 
 function setCors(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -62,13 +65,12 @@ const parseEntry = (entry) => {
 const readBody = (req) =>
   typeof req.body === 'string' ? JSON.parse(req.body || '{}') : req.body || {};
 
-/** Finds a comment by id within the series list; returns {index, comment}. */
 async function findComment(series, id) {
   const raw = await redis.lrange(keyFor(series), 0, KEEP - 1);
   for (let i = 0; i < raw.length; i += 1) {
     const parsed = parseEntry(raw[i]);
     if (parsed && parsed.id === id) {
-      return { index: i, comment: parsed, rawList: raw };
+      return { index: i, comment: parsed };
     }
   }
   return null;
@@ -95,10 +97,7 @@ export default async function handler(req, res) {
   }
 
   if (!redis) {
-    res.status(503).json({
-      error: 'storage_not_configured',
-      hint: 'Connect an Upstash Redis / KV store in Vercel → Storage, then Redeploy.',
-    });
+    res.status(503).json({ error: 'storage_not_configured' });
     return;
   }
 
@@ -121,7 +120,9 @@ export default async function handler(req, res) {
       const name = clean(body.name, MAX_NAME) || 'Invité';
       const uid = cleanId(body.uid);
       const avatar = cleanAvatar(body.avatar);
-      const parentId = cleanId(body.parentId) || null;
+      const parentId = String(body.parentId ?? '').slice(0, 40) || null;
+      const seriesTitle = clean(body.seriesTitle, MAX_NAME);
+      const watchPath = clean(body.watchPath, 120);
       if (!series || !text) {
         res.status(400).json({ error: 'missing series or text' });
         return;
@@ -148,6 +149,28 @@ export default async function handler(req, res) {
       const key = keyFor(series);
       await redis.lpush(key, JSON.stringify(comment));
       await redis.ltrim(key, 0, KEEP - 1);
+
+      // Notify the parent comment's author of the reply.
+      if (parentId) {
+        const parent = await findComment(series, parentId);
+        if (parent && parent.comment.uid && parent.comment.uid !== uid) {
+          const notif = {
+            id: comment.id,
+            type: 'reply',
+            series,
+            seriesTitle,
+            watchPath,
+            parentId,
+            fromName: name,
+            fromAvatar: avatar,
+            text,
+            ts: comment.ts,
+          };
+          const nk = notifKey(parent.comment.uid);
+          await redis.lpush(nk, JSON.stringify(notif));
+          await redis.ltrim(nk, 0, NOTIF_KEEP - 1);
+        }
+      }
       res.status(200).json({ comment });
       return;
     }
@@ -170,17 +193,28 @@ export default async function handler(req, res) {
         res.status(403).json({ error: 'not your comment' });
         return;
       }
+      const key = keyFor(series);
 
-      const updated =
-        req.method === 'DELETE'
-          ? { ...found.comment, text: '', deleted: true }
-          : { ...found.comment, text: maskProfanity(clean(body.text, MAX_TEXT)), edited: true };
-      if (req.method === 'PATCH' && !updated.text) {
+      if (req.method === 'DELETE') {
+        // Hard delete: rebuild the list without this comment (replies remain).
+        const all = await redis.lrange(key, 0, KEEP - 1);
+        const kept = all.map(parseEntry).filter((c) => c && c.id !== id);
+        await redis.del(key);
+        if (kept.length) {
+          await redis.rpush(key, ...kept.map((c) => JSON.stringify(c)));
+        }
+        res.status(200).json({ ok: true });
+        return;
+      }
+
+      const text = maskProfanity(clean(body.text, MAX_TEXT));
+      if (!text) {
         res.status(400).json({ error: 'empty text' });
         return;
       }
-      await redis.lset(keyFor(series), found.index, JSON.stringify(updated));
-      res.status(200).json(req.method === 'DELETE' ? { ok: true } : { comment: updated });
+      const updated = { ...found.comment, text, edited: true };
+      await redis.lset(key, found.index, JSON.stringify(updated));
+      res.status(200).json({ comment: updated });
       return;
     }
 

@@ -1,4 +1,4 @@
-import { useMemo, useState, type FormEvent } from 'react';
+import { useEffect, useMemo, useState, type FormEvent } from 'react';
 import {
   clientId,
   commentsEnabled,
@@ -8,12 +8,13 @@ import {
   postComment,
   type Comment,
 } from '@core/api/comments';
-import { useAsync } from '@app/hooks/useAsync';
 import { useI18n } from '@app/i18n/i18n';
 import { useProfile } from '@app/profile';
 import { Icon } from './Icon';
 
 const MAX = 1000;
+const POLL_MS = 12_000;
+const DELETE_LINGER_MS = 4000;
 
 function relTime(ts: number, lang: string): string {
   const min = Math.floor((Date.now() - ts) / 60000);
@@ -74,9 +75,7 @@ function CommentRow({
               <button
                 className="btn btn-acc cmt-post"
                 onClick={() => {
-                  if (draft.trim()) {
-                    onEdit(draft.trim());
-                  }
+                  if (draft.trim()) onEdit(draft.trim());
                   setEditing(false);
                 }}
               >
@@ -123,9 +122,15 @@ function CommentRow({
 
 export interface CommentsSectionProps {
   readonly seriesId: string;
+  readonly seriesTitle?: string;
+  readonly watchPath?: string;
 }
 
-export function CommentsSection({ seriesId }: CommentsSectionProps): React.JSX.Element | null {
+export function CommentsSection({
+  seriesId,
+  seriesTitle,
+  watchPath,
+}: CommentsSectionProps): React.JSX.Element | null {
   const { t } = useI18n();
   const { profile } = useProfile();
   const name = profile?.username || t('menu.user');
@@ -133,43 +138,63 @@ export function CommentsSection({ seriesId }: CommentsSectionProps): React.JSX.E
   const enabled = commentsEnabled();
   const myUid = clientId();
 
-  const { data, loading } = useAsync(
-    () => (enabled && seriesId ? getComments(seriesId) : Promise.resolve<Comment[]>([])),
-    [seriesId, enabled],
-  );
+  const [fetched, setFetched] = useState<Comment[] | null>(null);
   const [posted, setPosted] = useState<Comment[]>([]);
   const [overrides, setOverrides] = useState<Record<string, Partial<Comment>>>({});
+  const [removed, setRemoved] = useState<ReadonlySet<string>>(new Set());
   const [text, setText] = useState('');
   const [busy, setBusy] = useState(false);
   const [replyTo, setReplyTo] = useState<string | null>(null);
   const [replyText, setReplyText] = useState('');
 
+  // Live updates: poll the comments while the page is open.
+  useEffect(() => {
+    if (!enabled || !seriesId) {
+      setFetched([]);
+      return;
+    }
+    let alive = true;
+    const load = (): void => {
+      void getComments(seriesId).then((items) => {
+        if (alive) setFetched(items);
+      });
+    };
+    load();
+    const timer = window.setInterval(load, POLL_MS);
+    return () => {
+      alive = false;
+      clearInterval(timer);
+    };
+  }, [seriesId, enabled]);
+
   const { tops, repliesOf, total } = useMemo(() => {
     const seen = new Set<string>();
-    const merged = [...posted, ...(data ?? [])]
-      .filter((comment) => (seen.has(comment.id) ? false : (seen.add(comment.id), true)))
-      .map((comment) => ({ ...comment, ...overrides[comment.id] }));
+    const merged = [...posted, ...(fetched ?? [])]
+      .filter((c) => !removed.has(c.id) && (seen.has(c.id) ? false : (seen.add(c.id), true)))
+      .map((c) => ({ ...c, ...overrides[c.id] }));
+    const ids = new Set(merged.map((c) => c.id));
     const byParent = new Map<string, Comment[]>();
-    for (const comment of merged) {
-      if (comment.parentId) {
-        const list = byParent.get(comment.parentId) ?? [];
-        list.push(comment);
-        byParent.set(comment.parentId, list);
+    for (const c of merged) {
+      if (c.parentId && ids.has(c.parentId)) {
+        const list = byParent.get(c.parentId) ?? [];
+        list.push(c);
+        byParent.set(c.parentId, list);
       }
     }
-    for (const list of byParent.values()) {
-      list.sort((a, b) => a.ts - b.ts);
-    }
+    for (const list of byParent.values()) list.sort((a, b) => a.ts - b.ts);
     return {
-      tops: merged.filter((comment) => !comment.parentId),
+      tops: merged.filter((c) => !c.parentId || !ids.has(c.parentId)),
       repliesOf: (id: string): Comment[] => byParent.get(id) ?? [],
-      total: merged.filter((comment) => !comment.deleted).length,
+      total: merged.filter((c) => !c.deleted).length,
     };
-  }, [posted, data, overrides]);
+  }, [posted, fetched, overrides, removed]);
 
   if (!seriesId) {
     return null;
   }
+
+  const loading = fetched === null;
+  const ctx = { name, avatar, seriesTitle, watchPath };
 
   const addPosted = (comment: Comment | null, after: () => void): void => {
     if (comment) {
@@ -183,7 +208,7 @@ export function CommentsSection({ seriesId }: CommentsSectionProps): React.JSX.E
     const body = text.trim();
     if (!body || busy) return;
     setBusy(true);
-    void postComment(seriesId, { name, avatar, text: body })
+    void postComment(seriesId, { ...ctx, text: body })
       .then((comment) => addPosted(comment, () => setText('')))
       .finally(() => setBusy(false));
   };
@@ -191,7 +216,7 @@ export function CommentsSection({ seriesId }: CommentsSectionProps): React.JSX.E
   const submitReply = (parentId: string): void => {
     const body = replyText.trim();
     if (!body) return;
-    void postComment(seriesId, { name, avatar, text: body, parentId }).then((comment) =>
+    void postComment(seriesId, { ...ctx, text: body, parentId }).then((comment) =>
       addPosted(comment, () => {
         setReplyText('');
         setReplyTo(null);
@@ -204,9 +229,12 @@ export function CommentsSection({ seriesId }: CommentsSectionProps): React.JSX.E
       if (comment) setOverrides((o) => ({ ...o, [id]: { text: comment.text, edited: true } }));
     });
   };
+
   const doDelete = (id: string): void => {
     void deleteComment(seriesId, id).then((ok) => {
-      if (ok) setOverrides((o) => ({ ...o, [id]: { deleted: true, text: '' } }));
+      if (!ok) return;
+      setOverrides((o) => ({ ...o, [id]: { deleted: true, text: '' } }));
+      window.setTimeout(() => setRemoved((prev) => new Set(prev).add(id)), DELETE_LINGER_MS);
     });
   };
 
