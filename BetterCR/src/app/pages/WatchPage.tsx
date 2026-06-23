@@ -11,6 +11,7 @@ import {
 } from '@core/api/client';
 import { bridge } from '@core/api/transport';
 import { useAsync } from '@app/hooks/useAsync';
+import { usePlayerSuppressed } from '@app/lib/playerGate';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
 import { Chip } from '@app/components/Chip';
@@ -62,6 +63,7 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
   const { data } = useAsync(() => loadWatch(seriesId, episodeId), [seriesId, episodeId]);
 
   const slotRef = useRef<HTMLDivElement>(null);
+  const playerSuppressed = usePlayerSuppressed();
 
   const current = useMemo(() => {
     if (!data) return null;
@@ -99,6 +101,10 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
     if (!el) return;
     let raf = 0;
     const report = (): void => {
+      if (playerSuppressed) {
+        bridge.watchSlot(null);
+        return;
+      }
       const r = el.getBoundingClientRect();
       bridge.watchSlot({ x: r.left, y: r.top, width: r.width, height: r.height });
     };
@@ -120,7 +126,7 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
       clearTimeout(settle);
       bridge.watchSlot(null);
     };
-  }, [data]);
+  }, [data, playerSuppressed]);
 
   const playEpisode = (ep: Episode): void => bridge.navigate(ep.watchPath);
   const openSeries = (): void => go({ page: 'detail', seriesId: data?.info?.seriesId || seriesId });

@@ -103,6 +103,15 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.8.1
+
+- 🧭 **Découvertes** : les rangées sont alignées sur le titre de la page (fini la double
+  gouttière qui les décalait trop à droite).
+- ▶️ **Lecteur** : le lecteur natif ne recouvre plus le **header** quand on scrolle (il glisse
+  dessous), et il s'efface le temps qu'un **menu/notifications** du header est ouvert.
+- 🔗 **URL** : l'adresse reflète désormais **toutes** les pages — fini l'URL bloquée sur
+  `/series/…` après être revenu à l'Accueil.
+
 ### v1.8.0
 
 - ⏭️ **Passer l'intro / le récap / le générique** : un bouton apparaît sur le lecteur

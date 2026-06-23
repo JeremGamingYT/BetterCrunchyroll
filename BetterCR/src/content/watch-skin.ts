@@ -21,6 +21,13 @@ const PLAYER_Z = '2147483600';
 const POLL_MS = 350;
 /** Hide the skip button this many seconds before a segment ends. */
 const SKIP_TAIL_S = 1.5;
+/**
+ * The overlay's fixed header lives inside the iframe (below the relocated
+ * player in the stacking order). Clip the player's top by this many pixels of
+ * header so that, when the watch page is scrolled, the player slides *under*
+ * the header instead of painting over it.
+ */
+const HEADER_CLEAR_PX = 64;
 
 export type SkipKind = 'recap' | 'intro' | 'credits';
 
@@ -230,6 +237,10 @@ export class WatchSkin {
     s.top = `${String(Math.round(r.y))}px`;
     s.width = `${String(Math.round(r.width))}px`;
     s.height = `${String(Math.round(r.height))}px`;
+    // Clip whatever scrolls above the header line so the player never paints
+    // over the fixed overlay header.
+    const clipTop = Math.max(0, HEADER_CLEAR_PX - r.y);
+    s.clipPath = clipTop > 0 ? `inset(${String(Math.round(clipTop))}px 0 0 0)` : '';
   }
 
   private restorePlayer(): void {

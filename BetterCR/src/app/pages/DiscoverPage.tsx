@@ -95,10 +95,12 @@ export function DiscoverPage(): React.JSX.Element {
   const { t } = useI18n();
 
   return (
-    <div className="page-pad" data-screen-label="Découvertes">
-      <div className="page-head">
-        <h1 className="page-title">{t('disc.title')}</h1>
-        <p className="page-sub">{t('disc.sub')}</p>
+    <div data-screen-label="Découvertes">
+      <div className="page-pad">
+        <div className="page-head">
+          <h1 className="page-title">{t('disc.title')}</h1>
+          <p className="page-sub">{t('disc.sub')}</p>
+        </div>
       </div>
 
       <div className="rows disc-rows">

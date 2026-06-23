@@ -5,6 +5,7 @@ import { getReplyNotifications, type ReplyNotif } from '@core/api/notifications'
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
 import { useProfile } from '@app/profile';
+import { releasePlayer, suppressPlayer } from '@app/lib/playerGate';
 import { Icon } from './Icon';
 import { NotificationsPanel } from './NotificationsPanel';
 
@@ -118,6 +119,16 @@ export function Header({ onLogout }: HeaderProps): React.JSX.Element {
     document.addEventListener('mousedown', close);
     return () => document.removeEventListener('mousedown', close);
   }, []);
+
+  // Hide the floating /watch player while a header dropdown is open, so the
+  // menu/notifications aren't covered by it.
+  useEffect(() => {
+    if (!menuOpen && !notifOpen) {
+      return;
+    }
+    suppressPlayer();
+    return () => releasePlayer();
+  }, [menuOpen, notifOpen]);
 
   const startOfToday = new Date();
   startOfToday.setHours(0, 0, 0, 0);

@@ -26,15 +26,19 @@ const GUEST_RECHECK_MS = 4000;
 
 type AuthState = 'checking' | 'authed' | 'guest';
 
-/** Crunchyroll URL a route should reflect in the address bar (null = leave as-is). */
-function routeToCrPath(route: AppRoute): string | null {
+/**
+ * Crunchyroll path a route should reflect in the address bar. Detail/watch get
+ * their real CR paths; every other BetterCR page resets to the locale root so
+ * the URL never stays stuck on a stale `/series/…` after navigating away.
+ */
+function routeToCrPath(route: AppRoute): string {
   if (route.page === 'detail') {
     return `/series/${route.seriesId}`;
   }
   if (route.page === 'watch') {
     return `/watch/${route.episodeId ?? route.seriesId}`;
   }
-  return null;
+  return '/';
 }
 
 function renderPage(route: AppRoute): React.JSX.Element {
@@ -96,10 +100,7 @@ function AuthedApp({ tweaks, goodbye, onLogout }: AuthedAppProps): React.JSX.Ele
     setTransitionKey((key) => key + 1);
     window.scrollTo(0, 0);
     window.location.hash = serializeRoute(next);
-    const crPath = routeToCrPath(next);
-    if (crPath) {
-      bridge.navigate(crPath);
-    }
+    bridge.navigate(routeToCrPath(next));
   }, []);
 
   useEffect(() => {
