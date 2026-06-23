@@ -43,11 +43,15 @@ function ReplyNotifRow({
   const send = (): void => {
     const body = text.trim();
     if (!body) return;
-    void postComment(notif.series, {
+    // Comments are keyed by episode; recover it from the stored watch path.
+    const episodeId = (notif.watchPath ?? '').replace(/^\/watch\//, '').split(/[/?#]/)[0];
+    if (!episodeId) return;
+    void postComment(episodeId, {
       name,
       avatar,
       text: body,
       parentId: notif.parentId,
+      seriesId: notif.series,
       seriesTitle: notif.seriesTitle,
       watchPath: notif.watchPath,
     }).then((comment) => {

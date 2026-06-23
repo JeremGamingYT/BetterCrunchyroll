@@ -417,6 +417,94 @@
   flex-direction: column;
   gap: 16px;
 }
+
+/* ── Anti-spoiler guard ── */
+.cmt-guard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--mut, #9aa0ac);
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px dashed var(--line, rgba(255, 255, 255, 0.12));
+  border-radius: 16px;
+}
+.cmt-guard-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--txt, #f4f4f6);
+}
+.cmt-guard-sub {
+  font-size: 13px;
+  max-width: 380px;
+}
+.cmt-guard .btn {
+  margin-top: 4px;
+}
+
+/* ── Muted words ── */
+.cmt-mute-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--mut, #9aa0ac);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.cmt-mute-toggle.is-on {
+  color: var(--acc, #f47521);
+  border-color: color-mix(in srgb, var(--acc, #f47521) 45%, transparent);
+}
+.cmt-mute {
+  margin: -6px 0 22px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.08));
+  border-radius: 12px;
+}
+.cmt-mute-lead {
+  font-size: 12px;
+  color: var(--mut, #9aa0ac);
+  margin-bottom: 10px;
+}
+.cmt-mute-add {
+  display: flex;
+  gap: 8px;
+}
+.cmt-mute-add .cmt-input {
+  flex: 1;
+}
+.cmt-mute-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.cmt-mute-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.12));
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--txt, #f4f4f6);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cmt-mute-chip:hover {
+  border-color: var(--acc, #f47521);
+  color: var(--acc, #f47521);
+}
 .cmt-reply .cmt-avatar {
   width: 30px;
   height: 30px;

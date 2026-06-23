@@ -102,6 +102,22 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.6.0
+
+- 💬 **Commentaires par épisode** (au lieu de par série) : chaque épisode a son fil.
+- 🙈 **Masquage anti-spoiler** : le fil reste caché tant que l'épisode n'a pas été regardé
+  (détecté via le *playhead*) — un bouton « Afficher quand même » permet de passer outre.
+- 🧹 **Espace borné** : expiration automatique après **30 jours**, listes plafonnées, et
+  **éviction intelligente** (les fils les plus vieux et les moins consultés partent en premier)
+  quand la base grossit.
+- 🛡️ **Modération communautaire intelligente** : **signalement**, **score de confiance caché**,
+  **auto-masquage** au-delà de N signalements (seuil abaissé pour les comptes peu fiables),
+  **shadow-ban** côté serveur (les trolls voient encore leurs messages, plus personne d'autre —
+  non contournable via devtools), et **cooldown anti-spam** par utilisateur.
+- 🔒 **Mots masqués** : filtre personnel local (privé, par appareil) pour cacher des commentaires.
+- 🔐 **Sécurité** : l'`uid` propriétaire n'est plus renvoyé aux autres clients (un booléen `mine`
+  est résolu côté serveur), ce qui empêche l'usurpation d'identité.
+
 ### v1.5.0
 
 - 🧭 **Page « Découvertes »** (+ section « voir plus » sur l'accueil et bouton **Découvrir** dans

@@ -11,12 +11,21 @@
 import { Redis } from '@upstash/redis';
 
 const url =
-  process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || process.env.REDIS_REST_API_URL || '';
+  process.env.KV_REST_API_URL ||
+  process.env.UPSTASH_REDIS_REST_URL ||
+  process.env.REDIS_REST_API_URL ||
+  '';
 const token =
-  process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || process.env.REDIS_REST_API_TOKEN || '';
+  process.env.KV_REST_API_TOKEN ||
+  process.env.UPSTASH_REDIS_REST_TOKEN ||
+  process.env.REDIS_REST_API_TOKEN ||
+  '';
 const redis = url && token ? new Redis({ url, token }) : null;
 
-const cleanId = (value) => String(value ?? '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 80);
+const cleanId = (value) =>
+  String(value ?? '')
+    .replace(/[^A-Za-z0-9_-]/g, '')
+    .slice(0, 80);
 const notifKey = (uid) => `bcr:notif:${cleanId(uid)}`;
 const parseEntry = (entry) => {
   try {
@@ -62,6 +71,8 @@ export default async function handler(req, res) {
     }
     res.status(405).json({ error: 'method not allowed' });
   } catch (error) {
-    res.status(500).json({ error: 'server_error', detail: String(error?.message || error).slice(0, 200) });
+    res
+      .status(500)
+      .json({ error: 'server_error', detail: String(error?.message || error).slice(0, 200) });
   }
 }

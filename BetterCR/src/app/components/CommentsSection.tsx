@@ -1,15 +1,16 @@
-import { useEffect, useMemo, useState, type FormEvent } from 'react';
+import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 import {
-  clientId,
   commentsEnabled,
   deleteComment,
   editComment,
   getComments,
   postComment,
+  reportComment,
   type Comment,
 } from '@core/api/comments';
 import { useI18n } from '@app/i18n/i18n';
 import { useProfile } from '@app/profile';
+import { addMuteWord, isMuted, removeMuteWord, useMuteWords } from '@app/lib/muteWords';
 import { Icon } from './Icon';
 
 const MAX = 1000;
@@ -32,6 +33,7 @@ interface RowProps {
   readonly onReply?: () => void;
   readonly onEdit: (text: string) => void;
   readonly onDelete: () => void;
+  readonly onReport: () => void;
 }
 
 function CommentRow({
@@ -41,6 +43,7 @@ function CommentRow({
   onReply,
   onEdit,
   onDelete,
+  onReport,
 }: RowProps): React.JSX.Element {
   const { t, lang } = useI18n();
   const [editing, setEditing] = useState(false);
@@ -113,6 +116,11 @@ function CommentRow({
                 {t('comments.delete')}
               </button>
             )}
+            {!mine && (
+              <button className="cmt-act" onClick={onReport} title={t('comments.report')}>
+                <Icon name="shield" size={12} /> {t('comments.report')}
+              </button>
+            )}
           </div>
         )}
       </div>
@@ -121,22 +129,28 @@ function CommentRow({
 }
 
 export interface CommentsSectionProps {
-  readonly seriesId: string;
+  /** Episode id the comments are keyed by (required to show anything). */
+  readonly episodeId: string;
+  readonly seriesId?: string;
   readonly seriesTitle?: string;
   readonly watchPath?: string;
+  /** When true the thread is hidden behind an anti-spoiler guard until revealed. */
+  readonly locked?: boolean;
 }
 
 export function CommentsSection({
+  episodeId,
   seriesId,
   seriesTitle,
   watchPath,
+  locked = false,
 }: CommentsSectionProps): React.JSX.Element | null {
   const { t } = useI18n();
   const { profile } = useProfile();
   const name = profile?.username || t('menu.user');
   const avatar = profile?.avatarUrl || '';
   const enabled = commentsEnabled();
-  const myUid = clientId();
+  const muteWords = useMuteWords();
 
   const [fetched, setFetched] = useState<Comment[] | null>(null);
   const [posted, setPosted] = useState<Comment[]>([]);
@@ -146,17 +160,27 @@ export function CommentsSection({
   const [busy, setBusy] = useState(false);
   const [replyTo, setReplyTo] = useState<string | null>(null);
   const [replyText, setReplyText] = useState('');
+  const [revealed, setRevealed] = useState(false);
+  const [muteOpen, setMuteOpen] = useState(false);
+  const [muteDraft, setMuteDraft] = useState('');
+  const viewedRef = useRef(false);
 
-  // Live updates: poll the comments while the page is open.
+  const active = enabled && Boolean(episodeId) && (!locked || revealed);
+
+  // Live updates: poll while the (unlocked) thread is open.
   useEffect(() => {
-    if (!enabled || !seriesId) {
-      setFetched([]);
+    if (!active) {
+      setFetched(null);
       return;
     }
     let alive = true;
     const load = (): void => {
-      void getComments(seriesId).then((items) => {
-        if (alive) setFetched(items);
+      const view = !viewedRef.current;
+      void getComments(episodeId, { view }).then((items) => {
+        if (alive) {
+          setFetched(items);
+          viewedRef.current = true;
+        }
       });
     };
     load();
@@ -165,13 +189,14 @@ export function CommentsSection({
       alive = false;
       clearInterval(timer);
     };
-  }, [seriesId, enabled]);
+  }, [episodeId, active]);
 
   const { tops, repliesOf, total } = useMemo(() => {
     const seen = new Set<string>();
     const merged = [...posted, ...(fetched ?? [])]
       .filter((c) => !removed.has(c.id) && (seen.has(c.id) ? false : (seen.add(c.id), true)))
-      .map((c) => ({ ...c, ...overrides[c.id] }));
+      .map((c) => ({ ...c, ...overrides[c.id] }))
+      .filter((c) => c.deleted || !isMuted(c.text, muteWords));
     const ids = new Set(merged.map((c) => c.id));
     const byParent = new Map<string, Comment[]>();
     for (const c of merged) {
@@ -187,14 +212,14 @@ export function CommentsSection({
       repliesOf: (id: string): Comment[] => byParent.get(id) ?? [],
       total: merged.filter((c) => !c.deleted).length,
     };
-  }, [posted, fetched, overrides, removed]);
+  }, [posted, fetched, overrides, removed, muteWords]);
 
-  if (!seriesId) {
+  if (!episodeId) {
     return null;
   }
 
   const loading = fetched === null;
-  const ctx = { name, avatar, seriesTitle, watchPath };
+  const ctx = { name, avatar, seriesId, seriesTitle, watchPath };
 
   const addPosted = (comment: Comment | null, after: () => void): void => {
     if (comment) {
@@ -208,7 +233,7 @@ export function CommentsSection({
     const body = text.trim();
     if (!body || busy) return;
     setBusy(true);
-    void postComment(seriesId, { ...ctx, text: body })
+    void postComment(episodeId, { ...ctx, text: body })
       .then((comment) => addPosted(comment, () => setText('')))
       .finally(() => setBusy(false));
   };
@@ -216,7 +241,7 @@ export function CommentsSection({
   const submitReply = (parentId: string): void => {
     const body = replyText.trim();
     if (!body) return;
-    void postComment(seriesId, { ...ctx, text: body, parentId }).then((comment) =>
+    void postComment(episodeId, { ...ctx, text: body, parentId }).then((comment) =>
       addPosted(comment, () => {
         setReplyText('');
         setReplyTo(null);
@@ -225,17 +250,30 @@ export function CommentsSection({
   };
 
   const doEdit = (id: string, next: string): void => {
-    void editComment(seriesId, id, next).then((comment) => {
+    void editComment(episodeId, id, next).then((comment) => {
       if (comment) setOverrides((o) => ({ ...o, [id]: { text: comment.text, edited: true } }));
     });
   };
 
   const doDelete = (id: string): void => {
-    void deleteComment(seriesId, id).then((ok) => {
+    void deleteComment(episodeId, id).then((ok) => {
       if (!ok) return;
       setOverrides((o) => ({ ...o, [id]: { deleted: true, text: '' } }));
       window.setTimeout(() => setRemoved((prev) => new Set(prev).add(id)), DELETE_LINGER_MS);
     });
+  };
+
+  const doReport = (id: string): void => {
+    setRemoved((prev) => new Set(prev).add(id)); // hide locally right away
+    void reportComment(episodeId, id);
+  };
+
+  const addMute = (event: FormEvent): void => {
+    event.preventDefault();
+    if (muteDraft.trim()) {
+      addMuteWord(muteDraft);
+      setMuteDraft('');
+    }
   };
 
   return (
@@ -243,10 +281,56 @@ export function CommentsSection({
       <div className="cmt-head">
         <h2 className="row-title">{t('comments.title')}</h2>
         {total > 0 && <span className="cmt-count">{total}</span>}
+        {enabled && active && (
+          <button
+            className={`cmt-mute-toggle${muteWords.length > 0 ? ' is-on' : ''}`}
+            onClick={() => setMuteOpen((v) => !v)}
+            title={t('comments.mute.title')}
+          >
+            <Icon name="eyeOff" size={14} />
+            {muteWords.length > 0 && <span>{muteWords.length}</span>}
+          </button>
+        )}
       </div>
+
+      {muteOpen && (
+        <div className="cmt-mute">
+          <p className="cmt-mute-lead">{t('comments.mute.lead')}</p>
+          <form className="cmt-mute-add" onSubmit={addMute}>
+            <input
+              className="cmt-input"
+              value={muteDraft}
+              maxLength={40}
+              placeholder={t('comments.mute.placeholder')}
+              onChange={(event) => setMuteDraft(event.target.value)}
+            />
+            <button className="btn btn-glass" type="submit" disabled={!muteDraft.trim()}>
+              {t('comments.mute.add')}
+            </button>
+          </form>
+          {muteWords.length > 0 && (
+            <div className="cmt-mute-chips">
+              {muteWords.map((word) => (
+                <button key={word} className="cmt-mute-chip" onClick={() => removeMuteWord(word)}>
+                  {word} <Icon name="x" size={11} />
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
 
       {!enabled ? (
         <p className="cmt-soon">{t('comments.soon')}</p>
+      ) : locked && !revealed ? (
+        <div className="cmt-guard">
+          <Icon name="eyeOff" size={26} />
+          <p className="cmt-guard-title">{t('comments.locked.title')}</p>
+          <p className="cmt-guard-sub">{t('comments.locked.sub')}</p>
+          <button className="btn btn-glass" onClick={() => setRevealed(true)}>
+            {t('comments.locked.reveal')}
+          </button>
+        </div>
       ) : (
         <>
           <form className="cmt-form" onSubmit={submitTop}>
@@ -281,13 +365,14 @@ export function CommentsSection({
                 <div key={comment.id} className="cmt-thread">
                   <CommentRow
                     comment={comment}
-                    mine={comment.uid === myUid}
+                    mine={comment.mine ?? false}
                     onReply={() => {
                       setReplyTo(replyTo === comment.id ? null : comment.id);
                       setReplyText('');
                     }}
                     onEdit={(next) => doEdit(comment.id, next)}
                     onDelete={() => doDelete(comment.id)}
+                    onReport={() => doReport(comment.id)}
                   />
 
                   {replyTo === comment.id && (
@@ -321,10 +406,11 @@ export function CommentsSection({
                         <CommentRow
                           key={reply.id}
                           comment={reply}
-                          mine={reply.uid === myUid}
+                          mine={reply.mine ?? false}
                           isReply
                           onEdit={(next) => doEdit(reply.id, next)}
                           onDelete={() => doDelete(reply.id)}
+                          onReport={() => doReport(reply.id)}
                         />
                       ))}
                     </div>

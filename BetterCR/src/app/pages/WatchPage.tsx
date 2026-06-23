@@ -2,10 +2,12 @@ import { useEffect, useMemo, useRef } from 'react';
 import type { Episode } from '@core/models/content';
 import {
   getEpisodeInfo,
+  getPlayheads,
   getSeasonEpisodes,
   getSeasons,
   getSeriesDetail,
   type EpisodeInfo,
+  type PlayheadInfo,
 } from '@core/api/client';
 import { bridge } from '@core/api/transport';
 import { useAsync } from '@app/hooks/useAsync';
@@ -70,6 +72,17 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
     }
     return null;
   }, [data, episodeId]);
+
+  // Anti-spoiler: keep comments hidden until this episode has actually been
+  // watched. Defaults to locked while the playhead is still loading.
+  const epKey = episodeId || current?.id || '';
+  const playheadState = useAsync(
+    () => (epKey ? getPlayheads([epKey]) : Promise.resolve(new Map<string, PlayheadInfo>())),
+    [epKey],
+  );
+  const ph = epKey ? playheadState.data?.get(epKey) : undefined;
+  const watched = ph ? ph.fullyWatched || ph.playhead > 30 : false;
+  const commentsLocked = epKey ? !watched : false;
 
   const num = current?.num ?? data?.info?.number ?? 0;
   const epTitle = current?.title || data?.info?.title || '';
@@ -161,9 +174,11 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
       </div>
 
       <CommentsSection
+        episodeId={epKey}
         seriesId={data?.info?.seriesId || seriesId}
         seriesTitle={data?.seriesTitle}
-        watchPath={episodeId ? `/watch/${episodeId}` : undefined}
+        watchPath={epKey ? `/watch/${epKey}` : undefined}
+        locked={commentsLocked}
       />
     </div>
   );
