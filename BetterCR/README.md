@@ -17,16 +17,33 @@ crunchyroll.com (onglet)
  │     └─ <iframe src="chrome-extension://…/src/app/index.html">  ← l'app BetterCR (React/TS)
  │           └─ appelle l'API CR via postMessage → content-script (qui détient le token)
  ├─ background       (service worker) → neutralise la CSP frame-src (DNR) pour l'iframe
- └─ /watch : pas d'overlay → lecteur natif Crunchyroll (DRM) conservé
+ └─ /watch : overlay BetterCR (Header · infos · épisodes · commentaires · Footer)
+             + lecteur natif Bitmovin (DRM) repositionné par-dessus le slot
 ```
 
-- **Pas de serveur** : l'iframe charge un fichier statique via `chrome.runtime.getURL`.
+- **Pas de serveur (cœur)** : l'iframe charge un fichier statique via `chrome.runtime.getURL`.
+  Seuls les **commentaires** utilisent un petit backend serverless **optionnel** et gratuit (`server/`).
 - **Auth transparente** : on réutilise la session Crunchyroll déjà connectée (token intercepté).
   Un login email/mot de passe de secours existe (proxy `AUTH_REQUEST`).
 - **CORS** : l'iframe (`chrome-extension://`) ne peut pas appeler l'API CR directement ;
   tout passe par le content-script (origine page) avec `Bearer` + cookies.
-- **Lecture vidéo** : les flux Crunchyroll sont protégés par DRM Widevine, donc la page
-  `/watch` garde le **lecteur natif** (un lecteur custom ne pourrait pas les lire).
+- **Lecture vidéo** : les flux Crunchyroll sont protégés par DRM Widevine. La page `/watch`
+  conserve donc le **lecteur natif Bitmovin** (un lecteur custom ne pourrait pas les lire) :
+  il est simplement **repositionné** dans la page BetterCR, jamais remplacé.
+
+## Fonctionnalités
+
+- 🏠 **Accueil** : héros, *Continuer à regarder*, *Populaires*, *Top 10*, *Parcourir par genre*.
+- 🗂️ **Catalogue** : Séries / Films / Simulcast (pagination), recherche, fiche série + saisons/épisodes.
+- 🎭 **Fiche série** enrichie via **AniList** (bannière, score, genres, studios) + **anti-spoiler**
+  (épisodes non vus floutés tant qu'ils ne sont pas regardés, via les playheads).
+- ❤️ **Watchlist** synchronisée avec ton compte (marque-page en 1 clic sur chaque carte) ;
+  **Paramètres** avec statistiques réelles (épisodes, heures, favoris, séries).
+- ▶️ **Page Lecteur** repensée autour du lecteur natif (infos, *À suivre*, **commentaires**).
+- 💬 **Commentaires** par animé (avatars, réponses, édition/suppression, temps réel, filtre FR/EN).
+- 🔔 **Notifications** : réponses à tes commentaires + nouveaux épisodes du jour.
+- 🗓️ **Sorties à venir** (AniList) par période.
+- 🌐 **FR / EN**, thème + **Tweaks** (accent, taille des cartes, animations, anti-spoiler).
 
 ## Installation (développement)
 
@@ -56,19 +73,23 @@ npm run build        # produit dist/ (extension MV3 complète)
 ```
 src/
 ├─ app/        SPA React (UI BetterCR portée en TS)
-│  ├─ pages/        HomePage · GridPage · DetailPage · WatchlistPage
-│  ├─ components/   Header · Hero · Row · PosterCard · ContinueCard · SearchOverlay · …
+│  ├─ pages/        HomePage · GridPage · DetailPage · WatchlistPage · WatchPage ·
+│  │                UpcomingPage · SettingsPage · CategoryPage · AuthPage · NotFoundPage
+│  ├─ components/   Header · Hero · Row · PosterCard · CommentsSection ·
+│  │                NotificationsPanel · SearchOverlay · …
 │  ├─ tweaks/       Panneau d'apparence (accent / taille des cartes / animations)
 │  ├─ hooks/ · lib/ · styles/  (CSS extrait verbatim du design d'origine)
-├─ core/       Couche API Crunchyroll (sans dépendance au DOM)
-│  ├─ api/          transport postMessage · client typé · erreurs
+├─ core/       Couche API (sans dépendance au DOM)
+│  ├─ api/          transport postMessage · client CR typé · comments · notifications · erreurs
+│  ├─ providers/    AniList (méta, trending, sorties à venir)
 │  ├─ schemas/      validation zod des réponses CR (tolérante)
-│  ├─ mappers/      DTO Crunchyroll → modèles de vue
-│  └─ models/       types de vue (Series, Episode, Season…)
-├─ content/    content-script (overlay, pont, token store, proxy API, auth)
+│  ├─ mappers/ · models/   DTO → modèles de vue
+├─ content/    content-script (overlay, pont, token store, proxy API, auth, watch-skin)
 ├─ injected/   intercepteur de token (contexte page)
 ├─ background/ service worker (règle DNR)
 └─ shared/     contrat de messages typé · routing · config · Result
+
+server/         API commentaires serverless (Vercel + Upstash Redis) — optionnelle, gratuite
 ```
 
 ## Qualité (NASA / Google)
@@ -83,12 +104,18 @@ src/
 
 ### v1.4.0
 
-- 💬 **Commentaires sur la page Lecteur**, par animé, signés de ton pseudo Crunchyroll,
-  **sans connexion**. Backend **gratuit et serverless** : une petite API Vercel + Upstash
-  Redis (free tier) — voir [`server/`](server/). Tant que `COMMENTS_API` (dans
-  `src/shared/config.ts`) est vide, la section affiche « bientôt disponible » ; une fois le
-  serveur déployé et l'URL renseignée, les commentaires s'affichent et se postent en direct
-  (`src/core/api/comments.ts` + `CommentsSection`). Anti-spam : longueur limitée + débit par IP.
+- 💬 **Commentaires sur la page Lecteur** (par animé, signés de ton pseudo Crunchyroll, **sans
+  connexion**) : **avatars**, **réponses** en fils, **édition / suppression** de tes propres
+  commentaires (« Commentaire supprimé » s'affiche quelques secondes puis disparaît), **temps
+  réel** (rafraîchissement automatique), et un **filtre anti-insultes** bilingue FR/EN
+  (variantes leetspeak / abréviations). Backend **gratuit & serverless** (Vercel + Upstash
+  Redis, free tier) dans [`server/`](server/), activé via `COMMENTS_API` (`src/shared/config.ts`) ;
+  vide → la section affiche « bientôt disponible ». Anti-spam : longueur limitée + débit par IP.
+- 🔔 **Centre de notifications** (cloche dans le header, avec pastille) : **réponses à tes
+  commentaires** (avec **réponse directe** depuis la cloche) + **nouveaux épisodes du jour**
+  (clic → lecture).
+- 🗓️ **Page « Sorties à venir »** (via **AniList**) + bouton dédié dans le header : les animés
+  annoncés, en sections claires — *Prochains mois* / *L'année prochaine* / *Plus tard*.
 
 ### v1.3.0
 
@@ -166,9 +193,10 @@ src/
 
 ## Feuille de route
 
-- **Phase 1 (faite)** : fondation, pipeline sans serveur, Accueil, Catalogue, Fiche série, Tweaks.
-- **Phase 2** : Recherche avancée, Watchlist (compte), Continuer à regarder (playheads), Similaires.
-- **Phase 3** : `/watch` — skin BetterCR sur le lecteur natif, skip intro/outro, sync playhead.
-- **Phase 4** : login de secours, états d'erreur/vides, locale, page Paramètres, packaging Web Store.
+- **Phase 1 — faite** : fondation, pipeline sans serveur, Accueil, Catalogue, Fiche série, Tweaks.
+- **Phase 2 — faite** : Watchlist (compte), Continuer à regarder (playheads), recherche, stats, anti-spoiler.
+- **Phase 3 — faite** : page `/watch` BetterCR autour du lecteur natif (infos, *À suivre*, commentaires).
+- **Phase 4 — faite** : commentaires (backend serverless gratuit), centre de notifications, *Sorties à venir* (AniList), login de secours, i18n FR/EN.
+- **Ensuite** : contrôles custom du lecteur (skip intro/outro, sync playhead), packaging Web Store.
 
 > Interface non affiliée à Crunchyroll. Données via votre propre compte.
