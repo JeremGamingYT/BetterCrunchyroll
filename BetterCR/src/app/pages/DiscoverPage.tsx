@@ -101,7 +101,7 @@ export function DiscoverPage(): React.JSX.Element {
         <p className="page-sub">{t('disc.sub')}</p>
       </div>
 
-      <div className="rows">
+      <div className="rows disc-rows">
         <BecauseRow />
         <DiscoverRow
           title={t('disc.short')}

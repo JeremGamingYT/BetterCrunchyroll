@@ -800,6 +800,27 @@ button.notif-item:hover {
   text-overflow: ellipsis;
 }
 
+/* Discover rows follow a page header (no hero), so cancel the hero pull-up. */
+.disc-rows {
+  margin-top: 0;
+}
+
+/* Watch page: the series title (kicker) doubles as a link back to the series. */
+.watch-kicker-btn {
+  display: inline-block;
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.watch-kicker-btn:hover {
+  text-decoration: underline;
+  opacity: 0.82;
+}
+
 /* ── Advanced search ── */
 .srch-bar {
   display: flex;

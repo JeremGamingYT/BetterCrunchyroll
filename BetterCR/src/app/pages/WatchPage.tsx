@@ -134,7 +134,11 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
 
       <div className="watch-below page-pad">
         <div className="watch-info">
-          {data?.seriesTitle && <p className="watch-kicker">{data.seriesTitle}</p>}
+          {data?.seriesTitle && (
+            <button className="watch-kicker watch-kicker-btn" onClick={openSeries}>
+              {data.seriesTitle}
+            </button>
+          )}
           <h1 className="watch-title">{num ? `E${String(num)} · ${epTitle}` : epTitle || '…'}</h1>
           <div className="dt-meta">
             {durMin > 0 && <span>{t('common.min', { n: durMin })}</span>}
