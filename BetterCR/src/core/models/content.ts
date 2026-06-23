@@ -64,6 +64,13 @@ export interface ContinueItem {
   readonly watchPath: string;
 }
 
+/** A genre/category tile. `id` is the slug used in browse's `categories`. */
+export interface Genre {
+  readonly id: string;
+  readonly title: string;
+  readonly image: string;
+}
+
 /** A horizontal row on the home page. `titleKey`/`subKey` are i18n keys. */
 export interface HomeRow {
   readonly id: string;

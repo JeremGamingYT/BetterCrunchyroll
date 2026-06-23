@@ -1,57 +1,38 @@
 import type { CSSProperties } from 'react';
-import type { Series } from '@core/models/content';
-import { getObjects, getWatchlist } from '@core/api/client';
+import { getWatchHistory, getWatchlist } from '@core/api/client';
 import { useAsync } from '@app/hooks/useAsync';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
-import { useFavoriteIds } from '@app/lib/favorites';
 import { useProfile } from '@app/profile';
 import { Icon, type IconName } from '@app/components/Icon';
 import { PosterCard } from '@app/components/PosterCard';
-
-function dedupe(series: readonly Series[]): Series[] {
-  const seen = new Set<string>();
-  const out: Series[] = [];
-  for (const item of series) {
-    if (!seen.has(item.id)) {
-      seen.add(item.id);
-      out.push(item);
-    }
-  }
-  return out;
-}
 
 export function SettingsPage(): React.JSX.Element {
   const { go } = useRouter();
   const { t, lang } = useI18n();
   const { profile, stats: watch } = useProfile();
-  const favoriteIds = useFavoriteIds();
-  const favKey = favoriteIds.join(',');
 
-  const watchlistState = useAsync(() => getWatchlist(60), [lang]);
-  const favState = useAsync(
-    () => (favKey ? getObjects(favKey.split(',')) : Promise.resolve<Series[]>([])),
-    [favKey, lang],
-  );
+  // Favorites = the Crunchyroll watchlist; "recent" = watch history.
+  const favoritesState = useAsync(() => getWatchlist(60), [lang]);
+  const recentState = useAsync(() => getWatchHistory(24), [lang]);
 
-  const watchlist = watchlistState.data ?? [];
-  const favorites = favState.data ?? [];
-  const pool = dedupe([...watchlist, ...favorites]);
+  const favorites = favoritesState.data ?? [];
+  const recent = recentState.data ?? [];
 
-  const vf = pool.filter((series) => series.dub).length;
-  const vostfr = pool.filter((series) => series.sub && !series.dub).length;
+  const vf = favorites.filter((series) => series.dub).length;
+  const vostfr = favorites.filter((series) => series.sub && !series.dub).length;
   const total = vf + vostfr || 1;
   const vfPct = Math.round((vf / total) * 100);
 
   const numberLocale = lang === 'fr' ? 'fr-FR' : 'en-US';
   const fmt = (value: number): string => value.toLocaleString(numberLocale);
-  const backdrop = favorites[0]?.wide || watchlist[0]?.wide || '';
+  const backdrop = recent[0]?.wide || favorites[0]?.wide || '';
 
   const stats: ReadonlyArray<{ icon: IconName; value: number; label: string }> = [
     { icon: 'play', value: watch?.episodes ?? 0, label: t('set.stat.eps') },
     { icon: 'clock', value: watch?.hours ?? 0, label: t('set.stat.hours') },
-    { icon: 'heart', value: favoriteIds.length, label: t('set.stat.favs') },
-    { icon: 'film', value: watchlist.length, label: t('set.stat.series') },
+    { icon: 'heart', value: favorites.length, label: t('set.stat.favs') },
+    { icon: 'film', value: watch?.series ?? recent.length, label: t('set.stat.series') },
   ];
 
   return (

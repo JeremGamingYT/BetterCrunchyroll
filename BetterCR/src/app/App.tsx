@@ -14,6 +14,7 @@ import { DetailPage } from '@app/pages/DetailPage';
 import { WatchlistPage } from '@app/pages/WatchlistPage';
 import { NotFoundPage } from '@app/pages/NotFoundPage';
 import { SettingsPage } from '@app/pages/SettingsPage';
+import { CategoryPage } from '@app/pages/CategoryPage';
 import { AuthPage, GoodbyeOverlay } from '@app/pages/AuthPage';
 
 const GOODBYE_DURATION_MS = 2300;
@@ -45,6 +46,8 @@ function renderPage(route: AppRoute): React.JSX.Element {
       return <WatchlistPage />;
     case 'settings':
       return <SettingsPage />;
+    case 'category':
+      return <CategoryPage categoryId={route.categoryId} title={route.title} />;
     case 'notfound':
       return <NotFoundPage />;
     case 'detail':

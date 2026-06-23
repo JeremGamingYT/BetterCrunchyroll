@@ -103,6 +103,7 @@ appels vont **directement** à Crunchyroll (avec vos cookies) et à AniList.
 - [x] Accueil · Catalogue · Fiche série · Recherche
 - [x] i18n FR/EN · Profil & stats réels · Watchlist & favoris
 - [x] Anti-spoiler · Simulcast trié · Enrichissement AniList
+- [x] Continuer à regarder · Parcourir par genre · Connexion/déconnexion réelles
 - [ ] Habillage du lecteur natif (skip intro/outro)
 - [ ] Autres fournisseurs (MAL, Kitsu)
 

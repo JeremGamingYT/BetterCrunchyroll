@@ -112,6 +112,10 @@ export const episodePanelSchema = z
     id: z.string(),
     type: z.string().optional(),
     title: z.string().optional(),
+    // Some endpoints expose the parent series at the top level instead of in
+    // `episode_metadata` — accept both.
+    series_id: z.string().optional(),
+    series_title: z.string().optional(),
     images: imagesSchema.optional(),
     episode_metadata: z
       .object({
@@ -120,6 +124,7 @@ export const episodePanelSchema = z
         season_number: z.number().optional(),
         episode_number: z.number().nullable().optional(),
         episode_air_date: z.string().optional(),
+        duration_ms: z.number().optional(),
       })
       .passthrough()
       .optional(),
@@ -136,6 +141,38 @@ export const playheadSchema = z
   })
   .passthrough();
 export type PlayheadDto = z.infer<typeof playheadSchema>;
+
+/** A watch-history entry: episode `panel` + progress at the item level. */
+export const watchHistoryItemSchema = z
+  .object({
+    id: z.string().optional(),
+    parent_id: z.string().optional(),
+    parent_type: z.string().optional(),
+    date_played: z.string().optional(),
+    playhead: z.number().optional(),
+    fully_watched: z.boolean().optional(),
+    panel: episodePanelSchema.optional(),
+  })
+  .passthrough();
+export type WatchHistoryItemDto = z.infer<typeof watchHistoryItemSchema>;
+
+/** A discover category (genre) with localized title and artwork. */
+export const categorySchema = z
+  .object({
+    id: z.string().optional(),
+    slug: z.string().optional(),
+    title: z.string().optional(),
+    localization: z
+      .object({ title: z.string().optional(), description: z.string().optional() })
+      .passthrough()
+      .optional(),
+    images: z
+      .object({ background: imageListSchema.optional(), low: imageListSchema.optional() })
+      .passthrough()
+      .optional(),
+  })
+  .passthrough();
+export type CategoryDto = z.infer<typeof categorySchema>;
 
 /** The current account profile (`/accounts/v1/me/profile`). */
 export const profileSchema = z

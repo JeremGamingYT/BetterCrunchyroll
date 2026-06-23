@@ -42,3 +42,8 @@ export function wideUrl(images: Images | undefined): string {
 export function thumbUrl(images: Images | undefined): string {
   return pickLargest(flatten(images?.thumbnail)) || wideUrl(images);
 }
+
+/** Largest image URL from a raw image list (e.g. a category background). */
+export function listUrl(list: ImageItem[] | ImageItem[][] | undefined): string {
+  return pickLargest(flatten(list));
+}

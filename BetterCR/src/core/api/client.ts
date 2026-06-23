@@ -5,6 +5,7 @@
  */
 import type { z } from 'zod';
 import {
+  categorySchema,
   cmsSeriesSchema,
   episodePanelSchema,
   episodeSchema,
@@ -12,16 +13,23 @@ import {
   playheadSchema,
   profileSchema,
   seasonSchema,
+  watchHistoryItemSchema,
+  type WatchHistoryItemDto,
 } from '@core/schemas/crunchyroll';
 import { delay, retryAsync } from '@shared/async';
 import {
+  categoryToGenre,
   cmsSeriesToDetail,
   episodeToModel,
   panelToSeries,
   seasonToModel,
+  watchHistoryToContinue,
+  watchHistoryToSeries,
 } from '@core/mappers/content';
 import type {
+  ContinueItem,
   Episode,
+  Genre,
   HomeFeed,
   HomeRow,
   Season,
@@ -95,6 +103,8 @@ export interface BrowseOptions {
   readonly query?: string;
   readonly isDubbed?: boolean;
   readonly isSubbed?: boolean;
+  /** Genre/category slug(s), e.g. `romance`. */
+  readonly categories?: string;
 }
 
 export async function browseSeries(options: BrowseOptions = {}): Promise<Series[]> {
@@ -107,9 +117,27 @@ export async function browseSeries(options: BrowseOptions = {}): Promise<Series[
   if (options.query !== undefined) query.q = options.query;
   if (options.isDubbed !== undefined) query.is_dubbed = options.isDubbed;
   if (options.isSubbed !== undefined) query.is_subbed = options.isSubbed;
+  if (options.categories !== undefined) query.categories = options.categories;
 
   const raw = await getJson('/content/v2/discover/browse', query);
   return parseEach(panelSchema, raw).map(panelToSeries);
+}
+
+/** Discover genres/categories with real artwork (cached briefly). */
+export async function getCategories(): Promise<Genre[]> {
+  try {
+    const raw = await getJson('/content/v2/discover/categories');
+    const genres: Genre[] = [];
+    for (const item of parseEach(categorySchema, raw)) {
+      const genre = categoryToGenre(item);
+      if (genre) {
+        genres.push(genre);
+      }
+    }
+    return genres;
+  } catch {
+    return [];
+  }
 }
 
 export async function getSeriesDetail(seriesId: string): Promise<SeriesDetail> {
@@ -284,7 +312,28 @@ function unwrapPanel(item: unknown): unknown {
   return item;
 }
 
-/** The user's Crunchyroll watchlist (most recently updated first). */
+function hasImage(series: Series): boolean {
+  return Boolean(series.poster || series.wide);
+}
+
+/** Fills in poster/wide art for any series missing it, via `getObjects`. */
+async function backfillImages(series: Series[]): Promise<Series[]> {
+  const missing = series.filter((item) => !hasImage(item)).map((item) => item.id);
+  if (missing.length === 0) {
+    return series;
+  }
+  const byId = new Map((await getObjects(missing)).map((item) => [item.id, item]));
+  return series.map((item) => {
+    const upgraded = byId.get(item.id);
+    return !hasImage(item) && upgraded ? upgraded : item;
+  });
+}
+
+/**
+ * The user's Crunchyroll watchlist (their saved/"favorited" anime), newest
+ * first. Maps the watchlist panels directly (they carry artwork) and backfills
+ * any image-light entries.
+ */
 export async function getWatchlist(limit = 40): Promise<Series[]> {
   const account = await getAccountId();
   if (!account) {
@@ -295,37 +344,81 @@ export async function getWatchlist(limit = 40): Promise<Series[]> {
       n: limit,
       order: 'desc',
     });
-    const panels = extractData(raw).map(unwrapPanel);
-
-    const ids: string[] = [];
-    for (const panel of panels) {
-      const id = (panel as { id?: unknown }).id;
-      if (typeof id === 'string') {
-        ids.push(id);
-      }
-    }
-    if (ids.length === 0) {
-      return [];
-    }
-
-    // Resolve full objects so posters/wide art are always present, in order.
-    const resolved = await getObjects(ids);
-    if (resolved.length > 0) {
-      return resolved;
-    }
-
-    // Fallback: map the (possibly image-light) watchlist panels directly.
     const series: Series[] = [];
-    for (const panel of panels) {
-      const parsed = panelSchema.safeParse(panel);
+    for (const item of extractData(raw)) {
+      const parsed = panelSchema.safeParse(unwrapPanel(item));
       if (parsed.success) {
         series.push(panelToSeries(parsed.data));
       }
     }
-    return series;
+    return backfillImages(series);
   } catch {
     return [];
   }
+}
+
+/** Fetches and validates raw watch-history entries (newest first). */
+async function fetchWatchHistoryItems(limit: number, page = 0): Promise<WatchHistoryItemDto[]> {
+  const account = await getAccountId();
+  if (!account) {
+    return [];
+  }
+  try {
+    const raw = await getJson(`/content/v2/${account}/watch-history`, {
+      page_size: limit,
+      page,
+    });
+    return parseEach(watchHistoryItemSchema, raw);
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Recently watched anime (deduped by series, most recent first). Uses the
+ * episode thumbnail as a guaranteed image, upgrading to the series poster.
+ */
+export async function getWatchHistory(limit = 40): Promise<Series[]> {
+  const items = await fetchWatchHistoryItems(limit);
+  const order: string[] = [];
+  const seen = new Set<string>();
+  const base = new Map<string, Series>();
+  for (const item of items) {
+    const series = watchHistoryToSeries(item);
+    if (!series.id || seen.has(series.id)) {
+      continue;
+    }
+    seen.add(series.id);
+    order.push(series.id);
+    base.set(series.id, series);
+  }
+  if (order.length === 0) {
+    return [];
+  }
+  const byId = new Map((await getObjects(order)).map((item) => [item.id, item]));
+  return order.flatMap((id) => {
+    const fallback = base.get(id);
+    if (!fallback) {
+      return [];
+    }
+    const upgraded = byId.get(id);
+    return [upgraded && hasImage(upgraded) ? upgraded : fallback];
+  });
+}
+
+/** In-progress episodes (continue watching), deduped by series, newest first. */
+export async function getContinueWatching(limit = 24): Promise<ContinueItem[]> {
+  const items = await fetchWatchHistoryItems(limit);
+  const out: ContinueItem[] = [];
+  const seen = new Set<string>();
+  for (const item of items) {
+    const cont = watchHistoryToContinue(item);
+    if (cont && !seen.has(cont.seriesId)) {
+      seen.add(cont.seriesId);
+      out.push(cont);
+    }
+  }
+  return out;
 }
 
 /** Watchlist membership only (ids), without resolving full objects. */
@@ -406,10 +499,12 @@ export async function getProfile(): Promise<Profile | null> {
 export interface WatchStats {
   readonly episodes: number;
   readonly hours: number;
+  readonly series: number;
 }
 
 const WATCH_HISTORY_PAGE = 100;
 const WATCH_HISTORY_MAX_PAGES = 10;
+const EMPTY_STATS: WatchStats = { episodes: 0, hours: 0, series: 0 };
 
 function readTotal(raw: unknown): number | null {
   if (raw && typeof raw === 'object') {
@@ -424,53 +519,67 @@ function readTotal(raw: unknown): number | null {
   return null;
 }
 
-function sampleDurationMinutes(items: readonly unknown[]): number {
-  let ms = 0;
-  let count = 0;
-  for (const item of items) {
-    const value = (unwrapPanel(item) as { duration_ms?: unknown }).duration_ms;
-    if (typeof value === 'number') {
-      ms += value;
-      count += 1;
-    }
-  }
-  return count > 0 && ms > 0 ? ms / count / 60_000 : MINUTES_PER_EPISODE;
-}
-
-/** Aggregate watch statistics from the account's watch history (best-effort). */
+/**
+ * Watch statistics from the account's history: episodes watched (the endpoint's
+ * total when present, otherwise a paged count), distinct series, and estimated
+ * hours from episode durations.
+ */
 export async function getWatchStats(): Promise<WatchStats> {
   const account = await getAccountId();
   if (!account) {
-    return { episodes: 0, hours: 0 };
+    return EMPTY_STATS;
   }
   try {
     const firstRaw = await getJson(`/content/v2/${account}/watch-history`, {
       page_size: WATCH_HISTORY_PAGE,
       page: 0,
     });
-    const firstItems = extractData(firstRaw);
-    const avgMinutes = sampleDurationMinutes(firstItems);
 
-    let episodes = readTotal(firstRaw) ?? firstItems.length;
+    const seriesIds = new Set<string>();
+    let durationMs = 0;
+    let durationCount = 0;
+    const collect = (items: readonly WatchHistoryItemDto[]): void => {
+      for (const item of items) {
+        const seriesId = item.parent_id ?? item.panel?.episode_metadata?.series_id;
+        if (seriesId) {
+          seriesIds.add(seriesId);
+        }
+        const ms = item.panel?.episode_metadata?.duration_ms;
+        if (typeof ms === 'number') {
+          durationMs += ms;
+          durationCount += 1;
+        }
+      }
+    };
+
+    const firstItems = parseEach(watchHistoryItemSchema, firstRaw);
+    collect(firstItems);
+
+    const total = readTotal(firstRaw);
+    let episodes = total ?? firstItems.length;
 
     // No total reported and the first page is full → page through to count.
-    if (readTotal(firstRaw) === null && firstItems.length >= WATCH_HISTORY_PAGE) {
+    if (total === null && firstItems.length >= WATCH_HISTORY_PAGE) {
       for (let page = 1; page < WATCH_HISTORY_MAX_PAGES; page += 1) {
-        const more = extractData(
-          await getJson(`/content/v2/${account}/watch-history`, {
-            page_size: WATCH_HISTORY_PAGE,
-            page,
-          }),
-        );
-        episodes += more.length;
-        if (more.length < WATCH_HISTORY_PAGE) {
+        const items = await fetchWatchHistoryItems(WATCH_HISTORY_PAGE, page);
+        collect(items);
+        episodes += items.length;
+        if (items.length < WATCH_HISTORY_PAGE) {
           break;
         }
       }
     }
 
-    return { episodes, hours: Math.round((episodes * avgMinutes) / 60) };
+    const avgMinutes =
+      durationCount > 0 && durationMs > 0
+        ? durationMs / durationCount / 60_000
+        : MINUTES_PER_EPISODE;
+    return {
+      episodes,
+      hours: Math.round((episodes * avgMinutes) / 60),
+      series: seriesIds.size,
+    };
   } catch {
-    return { episodes: 0, hours: 0 };
+    return EMPTY_STATS;
   }
 }

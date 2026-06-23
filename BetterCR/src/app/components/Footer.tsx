@@ -5,9 +5,12 @@ import { useI18n } from '@app/i18n/i18n';
 import { Icon } from './Icon';
 import { LangSwitch } from './LangSwitch';
 
+const GITHUB_URL = 'https://github.com/JeremGamingYT/BetterCrunchyroll';
+
 interface FooterLink {
   readonly key: string;
-  readonly page?: PageId;
+  readonly page?: PageId; // in-app navigation
+  readonly url?: string; // external (real Crunchyroll page)
 }
 
 interface FooterColumn {
@@ -28,45 +31,60 @@ const COLUMNS: readonly FooterColumn[] = [
   {
     heading: 'ftr.col.account',
     links: [
-      { key: 'ftr.link.profile' },
+      { key: 'ftr.link.profile', page: 'settings' },
       { key: 'ftr.link.watchlist', page: 'watchlist' },
-      { key: 'ftr.link.history' },
-      { key: 'ftr.link.subscription' },
+      { key: 'ftr.link.history', page: 'watchlist' },
+      { key: 'ftr.link.subscription', url: 'https://www.crunchyroll.com/premium' },
     ],
   },
   {
     heading: 'ftr.col.help',
     links: [
-      { key: 'ftr.link.faq' },
-      { key: 'ftr.link.devices' },
-      { key: 'ftr.link.contact' },
-      { key: 'ftr.link.status' },
+      { key: 'ftr.link.faq', url: 'https://help.crunchyroll.com' },
+      { key: 'ftr.link.contact', url: 'https://help.crunchyroll.com' },
+      { key: 'ftr.link.status', url: 'https://status.crunchyroll.com' },
     ],
   },
   {
     heading: 'ftr.col.bcr',
     links: [
-      { key: 'ftr.link.about' },
-      { key: 'ftr.link.press' },
-      { key: 'ftr.link.jobs' },
-      { key: 'ftr.link.community' },
+      { key: 'ftr.link.about', url: 'https://www.crunchyroll.com/about/' },
+      { key: 'ftr.link.community', url: 'https://discord.com/invite/crunchyroll' },
     ],
   },
+];
+
+const LEGAL: readonly FooterLink[] = [
+  { key: 'ftr.terms', url: 'https://www.crunchyroll.com/tos' },
+  { key: 'ftr.privacy', url: 'https://www.crunchyroll.com/privacy' },
+  { key: 'ftr.cookies', url: 'https://www.crunchyroll.com/cookiepolicy' },
 ];
 
 export function Footer(): React.JSX.Element {
   const { go } = useRouter();
   const { t } = useI18n();
 
-  const prevent = (event: MouseEvent): void => event.preventDefault();
-  const linkTo =
-    (page?: PageId) =>
-    (event: MouseEvent): void => {
+  const renderLink = (link: FooterLink): React.JSX.Element => {
+    const label = t(link.key);
+    if (link.url) {
+      return (
+        <a href={link.url} target="_blank" rel="noreferrer noopener">
+          {label}
+        </a>
+      );
+    }
+    const onClick = (event: MouseEvent): void => {
       event.preventDefault();
-      if (page) {
-        go({ page } as AppRoute);
+      if (link.page) {
+        go({ page: link.page } as AppRoute);
       }
     };
+    return (
+      <a href="#" onClick={onClick}>
+        {label}
+      </a>
+    );
+  };
 
   return (
     <footer className="ftr">
@@ -83,7 +101,13 @@ export function Footer(): React.JSX.Element {
           </button>
           <p className="ftr-tagline">{t('ftr.tagline')}</p>
           <div className="ftr-social">
-            <a className="ftr-oss" href="#" onClick={prevent} title="Open-source">
+            <a
+              className="ftr-oss"
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              title="GitHub"
+            >
               <Icon name="github" size={17} solid /> {t('ftr.status.oss')}
             </a>
           </div>
@@ -93,11 +117,7 @@ export function Footer(): React.JSX.Element {
             <h4>{t(column.heading)}</h4>
             <ul>
               {column.links.map((link) => (
-                <li key={link.key}>
-                  <a href="#" onClick={linkTo(link.page)}>
-                    {t(link.key)}
-                  </a>
-                </li>
+                <li key={link.key}>{renderLink(link)}</li>
               ))}
             </ul>
           </div>
@@ -111,15 +131,11 @@ export function Footer(): React.JSX.Element {
           <LangSwitch />
         </div>
         <div className="ftr-legal">
-          <a href="#" onClick={prevent}>
-            {t('ftr.terms')}
-          </a>
-          <a href="#" onClick={prevent}>
-            {t('ftr.privacy')}
-          </a>
-          <a href="#" onClick={prevent}>
-            {t('ftr.cookies')}
-          </a>
+          {LEGAL.map((link) => (
+            <a key={link.key} href={link.url} target="_blank" rel="noreferrer noopener">
+              {t(link.key)}
+            </a>
+          ))}
           <button className="ftr-see404" onClick={() => go({ page: 'notfound' })}>
             <Icon name="compass" size={13} /> {t('ftr.see404')}
           </button>

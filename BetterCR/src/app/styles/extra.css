@@ -189,6 +189,25 @@
   display: none;
 }
 
+/* ===================== Placeholder image (carte sans visuel) ===================== */
+.wcard-noimg {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--txt);
+  background: linear-gradient(
+    150deg,
+    color-mix(in oklab, var(--cardc, var(--acc)) 42%, var(--srf2)),
+    var(--srf)
+  );
+}
+
 /* ===================== Bouton « Charger plus » ===================== */
 .grid-more {
   display: flex;

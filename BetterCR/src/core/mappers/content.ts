@@ -3,9 +3,24 @@
  * data source is swapped from the old mock/AniList shape to live Crunchyroll
  * data without the components noticing.
  */
-import type { Episode, Season, Series, SeriesDetail } from '@core/models/content';
-import type { CmsSeriesDto, EpisodeDto, PanelDto, SeasonDto } from '@core/schemas/crunchyroll';
-import { posterUrl, thumbUrl, wideUrl } from './images';
+import type {
+  ContinueItem,
+  Episode,
+  Genre,
+  Season,
+  Series,
+  SeriesDetail,
+} from '@core/models/content';
+import type {
+  CategoryDto,
+  CmsSeriesDto,
+  EpisodeDto,
+  EpisodePanelDto,
+  PanelDto,
+  SeasonDto,
+  WatchHistoryItemDto,
+} from '@core/schemas/crunchyroll';
+import { listUrl, posterUrl, thumbUrl, wideUrl } from './images';
 
 const MS_PER_MINUTE = 60_000;
 
@@ -64,6 +79,94 @@ export function seasonToModel(dto: SeasonDto): Season {
     num,
     title: dto.title ?? (num > 0 ? `Saison ${num}` : 'Saison'),
     episodeCount: dto.number_of_episodes ?? 0,
+  };
+}
+
+/**
+ * Builds a Series view-model from a watch-history/episode panel: the parent
+ * series id/title, with the episode thumbnail as a guaranteed image fallback.
+ */
+export function episodePanelToSeries(panel: EpisodePanelDto): Series {
+  const meta = panel.episode_metadata;
+  const thumb = thumbUrl(panel.images);
+  return {
+    id: meta?.series_id ?? panel.series_id ?? panel.id,
+    title: meta?.series_title ?? panel.series_title ?? panel.title ?? '',
+    desc: '',
+    poster: thumb,
+    wide: thumb,
+    wideXL: thumb,
+    eps: 0,
+    seasons: 1,
+    year: 0,
+    dub: false,
+    sub: false,
+    simulcast: false,
+    rating: '',
+  };
+}
+
+/** Parent series of a watch-history entry, with the episode thumbnail. */
+export function watchHistoryToSeries(item: WatchHistoryItemDto): Series {
+  const panel = item.panel;
+  const meta = panel?.episode_metadata;
+  const thumb = thumbUrl(panel?.images);
+  return {
+    id: item.parent_id ?? meta?.series_id ?? panel?.series_id ?? panel?.id ?? '',
+    title: meta?.series_title ?? panel?.series_title ?? panel?.title ?? '',
+    desc: '',
+    poster: thumb,
+    wide: thumb,
+    wideXL: thumb,
+    eps: 0,
+    seasons: 1,
+    year: 0,
+    dub: false,
+    sub: false,
+    simulcast: false,
+    rating: '',
+  };
+}
+
+/** A "continue watching" card from an in-progress watch-history entry. */
+export function watchHistoryToContinue(item: WatchHistoryItemDto): ContinueItem | null {
+  const panel = item.panel;
+  const playhead = item.playhead ?? 0;
+  if (!panel || item.fully_watched || playhead <= 0) {
+    return null;
+  }
+  const meta = panel.episode_metadata;
+  const seriesId = item.parent_id ?? meta?.series_id ?? panel.series_id ?? '';
+  if (!seriesId) {
+    return null;
+  }
+  const durationMs = meta?.duration_ms ?? 0;
+  const durationSec = durationMs / 1000;
+  const progress = durationSec > 0 ? Math.min(99, Math.round((playhead / durationSec) * 100)) : 0;
+  return {
+    seriesId,
+    episodeId: panel.id,
+    seriesTitle: meta?.series_title ?? panel.series_title ?? '',
+    epTitle: panel.title ?? '',
+    epNum: meta?.episode_number ?? 0,
+    seasonNum: meta?.season_number ?? 1,
+    thumb: thumbUrl(panel.images),
+    progress,
+    durMin: durationMs ? Math.round(durationMs / MS_PER_MINUTE) : 24,
+    watchPath: `/watch/${panel.id}`,
+  };
+}
+
+/** A genre tile from a discover category. */
+export function categoryToGenre(dto: CategoryDto): Genre | null {
+  const id = dto.id ?? dto.slug;
+  if (!id) {
+    return null;
+  }
+  return {
+    id,
+    title: dto.localization?.title ?? dto.title ?? id,
+    image: listUrl(dto.images?.background) || listUrl(dto.images?.low),
   };
 }
 

@@ -14,7 +14,8 @@ export type PageId =
   | 'watch'
   | 'notfound'
   | 'auth'
-  | 'settings';
+  | 'settings'
+  | 'category';
 
 export type AppRoute =
   | { readonly page: 'home' }
@@ -25,6 +26,7 @@ export type AppRoute =
   | { readonly page: 'notfound' }
   | { readonly page: 'auth' }
   | { readonly page: 'settings' }
+  | { readonly page: 'category'; readonly categoryId: string; readonly title?: string }
   | { readonly page: 'detail'; readonly seriesId: string }
   | { readonly page: 'watch'; readonly seriesId: string; readonly episodeId?: string };
 
@@ -33,6 +35,8 @@ export const HOME_ROUTE: AppRoute = { page: 'home' };
 /** Serializes a route to a hash fragment, e.g. `#/detail/GRDV0019R`. */
 export function serializeRoute(route: AppRoute): string {
   switch (route.page) {
+    case 'category':
+      return `#/category/${route.categoryId}`;
     case 'detail':
       return `#/detail/${route.seriesId}`;
     case 'watch':
@@ -57,6 +61,10 @@ export function parseRoute(hash: string): AppRoute {
     case 'auth':
     case 'settings':
       return { page };
+    case 'category': {
+      const categoryId = segments[1];
+      return categoryId ? { page: 'category', categoryId } : HOME_ROUTE;
+    }
     case 'detail': {
       const seriesId = segments[1];
       return seriesId ? { page: 'detail', seriesId } : HOME_ROUTE;
