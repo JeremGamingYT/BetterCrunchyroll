@@ -1,14 +1,11 @@
 import { useEffect, useState } from 'react';
 import type { Episode, Series } from '@core/models/content';
 import {
-  addToWatchlist,
   browseSeries,
   getPlayheads,
   getSeasonEpisodes,
   getSeasons,
   getSeriesDetail,
-  getWatchlistIds,
-  removeFromWatchlist,
   type PlayheadInfo,
 } from '@core/api/client';
 import { bridge } from '@core/api/transport';
@@ -16,6 +13,7 @@ import { fetchExternalMeta, type ExternalMeta } from '@core/providers';
 import { useAsync } from '@app/hooks/useAsync';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
+import { useWatchlist, toggleWatchlist as toggleWatch } from '@app/lib/watchlist';
 import { Icon } from '@app/components/Icon';
 import { Chip } from '@app/components/Chip';
 import { Row } from '@app/components/Row';
@@ -96,8 +94,8 @@ export function DetailPage({ seriesId }: DetailPageProps): React.JSX.Element {
     [seriesId, lang],
   );
   const [activeSeasonId, setActiveSeasonId] = useState<string | null>(null);
-  const [marked, setMarked] = useState(false);
-  const [markBusy, setMarkBusy] = useState(false);
+  const { ids: watchlistIds } = useWatchlist();
+  const marked = watchlistIds.has(seriesId);
 
   const seasons = seasonsState.data ?? [];
   const seasonId = activeSeasonId ?? seasons[0]?.id ?? null;
@@ -128,23 +126,6 @@ export function DetailPage({ seriesId }: DetailPageProps): React.JSX.Element {
     window.scrollTo(0, 0);
   }, [seriesId]);
 
-  // Reflect the real watchlist membership for the toggle button.
-  useEffect(() => {
-    let cancelled = false;
-    getWatchlistIds()
-      .then((ids) => {
-        if (!cancelled) {
-          setMarked(ids.includes(seriesId));
-        }
-      })
-      .catch(() => {
-        /* membership unknown — leave as-is */
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [seriesId]);
-
   if (detailState.loading) {
     return <DetailSkeleton />;
   }
@@ -173,21 +154,7 @@ export function DetailPage({ seriesId }: DetailPageProps): React.JSX.Element {
   const openDetail = (series: Series): void => go({ page: 'detail', seriesId: series.id });
 
   const toggleWatchlist = (): void => {
-    if (markBusy) {
-      return;
-    }
-    const next = !marked;
-    setMarked(next); // optimistic
-    setMarkBusy(true);
-    const operation = next ? addToWatchlist(seriesId) : removeFromWatchlist(seriesId);
-    operation
-      .then((ok) => {
-        if (!ok) {
-          setMarked(!next); // revert on failure
-        }
-      })
-      .catch(() => setMarked(!next))
-      .finally(() => setMarkBusy(false));
+    void toggleWatch(seriesId);
   };
 
   // Crunchyroll stays the source of truth; AniList fills gaps and richer art.
@@ -253,7 +220,6 @@ export function DetailPage({ seriesId }: DetailPageProps): React.JSX.Element {
               <button
                 className={`btn btn-glass${marked ? ' is-marked' : ''}`}
                 onClick={toggleWatchlist}
-                disabled={markBusy}
               >
                 <Icon name={marked ? 'check' : 'bookmark'} size={17} solid={marked} />{' '}
                 {marked ? t('detail.inWatchlist') : t('detail.watchlist')}

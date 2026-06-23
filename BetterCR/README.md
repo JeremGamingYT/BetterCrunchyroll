@@ -81,6 +81,20 @@ src/
 
 ## Journal des versions
 
+### v1.2.3
+
+- 📃 **Watchlist complète.** La page n'affichait que ~48 favoris : elle est désormais
+  **paginée** (jusqu'à 400 entrées) → tous tes animés sauvegardés s'affichent.
+- 🔖 **Bouton watchlist des cartes réellement fonctionnel.** Il ne faisait qu'un
+  toggle visuel local : il appelle maintenant l'API Crunchyroll (`addToWatchlist`/
+  `removeFromWatchlist`) via un **store de watchlist partagé** — cartes, page Watchlist
+  et fiche série restent synchronisées, avec mise à jour optimiste.
+- 🆔 `getWatchlistIds` renvoyait des ids d'épisodes → corrigé en ids de **séries**
+  (sinon l'état coché était toujours faux). `getObjects` est désormais **chunké**
+  (50 ids/requête) pour résoudre des centaines d'entrées sans dépasser la taille d'URL.
+- 🧰 Les mutations (add/remove) qui répondent 200/204 sans corps ne sont plus
+  considérées comme des échecs.
+
 ### v1.2.2
 
 - 📊 **Statistiques enfin réelles.** La requête watch-history renvoyait `400`

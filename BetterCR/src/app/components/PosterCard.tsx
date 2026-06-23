@@ -1,6 +1,7 @@
-import { useState, type CSSProperties, type MouseEvent } from 'react';
+import { type CSSProperties, type MouseEvent } from 'react';
 import type { Series } from '@core/models/content';
 import { animeColor } from '@app/lib/anime-color';
+import { useWatchlist, toggleWatchlist } from '@app/lib/watchlist';
 import { Icon } from './Icon';
 import { Chip } from './Chip';
 
@@ -23,7 +24,8 @@ export function PosterCard({
   showNew = false,
   showAiring = false,
 }: PosterCardProps): React.JSX.Element {
-  const [marked, setMarked] = useState(false);
+  const { ids } = useWatchlist();
+  const marked = ids.has(anime.id);
 
   const meta: string[] = [];
   if (anime.year) {
@@ -44,7 +46,7 @@ export function PosterCard({
   };
   const toggleMark = (event: MouseEvent): void => {
     event.stopPropagation();
-    setMarked((value) => !value);
+    void toggleWatchlist(anime.id);
   };
 
   return (

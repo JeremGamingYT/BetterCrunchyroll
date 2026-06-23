@@ -246,21 +246,31 @@ async function getAccountId(): Promise<string | null> {
   return null;
 }
 
+/** Max ids per `objects` request — keeps the URL well under length limits. */
+const OBJECTS_CHUNK = 50;
+
 /** Fetches full objects (series/movies) by id, preserving the requested order. */
 export async function getObjects(ids: readonly string[]): Promise<Series[]> {
   const account = await getAccountId();
   if (!account || ids.length === 0) {
     return [];
   }
-  try {
-    const raw = await getJson(`/content/v2/cms/${account}/objects/${ids.join(',')}`);
-    const byId = new Map(
-      parseEach(panelSchema, raw).map((panel) => [panel.id, panelToSeries(panel)]),
-    );
-    return ids.map((id) => byId.get(id)).filter((series): series is Series => series !== undefined);
-  } catch {
-    return [];
+  const chunks: string[][] = [];
+  for (let i = 0; i < ids.length; i += OBJECTS_CHUNK) {
+    chunks.push(ids.slice(i, i + OBJECTS_CHUNK));
   }
+  const pages = await Promise.all(
+    chunks.map(async (chunk) => {
+      try {
+        const raw = await getJson(`/content/v2/cms/${account}/objects/${chunk.join(',')}`);
+        return parseEach(panelSchema, raw);
+      } catch {
+        return [];
+      }
+    }),
+  );
+  const byId = new Map(pages.flat().map((panel) => [panel.id, panelToSeries(panel)]));
+  return ids.map((id) => byId.get(id)).filter((series): series is Series => series !== undefined);
 }
 
 /**
@@ -359,11 +369,32 @@ function watchlistSeries(panel: unknown): { id: string; fallback: Series } | nul
   return null;
 }
 
+const WATCHLIST_PAGE = 100;
+
+/** Fetches raw watchlist items, paging until `limit` is reached or none remain. */
+async function fetchWatchlistRaw(account: string, limit: number): Promise<unknown[]> {
+  const out: unknown[] = [];
+  for (let start = 0; start < limit; start += WATCHLIST_PAGE) {
+    const n = Math.min(WATCHLIST_PAGE, limit - start);
+    const raw = await getJson(`/content/v2/discover/${account}/watchlist`, {
+      n,
+      start,
+      order: 'desc',
+    });
+    const items = extractData(raw);
+    out.push(...items);
+    if (items.length < n) {
+      break; // last page
+    }
+  }
+  return out;
+}
+
 /**
  * The user's Crunchyroll watchlist (their saved/"favorited" anime), newest
- * first, deduped by series. Each entry is resolved to its full **series**
- * object (poster + series title) via getObjects, so cards never show an episode
- * thumbnail/title or a broken image.
+ * first, deduped by series and paged to `limit`. Each entry is resolved to its
+ * full **series** object (poster + series title) via getObjects, so cards never
+ * show an episode thumbnail/title or a broken image.
  */
 export async function getWatchlist(limit = 40): Promise<Series[]> {
   const account = await getAccountId();
@@ -371,14 +402,10 @@ export async function getWatchlist(limit = 40): Promise<Series[]> {
     return [];
   }
   try {
-    const raw = await getJson(`/content/v2/discover/${account}/watchlist`, {
-      n: limit,
-      order: 'desc',
-    });
     const ids: string[] = [];
     const seen = new Set<string>();
     const fallback = new Map<string, Series>();
-    for (const item of extractData(raw)) {
+    for (const item of await fetchWatchlistRaw(account, limit)) {
       const resolved = watchlistSeries(unwrapPanel(item));
       if (resolved && !seen.has(resolved.id)) {
         seen.add(resolved.id);
@@ -490,21 +517,21 @@ export async function getContinueWatching(limit = 24): Promise<ContinueItem[]> {
 }
 
 /** Watchlist membership only (ids), without resolving full objects. */
-export async function getWatchlistIds(limit = 100): Promise<string[]> {
+export async function getWatchlistIds(limit = 400): Promise<string[]> {
   const account = await getAccountId();
   if (!account) {
     return [];
   }
   try {
-    const raw = await getJson(`/content/v2/discover/${account}/watchlist`, {
-      n: limit,
-      order: 'desc',
-    });
     const ids: string[] = [];
-    for (const item of extractData(raw)) {
-      const id = (unwrapPanel(item) as { id?: unknown }).id;
-      if (typeof id === 'string') {
-        ids.push(id);
+    const seen = new Set<string>();
+    for (const item of await fetchWatchlistRaw(account, limit)) {
+      // Watchlist panels are episodes; key on the parent series id (membership
+      // is checked against series ids across the app).
+      const resolved = watchlistSeries(unwrapPanel(item));
+      if (resolved && !seen.has(resolved.id)) {
+        seen.add(resolved.id);
+        ids.push(resolved.id);
       }
     }
     return ids;

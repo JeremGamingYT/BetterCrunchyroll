@@ -1,18 +1,17 @@
 import { useEffect, useState, type CSSProperties, type MouseEvent } from 'react';
 import type { Series } from '@core/models/content';
-import {
-  addToWatchlist,
-  getWatchHistory,
-  getWatchlist,
-  removeFromWatchlist,
-} from '@core/api/client';
+import { getWatchHistory, getWatchlist } from '@core/api/client';
 import { useAsync } from '@app/hooks/useAsync';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
 import { animeColor } from '@app/lib/anime-color';
+import { seedWatchlist, toggleWatchlist, useWatchlist } from '@app/lib/watchlist';
 import { Icon } from '@app/components/Icon';
 import { Chip } from '@app/components/Chip';
 import { EmptyState } from '@app/components/StateViews';
+
+/** Fetch the whole watchlist (the account can have hundreds of entries). */
+const FAVORITES_LIMIT = 400;
 
 type Tab = 'recent' | 'fav';
 
@@ -86,43 +85,29 @@ export function WatchlistPage(): React.JSX.Element {
   const [tab, setTab] = useState<Tab>('recent');
 
   const recentState = useAsync(() => getWatchHistory(48), [lang]);
-  const favoritesState = useAsync(() => getWatchlist(48), [lang]);
+  const favoritesState = useAsync(() => getWatchlist(FAVORITES_LIMIT), [lang]);
 
-  // Watchlist (= favorites) membership, with optimistic heart toggles.
-  const [favIds, setFavIds] = useState<ReadonlySet<string>>(new Set());
+  // Shared watchlist membership (also drives the bookmark on every card). Seed
+  // it from the full fetch so hearts are correct immediately.
+  const { ids: favIds, loaded: favLoaded } = useWatchlist();
   useEffect(() => {
-    setFavIds(new Set((favoritesState.data ?? []).map((series) => series.id)));
+    if (favoritesState.data) {
+      seedWatchlist(favoritesState.data.map((series) => series.id));
+    }
   }, [favoritesState.data]);
 
   const toggleFavorite = (series: Series): void => {
-    const isFav = favIds.has(series.id);
-    const next = new Set(favIds);
-    if (isFav) {
-      next.delete(series.id);
-    } else {
-      next.add(series.id);
-    }
-    setFavIds(next); // optimistic
-    const op = isFav ? removeFromWatchlist(series.id) : addToWatchlist(series.id);
-    void op.then((ok) => {
-      if (!ok) {
-        setFavIds((current) => {
-          const reverted = new Set(current);
-          if (isFav) {
-            reverted.add(series.id);
-          } else {
-            reverted.delete(series.id);
-          }
-          return reverted;
-        });
-      }
-    });
+    void toggleWatchlist(series.id);
   };
 
   const openDetail = (series: Series): void => go({ page: 'detail', seriesId: series.id });
 
   const recent = recentState.data ?? [];
-  const favorites = (favoritesState.data ?? []).filter((series) => favIds.has(series.id));
+  const allFavorites = favoritesState.data ?? [];
+  // Once membership is known, hide entries the user removed this session.
+  const favorites = favLoaded
+    ? allFavorites.filter((series) => favIds.has(series.id))
+    : allFavorites;
   const active = tab === 'fav' ? favorites : recent;
   const loading = tab === 'fav' ? favoritesState.loading : recentState.loading;
 

@@ -47,8 +47,15 @@ export async function performCrRequest(
   if (!response.ok) {
     throw new Error(`Crunchyroll API ${response.status} for ${payload.path}`);
   }
-  if (response.status === 204) {
+  // Some mutations (watchlist add/remove) reply 200/204 with an empty or
+  // non-JSON body — treat that as success rather than a parse failure.
+  const text = await response.text();
+  if (!text) {
     return null;
   }
-  return (await response.json()) as unknown;
+  try {
+    return JSON.parse(text) as unknown;
+  } catch {
+    return null;
+  }
 }
