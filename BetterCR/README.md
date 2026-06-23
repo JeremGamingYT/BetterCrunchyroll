@@ -39,7 +39,8 @@ crunchyroll.com (onglet)
   (épisodes non vus floutés tant qu'ils ne sont pas regardés, via les playheads).
 - ❤️ **Watchlist** synchronisée avec ton compte (marque-page en 1 clic sur chaque carte) ;
   **Paramètres** avec statistiques réelles (épisodes, heures, favoris, séries).
-- ▶️ **Page Lecteur** repensée autour du lecteur natif (infos, *À suivre*, **commentaires**).
+- ▶️ **Page Lecteur** repensée autour du lecteur natif (infos, *À suivre*, **commentaires**,
+  bouton **Passer l'intro / le générique**).
 - 💬 **Commentaires** par animé (avatars, réponses, édition/suppression, temps réel, filtre FR/EN).
 - 🔔 **Notifications** : réponses à tes commentaires + nouveaux épisodes du jour.
 - 🗓️ **Sorties à venir** (AniList) par période.
@@ -101,6 +102,18 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 - ESLint (typescript-eslint) + Prettier, alias de chemins (`@app`, `@core`, `@shared`…).
 
 ## Journal des versions
+
+### v1.8.0
+
+- ⏭️ **Passer l'intro / le récap / le générique** : un bouton apparaît sur le lecteur
+  natif aux bons moments (d'après les marqueurs *skip-events* de Crunchyroll) ; un clic
+  saute le segment. Purement additif — le lecteur DRM n'est jamais modifié, et rien ne
+  s'affiche si l'épisode n'a pas de marqueurs.
+
+### v1.7.1
+
+- 🧭 **Découvertes** : le titre de la première rangée ne chevauche plus l'en-tête.
+- ▶️ **Lecteur** : le titre de la série (en couleur) est cliquable → retour à la fiche.
 
 ### v1.7.0
 

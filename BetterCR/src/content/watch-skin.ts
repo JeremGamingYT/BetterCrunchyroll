@@ -6,6 +6,12 @@
  * native player on top of the overlay and position it exactly over the
  * WatchPage's `.player` slot (whose viewport rect the app reports via the
  * bridge). The player keeps its own native controls.
+ *
+ * On top of that we add a purely additive "Skip intro / recap / credits"
+ * button driven by Crunchyroll's skip-event markers: it only reads the
+ * `<video>`'s currentTime and seeks on click — the player itself is untouched,
+ * so this degrades to nothing if markers are missing or the video can't be
+ * found.
  */
 import type { PlayerRect } from '@shared/messages';
 
@@ -13,6 +19,25 @@ const PLAYER_SELECTOR = '.video-player-wrapper';
 /** Above the overlay root (which sits at 2147483000). */
 const PLAYER_Z = '2147483600';
 const POLL_MS = 350;
+/** Hide the skip button this many seconds before a segment ends. */
+const SKIP_TAIL_S = 1.5;
+
+export type SkipKind = 'recap' | 'intro' | 'credits';
+
+export interface SkipSegment {
+  readonly kind: SkipKind;
+  readonly start: number;
+  readonly end: number;
+}
+
+const SKIP_LABELS: Record<SkipKind, { fr: string; en: string }> = {
+  recap: { fr: 'Passer le récap', en: 'Skip recap' },
+  intro: { fr: "Passer l'intro", en: 'Skip intro' },
+  credits: { fr: 'Passer le générique', en: 'Skip credits' },
+};
+
+const isFrench = (): boolean =>
+  (document.documentElement.lang || 'fr').toLowerCase().startsWith('fr');
 
 export class WatchSkin {
   private active = false;
@@ -22,6 +47,12 @@ export class WatchSkin {
   private origNext: ChildNode | null = null;
   private origStyle = '';
   private poll = 0;
+
+  private segments: readonly SkipSegment[] = [];
+  private video: HTMLVideoElement | null = null;
+  private skipBtn: HTMLButtonElement | null = null;
+  private skipTarget = 0;
+  private readonly onTime = (): void => this.updateSkip();
 
   /** Begin skinning the watch page (adopt the player as soon as it appears). */
   enable(): void {
@@ -50,6 +81,12 @@ export class WatchSkin {
     this.apply();
   }
 
+  /** Skip markers (intro/recap/credits) for the current episode. */
+  setSkipEvents(segments: readonly SkipSegment[]): void {
+    this.segments = segments;
+    this.updateSkip();
+  }
+
   private tick(): void {
     if (!this.active) {
       return;
@@ -59,6 +96,7 @@ export class WatchSkin {
       this.adopt(el);
     }
     this.apply();
+    this.ensureSkipUi();
   }
 
   private adopt(el: HTMLElement): void {
@@ -104,8 +142,77 @@ export class WatchSkin {
         top: 0 !important;
         max-height: none !important;
       }
-      .bcr-adopted video { object-fit: contain; background: #000; }`;
+      .bcr-adopted video { object-fit: contain; background: #000; }
+      .bcr-skip-btn {
+        position: absolute;
+        right: 28px;
+        bottom: 82px;
+        z-index: 40;
+        display: none;
+        align-items: center;
+        gap: 8px;
+        padding: 11px 20px;
+        border: 0;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.92);
+        color: #0a0a0d;
+        font: 700 14px/1 -apple-system, system-ui, sans-serif;
+        cursor: pointer;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+        transition: background 0.15s, transform 0.15s;
+      }
+      .bcr-skip-btn.is-on { display: inline-flex; }
+      .bcr-skip-btn:hover { background: #fff; transform: translateY(-1px); }`;
     (document.head ?? document.documentElement).appendChild(style);
+  }
+
+  /** Attach the skip button + currentTime listener once the video exists. */
+  private ensureSkipUi(): void {
+    if (!this.player) {
+      return;
+    }
+    if (!this.skipBtn) {
+      const btn = document.createElement('button');
+      btn.className = 'bcr-skip-btn';
+      btn.type = 'button';
+      btn.addEventListener('click', () => {
+        if (this.video) {
+          this.video.currentTime = this.skipTarget;
+          this.hideSkip();
+        }
+      });
+      this.player.appendChild(btn);
+      this.skipBtn = btn;
+    } else if (this.skipBtn.parentElement !== this.player) {
+      this.player.appendChild(this.skipBtn);
+    }
+
+    const video = this.player.querySelector('video');
+    if (video && video !== this.video) {
+      this.video?.removeEventListener('timeupdate', this.onTime);
+      this.video = video;
+      video.addEventListener('timeupdate', this.onTime);
+    }
+  }
+
+  /** Show/hide the skip button based on the video's current time. */
+  private updateSkip(): void {
+    if (!this.skipBtn || !this.video) {
+      return;
+    }
+    const t = this.video.currentTime;
+    const seg = this.segments.find((s) => t >= s.start && t < s.end - SKIP_TAIL_S);
+    if (!seg) {
+      this.hideSkip();
+      return;
+    }
+    this.skipTarget = seg.end;
+    this.skipBtn.textContent = isFrench() ? SKIP_LABELS[seg.kind].fr : SKIP_LABELS[seg.kind].en;
+    this.skipBtn.classList.add('is-on');
+  }
+
+  private hideSkip(): void {
+    this.skipBtn?.classList.remove('is-on');
   }
 
   private apply(): void {
@@ -129,6 +236,10 @@ export class WatchSkin {
     if (!this.player) {
       return;
     }
+    this.video?.removeEventListener('timeupdate', this.onTime);
+    this.video = null;
+    this.skipBtn?.remove();
+    this.skipBtn = null;
     this.player.classList.remove('bcr-adopted');
     this.player.setAttribute('style', this.origStyle);
     if (this.origParent?.isConnected) {

@@ -30,7 +30,10 @@ export default defineManifest({
     'https://www.crunchyroll.com/*',
     'https://beta-api.crunchyroll.com/*',
     'https://cr-play-service.prd.crunchyrollsvc.com/*',
+    'https://static.crunchyroll.com/*',
     'https://graphql.anilist.co/*',
+    'https://api.jikan.moe/*',
+    'https://kitsu.io/*',
     'https://*.vercel.app/*',
   ],
   background: {
