@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import { getWatchHistory, getWatchlist, getWatchStats } from '@core/api/client';
+import { getWatchHistory, getWatchlist, getWatchlistTotal, getWatchStats } from '@core/api/client';
 import { retryAsync } from '@shared/async';
 import { useAsync } from '@app/hooks/useAsync';
 import { useRouter } from '@app/router';
@@ -31,10 +31,12 @@ export function SettingsPage(): React.JSX.Element {
   );
   // Favorites = the Crunchyroll watchlist; "recent" = watch history.
   const favoritesState = useAsync(() => getWatchlist(60), [lang]);
+  const favoritesTotalState = useAsync(() => getWatchlistTotal(), [lang]);
   const recentState = useAsync(() => getWatchHistory(24), [lang]);
 
   const watch = statsState.data;
   const favorites = favoritesState.data ?? [];
+  const favoritesTotal = favoritesTotalState.data ?? 0;
   const recent = recentState.data ?? [];
 
   const vf = favorites.filter((series) => series.dub).length;
@@ -66,9 +68,9 @@ export function SettingsPage(): React.JSX.Element {
     },
     {
       icon: 'heart',
-      value: favorites.length,
+      value: favoritesTotal || favorites.length,
       label: t('set.stat.favs'),
-      loading: favoritesState.loading,
+      loading: favoritesTotalState.loading && favoritesState.loading,
     },
     {
       icon: 'film',

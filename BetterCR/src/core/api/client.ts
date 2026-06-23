@@ -21,6 +21,7 @@ import { cached, DAY_MS } from '@core/cache';
 import {
   categoryToGenre,
   cmsSeriesToDetail,
+  episodePanelToSeries,
   episodeToModel,
   panelToSeries,
   seasonToModel,
@@ -327,7 +328,7 @@ export async function getPlayheads(
   return result;
 }
 
-/** Extracts the underlying series panel from a watchlist item (which may wrap it). */
+/** Extracts the underlying panel from a watchlist item (which may wrap it). */
 function unwrapPanel(item: unknown): unknown {
   if (item && typeof item === 'object' && 'panel' in item) {
     return (item as { panel: unknown }).panel;
@@ -339,23 +340,30 @@ function hasImage(series: Series): boolean {
   return Boolean(series.poster || series.wide);
 }
 
-/** Fills in poster/wide art for any series missing it, via `getObjects`. */
-async function backfillImages(series: Series[]): Promise<Series[]> {
-  const missing = series.filter((item) => !hasImage(item)).map((item) => item.id);
-  if (missing.length === 0) {
-    return series;
+/**
+ * Resolves a watchlist panel to its parent **series** id + a fallback view
+ * model. Watchlist panels are often the in-progress *episode* (which carries
+ * only a thumbnail and the episode title), so we key on `series_id` and rebuild
+ * with the series title — the real poster is fetched separately via getObjects.
+ */
+function watchlistSeries(panel: unknown): { id: string; fallback: Series } | null {
+  const ep = episodePanelSchema.safeParse(panel);
+  if (ep.success && ep.data.episode_metadata?.series_id) {
+    const seriesId = ep.data.episode_metadata.series_id;
+    return { id: seriesId, fallback: { ...episodePanelToSeries(ep.data), id: seriesId } };
   }
-  const byId = new Map((await getObjects(missing)).map((item) => [item.id, item]));
-  return series.map((item) => {
-    const upgraded = byId.get(item.id);
-    return !hasImage(item) && upgraded ? upgraded : item;
-  });
+  const series = panelSchema.safeParse(panel);
+  if (series.success) {
+    return { id: series.data.id, fallback: panelToSeries(series.data) };
+  }
+  return null;
 }
 
 /**
  * The user's Crunchyroll watchlist (their saved/"favorited" anime), newest
- * first. Maps the watchlist panels directly (they carry artwork) and backfills
- * any image-light entries.
+ * first, deduped by series. Each entry is resolved to its full **series**
+ * object (poster + series title) via getObjects, so cards never show an episode
+ * thumbnail/title or a broken image.
  */
 export async function getWatchlist(limit = 40): Promise<Series[]> {
   const account = await getAccountId();
@@ -367,16 +375,43 @@ export async function getWatchlist(limit = 40): Promise<Series[]> {
       n: limit,
       order: 'desc',
     });
-    const series: Series[] = [];
+    const ids: string[] = [];
+    const seen = new Set<string>();
+    const fallback = new Map<string, Series>();
     for (const item of extractData(raw)) {
-      const parsed = panelSchema.safeParse(unwrapPanel(item));
-      if (parsed.success) {
-        series.push(panelToSeries(parsed.data));
+      const resolved = watchlistSeries(unwrapPanel(item));
+      if (resolved && !seen.has(resolved.id)) {
+        seen.add(resolved.id);
+        ids.push(resolved.id);
+        fallback.set(resolved.id, resolved.fallback);
       }
     }
-    return backfillImages(series);
+    if (ids.length === 0) {
+      return [];
+    }
+    const byId = new Map((await getObjects(ids)).map((item) => [item.id, item]));
+    return ids
+      .map((id) => {
+        const full = byId.get(id);
+        return full && hasImage(full) ? full : fallback.get(id);
+      })
+      .filter((series): series is Series => series !== undefined);
   } catch {
     return [];
+  }
+}
+
+/** Total number of items in the user's watchlist (the real "favorites" count). */
+export async function getWatchlistTotal(): Promise<number> {
+  const account = await getAccountId();
+  if (!account) {
+    return 0;
+  }
+  try {
+    const raw = await getJson(`/content/v2/discover/${account}/watchlist`, { n: 1, order: 'desc' });
+    return readTotal(raw) ?? 0;
+  } catch {
+    return 0;
   }
 }
 
@@ -387,10 +422,13 @@ async function fetchWatchHistoryItems(limit: number, page = 0): Promise<WatchHis
     return [];
   }
   try {
-    const raw = await getJson(`/content/v2/${account}/watch-history`, {
-      page_size: limit,
-      page,
-    });
+    // The API rejects `page=0` ("invalid_value"); the first page omits it and
+    // pages are 1-indexed thereafter.
+    const query: Record<string, QueryValue> = { page_size: limit };
+    if (page > 0) {
+      query.page = page;
+    }
+    const raw = await getJson(`/content/v2/${account}/watch-history`, query);
     return parseEach(watchHistoryItemSchema, raw);
   } catch {
     return [];
@@ -429,9 +467,13 @@ export async function getWatchHistory(limit = 40): Promise<Series[]> {
   });
 }
 
+const CONTINUE_SCAN = 120;
+
 /** In-progress episodes (continue watching), deduped by series, newest first. */
 export async function getContinueWatching(limit = 24): Promise<ContinueItem[]> {
-  const items = await fetchWatchHistoryItems(limit);
+  // Scan a wide recent window: the newest entries are often already finished, so
+  // a small page can miss every in-progress episode.
+  const items = await fetchWatchHistoryItems(Math.max(limit, CONTINUE_SCAN));
   const out: ContinueItem[] = [];
   const seen = new Set<string>();
   for (const item of items) {
@@ -439,6 +481,9 @@ export async function getContinueWatching(limit = 24): Promise<ContinueItem[]> {
     if (cont && !seen.has(cont.seriesId)) {
       seen.add(cont.seriesId);
       out.push(cont);
+      if (out.length >= limit) {
+        break;
+      }
     }
   }
   return out;
@@ -526,7 +571,8 @@ export interface WatchStats {
 }
 
 const WATCH_HISTORY_PAGE = 100;
-const WATCH_HISTORY_MAX_PAGES = 10;
+/** How many history pages to scan when counting distinct series (bounded). */
+const STATS_SERIES_PAGES = 10;
 const EMPTY_STATS: WatchStats = { episodes: 0, hours: 0, series: 0 };
 
 function readTotal(raw: unknown): number | null {
@@ -544,8 +590,8 @@ function readTotal(raw: unknown): number | null {
 
 /**
  * Watch statistics from the account's history: episodes watched (the endpoint's
- * total when present, otherwise a paged count), distinct series, and estimated
- * hours from episode durations.
+ * `total`), distinct series (counted across a bounded number of pages), and
+ * estimated hours from average episode duration × episodes.
  */
 export async function getWatchStats(): Promise<WatchStats> {
   const account = await getAccountId();
@@ -553,10 +599,15 @@ export async function getWatchStats(): Promise<WatchStats> {
     return EMPTY_STATS;
   }
   try {
+    // First page — `page` omitted (the API rejects `page=0`).
     const firstRaw = await getJson(`/content/v2/${account}/watch-history`, {
       page_size: WATCH_HISTORY_PAGE,
-      page: 0,
     });
+    const firstItems = parseEach(watchHistoryItemSchema, firstRaw);
+    const episodes = readTotal(firstRaw) ?? firstItems.length;
+    if (episodes === 0) {
+      return EMPTY_STATS;
+    }
 
     const seriesIds = new Set<string>();
     let durationMs = 0;
@@ -574,22 +625,20 @@ export async function getWatchStats(): Promise<WatchStats> {
         }
       }
     };
-
-    const firstItems = parseEach(watchHistoryItemSchema, firstRaw);
     collect(firstItems);
 
-    const total = readTotal(firstRaw);
-    let episodes = total ?? firstItems.length;
-
-    // No total reported and the first page is full → page through to count.
-    if (total === null && firstItems.length >= WATCH_HISTORY_PAGE) {
-      for (let page = 1; page < WATCH_HISTORY_MAX_PAGES; page += 1) {
-        const items = await fetchWatchHistoryItems(WATCH_HISTORY_PAGE, page);
+    // Count distinct series across a bounded number of further pages (fetched in
+    // parallel) so "series followed" reflects more than the first page without
+    // walking the entire history.
+    const pages = Math.min(STATS_SERIES_PAGES, Math.ceil(episodes / WATCH_HISTORY_PAGE));
+    if (pages > 1) {
+      const rest = await Promise.all(
+        Array.from({ length: pages - 1 }, (_, index) =>
+          fetchWatchHistoryItems(WATCH_HISTORY_PAGE, index + 1),
+        ),
+      );
+      for (const items of rest) {
         collect(items);
-        episodes += items.length;
-        if (items.length < WATCH_HISTORY_PAGE) {
-          break;
-        }
       }
     }
 

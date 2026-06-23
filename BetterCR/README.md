@@ -81,6 +81,24 @@ src/
 
 ## Journal des versions
 
+### v1.2.2
+
+- 📊 **Statistiques enfin réelles.** La requête watch-history renvoyait `400`
+  (`page=0` est rejeté par l'API — `invalid_value`). Corrigé : la 1ʳᵉ page omet `page`,
+  la pagination est 1-indexée. **Épisodes vus** = `total` exact de l'historique,
+  **Heures** estimées via la durée moyenne, **Favoris** = total réel de la watchlist,
+  **Animés suivis** = séries distinctes (scan borné).
+- 🖼️ **Images & titres des favoris réparés.** Les entrées de la watchlist sont des
+  *épisodes* (vignette + titre d'épisode, sans `poster_tall`) : chaque entrée est
+  désormais résolue vers sa **série** (`series_id` → `getObjects`) → vraie affiche +
+  titre de série, dédoublonné par série.
+- ▶️ **« Continuer à regarder »** scanne une fenêtre plus large de l'historique
+  (les épisodes les plus récents sont souvent déjà terminés).
+- 🔑 **Grant cookie fiabilisé** : ajout de `device_id`/`device_type` (le grant
+  `etp_rt_cookie` renvoyait 400 sans eux) → token proactif sans dépendre de
+  l'interception passive.
+- 🧹 GIF mort (404) de l'écran de connexion remplacé.
+
 ### v1.2.1
 
 - 🔑 **Statistiques & « Continuer à regarder » réparées à la racine.** L'`account_id`

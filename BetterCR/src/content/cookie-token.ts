@@ -13,6 +13,7 @@ import type { AuthData } from '@shared/messages';
 
 /** base64("noaihdevm_6iyg0a8l0q:") — the Crunchyroll web (PKCE) client. */
 const WEB_CLIENT_BASIC = 'bm9haWhkZXZtXzZpeWcwYThsMHE6';
+const DEVICE_TYPE = 'BetterCR on Chrome';
 
 interface RawTokenResponse {
   readonly access_token?: string;
@@ -20,9 +21,29 @@ interface RawTokenResponse {
   readonly expires_in?: number;
 }
 
+/**
+ * Stable device id for this session: reuse Crunchyroll's own `device_id` cookie
+ * when readable, otherwise a generated UUID. The `etp_rt_cookie` grant requires
+ * `device_id`/`device_type` — omitting them returns 400.
+ */
+let cachedDeviceId: string | null = null;
+function deviceId(): string {
+  if (cachedDeviceId) {
+    return cachedDeviceId;
+  }
+  const match = /(?:^|;\s*)device_id=([^;]+)/.exec(document.cookie);
+  cachedDeviceId = match?.[1] ?? crypto.randomUUID();
+  return cachedDeviceId;
+}
+
 /** Requests an access token from the session cookie; null if not signed in. */
 export async function acquireTokenFromCookie(): Promise<AuthData | null> {
   try {
+    const body = new URLSearchParams({
+      grant_type: 'etp_rt_cookie',
+      device_id: deviceId(),
+      device_type: DEVICE_TYPE,
+    }).toString();
     const response = await fetch(`${CR_API_BASE}/auth/v1/token`, {
       method: 'POST',
       headers: {
@@ -32,7 +53,7 @@ export async function acquireTokenFromCookie(): Promise<AuthData | null> {
         Accept: 'application/json',
       },
       credentials: 'include',
-      body: 'grant_type=etp_rt_cookie',
+      body,
     });
     if (!response.ok) {
       return null;

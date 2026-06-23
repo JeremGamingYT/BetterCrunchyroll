@@ -14,7 +14,7 @@ import { Icon, type IconName } from '@app/components/Icon';
 import { LangSwitch } from '@app/components/LangSwitch';
 
 const BYE_GIFS = [
-  'https://media.giphy.com/media/Od0QRnzwUtBJK/giphy.gif',
+  'https://media.giphy.com/media/13CoXDiaCcCoyk/giphy.gif',
   'https://media.giphy.com/media/26FLgGTPUDH6UGAbm/giphy.gif',
   'https://media.giphy.com/media/edGzBC6GDOhutW32ps/giphy.gif',
   'https://media.giphy.com/media/uNzGan0eVgvmZfH6H5/giphy.gif',
