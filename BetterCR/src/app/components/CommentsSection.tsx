@@ -279,8 +279,11 @@ export function CommentsSection({
   return (
     <section className="cmt page-pad">
       <div className="cmt-head">
-        <h2 className="row-title">{t('comments.title')}</h2>
-        {total > 0 && <span className="cmt-count">{total}</span>}
+        <h2 className="row-title">
+          {total > 0
+            ? `${String(total)} ${t('comments.title').toLowerCase()}`
+            : t('comments.title')}
+        </h2>
         {enabled && active && (
           <button
             className={`cmt-mute-toggle${muteWords.length > 0 ? ' is-on' : ''}`}

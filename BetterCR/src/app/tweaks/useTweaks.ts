@@ -1,8 +1,13 @@
-import { useCallback, useEffect, useState } from 'react';
+/**
+ * Appearance preferences (accent colour, animations, anti-spoiler), persisted
+ * to localStorage and applied as CSS variables / body classes. Exposed as a
+ * module-level store so any component (now the Settings page) can read and
+ * update them without prop drilling. Card size is intentionally not adjustable.
+ */
+import { useSyncExternalStore } from 'react';
 
 export interface Tweaks {
   readonly accent: string;
-  readonly cardWidth: number;
   readonly motion: boolean;
   /** Blur unwatched episode thumbnails/titles to avoid spoilers. */
   readonly hideSpoilers: boolean;
@@ -10,12 +15,11 @@ export interface Tweaks {
 
 export const DEFAULT_TWEAKS: Tweaks = {
   accent: '#ff8133',
-  cardWidth: 178,
   motion: true,
   hideSpoilers: true,
 };
 
-export const ACCENT_OPTIONS = ['#ff8133', '#f4b63f', '#ef4565', '#3fb6e8'] as const;
+export const ACCENT_OPTIONS = ['#ff8133', '#f4b63f', '#ef4565', '#3fb6e8', '#8b5cf6'] as const;
 
 const STORAGE_KEY = 'bcr_tweaks';
 
@@ -26,8 +30,6 @@ function load(): Tweaks {
       const parsed = JSON.parse(raw) as Partial<Tweaks>;
       return {
         accent: typeof parsed.accent === 'string' ? parsed.accent : DEFAULT_TWEAKS.accent,
-        cardWidth:
-          typeof parsed.cardWidth === 'number' ? parsed.cardWidth : DEFAULT_TWEAKS.cardWidth,
         motion: typeof parsed.motion === 'boolean' ? parsed.motion : DEFAULT_TWEAKS.motion,
         hideSpoilers:
           typeof parsed.hideSpoilers === 'boolean'
@@ -49,30 +51,43 @@ function save(tweaks: Tweaks): void {
   }
 }
 
+function apply(tweaks: Tweaks): void {
+  if (!document.body) {
+    document.addEventListener('DOMContentLoaded', () => apply(tweaks), { once: true });
+    return;
+  }
+  document.documentElement.style.setProperty('--acc', tweaks.accent);
+  document.body.classList.toggle('no-motion', !tweaks.motion);
+  document.body.classList.toggle('spoiler-guard', tweaks.hideSpoilers);
+}
+
+let state: Tweaks = load();
+apply(state);
+const listeners = new Set<() => void>();
+
 export interface TweaksController {
   readonly tweaks: Tweaks;
   readonly setTweak: <K extends keyof Tweaks>(key: K, value: Tweaks[K]) => void;
 }
 
-/** Source of truth for the design tweaks; persists and applies CSS variables. */
+function setTweak<K extends keyof Tweaks>(key: K, value: Tweaks[K]): void {
+  state = { ...state, [key]: value };
+  save(state);
+  apply(state);
+  listeners.forEach((fn) => fn());
+}
+
+function subscribe(fn: () => void): () => void {
+  listeners.add(fn);
+  return () => {
+    listeners.delete(fn);
+  };
+}
+
+const snapshot = (): Tweaks => state;
+
+/** Source of truth for the appearance tweaks; persists and applies them. */
 export function useTweaks(): TweaksController {
-  const [tweaks, setTweaks] = useState<Tweaks>(load);
-
-  const setTweak = useCallback<TweaksController['setTweak']>((key, value) => {
-    setTweaks((prev) => {
-      const next = { ...prev, [key]: value };
-      save(next);
-      return next;
-    });
-  }, []);
-
-  useEffect(() => {
-    const root = document.documentElement;
-    root.style.setProperty('--acc', tweaks.accent);
-    root.style.setProperty('--pw', `${String(tweaks.cardWidth)}px`);
-    document.body.classList.toggle('no-motion', !tweaks.motion);
-    document.body.classList.toggle('spoiler-guard', tweaks.hideSpoilers);
-  }, [tweaks]);
-
+  const tweaks = useSyncExternalStore(subscribe, snapshot, snapshot);
   return { tweaks, setTweak };
 }

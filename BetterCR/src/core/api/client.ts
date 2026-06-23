@@ -199,6 +199,7 @@ export interface EpisodeInfo {
   readonly seasonNumber: number;
   readonly number: number;
   readonly title: string;
+  readonly description: string;
   readonly thumb: string;
   readonly durationMs: number;
 }
@@ -224,6 +225,7 @@ export async function getEpisodeInfo(episodeId: string): Promise<EpisodeInfo | n
       seasonNumber: meta?.season_number ?? 1,
       number: meta?.episode_number ?? 0,
       title: panel.title ?? '',
+      description: panel.description ?? '',
       thumb: thumbUrl(panel.images),
       durationMs: meta?.duration_ms ?? 0,
     };
@@ -946,4 +948,53 @@ export async function getDetailedStats(): Promise<DetailedStats> {
   } catch {
     return EMPTY_DETAILED;
   }
+}
+
+/** Real Crunchyroll account preferences (audio/subtitle language). */
+export interface CrPreferences {
+  readonly audioLanguage: string;
+  readonly subtitleLanguage: string;
+}
+
+/** Reads the account's real Crunchyroll preferences (`/accounts/v1/me/profile`). */
+export async function getCrPreferences(): Promise<CrPreferences | null> {
+  try {
+    const raw = await getJson('/accounts/v1/me/profile');
+    if (raw && typeof raw === 'object') {
+      const o = raw as Record<string, unknown>;
+      return {
+        audioLanguage:
+          typeof o.preferred_content_audio_language === 'string'
+            ? o.preferred_content_audio_language
+            : '',
+        subtitleLanguage:
+          typeof o.preferred_content_subtitle_language === 'string'
+            ? o.preferred_content_subtitle_language
+            : '',
+      };
+    }
+  } catch {
+    // Not signed in or endpoint unavailable.
+  }
+  return null;
+}
+
+/** Updates the account's Crunchyroll language preferences. Returns success. */
+export async function updateCrPreferences(patch: Partial<CrPreferences>): Promise<boolean> {
+  const body: Record<string, string> = {};
+  if (patch.audioLanguage !== undefined) {
+    body.preferred_content_audio_language = patch.audioLanguage;
+  }
+  if (patch.subtitleLanguage !== undefined) {
+    body.preferred_content_subtitle_language = patch.subtitleLanguage;
+  }
+  if (Object.keys(body).length === 0) {
+    return true;
+  }
+  const result = await bridge.apiRequest({
+    method: 'PATCH',
+    path: '/accounts/v1/me/profile',
+    body,
+  });
+  return result.ok;
 }

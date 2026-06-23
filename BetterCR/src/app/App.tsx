@@ -5,8 +5,6 @@ import { RouterContext, type Router } from '@app/router';
 import { ProfileProvider } from '@app/profile';
 import { Header } from '@app/components/Header';
 import { Footer } from '@app/components/Footer';
-import { TweaksPanel } from '@app/tweaks/TweaksPanel';
-import { useTweaks, type TweaksController } from '@app/tweaks/useTweaks';
 import { HomePage } from '@app/pages/HomePage';
 import { GridPage } from '@app/pages/GridPage';
 import { DetailPage } from '@app/pages/DetailPage';
@@ -86,12 +84,11 @@ function AuthSplash(): React.JSX.Element {
 }
 
 interface AuthedAppProps {
-  readonly tweaks: TweaksController;
   readonly goodbye: boolean;
   readonly onLogout: () => void;
 }
 
-function AuthedApp({ tweaks, goodbye, onLogout }: AuthedAppProps): React.JSX.Element {
+function AuthedApp({ goodbye, onLogout }: AuthedAppProps): React.JSX.Element {
   const [route, setRoute] = useState<AppRoute>(() => parseRoute(window.location.hash));
   const [transitionKey, setTransitionKey] = useState(0);
 
@@ -119,7 +116,6 @@ function AuthedApp({ tweaks, goodbye, onLogout }: AuthedAppProps): React.JSX.Ele
           {renderPage(route)}
           <Footer />
         </div>
-        <TweaksPanel tweaks={tweaks.tweaks} setTweak={tweaks.setTweak} />
         <GoodbyeOverlay show={goodbye} />
       </RouterContext.Provider>
     </ProfileProvider>
@@ -127,7 +123,6 @@ function AuthedApp({ tweaks, goodbye, onLogout }: AuthedAppProps): React.JSX.Ele
 }
 
 export function App(): React.JSX.Element {
-  const tweaks = useTweaks();
   const [auth, setAuth] = useState<AuthState>('checking');
   const [goodbye, setGoodbye] = useState(false);
 
@@ -173,5 +168,5 @@ export function App(): React.JSX.Element {
   if (auth === 'guest') {
     return <AuthPage onAuthenticated={() => setAuth('authed')} />;
   }
-  return <AuthedApp tweaks={tweaks} goodbye={goodbye} onLogout={logout} />;
+  return <AuthedApp goodbye={goodbye} onLogout={logout} />;
 }

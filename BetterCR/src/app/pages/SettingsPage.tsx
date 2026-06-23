@@ -1,9 +1,12 @@
-import type { CSSProperties } from 'react';
+import { useState, type CSSProperties } from 'react';
 import {
+  getCrPreferences,
   getDetailedStats,
   getWatchHistory,
   getWatchlist,
   getWatchlistTotal,
+  updateCrPreferences,
+  type CrPreferences,
 } from '@core/api/client';
 import { fetchExternalMeta } from '@core/providers';
 import { retryAsync } from '@shared/async';
@@ -11,16 +14,43 @@ import { useAsync } from '@app/hooks/useAsync';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
 import { useProfile } from '@app/profile';
+import { ACCENT_OPTIONS, useTweaks } from '@app/tweaks/useTweaks';
 import { Icon, type IconName } from '@app/components/Icon';
 import { PosterCard } from '@app/components/PosterCard';
 
 const STATS_RETRIES = 8;
 const STATS_RETRY_MS = 1500;
 
+/** Languages offered for the real Crunchyroll audio/subtitle preferences. */
+const LANG_OPTIONS: ReadonlyArray<{ code: string; label: string }> = [
+  { code: 'ja-JP', label: '日本語' },
+  { code: 'en-US', label: 'English' },
+  { code: 'fr-FR', label: 'Français' },
+  { code: 'es-419', label: 'Español (LatAm)' },
+  { code: 'es-ES', label: 'Español (España)' },
+  { code: 'pt-BR', label: 'Português (Brasil)' },
+  { code: 'de-DE', label: 'Deutsch' },
+  { code: 'it-IT', label: 'Italiano' },
+  { code: 'ar-SA', label: 'العربية' },
+  { code: 'ru-RU', label: 'Русский' },
+  { code: 'hi-IN', label: 'हिन्दी' },
+];
+
 export function SettingsPage(): React.JSX.Element {
   const { go } = useRouter();
-  const { t, lang } = useI18n();
+  const { t, lang, setLang } = useI18n();
   const { profile } = useProfile();
+  const { tweaks, setTweak } = useTweaks();
+
+  // Real Crunchyroll account preferences (audio/subtitle language).
+  const crState = useAsync(() => getCrPreferences(), []);
+  const [crOverride, setCrOverride] = useState<Partial<CrPreferences>>({});
+  const audioLang = crOverride.audioLanguage ?? crState.data?.audioLanguage ?? '';
+  const subLang = crOverride.subtitleLanguage ?? crState.data?.subtitleLanguage ?? '';
+  const saveCr = (key: keyof CrPreferences, value: string): void => {
+    setCrOverride((prev) => ({ ...prev, [key]: value }));
+    void updateCrPreferences({ [key]: value });
+  };
 
   // Watch statistics from the account's history. Fetched here (rather than at
   // app start) and retried while empty so a cold token/account on first paint
@@ -148,6 +178,112 @@ export function SettingsPage(): React.JSX.Element {
           <Icon name="bookmark" size={16} /> {t('set.seeWatchlist')}
         </button>
       </div>
+
+      <section className="set-section">
+        <h2 className="set-h2">
+          <span className="set-h2-tick" />
+          {t('set.prefs')}
+        </h2>
+        <div className="set-prefs">
+          <div className="set-pref">
+            <span className="set-pref-lbl">{t('set.uiLang')}</span>
+            <div className="set-seg">
+              <button
+                className={`set-seg-btn${lang === 'fr' ? ' is-on' : ''}`}
+                onClick={() => setLang('fr')}
+              >
+                Français
+              </button>
+              <button
+                className={`set-seg-btn${lang === 'en' ? ' is-on' : ''}`}
+                onClick={() => setLang('en')}
+              >
+                English
+              </button>
+            </div>
+          </div>
+          <div className="set-pref">
+            <span className="set-pref-lbl">{t('set.accent')}</span>
+            <div className="set-accents">
+              {ACCENT_OPTIONS.map((color) => (
+                <button
+                  key={color}
+                  className={`set-accent${tweaks.accent === color ? ' is-on' : ''}`}
+                  style={{ background: color } as CSSProperties}
+                  aria-label={color}
+                  onClick={() => setTweak('accent', color)}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="set-pref">
+            <span className="set-pref-lbl">{t('set.animations')}</span>
+            <button
+              className={`set-switch${tweaks.motion ? ' is-on' : ''}`}
+              role="switch"
+              aria-checked={tweaks.motion}
+              onClick={() => setTweak('motion', !tweaks.motion)}
+            >
+              <i />
+            </button>
+          </div>
+          <div className="set-pref">
+            <span className="set-pref-lbl">{t('set.antiSpoiler')}</span>
+            <button
+              className={`set-switch${tweaks.hideSpoilers ? ' is-on' : ''}`}
+              role="switch"
+              aria-checked={tweaks.hideSpoilers}
+              onClick={() => setTweak('hideSpoilers', !tweaks.hideSpoilers)}
+            >
+              <i />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="set-section">
+        <h2 className="set-h2">
+          <span className="set-h2-tick" />
+          {t('set.crPrefs')}
+        </h2>
+        <div className="set-prefs">
+          <div className="set-pref">
+            <span className="set-pref-lbl">{t('set.audioLang')}</span>
+            <select
+              className="set-select"
+              value={audioLang}
+              onChange={(event) => saveCr('audioLanguage', event.target.value)}
+            >
+              {!LANG_OPTIONS.some((o) => o.code === audioLang) && (
+                <option value={audioLang}>{audioLang || '—'}</option>
+              )}
+              {LANG_OPTIONS.map((option) => (
+                <option key={option.code} value={option.code}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="set-pref">
+            <span className="set-pref-lbl">{t('set.subLang')}</span>
+            <select
+              className="set-select"
+              value={subLang}
+              onChange={(event) => saveCr('subtitleLanguage', event.target.value)}
+            >
+              {!LANG_OPTIONS.some((o) => o.code === subLang) && (
+                <option value={subLang}>{subLang || '—'}</option>
+              )}
+              {LANG_OPTIONS.map((option) => (
+                <option key={option.code} value={option.code}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+        <p className="set-pref-note">{t('set.crNote')}</p>
+      </section>
 
       <section className="set-section">
         <h2 className="set-h2">

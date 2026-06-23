@@ -67,8 +67,12 @@ export function PosterCard({
               <span className="round-btn round-acc" onClick={play}>
                 <Icon name="play" size={16} />
               </span>
-              <span className={`round-btn${marked ? ' is-on' : ''}`} onClick={toggleMark}>
-                <Icon name={marked ? 'check' : 'bookmark'} size={15} solid={marked} />
+              <span
+                className={`round-btn${marked ? ' is-on' : ''}`}
+                onClick={toggleMark}
+                aria-label={marked ? 'Retirer de la watchlist' : 'Ajouter à la watchlist'}
+              >
+                <Icon name="bookmark" size={15} solid={marked} />
               </span>
             </div>
             <div className="pcard-langs">

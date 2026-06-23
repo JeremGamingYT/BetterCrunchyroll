@@ -112,6 +112,7 @@ export const episodePanelSchema = z
     id: z.string(),
     type: z.string().optional(),
     title: z.string().optional(),
+    description: z.string().optional(),
     // Some endpoints expose the parent series at the top level instead of in
     // `episode_metadata` — accept both.
     series_id: z.string().optional(),

@@ -103,6 +103,19 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.9.0
+
+- ⚙️ **Apparence déplacée dans les Paramètres** : le bouton flottant « Apparence » est retiré ;
+  langue de l'interface, **couleur d'accent**, animations et anti-spoiler sont désormais dans
+  **Profil → Préférences**. La taille des cartes n'est plus modifiable.
+- 🔧 **Vraies préférences Crunchyroll** : la **langue audio** et la **langue des sous-titres**
+  préférées de ton compte sont lues et **modifiables** (via `/accounts/v1/me/profile`), donc
+  synchronisées sur tous tes appareils.
+- 🔖 **Bouton watchlist des cartes** : même icône (signet) dans les deux états — rempli quand
+  l'animé est dans ta liste, contour sinon (fini la coche).
+- ▶️ **Page Lecteur** : la **description de l'épisode** est affichée, et l'**espace commentaires**
+  est remonté **juste sous le titre et la description** (présentation façon YouTube).
+
 ### v1.8.1
 
 - 🧭 **Découvertes** : les rangées sont alignées sur le titre de la page (fini la double

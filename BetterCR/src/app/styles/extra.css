@@ -284,6 +284,10 @@
   display: grid;
   grid-template-columns: 1fr 360px;
   gap: 34px;
+  align-items: start;
+}
+.watch-main {
+  min-width: 0;
 }
 @media (max-width: 900px) {
   .bcr-watch .watch-below {
@@ -291,10 +295,24 @@
   }
 }
 
-/* ── Watch page: comments ── */
+/* Episode synopsis under the title. */
+.watch-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--mut, #9aa0ac);
+  margin: 2px 0 16px;
+  max-width: 760px;
+  white-space: pre-line;
+}
+
+/* ── Watch page: comments (live under the episode info, YouTube-style) ── */
 .bcr-watch .cmt {
-  max-width: 980px;
-  margin: 8px auto 90px;
+  max-width: none;
+  margin: 30px 0 40px;
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 1px solid var(--line, rgba(255, 255, 255, 0.08));
+  padding-top: 26px;
 }
 .cmt-head {
   display: flex;
@@ -996,4 +1014,113 @@ button.notif-item:hover {
   font-size: 12px;
   font-weight: 700;
   color: var(--mut, #9aa0ac);
+}
+
+/* ── Settings: preferences ── */
+.set-prefs {
+  display: flex;
+  flex-direction: column;
+}
+.set-pref {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 4px;
+  border-bottom: 1px solid var(--line, rgba(255, 255, 255, 0.07));
+}
+.set-pref:last-child {
+  border-bottom: 0;
+}
+.set-pref-lbl {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--txt, #f4f4f6);
+}
+.set-pref-note {
+  font-size: 12px;
+  color: var(--mut, #9aa0ac);
+  margin-top: 10px;
+}
+.set-seg {
+  display: inline-flex;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
+}
+.set-seg-btn {
+  padding: 6px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--mut, #9aa0ac);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.set-seg-btn.is-on {
+  background: var(--acc, #f47521);
+  color: #160a02;
+}
+.set-accents {
+  display: inline-flex;
+  gap: 10px;
+}
+.set-accent {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25);
+}
+.set-accent.is-on {
+  border-color: #fff;
+}
+.set-switch {
+  position: relative;
+  width: 46px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.set-switch.is-on {
+  background: var(--acc, #f47521);
+}
+.set-switch i {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.15s;
+}
+.set-switch.is-on i {
+  transform: translateX(20px);
+}
+.set-select {
+  height: 40px;
+  min-width: 200px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--txt, #f4f4f6);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.set-select:focus {
+  outline: none;
+  border-color: var(--acc, #f47521);
 }

@@ -88,6 +88,7 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
 
   const num = current?.num ?? data?.info?.number ?? 0;
   const epTitle = current?.title || data?.info?.title || '';
+  const epDesc = current?.desc || data?.info?.description || '';
   const durMin = current?.durMin || (data?.info ? Math.round(data.info.durationMs / 60000) : 0);
   const upNext = useMemo(
     () => (data ? data.episodes.filter((ep) => ep.num > num).slice(0, 6) : []),
@@ -139,21 +140,32 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
       </div>
 
       <div className="watch-below page-pad">
-        <div className="watch-info">
-          {data?.seriesTitle && (
-            <button className="watch-kicker watch-kicker-btn" onClick={openSeries}>
-              {data.seriesTitle}
+        <div className="watch-main">
+          <div className="watch-info">
+            {data?.seriesTitle && (
+              <button className="watch-kicker watch-kicker-btn" onClick={openSeries}>
+                {data.seriesTitle}
+              </button>
+            )}
+            <h1 className="watch-title">{num ? `E${String(num)} · ${epTitle}` : epTitle || '…'}</h1>
+            <div className="dt-meta">
+              {durMin > 0 && <span>{t('common.min', { n: durMin })}</span>}
+              {data?.dub && <Chip tone="line">VF</Chip>}
+              {data?.sub && <Chip tone="line">VOSTFR</Chip>}
+            </div>
+            {epDesc && <p className="watch-desc">{epDesc}</p>}
+            <button className="row-all" onClick={openSeries}>
+              {t('player.viewSeries')} <Icon name="chevR" size={14} />
             </button>
-          )}
-          <h1 className="watch-title">{num ? `E${String(num)} · ${epTitle}` : epTitle || '…'}</h1>
-          <div className="dt-meta">
-            {durMin > 0 && <span>{t('common.min', { n: durMin })}</span>}
-            {data?.dub && <Chip tone="line">VF</Chip>}
-            {data?.sub && <Chip tone="line">VOSTFR</Chip>}
           </div>
-          <button className="row-all" onClick={openSeries}>
-            {t('player.viewSeries')} <Icon name="chevR" size={14} />
-          </button>
+
+          <CommentsSection
+            episodeId={epKey}
+            seriesId={data?.info?.seriesId || seriesId}
+            seriesTitle={data?.seriesTitle}
+            watchPath={epKey ? `/watch/${epKey}` : undefined}
+            locked={commentsLocked}
+          />
         </div>
 
         {upNext.length > 0 && (
@@ -182,14 +194,6 @@ export function WatchPage({ seriesId, episodeId }: WatchPageProps): React.JSX.El
           </aside>
         )}
       </div>
-
-      <CommentsSection
-        episodeId={epKey}
-        seriesId={data?.info?.seriesId || seriesId}
-        seriesTitle={data?.seriesTitle}
-        watchPath={epKey ? `/watch/${epKey}` : undefined}
-        locked={commentsLocked}
-      />
     </div>
   );
 }
