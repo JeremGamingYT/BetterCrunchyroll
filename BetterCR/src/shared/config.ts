@@ -26,3 +26,10 @@ export const TOKEN_WAIT_INTERVAL_MS = 100 as const;
 
 /** localStorage / chrome.storage key for the cached session token. */
 export const TOKEN_STORAGE_KEY = 'bcr_token' as const;
+
+/**
+ * Base URL of the free BetterCR comments API (see `server/`). Leave empty to
+ * hide the watch-page comments. After deploying `server/` to Vercel, set this
+ * to e.g. `https://bettercr-comments.vercel.app/api/comments`.
+ */
+export const COMMENTS_API: string = '';

@@ -31,6 +31,7 @@ export default defineManifest({
     'https://beta-api.crunchyroll.com/*',
     'https://cr-play-service.prd.crunchyrollsvc.com/*',
     'https://graphql.anilist.co/*',
+    'https://*.vercel.app/*',
   ],
   background: {
     service_worker: 'src/background/background.ts',

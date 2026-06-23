@@ -81,6 +81,15 @@ src/
 
 ## Journal des versions
 
+### v1.4.0
+
+- 💬 **Commentaires sur la page Lecteur**, par animé, signés de ton pseudo Crunchyroll,
+  **sans connexion**. Backend **gratuit et serverless** : une petite API Vercel + Upstash
+  Redis (free tier) — voir [`server/`](server/). Tant que `COMMENTS_API` (dans
+  `src/shared/config.ts`) est vide, la section affiche « bientôt disponible » ; une fois le
+  serveur déployé et l'URL renseignée, les commentaires s'affichent et se postent en direct
+  (`src/core/api/comments.ts` + `CommentsSection`). Anti-spam : longueur limitée + débit par IP.
+
 ### v1.3.0
 
 - ▶️ **Page « Lecteur » (`/watch`) repensée.** Le DOM Crunchyroll est remplacé par la
