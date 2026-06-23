@@ -36,8 +36,6 @@ Crunchyroll** et enrichie par **AniList**.
 
 <img src="docs/screenshots/home-hero.png" width="100%" alt="Accueil BetterCR — héro et rangées" />
 
-<img src="docs/screenshots/home-genres.png" width="100%" alt="Top 10 de la semaine et parcourir par genre" />
-
 </div>
 
 ---
@@ -116,8 +114,11 @@ appels vont **directement** à Crunchyroll (avec vos cookies) et à AniList.
 - [x] i18n FR/EN · Profil & stats réels · Watchlist & favoris
 - [x] Anti-spoiler · Simulcast trié · Enrichissement AniList
 - [x] Continuer à regarder · Parcourir par genre · Connexion/déconnexion réelles
-- [ ] Habillage du lecteur natif (skip intro/outro)
-- [ ] Autres fournisseurs (MAL, Kitsu)
+- [x] **Page Lecteur BetterCR** autour du lecteur natif (infos · épisodes · *À suivre*)
+- [x] **Commentaires** par animé (avatars · réponses · édition/suppression · temps réel · filtre FR/EN)
+- [x] **Centre de notifications** (réponses + nouveaux épisodes du jour) · **Sorties à venir** (AniList)
+- [ ] Contrôles custom du lecteur (skip intro/outro · sync playhead)
+- [ ] Autres fournisseurs (MAL, Kitsu) · Publication sur le Chrome Web Store
 
 ## ⚠️ Avertissement
 

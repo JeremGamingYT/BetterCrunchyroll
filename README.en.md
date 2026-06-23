@@ -36,8 +36,6 @@ and enriched with **AniList**.
 
 <img src="docs/screenshots/home-hero.png" width="100%" alt="BetterCR home — hero and rows" />
 
-<img src="docs/screenshots/home-genres.png" width="100%" alt="Weekly Top 10 and browse by genre" />
-
 </div>
 
 ---
