@@ -27,6 +27,18 @@ export const TOKEN_WAIT_INTERVAL_MS = 100 as const;
 /** localStorage / chrome.storage key for the cached session token. */
 export const TOKEN_STORAGE_KEY = 'bcr_token' as const;
 
+/** chrome.storage.local key for the master on/off toggle (default: enabled). */
+export const ENABLED_STORAGE_KEY = 'bcr_enabled' as const;
+
+/** chrome.storage.local key caching the latest known release info. */
+export const UPDATE_STORAGE_KEY = 'bcr_update' as const;
+
+/** GitHub repository + endpoints used by the update notifier. */
+export const GITHUB_REPO = 'JeremGamingYT/BetterCrunchyroll' as const;
+export const GITHUB_RELEASES_URL = `https://github.com/${GITHUB_REPO}/releases` as const;
+export const GITHUB_LATEST_API =
+  `https://api.github.com/repos/${GITHUB_REPO}/releases/latest` as const;
+
 /**
  * Base URL of the free BetterCR comments API (see `server/`). Leave empty to
  * hide the watch-page comments. After deploying `server/` to Vercel, set this

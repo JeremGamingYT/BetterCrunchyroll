@@ -10,6 +10,7 @@ import { BCR_TOKEN_EVENT } from '@shared/page-bridge';
 import { BCR_CHANNEL, isAppEnvelope, type AppEnvelope, type ContentReply } from '@shared/messages';
 import { ok, err } from '@shared/result';
 import { isWatchPath, mapCrPathToRoute } from '@shared/routing';
+import { ENABLED_STORAGE_KEY } from '@shared/config';
 import { TokenStore } from './token-store';
 import { performCrRequest } from './cr-api';
 import { passwordLogin } from './auth';
@@ -76,6 +77,8 @@ class ContentApp {
   private readonly watch = new WatchSkin();
   private lastHref = '';
   private lastSkipEpisode = '';
+  /** Master on/off (popup toggle). When false, the native site is left intact. */
+  private enabled = true;
 
   start(): void {
     if (window.self !== window.top) {
@@ -95,10 +98,53 @@ class ContentApp {
     });
     window.addEventListener('popstate', () => this.syncOverlay());
 
-    this.syncOverlay();
-    document.addEventListener('DOMContentLoaded', () => this.syncOverlay(), { once: true });
+    // React to the popup's enable/disable toggle live (no reload needed).
+    try {
+      chrome.storage.onChanged.addListener((changes, area) => {
+        if (area === 'local' && ENABLED_STORAGE_KEY in changes) {
+          this.setEnabled(changes[ENABLED_STORAGE_KEY]?.newValue !== false);
+        }
+      });
+    } catch {
+      /* storage unavailable — stay enabled */
+    }
+
+    void this.boot();
     window.setInterval(() => this.watchNavigation(), NAV_POLL_MS);
     console.info(`${LOG_PREFIX} content script ready`);
+  }
+
+  /** Reads the on/off setting, then mounts the overlay only if enabled. */
+  private async boot(): Promise<void> {
+    this.enabled = await new Promise<boolean>((resolve) => {
+      try {
+        chrome.storage.local.get(ENABLED_STORAGE_KEY, (result) => {
+          resolve(result[ENABLED_STORAGE_KEY] !== false);
+        });
+      } catch {
+        resolve(true);
+      }
+    });
+    if (this.enabled) {
+      this.syncOverlay();
+    }
+    document.addEventListener('DOMContentLoaded', () => this.syncOverlay(), { once: true });
+  }
+
+  /** Applies a live enable/disable from the popup toggle. */
+  private setEnabled(on: boolean): void {
+    if (on === this.enabled) {
+      return;
+    }
+    this.enabled = on;
+    if (on) {
+      this.syncOverlay();
+    } else {
+      this.overlay.unmount();
+      this.watch.disable();
+      this.lastSkipEpisode = '';
+      this.lastHref = '';
+    }
   }
 
   /**
@@ -107,6 +153,9 @@ class ContentApp {
    * elsewhere the watch skin is disabled.
    */
   private syncOverlay(): void {
+    if (!this.enabled) {
+      return;
+    }
     const watch = isWatchPath(window.location.pathname);
     this.overlay.mount(mapCrPathToRoute(window.location.pathname));
     if (watch) {
@@ -144,6 +193,9 @@ class ContentApp {
   }
 
   private watchNavigation(): void {
+    if (!this.enabled) {
+      return;
+    }
     if (window.location.href !== this.lastHref) {
       this.syncOverlay();
     } else if (!this.overlay.isMounted()) {

@@ -44,7 +44,8 @@ crunchyroll.com (onglet)
 - 💬 **Commentaires** par animé (avatars, réponses, édition/suppression, temps réel, filtre FR/EN).
 - 🔔 **Notifications** : réponses à tes commentaires + nouveaux épisodes du jour.
 - 🗓️ **Sorties à venir** (AniList) par période.
-- 🌐 **FR / EN**, thème + **Tweaks** (accent, taille des cartes, animations, anti-spoiler).
+- 🌐 **FR / EN**, couleur d'accent, animations, anti-spoiler — tout dans **Profil → Préférences**.
+- 🧩 **Menu d'extension** (popup) : activer/désactiver en 1 clic + détecteur de mise à jour.
 
 ## Installation (développement)
 
@@ -86,8 +87,9 @@ src/
 │  ├─ schemas/      validation zod des réponses CR (tolérante)
 │  ├─ mappers/ · models/   DTO → modèles de vue
 ├─ content/    content-script (overlay, pont, token store, proxy API, auth, watch-skin)
+├─ popup/      menu d'extension (activer/désactiver + détecteur de mise à jour)
 ├─ injected/   intercepteur de token (contexte page)
-├─ background/ service worker (règle DNR)
+├─ background/ service worker (règle DNR + vérif. des mises à jour)
 └─ shared/     contrat de messages typé · routing · config · Result
 
 server/         API commentaires serverless (Vercel + Upstash Redis) — optionnelle, gratuite
@@ -102,6 +104,16 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 - ESLint (typescript-eslint) + Prettier, alias de chemins (`@app`, `@core`, `@shared`…).
 
 ## Journal des versions
+
+### v1.10.0
+
+- 🧩 **Menu d'extension** : un clic sur l'icône BetterCR ouvre un popup avec un interrupteur
+  **Activer / Désactiver** (en direct, sans recharger — quand c'est off, Crunchyroll s'affiche
+  normalement), la version installée, et des liens (code source, signaler un bug).
+- 🔔 **Détecteur de mise à jour** : l'extension vérifie les *releases* GitHub et affiche une
+  **pastille sur l'icône** + un bouton **Télécharger** dans le menu quand une nouvelle version
+  est disponible. *(Une build chargée en local ne peut pas s'auto-installer — c'est réservé au
+  Chrome Web Store — donc c'est une détection + invitation à mettre à jour.)*
 
 ### v1.9.1
 

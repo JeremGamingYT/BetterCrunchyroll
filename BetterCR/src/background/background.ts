@@ -7,10 +7,40 @@
  * would block the extension's overlay iframe, so the redesigned UI could not
  * be embedded. Scoped to crunchyroll.com documents only.
  */
-import { TOKEN_STORAGE_KEY } from '@shared/config';
+import { GITHUB_LATEST_API, TOKEN_STORAGE_KEY, UPDATE_STORAGE_KEY } from '@shared/config';
+import { isNewer } from '@shared/version';
 
 const LOG_PREFIX = '[BetterCR:bg]';
 const CSP_RULE_ID = 1;
+const UPDATE_ALARM = 'bcr-update-check';
+const UPDATE_PERIOD_MIN = 720; // twice a day
+
+/**
+ * Checks GitHub for a newer release and reflects it as a toolbar badge + a
+ * cached record the popup reads. A self-hosted/unpacked build can't silently
+ * auto-install, so this is a check-and-notify mechanism.
+ */
+async function checkForUpdate(): Promise<void> {
+  try {
+    const response = await fetch(GITHUB_LATEST_API, {
+      headers: { Accept: 'application/vnd.github+json' },
+    });
+    if (!response.ok) {
+      return;
+    }
+    const data = (await response.json()) as { tag_name?: string };
+    const latest = data.tag_name;
+    if (!latest) {
+      return;
+    }
+    const available = isNewer(latest, chrome.runtime.getManifest().version);
+    await chrome.storage.local.set({ [UPDATE_STORAGE_KEY]: { latest, available, at: Date.now() } });
+    await chrome.action.setBadgeBackgroundColor({ color: '#ff8133' });
+    await chrome.action.setBadgeText({ text: available ? '•' : '' });
+  } catch {
+    // Offline or rate-limited — keep the last known state.
+  }
+}
 
 /** Real logout: drop the cached token and clear Crunchyroll's session cookies. */
 async function clearCrunchyrollSession(): Promise<void> {
@@ -85,11 +115,25 @@ async function installCspRelaxRule(): Promise<void> {
 chrome.runtime.onInstalled.addListener((details) => {
   console.info(`${LOG_PREFIX} installed (${details.reason})`);
   void installCspRelaxRule();
+  void checkForUpdate();
+  try {
+    chrome.alarms.create(UPDATE_ALARM, { periodInMinutes: UPDATE_PERIOD_MIN });
+  } catch {
+    /* alarms unavailable */
+  }
 });
 
 chrome.runtime.onStartup.addListener(() => {
   void installCspRelaxRule();
+  void checkForUpdate();
+});
+
+chrome.alarms.onAlarm.addListener((alarm) => {
+  if (alarm.name === UPDATE_ALARM) {
+    void checkForUpdate();
+  }
 });
 
 // Session rules are cleared when the worker's session ends; (re)install on load.
 void installCspRelaxRule();
+void checkForUpdate();

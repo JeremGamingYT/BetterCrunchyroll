@@ -24,8 +24,9 @@ export default defineManifest({
   action: {
     default_title: 'BetterCR',
     default_icon: 'icons/logo.png',
+    default_popup: 'src/popup/index.html',
   },
-  permissions: ['storage', 'activeTab', 'declarativeNetRequest', 'cookies'],
+  permissions: ['storage', 'activeTab', 'declarativeNetRequest', 'cookies', 'alarms'],
   host_permissions: [
     'https://www.crunchyroll.com/*',
     'https://beta-api.crunchyroll.com/*',
@@ -35,6 +36,7 @@ export default defineManifest({
     'https://api.jikan.moe/*',
     'https://kitsu.io/*',
     'https://*.vercel.app/*',
+    'https://api.github.com/*',
   ],
   background: {
     service_worker: 'src/background/background.ts',
