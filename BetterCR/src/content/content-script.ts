@@ -15,36 +15,10 @@ import { TokenStore } from './token-store';
 import { performCrRequest } from './cr-api';
 import { passwordLogin } from './auth';
 import { Overlay } from './overlay';
-import { WatchSkin, type SkipKind, type SkipSegment } from './watch-skin';
+import { WatchSkin } from './watch-skin';
 
 const LOG_PREFIX = '[BetterCR]';
 const NAV_POLL_MS = 500;
-const SKIP_EVENTS_BASE = 'https://static.crunchyroll.com/skip-events/production';
-const SKIP_KINDS: readonly SkipKind[] = ['recap', 'intro', 'credits'];
-
-/** Parses Crunchyroll's skip-events JSON into the segments we act on. */
-function parseSkipEvents(data: unknown): SkipSegment[] {
-  if (!data || typeof data !== 'object') {
-    return [];
-  }
-  const obj = data as Record<string, unknown>;
-  const out: SkipSegment[] = [];
-  for (const kind of SKIP_KINDS) {
-    const seg = obj[kind];
-    if (seg && typeof seg === 'object') {
-      const { start, end } = seg as { start?: unknown; end?: unknown };
-      if (typeof start === 'number' && typeof end === 'number' && end > start) {
-        out.push({ kind, start, end });
-      }
-    }
-  }
-  return out;
-}
-
-/** Episode id from a `/watch/{id}/…` path (locale prefix tolerated). */
-function watchEpisodeId(pathname: string): string {
-  return /\/watch\/([^/?#]+)/.exec(pathname)?.[1] ?? '';
-}
 
 /**
  * Path (relative to the extension root) of the classic token interceptor.
@@ -76,7 +50,6 @@ class ContentApp {
   private readonly overlay = new Overlay();
   private readonly watch = new WatchSkin();
   private lastHref = '';
-  private lastSkipEpisode = '';
   /** Master on/off (popup toggle). When false, the native site is left intact. */
   private enabled = true;
 
@@ -156,7 +129,6 @@ class ContentApp {
     } else {
       this.overlay.unmount();
       this.watch.disable();
-      this.lastSkipEpisode = '';
       this.lastHref = '';
     }
   }
@@ -174,36 +146,10 @@ class ContentApp {
     this.overlay.mount(mapCrPathToRoute(window.location.pathname));
     if (watch) {
       this.watch.enable();
-      void this.refreshSkipEvents();
     } else {
       this.watch.disable();
-      this.lastSkipEpisode = '';
     }
     this.lastHref = window.location.href;
-  }
-
-  /** Fetches the current episode's skip markers and hands them to the skin. */
-  private async refreshSkipEvents(): Promise<void> {
-    const episodeId = watchEpisodeId(window.location.pathname);
-    if (!episodeId || episodeId === this.lastSkipEpisode) {
-      return;
-    }
-    this.lastSkipEpisode = episodeId;
-    this.watch.setSkipEvents([]);
-    const token = await this.tokens.ensureToken();
-    if (!token) {
-      return;
-    }
-    try {
-      const data = await performCrRequest(
-        { method: 'GET', path: `${SKIP_EVENTS_BASE}/${episodeId}.json`, absolute: true },
-        token,
-      );
-      this.watch.setSkipEvents(parseSkipEvents(data));
-    } catch {
-      // No markers for this episode (404) or transient error — show nothing.
-      this.watch.setSkipEvents([]);
-    }
   }
 
   private watchNavigation(): void {

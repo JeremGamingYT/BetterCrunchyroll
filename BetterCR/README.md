@@ -39,8 +39,8 @@ crunchyroll.com (onglet)
   (épisodes non vus floutés tant qu'ils ne sont pas regardés, via les playheads).
 - ❤️ **Watchlist** synchronisée avec ton compte (marque-page en 1 clic sur chaque carte) ;
   **Paramètres** avec statistiques réelles (épisodes, heures, favoris, séries).
-- ▶️ **Page Lecteur** repensée autour du lecteur natif (infos, *À suivre*, **commentaires**,
-  bouton **Passer l'intro / le générique**).
+- ▶️ **Page Lecteur** repensée autour du lecteur natif (infos, *À suivre*, **commentaires**),
+  avec contrôles teintés à ta couleur d'accent (les boutons de saut natifs de Crunchyroll sont conservés).
 - 💬 **Commentaires** par animé (avatars, réponses, édition/suppression, temps réel, filtre FR/EN).
 - 🔔 **Notifications** : réponses à tes commentaires + nouveaux épisodes du jour.
 - 🗓️ **Sorties à venir** (AniList) par période.
@@ -104,6 +104,15 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 - ESLint (typescript-eslint) + Prettier, alias de chemins (`@app`, `@core`, `@shared`…).
 
 ## Journal des versions
+
+### v1.10.3
+
+- 📏 **Barre de progression affinée** : la couleur d'accent n'est appliquée qu'à la **fine piste**
+  native (et plus à toute la zone de clic), donc la barre n'est plus épaisse.
+- 🖼️ **Aperçus arrondis** : les vignettes de prévisualisation (au survol de la barre) ont des
+  coins arrondis.
+- ⏭️ **Plus de double « Passer l'intro »** : Crunchyroll propose déjà ses boutons de saut natifs —
+  on garde **les siens** et on a retiré celui que BetterCR ajoutait (qui faisait doublon).
 
 ### v1.10.2
 

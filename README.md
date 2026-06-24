@@ -121,7 +121,7 @@ appels vont **directement** à Crunchyroll (avec vos cookies) et à AniList.
 - [x] **Centre de notifications** (réponses + nouveaux épisodes du jour) · **Sorties à venir** (AniList)
 - [x] **Découvertes** (recommandations personnalisées) · **Recherche avancée** (genre · saison · format · VF/VOSTFR)
 - [x] **Stats enrichies** (heures/mois · genres · streak · Top 10) · **Secours multi-API** (AniList → MAL → Kitsu)
-- [x] **Passer l'intro / le récap / le générique** sur le lecteur natif (marqueurs Crunchyroll)
+- [x] **Lecteur natif reskinné** (cadre + contrôles teintés à l'accent ; saut intro/générique natif de CR conservé)
 - [ ] Publication sur le Chrome Web Store
 
 ## ⚠️ Avertissement
