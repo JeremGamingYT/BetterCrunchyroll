@@ -1,6 +1,6 @@
 {
   "name": "bettercr",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "private": true,
   "description": "BetterCR — extension Chrome qui refond l'UI de Crunchyroll avec l'API officielle, sans backend.",
   "type": "module",
@@ -19,7 +19,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^2.0.0-beta.33",
+    "@crxjs/vite-plugin": "^2.7.0",
     "@eslint/js": "^9.39.4",
     "@types/chrome": "^0.2.0",
     "@types/node": "^22.20.0",
@@ -34,6 +34,6 @@
     "prettier": "^3.8.4",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.61.1",
-    "vite": "^5.4.21"
+    "vite": "^6.4.3"
   }
 }

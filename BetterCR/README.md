@@ -103,6 +103,14 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.9.1
+
+- 🔒 **Maintenance sécurité** : mise à jour des dépendances de build pour résoudre les
+  alertes Dependabot — **Vite 6.4.3** (corrige des *path traversal* + le bypass `server.fs.deny`),
+  **esbuild ≥ 0.25**, **rollup** corrigé, et passage de `@crxjs/vite-plugin` à la **stable 2.7.0**.
+  `npm audit` : **0 vulnérabilité**. (Outils de développement uniquement — non embarqués dans
+  l'extension ; aucun changement de comportement.)
+
 ### v1.9.0
 
 - ⚙️ **Apparence déplacée dans les Paramètres** : le bouton flottant « Apparence » est retiré ;
