@@ -185,7 +185,53 @@ export class WatchSkin {
         transition: background 0.15s, transform 0.15s;
       }
       .bcr-skip-btn.is-on { display: inline-flex; }
-      .bcr-skip-btn:hover { background: #fff; transform: translateY(-1px); }`;
+      .bcr-skip-btn:hover { background: #fff; transform: translateY(-1px); }
+
+      /* ── Tint the native player controls to the BetterCR accent ── */
+      /* Seek bar: played portion in the accent, then buffered, then track. */
+      .bcr-adopted .timeline-slider,
+      .bcr-adopted .timeline-slider::-webkit-slider-runnable-track {
+        background: linear-gradient(
+          to right,
+          var(--bcr-acc, #ff8133) 0,
+          var(--bcr-acc, #ff8133) var(--timeline-progress-percent, 0%),
+          rgba(255, 255, 255, 0.5) var(--timeline-progress-percent, 0%),
+          rgba(255, 255, 255, 0.5) var(--moz-progress-gradient-percent, 0%),
+          rgba(255, 255, 255, 0.2) var(--moz-progress-gradient-percent, 0%),
+          rgba(255, 255, 255, 0.2) 100%
+        ) !important;
+        border-radius: 999px !important;
+        accent-color: var(--bcr-acc, #ff8133) !important;
+      }
+      .bcr-adopted .timeline-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 14px !important;
+        height: 14px !important;
+        border: 0 !important;
+        border-radius: 50% !important;
+        background: var(--bcr-acc, #ff8133) !important;
+        box-shadow: 0 0 0 5px color-mix(in srgb, var(--bcr-acc, #ff8133) 32%, transparent) !important;
+      }
+      .bcr-adopted .volume-slider {
+        accent-color: var(--bcr-acc, #ff8133) !important;
+      }
+      .bcr-adopted .volume-slider::-webkit-slider-thumb {
+        background: var(--bcr-acc, #ff8133) !important;
+      }
+      /* Buttons: accent on hover/focus + the primary play/pause always accent. */
+      .bcr-adopted [data-testid="bottom-controls-autohide"] button:hover,
+      .bcr-adopted [data-testid="bottom-controls-autohide"] button:focus-visible,
+      .bcr-adopted [data-testid="volume-slider-container"]:hover {
+        color: var(--bcr-acc, #ff8133) !important;
+        fill: var(--bcr-acc, #ff8133) !important;
+        opacity: 1 !important;
+      }
+      .bcr-adopted [data-testid="play-pause-button"] {
+        color: var(--bcr-acc, #ff8133) !important;
+        fill: var(--bcr-acc, #ff8133) !important;
+        opacity: 1 !important;
+      }`;
     (document.head ?? document.documentElement).appendChild(style);
   }
 
@@ -262,6 +308,14 @@ export class WatchSkin {
   private restorePlayer(): void {
     if (!this.player) {
       return;
+    }
+    // Stop playback when leaving /watch — we only pushState (no reload), so the
+    // native player would otherwise keep playing audio in the background.
+    const video = this.video ?? this.player.querySelector('video');
+    try {
+      video?.pause();
+    } catch {
+      /* ignore */
     }
     this.video?.removeEventListener('timeupdate', this.onTime);
     this.video = null;

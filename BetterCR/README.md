@@ -105,6 +105,15 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.10.2
+
+- 🎛️ **Contrôles du lecteur aux couleurs de BetterCR** : la **barre de progression**, le pouce, le
+  curseur de volume et le **survol des boutons** du lecteur natif reprennent ta **couleur d'accent**
+  (ciblage des vrais contrôles Crunchyroll : `timeline-slider`, `data-testid`…). Le lecteur reste
+  le lecteur natif — seul son style est ajusté.
+- 🔇 **Correctif audio** : le lecteur se met en **pause** quand tu quittes la page Lecteur (fini le
+  son de l'épisode qui continue après avoir cliqué sur « Accueil » ou une autre page).
+
 ### v1.10.1
 
 - 🎬 **Lecteur habillé** : le lecteur natif de Crunchyroll est désormais **encadré** pour matcher
