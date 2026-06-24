@@ -105,6 +105,14 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.12.0
+
+- 🔔 **Bannière de mise à jour dans le site** : quand une nouvelle version est disponible, un
+  bandeau apparaît directement dans l'overlay BetterCR (plus seulement dans le popup de l'icône),
+  avec un bouton **Mettre à jour** (ouvre les *releases*) et une croix pour l'ignorer. Il lit le
+  cache rempli par le *background* (aucune requête réseau en plus), se met à jour **en direct**, et
+  ne réapparaît plus une fois la version ignorée.
+
 ### v1.11.0
 
 - 🧹 **Passe qualité pré-lancement** (audit NASA Power-of-Ten + Google TS Style) : suppression de

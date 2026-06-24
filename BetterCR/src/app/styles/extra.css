@@ -1128,3 +1128,62 @@ button.notif-item:hover {
   outline: none;
   border-color: var(--acc, #f47521);
 }
+
+/* ── In-overlay "update available" toast ── */
+.bcr-update-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px 10px 16px;
+  border-radius: 14px;
+  background: rgba(18, 18, 24, 0.94);
+  backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in srgb, var(--acc, #ff8133) 50%, transparent);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.5);
+  color: var(--txt, #f4f4f6);
+  font-size: 14px;
+  max-width: calc(100vw - 32px);
+  animation: bcrUpIn 0.3s ease;
+}
+@keyframes bcrUpIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 14px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.bcr-update-toast > svg {
+  color: var(--acc, #ff8133);
+  flex: none;
+}
+.bcr-update-txt {
+  font-weight: 600;
+}
+.bcr-update-go {
+  padding: 7px 14px !important;
+  font-size: 13px;
+}
+.bcr-update-x {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--mut, #9aa0ac);
+  cursor: pointer;
+}
+.bcr-update-x:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--txt, #f4f4f6);
+}
