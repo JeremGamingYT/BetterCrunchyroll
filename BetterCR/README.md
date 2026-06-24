@@ -105,6 +105,14 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.10.4
+
+- 🔇 **Correctif audio (vraie cause)** : en quittant la page Lecteur via la navigation interne
+  (Accueil, header/footer…), le lecteur natif est désormais **bien arrêté**. Le `pushState`
+  mettait à jour la référence d'URL lui-même, si bien que le démontage du lecteur — et donc la
+  mise en pause — ne se déclenchait jamais. La navigation re-synchronise maintenant l'overlay,
+  et toutes les balises média sont mises en pause au départ.
+
 ### v1.10.3
 
 - 📏 **Barre de progression affinée** : la couleur d'accent n'est appliquée qu'à la **fine piste**

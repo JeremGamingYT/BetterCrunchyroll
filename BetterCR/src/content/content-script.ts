@@ -275,7 +275,9 @@ class ContentApp {
     }
     if (target !== window.location.pathname) {
       window.history.pushState({}, '', target);
-      this.lastHref = window.location.href;
+      // Re-sync so leaving /watch tears down the watch skin (which pauses the
+      // native player) — pushState alone wouldn't trigger the nav watcher.
+      this.syncOverlay();
     }
   }
 }

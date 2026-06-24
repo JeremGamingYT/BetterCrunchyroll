@@ -200,11 +200,13 @@ export class WatchSkin {
     }
     // Stop playback when leaving /watch — we only pushState (no reload), so the
     // native player would otherwise keep playing audio in the background.
-    try {
-      this.player.querySelector('video')?.pause();
-    } catch {
-      /* ignore */
-    }
+    this.player.querySelectorAll('video, audio').forEach((media) => {
+      try {
+        (media as HTMLMediaElement).pause();
+      } catch {
+        /* ignore */
+      }
+    });
     this.player.classList.remove('bcr-adopted');
     this.player.setAttribute('style', this.origStyle);
     if (this.origParent?.isConnected) {
