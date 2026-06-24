@@ -2,6 +2,7 @@ import { type CSSProperties, type MouseEvent } from 'react';
 import type { Series } from '@core/models/content';
 import { animeColor } from '@app/lib/anime-color';
 import { useWatchlist, toggleWatchlist } from '@app/lib/watchlist';
+import { useI18n } from '@app/i18n/i18n';
 import { Icon } from './Icon';
 import { Chip } from './Chip';
 
@@ -24,6 +25,7 @@ export function PosterCard({
   showNew = false,
   showAiring = false,
 }: PosterCardProps): React.JSX.Element {
+  const { t } = useI18n();
   const { ids } = useWatchlist();
   const marked = ids.has(anime.id);
 
@@ -32,7 +34,7 @@ export function PosterCard({
     meta.push(String(anime.year));
   }
   if (anime.eps) {
-    meta.push(`${String(anime.eps)} ép.`);
+    meta.push(t('common.epShort', { n: anime.eps }));
   }
 
   const style = {
@@ -55,11 +57,11 @@ export function PosterCard({
         <div className="pcard-frame">
           <img className="pcard-img" src={anime.poster} alt="" loading="lazy" />
           <div className="pcard-shade" />
-          {showNew && <span className="flag flag-new">NOUVEAU</span>}
+          {showNew && <span className="flag flag-new">{t('flag.new')}</span>}
           {showAiring && anime.simulcast && (
             <span className="flag flag-air">
               <i className="dot" />
-              SIMULCAST
+              {t('flag.simulcast')}
             </span>
           )}
           <div className="pcard-veil">
@@ -70,7 +72,7 @@ export function PosterCard({
               <span
                 className={`round-btn${marked ? ' is-on' : ''}`}
                 onClick={toggleMark}
-                aria-label={marked ? 'Retirer de la watchlist' : 'Ajouter à la watchlist'}
+                aria-label={marked ? t('detail.inWatchlist') : t('detail.watchlist')}
               >
                 <Icon name="bookmark" size={15} solid={marked} />
               </span>

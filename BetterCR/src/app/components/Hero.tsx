@@ -1,6 +1,7 @@
 import { useEffect, useState, type CSSProperties } from 'react';
 import type { Series } from '@core/models/content';
 import { useI18n } from '@app/i18n/i18n';
+import { toggleWatchlist, useWatchlist } from '@app/lib/watchlist';
 import { Icon } from './Icon';
 import { Chip } from './Chip';
 
@@ -14,6 +15,7 @@ export interface HeroProps {
 
 export function Hero({ items, onOpen, onPlay }: HeroProps): React.JSX.Element | null {
   const { t } = useI18n();
+  const { ids } = useWatchlist();
   const [index, setIndex] = useState(0);
   const count = items.length;
 
@@ -33,6 +35,7 @@ export function Hero({ items, onOpen, onPlay }: HeroProps): React.JSX.Element | 
     return null;
   }
   const move = (delta: number): void => setIndex((i) => (i + delta + count) % count);
+  const marked = ids.has(slide.id);
 
   return (
     <div className="hero" data-screen-label="Hero">
@@ -64,8 +67,12 @@ export function Hero({ items, onOpen, onPlay }: HeroProps): React.JSX.Element | 
           <button className="btn btn-glass" onClick={() => onOpen(slide)}>
             <Icon name="info" size={18} /> {t('common.moreInfo')}
           </button>
-          <button className="btn btn-icon" aria-label="Ajouter à la watchlist">
-            <Icon name="plus" size={18} />
+          <button
+            className={`btn btn-icon${marked ? ' is-on' : ''}`}
+            onClick={() => toggleWatchlist(slide.id)}
+            aria-label={marked ? t('detail.inWatchlist') : t('detail.watchlist')}
+          >
+            <Icon name="bookmark" size={18} solid={marked} />
           </button>
         </div>
       </div>

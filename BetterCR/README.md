@@ -105,6 +105,21 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.11.0
+
+- 🧹 **Passe qualité pré-lancement** (audit NASA Power-of-Ten + Google TS Style) : suppression de
+  tout le **code mort** (composants/hooks/exports/types inutilisés), **déduplication** (helper
+  `relTime` partagé, icône `eyeOff` dédoublée), **zéro warning** TypeScript & ESLint.
+- 🔐 **Permissions réduites** : retrait des `host_permissions` non utilisées
+  (`static`/`cr-play-service`/`beta-api.crunchyroll.com`) et de la permission `activeTab` — surface
+  d'autorisations minimale (mieux pour la confiance + le Chrome Web Store).
+- 🌐 **Correctifs i18n** : « Continuer à regarder » et les badges des cartes
+  (**NEW/SIMULCAST**, durées) s'affichent désormais correctement en anglais.
+- ➕ **Hero** : le bouton d'ajout à la **watchlist** (sur la bannière d'accueil) est maintenant
+  fonctionnel.
+- ⚡ **Mises à jour** : la vérification de version ne part plus à chaque réveil du service worker
+  (évite tout risque de *rate-limit* GitHub).
+
 ### v1.10.4
 
 - 🔇 **Correctif audio (vraie cause)** : en quittant la page Lecteur via la navigation interne

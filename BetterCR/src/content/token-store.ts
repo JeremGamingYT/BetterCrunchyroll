@@ -176,11 +176,6 @@ export class TokenStore {
     return this.acquiring;
   }
 
-  /** Backwards-compatible alias. */
-  waitForToken(): Promise<string | null> {
-    return this.ensureToken();
-  }
-
   private async acquire(): Promise<string | null> {
     try {
       const data = await acquireTokenFromCookie();

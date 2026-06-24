@@ -21,10 +21,6 @@ export interface ReplyNotif {
   readonly ts: number;
 }
 
-export function notificationsEnabled(): boolean {
-  return COMMENTS_API.length > 0;
-}
-
 export async function getReplyNotifications(): Promise<ReplyNotif[]> {
   if (!COMMENTS_API) {
     return [];
@@ -40,20 +36,5 @@ export async function getReplyNotifications(): Promise<ReplyNotif[]> {
     return Array.isArray(data.notifications) ? data.notifications : [];
   } catch {
     return [];
-  }
-}
-
-export async function clearReplyNotifications(): Promise<void> {
-  if (!COMMENTS_API) {
-    return;
-  }
-  try {
-    await fetch(NOTIFICATIONS_API, {
-      method: 'DELETE',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ uid: clientId() }),
-    });
-  } catch {
-    // best-effort
   }
 }

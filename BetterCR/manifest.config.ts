@@ -26,12 +26,9 @@ export default defineManifest({
     default_icon: 'icons/logo.png',
     default_popup: 'src/popup/index.html',
   },
-  permissions: ['storage', 'activeTab', 'declarativeNetRequest', 'cookies', 'alarms'],
+  permissions: ['storage', 'declarativeNetRequest', 'cookies', 'alarms'],
   host_permissions: [
     'https://www.crunchyroll.com/*',
-    'https://beta-api.crunchyroll.com/*',
-    'https://cr-play-service.prd.crunchyrollsvc.com/*',
-    'https://static.crunchyroll.com/*',
     'https://graphql.anilist.co/*',
     'https://api.jikan.moe/*',
     'https://kitsu.io/*',

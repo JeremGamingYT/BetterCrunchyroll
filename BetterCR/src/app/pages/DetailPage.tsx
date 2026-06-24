@@ -47,7 +47,7 @@ function EpisodeCard({ ep, index, revealed, seen, onPlay }: EpisodeCardProps): R
             <Icon name="play" size={16} />
           </span>
           <span className="ecard-spoiler">
-            <Icon name="eyeoff" size={22} />
+            <Icon name="eyeOff" size={22} />
           </span>
           {ep.durMin > 0 && <span className="ecard-dur">{ep.durMin} min</span>}
           {seen && (

@@ -22,10 +22,6 @@ export class Overlay {
     return document.getElementById(FRAME_ID) as HTMLIFrameElement | null;
   }
 
-  getFrameWindow(): Window | null {
-    return this.frame()?.contentWindow ?? null;
-  }
-
   isMounted(): boolean {
     return this.frame() !== null;
   }

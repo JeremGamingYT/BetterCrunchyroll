@@ -11,20 +11,12 @@ import {
 import { useI18n } from '@app/i18n/i18n';
 import { useProfile } from '@app/profile';
 import { addMuteWord, isMuted, removeMuteWord, useMuteWords } from '@app/lib/muteWords';
+import { relTime } from '@app/lib/relTime';
 import { Icon } from './Icon';
 
 const MAX = 1000;
 const POLL_MS = 12_000;
 const DELETE_LINGER_MS = 4000;
-
-function relTime(ts: number, lang: string): string {
-  const min = Math.floor((Date.now() - ts) / 60000);
-  if (min < 1) return lang === 'en' ? 'just now' : "à l'instant";
-  if (min < 60) return `${String(min)} min`;
-  const h = Math.floor(min / 60);
-  if (h < 24) return `${String(h)} h`;
-  return `${String(Math.floor(h / 24))} j`;
-}
 
 interface RowProps {
   readonly comment: Comment;

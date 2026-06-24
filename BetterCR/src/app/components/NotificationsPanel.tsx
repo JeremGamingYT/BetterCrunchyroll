@@ -4,18 +4,10 @@ import type { ReplyNotif } from '@core/api/notifications';
 import { postComment } from '@core/api/comments';
 import { bridge } from '@core/api/transport';
 import { useI18n } from '@app/i18n/i18n';
+import { relTime } from '@app/lib/relTime';
 import { Icon } from './Icon';
 
 const MAX = 1000;
-
-function relTime(ts: number, lang: string): string {
-  const min = Math.floor((Date.now() - ts) / 60000);
-  if (min < 1) return lang === 'en' ? 'just now' : "à l'instant";
-  if (min < 60) return `${String(min)} min`;
-  const h = Math.floor(min / 60);
-  if (h < 24) return `${String(h)} h`;
-  return `${String(Math.floor(h / 24))} j`;
-}
 
 export interface NotificationsPanelProps {
   readonly open: boolean;

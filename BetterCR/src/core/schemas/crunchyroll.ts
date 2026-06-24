@@ -8,7 +8,7 @@
  */
 import { z } from 'zod';
 
-export const imageItemSchema = z.object({
+const imageItemSchema = z.object({
   source: z.string(),
   width: z.number().optional(),
   height: z.number().optional(),
@@ -142,7 +142,6 @@ export const playheadSchema = z
     fully_watched: z.boolean().optional(),
   })
   .passthrough();
-export type PlayheadDto = z.infer<typeof playheadSchema>;
 
 /** A watch-history entry: episode `panel` + progress at the item level. */
 export const watchHistoryItemSchema = z
@@ -185,12 +184,3 @@ export const profileSchema = z
     email: z.string().optional(),
   })
   .passthrough();
-export type ProfileDto = z.infer<typeof profileSchema>;
-
-/** Standard `{ total, data: [...] }` list envelope used across CR endpoints. */
-export function envelopeOf<T extends z.ZodTypeAny>(item: T) {
-  return z.object({
-    total: z.number().optional(),
-    data: z.array(item),
-  });
-}

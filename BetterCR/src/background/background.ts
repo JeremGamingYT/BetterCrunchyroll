@@ -135,5 +135,6 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 });
 
 // Session rules are cleared when the worker's session ends; (re)install on load.
+// (Update checks only run on install/startup/alarm — not on every worker wake —
+// to avoid hammering the GitHub API, which is rate-limited.)
 void installCspRelaxRule();
-void checkForUpdate();
