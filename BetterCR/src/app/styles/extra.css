@@ -276,7 +276,11 @@
   background: #000;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.55);
+  /* Matches the relocated player's frame (watch-skin) so the placeholder and
+     the live player look identical. */
+  box-shadow:
+    0 28px 80px rgba(0, 0, 0, 0.6),
+    0 0 0 1.5px color-mix(in srgb, var(--acc, #ff8133) 42%, transparent);
 }
 .bcr-watch .watch-below {
   max-width: 1320px;

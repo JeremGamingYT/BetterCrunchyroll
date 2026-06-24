@@ -59,6 +59,7 @@ export class WatchSkin {
   private video: HTMLVideoElement | null = null;
   private skipBtn: HTMLButtonElement | null = null;
   private skipTarget = 0;
+  private accent = '#ff8133';
   private readonly onTime = (): void => this.updateSkip();
 
   /** Begin skinning the watch page (adopt the player as soon as it appears). */
@@ -94,6 +95,12 @@ export class WatchSkin {
     this.updateSkip();
   }
 
+  /** Accent colour used to frame the player so it matches the BetterCR theme. */
+  setAccent(color: string): void {
+    this.accent = color || this.accent;
+    this.player?.style.setProperty('--bcr-acc', this.accent);
+  }
+
   private tick(): void {
     if (!this.active) {
       return;
@@ -119,6 +126,7 @@ export class WatchSkin {
     el.style.margin = '0';
     el.style.maxWidth = 'none';
     el.style.background = '#000';
+    el.style.setProperty('--bcr-acc', this.accent);
     document.body.appendChild(el);
     this.apply();
   }
@@ -131,7 +139,15 @@ export class WatchSkin {
     const style = document.createElement('style');
     style.id = 'bcr-watch-fill';
     style.textContent = `
-      .bcr-adopted { border-radius: 16px; overflow: hidden; }
+      /* Frame the relocated native player like a BetterCR card: rounded, a deep
+         soft shadow, and a thin accent ring that matches the SPA theme. */
+      .bcr-adopted {
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow:
+          0 28px 80px rgba(0, 0, 0, 0.6),
+          0 0 0 1.5px color-mix(in srgb, var(--bcr-acc, #ff8133) 42%, transparent);
+      }
       /* The spacer creates CR's aspect-ratio; we size the wrapper ourselves. */
       .bcr-adopted .video-player-spacer { display: none !important; }
       .bcr-adopted .player-container {

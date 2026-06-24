@@ -10,7 +10,7 @@ import { BCR_TOKEN_EVENT } from '@shared/page-bridge';
 import { BCR_CHANNEL, isAppEnvelope, type AppEnvelope, type ContentReply } from '@shared/messages';
 import { ok, err } from '@shared/result';
 import { isWatchPath, mapCrPathToRoute } from '@shared/routing';
-import { ENABLED_STORAGE_KEY } from '@shared/config';
+import { ACCENT_STORAGE_KEY, ENABLED_STORAGE_KEY } from '@shared/config';
 import { TokenStore } from './token-store';
 import { performCrRequest } from './cr-api';
 import { passwordLogin } from './auth';
@@ -101,8 +101,17 @@ class ContentApp {
     // React to the popup's enable/disable toggle live (no reload needed).
     try {
       chrome.storage.onChanged.addListener((changes, area) => {
-        if (area === 'local' && ENABLED_STORAGE_KEY in changes) {
+        if (area !== 'local') {
+          return;
+        }
+        if (ENABLED_STORAGE_KEY in changes) {
           this.setEnabled(changes[ENABLED_STORAGE_KEY]?.newValue !== false);
+        }
+        if (ACCENT_STORAGE_KEY in changes) {
+          const accent: unknown = changes[ACCENT_STORAGE_KEY]?.newValue;
+          if (typeof accent === 'string') {
+            this.watch.setAccent(accent);
+          }
         }
       });
     } catch {
@@ -114,17 +123,22 @@ class ContentApp {
     console.info(`${LOG_PREFIX} content script ready`);
   }
 
-  /** Reads the on/off setting, then mounts the overlay only if enabled. */
+  /** Reads stored settings (on/off + accent), then mounts only if enabled. */
   private async boot(): Promise<void> {
-    this.enabled = await new Promise<boolean>((resolve) => {
+    const stored = await new Promise<Record<string, unknown>>((resolve) => {
       try {
-        chrome.storage.local.get(ENABLED_STORAGE_KEY, (result) => {
-          resolve(result[ENABLED_STORAGE_KEY] !== false);
-        });
+        chrome.storage.local.get([ENABLED_STORAGE_KEY, ACCENT_STORAGE_KEY], (result) =>
+          resolve(result),
+        );
       } catch {
-        resolve(true);
+        resolve({});
       }
     });
+    this.enabled = stored[ENABLED_STORAGE_KEY] !== false;
+    const accent = stored[ACCENT_STORAGE_KEY];
+    if (typeof accent === 'string') {
+      this.watch.setAccent(accent);
+    }
     if (this.enabled) {
       this.syncOverlay();
     }

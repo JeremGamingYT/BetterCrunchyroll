@@ -5,6 +5,7 @@
  * update them without prop drilling. Card size is intentionally not adjustable.
  */
 import { useSyncExternalStore } from 'react';
+import { ACCENT_STORAGE_KEY } from '@shared/config';
 
 export interface Tweaks {
   readonly accent: string;
@@ -59,6 +60,15 @@ function apply(tweaks: Tweaks): void {
   document.documentElement.style.setProperty('--acc', tweaks.accent);
   document.body.classList.toggle('no-motion', !tweaks.motion);
   document.body.classList.toggle('spoiler-guard', tweaks.hideSpoilers);
+  // Mirror the accent to chrome.storage so the content script can tint the
+  // relocated native /watch player to match.
+  try {
+    if (typeof chrome !== 'undefined' && chrome.storage?.local) {
+      void chrome.storage.local.set({ [ACCENT_STORAGE_KEY]: tweaks.accent });
+    }
+  } catch {
+    /* not in an extension context */
+  }
 }
 
 let state: Tweaks = load();

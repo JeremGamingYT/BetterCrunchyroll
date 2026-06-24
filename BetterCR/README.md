@@ -105,6 +105,12 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.10.1
+
+- 🎬 **Lecteur habillé** : le lecteur natif de Crunchyroll est désormais **encadré** pour matcher
+  le design (coins arrondis, ombre profonde, et un **liseré à ta couleur d'accent** qui se
+  synchronise avec les Paramètres). Le lecteur n'est jamais remplacé — seulement stylisé autour.
+
 ### v1.10.0
 
 - 🧩 **Menu d'extension** : un clic sur l'icône BetterCR ouvre un popup avec un interrupteur

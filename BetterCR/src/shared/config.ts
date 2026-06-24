@@ -30,6 +30,10 @@ export const TOKEN_STORAGE_KEY = 'bcr_token' as const;
 /** chrome.storage.local key for the master on/off toggle (default: enabled). */
 export const ENABLED_STORAGE_KEY = 'bcr_enabled' as const;
 
+/** chrome.storage.local key mirroring the accent colour (so the content script
+ *  can tint the relocated native /watch player to match the SPA's theme). */
+export const ACCENT_STORAGE_KEY = 'bcr_accent' as const;
+
 /** chrome.storage.local key caching the latest known release info. */
 export const UPDATE_STORAGE_KEY = 'bcr_update' as const;
 
