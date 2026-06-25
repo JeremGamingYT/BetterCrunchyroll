@@ -6,6 +6,11 @@ Extension Chrome (Manifest V3, **TypeScript, sans backend**) qui refond l'interf
 
 L'app React est entièrement **embarquée dans l'extension** : aucun serveur à lancer.
 
+> **Transparence** : oui, BetterCR est en grande partie *vibe-codé* (développé avec l'aide de l'IA),
+> mais **supervisé, relu, testé et maintenu par un humain développeur**. Chaque version passe par un
+> build, du lint et un audit (sécurité, code mort, permissions minimales) avant publication. L'IA
+> accélère ; les décisions et la qualité restent humaines, et tout est open-source donc vérifiable.
+
 ---
 
 ## Comment ça marche

@@ -108,6 +108,14 @@ npm run build          # génère dist/
 Aucun backend, aucun tracker. Votre token de session ne quitte jamais le navigateur ; les
 appels vont **directement** à Crunchyroll (avec vos cookies) et à AniList.
 
+## 🤝 Transparence
+
+Oui, BetterCR est en grande partie *vibe-codé* (développé avec l'aide de l'IA). Mais c'est un projet
+**supervisé, relu, testé et maintenu par un humain développeur**. Chaque version passe par un build,
+du lint et un audit (sécurité, code mort, permissions minimales) avant publication, et les correctifs
+arrivent vite. L'IA accélère le développement ; les décisions, l'architecture et la qualité restent
+humaines. Et comme tout est **open-source**, vous pouvez le vérifier par vous-même.
+
 ## 🗺️ Feuille de route
 
 - [x] Accueil · Catalogue · Fiche série · Recherche
