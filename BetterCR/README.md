@@ -110,6 +110,19 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.12.2
+
+- 🌐 **Écrans d'erreur / vide traduits** : ils s'affichaient en français pour tout le monde
+  (sur l'accueil, la fiche, les grilles, etc.) — désormais correctement en FR/EN.
+- 🔖 **Fiche série** : l'icône Watchlist devient un **signet** (au lieu de la coche bizarre).
+- 🧭 **404** : le bouton « Rechercher un titre » mène enfin à la **page Recherche**.
+- 📋 **Watchlist** : le compteur et l'état vide suivent l'**onglet actif** (Récent / Favoris),
+  et le libellé « Récent » est traduit.
+- 🗓️ « ép. » (Sorties à venir) et « Charger plus » (grilles) **traduits**.
+- ✨ **Animations d'entrée réactivées** : la classe interne n'était jamais posée, donc le
+  réglage « Animations » ne faisait rien ; il est maintenant fonctionnel. + styles d'état
+  manquants (bouton d'ajout du Hero, cloche de notifications).
+
 ### v1.12.1
 
 - ⚡ **Écran de chargement instantané** : un splash BetterCR (logo + spinner) s'affiche dès

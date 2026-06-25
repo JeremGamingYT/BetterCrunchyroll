@@ -53,7 +53,7 @@ export function NotFoundPage(): React.JSX.Element {
             <button className="btn btn-acc" onClick={() => go({ page: 'home' })}>
               <Icon name="home" size={17} /> {t('nf.home')}
             </button>
-            <button className="btn btn-glass" onClick={() => go({ page: 'series' })}>
+            <button className="btn btn-glass" onClick={() => go({ page: 'search' })}>
               <Icon name="search" size={17} /> {t('nf.search')}
             </button>
           </div>

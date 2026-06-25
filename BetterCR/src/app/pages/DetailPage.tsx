@@ -130,7 +130,7 @@ export function DetailPage({ seriesId }: DetailPageProps): React.JSX.Element {
     return <DetailSkeleton />;
   }
   if (detailState.error || !detailState.data) {
-    return <ErrorState message={detailState.error ?? 'Série introuvable.'} />;
+    return <ErrorState message={detailState.error ?? t('detail.notFound')} />;
   }
 
   const detail = detailState.data;
@@ -221,7 +221,7 @@ export function DetailPage({ seriesId }: DetailPageProps): React.JSX.Element {
                 className={`btn btn-glass${marked ? ' is-marked' : ''}`}
                 onClick={toggleWatchlist}
               >
-                <Icon name={marked ? 'check' : 'bookmark'} size={17} solid={marked} />{' '}
+                <Icon name="bookmark" size={17} solid={marked} />{' '}
                 {marked ? t('detail.inWatchlist') : t('detail.watchlist')}
               </button>
             </div>

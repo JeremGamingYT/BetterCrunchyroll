@@ -1187,3 +1187,12 @@ button.notif-item:hover {
   background: rgba(255, 255, 255, 0.12);
   color: var(--txt, #f4f4f6);
 }
+
+/* Active-state highlights that were referenced but missing. */
+.btn-icon.is-on {
+  color: var(--acc, #ff8133);
+  border-color: color-mix(in srgb, var(--acc, #ff8133) 45%, transparent);
+}
+.hdr-icon.has-unread {
+  color: var(--acc, #ff8133);
+}

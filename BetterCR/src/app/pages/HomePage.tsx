@@ -74,12 +74,7 @@ export function HomePage(): React.JSX.Element {
     return <HomeSkeleton />;
   }
   if (error || !data || data.rows.length === 0) {
-    return (
-      <ErrorState
-        message={error ?? 'Catalogue momentanément indisponible. Réessayez.'}
-        onRetry={retry}
-      />
-    );
+    return <ErrorState message={error ?? undefined} onRetry={retry} />;
   }
 
   const popular = data.rows.find((row) => row.id === 'popular')?.items ?? [];

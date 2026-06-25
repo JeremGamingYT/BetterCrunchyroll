@@ -59,6 +59,9 @@ function apply(tweaks: Tweaks): void {
   }
   document.documentElement.style.setProperty('--acc', tweaks.accent);
   document.body.classList.toggle('no-motion', !tweaks.motion);
+  // The entrance/stagger animations are gated on `body.anim`; enable them when
+  // motion is on so the designed animations (and the Settings toggle) work.
+  document.body.classList.toggle('anim', tweaks.motion);
   document.body.classList.toggle('spoiler-guard', tweaks.hideSpoilers);
   // Mirror the accent to chrome.storage so the content script can tint the
   // relocated native /watch player to match.

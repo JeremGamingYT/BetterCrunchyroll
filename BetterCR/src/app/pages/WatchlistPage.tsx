@@ -112,7 +112,7 @@ export function WatchlistPage(): React.JSX.Element {
   const loading = tab === 'fav' ? favoritesState.loading : recentState.loading;
 
   const tabs: ReadonlyArray<{ id: Tab; label: string; count: number }> = [
-    { id: 'recent', label: lang === 'en' ? 'Recent' : 'Récent', count: recent.length },
+    { id: 'recent', label: t('wl.recent'), count: recent.length },
     { id: 'fav', label: t('wl.favorites'), count: favorites.length },
   ];
 
@@ -120,7 +120,7 @@ export function WatchlistPage(): React.JSX.Element {
     <div className="page-pad" data-screen-label="Watchlist">
       <div className="page-head">
         <h1 className="page-title">{t('wl.title')}</h1>
-        <p className="page-sub">{t('wl.count', { n: favorites.length })}</p>
+        <p className="page-sub">{t('wl.count', { n: active.length })}</p>
       </div>
 
       <div className="filters">
@@ -150,7 +150,7 @@ export function WatchlistPage(): React.JSX.Element {
           ))}
         </div>
       ) : active.length === 0 ? (
-        <EmptyState title={t('wl.empty')} detail={t('section.genres.sub')} />
+        <EmptyState title={t(tab === 'fav' ? 'wl.emptyFav' : 'wl.empty')} detail={t('wl.browse')} />
       ) : (
         <div className="wl-grid">
           {active.map((series, index) => (

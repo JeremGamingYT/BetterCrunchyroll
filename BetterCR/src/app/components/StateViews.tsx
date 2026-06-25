@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { useI18n } from '@app/i18n/i18n';
 import { Icon } from './Icon';
 
 export interface MessageStateProps {
@@ -24,13 +25,14 @@ export function ErrorState({
   message,
   onRetry,
 }: {
-  readonly message: string;
+  readonly message?: string;
   readonly onRetry?: () => void;
 }): React.JSX.Element {
+  const { t } = useI18n();
   return (
-    <CenteredState title="Impossible de charger le contenu" detail={message}>
+    <CenteredState title={t('state.errTitle')} detail={message}>
       <button className="btn btn-glass" onClick={onRetry ?? (() => window.location.reload())}>
-        <Icon name="rew" size={16} /> Réessayer
+        <Icon name="rew" size={16} /> {t('common.retry')}
       </button>
     </CenteredState>
   );

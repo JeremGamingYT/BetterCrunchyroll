@@ -45,6 +45,7 @@ function monthLabel(item: UpcomingItem, lang: string): string {
 }
 
 function UpcomingCard({ item, lang }: { item: UpcomingItem; lang: string }): React.JSX.Element {
+  const { t } = useI18n();
   return (
     <button
       className="up-card"
@@ -59,7 +60,7 @@ function UpcomingCard({ item, lang }: { item: UpcomingItem; lang: string }): Rea
         <p className="up-title">{item.title}</p>
         <div className="up-meta">
           {item.format && <Chip tone="line">{item.format.replace(/_/g, ' ')}</Chip>}
-          {item.episodes ? <span>{item.episodes} ép.</span> : null}
+          {item.episodes ? <span>{t('common.epShort', { n: item.episodes })}</span> : null}
         </div>
         {item.genres.length > 0 && (
           <p className="up-genres">{item.genres.slice(0, 3).join(' · ')}</p>

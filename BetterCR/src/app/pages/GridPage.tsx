@@ -118,7 +118,7 @@ export function GridPage({ variant }: GridPageProps): React.JSX.Element {
   };
 
   const openDetail = (series: Series): void => go({ page: 'detail', seriesId: series.id });
-  const loadMoreLabel = lang === 'en' ? 'Load more' : 'Charger plus';
+  const loadMoreLabel = t('search.more');
 
   return (
     <div className="page-pad" data-screen-label={t(config.titleKey)}>

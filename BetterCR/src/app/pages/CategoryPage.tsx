@@ -40,7 +40,7 @@ export interface CategoryPageProps {
 
 export function CategoryPage({ categoryId, title }: CategoryPageProps): React.JSX.Element {
   const { go } = useRouter();
-  const { lang } = useI18n();
+  const { t, lang } = useI18n();
   const [state, setState] = useState<PageState>(INITIAL);
 
   const fetchPage = (start: number): Promise<Series[]> =>
@@ -98,7 +98,7 @@ export function CategoryPage({ categoryId, title }: CategoryPageProps): React.JS
 
   const openDetail = (series: Series): void => go({ page: 'detail', seriesId: series.id });
   const heading = title || titleFromSlug(categoryId);
-  const loadMoreLabel = lang === 'en' ? 'Load more' : 'Charger plus';
+  const loadMoreLabel = t('search.more');
 
   return (
     <div className="page-pad" data-screen-label={heading}>
