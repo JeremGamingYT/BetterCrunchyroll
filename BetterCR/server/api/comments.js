@@ -7,7 +7,7 @@
  * a uid can't be lifted from the wire to impersonate someone.
  *
  * GET    /api/comments?episode=<id>&me=<uid>   → { comments: [...] }   (?view=1 counts a view)
- * GET    /api/comments?diag=1                  → { ok, env }
+ * GET    /api/comments?diag=1                  → { ok }   (storage health check)
  * POST   /api/comments  { episode, uid, name, avatar, text, parentId?, series?, seriesTitle?, watchPath? }
  * POST   /api/comments  { action:'report', episode, id, uid }          → { ok }
  * PATCH  /api/comments  { episode, id, uid, text }                     → { comment }  (author only)
@@ -177,15 +177,8 @@ export default async function handler(req, res) {
   const diag =
     req.method === 'GET' && (req.query.diag || clean(req.query.episode, 64) === '__diag');
   if (diag) {
-    res.status(200).json({
-      ok: Boolean(redis),
-      env: {
-        KV_REST_API_URL: Boolean(process.env.KV_REST_API_URL),
-        KV_REST_API_TOKEN: Boolean(process.env.KV_REST_API_TOKEN),
-        UPSTASH_REDIS_REST_URL: Boolean(process.env.UPSTASH_REDIS_REST_URL),
-        UPSTASH_REDIS_REST_TOKEN: Boolean(process.env.UPSTASH_REDIS_REST_TOKEN),
-      },
-    });
+    // Minimal health check only — never disclose which env vars are set.
+    res.status(200).json({ ok: Boolean(redis) });
     return;
   }
 
