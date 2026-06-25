@@ -105,6 +105,15 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.12.1
+
+- ⚡ **Écran de chargement instantané** : un splash BetterCR (logo + spinner) s'affiche dès
+  l'ouverture de l'overlay (directement dans l'`index.html`, avant même le JS), ce qui **couvre le
+  flash de Crunchyroll** au démarrage ; il est remplacé par l'app une fois prête.
+- 🚀 **Accueil plus rapide** : le flux d'accueil (rangées du catalogue) est mis en cache **3 min**,
+  donc un rechargement ou un retour à l'accueil est quasi-instantané. Le « Continuer à regarder »
+  reste **live** (aucune progression périmée).
+
 ### v1.12.0
 
 - 🔔 **Bannière de mise à jour dans le site** : quand une nouvelle version est disponible, un

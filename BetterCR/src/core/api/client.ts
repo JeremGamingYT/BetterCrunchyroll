@@ -277,9 +277,20 @@ async function loadHomeFeed(): Promise<HomeFeed> {
   return { hero: popular.slice(0, HERO_COUNT), rows };
 }
 
+/** Short cache so reloads / in-app returns to Home paint instantly. */
+const HOME_FEED_TTL_MS = 3 * 60_000;
+
 export async function getHomeFeed(): Promise<HomeFeed> {
-  // Retry while empty — usually a transient token/race on first paint.
-  return retryAsync(loadHomeFeed, 3, 800, (feed) => feed.rows.length === 0);
+  // Cache only the catalogue rows, and only briefly: "Continue watching" is
+  // fetched separately (and stays live), so progress is never stale here, and a
+  // 3-minute TTL keeps the browse rows fresh while making reloads feel instant.
+  return cached(
+    `home:${apiLocale}`,
+    HOME_FEED_TTL_MS,
+    // Retry while empty — usually a transient token/race on first paint.
+    () => retryAsync(loadHomeFeed, 3, 800, (feed) => feed.rows.length === 0),
+    (feed) => feed.rows.length > 0,
+  );
 }
 
 // ───────────────────────── Account-scoped helpers ─────────────────────────

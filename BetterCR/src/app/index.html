@@ -10,10 +10,73 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- Critical inline styles for the instant boot splash (shown before the
+         bundle/CSS loads; React replaces #root's content on mount). -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #0a0a0d;
+      }
+      #bcr-boot {
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        background: #0a0a0d;
+        font-family:
+          'Plus Jakarta Sans',
+          -apple-system,
+          system-ui,
+          sans-serif;
+      }
+      #bcr-boot .bcr-boot-mark {
+        font-size: 34px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        color: #f4f4f6;
+        animation: bcrBootPulse 1.4s ease-in-out infinite;
+      }
+      #bcr-boot .bcr-boot-mark b {
+        color: #ff8133;
+      }
+      #bcr-boot .bcr-boot-spin {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.14);
+        border-top-color: #ff8133;
+        animation: bcrBootSpin 0.7s linear infinite;
+      }
+      @keyframes bcrBootSpin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes bcrBootPulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.55;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="ambient" aria-hidden="true"></div>
-    <div id="root"></div>
+    <div id="root">
+      <div id="bcr-boot">
+        <span class="bcr-boot-mark">better<b>CR</b></span>
+        <span class="bcr-boot-spin" aria-hidden="true"></span>
+      </div>
+    </div>
     <script type="module" src="./main.tsx"></script>
   </body>
 </html>
