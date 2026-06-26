@@ -60,25 +60,50 @@ function accountFromToken(token) {
 async function main() {
   const map = new Map();
   let token; // latest Bearer seen, for the optional mutation replay
+  const cdp = flag('cdp');
 
   let context;
-  try {
-    context = await chromium.launchPersistentContext(resolve(HERE, '.cr-profile'), {
-      headless: HEADLESS,
-      channel: 'chrome',
-      viewport: { width: 1440, height: 900 },
-      locale: LOCALE === 'fr' ? 'fr-FR' : 'en-US',
-    });
-  } catch {
-    // Fall back to the bundled Chromium if the system Chrome channel isn't found.
-    context = await chromium.launchPersistentContext(resolve(HERE, '.cr-profile'), {
-      headless: HEADLESS,
-      viewport: { width: 1440, height: 900 },
-      locale: LOCALE === 'fr' ? 'fr-FR' : 'en-US',
-    });
+  let browser;
+  let page;
+  if (cdp) {
+    // Attach to YOUR already-running Chrome (real profile → already past
+    // Cloudflare + logged in). Start Chrome first with --remote-debugging-port.
+    const cdpUrl = opt('cdp-url', 'http://127.0.0.1:9222');
+    try {
+      browser = await chromium.connectOverCDP(cdpUrl);
+    } catch {
+      console.error(
+        `[crawl] couldn't connect to Chrome at ${cdpUrl}.\n` +
+          `        Quit Chrome completely, then relaunch it with remote debugging:\n` +
+          `        macOS: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --remote-debugging-port=9222\n` +
+          `        then re-run: node crawl.mjs --cdp`,
+      );
+      process.exit(1);
+    }
+    context = browser.contexts()[0];
+    if (!context) {
+      console.error('[crawl] connected, but found no browser context.');
+      process.exit(1);
+    }
+    page = await context.newPage(); // a new tab in your real Chrome
+  } else {
+    try {
+      context = await chromium.launchPersistentContext(resolve(HERE, '.cr-profile'), {
+        headless: HEADLESS,
+        channel: 'chrome',
+        viewport: { width: 1440, height: 900 },
+        locale: LOCALE === 'fr' ? 'fr-FR' : 'en-US',
+      });
+    } catch {
+      // Fall back to the bundled Chromium if the system Chrome channel isn't found.
+      context = await chromium.launchPersistentContext(resolve(HERE, '.cr-profile'), {
+        headless: HEADLESS,
+        viewport: { width: 1440, height: 900 },
+        locale: LOCALE === 'fr' ? 'fr-FR' : 'en-US',
+      });
+    }
+    page = context.pages()[0] || (await context.newPage());
   }
-
-  const page = context.pages()[0] || (await context.newPage());
 
   page.on('response', (res) => {
     void (async () => {
@@ -216,10 +241,15 @@ async function main() {
     }
   }
 
-  await context.close();
   const { endpoints, services } = writeDump(map, OUT);
   console.log(`\n✓ ${endpoints} endpoints · ${services} services → ${OUT}/`);
   console.log(`  open ${OUT}/README.md`);
+  if (cdp) {
+    await page.close().catch(() => {}); // close only our tab; leave your Chrome open
+  } else {
+    await context.close();
+  }
+  process.exit(0);
 }
 
 main().catch((e) => {

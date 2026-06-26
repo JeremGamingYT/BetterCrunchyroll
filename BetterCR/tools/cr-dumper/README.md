@@ -1,45 +1,60 @@
 # cr-dumper — Crunchyroll API dumper
 
 Crunchyroll change ses routes ~1×/an (c'est ce qui a cassé la watchlist en v1.13.0 :
-le segment `/discover/` retiré de l'ajout). Cet outil **capture les requêtes/API
-réelles de Crunchyroll** et les **structure en un dossier propre et diffable**, pour
-repérer les changements et mettre BetterCR à jour vite.
+le segment `/discover/` retiré de l'ajout). Cet outil capture les requêtes/API
+**réelles** de Crunchyroll et les structure en un dossier propre et **diffable**.
 
-## ⭐ Méthode recommandée — `crawl.mjs` (totalement automatique)
+> ⚠️ Crunchyroll est derrière **Cloudflare** : un navigateur lancé « à neuf » par un
+> robot se fait bloquer. Toutes les méthodes ci-dessous utilisent donc **ton vrai
+> Chrome** (déjà validé par Cloudflare + connecté).
 
-Un crawler [Playwright](https://playwright.dev) : il pilote un vrai Chrome, **visite
-tout seul toutes les pages** et capture **tout** au niveau réseau du navigateur (donc
-aucun angle mort — il voit ce que `capture.js` ne voyait pas).
+---
 
-```bash
-cd tools/cr-dumper
-npm install            # installe Playwright (une fois)
-node crawl.mjs         # 1re fois : connecte-toi quand la fenêtre s'ouvre, puis Entrée
-node crawl.mjs         # ensuite : 100 % automatique (session persistante)
-```
+## ✅ Méthode A — HAR (la plus simple, anti-Cloudflare, zéro install)
 
-- **Login une seule fois** : le profil persiste dans `./.cr-profile` (jamais committé).
-- Visite : accueil, populaires, nouveautés, A→Z, simulcasts, watchlist, historique,
-  profils, préférences, recherche, news + une **fiche série** et une **page /watch**
-  découvertes dynamiquement.
-- Options : `--headless` · `--out <dir>` · `--locale fr` · **`--mutate`** (capture
-  aussi l'ajout/retrait watchlist, *sans toucher ton compte* : il ajoute un titre
-  **absent** de ta liste puis le retire).
-- Résultat → `./api-dump/` (voir plus bas).
+100 % ton Chrome, navigation manuelle normale → aucun blocage CF.
 
-> Playwright tente d'utiliser ton Chrome installé (`channel: chrome`) ; sinon installe
-> le navigateur : `npx playwright install chromium`.
+1. Dans **ton Chrome**, ouvre **DevTools → onglet Network**, coche **Preserve log**.
+2. Navigue pour tout exercer : accueil, une série, une page /watch, recherche,
+   watchlist (ajoute/retire un titre), historique, paramètres…
+3. Clic droit dans la liste des requêtes → **Save all as HAR with content** → `session.har`.
+4. ```bash
+   cd tools/cr-dumper
+   node structure.mjs ~/Downloads/session.har
+   ```
+→ génère `api-dump/`. (Aucune dépendance : juste Node.)
 
-## Méthodes de secours (sans Playwright)
+## ⚙️ Méthode B — automatique, branchée sur TON Chrome (CDP)
 
-**B. Export HAR** (zéro script) : DevTools → Network → *Preserve log*, navigue, puis
-*Save all as HAR* → `node structure.mjs session.har`.
+Le crawler se connecte à ton Chrome **déjà ouvert** (donc déjà passé Cloudflare) au
+lieu d'en lancer un neuf, puis visite les pages tout seul.
 
-**C. `capture.js`** (console) : à coller dans la console DevTools **sur le Crunchyroll
-natif, BetterCR désactivé**. ⚠️ Important : collé pendant que l'overlay BetterCR est
-actif, il **n'enregistre rien** — les appels passent par le *monde isolé* du
-content-script (invisible depuis la console) et l'overlay masque la page native. Une
-fois sur le CR natif : navigue, puis `__crDump.save()` → `node structure.mjs cr-api-capture.json`.
+1. **Quitte Chrome complètement** (Cmd+Q).
+2. Relance-le avec le port de debug (garde ton profil → connecté + CF validé) :
+   ```bash
+   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --remote-debugging-port=9222
+   ```
+3. Dans ce Chrome, ouvre crunchyroll.com une fois (résous le CF si demandé).
+4. ```bash
+   cd tools/cr-dumper
+   npm install          # Playwright (une fois)
+   node crawl.mjs --cdp
+   ```
+Il ouvre un **nouvel onglet dans ton Chrome**, visite toutes les pages, capture, puis
+ferme juste cet onglet. Options : `--out <dir>` · `--locale fr` · `--mutate` (ajout/retrait
+watchlist, sans toucher ton compte).
+
+> Si une page redéclenche Cloudflare, résous-la dans l'onglet visible : c'est ton vrai
+> Chrome, donc une seule fois suffit.
+
+## 🩹 Méthode C — capteur console (dépannage)
+
+`capture.js` à coller dans la console DevTools, **sur le Crunchyroll natif avec BetterCR
+désactivé** (popup → off). ⚠️ Avec l'overlay actif il **n'enregistre rien** : les appels
+passent par le *monde isolé* du content-script (invisible depuis la console). Sur le CR
+natif : navigue, puis `__crDump.save()` → `node structure.mjs cr-api-capture.json`.
+
+---
 
 ## Résultat (`./api-dump/`)
 
@@ -52,21 +67,18 @@ api-dump/
   accounts/GET__accounts_v1_me_profile.md
   …
 ```
-
-Chaque fiche : méthode, host, params de requête, **forme du corps**, **forme de la
+Chaque fiche : méthode, host, params, **forme du corps de requête**, **forme de la
 réponse** + échantillon tronqué.
 
 ## Garder BetterCR à jour
 
 1. Commit un premier `api-dump/` (baseline) : `git add -f api-dump`.
-2. Quand quelque chose casse (ex. `404 content.error.route_not_found`), relance
-   `node crawl.mjs` (il **écrase** le dossier).
+2. Quand quelque chose casse (`404 content.error.route_not_found`), recapture (A ou B).
 3. `git diff api-dump/` montre **exactement** ce que Crunchyroll a changé → corrige le
    endpoint dans `src/core/api/client.ts`.
 
 ## Vie privée
 
-`.cr-profile/`, les HAR et `cr-api-capture.json` sont **gitignorés** (ils contiennent
-ta session/token). Le capteur ne stocke jamais le header `Authorization` ; mais
+`.cr-profile/`, les `*.har` et `cr-api-capture.json` sont **gitignorés** (session/token).
 `api-dump/` contient ton **UUID de compte** dans les URLs d'exemple — committe-le en
-connaissance de cause.
+connaissance de cause (`git add -f api-dump`).
