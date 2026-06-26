@@ -1,0 +1,14 @@
+{
+  "name": "cr-dumper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Crunchyroll API capturer + structurer — keeps BetterCR's endpoint map current.",
+  "scripts": {
+    "crawl": "node crawl.mjs",
+    "structure": "node structure.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

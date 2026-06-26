@@ -1,0 +1,12 @@
+# Persistent login session — contains your Crunchyroll cookies/token. NEVER commit.
+.cr-profile/
+node_modules/
+
+# Raw captures (may contain your account UUID / tokens)
+cr-api-capture.json
+*.har
+
+# Generated dump is safe-ish but holds your account UUID in example URLs.
+# Un-ignore it deliberately if you want to commit a baseline:
+#   git add -f api-dump
+api-dump/
