@@ -10,19 +10,23 @@ le segment `/discover/` retiré de l'ajout). Cet outil capture les requêtes/API
 
 ---
 
-## ✅ Méthode A — HAR (la plus simple, anti-Cloudflare, zéro install)
+## ✅ Méthode A — « Copy all as fetch » (la plus simple, anti-Cloudflare, zéro fichier)
 
-100 % ton Chrome, navigation manuelle normale → aucun blocage CF.
+100 % ton Chrome, navigation manuelle → aucun blocage CF. Aucune dépendance (juste Node).
 
-1. Dans **ton Chrome**, ouvre **DevTools → onglet Network**, coche **Preserve log**.
+1. Dans **ton Chrome**, **DevTools (F12) → onglet Network**, coche **Preserve log**.
 2. Navigue pour tout exercer : accueil, une série, une page /watch, recherche,
-   watchlist (ajoute/retire un titre), historique, paramètres…
-3. Clic droit dans la liste des requêtes → **Save all as HAR with content** → `session.har`.
+   **watchlist (ajoute/retire)**, historique, paramètres…
+3. Clic droit dans la liste des requêtes → **Copy all as fetch** (tu sais déjà faire 😉).
 4. ```bash
-   cd tools/cr-dumper
-   node structure.mjs ~/Downloads/session.har
+   cd ~/Documents/BetterCR/tools/cr-dumper
+   pbpaste | node structure.mjs        # lit le presse-papier — aucun fichier à gérer
    ```
-→ génère `api-dump/`. (Aucune dépendance : juste Node.)
+→ génère `api-dump/`.
+
+> Variante fichier (inclut aussi les **réponses**) : clic droit → **Save all as HAR with
+> content** → `node structure.mjs session.har`. (« Copy all as fetch » ne capte que les
+> requêtes ; ça suffit pour cartographier routes + params + corps.)
 
 ## ⚙️ Méthode B — automatique, branchée sur TON Chrome (CDP)
 

@@ -3,21 +3,51 @@
  * BetterCR — offline API dump structurer.
  *
  * Turns an existing capture into a clean, diff-friendly api-dump/ folder.
- * Accepts either:
- *   - cr-api-capture.json  (from capture.js — includes request/response shapes)
- *   - a .har file          (DevTools › Network › Export HAR — zero in-page script)
+ * Accepts (auto-detected):
+ *   - "Copy all as fetch" text  (DevTools › Network › right-click › Copy all as fetch)
+ *   - a .har file               (DevTools › Network › Save all as HAR with content)
+ *   - cr-api-capture.json        (from capture.js)
  *
- * For a FULLY AUTOMATIC capture (no manual browsing), use `crawl.mjs` instead.
+ * Reads a file path, or stdin when none is given — so the easiest flow is:
+ *   (Network tab → Copy all as fetch, then:)
+ *   pbpaste | node structure.mjs            # macOS clipboard, no file needed
+ *   node structure.mjs session.har
+ *   node structure.mjs cr-api-capture.json --out api-dump
  *
- * Usage:
- *   node structure.mjs cr-api-capture.json
- *   node structure.mjs session.har --out api-dump
+ * For a FULLY AUTOMATIC capture, use `crawl.mjs` instead.
  */
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { isApiUrl, shapeOf, parseJson, addCall, writeDump } from './lib.mjs';
 
 const MAX_SAMPLE = 600;
+
+/** Parse Chrome DevTools "Copy all as fetch" output (request side only). */
+function fromFetchDump(text, map) {
+  for (const block of text.split(/\bfetch\(/).slice(1)) {
+    const urlM = /^\s*["']([^"']+)["']/.exec(block);
+    if (!urlM || !isApiUrl(urlM[1])) continue;
+    const methodM = /["']method["']\s*:\s*["']([^"']+)["']/.exec(block);
+    const bodyM = /["']body["']\s*:\s*"((?:\\.|[^"\\])*)"/.exec(block);
+    let reqShape;
+    if (bodyM) {
+      try {
+        const obj = parseJson(JSON.parse(`"${bodyM[1]}"`));
+        if (obj !== undefined) reqShape = shapeOf(obj);
+      } catch {
+        /* non-JSON body */
+      }
+    }
+    addCall(map, { method: (methodM?.[1] || 'GET').toUpperCase(), url: urlM[1], reqShape });
+  }
+}
+
+/** Reads all of stdin to a string. */
+async function readStdin() {
+  const chunks = [];
+  for await (const c of process.stdin) chunks.push(c);
+  return Buffer.concat(chunks).toString('utf8');
+}
 
 function fromCapture(json, map) {
   for (const e of json.endpoints || []) {
@@ -60,25 +90,26 @@ function fromHar(har, map) {
 
 // ── main ──────────────────────────────────────────────────────
 const args = process.argv.slice(2);
-const input = args.find((a) => !a.startsWith('--'));
 const outArg = args.indexOf('--out');
 const outDir = resolve(outArg !== -1 ? args[outArg + 1] : 'api-dump');
-if (!input) {
-  console.error('usage: node structure.mjs <cr-api-capture.json | session.har> [--out api-dump]');
-  process.exit(1);
-}
+const input = args.find((a, i) => !a.startsWith('--') && args[i - 1] !== '--out' && a !== '-');
 
-const json = parseJson(readFileSync(resolve(input), 'utf8'));
-if (!json) {
-  console.error(`error: ${input} is not valid JSON.`);
+const raw = input ? readFileSync(resolve(input), 'utf8') : await readStdin();
+if (!raw.trim()) {
+  console.error(
+    'usage: node structure.mjs <file> [--out api-dump]\n' +
+      '   or: pbpaste | node structure.mjs        (after "Copy all as fetch" in the Network tab)',
+  );
   process.exit(1);
 }
 
 const map = new Map();
-if (json.log?.entries) fromHar(json, map);
-else if (json.endpoints) fromCapture(json, map);
+const json = parseJson(raw);
+if (json?.log?.entries) fromHar(json, map);
+else if (json?.endpoints) fromCapture(json, map);
+else if (/\bfetch\(\s*["']https?:\/\//.test(raw)) fromFetchDump(raw, map);
 else {
-  console.error('error: unrecognized input (expected capture.js JSON .endpoints, or a .har .log.entries).');
+  console.error('error: unrecognized input — expected a .har, capture.js JSON, or "Copy all as fetch" text.');
   process.exit(1);
 }
 
