@@ -62,6 +62,7 @@ compte** ; vos données restent chez vous / chez Crunchyroll.
 | 📊 **Profil & stats** | Nom, avatar et statistiques de visionnage réels |
 | 💾 **Cache intelligent** | Les API externes (AniList) sont mises en cache |
 | ⚡ **Sans backend** | 100 % embarqué dans l'extension |
+| 🛟 **Résilience** | *Kill switch* : repli auto vers le site natif si Crunchyroll change (drapeau distant + auto-détection) |
 
 ## 🧩 Architecture
 
@@ -130,6 +131,8 @@ humaines. Et comme tout est **open-source**, vous pouvez le vérifier par vous-m
 - [x] **Découvertes** (recommandations personnalisées) · **Recherche avancée** (genre · saison · format · VF/VOSTFR)
 - [x] **Stats enrichies** (heures/mois · genres · streak · Top 10) · **Secours multi-API** (AniList → MAL → Kitsu)
 - [x] **Lecteur natif reskinné** (cadre + contrôles teintés à l'accent ; saut intro/générique natif de CR conservé)
+- [x] **Kill switch intelligent** (repli gracieux vers le CR natif si Crunchyroll change : drapeau distant + auto-détection + reprise auto)
+- [x] **Outil de capture d'API** (`BetterCR/tools/cr-dumper`) pour suivre les changements de Crunchyroll et mettre à jour vite
 - [ ] Publication sur le Chrome Web Store
 
 ## ⚠️ Avertissement

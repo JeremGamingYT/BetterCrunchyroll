@@ -62,6 +62,7 @@ stays with you / Crunchyroll.
 | 📊 **Profile & stats** | Real name, avatar and watch statistics |
 | 💾 **Smart cache** | External APIs (AniList) are cached |
 | ⚡ **No backend** | 100% bundled inside the extension |
+| 🛟 **Resilience** | *Kill switch*: auto-fallback to the native site if Crunchyroll changes (remote flag + self-detection) |
 
 ## 🧩 Architecture
 

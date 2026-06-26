@@ -51,6 +51,9 @@ crunchyroll.com (onglet)
 - 🗓️ **Sorties à venir** (AniList) par période.
 - 🌐 **FR / EN**, couleur d'accent, animations, anti-spoiler — tout dans **Profil → Préférences**.
 - 🧩 **Menu d'extension** (popup) : activer/désactiver en 1 clic + détecteur de mise à jour.
+- 🛟 **Résilience** : *kill switch* intelligent — si Crunchyroll change sa structure, BetterCR s'efface
+  au profit du site natif (drapeau distant `health.json` + auto-détection des pannes d'API + reprise auto),
+  pour ne jamais laisser un site cassé.
 
 ## Installation (développement)
 
@@ -109,6 +112,12 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 - ESLint (typescript-eslint) + Prettier, alias de chemins (`@app`, `@core`, `@shared`…).
 
 ## Journal des versions
+
+### v1.13.0
+
+- **Kill switch intelligent (résilience)** : drapeau distant `health.json` (pause manuelle + version minimale, *fail-open*), auto-détection des pannes d'API Crunchyroll (≥3 endpoints de lecture distincts ; les mutations sont ignorées pour éviter les faux positifs) avec **reprise automatique**, repli gracieux vers le Crunchyroll natif + bandeau d'info, statut dans le popup. Le skin du lecteur est protégé par un *fail-safe* (laisse le lecteur natif intact si CR change son DOM).
+- **Fix watchlist** : ajout/retrait de nouveau synchronisés au compte Crunchyroll — CR a retiré le segment `/discover/` de la route d'ajout (`POST /content/v2/{account}/watchlist`). Diagnostics : le statut + le message d'erreur exact de l'API CR sont désormais loggés.
+- **Outil de maintenance** : `tools/cr-dumper/` capture et structure automatiquement les requêtes/API de Crunchyroll pour suivre ses changements (voir `tools/cr-dumper/README.md`).
 
 ### v1.12.2
 
@@ -369,6 +378,7 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 - **Phase 2 — faite** : Watchlist (compte), Continuer à regarder (playheads), recherche, stats, anti-spoiler.
 - **Phase 3 — faite** : page `/watch` BetterCR autour du lecteur natif (infos, *À suivre*, commentaires).
 - **Phase 4 — faite** : commentaires (backend serverless gratuit), centre de notifications, *Sorties à venir* (AniList), login de secours, i18n FR/EN.
+- **Phase 5 — faite** : kill switch intelligent (résilience aux changements de Crunchyroll) + outil de capture/structuration d'API (`tools/cr-dumper`).
 - **Ensuite** : contrôles custom du lecteur (skip intro/outro, sync playhead), packaging Web Store.
 
 > Interface non affiliée à Crunchyroll. Données via votre propre compte.
