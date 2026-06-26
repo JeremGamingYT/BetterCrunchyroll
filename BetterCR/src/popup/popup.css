@@ -100,6 +100,44 @@ body {
   transform: translateX(18px);
 }
 
+.pop-paused {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: rgba(224, 83, 61, 0.1);
+  border: 1px solid rgba(224, 83, 61, 0.5);
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+.pop-paused-dot {
+  width: 9px;
+  height: 9px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: #e0533d;
+  flex: none;
+}
+.pop-paused-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.pop-paused-txt b {
+  font-size: 13px;
+  font-weight: 800;
+  color: #f4a094;
+}
+.pop-paused-hint {
+  font-size: 11px;
+  line-height: 1.45;
+  color: #c9b6b2;
+}
+
 .pop-update {
   display: flex;
   align-items: center;

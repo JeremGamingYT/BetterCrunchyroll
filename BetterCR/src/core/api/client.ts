@@ -683,7 +683,7 @@ export async function addToWatchlist(seriesId: string): Promise<boolean> {
   }
   const result = await bridge.apiRequest({
     method: 'POST',
-    path: `/content/v2/discover/${account}/watchlist`,
+    path: `/content/v2/${account}/watchlist`,
     body: { content_id: seriesId },
   });
   return result.ok;

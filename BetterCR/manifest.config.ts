@@ -34,6 +34,7 @@ export default defineManifest({
     'https://kitsu.io/*',
     'https://*.vercel.app/*',
     'https://api.github.com/*',
+    'https://raw.githubusercontent.com/*',
   ],
   background: {
     service_worker: 'src/background/background.ts',

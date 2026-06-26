@@ -10,12 +10,15 @@ import { BCR_TOKEN_EVENT } from '@shared/page-bridge';
 import { BCR_CHANNEL, isAppEnvelope, type AppEnvelope, type ContentReply } from '@shared/messages';
 import { ok, err } from '@shared/result';
 import { isWatchPath, mapCrPathToRoute } from '@shared/routing';
-import { ACCENT_STORAGE_KEY, ENABLED_STORAGE_KEY } from '@shared/config';
+import { ACCENT_STORAGE_KEY, ENABLED_STORAGE_KEY, HEALTH_STORAGE_KEY } from '@shared/config';
+import type { HealthVerdict, PauseNotice, PauseReason } from '@shared/health';
 import { TokenStore } from './token-store';
 import { performCrRequest } from './cr-api';
 import { passwordLogin } from './auth';
 import { Overlay } from './overlay';
 import { WatchSkin } from './watch-skin';
+import { HealthMonitor } from './health-monitor';
+import { PausedNotice } from './paused-notice';
 
 const LOG_PREFIX = '[BetterCR]';
 const NAV_POLL_MS = 500;
@@ -49,9 +52,19 @@ class ContentApp {
   private readonly tokens = new TokenStore();
   private readonly overlay = new Overlay();
   private readonly watch = new WatchSkin();
+  private readonly pausedNotice = new PausedNotice();
+  /** Self-healing detector: pauses on sustained CR API failure, auto-recovers. */
+  private readonly monitor = new HealthMonitor(
+    () => this.tokens.ensureToken(),
+    () => this.onHealthChange(),
+  );
   private lastHref = '';
   /** Master on/off (popup toggle). When false, the native site is left intact. */
   private enabled = true;
+  /** Remote compatibility verdict (kill switch / version floor) from the background. */
+  private remotePaused = false;
+  private remoteReason: PauseReason | null = null;
+  private remoteNotice: PauseNotice | undefined;
 
   start(): void {
     if (window.self !== window.top) {
@@ -80,6 +93,9 @@ class ContentApp {
         if (ENABLED_STORAGE_KEY in changes) {
           this.setEnabled(changes[ENABLED_STORAGE_KEY]?.newValue !== false);
         }
+        if (HEALTH_STORAGE_KEY in changes) {
+          this.applyRemoteHealth(changes[HEALTH_STORAGE_KEY]?.newValue);
+        }
         if (ACCENT_STORAGE_KEY in changes) {
           const accent: unknown = changes[ACCENT_STORAGE_KEY]?.newValue;
           if (typeof accent === 'string') {
@@ -92,29 +108,32 @@ class ContentApp {
     }
 
     void this.boot();
-    window.setInterval(() => this.watchNavigation(), NAV_POLL_MS);
+    window.setInterval(() => {
+      this.monitor.evaluate();
+      this.watchNavigation();
+    }, NAV_POLL_MS);
     console.info(`${LOG_PREFIX} content script ready`);
   }
 
-  /** Reads stored settings (on/off + accent), then mounts only if enabled. */
+  /** Reads stored settings (on/off + health + accent), then mounts if active. */
   private async boot(): Promise<void> {
     const stored = await new Promise<Record<string, unknown>>((resolve) => {
       try {
-        chrome.storage.local.get([ENABLED_STORAGE_KEY, ACCENT_STORAGE_KEY], (result) =>
-          resolve(result),
+        chrome.storage.local.get(
+          [ENABLED_STORAGE_KEY, ACCENT_STORAGE_KEY, HEALTH_STORAGE_KEY],
+          (result) => resolve(result),
         );
       } catch {
         resolve({});
       }
     });
     this.enabled = stored[ENABLED_STORAGE_KEY] !== false;
+    this.readRemoteHealth(stored[HEALTH_STORAGE_KEY]);
     const accent = stored[ACCENT_STORAGE_KEY];
     if (typeof accent === 'string') {
       this.watch.setAccent(accent);
     }
-    if (this.enabled) {
-      this.syncOverlay();
-    }
+    this.syncOverlay();
     document.addEventListener('DOMContentLoaded', () => this.syncOverlay(), { once: true });
   }
 
@@ -124,13 +143,50 @@ class ContentApp {
       return;
     }
     this.enabled = on;
-    if (on) {
-      this.syncOverlay();
-    } else {
-      this.overlay.unmount();
-      this.watch.disable();
-      this.lastHref = '';
+    if (!on) {
+      this.monitor.reset();
     }
+    this.syncOverlay();
+  }
+
+  /** Caches the latest remote verdict fields (no re-sync). */
+  private readRemoteHealth(value: unknown): void {
+    const verdict = value as HealthVerdict | undefined;
+    const paused = verdict?.paused === true;
+    this.remotePaused = paused;
+    this.remoteReason = paused ? (verdict?.reason ?? 'kill') : null;
+    this.remoteNotice = verdict?.notice;
+  }
+
+  /** Applies a live remote verdict change, re-syncing when the pause state moves. */
+  private applyRemoteHealth(value: unknown): void {
+    const wasPaused = this.remotePaused;
+    const prevReason = this.remoteReason;
+    this.readRemoteHealth(value);
+    if (this.remotePaused !== wasPaused || this.remoteReason !== prevReason) {
+      this.syncOverlay();
+    }
+  }
+
+  /** True when the redesign should be mounted (on, and not paused by any signal). */
+  private isActive(): boolean {
+    return this.enabled && !this.remotePaused && !this.monitor.selfBroken;
+  }
+
+  /** The active pause reason (remote first, then self-detected), or null. */
+  private pauseReason(): PauseReason | null {
+    if (this.remotePaused) {
+      return this.remoteReason ?? 'kill';
+    }
+    if (this.monitor.selfBroken) {
+      return 'self';
+    }
+    return null;
+  }
+
+  /** Re-evaluates mount/unmount when the self-healing monitor flips state. */
+  private onHealthChange(): void {
+    this.syncOverlay();
   }
 
   /**
@@ -139,9 +195,11 @@ class ContentApp {
    * elsewhere the watch skin is disabled.
    */
   private syncOverlay(): void {
-    if (!this.enabled) {
+    if (!this.isActive()) {
+      this.applyPaused();
       return;
     }
+    this.pausedNotice.hide();
     const watch = isWatchPath(window.location.pathname);
     this.overlay.mount(mapCrPathToRoute(window.location.pathname));
     if (watch) {
@@ -152,8 +210,26 @@ class ContentApp {
     this.lastHref = window.location.href;
   }
 
+  /**
+   * Stands the redesign down so the native Crunchyroll site shows through. When
+   * a pause signal (kill switch / version floor / self-detected breakage) is the
+   * cause, a small banner explains why; when the user simply toggled BetterCR
+   * off, it stays silent.
+   */
+  private applyPaused(): void {
+    this.overlay.unmount();
+    this.watch.disable();
+    this.lastHref = '';
+    const reason = this.enabled ? this.pauseReason() : null;
+    if (reason) {
+      this.pausedNotice.show(reason, this.remoteNotice);
+    } else {
+      this.pausedNotice.hide();
+    }
+  }
+
   private watchNavigation(): void {
-    if (!this.enabled) {
+    if (!this.isActive()) {
       return;
     }
     if (window.location.href !== this.lastHref) {
@@ -190,8 +266,17 @@ class ContentApp {
         }
         try {
           const data = await performCrRequest(envelope.payload, token);
+          // Feed the self-healing monitor: a signed-in read success means CR is fine.
+          this.monitor.recordResult(true, envelope.payload.method, envelope.payload.path);
           this.reply(source, { kind: 'API_RESPONSE', id: envelope.id, result: ok(data) });
         } catch (error) {
+          this.monitor.recordResult(false, envelope.payload.method, envelope.payload.path);
+          console.warn(
+            `${LOG_PREFIX} CR API failed`,
+            envelope.payload.method,
+            envelope.payload.path,
+            toMessage(error),
+          );
           this.reply(source, {
             kind: 'API_RESPONSE',
             id: envelope.id,

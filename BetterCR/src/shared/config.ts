@@ -31,11 +31,25 @@ export const ACCENT_STORAGE_KEY = 'bcr_accent' as const;
 /** chrome.storage.local key caching the latest known release info. */
 export const UPDATE_STORAGE_KEY = 'bcr_update' as const;
 
+/** chrome.storage.local key caching the remote compatibility verdict (kill switch). */
+export const HEALTH_STORAGE_KEY = 'bcr_health' as const;
+
 /** GitHub repository + endpoints used by the update notifier. */
 export const GITHUB_REPO = 'JeremGamingYT/BetterCrunchyroll' as const;
 export const GITHUB_RELEASES_URL = `https://github.com/${GITHUB_REPO}/releases` as const;
 export const GITHUB_LATEST_API =
   `https://api.github.com/repos/${GITHUB_REPO}/releases/latest` as const;
+
+/**
+ * Remote "compatibility kill switch" config, served from the repo root on the
+ * `main` branch. The background worker polls it and caches the verdict; if
+ * Crunchyroll ships a breaking change the maintainer flips `ok:false` here (or
+ * raises `minVersion`) and every install steps aside for the native site. A
+ * fetch failure is fail-open (the last known verdict stays), so an unreachable
+ * GitHub never disables anyone. See `src/shared/health.ts`.
+ */
+export const HEALTH_REMOTE_URL =
+  `https://raw.githubusercontent.com/${GITHUB_REPO}/main/health.json` as const;
 
 /**
  * Base URL of the free BetterCR comments API (see `server/`). Leave empty to

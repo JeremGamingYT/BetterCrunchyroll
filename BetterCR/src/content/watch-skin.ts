@@ -31,6 +31,12 @@ export class WatchSkin {
   private origStyle = '';
   private poll = 0;
   private accent = '#ff8133';
+  /**
+   * Set once relocating/skinning the native player threw — most likely because
+   * Crunchyroll changed the player DOM. We then leave the native player exactly
+   * where it is (working, just unstyled) instead of risking a broken page.
+   */
+  private broken = false;
 
   /** Begin skinning the watch page (adopt the player as soon as it appears). */
   enable(): void {
@@ -38,6 +44,7 @@ export class WatchSkin {
       return;
     }
     this.active = true;
+    this.broken = false; // give a fresh watch session another attempt
     this.poll = window.setInterval(() => this.tick(), POLL_MS);
     this.tick();
   }
@@ -56,7 +63,11 @@ export class WatchSkin {
   /** Latest player-slot rect from the app (null releases/hides the player). */
   setRect(rect: PlayerRect | null): void {
     this.rect = rect;
-    this.apply();
+    try {
+      this.apply();
+    } catch (error) {
+      this.failSafe(error);
+    }
   }
 
   /** Accent colour used to frame the player + tint its controls. */
@@ -66,14 +77,38 @@ export class WatchSkin {
   }
 
   private tick(): void {
-    if (!this.active) {
+    if (!this.active || this.broken) {
       return;
     }
-    const el = document.querySelector<HTMLElement>(PLAYER_SELECTOR);
-    if (el && el !== this.player && el.isConnected) {
-      this.adopt(el);
+    try {
+      const el = document.querySelector<HTMLElement>(PLAYER_SELECTOR);
+      if (el && el !== this.player && el.isConnected) {
+        this.adopt(el);
+      }
+      this.apply();
+    } catch (error) {
+      this.failSafe(error);
     }
-    this.apply();
+  }
+
+  /**
+   * Last-resort guard for the only DOM-coupled surface in BetterCR. If adopting
+   * or framing the native player ever throws (e.g. Crunchyroll reshaped the
+   * player), stop skinning and hand the native player back untouched — a plain
+   * working player beats a broken one.
+   */
+  private failSafe(error: unknown): void {
+    this.broken = true;
+    window.clearInterval(this.poll);
+    console.warn(
+      '[BetterCR] watch-player skinning failed — leaving the native Crunchyroll player untouched',
+      error,
+    );
+    try {
+      this.restorePlayer();
+    } catch {
+      /* nothing more we can safely do */
+    }
   }
 
   private adopt(el: HTMLElement): void {

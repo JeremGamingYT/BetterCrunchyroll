@@ -11,9 +11,11 @@ import {
   GITHUB_LATEST_API,
   GITHUB_RELEASES_URL,
   GITHUB_REPO,
+  HEALTH_STORAGE_KEY,
   UPDATE_STORAGE_KEY,
 } from '@shared/config';
 import { isNewer } from '@shared/version';
+import { noticeText, type HealthVerdict } from '@shared/health';
 import './popup.css';
 
 type Lang = 'fr' | 'en';
@@ -30,6 +32,7 @@ const T = {
     download: 'Télécharger',
     github: 'Code source',
     bug: 'Signaler un bug',
+    paused: 'BetterCR en pause',
   },
   en: {
     tagline: 'Crunchyroll redesign',
@@ -42,6 +45,7 @@ const T = {
     download: 'Download',
     github: 'Source code',
     bug: 'Report a bug',
+    paused: 'BetterCR paused',
   },
 }[lang];
 
@@ -82,6 +86,14 @@ if (root) {
       <span class="pop-switch"><i></i></span>
     </button>
 
+    <button class="pop-paused" id="paused" hidden>
+      <span class="pop-paused-dot" aria-hidden="true"></span>
+      <span class="pop-paused-txt">
+        <b id="paused-title"></b>
+        <span class="pop-paused-hint" id="paused-hint"></span>
+      </span>
+    </button>
+
     <div class="pop-update" id="update">
       <span class="pop-dot" aria-hidden="true"></span>
       <span id="update-txt">${T.checking}</span>
@@ -117,6 +129,21 @@ if (root) {
     } catch {
       /* ignore */
     }
+  });
+
+  // Compatibility kill switch: when paused, explain it here too (the redesign is
+  // standing aside for the native site) and link to the releases page.
+  const pausedBox = root.querySelector<HTMLButtonElement>('#paused');
+  const pausedTitle = root.querySelector<HTMLElement>('#paused-title');
+  const pausedHint = root.querySelector<HTMLElement>('#paused-hint');
+  void getLocal<HealthVerdict>(HEALTH_STORAGE_KEY).then((verdict) => {
+    if (!verdict?.paused || !verdict.reason || !pausedBox || !pausedTitle || !pausedHint) {
+      return;
+    }
+    pausedTitle.textContent = T.paused;
+    pausedHint.textContent = noticeText(verdict.notice, verdict.reason, lang);
+    pausedBox.hidden = false;
+    pausedBox.addEventListener('click', () => openTab(GITHUB_RELEASES_URL));
   });
 
   // Update notice: show cached state instantly, then refresh from GitHub.

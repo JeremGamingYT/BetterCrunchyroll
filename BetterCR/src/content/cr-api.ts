@@ -45,7 +45,17 @@ export async function performCrRequest(
   });
 
   if (!response.ok) {
-    throw new Error(`Crunchyroll API ${response.status} for ${payload.path}`);
+    // Surface Crunchyroll's own error body (truncated) — it names the exact
+    // reason (bad content id, wrong method, …), which is invaluable for
+    // diagnosing a feature break without guessing.
+    let detail = '';
+    try {
+      detail = (await response.text()).slice(0, 300).replace(/\s+/g, ' ').trim();
+    } catch {
+      /* body unavailable */
+    }
+    const suffix = detail ? ` — ${detail}` : '';
+    throw new Error(`Crunchyroll API ${response.status} for ${payload.path}${suffix}`);
   }
   // Some mutations (watchlist add/remove) reply 200/204 with an empty or
   // non-JSON body — treat that as success rather than a parse failure.
