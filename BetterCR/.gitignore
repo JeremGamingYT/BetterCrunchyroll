@@ -3,3 +3,6 @@ dist
 *.log
 .DS_Store
 stats.html
+# Extension signing private key (only needed to pack a .crx / publish; the
+# PUBLIC key is pinned in manifest.config.ts). Never commit this.
+*.pem

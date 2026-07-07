@@ -6,11 +6,13 @@ import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
 import { PosterCard } from '@app/components/PosterCard';
 import { Icon } from '@app/components/Icon';
+import { Dropdown, type DropdownOption } from '@app/components/Dropdown';
 
 const PAGE_SIZE = 36;
 const SEASONS = ['winter', 'spring', 'summer', 'fall'] as const;
 type Season = (typeof SEASONS)[number];
 type SortKey = 'popularity' | 'newly_added' | 'alphabetical';
+type AudioFilter = 'all' | 'dub' | 'sub';
 
 interface Filters {
   readonly q: string;
@@ -18,8 +20,7 @@ interface Filters {
   readonly season: Season | '';
   readonly year: string;
   readonly type: 'series' | 'movie_listing';
-  readonly vf: boolean;
-  readonly vostfr: boolean;
+  readonly audio: AudioFilter;
   readonly sort: SortKey;
 }
 
@@ -29,8 +30,7 @@ const EMPTY: Filters = {
   season: '',
   year: '',
   type: 'series',
-  vf: false,
-  vostfr: false,
+  audio: 'all',
   sort: 'popularity',
 };
 
@@ -39,8 +39,8 @@ function toOptions(f: Filters, start: number): BrowseOptions {
   if (f.q.trim()) return { ...options, query: f.q.trim() };
   if (f.genre) Object.assign(options, { categories: f.genre });
   if (f.season && f.year) Object.assign(options, { seasonalTag: `${f.season}-${f.year}` });
-  if (f.vf) Object.assign(options, { isDubbed: true });
-  if (f.vostfr) Object.assign(options, { isSubbed: true });
+  if (f.audio === 'dub') Object.assign(options, { isDubbed: true });
+  if (f.audio === 'sub') Object.assign(options, { isSubbed: true });
   return options;
 }
 
@@ -121,6 +121,33 @@ export function SearchPage(): React.JSX.Element {
   const openDetail = (series: Series): void => go({ page: 'detail', seriesId: series.id });
   const seasonLabel = (s: Season): string => t(`search.season.${s}`);
 
+  const typeOptions: ReadonlyArray<DropdownOption<Filters['type']>> = [
+    { value: 'series', label: t('search.type.series') },
+    { value: 'movie_listing', label: t('search.type.movies') },
+  ];
+  const genreOptions: ReadonlyArray<DropdownOption<string>> = [
+    { value: '', label: t('search.any') },
+    ...genres.map((g) => ({ value: g.id, label: g.title })),
+  ];
+  const seasonOptions: ReadonlyArray<DropdownOption<Filters['season']>> = [
+    { value: '', label: t('search.any') },
+    ...SEASONS.map((s) => ({ value: s, label: seasonLabel(s) })),
+  ];
+  const yearOptions: ReadonlyArray<DropdownOption<string>> = [
+    { value: '', label: t('search.any') },
+    ...years.map((y) => ({ value: String(y), label: String(y) })),
+  ];
+  const sortOptions: ReadonlyArray<DropdownOption<SortKey>> = [
+    { value: 'popularity', label: t('search.sort.pop') },
+    { value: 'newly_added', label: t('search.sort.new') },
+    { value: 'alphabetical', label: t('search.sort.az') },
+  ];
+  const audioOptions: ReadonlyArray<DropdownOption<AudioFilter>> = [
+    { value: 'all', label: t('search.any') },
+    { value: 'dub', label: t('set.vf') },
+    { value: 'sub', label: t('set.vostfr') },
+  ];
+
   return (
     <div className="page-pad" data-screen-label="Recherche">
       <div className="page-head">
@@ -145,70 +172,58 @@ export function SearchPage(): React.JSX.Element {
       <div className="srch-filters">
         <label className="sf">
           <span>{t('search.f.type')}</span>
-          <select
+          <Dropdown
+            className="dd-block"
             value={applied.type}
-            onChange={(e) => set('type', e.target.value as Filters['type'])}
-          >
-            <option value="series">{t('search.type.series')}</option>
-            <option value="movie_listing">{t('search.type.movies')}</option>
-          </select>
+            options={typeOptions}
+            onChange={(v) => set('type', v)}
+          />
         </label>
         <label className="sf">
           <span>{t('search.f.genre')}</span>
-          <select value={applied.genre} onChange={(e) => set('genre', e.target.value)}>
-            <option value="">{t('search.any')}</option>
-            {genres.map((g) => (
-              <option key={g.id} value={g.id}>
-                {g.title}
-              </option>
-            ))}
-          </select>
+          <Dropdown
+            className="dd-block"
+            value={applied.genre}
+            options={genreOptions}
+            onChange={(v) => set('genre', v)}
+          />
         </label>
         <label className="sf">
           <span>{t('search.f.season')}</span>
-          <select
+          <Dropdown
+            className="dd-block"
             value={applied.season}
-            onChange={(e) => set('season', e.target.value as Filters['season'])}
-          >
-            <option value="">{t('search.any')}</option>
-            {SEASONS.map((s) => (
-              <option key={s} value={s}>
-                {seasonLabel(s)}
-              </option>
-            ))}
-          </select>
+            options={seasonOptions}
+            onChange={(v) => set('season', v)}
+          />
         </label>
         <label className="sf">
           <span>{t('search.f.year')}</span>
-          <select value={applied.year} onChange={(e) => set('year', e.target.value)}>
-            <option value="">{t('search.any')}</option>
-            {years.map((y) => (
-              <option key={y} value={String(y)}>
-                {y}
-              </option>
-            ))}
-          </select>
+          <Dropdown
+            className="dd-block"
+            value={applied.year}
+            options={yearOptions}
+            onChange={(v) => set('year', v)}
+          />
         </label>
         <label className="sf">
           <span>{t('search.f.sort')}</span>
-          <select value={applied.sort} onChange={(e) => set('sort', e.target.value as SortKey)}>
-            <option value="popularity">{t('search.sort.pop')}</option>
-            <option value="newly_added">{t('search.sort.new')}</option>
-            <option value="alphabetical">{t('search.sort.az')}</option>
-          </select>
+          <Dropdown
+            className="dd-block"
+            value={applied.sort}
+            options={sortOptions}
+            onChange={(v) => set('sort', v)}
+          />
         </label>
-        <button
-          className={`srch-chip${applied.vf ? ' is-on' : ''}`}
-          onClick={() => set('vf', !applied.vf)}
-        >
-          VF
-        </button>
-        <button
-          className={`srch-chip${applied.vostfr ? ' is-on' : ''}`}
-          onClick={() => set('vostfr', !applied.vostfr)}
-        >
-          VOSTFR
-        </button>
+        <label className="sf">
+          <span>{t('search.f.audio')}</span>
+          <Dropdown
+            className="dd-block"
+            value={applied.audio}
+            options={audioOptions}
+            onChange={(v) => set('audio', v)}
+          />
+        </label>
         <button className="srch-reset" onClick={reset}>
           {t('search.reset')}
         </button>

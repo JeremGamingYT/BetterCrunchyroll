@@ -2,49 +2,25 @@ import { useMemo } from 'react';
 import { fetchUpcomingAnime, type UpcomingItem } from '@core/providers';
 import { bridge } from '@core/api/transport';
 import { useAsync } from '@app/hooks/useAsync';
-import { useI18n } from '@app/i18n/i18n';
+import { useI18n, type TFunction } from '@app/i18n/i18n';
+import type { Lang } from '@app/i18n/strings';
+import { intlLocaleFor } from '@app/i18n/locales';
 import { Chip } from '@app/components/Chip';
 import { Icon } from '@app/components/Icon';
 import { ErrorState } from '@app/components/StateViews';
 
-const MONTHS_FR = [
-  'janv.',
-  'févr.',
-  'mars',
-  'avr.',
-  'mai',
-  'juin',
-  'juil.',
-  'août',
-  'sept.',
-  'oct.',
-  'nov.',
-  'déc.',
-];
-const MONTHS_EN = [
-  'Jan',
-  'Feb',
-  'Mar',
-  'Apr',
-  'May',
-  'Jun',
-  'Jul',
-  'Aug',
-  'Sep',
-  'Oct',
-  'Nov',
-  'Dec',
-];
-
-function monthLabel(item: UpcomingItem, lang: string): string {
+function monthLabel(item: UpcomingItem, lang: Lang, t: TFunction): string {
   if (!item.month) {
-    return lang === 'en' ? 'TBA' : 'À confirmer';
+    return t('up.tba');
   }
-  const month = (lang === 'en' ? MONTHS_EN : MONTHS_FR)[item.month - 1] ?? '';
+  const month = new Date(Date.UTC(2000, item.month - 1, 1)).toLocaleString(intlLocaleFor(lang), {
+    month: 'short',
+    timeZone: 'UTC',
+  });
   return item.year ? `${month} ${String(item.year)}` : month;
 }
 
-function UpcomingCard({ item, lang }: { item: UpcomingItem; lang: string }): React.JSX.Element {
+function UpcomingCard({ item, lang }: { item: UpcomingItem; lang: Lang }): React.JSX.Element {
   const { t } = useI18n();
   return (
     <button
@@ -54,7 +30,7 @@ function UpcomingCard({ item, lang }: { item: UpcomingItem; lang: string }): Rea
     >
       <div className="up-thumb">
         <img src={item.image} alt="" loading="lazy" />
-        <span className="up-date">{monthLabel(item, lang)}</span>
+        <span className="up-date">{monthLabel(item, lang, t)}</span>
       </div>
       <div className="up-cap">
         <p className="up-title">{item.title}</p>

@@ -104,7 +104,7 @@ export function CategoryPage({ categoryId, title }: CategoryPageProps): React.JS
     <div className="page-pad" data-screen-label={heading}>
       <div className="page-head">
         <h1 className="page-title">{heading}</h1>
-        <p className="page-sub">{lang === 'en' ? 'Browse the genre' : 'Parcourir le genre'}</p>
+        <p className="page-sub">{t('cat.sub')}</p>
       </div>
 
       {state.error ? (
@@ -124,7 +124,7 @@ export function CategoryPage({ categoryId, title }: CategoryPageProps): React.JS
           ))}
         </div>
       ) : state.items.length === 0 ? (
-        <ErrorState message={lang === 'en' ? 'Nothing in this genre.' : 'Rien dans ce genre.'} />
+        <ErrorState message={t('cat.empty')} />
       ) : (
         <>
           <div className="grid-cards">

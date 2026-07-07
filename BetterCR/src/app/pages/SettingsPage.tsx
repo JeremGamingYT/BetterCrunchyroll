@@ -13,28 +13,49 @@ import { retryAsync } from '@shared/async';
 import { useAsync } from '@app/hooks/useAsync';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
+import type { Lang } from '@app/i18n/strings';
+import { intlLocaleFor, UI_LANGS } from '@app/i18n/locales';
 import { useProfile } from '@app/profile';
 import { ACCENT_OPTIONS, useTweaks } from '@app/tweaks/useTweaks';
 import { Icon, type IconName } from '@app/components/Icon';
 import { PosterCard } from '@app/components/PosterCard';
+import { Dropdown, type DropdownOption } from '@app/components/Dropdown';
 
 const STATS_RETRIES = 8;
 const STATS_RETRY_MS = 1500;
 
+const UI_LANG_OPTIONS: ReadonlyArray<DropdownOption<Lang>> = UI_LANGS.map((entry) => ({
+  value: entry.code,
+  label: entry.label,
+  icon: entry.flag,
+}));
+
 /** Languages offered for the real Crunchyroll audio/subtitle preferences. */
-const LANG_OPTIONS: ReadonlyArray<{ code: string; label: string }> = [
-  { code: 'ja-JP', label: '日本語' },
-  { code: 'en-US', label: 'English' },
-  { code: 'fr-FR', label: 'Français' },
-  { code: 'es-419', label: 'Español (LatAm)' },
-  { code: 'es-ES', label: 'Español (España)' },
-  { code: 'pt-BR', label: 'Português (Brasil)' },
-  { code: 'de-DE', label: 'Deutsch' },
-  { code: 'it-IT', label: 'Italiano' },
-  { code: 'ar-SA', label: 'العربية' },
-  { code: 'ru-RU', label: 'Русский' },
-  { code: 'hi-IN', label: 'हिन्दी' },
+const LANG_OPTIONS: ReadonlyArray<DropdownOption<string>> = [
+  { value: 'ja-JP', label: '日本語' },
+  { value: 'en-US', label: 'English' },
+  { value: 'fr-FR', label: 'Français' },
+  { value: 'es-419', label: 'Español (LatAm)' },
+  { value: 'es-ES', label: 'Español (España)' },
+  { value: 'pt-BR', label: 'Português (Brasil)' },
+  { value: 'de-DE', label: 'Deutsch' },
+  { value: 'it-IT', label: 'Italiano' },
+  { value: 'ar-SA', label: 'العربية' },
+  { value: 'ru-RU', label: 'Русский' },
+  { value: 'hi-IN', label: 'हिन्दी' },
 ];
+
+/** Appends a synthetic entry when `value` isn't one of the known options
+ *  (e.g. a Crunchyroll-reported code this list doesn't list yet). */
+function withUnknown(
+  options: ReadonlyArray<DropdownOption<string>>,
+  value: string,
+): ReadonlyArray<DropdownOption<string>> {
+  if (!value || options.some((option) => option.value === value)) {
+    return options;
+  }
+  return [{ value, label: value }, ...options];
+}
 
 export function SettingsPage(): React.JSX.Element {
   const { go } = useRouter();
@@ -104,7 +125,7 @@ export function SettingsPage(): React.JSX.Element {
   const total = vf + vostfr || 1;
   const vfPct = Math.round((vf / total) * 100);
 
-  const numberLocale = lang === 'fr' ? 'fr-FR' : 'en-US';
+  const numberLocale = intlLocaleFor(lang);
   const fmt = (value: number): string => value.toLocaleString(numberLocale);
   const backdrop = recent[0]?.wide || favorites[0]?.wide || '';
 
@@ -187,20 +208,12 @@ export function SettingsPage(): React.JSX.Element {
         <div className="set-prefs">
           <div className="set-pref">
             <span className="set-pref-lbl">{t('set.uiLang')}</span>
-            <div className="set-seg">
-              <button
-                className={`set-seg-btn${lang === 'fr' ? ' is-on' : ''}`}
-                onClick={() => setLang('fr')}
-              >
-                Français
-              </button>
-              <button
-                className={`set-seg-btn${lang === 'en' ? ' is-on' : ''}`}
-                onClick={() => setLang('en')}
-              >
-                English
-              </button>
-            </div>
+            <Dropdown
+              value={lang}
+              options={UI_LANG_OPTIONS}
+              onChange={setLang}
+              ariaLabel={t('set.uiLang')}
+            />
           </div>
           <div className="set-pref">
             <span className="set-pref-lbl">{t('set.accent')}</span>
@@ -249,37 +262,21 @@ export function SettingsPage(): React.JSX.Element {
         <div className="set-prefs">
           <div className="set-pref">
             <span className="set-pref-lbl">{t('set.audioLang')}</span>
-            <select
-              className="set-select"
+            <Dropdown
               value={audioLang}
-              onChange={(event) => saveCr('audioLanguage', event.target.value)}
-            >
-              {!LANG_OPTIONS.some((o) => o.code === audioLang) && (
-                <option value={audioLang}>{audioLang || '—'}</option>
-              )}
-              {LANG_OPTIONS.map((option) => (
-                <option key={option.code} value={option.code}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
+              options={withUnknown(LANG_OPTIONS, audioLang)}
+              onChange={(value) => saveCr('audioLanguage', value)}
+              ariaLabel={t('set.audioLang')}
+            />
           </div>
           <div className="set-pref">
             <span className="set-pref-lbl">{t('set.subLang')}</span>
-            <select
-              className="set-select"
+            <Dropdown
               value={subLang}
-              onChange={(event) => saveCr('subtitleLanguage', event.target.value)}
-            >
-              {!LANG_OPTIONS.some((o) => o.code === subLang) && (
-                <option value={subLang}>{subLang || '—'}</option>
-              )}
-              {LANG_OPTIONS.map((option) => (
-                <option key={option.code} value={option.code}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
+              options={withUnknown(LANG_OPTIONS, subLang)}
+              onChange={(value) => saveCr('subtitleLanguage', value)}
+              ariaLabel={t('set.subLang')}
+            />
           </div>
         </div>
         <p className="set-pref-note">{t('set.crNote')}</p>

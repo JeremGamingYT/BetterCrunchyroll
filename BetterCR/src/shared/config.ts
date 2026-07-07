@@ -6,8 +6,9 @@
 /** Crunchyroll content/auth API base. */
 export const CR_API_BASE = 'https://www.crunchyroll.com' as const;
 
-/** Default request locale / preferred audio language. */
-export const CR_LOCALE = 'fr-FR' as const;
+/** Fallback request locale used only when a request doesn't specify its own
+ *  (e.g. `getJson`'s query always does — this is the safety net for the rest). */
+export const CR_LOCALE = 'en-US' as const;
 
 /** Path (inside the extension) of the redesigned SPA loaded in the overlay iframe. */
 export const APP_PAGE_PATH = 'src/app/index.html' as const;

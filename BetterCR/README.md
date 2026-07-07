@@ -113,6 +113,13 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.13.1
+
+- 🌍 **Correctif langue forcée en français** ([#18](https://github.com/JeremGamingYT/BetterCrunchyroll/issues/18)) : l'extension démarrait toujours en français, quelle que soit la langue du navigateur, sans aucun moyen de la changer. Elle détecte désormais la langue du navigateur au premier lancement (repli sûr sur l'anglais si elle n'est pas supportée).
+- 🗣️ **Support natif de 10 langues** pour l'interface BetterCR (le *redesign*) : français, anglais, espagnol, portugais, allemand, italien, arabe (RTL), russe, japonais, hindi — la même liste que Crunchyroll propose déjà pour l'audio/les sous-titres.
+- 🎛️ **Nouveaux menus déroulants** : les listes de langues (Paramètres, pied de page, connexion) et les filtres de la page Recherche utilisaient le `<select>` natif du navigateur, dont la popup s'affichait en texte clair sur fond blanc — quasi illisible sur le thème sombre. Remplacés par un composant déroulant maison, lisible et cohérent avec le thème.
+- 🔎 **Recherche simplifiée** : les boutons « VF » / « VOSTFR » sont remplacés par un seul filtre « Audio » (Tous / VF / VOSTFR), cohérent avec les autres filtres.
+
 ### v1.13.0
 
 - **Kill switch intelligent (résilience)** : drapeau distant `health.json` (pause manuelle + version minimale, *fail-open*), auto-détection des pannes d'API Crunchyroll (≥3 endpoints de lecture distincts ; les mutations sont ignorées pour éviter les faux positifs) avec **reprise automatique**, repli gracieux vers le Crunchyroll natif + bandeau d'info, statut dans le popup. Le skin du lecteur est protégé par un *fail-safe* (laisse le lecteur natif intact si CR change son DOM).

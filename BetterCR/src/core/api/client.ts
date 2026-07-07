@@ -47,7 +47,7 @@ const DEFAULT_PAGE_SIZE = 24;
 const HERO_COUNT = 5;
 
 /** Current Crunchyroll locale, updated by the i18n layer on language change. */
-let apiLocale = 'fr-FR';
+let apiLocale = 'en-US';
 
 export function setApiLocale(locale: string): void {
   apiLocale = locale;

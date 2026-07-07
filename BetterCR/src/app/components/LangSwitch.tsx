@@ -1,26 +1,28 @@
 import { useI18n } from '@app/i18n/i18n';
+import { UI_LANGS } from '@app/i18n/locales';
 import type { Lang } from '@app/i18n/strings';
+import { Dropdown } from './Dropdown';
 
-const OPTIONS: ReadonlyArray<{ id: Lang; flag: string; label: string }> = [
-  { id: 'fr', flag: '🇫🇷', label: 'FR' },
-  { id: 'en', flag: '🇬🇧', label: 'EN' },
-];
+const OPTIONS = UI_LANGS.map((entry) => ({
+  value: entry.code,
+  label: entry.label,
+  icon: entry.flag,
+}));
 
-export function LangSwitch(): React.JSX.Element {
+export interface LangSwitchProps {
+  readonly align?: 'start' | 'end';
+}
+
+export function LangSwitch({ align }: LangSwitchProps): React.JSX.Element {
   const { lang, setLang, t } = useI18n();
   return (
-    <div className="lang-switch" role="group" aria-label={t('ftr.lang')}>
-      {OPTIONS.map((option) => (
-        <button
-          key={option.id}
-          className={`lang-opt${lang === option.id ? ' is-on' : ''}`}
-          onClick={() => setLang(option.id)}
-          aria-pressed={lang === option.id}
-        >
-          <span className="lang-flag">{option.flag}</span>
-          {option.label}
-        </button>
-      ))}
-    </div>
+    <Dropdown<Lang>
+      className="lang-switch"
+      value={lang}
+      options={OPTIONS}
+      onChange={setLang}
+      ariaLabel={t('ftr.lang')}
+      align={align}
+    />
   );
 }

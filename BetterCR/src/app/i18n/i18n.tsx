@@ -9,9 +9,11 @@ import {
 } from 'react';
 import { setApiLocale } from '@core/api/client';
 import { STRINGS, type Lang } from './strings';
+import { contentLocaleFor, detectBrowserLang, RTL_LANGS, UI_LANGS } from './locales';
 
 const STORAGE_KEY = 'bcr_lang_v1';
-const FALLBACK: Lang = 'fr';
+/** Safe, neutral default when the browser's language isn't one we support. */
+const FALLBACK: Lang = 'en';
 
 export type TVars = Record<string, string | number>;
 export type TFunction = (key: string, vars?: TVars) => string;
@@ -25,9 +27,15 @@ export interface I18n {
 const I18nContext = createContext<I18n | null>(null);
 
 function isLang(value: string | null): value is Lang {
-  return value === 'fr' || value === 'en';
+  return value != null && UI_LANGS.some((entry) => entry.code === value);
 }
 
+/**
+ * Resolves the initial UI language: an explicit prior choice always wins;
+ * otherwise we match the browser's own language list rather than assuming
+ * any one language, so a first-time install shows up in the user's own
+ * language whenever we have a translation for it (falling back to English).
+ */
 function loadLang(): Lang {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -35,9 +43,9 @@ function loadLang(): Lang {
       return stored;
     }
   } catch {
-    // Ignore — fall back to default.
+    // Ignore — fall back to browser-language detection.
   }
-  return FALLBACK;
+  return detectBrowserLang(navigator.languages ?? [navigator.language]);
 }
 
 function translate(lang: Lang, key: string, vars?: TVars): string {
@@ -53,7 +61,7 @@ function translate(lang: Lang, key: string, vars?: TVars): string {
 /** Maps the UI language to the Crunchyroll API locale. */
 // eslint-disable-next-line react-refresh/only-export-components -- provider + helpers colocated by design
 export function localeFor(lang: Lang): string {
-  return lang === 'en' ? 'en-US' : 'fr-FR';
+  return contentLocaleFor(lang);
 }
 
 export function I18nProvider({ children }: { children: ReactNode }): React.JSX.Element {
@@ -77,6 +85,7 @@ export function I18nProvider({ children }: { children: ReactNode }): React.JSX.E
 
   useEffect(() => {
     document.documentElement.lang = lang;
+    document.documentElement.dir = RTL_LANGS.has(lang) ? 'rtl' : 'ltr';
   }, [lang]);
 
   const value = useMemo<I18n>(

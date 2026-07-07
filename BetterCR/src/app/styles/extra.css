@@ -886,38 +886,13 @@ button.notif-item:hover {
   font-weight: 700;
   color: var(--mut, #9aa0ac);
 }
-.sf select {
-  height: 38px;
-  padding: 0 12px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
-  border-radius: 10px;
-  color: var(--txt, #f4f4f6);
-  font: inherit;
-  font-size: 14px;
+.dd-block {
+  display: flex;
+  width: 100%;
+}
+.dd-block .dd-trigger {
+  width: 100%;
   min-width: 130px;
-  cursor: pointer;
-}
-.sf select:focus {
-  outline: none;
-  border-color: var(--acc, #f47521);
-}
-.srch-chip {
-  height: 38px;
-  align-self: flex-end;
-  padding: 0 16px;
-  border-radius: 10px;
-  border: 1px solid var(--line, rgba(255, 255, 255, 0.12));
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--mut, #9aa0ac);
-  font-weight: 800;
-  font-size: 13px;
-  cursor: pointer;
-}
-.srch-chip.is-on {
-  background: var(--acc, #f47521);
-  color: #160a02;
-  border-color: transparent;
 }
 .srch-reset {
   height: 38px;

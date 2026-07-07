@@ -85,7 +85,7 @@ export interface AuthPageProps {
 }
 
 export function AuthPage({ onAuthenticated }: AuthPageProps): React.JSX.Element {
-  const { t, lang } = useI18n();
+  const { t } = useI18n();
   const [mode, setMode] = useState<'login' | 'signup'>('login');
   const [showPw, setShowPw] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -99,11 +99,7 @@ export function AuthPage({ onAuthenticated }: AuthPageProps): React.JSX.Element 
     event.preventDefault();
     setError(null);
     if (!isLogin) {
-      setError(
-        lang === 'en'
-          ? 'Sign-up is handled on Crunchyroll directly.'
-          : "L'inscription se fait directement sur Crunchyroll.",
-      );
+      setError(t('auth.signupOnCr'));
       return;
     }
     const data = new FormData(event.currentTarget);
@@ -174,7 +170,7 @@ export function AuthPage({ onAuthenticated }: AuthPageProps): React.JSX.Element 
 
       <main className="auth-main">
         <div className="auth-top auth-top-end">
-          <LangSwitch />
+          <LangSwitch align="end" />
         </div>
 
         <div className="auth-card">
