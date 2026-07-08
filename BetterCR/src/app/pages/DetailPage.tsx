@@ -6,6 +6,9 @@ import {
   getSeasonEpisodes,
   getSeasons,
   getSeriesDetail,
+  getSeriesRatingSummary,
+  getUserSeriesRating,
+  rateSeries,
   type PlayheadInfo,
 } from '@core/api/client';
 import { bridge } from '@core/api/transport';
@@ -64,6 +67,67 @@ function EpisodeCard({ ep, index, revealed, seen, onPlay }: EpisodeCardProps): R
           {ep.desc && <p className="ecard-desc">{ep.desc}</p>}
         </div>
       </button>
+    </div>
+  );
+}
+
+const STAR_VALUES = [1, 2, 3, 4, 5] as const;
+
+/**
+ * Interactive 1–5 star rating wired to the user's real Crunchyroll account
+ * (same `content-reviews` service as the official site). Optimistic: the click
+ * paints immediately and reverts if the PUT fails. Hidden entirely when the
+ * rating service is unreachable.
+ */
+function RatingStars({ seriesId }: { readonly seriesId: string }): React.JSX.Element | null {
+  const { t } = useI18n();
+  const summaryState = useAsync(() => getSeriesRatingSummary(seriesId), [seriesId]);
+  const mineState = useAsync(() => getUserSeriesRating(seriesId), [seriesId]);
+  const [mine, setMine] = useState(0);
+  const [hover, setHover] = useState(0);
+
+  useEffect(() => {
+    setMine(mineState.data ?? 0);
+  }, [mineState.data]);
+
+  const summary = summaryState.data;
+  if (!summary) {
+    return null;
+  }
+  const shown = hover || mine;
+
+  const rate = (stars: number): void => {
+    const previous = mine;
+    setMine(stars); // optimistic — revert on failure
+    void rateSeries(seriesId, stars).then((ok) => {
+      if (!ok) {
+        setMine(previous);
+      }
+    });
+  };
+
+  return (
+    <div className="dt-stars" onMouseLeave={() => setHover(0)} onBlur={() => setHover(0)}>
+      <div className="dt-stars-row" role="radiogroup" aria-label={t('detail.rate')}>
+        {STAR_VALUES.map((n) => (
+          <button
+            key={n}
+            className={`dt-star${n <= shown ? ' is-on' : ''}`}
+            role="radio"
+            aria-checked={mine === n}
+            aria-label={`${String(n)}/5`}
+            onMouseEnter={() => setHover(n)}
+            onFocus={() => setHover(n)}
+            onClick={() => rate(n)}
+          >
+            <Icon name="star" size={17} solid={n <= shown} />
+          </button>
+        ))}
+      </div>
+      <span className="dt-stars-meta">
+        {summary.average.toFixed(1)}
+        {summary.total > 0 && <> · {t('detail.ratings', { n: summary.total.toLocaleString() })}</>}
+      </span>
     </div>
   );
 }
@@ -164,7 +228,9 @@ export function DetailPage({ seriesId }: DetailPageProps): React.JSX.Element {
   const keywords = detail.keywords.length > 0 ? detail.keywords : (meta?.genres ?? []);
   const scoreLabel = meta?.score && meta.score > 0 ? (meta.score / SCORE_DIVISOR).toFixed(1) : '';
 
-  const langs = [detail.sub ? 'VOSTFR' : '', detail.dub ? 'VF' : ''].filter(Boolean).join(' · ');
+  const langs = [detail.sub ? t('chip.sub') : '', detail.dub ? t('chip.dub') : '']
+    .filter(Boolean)
+    .join(' · ');
   const facts: Array<readonly [string, string]> = [
     [t('facts.year'), detail.year > 0 ? String(detail.year) : ''],
     [t('facts.seasons'), String(detail.seasons || seasons.length || 1)],
@@ -208,9 +274,10 @@ export function DetailPage({ seriesId }: DetailPageProps): React.JSX.Element {
                 )}
                 {detail.rating && <Chip tone="line">{detail.rating}</Chip>}
                 {detail.eps > 0 && <span>{t('common.episodes', { n: detail.eps })}</span>}
-                {detail.dub && <Chip tone="line">VF</Chip>}
-                {detail.sub && <Chip tone="line">VOSTFR</Chip>}
+                {detail.dub && <Chip tone="line">{t('chip.dub')}</Chip>}
+                {detail.sub && <Chip tone="line">{t('chip.sub')}</Chip>}
               </div>
+              <RatingStars seriesId={seriesId} />
             </div>
             <p className="dt-synopsis">{detail.desc}</p>
             <div className="dt-cta">

@@ -44,7 +44,13 @@ export function Top10Row({ items, onOpen }: Top10RowProps): React.JSX.Element {
                   aria-label={series.title}
                 >
                   <div className="pcard-frame">
-                    <img className="pcard-img" src={series.poster} alt="" loading="lazy" />
+                    <img
+                      className="pcard-img"
+                      src={series.poster}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <div className="pcard-shade" />
                     <div className="t10-veil">
                       <p className="t10-title">{series.title}</p>

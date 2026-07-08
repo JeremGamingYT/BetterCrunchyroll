@@ -109,6 +109,16 @@ class Bridge {
       : { ok: false, error: 'Réponse inattendue du pont.' };
   }
 
+  /** Switches the session token to another Crunchyroll profile. */
+  async switchProfile(profileId: string): Promise<boolean> {
+    const envelope = await this.dispatch({
+      kind: 'SWITCH_PROFILE',
+      id: this.nextId(),
+      profileId,
+    });
+    return envelope.kind === 'PROFILE_SWITCHED' && envelope.result.ok;
+  }
+
   /** Fire-and-forget: asks the content script to reflect navigation/play. */
   navigate(path: string): void {
     if (!this.isEmbedded()) {

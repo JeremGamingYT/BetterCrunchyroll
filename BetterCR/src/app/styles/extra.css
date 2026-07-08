@@ -9,10 +9,25 @@
   text-align: center;
   padding: 80px var(--gut);
 }
+body.anim .state-view {
+  animation: pageIn 0.5s var(--ease) both;
+}
 .state-mark {
   font-size: 28px;
   font-weight: 800;
   opacity: 0.9;
+}
+body.anim .state-mark {
+  animation: statePulse 3.2s ease-in-out infinite;
+}
+@keyframes statePulse {
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.55;
+  }
 }
 .state-icon {
   display: grid;
@@ -605,9 +620,11 @@
   max-height: 520px;
   display: flex;
   flex-direction: column;
-  background: var(--panel, #15151c);
-  border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
-  border-radius: 14px;
+  background: rgba(22, 22, 30, 0.94);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-line, rgba(255, 255, 255, 0.1));
+  border-radius: 16px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
   z-index: 60;
   overflow: hidden;
@@ -855,12 +872,16 @@ button.notif-item:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 0 14px;
+  padding: 0 16px;
   height: 46px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
   border-radius: 12px;
   color: var(--mut, #9aa0ac);
+  transition: border-color 0.25s ease;
+}
+.srch-input:focus-within {
+  border-color: var(--acc-soft, rgba(255, 129, 51, 0.26));
 }
 .srch-input input {
   flex: 1;
@@ -871,12 +892,24 @@ button.notif-item:hover {
   font: inherit;
   font-size: 15px;
 }
+/* Sticky glass panel: the filters follow the results while scrolling, sitting
+ * just below the floating header. */
 .srch-filters {
+  position: sticky;
+  top: 78px;
+  z-index: 30;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   align-items: flex-end;
   margin-bottom: 24px;
+  padding: 14px;
+  border-radius: 15px;
+  border: 1px solid var(--glass-line, rgba(255, 255, 255, 0.1));
+  background: rgba(13, 13, 18, 0.72);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
+  box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.8);
 }
 .sf {
   display: flex;
@@ -996,17 +1029,27 @@ button.notif-item:hover {
 }
 
 /* ── Settings: preferences ── */
+/* Preferences live in a proper "system settings" card: contained surface,
+ * generous rows, hairline separators, hover feedback. */
 .set-prefs {
   display: flex;
   flex-direction: column;
+  background: var(--srf, #15151b);
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.09));
+  border-radius: 16px;
+  overflow: hidden;
 }
 .set-pref {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 14px 4px;
+  padding: 15px 18px;
   border-bottom: 1px solid var(--line, rgba(255, 255, 255, 0.07));
+  transition: background 0.2s ease;
+}
+.set-pref:hover {
+  background: rgba(255, 255, 255, 0.025);
 }
 .set-pref:last-child {
   border-bottom: 0;
@@ -1020,6 +1063,7 @@ button.notif-item:hover {
   font-size: 12px;
   color: var(--mut, #9aa0ac);
   margin-top: 10px;
+  padding-left: 4px;
 }
 .set-seg {
   display: inline-flex;
@@ -1115,7 +1159,7 @@ button.notif-item:hover {
   align-items: center;
   gap: 12px;
   padding: 10px 12px 10px 16px;
-  border-radius: 14px;
+  border-radius: 13px;
   background: rgba(18, 18, 24, 0.94);
   backdrop-filter: blur(12px);
   border: 1px solid color-mix(in srgb, var(--acc, #ff8133) 50%, transparent);
@@ -1170,4 +1214,419 @@ button.notif-item:hover {
 }
 .hdr-icon.has-unread {
   color: var(--acc, #ff8133);
+}
+
+/* ── Back-to-top floating button ── */
+.totop {
+  position: fixed;
+  right: clamp(18px, 2.4vw, 34px);
+  bottom: clamp(18px, 2.6vw, 34px);
+  z-index: 90;
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  border: 1px solid var(--line2, rgba(255, 255, 255, 0.16));
+  background: rgba(16, 16, 22, 0.82);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  color: var(--txt, #f4f4f6);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(14px) scale(0.9);
+  pointer-events: none;
+  box-shadow: var(--sh-2, 0 14px 34px -12px rgba(0, 0, 0, 0.65));
+  transition:
+    opacity 0.3s ease,
+    transform 0.35s var(--ease-spring, cubic-bezier(0.34, 1.4, 0.44, 1)),
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+.totop.is-on {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+.totop:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: var(--acc-soft, rgba(255, 129, 51, 0.26));
+  transform: translateY(-2px);
+}
+.totop:active {
+  transform: scale(0.92);
+}
+
+/* ── "Who's watching?" profile gate ── */
+.pgate {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(30px, 5vh, 52px);
+  padding: 40px var(--gut, 32px);
+}
+.pgate-title {
+  font-size: clamp(26px, 3.4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.pgate-title::before {
+  content: '／';
+  color: var(--acc, #ff8133);
+  margin-right: 12px;
+}
+.pgate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(22px, 3.4vw, 44px);
+}
+.pgate-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 10px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: var(--txt2, rgba(245, 244, 242, 0.62));
+  transition: color 0.2s ease;
+}
+body.anim .pgate-item {
+  animation: bcrRise 0.55s var(--ease, ease) both;
+}
+.pgate-item:hover,
+.pgate-item:focus-visible {
+  color: var(--txt, #f5f4f2);
+}
+.pgate-item:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.pgate-avatar {
+  width: clamp(88px, 9vw, 116px);
+  height: clamp(88px, 9vw, 116px);
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: var(--srf2, #1e1e26);
+  border: 2px solid transparent;
+  transition:
+    border-color 0.2s ease,
+    transform 0.25s var(--ease-spring, ease),
+    box-shadow 0.25s ease;
+}
+.pgate-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pgate-item:hover .pgate-avatar,
+.pgate-item:focus-visible .pgate-avatar {
+  border-color: var(--acc, #ff8133);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.8);
+}
+.pgate-item.is-active .pgate-avatar {
+  border-color: var(--acc, #ff8133);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--acc, #ff8133) 22%, transparent);
+}
+.pgate-name {
+  font-size: 14.5px;
+  font-weight: 700;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pgate-primary {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: var(--acc, #ff8133);
+}
+
+/* ── Header menu: profile switcher section ── */
+.menu-profiles {
+  padding: 8px;
+  border-bottom: 1px solid var(--line, rgba(255, 255, 255, 0.09));
+}
+.menu-profiles-label {
+  padding: 4px 10px 7px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--txt3, rgba(245, 244, 242, 0.4));
+}
+.menu-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 9px;
+  background: none;
+  color: var(--txt2, rgba(245, 244, 242, 0.62));
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+.menu-profile:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--txt, #f5f4f2);
+}
+.menu-profile.is-active {
+  color: var(--txt, #f5f4f2);
+}
+.menu-profile-av {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex: none;
+  display: grid;
+  place-items: center;
+  background: var(--srf2, #1e1e26);
+}
+.menu-profile-av img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu-profile-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-profile-check {
+  color: var(--acc, #ff8133);
+  flex: none;
+}
+/* "Manage profiles" row: separated from the switch list, opens Crunchyroll. */
+.menu-profile-manage {
+  margin-top: 2px;
+  padding-top: 9px;
+  border-top: 1px solid var(--line, rgba(255, 255, 255, 0.07));
+}
+.menu-profile-manage .menu-profile-av {
+  color: var(--acc, #ff8133);
+  background: color-mix(in oklab, var(--acc, #ff8133) 14%, transparent);
+}
+.menu-profile-ext {
+  color: var(--txt3, rgba(245, 244, 242, 0.4));
+  flex: none;
+}
+
+/* ── Profiles management page ── */
+.pfm-error {
+  margin-bottom: 18px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid color-mix(in oklab, #ef4565 45%, transparent);
+  background: color-mix(in oklab, #ef4565 12%, transparent);
+  color: var(--txt, #f5f4f2);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.pfm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  margin-bottom: 26px;
+}
+.pfm-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 18px 18px;
+  border-radius: 16px;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.09));
+  background: var(--srf, #15151b);
+  transition:
+    border-color 0.2s ease,
+    transform 0.25s var(--ease, ease);
+}
+body.anim .pfm-card {
+  animation: bcrRise 0.5s var(--ease, ease) both;
+}
+.pfm-card.is-active {
+  border-color: color-mix(in oklab, var(--acc, #ff8133) 45%, transparent);
+}
+.pfm-card-new {
+  cursor: pointer;
+  color: var(--txt2, rgba(245, 244, 242, 0.62));
+  font: inherit;
+  justify-content: center;
+  border-style: dashed;
+}
+.pfm-card-new:hover {
+  border-color: var(--acc-soft, rgba(255, 129, 51, 0.26));
+  color: var(--txt, #f5f4f2);
+  transform: translateY(-2px);
+}
+.pfm-card-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: var(--srf2, #1e1e26);
+}
+.pfm-card-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pfm-card-plus {
+  color: var(--acc, #ff8133);
+  background: color-mix(in oklab, var(--acc, #ff8133) 12%, transparent);
+}
+.pfm-card-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  max-width: 100%;
+}
+.pfm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--acc, #ff8133);
+  padding: 3px 7px 3px 6px;
+  background: color-mix(in oklab, var(--acc, #ff8133) 13%, transparent);
+  clip-path: var(--notch, none);
+}
+.pfm-active-check {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: var(--acc, #ff8133);
+}
+.pfm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 14px;
+  margin-top: 2px;
+}
+.pfm-btn {
+  height: 38px;
+  padding: 0 18px;
+  font-size: 13.5px;
+}
+.pfm-link {
+  border: 0;
+  background: none;
+  padding: 6px 2px;
+  color: var(--txt3, rgba(245, 244, 242, 0.4));
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.pfm-link:hover {
+  color: var(--txt, #f5f4f2);
+}
+.pfm-link-acc {
+  color: var(--acc, #ff8133);
+}
+.pfm-link-acc:hover {
+  color: var(--acc, #ff8133);
+  filter: brightness(1.15);
+}
+.pfm-link-danger:hover,
+.pfm-link-danger.is-armed {
+  color: #ef4565;
+}
+.pfm-input {
+  width: 100%;
+  max-width: 320px;
+  height: 42px;
+  padding: 0 14px;
+  border-radius: 11px;
+  border: 1px solid var(--line2, rgba(255, 255, 255, 0.16));
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--txt, #f5f4f2);
+  font: inherit;
+  font-size: 14px;
+}
+.pfm-input:focus {
+  outline: none;
+  border-color: var(--acc, #ff8133);
+}
+.pfm-avatars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding: 6px;
+  border-radius: 12px;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.09));
+  background: rgba(0, 0, 0, 0.25);
+}
+.pfm-avatar-opt {
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid transparent;
+  background: var(--srf2, #1e1e26);
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    transform 0.2s var(--ease-spring, ease);
+}
+.pfm-avatar-opt:hover {
+  transform: scale(1.08);
+}
+.pfm-avatar-opt.is-on {
+  border-color: var(--acc, #ff8133);
+}
+.pfm-avatar-opt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pfm-create {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 560px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.09));
+  background: var(--srf, #15151b);
+  margin-bottom: 30px;
+}
+.pfm-create-title {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }

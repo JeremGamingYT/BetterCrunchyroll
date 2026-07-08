@@ -1,10 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import type { AppRoute, PageId } from '@shared/routing';
-import { getNewEpisodesToday, type NewEpisode } from '@core/api/client';
+import { getNewEpisodesToday, getProfiles, type NewEpisode } from '@core/api/client';
 import { getReplyNotifications, type ReplyNotif } from '@core/api/notifications';
+import { bridge } from '@core/api/transport';
+import { useAsync } from '@app/hooks/useAsync';
 import { useRouter } from '@app/router';
 import { useI18n } from '@app/i18n/i18n';
 import { useProfile } from '@app/profile';
+import { activateProfile } from '@app/pages/ProfileGatePage';
 import { releasePlayer, suppressPlayer } from '@app/lib/playerGate';
 import { Icon } from './Icon';
 import { NotificationsPanel } from './NotificationsPanel';
@@ -45,6 +48,11 @@ export function Header({ onLogout }: HeaderProps): React.JSX.Element {
   const [indicator, setIndicator] = useState({ left: 0, width: 0, on: false });
 
   const avatarUrl = profile?.avatarUrl || '';
+  // Account profiles for the in-menu switcher (section hidden when single).
+  const profilesState = useAsync(() => getProfiles(), []);
+  const statusState = useAsync(() => bridge.checkToken(), []);
+  const accountProfiles = profilesState.data ?? [];
+  const activeProfileId = statusState.data?.profileId;
   const [notifOpen, setNotifOpen] = useState(false);
   const [replies, setReplies] = useState<readonly ReplyNotif[]>([]);
   const [episodes, setEpisodes] = useState<readonly NewEpisode[]>([]);
@@ -237,6 +245,40 @@ export function Header({ onLogout }: HeaderProps): React.JSX.Element {
                 </p>
               </div>
             </div>
+            {accountProfiles.length > 0 && (
+              <div className="menu-profiles">
+                <p className="menu-profiles-label">{t('profile.switch')}</p>
+                {accountProfiles.map((entry) => (
+                  <button
+                    key={entry.profileId}
+                    className={`menu-profile${entry.profileId === activeProfileId ? ' is-active' : ''}`}
+                    onClick={() => void activateProfile(entry, activeProfileId)}
+                  >
+                    <span className="menu-profile-av">
+                      {entry.avatarUrl ? (
+                        <img src={entry.avatarUrl} alt="" />
+                      ) : (
+                        <Icon name="user" size={13} />
+                      )}
+                    </span>
+                    <span className="menu-profile-name">{entry.name}</span>
+                    {entry.profileId === activeProfileId && (
+                      <Icon name="check" size={14} className="menu-profile-check" />
+                    )}
+                  </button>
+                ))}
+                <button
+                  className="menu-profile menu-profile-manage"
+                  onClick={() => go({ page: 'profiles' })}
+                >
+                  <span className="menu-profile-av">
+                    <Icon name="plus" size={13} />
+                  </span>
+                  <span className="menu-profile-name">{t('profile.manage')}</span>
+                  <Icon name="chevR" size={13} className="menu-profile-ext" />
+                </button>
+              </div>
+            )}
             <div className="menu-items">
               <button className="menu-item" onClick={() => go({ page: 'settings' })}>
                 <Icon name="user" size={16} /> {t('menu.avatar')}

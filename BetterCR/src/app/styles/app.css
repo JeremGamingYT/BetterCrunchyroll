@@ -1,9 +1,12 @@
 /* ===================== Tokens ===================== */
 :root {
+  color-scheme: dark;
   --bg: #0a0a0d;
   --srf: #15151b;
   --srf2: #1e1e26;
+  --srf3: #262631;
   --line: rgba(255, 255, 255, 0.09);
+  --line2: rgba(255, 255, 255, 0.16);
   --txt: #f5f4f2;
   --txt2: rgba(245, 244, 242, 0.62);
   --txt3: rgba(245, 244, 242, 0.4);
@@ -11,9 +14,26 @@
   --acc-soft: color-mix(in oklab, var(--acc) 26%, transparent);
   --acc-glow: color-mix(in oklab, var(--acc) 45%, transparent);
   --acc-ink: #1c0f04;
-  --r: 14px;
+  /* Radius scale — deliberately tight. The identity is editorial and angular
+     (anime-poster inspired), not bubbly: sharp surfaces, cut corners. */
+  --r: 12px;
+  --r-lg: 18px;
+  --r-xl: 22px;
   --pw: 178px;
   --gut: clamp(32px, 5vw, 72px);
+  /* Corner notch used by badges/tags (the manga "cut corner" signature). */
+  --notch: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+  /* Dark translucent recipe reserved for floating popovers only. */
+  --glass: rgba(18, 18, 25, 0.58);
+  --glass-line: rgba(255, 255, 255, 0.1);
+  /* Motion vocabulary — one decisive curve for entrances/layout, one springy
+     curve for playful hovers. Reused everywhere so the app moves as one. */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.44, 1);
+  /* Elevation scale (ambient shadows, dark-theme friendly). */
+  --sh-1: 0 4px 16px rgba(0, 0, 0, 0.42);
+  --sh-2: 0 14px 34px -12px rgba(0, 0, 0, 0.65);
+  --sh-3: 0 26px 60px -18px rgba(0, 0, 0, 0.8);
 }
 * {
   box-sizing: border-box;
@@ -38,6 +58,17 @@ button {
   font-family: inherit;
   letter-spacing: inherit;
 }
+::selection {
+  background: color-mix(in oklab, var(--acc) 32%, transparent);
+  color: var(--txt);
+}
+/* One consistent, visible-only-when-needed focus ring for the whole app —
+ * individual components must not re-invent their own outline. */
+:focus-visible {
+  outline: 2px solid var(--acc);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -46,6 +77,9 @@ button {
   background: rgba(255, 255, 255, 0.14);
   border-radius: 99px;
   border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.26);
 }
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -78,25 +112,68 @@ button {
       color-mix(in oklab, var(--acc) 5%, transparent),
       transparent 72%
     ),
-    var(--bg);
+    radial-gradient(70% 34% at 50% 108%, rgba(255, 255, 255, 0.028), transparent 74%), var(--bg);
   transition: background 0.6s ease;
+}
+/* Slow aurora drift — a pre-blurred accent blob rotating far behind the
+ * content. Pure transform (no filter), so it costs next to nothing, and it
+ * only runs when the user has animations enabled. */
+.ambient::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -42%;
+  width: 130vmax;
+  height: 130vmax;
+  margin-left: -65vmax;
+  background: radial-gradient(
+    closest-side at 38% 44%,
+    color-mix(in oklab, var(--acc) 5%, transparent),
+    transparent 62%
+  );
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+body.anim .ambient::before {
+  opacity: 1;
+  /* steps(): the blob advances in imperceptible 1.5° ticks (~2.7 fps) instead
+   * of invalidating the full-viewport ambient layer on every frame. */
+  animation: aurora 90s steps(240, end) infinite;
+}
+@keyframes aurora {
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* Film-grain overlay: an inline SVG noise tile at very low opacity. Kills
+ * gradient banding on the large dark surfaces and gives the whole UI a
+ * subtle material texture. */
+.ambient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.032;
+  mix-blend-mode: overlay;
 }
 
 /* ===================== Boutons / chips ===================== */
 .btn {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   gap: 9px;
   height: 48px;
   padding: 0 22px;
   border: 0;
-  border-radius: 12px;
+  border-radius: 8px;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
   color: var(--txt);
   transition:
-    transform 0.2s ease,
+    transform 0.2s var(--ease-spring),
     box-shadow 0.25s ease,
     background 0.2s ease,
     filter 0.2s ease,
@@ -104,25 +181,47 @@ button {
   white-space: nowrap;
 }
 .btn:active {
-  transform: scale(0.97);
+  transform: scale(0.96);
 }
+/* Primary action: flat accent block with a cut corner — the poster-tag notch
+ * promoted to the main CTA. (clip-path clips outer shadows: stays flat.) */
 .btn-acc {
   background: var(--acc);
   color: var(--acc-ink);
-  box-shadow: 0 10px 30px -10px var(--acc-glow);
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+}
+/* Light sweep across the accent button on hover — same language as the
+ * poster-card sheen, so primary actions feel part of the same material. */
+.btn-acc::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 38%,
+    rgba(255, 255, 255, 0.28) 50%,
+    transparent 62%
+  );
+  transform: translateX(-130%);
+  transition: transform 0.7s var(--ease);
+  pointer-events: none;
+}
+.btn-acc:hover::after {
+  transform: translateX(130%);
 }
 .btn-acc:hover {
   filter: brightness(1.08);
   transform: translateY(-1px);
-  box-shadow: 0 14px 38px -10px var(--acc-glow);
 }
+/* Secondary action: hairline "terminal" outline, filling on hover. */
 .btn-glass {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line2);
   backdrop-filter: blur(14px);
 }
 .btn-glass:hover {
-  background: rgba(255, 255, 255, 0.17);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 .btn-glass.is-marked {
   border-color: var(--acc-soft);
@@ -132,6 +231,7 @@ button {
   width: 48px;
   padding: 0;
   justify-content: center;
+  border-radius: 11px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.13);
   backdrop-filter: blur(14px);
@@ -175,6 +275,8 @@ button {
   transform: translateY(-1px);
 }
 
+/* No backdrop-filter here: one per visible card adds up fast; the slightly
+ * deeper tint reads the same over artwork. */
 .flag {
   position: absolute;
   top: 10px;
@@ -183,9 +285,8 @@ button {
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.09em;
-  padding: 4px 8px;
-  border-radius: 7px;
-  backdrop-filter: blur(8px);
+  padding: 4px 10px 4px 8px;
+  clip-path: var(--notch);
 }
 .flag-new {
   background: var(--acc);
@@ -195,7 +296,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.68);
   color: #7ef0b2;
 }
 .dot {
@@ -233,6 +334,7 @@ button {
 }
 
 /* ===================== Header ===================== */
+/* Floating rounded glass bar, centred; condenses on scroll. */
 .hdr {
   position: fixed;
   top: 0;
@@ -256,18 +358,19 @@ button {
   align-items: center;
   gap: 16px;
   padding: 9px 14px 9px 20px;
-  border-radius: 20px;
+  border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.09);
   background: linear-gradient(180deg, rgba(30, 30, 39, 0.5), rgba(15, 15, 21, 0.4));
-  -webkit-backdrop-filter: blur(22px) saturate(1.7);
-  backdrop-filter: blur(22px) saturate(1.7);
+  /* Blur cost grows with radius² — 16px reads identically over this dark UI. */
+  -webkit-backdrop-filter: blur(16px) saturate(1.7);
+  backdrop-filter: blur(16px) saturate(1.7);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.08),
     inset 0 0 0 1px rgba(255, 255, 255, 0.02),
     0 18px 42px -26px rgba(0, 0, 0, 0.75);
   transition:
-    width 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-    padding 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    width 0.4s var(--ease),
+    padding 0.4s var(--ease),
     border-radius 0.4s ease,
     background 0.35s ease,
     box-shadow 0.35s ease,
@@ -299,8 +402,12 @@ button {
   width: min(1180px, 100%);
   padding-top: 6px;
   padding-bottom: 6px;
-  border-radius: 16px;
+  border-radius: 13px;
   background: linear-gradient(180deg, rgba(20, 20, 27, 0.94), rgba(11, 11, 15, 0.9));
+  /* Nearly opaque when condensed: a light blur suffices (scrolling is the
+   * hot path — this is where backdrop re-blur used to cost the most). */
+  -webkit-backdrop-filter: blur(8px) saturate(1.4);
+  backdrop-filter: blur(8px) saturate(1.4);
   border-color: rgba(255, 255, 255, 0.1);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.07),
@@ -382,8 +489,8 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.09);
   opacity: 0;
   transition:
-    left 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-    width 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    left 0.4s var(--ease),
+    width 0.4s var(--ease),
     opacity 0.25s;
 }
 .hdr-ind.is-on {
@@ -426,6 +533,9 @@ button {
 .hdr-icon:hover {
   background: rgba(255, 255, 255, 0.1);
   color: var(--txt);
+}
+.hdr-icon:active {
+  transform: scale(0.92);
 }
 .hdr-avatar {
   display: flex;
@@ -556,6 +666,23 @@ button {
   min-height: 540px;
   overflow: hidden;
 }
+/* Vertical katakana brand strip (tategaki) on the hero's edge — decorative
+ * brand motif, same status as the logo, hence no i18n. */
+.hero::before {
+  content: 'アニメの家';
+  position: absolute;
+  top: 108px;
+  right: 30px;
+  z-index: 3;
+  writing-mode: vertical-rl;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.52em;
+  color: rgba(245, 244, 242, 0.55);
+  border-right: 2px solid var(--acc);
+  padding-right: 12px;
+  pointer-events: none;
+}
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -604,6 +731,24 @@ button {
 .hero-grad-side {
   z-index: 2;
 }
+/* Manga screentone: a halftone dot band rising from the hero's lower edge,
+ * where the artwork already fades to black. Quiet at a glance, unmistakably
+ * manga up close. */
+.hero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 42%;
+  z-index: 2;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.13) 1px, transparent 1.6px);
+  background-size: 9px 9px;
+  -webkit-mask-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5) 70%, #000);
+  mask-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5) 70%, #000);
+  opacity: 0.5;
+}
 @keyframes kenburns {
   from {
     transform: scale(1.09);
@@ -643,8 +788,26 @@ button {
   max-width: 720px;
 }
 body.anim .hero-content {
-  animation: bcrRiseLg 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: bcrRiseLg 0.7s var(--ease) both;
 }
+/* Stagger the hero's kicker → title → meta → synopsis → CTA so the slide
+ * builds instead of appearing as one flat block. */
+body.anim .hero-content > * {
+  animation: bcrRise 0.65s var(--ease) both;
+}
+body.anim .hero-content > *:nth-child(2) {
+  animation-delay: 0.07s;
+}
+body.anim .hero-content > *:nth-child(3) {
+  animation-delay: 0.13s;
+}
+body.anim .hero-content > *:nth-child(4) {
+  animation-delay: 0.19s;
+}
+body.anim .hero-content > *:nth-child(5) {
+  animation-delay: 0.25s;
+}
+/* Cut-corner tag — the anime-poster signature shared with .flag badges. */
 .hero-kicker {
   display: inline-flex;
   align-items: center;
@@ -654,12 +817,13 @@ body.anim .hero-content {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
   color: var(--acc);
-  padding: 6px 12px;
-  border-radius: 99px;
-  border: 1px solid var(--acc-soft);
-  background: rgba(0, 0, 0, 0.4);
+  padding: 7px 13px;
+  border-left: 3px solid var(--acc);
+  background: rgba(0, 0, 0, 0.52);
   backdrop-filter: blur(10px);
+  clip-path: var(--notch);
 }
 .hero-title {
   font-size: clamp(40px, 4.8vw, 70px);
@@ -670,14 +834,25 @@ body.anim .hero-content {
   text-shadow: 0 4px 44px rgba(0, 0, 0, 0.55);
   text-wrap: balance;
 }
+/* Long titles (light-novel-length isekai names) step down so the slide never
+ * becomes a wall of 70px text. */
+.hero-title.is-long {
+  font-size: clamp(28px, 3.1vw, 44px);
+  line-height: 1.12;
+}
+/* Metadata rows read like a databank entry: uppercase, tracked, tabular
+ * digits — the technical register of anime production sheets. */
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 12px;
   color: var(--txt2);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
 }
 .hero-desc {
   margin-top: 14px;
@@ -787,9 +962,22 @@ body.anim .hero-content {
   flex-direction: column;
   gap: 4px;
   padding-bottom: 30px;
+  counter-reset: row;
 }
 .row {
   padding: 4px 0;
+  counter-increment: row;
+  /* Off-screen rows skip layout/paint entirely; the placeholder size keeps
+   * the scrollbar stable until the real row is measured. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 420px;
+}
+/* Each section after the first opens with a full-bleed hairline — the page
+ * reads as a ruled editorial document. */
+.row + .row {
+  margin-top: 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
 }
 .row-head {
   display: flex;
@@ -807,30 +995,39 @@ body.anim .hero-content {
 .ccard:hover {
   z-index: 6;
 }
+/* Section heading = oversized outlined index numeral + tracked small-caps
+ * label, straight off a Japanese magazine sommaire. */
 .row-title {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: -0.015em;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 .row-head .row-title {
   display: inline-flex;
   align-items: center;
-  gap: 13px;
+  gap: 14px;
 }
 .row-head .row-title::before {
-  content: '';
+  content: counter(row, decimal-leading-zero);
   flex: 0 0 auto;
-  width: 4px;
-  height: 19px;
-  border-radius: 99px;
-  background: var(--acc);
-  box-shadow: 0 0 12px var(--acc-glow);
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: transparent;
+  -webkit-text-stroke: 1.2px var(--acc);
+  transition: color 0.3s ease;
+}
+.row:hover .row-head .row-title::before {
+  color: var(--acc);
 }
 .row-headings {
   min-width: 0;
 }
 .row-sub {
-  margin: 5px 0 0 17px;
+  margin: 6px 0 0;
   color: var(--txt3);
   font-size: 13px;
   font-weight: 500;
@@ -970,21 +1167,29 @@ body.anim .pcard {
 .pcard-hit:hover .pcard-frame::after {
   transform: translateX(130%);
 }
+/* Hover = the poster lifts like a print off the page: hard ink offset shadow
+ * instead of a soft glow, edges stay crisp (no zoom of the frame itself). */
 .pcard-hit:hover .pcard-frame,
 .pcard-hit:focus-visible .pcard-frame {
-  transform: translateY(-6px) scale(1.03) translateZ(0);
+  transform: translate(-3px, -7px) translateZ(0);
   box-shadow:
-    0 22px 46px -14px rgba(0, 0, 0, 0.75),
-    0 14px 48px -12px color-mix(in oklab, var(--cardc, var(--acc)) 50%, transparent);
+    9px 10px 0 -1px rgba(5, 5, 8, 0.94),
+    9px 10px 0 0 var(--line2);
 }
 .pcard-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition:
+    transform 0.5s var(--ease),
+    filter 0.5s ease;
 }
 .pcard-hit:hover .pcard-img {
   transform: scale(1.06);
+  filter: saturate(1.1);
+}
+.pcard:hover .pcard-title {
+  color: var(--txt);
 }
 .pcard-shade {
   position: absolute;
@@ -1037,6 +1242,9 @@ body.anim .pcard {
   transform: scale(1.1);
   background: rgba(255, 255, 255, 0.3);
 }
+.round-btn:active {
+  transform: scale(0.94);
+}
 .round-acc {
   background: rgba(255, 255, 255, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.32);
@@ -1057,6 +1265,8 @@ body.anim .pcard {
 }
 .pcard-cap {
   margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
 }
 .pcard-title {
   font-size: 13.5px;
@@ -1066,10 +1276,13 @@ body.anim .pcard {
   text-overflow: ellipsis;
 }
 .pcard-meta {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
   color: var(--txt3);
-  margin-top: 3px;
+  margin-top: 4px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1236,10 +1449,11 @@ body.anim .ccard {
 
 /* ===================== Skeletons ===================== */
 .sk {
-  background: linear-gradient(100deg, #16161c 40%, #21212b 50%, #16161c 60%);
+  background: linear-gradient(100deg, #16161c 40%, #23232e 50%, #16161c 60%);
   background-size: 200% 100%;
-  animation: shimmer 1.5s linear infinite;
+  animation: shimmer 1.4s linear infinite;
   border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
 }
 @keyframes shimmer {
   to {
@@ -1304,15 +1518,30 @@ body.anim .ccard {
     transform: none;
   }
 }
-.page-wrap {
-  will-change: opacity, transform;
-}
+/* No permanent will-change here: it would pin the whole page as one giant
+ * GPU layer. The enter animation promotes its own layer only while running. */
 body.anim .page-wrap {
-  animation: bcrRise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: pageIn 0.55s var(--ease) both;
+}
+/* Route change: a soft rise + settle, with a barely-there scale so the page
+ * feels like it lands rather than slides. */
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.994);
+  }
+  60% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 .page-pad {
   padding-left: var(--gut);
   padding-right: var(--gut);
+  counter-reset: sec;
 }
 .page-head {
   padding-top: 122px;
@@ -1325,20 +1554,33 @@ body.anim .page-wrap {
   gap: 22px;
   flex-wrap: wrap;
 }
+/* Page titles carry the editorial slash — the "／" of Japanese magazine
+ * covers; rows below use the accent bar, giving two clear heading levels. */
 .page-title {
   font-size: clamp(30px, 3vw, 40px);
   font-weight: 800;
   letter-spacing: -0.025em;
+}
+.page-title::before {
+  content: '／';
+  color: var(--acc);
+  font-weight: 800;
+  margin-right: 12px;
 }
 .page-sub {
   color: var(--txt2);
   margin-top: 7px;
   font-size: 15px;
 }
+.page-count {
+  color: var(--acc);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--pw), 1fr));
-  gap: 24px 14px;
+  gap: 28px 16px;
   padding-bottom: 30px;
 }
 .grid-cards .pcard,
@@ -2510,6 +2752,8 @@ body.anim .promo {
   border-top: 1px solid var(--line);
   margin-top: 60px;
   background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.012));
+  content-visibility: auto;
+  contain-intrinsic-size: auto 520px;
 }
 .ftr-top {
   padding: clamp(40px, 5vw, 66px) var(--gut) 30px;
@@ -2538,7 +2782,7 @@ body.anim .promo {
 .ftr-soc {
   width: 40px;
   height: 40px;
-  border-radius: 11px;
+  border-radius: 10px;
   display: grid;
   place-items: center;
   border: 1px solid var(--line);
@@ -2656,7 +2900,7 @@ body.anim .promo {
   align-items: center;
   gap: 7px;
   height: 38px;
-  padding: 0 12px;
+  padding: 0 13px;
   border-radius: 10px;
   border: 1px solid var(--line);
   background: var(--srf);
@@ -2713,11 +2957,17 @@ body.anim .promo {
   margin: 0;
   padding: 6px;
   list-style: none;
-  background: var(--srf2);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
-  animation: ddIn 0.14s ease;
+  background: rgba(26, 26, 34, 0.92);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-line);
+  border-radius: 13px;
+  box-shadow: var(--sh-3);
+  transform-origin: top center;
+  animation: ddIn 0.18s var(--ease);
+}
+.dd-up .dd-list {
+  transform-origin: bottom center;
 }
 .dd-end .dd-list {
   left: auto;
@@ -2730,11 +2980,11 @@ body.anim .promo {
 @keyframes ddIn {
   from {
     opacity: 0;
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(0.97);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 .dd-opt {
@@ -2742,7 +2992,7 @@ body.anim .promo {
   align-items: center;
   gap: 8px;
   width: 100%;
-  padding: 9px 10px;
+  padding: 9px 11px;
   border: 0;
   border-radius: 8px;
   background: none;
@@ -3028,6 +3278,46 @@ body.anim .dt-stage-inner {
   gap: 16px;
   margin-top: 16px;
 }
+/* Interactive star rating (synced to the real Crunchyroll account). */
+.dt-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.dt-stars-row {
+  display: inline-flex;
+  gap: 1px;
+}
+.dt-star {
+  display: grid;
+  place-items: center;
+  padding: 3px;
+  border: 0;
+  background: none;
+  color: rgba(245, 244, 242, 0.35);
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    transform 0.15s var(--ease-spring);
+}
+.dt-star:hover {
+  transform: scale(1.18);
+}
+.dt-star:active {
+  transform: scale(0.94);
+}
+.dt-star.is-on {
+  color: var(--acc);
+  filter: drop-shadow(0 0 6px var(--acc-glow));
+}
+.dt-stars-meta {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+  color: var(--txt2);
+  white-space: nowrap;
+}
 .dt-stars {
   display: inline-flex;
   align-items: center;
@@ -3271,10 +3561,16 @@ body.anim .dt-stage-inner {
   animation-iteration-count: 1 !important;
   transition-duration: 0.01ms !important;
 }
+/* Honour the OS "reduce motion" preference *only* when the user hasn't
+   explicitly opted into animations via the in-app toggle (`body.anim`). The
+   in-app switch is authoritative: turning it on must re-enable the designed
+   entrance/stagger animations even if the OS-level animation effects are off
+   (otherwise the toggle silently does nothing). When the toggle is off the
+   `.no-motion` rule above already disables everything. */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  body:not(.anim) *,
+  body:not(.anim) *::before,
+  body:not(.anim) *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
@@ -3347,7 +3643,7 @@ body.anim .dt-stage-inner {
   gap: 20px;
   margin-top: 122px;
   padding: clamp(22px, 3vw, 32px);
-  border-radius: 22px;
+  border-radius: var(--r-xl);
   border: 1px solid rgba(255, 255, 255, 0.09);
   background: var(--srf);
   margin-bottom: 40px;
@@ -3375,10 +3671,23 @@ body.anim .dt-stage-inner {
   filter: saturate(1.05);
   opacity: 0.42;
 }
+/* Manga screentone rising from the card's right edge, under the gradient. */
+.set-profile-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.16) 1px, transparent 1.6px);
+  background-size: 9px 9px;
+  -webkit-mask-image: linear-gradient(265deg, #000, transparent 46%);
+  mask-image: linear-gradient(265deg, #000, transparent 46%);
+  opacity: 0.5;
+}
 .set-profile-bg::after {
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 2;
   background: linear-gradient(
     100deg,
     var(--srf) 14%,
@@ -3392,16 +3701,19 @@ body.anim .dt-stage-inner {
 }
 .set-avatar {
   flex: 0 0 auto;
-  width: 72px;
-  height: 72px;
+  width: 76px;
+  height: 76px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   color: var(--acc);
   background: rgba(8, 8, 11, 0.5);
   backdrop-filter: blur(8px);
-  border: 1.5px solid color-mix(in oklab, var(--acc) 70%, transparent);
-  box-shadow: 0 8px 22px -10px rgba(0, 0, 0, 0.7);
+  border: 2px solid var(--acc);
+  /* Double ring: a breathing gap between the accent border and a soft halo. */
+  box-shadow:
+    0 0 0 4px color-mix(in oklab, var(--acc) 20%, transparent),
+    0 8px 22px -10px rgba(0, 0, 0, 0.7);
 }
 .set-id {
   flex: 1 1 auto;
@@ -3443,21 +3755,32 @@ body.anim .dt-stage-inner {
 .set-section {
   margin-bottom: 38px;
 }
+/* Settings sections share the magazine numbering of the home rows: outlined
+ * index numeral + tracked label over a hairline. */
 .set-h2 {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 19px;
+  gap: 13px;
+  font-size: 13.5px;
   font-weight: 800;
-  letter-spacing: -0.015em;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
   margin-bottom: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  counter-increment: sec;
+}
+.set-h2::before {
+  content: counter(sec, decimal-leading-zero);
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: transparent;
+  -webkit-text-stroke: 1.2px var(--acc);
 }
 .set-h2-tick {
-  width: 4px;
-  height: 19px;
-  border-radius: 99px;
-  background: var(--acc);
-  box-shadow: 0 0 12px var(--acc-glow);
+  display: none;
 }
 .set-h2-count {
   color: var(--txt3);
@@ -3533,8 +3856,10 @@ body.anim .set-stat {
 }
 .set-stat-lbl {
   color: var(--txt3);
-  font-size: 12.5px;
-  font-weight: 600;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 
 .set-stat {

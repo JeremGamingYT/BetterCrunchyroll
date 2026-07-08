@@ -48,6 +48,37 @@ function localePrefix(): string {
   return match ? `/${match[1]}` : '';
 }
 
+/**
+ * One-shot native bypass (`?bcr=native`), used by links to official
+ * Crunchyroll pages (Premium, profile management, ToS…) that must render as
+ * Crunchyroll ships them.
+ *
+ * The marker is CONSUMED at load: remembered for the exact path it arrived
+ * on, then immediately stripped from the URL. That scoping is what makes it
+ * impossible to get "stuck" on the native site — a refresh (URL no longer
+ * carries the marker) or any SPA navigation (different path) brings the
+ * redesign straight back.
+ */
+let nativeBypassPath: string | null = null;
+
+function consumeNativeBypass(): void {
+  try {
+    const url = new URL(window.location.href);
+    if (url.searchParams.get('bcr') !== 'native') {
+      return;
+    }
+    nativeBypassPath = url.pathname;
+    url.searchParams.delete('bcr');
+    history.replaceState(history.state, '', url.toString());
+  } catch {
+    /* URL API unavailable — no bypass */
+  }
+}
+
+function hasNativeBypass(): boolean {
+  return nativeBypassPath !== null && nativeBypassPath === window.location.pathname;
+}
+
 class ContentApp {
   private readonly tokens = new TokenStore();
   private readonly overlay = new Overlay();
@@ -70,6 +101,8 @@ class ContentApp {
     if (window.self !== window.top) {
       return;
     }
+    // Read-and-strip the one-shot `?bcr=native` marker before anything mounts.
+    consumeNativeBypass();
     injectPageScript(INJECTED_SCRIPT_PATH);
     // Proactively make a session token available (cookie grant) so the app
     // never queries before authentication is ready.
@@ -170,7 +203,7 @@ class ContentApp {
 
   /** True when the redesign should be mounted (on, and not paused by any signal). */
   private isActive(): boolean {
-    return this.enabled && !this.remotePaused && !this.monitor.selfBroken;
+    return this.enabled && !this.remotePaused && !this.monitor.selfBroken && !hasNativeBypass();
   }
 
   /** The active pause reason (remote first, then self-detected), or null. */
@@ -308,6 +341,15 @@ class ContentApp {
           });
         }
         return;
+      case 'SWITCH_PROFILE': {
+        const switched = await this.tokens.switchProfile(envelope.profileId);
+        this.reply(source, {
+          kind: 'PROFILE_SWITCHED',
+          id: envelope.id,
+          result: switched ? ok(null) : err('profile switch failed'),
+        });
+        return;
+      }
       case 'NAVIGATE':
         this.reflectNavigation(envelope.path);
         return;

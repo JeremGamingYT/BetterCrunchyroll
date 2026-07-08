@@ -41,23 +41,25 @@ export function Hero({ items, onOpen, onPlay }: HeroProps): React.JSX.Element | 
     <div className="hero" data-screen-label="Hero">
       {items.map((item, i) => (
         <div key={item.id} className={`hero-bg${i === index ? ' is-active' : ''}`}>
-          <img src={item.wideXL || item.wide || item.poster} alt="" className="hero-img" />
+          <img
+            src={item.wideXL || item.wide || item.poster}
+            alt=""
+            className="hero-img"
+            decoding="async"
+          />
         </div>
       ))}
       <div className="hero-grad" />
       <div className="hero-grad-side" />
 
       <div className="hero-content" key={slide.id}>
-        <span className="hero-kicker">
-          <i className="dot" /> {t('common.featured')} · {t('common.selection')}
-        </span>
-        <h1 className="hero-title">{slide.title}</h1>
+        <h1 className={`hero-title${slide.title.length > 34 ? ' is-long' : ''}`}>{slide.title}</h1>
         <div className="hero-meta">
           {slide.rating && <Chip tone="line">{slide.rating}</Chip>}
           {slide.year > 0 && <span>{slide.year}</span>}
           {slide.eps > 0 && <span>{t('common.episodes', { n: slide.eps })}</span>}
-          {slide.dub && <Chip tone="line">VF</Chip>}
-          {slide.sub && <Chip tone="line">VOSTFR</Chip>}
+          {slide.dub && <Chip tone="line">{t('chip.dub')}</Chip>}
+          {slide.sub && <Chip tone="line">{t('chip.sub')}</Chip>}
         </div>
         <p className="hero-desc">{slide.desc}</p>
         <div className="hero-cta">

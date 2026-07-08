@@ -18,6 +18,7 @@ export type PageId =
   | 'notfound'
   | 'auth'
   | 'settings'
+  | 'profiles'
   | 'category';
 
 export type AppRoute =
@@ -32,6 +33,7 @@ export type AppRoute =
   | { readonly page: 'notfound' }
   | { readonly page: 'auth' }
   | { readonly page: 'settings' }
+  | { readonly page: 'profiles' }
   | { readonly page: 'category'; readonly categoryId: string; readonly title?: string }
   | { readonly page: 'detail'; readonly seriesId: string }
   | { readonly page: 'watch'; readonly seriesId: string; readonly episodeId?: string };
@@ -69,6 +71,7 @@ export function parseRoute(hash: string): AppRoute {
     case 'notfound':
     case 'auth':
     case 'settings':
+    case 'profiles':
       return { page };
     case 'category': {
       const categoryId = segments[1];

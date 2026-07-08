@@ -79,14 +79,28 @@ export class TokenStore {
     );
   }
 
-  /** Stores a token obtained through the password-login fallback. */
+  /** Stores a token obtained through a grant (cookie, login, profile switch). */
   ingestAuth(data: AuthData): void {
     this.set(
       data.accessToken,
       Date.now() + data.expiresIn * 1000 - TOKEN_EXPIRY_MARGIN_MS,
       data.accountId,
-      this.profileId,
+      data.profileId ?? this.profileId,
     );
+  }
+
+  /**
+   * Re-grants from the session cookie scoped to another Crunchyroll profile
+   * and replaces the stored token. Every subsequent API call (watchlist,
+   * history, playheads…) then runs as that profile.
+   */
+  async switchProfile(profileId: string): Promise<boolean> {
+    const data = await acquireTokenFromCookie(profileId);
+    if (!data) {
+      return false;
+    }
+    this.ingestAuth(data);
+    return true;
   }
 
   private set(
@@ -97,9 +111,9 @@ export class TokenStore {
   ): void {
     this.token = token;
     this.expiry = expiry;
-    // Fall back to the id embedded in the JWT when the grant omits it.
+    // Fall back to the ids embedded in the JWT when the grant omits them.
     this.accountId = accountId ?? accountFromJwt(token);
-    this.profileId = profileId;
+    this.profileId = profileId ?? decodeJwtPayload(token)?.profile_id;
     void this.persist();
   }
 

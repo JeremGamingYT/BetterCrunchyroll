@@ -49,6 +49,34 @@ export function isUiLang(value: string): value is Lang {
 }
 
 /**
+ * Path prefix crunchyroll.com uses for this UI language ('' = none, the
+ * English default). Needed when deep-linking to native CR pages (e.g.
+ * `/fr/profiles/manage`) — the unprefixed path 404s for some routes.
+ */
+export function crPathPrefixFor(lang: Lang): string {
+  switch (lang) {
+    case 'fr':
+      return 'fr';
+    case 'es':
+      return 'es';
+    case 'pt':
+      return 'pt-br';
+    case 'de':
+      return 'de';
+    case 'it':
+      return 'it';
+    case 'ar':
+      return 'ar';
+    case 'ru':
+      return 'ru';
+    case 'hi':
+      return 'hi';
+    default:
+      return '';
+  }
+}
+
+/**
  * Picks the best supported UI language from the browser's language list
  * (most-preferred first), matching by base language subtag — e.g. `es-AR`
  * and `es-ES` both match the `es` translation. Falls back to English when

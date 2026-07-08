@@ -55,7 +55,7 @@ export function PosterCard({
     <div className="pcard" style={style}>
       <button className="pcard-hit" onClick={() => onOpen?.(anime)} aria-label={anime.title}>
         <div className="pcard-frame">
-          <img className="pcard-img" src={anime.poster} alt="" loading="lazy" />
+          <img className="pcard-img" src={anime.poster} alt="" loading="lazy" decoding="async" />
           <div className="pcard-shade" />
           {showNew && <span className="flag flag-new">{t('flag.new')}</span>}
           {showAiring && anime.simulcast && (
@@ -78,8 +78,8 @@ export function PosterCard({
               </span>
             </div>
             <div className="pcard-langs">
-              {anime.dub && <Chip tone="line">VF</Chip>}
-              {anime.sub && <Chip tone="line">VOSTFR</Chip>}
+              {anime.dub && <Chip tone="line">{t('chip.dub')}</Chip>}
+              {anime.sub && <Chip tone="line">{t('chip.sub')}</Chip>}
             </div>
           </div>
         </div>

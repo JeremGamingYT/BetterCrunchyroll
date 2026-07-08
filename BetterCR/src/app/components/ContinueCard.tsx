@@ -24,7 +24,7 @@ export function ContinueCard({ item, index = 0, onPlay }: ContinueCardProps): Re
     <div className="ccard" style={style}>
       <button className="ccard-hit" onClick={() => onPlay?.(item)}>
         <div className="ccard-frame">
-          <img className="ccard-img" src={item.thumb} alt="" loading="lazy" />
+          <img className="ccard-img" src={item.thumb} alt="" loading="lazy" decoding="async" />
           <div className="ccard-shade" />
           <span className="ccard-play">
             <Icon name="play" size={18} />

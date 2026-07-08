@@ -36,7 +36,7 @@ function GenreCard({ genre, index, onOpen }: GenreCardProps): React.JSX.Element 
 
   return (
     <button ref={ref} className="genre-card" style={style} onClick={() => onOpen(genre)}>
-      {image && <img src={image} alt="" loading="lazy" />}
+      {image && <img src={image} alt="" loading="lazy" decoding="async" />}
       <span className="genre-label">{genre.title}</span>
       <span className="genre-arrow">
         <Icon name="chevR" size={18} />

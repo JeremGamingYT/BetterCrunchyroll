@@ -18,6 +18,7 @@ const DEVICE_TYPE = 'BetterCR on Chrome';
 interface RawTokenResponse {
   readonly access_token?: string;
   readonly account_id?: string;
+  readonly profile_id?: string;
   readonly expires_in?: number;
 }
 
@@ -36,13 +37,19 @@ function deviceId(): string {
   return cachedDeviceId;
 }
 
-/** Requests an access token from the session cookie; null if not signed in. */
-export async function acquireTokenFromCookie(): Promise<AuthData | null> {
+/**
+ * Requests an access token from the session cookie; null if not signed in.
+ * Passing `profileId` scopes the token to that Crunchyroll profile — the same
+ * `etp_rt_cookie` + `profile_id` grant the official web app uses to switch
+ * profiles (see documentation/EtpAccountAuth/POST/switchProfile.md).
+ */
+export async function acquireTokenFromCookie(profileId?: string): Promise<AuthData | null> {
   try {
     const body = new URLSearchParams({
       grant_type: 'etp_rt_cookie',
       device_id: deviceId(),
       device_type: DEVICE_TYPE,
+      ...(profileId !== undefined ? { profile_id: profileId } : {}),
     }).toString();
     const response = await fetch(`${CR_API_BASE}/auth/v1/token`, {
       method: 'POST',
@@ -66,6 +73,7 @@ export async function acquireTokenFromCookie(): Promise<AuthData | null> {
       accessToken: data.access_token,
       expiresIn: data.expires_in ?? 300,
       ...(data.account_id !== undefined ? { accountId: data.account_id } : {}),
+      ...(data.profile_id !== undefined ? { profileId: data.profile_id } : {}),
     };
   } catch {
     return null;

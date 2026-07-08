@@ -35,7 +35,7 @@ const COLUMNS: readonly FooterColumn[] = [
       { key: 'ftr.link.profile', page: 'settings' },
       { key: 'ftr.link.watchlist', page: 'watchlist' },
       { key: 'ftr.link.history', page: 'watchlist' },
-      { key: 'ftr.link.subscription', url: 'https://www.crunchyroll.com/premium' },
+      { key: 'ftr.link.subscription', url: 'https://www.crunchyroll.com/premium?bcr=native' },
     ],
   },
   {
@@ -49,16 +49,16 @@ const COLUMNS: readonly FooterColumn[] = [
   {
     heading: 'ftr.col.bcr',
     links: [
-      { key: 'ftr.link.about', url: 'https://www.crunchyroll.com/about/' },
+      { key: 'ftr.link.about', url: 'https://www.crunchyroll.com/about/?bcr=native' },
       { key: 'ftr.link.community', url: 'https://discord.com/invite/crunchyroll' },
     ],
   },
 ];
 
 const LEGAL: readonly FooterLink[] = [
-  { key: 'ftr.terms', url: 'https://www.crunchyroll.com/tos' },
-  { key: 'ftr.privacy', url: 'https://www.crunchyroll.com/privacy' },
-  { key: 'ftr.cookies', url: 'https://www.crunchyroll.com/cookiepolicy' },
+  { key: 'ftr.terms', url: 'https://www.crunchyroll.com/tos?bcr=native' },
+  { key: 'ftr.privacy', url: 'https://www.crunchyroll.com/privacy?bcr=native' },
+  { key: 'ftr.cookies', url: 'https://www.crunchyroll.com/cookiepolicy?bcr=native' },
 ];
 
 export function Footer(): React.JSX.Element {

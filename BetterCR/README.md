@@ -113,6 +113,16 @@ server/         API commentaires serverless (Vercel + Upstash Redis) — optionn
 
 ## Journal des versions
 
+### v1.14.0
+
+- 👥 **Profils multiples** : page « Qui regarde ? » avant l'accueil (comptes multi-profils), sélecteur de profil dans le menu avatar, et une page **« Gérer les profils » intégrée** — création avec choix parmi les 67 avatars officiels, renommage, changement d'avatar, suppression (confirmation en 2 temps) et bascule réelle de session (grant `profile_id`, endpoints documentés).
+- ⭐ **Notes en étoiles sur les fiches** : note 1–5 interactive synchronisée au vrai compte Crunchyroll (`content-reviews/v3`), avec moyenne et nombre de votes de la communauté.
+- 🎨 **Nouvelle identité visuelle « éditorial anime »** : sections numérotées façon sommaire de magazine (`01`, `02`… en numéraux au trait), filets structurels, colonne katakana verticale et trame *halftone* manga sur le hero, badges et CTA à coin coupé, ombres « print » sur les cartes, métadonnées façon fiche technique, grain photographique — plus transitions de page, cascade du hero et micro-interactions raffinées.
+- ⚡ **Optimisations FPS** : `content-visibility` sur les rangées/footer hors écran, décodage d'images asynchrone, suppression d'une couche GPU permanente (`will-change`), aurora en `steps()` (~96 % de compositions en moins), flous réduits (header, badges) — même rendu, nettement plus fluide.
+- 🌍 **Doublage adapté à la langue** : la rangée d'accueil « VF » devient « Doublés en `<ta langue>` » dans les 10 langues, chips DUB/SUB localisés partout (VF/VOSTFR, DUB/SUB, 吹替/字幕…), et les titres très longs du carousel réduisent leur taille automatiquement.
+- 🔗 **Pages officielles accessibles** : les liens du footer (Premium, CGU, confidentialité…) ouvrent les vraies pages Crunchyroll via un contournement *à usage unique* (`?bcr=native`) impossible à laisser bloqué.
+- 🧭 **Confort** : bouton retour-en-haut, raccourci `/` ou `Ctrl+K` vers la Recherche, filtres de recherche *sticky* en panneau de verre, compteurs de titres sur les pages grilles, page Paramètres relevée (carte système, avatar à double anneau, trame manga).
+
 ### v1.13.1
 
 - 🌍 **Correctif langue forcée en français** ([#18](https://github.com/JeremGamingYT/BetterCrunchyroll/issues/18)) : l'extension démarrait toujours en français, quelle que soit la langue du navigateur, sans aucun moyen de la changer. Elle détecte désormais la langue du navigateur au premier lancement (repli sûr sur l'anglais si elle n'est pas supportée).

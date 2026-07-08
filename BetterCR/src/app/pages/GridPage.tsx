@@ -124,7 +124,12 @@ export function GridPage({ variant }: GridPageProps): React.JSX.Element {
     <div className="page-pad" data-screen-label={t(config.titleKey)}>
       <div className="page-head">
         <h1 className="page-title">{t(config.titleKey)}</h1>
-        <p className="page-sub">{t(config.subKey)}</p>
+        <p className="page-sub">
+          {t(config.subKey)}
+          {state.items.length > 0 && (
+            <span className="page-count"> · {t('grid.count', { n: state.items.length })}</span>
+          )}
+        </p>
       </div>
 
       {state.error ? (

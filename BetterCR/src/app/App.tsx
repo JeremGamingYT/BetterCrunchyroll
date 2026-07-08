@@ -5,6 +5,7 @@ import { RouterContext, type Router } from '@app/router';
 import { ProfileProvider } from '@app/profile';
 import { Header } from '@app/components/Header';
 import { Footer } from '@app/components/Footer';
+import { BackToTop } from '@app/components/BackToTop';
 import { UpdateBanner } from '@app/components/UpdateBanner';
 import { HomePage } from '@app/pages/HomePage';
 import { GridPage } from '@app/pages/GridPage';
@@ -12,12 +13,14 @@ import { DetailPage } from '@app/pages/DetailPage';
 import { WatchlistPage } from '@app/pages/WatchlistPage';
 import { NotFoundPage } from '@app/pages/NotFoundPage';
 import { SettingsPage } from '@app/pages/SettingsPage';
+import { ProfilesPage } from '@app/pages/ProfilesPage';
 import { CategoryPage } from '@app/pages/CategoryPage';
 import { WatchPage } from '@app/pages/WatchPage';
 import { UpcomingPage } from '@app/pages/UpcomingPage';
 import { DiscoverPage } from '@app/pages/DiscoverPage';
 import { SearchPage } from '@app/pages/SearchPage';
 import { AuthPage, GoodbyeOverlay } from '@app/pages/AuthPage';
+import { isProfileGateDone, ProfileGatePage } from '@app/pages/ProfileGatePage';
 
 const GOODBYE_DURATION_MS = 2300;
 /** While shown the login page, keep re-checking so we auto-recover a session. */
@@ -58,6 +61,8 @@ function renderPage(route: AppRoute): React.JSX.Element {
       return <SearchPage />;
     case 'settings':
       return <SettingsPage />;
+    case 'profiles':
+      return <ProfilesPage />;
     case 'category':
       return <CategoryPage categoryId={route.categoryId} title={route.title} />;
     case 'notfound':
@@ -107,6 +112,28 @@ function AuthedApp({ goodbye, onLogout }: AuthedAppProps): React.JSX.Element {
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
 
+  // Global shortcut: "/" or Ctrl/Cmd+K jumps to the search page (ignored while
+  // typing in a field, so comment boxes and inputs keep their keystrokes).
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent): void => {
+      const target = event.target as HTMLElement | null;
+      const typing =
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLTextAreaElement ||
+        target instanceof HTMLSelectElement ||
+        (target?.isContentEditable ?? false);
+      const isSlash = event.key === '/' && !event.ctrlKey && !event.metaKey && !event.altKey;
+      const isCmdK = event.key.toLowerCase() === 'k' && (event.ctrlKey || event.metaKey);
+      if (typing || (!isSlash && !isCmdK)) {
+        return;
+      }
+      event.preventDefault();
+      go({ page: 'search' });
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [go]);
+
   const router = useMemo<Router>(() => ({ route, go }), [route, go]);
 
   return (
@@ -117,6 +144,7 @@ function AuthedApp({ goodbye, onLogout }: AuthedAppProps): React.JSX.Element {
           {renderPage(route)}
           <Footer />
         </div>
+        <BackToTop />
         <UpdateBanner />
         <GoodbyeOverlay show={goodbye} />
       </RouterContext.Provider>
@@ -127,6 +155,8 @@ function AuthedApp({ goodbye, onLogout }: AuthedAppProps): React.JSX.Element {
 export function App(): React.JSX.Element {
   const [auth, setAuth] = useState<AuthState>('checking');
   const [goodbye, setGoodbye] = useState(false);
+  // "Who's watching?" gate — answered once per browser session.
+  const [gateDone, setGateDone] = useState(() => isProfileGateDone());
 
   // Gate: the user must be signed into Crunchyroll. `checkToken` makes the
   // content script proactively acquire a token from the session cookie, so a
@@ -169,6 +199,9 @@ export function App(): React.JSX.Element {
   }
   if (auth === 'guest') {
     return <AuthPage onAuthenticated={() => setAuth('authed')} />;
+  }
+  if (!gateDone) {
+    return <ProfileGatePage onDone={() => setGateDone(true)} />;
   }
   return <AuthedApp goodbye={goodbye} onLogout={logout} />;
 }

@@ -1009,3 +1009,277 @@ export async function updateCrPreferences(patch: Partial<CrPreferences>): Promis
   });
   return result.ok;
 }
+
+/* ── Star ratings (Crunchyroll `content-reviews` service) ─────────────────
+ * The same endpoints the official web app calls: a public per-series summary
+ * and the signed-in user's own rating (values are "1s".."5s"). Every call is
+ * defensive — if CR moves the service, the widget simply hides. */
+
+/** Community star rating of a series. */
+export interface SeriesRatingSummary {
+  /** Average, on a 0–5 scale. */
+  readonly average: number;
+  /** Number of ratings the average is built from. */
+  readonly total: number;
+}
+
+export async function getSeriesRatingSummary(
+  seriesId: string,
+): Promise<SeriesRatingSummary | null> {
+  try {
+    const raw = await getJson(`/content-reviews/v2/rating/series/${seriesId}`);
+    if (raw && typeof raw === 'object') {
+      const o = raw as { average?: unknown; total?: unknown };
+      const average = Number(o.average);
+      const total = Number(o.total);
+      if (Number.isFinite(average) && average > 0) {
+        return { average, total: Number.isFinite(total) ? total : 0 };
+      }
+    }
+  } catch {
+    /* service unavailable — caller hides the widget */
+  }
+  return null;
+}
+
+/** The signed-in user's own star rating for a series (0 = not rated yet).
+ *  Documented route: `content-reviews/v3` (documentation/EtpContentReviews). */
+export async function getUserSeriesRating(seriesId: string): Promise<number> {
+  const account = await getAccountId();
+  if (!account) {
+    return 0;
+  }
+  try {
+    const raw = await getJson(`/content-reviews/v3/user/${account}/rating/series/${seriesId}`);
+    const rating = (raw as { rating?: unknown } | null)?.rating;
+    const parsed = typeof rating === 'string' ? Number.parseInt(rating, 10) : 0;
+    return Number.isFinite(parsed) ? Math.min(5, Math.max(0, parsed)) : 0;
+  } catch {
+    return 0;
+  }
+}
+
+/** Rates a series 1–5 stars ("1s".."5s") on the user's real Crunchyroll
+ *  account. Documented route: `content-reviews/v3` PUT. */
+export async function rateSeries(seriesId: string, stars: number): Promise<boolean> {
+  const account = await getAccountId();
+  const value = Math.round(stars);
+  if (!account || value < 1 || value > 5) {
+    return false;
+  }
+  const result = await bridge.apiRequest({
+    method: 'PUT',
+    path: `/content-reviews/v3/user/${account}/rating/series/${seriesId}`,
+    body: { rating: `${String(value)}s` },
+  });
+  return result.ok;
+}
+
+/* ── Multi-profile (documentation/EtpAccount + EtpAccountAuth) ──────────── */
+
+/** One Crunchyroll profile on the signed-in account. */
+export interface CrProfile {
+  readonly profileId: string;
+  readonly name: string;
+  readonly avatarUrl: string;
+  readonly isPrimary: boolean;
+}
+
+/** First string-valued field found among `keys` on `o`. */
+function pickString(o: Record<string, unknown>, keys: readonly string[]): string {
+  for (const key of keys) {
+    const value = o[key];
+    if (typeof value === 'string' && value.length > 0) {
+      return value;
+    }
+  }
+  return '';
+}
+
+/** Normalises an avatar reference (bare filename or absolute URL) to a URL. */
+function avatarToUrl(avatar: string): string {
+  if (!avatar) {
+    return '';
+  }
+  return /^https?:\/\//.test(avatar) ? avatar : `${AVATAR_BASE}/${avatar}`;
+}
+
+/** Multiprofile listing plus the account's profile quota. */
+export interface MultiprofileInfo {
+  readonly profiles: readonly CrProfile[];
+  /** How many profiles this account may hold (`max_profiles`). */
+  readonly maxProfiles: number;
+}
+
+/**
+ * Profiles + quota (`GET /accounts/v1/me/multiprofile`). Live shape (verified):
+ * `{ tier_max_profiles, max_profiles, profiles: [{ profile_id, profile_name,
+ * username, avatar, is_primary, is_selected, … }] }` — parsing stays permissive
+ * about the container/field names all the same, and logs the raw payload when
+ * nothing can be understood so diagnosis stays trivial.
+ */
+export async function getMultiprofile(): Promise<MultiprofileInfo> {
+  try {
+    const raw = await getJson('/accounts/v1/me/multiprofile');
+    const container = raw as Record<string, unknown> | unknown[] | null;
+    const list = Array.isArray(container)
+      ? container
+      : Array.isArray(container?.profiles)
+        ? (container.profiles as unknown[])
+        : Array.isArray(container?.items)
+          ? (container.items as unknown[])
+          : Array.isArray(container?.data)
+            ? (container.data as unknown[])
+            : null;
+    if (!list) {
+      console.warn('[BetterCR] multiprofile: unexpected shape', raw);
+      return { profiles: [], maxProfiles: 0 };
+    }
+    const profiles = list.flatMap((item) => {
+      const o = item as Record<string, unknown>;
+      const profileId = pickString(o, ['profile_id', 'id', 'profileId']);
+      if (!profileId) {
+        return [];
+      }
+      return [
+        {
+          profileId,
+          name: pickString(o, ['profile_name', 'username', 'nickname', 'name']),
+          avatarUrl: avatarToUrl(pickString(o, ['avatar', 'avatar_url', 'avatarUrl'])),
+          isPrimary: o.is_primary === true || o.primary === true,
+        },
+      ];
+    });
+    if (profiles.length === 0) {
+      console.warn('[BetterCR] multiprofile: 0 profiles parsed from', raw);
+    }
+    const maxRaw = Array.isArray(container) ? NaN : Number(container?.max_profiles);
+    return {
+      profiles,
+      maxProfiles: Number.isFinite(maxRaw) && maxRaw > 0 ? maxRaw : profiles.length,
+    };
+  } catch (error) {
+    console.warn('[BetterCR] multiprofile request failed', error);
+    return { profiles: [], maxProfiles: 0 };
+  }
+}
+
+/** All profiles on the account (thin wrapper over {@link getMultiprofile}). */
+export async function getProfiles(): Promise<CrProfile[]> {
+  return [...(await getMultiprofile()).profiles];
+}
+
+/** Outcome of a profile mutation; `error` carries Crunchyroll's own message. */
+export interface ProfileMutation {
+  readonly ok: boolean;
+  readonly error?: string;
+}
+
+function toMutation(result: { readonly ok: boolean; readonly error?: string }): ProfileMutation {
+  return result.ok ? { ok: true } : { ok: false, error: result.error ?? 'request failed' };
+}
+
+/** Creates a profile (`POST /accounts/v1/me/multiprofile`, doc-verified). */
+export async function createProfile(input: {
+  readonly profileName: string;
+  readonly username: string;
+  readonly avatar: string;
+}): Promise<ProfileMutation> {
+  const result = await bridge.apiRequest({
+    method: 'POST',
+    path: '/accounts/v1/me/multiprofile',
+    body: {
+      profile_name: input.profileName,
+      username: input.username,
+      avatar: input.avatar,
+    },
+  });
+  return toMutation(result);
+}
+
+/** Updates a profile's name and/or avatar (`PATCH .../multiprofile/{id}`). */
+export async function updateProfile(
+  profileId: string,
+  patch: { readonly profileName?: string; readonly avatar?: string },
+): Promise<ProfileMutation> {
+  const body: Record<string, string> = {};
+  if (patch.profileName !== undefined) {
+    body.profile_name = patch.profileName;
+  }
+  if (patch.avatar !== undefined) {
+    body.avatar = patch.avatar;
+  }
+  if (Object.keys(body).length === 0) {
+    return { ok: true };
+  }
+  const result = await bridge.apiRequest({
+    method: 'PATCH',
+    path: `/accounts/v1/me/multiprofile/${profileId}`,
+    body,
+  });
+  return toMutation(result);
+}
+
+/** Deletes a profile (`DELETE .../multiprofile/{id}`). Irreversible. */
+export async function deleteProfile(profileId: string): Promise<ProfileMutation> {
+  const result = await bridge.apiRequest({
+    method: 'DELETE',
+    path: `/accounts/v1/me/multiprofile/${profileId}`,
+  });
+  return toMutation(result);
+}
+
+/** One selectable avatar (bare asset name + full image URL). */
+export interface AvatarOption {
+  readonly asset: string;
+  readonly url: string;
+}
+
+/** Deep-scans an object for the first string that looks like a .png asset. */
+function findPngAsset(value: unknown, depth = 0): string {
+  if (typeof value === 'string') {
+    return /\.png$/i.test(value) ? value : '';
+  }
+  if (depth >= 3 || value === null || typeof value !== 'object') {
+    return '';
+  }
+  for (const nested of Object.values(value)) {
+    const hit = findPngAsset(nested, depth + 1);
+    if (hit) {
+      return hit;
+    }
+  }
+  return '';
+}
+
+/**
+ * The avatar catalogue (`GET /assets/v2/{locale}/avatar` — 200 with
+ * `{items:[…]}` live). Item shape is not documented, so extraction is layered:
+ * bare strings, common id/name keys, then a deep scan for anything ending in
+ * `.png` (profile avatars are always `<name>.png`, e.g.
+ * `1046-dr-stone-senku.png`). Logs the first item when nothing matches.
+ */
+export async function getAvatarOptions(): Promise<AvatarOption[]> {
+  try {
+    const raw = await getJson(`/assets/v2/${apiLocale}/avatar`);
+    const items = (raw as { items?: unknown } | null)?.items;
+    if (!Array.isArray(items)) {
+      console.warn('[BetterCR] avatar catalogue: unexpected shape', raw);
+      return [];
+    }
+    const options = items.flatMap((item) => {
+      const asset =
+        typeof item === 'string'
+          ? item
+          : pickString(item as Record<string, unknown>, ['id', 'asset_id', 'name', 'filename']) ||
+            findPngAsset(item);
+      return asset ? [{ asset, url: avatarToUrl(asset) }] : [];
+    });
+    if (options.length === 0 && items.length > 0) {
+      console.warn('[BetterCR] avatar catalogue: could not parse items; first item:', items[0]);
+    }
+    return options;
+  } catch {
+    return [];
+  }
+}

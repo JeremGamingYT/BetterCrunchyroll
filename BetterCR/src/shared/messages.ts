@@ -36,6 +36,7 @@ export interface AuthData {
   readonly accessToken: string;
   readonly expiresIn: number;
   readonly accountId?: string;
+  readonly profileId?: string;
 }
 
 /** Messages sent from the SPA to the content script. */
@@ -48,6 +49,7 @@ export type AppRequest =
       readonly username: string;
       readonly password: string;
     }
+  | { readonly kind: 'SWITCH_PROFILE'; readonly id: string; readonly profileId: string }
   | { readonly kind: 'NAVIGATE'; readonly path: string }
   | { readonly kind: 'OPEN_EXTERNAL'; readonly url: string }
   | { readonly kind: 'WATCH_SLOT'; readonly rect: PlayerRect | null }
@@ -65,7 +67,8 @@ export interface PlayerRect {
 export type ContentReply =
   | { readonly kind: 'API_RESPONSE'; readonly id: string; readonly result: Result<unknown> }
   | { readonly kind: 'TOKEN_STATUS'; readonly id: string; readonly status: TokenStatus }
-  | { readonly kind: 'AUTH_RESPONSE'; readonly id: string; readonly result: Result<AuthData> };
+  | { readonly kind: 'AUTH_RESPONSE'; readonly id: string; readonly result: Result<AuthData> }
+  | { readonly kind: 'PROFILE_SWITCHED'; readonly id: string; readonly result: Result<null> };
 
 export type AppEnvelope = { readonly channel: typeof BCR_CHANNEL } & AppRequest;
 export type ContentEnvelope = { readonly channel: typeof BCR_CHANNEL } & ContentReply;
